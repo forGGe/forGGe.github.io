@@ -10,6 +10,13 @@ Welcome to theCore documentation!
 .. warning:: This documentation is completely incomplete!
              Designing and aggregating is in progress.
 
+.. only:: builder_html
+
+   .. note::
+
+      This is a multi-page version of theCore documentation. If you want
+      single-page version, click :sphinx_root_url:`here<singlehtml/index.html>`.
+
 .. only:: builder_singlehtml
 
    .. note::
@@ -22,13 +29,6 @@ Welcome to theCore documentation!
    :caption: Contents:
 
    readme
-
-.. only:: builder_html
-
-   .. note::
-
-      This is a multi-page version of theCore documentation. If you want
-      single-page version, click :sphinx_root_url:`here<singlehtml/index.html>`.
 
 Release: |release|
 

@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>theCore: C++ Embedded Framework &mdash; theCore  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="theCore  documentation" href="index.html"/>
+        <link rel="prev" title="Welcome to theCore documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> theCore
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">theCore: C++ Embedded Framework</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-platforms">Supported platforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#technologies-and-projects-used">Technologies and projects used</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contribution-using">Contribution &amp; Using</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">theCore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>theCore: C++ Embedded Framework</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="thecore-c-embedded-framework">
+<h1>theCore: C++ Embedded Framework<a class="headerlink" href="#thecore-c-embedded-framework" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://travis-ci.org/forGGe/theCore"><img alt="Build Status" src="https://travis-ci.org/forGGe/theCore.svg?branch=master" /></a> <a class="reference external" href="https://gitter.im/forGGe/theCore?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/forGGe/theCore" src="https://badges.gitter.im/forGGe/theCore.svg" /></a></p>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>theCore is the open source, highly configurable and straightforward C++ framework aimed
+to reduce development, testing and hardware migration efforts for a wide range of
+bare-metal embedded applications.</p>
+<p>theCore tries to provide all that is necessary to create portable application code:</p>
+<ul class="simple">
+<li>Startup, initialization and periphery code per each supported platform.</li>
+<li>Build system support for different platform and target configurations.</li>
+<li>Platform-independent device drivers, like temperature sensors or displays.</li>
+<li>Optional OS-related abstractions: semaphores, mutexes and threads.</li>
+<li>Easy-to-deploy development environment.</li>
+<li>Different libraries and utilities.</li>
+</ul>
+<p>theCore uses strong type system based on modern C++ and code generation that
+greatly reduces error rate and debugging time. Shifting different sanity checks
+to compile time rather than runtime not only makes code more performant, but
+also secure and easier to extend.</p>
+<p>The project is at the initial stage. You can check <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section
+in the documentation or <a class="reference external" href="https://github.com/forGGe/theCore/issues">github issues</a> to get insights on what happens
+right now and where project is moving.</p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>theCore documentation hosted on GitHub pages and available in two formats:
+<a class="reference external" href="www.google.com">multi-page HTML</a> for ease of navigation and <a class="reference external" href="www.google.com">single-page HTML</a> for ease
+of manual searching.</p>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<p>You can start using theCore by completing guides and tutorials in the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a>
+section or check the source code of <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the standalone blinky example project</a>.</p>
+<p>It is also worth to look at examples that are placed in <cite>examples</cite> dir and
+read the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section to understand how to build and launch them.</p>
+</div>
+<div class="section" id="supported-platforms">
+<h2>Supported platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h2>
+<p>Supported platform list along with information about each platform is located
+in <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>The source code is distributed under LGPL v3.0 License.</p>
+</div>
+<div class="section" id="technologies-and-projects-used">
+<h2>Technologies and projects used<a class="headerlink" href="#technologies-and-projects-used" title="Permalink to this headline">¶</a></h2>
+<p>Most notable are:</p>
+<ul class="simple">
+<li>C++11 and C++14 - as a main programming language standards.</li>
+<li>Python 3 and <a class="reference external" href="https://nedbatchelder.com/code/cog/">cog</a> - code generation.</li>
+<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> and <a class="reference external" href="http://www.sphinx-doc.org/en">Sphinx</a> - in-source and project-wide documentation.</li>
+<li><a class="reference external" href="https://cmake.org/">CMake</a> - build-system.</li>
+<li><a class="reference external" href="https://nixos.org/nix/">Nix</a> - development environment management.</li>
+<li><a class="reference external" href="http://cpputest.github.io/">CppUTest</a> and <a class="reference external" href="http://www.throwtheswitch.org/unity/">Unity</a> - unit and on-device testing.</li>
+<li><a class="reference external" href="https://travis-ci.org/forGGe/theCore/">Travis</a> - continuos integration.</li>
+</ul>
+<p>Check the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section for more.</p>
+</div>
+<div class="section" id="contribution-using">
+<h2>Contribution &amp; Using<a class="headerlink" href="#contribution-using" title="Permalink to this headline">¶</a></h2>
+<p>The project is on its very beginning, so any help is more than welcome
+and highly appreciated. If you’d like to take a part in the project
+growth and (or) have any questions – take a look at <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section,
+leave message at <a class="reference external" href="https://gitter.im/forGGe/theCore">gitter</a>, contact me directly at <a class="reference external" href="mailto:forgge&#37;&#52;&#48;gmail&#46;com">forgge<span>&#64;</span>gmail<span>&#46;</span>com</a>,
+or simply check out <a class="reference external" href="https://github.com/forGGe/theCore/issues">a list of theCore issues</a>.</p>
+<p>If you have any suggestions on theCore improvement or just
+like it how it is, don’t keep silence! I’ll be happy to read your
+reviews.</p>
+<p>You are welcome to use theCore in your own projects. If there is
+something that it’s not enough for this, please let me know via email or
+open some issues and we will do our best to handle this ASAP. Good luck!</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to theCore documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Max Olender.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

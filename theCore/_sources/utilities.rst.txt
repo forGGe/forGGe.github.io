@@ -1,0 +1,20 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+Libraries and utilities
+=======================
+
+Console streams
+---------------
+
+Assertions and error handling
+-----------------------------
+
+Filesystem
+----------
+
+Newlib stubs
+------------
+
+Configurator
+------------

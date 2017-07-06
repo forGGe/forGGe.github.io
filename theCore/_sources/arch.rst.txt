@@ -1,0 +1,11 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+Supported architectures
+=======================
+
+Cortex M3 and M4
+----------------
+
+Host
+----

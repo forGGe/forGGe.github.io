@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; theCore  documentation</title>
+  <title>Project structure &mdash; theCore  documentation</title>
   
 
   
@@ -34,8 +34,10 @@
   
         <link rel="index" title="Index"
               href="genindex.html"/>
-        <link rel="search" title="Search" href="#"/>
-    <link rel="top" title="theCore  documentation" href="index.html"/> 
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="theCore  documentation" href="index.html"/>
+        <link rel="next" title="Supported architectures" href="arch.html"/>
+        <link rel="prev" title="Standalone examples" href="examples.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -67,7 +69,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -85,8 +87,25 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="readme.html">theCore: C++ Embedded Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Standalone examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Project structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#top-level-directories">Top-level directories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exported-headers">Exported headers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-system">Build system</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="arch.html">Supported architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platforms.html">Supported platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drivers.html">Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Libraries and utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="os_layer.html">OS abstraction layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Community and developer guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation development and contribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
 </ul>
 
             
@@ -131,10 +150,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Search</li>
+      <li>Project structure</li>
     
     
       <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/project_structure.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -146,19 +169,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="project-structure">
+<h1>Project structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="top-level-directories">
+<h2>Top-level directories<a class="headerlink" href="#top-level-directories" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="exported-headers">
+<h2>Exported headers<a class="headerlink" href="#exported-headers" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="build-system">
+<h2>Build system<a class="headerlink" href="#build-system" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
 
-  
-  <div id="search-results">
-  
-  </div>
 
            </div>
            <div class="articleComments">
@@ -166,6 +194,15 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="arch.html" class="btn btn-neutral float-right" title="Supported architectures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="examples.html" class="btn btn-neutral" title="Standalone examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -204,7 +241,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -220,14 +256,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>

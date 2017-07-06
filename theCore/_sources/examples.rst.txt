@@ -1,0 +1,28 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+.. _theCore_Examples:
+
+Standalone examples
+===================
+
+STM32F4 discovery blinky project
+--------------------------------
+
+Simple host hello world example
+-------------------------------
+
+STM32F4 discovery audio example with CS43L22 audio DAC
+------------------------------------------------------
+
+STM32F4 discovery and HTU21D temperature and humidity sensor
+------------------------------------------------------------
+
+STM32F4 discovery and external interrupts from user button
+----------------------------------------------------------
+
+STM32F4 discovery blinky
+------------------------
+
+TM4C123G LaunchPad blinky
+-------------------------

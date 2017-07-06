@@ -22,13 +22,25 @@ Welcome to theCore documentation!
    .. note::
 
       This is a single-page version of theCore documentation.
-      For multi-page version, click :sphinx_root_url:`here<html/index.html>`.
+      For multi-page version, click :sphinx_root_url:`here<index.html>`.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
    readme
+   guides
+   examples
+   project_structure
+   arch
+   platforms
+   drivers
+   utilities
+   os_layer
+   community
+   docs
+   testing
+   credits
 
 Release: |release|
 
@@ -48,4 +60,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`search`
-

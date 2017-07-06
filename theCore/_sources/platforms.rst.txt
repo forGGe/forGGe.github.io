@@ -1,0 +1,23 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+
+.. _theCore_Platforms:
+
+Supported platforms
+===================
+
+ST STM32F4
+----------
+
+ST STM32L1
+----------
+
+Kinetis KE02Z
+-------------
+
+Particle Electron
+-----------------
+
+Tiva C series TM4C123G
+----------------------

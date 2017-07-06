@@ -1,0 +1,16 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+.. _theCore_Guides:
+
+Guides
+======
+
+Getting started
+---------------
+
+Creating your first Hello World application
+-------------------------------------------
+
+Multi-platform application
+--------------------------

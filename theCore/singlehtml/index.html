@@ -78,16 +78,19 @@
               <!-- Local TOC -->
               <div class="local-toc"><p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="index.html#document-readme">theCore: C++ Embedded Framework</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="index.html#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#documentation">Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#getting-started">Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#supported-platforms">Supported platforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#license">License</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#technologies-and-projects-used">Technologies and projects used</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#contribution-using">Contribution &amp; Using</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-readme">theCore: C++ Embedded Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-guides">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-examples">Standalone examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-project_structure">Project structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-arch">Supported architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-platforms">Supported platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-drivers">Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-utilities">Libraries and utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-os_layer">OS abstraction layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-community">Community and developer guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-docs">Documentation development and contribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-testing">Testing and CI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-credits">Credits and acknowledgements</a></li>
 </ul>
 </div>
             
@@ -159,10 +162,15 @@ Designing and aggregating is in progress.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This is a single-page version of theCore documentation.
-For multi-page version, click <a class="reference external" href="http://forgge.github.io/theCore//html/index.html">here</a>.</p>
+For multi-page version, click <a class="reference external" href="https://forgge.github.io/theCore/index.html">here</a>.</p>
 </div>
 <div class="toctree-wrapper compound">
-<span id="document-readme"></span><div class="section" id="thecore-c-embedded-framework">
+<span id="document-readme"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="thecore-c-embedded-framework">
 <h2>theCore: C++ Embedded Framework<a class="headerlink" href="#thecore-c-embedded-framework" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://travis-ci.org/forGGe/theCore"><img alt="Build Status" src="https://travis-ci.org/forGGe/theCore.svg?branch=master" /></a> <a class="reference external" href="https://gitter.im/forGGe/theCore?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/forGGe/theCore" src="https://badges.gitter.im/forGGe/theCore.svg" /></a></p>
 <div class="section" id="description">
@@ -183,7 +191,7 @@ bare-metal embedded applications.</p>
 greatly reduces error rate and debugging time. Shifting different sanity checks
 to compile time rather than runtime not only makes code more performant, but
 also secure and easier to extend.</p>
-<p>The project is at the initial stage. You can check <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section
+<p>The project is at the initial stage. You can check <a class="reference internal" href="index.html#thecore-roadmap"><span class="std std-ref">Roadmap</span></a> section
 in the documentation or <a class="reference external" href="https://github.com/forGGe/theCore/issues">github issues</a> to get insights on what happens
 right now and where project is moving.</p>
 </div>
@@ -193,17 +201,23 @@ right now and where project is moving.</p>
 <a class="reference external" href="https://forgge.github.io/theCore/html/">multi-page HTML</a> for ease of navigation and <a class="reference external" href="https://forgge.github.io/theCore/singlehtml/">single-page HTML</a> for ease
 of manual searching.</p>
 </div>
+<div class="section" id="where-to-get-thecore">
+<h3>Where to get theCore<a class="headerlink" href="#where-to-get-thecore" title="Permalink to this headline">¶</a></h3>
+<p>theCore is now available only from source and hosted solely on <a class="reference external" href="https://github.com/forGGe/theCore/">GitHub</a>.
+There are different branches for development and stable versions. Check <a class="reference internal" href="index.html#thecore-branching"><span class="std std-ref">Brancing model</span></a>
+section for information about branches purpose.</p>
+</div>
 <div class="section" id="getting-started">
 <h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
-<p>You can start using theCore by completing guides and tutorials in the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a>
+<p>You can start using theCore by completing guides and tutorials in the <a class="reference internal" href="index.html#thecore-guides"><span class="std std-ref">Guides</span></a>
 section or check the source code of <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the standalone blinky example project</a>.</p>
 <p>It is also worth to look at examples that are placed in <cite>examples</cite> dir and
-read the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section to understand how to build and launch them.</p>
+read the <a class="reference internal" href="index.html#thecore-examples"><span class="std std-ref">Standalone examples</span></a> section to understand how to build and launch them.</p>
 </div>
 <div class="section" id="supported-platforms">
 <h3>Supported platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h3>
 <p>Supported platform list along with information about each platform is located
-in <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section.</p>
+in <a class="reference internal" href="index.html#thecore-platforms"><span class="std std-ref">Supported platforms</span></a> section.</p>
 </div>
 <div class="section" id="license">
 <h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
@@ -215,19 +229,19 @@ in <a class="reference internal" href="index.html#thecore-stub"><span class="std
 <ul class="simple">
 <li>C++11 and C++14 - as a main programming language standards.</li>
 <li>Python 3 and <a class="reference external" href="https://nedbatchelder.com/code/cog/">cog</a> - code generation.</li>
-<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> and <a class="reference external" href="http://www.sphinx-doc.org/en">Sphinx</a> - in-source and project-wide documentation.</li>
+<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> and <a class="reference external" href="http://www.sphinx-doc.org/">Sphinx</a> - in-source and project-wide documentation.</li>
 <li><a class="reference external" href="https://cmake.org/">CMake</a> - build-system.</li>
 <li><a class="reference external" href="https://nixos.org/nix/">Nix</a> - development environment management.</li>
 <li><a class="reference external" href="http://cpputest.github.io/">CppUTest</a> and <a class="reference external" href="http://www.throwtheswitch.org/unity/">Unity</a> - unit and on-device testing.</li>
 <li><a class="reference external" href="https://travis-ci.org/forGGe/theCore/">Travis</a> - continuos integration.</li>
 </ul>
-<p>Check the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section for more.</p>
+<p>Check the <a class="reference internal" href="index.html#thecore-credits"><span class="std std-ref">Credits and acknowledgements</span></a> section for more.</p>
 </div>
 <div class="section" id="contribution-using">
 <h3>Contribution &amp; Using<a class="headerlink" href="#contribution-using" title="Permalink to this headline">¶</a></h3>
 <p>The project is on its very beginning, so any help is more than welcome
 and highly appreciated. If you’d like to take a part in the project
-growth and (or) have any questions – take a look at <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section,
+growth and (or) have any questions – take a look at <a class="reference internal" href="index.html#thecore-developerdocs"><span class="std std-ref">Community and developer guidelines</span></a> section,
 leave message at <a class="reference external" href="https://gitter.im/forGGe/theCore">gitter</a>, contact me directly at <a class="reference external" href="mailto:forgge&#37;&#52;&#48;gmail&#46;com">forgge<span>&#64;</span>gmail<span>&#46;</span>com</a>,
 or simply check out <a class="reference external" href="https://github.com/forGGe/theCore/issues">a list of theCore issues</a>.</p>
 <p>If you have any suggestions on theCore improvement or just
@@ -238,11 +252,239 @@ something that it’s not enough for this, please let me know via email or
 open some issues and we will do our best to handle this ASAP. Good luck!</p>
 </div>
 </div>
+<span id="document-guides"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="guides">
+<span id="thecore-guides"></span><h2>Guides<a class="headerlink" href="#guides" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="getting-started">
+<h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="creating-your-first-hello-world-application">
+<h3>Creating your first Hello World application<a class="headerlink" href="#creating-your-first-hello-world-application" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="multi-platform-application">
+<h3>Multi-platform application<a class="headerlink" href="#multi-platform-application" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-examples"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="standalone-examples">
+<span id="thecore-examples"></span><h2>Standalone examples<a class="headerlink" href="#standalone-examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="stm32f4-discovery-blinky-project">
+<h3>STM32F4 discovery blinky project<a class="headerlink" href="#stm32f4-discovery-blinky-project" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="simple-host-hello-world-example">
+<h3>Simple host hello world example<a class="headerlink" href="#simple-host-hello-world-example" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stm32f4-discovery-audio-example-with-cs43l22-audio-dac">
+<h3>STM32F4 discovery audio example with CS43L22 audio DAC<a class="headerlink" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">
+<h3>STM32F4 discovery and HTU21D temperature and humidity sensor<a class="headerlink" href="#stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stm32f4-discovery-and-external-interrupts-from-user-button">
+<h3>STM32F4 discovery and external interrupts from user button<a class="headerlink" href="#stm32f4-discovery-and-external-interrupts-from-user-button" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="stm32f4-discovery-blinky">
+<h3>STM32F4 discovery blinky<a class="headerlink" href="#stm32f4-discovery-blinky" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="tm4c123g-launchpad-blinky">
+<h3>TM4C123G LaunchPad blinky<a class="headerlink" href="#tm4c123g-launchpad-blinky" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-project_structure"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="project-structure">
+<h2>Project structure<a class="headerlink" href="#project-structure" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="top-level-directories">
+<h3>Top-level directories<a class="headerlink" href="#top-level-directories" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="exported-headers">
+<h3>Exported headers<a class="headerlink" href="#exported-headers" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="build-system">
+<h3>Build system<a class="headerlink" href="#build-system" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-arch"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="supported-architectures">
+<h2>Supported architectures<a class="headerlink" href="#supported-architectures" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cortex-m3-and-m4">
+<h3>Cortex M3 and M4<a class="headerlink" href="#cortex-m3-and-m4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="host">
+<h3>Host<a class="headerlink" href="#host" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-platforms"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="supported-platforms">
+<span id="thecore-platforms"></span><h2>Supported platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="st-stm32f4">
+<h3>ST STM32F4<a class="headerlink" href="#st-stm32f4" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="st-stm32l1">
+<h3>ST STM32L1<a class="headerlink" href="#st-stm32l1" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="kinetis-ke02z">
+<h3>Kinetis KE02Z<a class="headerlink" href="#kinetis-ke02z" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="particle-electron">
+<h3>Particle Electron<a class="headerlink" href="#particle-electron" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="tiva-c-series-tm4c123g">
+<h3>Tiva C series TM4C123G<a class="headerlink" href="#tiva-c-series-tm4c123g" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-drivers"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="drivers">
+<h2>Drivers<a class="headerlink" href="#drivers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cirrus-logic-cs43l22-audio-dac">
+<h3>Cirrus Logic CS43L22 audio DAC<a class="headerlink" href="#cirrus-logic-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="hm-10-bluetooth-btle-module">
+<h3>HM-10 Bluetooth BTLE module<a class="headerlink" href="#hm-10-bluetooth-btle-module" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="pc8544-nokia-5110-display">
+<h3>PC8544 Nokia 5110 display<a class="headerlink" href="#pc8544-nokia-5110-display" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="sdspi-driver">
+<h3>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="bh1750-digital-light-sensor">
+<h3>BH1750 Digital Light sensor<a class="headerlink" href="#bh1750-digital-light-sensor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="fc-28-moisture-sensor">
+<h3>FC-28 moisture sensor<a class="headerlink" href="#fc-28-moisture-sensor" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="htu21d-humidity-and-temperature-sensor">
+<h3>HTU21D humidity and temperature sensor<a class="headerlink" href="#htu21d-humidity-and-temperature-sensor" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-utilities"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="libraries-and-utilities">
+<h2>Libraries and utilities<a class="headerlink" href="#libraries-and-utilities" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="console-streams">
+<h3>Console streams<a class="headerlink" href="#console-streams" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="assertions-and-error-handling">
+<h3>Assertions and error handling<a class="headerlink" href="#assertions-and-error-handling" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="filesystem">
+<h3>Filesystem<a class="headerlink" href="#filesystem" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="newlib-stubs">
+<h3>Newlib stubs<a class="headerlink" href="#newlib-stubs" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="configurator">
+<h3>Configurator<a class="headerlink" href="#configurator" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-os_layer"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="os-abstraction-layer">
+<h2>OS abstraction layer<a class="headerlink" href="#os-abstraction-layer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="no-os-abstractions">
+<h3>No-OS abstractions<a class="headerlink" href="#no-os-abstractions" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="freertos">
+<h3>FreeRTOS<a class="headerlink" href="#freertos" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="posix-host">
+<h3>POSIX (host)<a class="headerlink" href="#posix-host" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-community"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="community-and-developer-guidelines">
+<span id="thecore-developerdocs"></span><h2>Community and developer guidelines<a class="headerlink" href="#community-and-developer-guidelines" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="roadmap">
+<span id="thecore-roadmap"></span><h3>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="brancing-model">
+<span id="thecore-branching"></span><h3>Brancing model<a class="headerlink" href="#brancing-model" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="code-and-commit-style">
+<h3>Code and commit style<a class="headerlink" href="#code-and-commit-style" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-docs"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="documentation-development-and-contribution">
+<h2>Documentation development and contribution<a class="headerlink" href="#documentation-development-and-contribution" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-all-this-section-are-about">
+<h3>What all this section are about?<a class="headerlink" href="#what-all-this-section-are-about" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="building-documentation">
+<h3>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="publishing-docs-on-github-pages">
+<h3>Publishing docs on github pages<a class="headerlink" href="#publishing-docs-on-github-pages" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-testing"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="testing-and-ci">
+<h2>Testing and CI<a class="headerlink" href="#testing-and-ci" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="unit-tests">
+<h3>Unit tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="on-device-tests">
+<h3>On-device tests<a class="headerlink" href="#on-device-tests" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="travis">
+<h3>Travis<a class="headerlink" href="#travis" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<span id="document-credits"></span><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="credits-and-acknowledgements">
+<span id="thecore-credits"></span><h2>Credits and acknowledgements<a class="headerlink" href="#credits-and-acknowledgements" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 <p>Release: </p>
 <p>Version: </p>
-<p>Today: Jul 05, 2017</p>
-<p>Root URL: <a class="reference external" href="http://forgge.github.io/theCore//">root URL</a></p>
+<p>Today: Jul 06, 2017</p>
+<p>Root URL: <a class="reference external" href="https://forgge.github.io/theCore/">root URL</a></p>
 <div class="section" id="stub-section">
 <span id="thecore-stub"></span><h2>Stub section<a class="headerlink" href="#stub-section" title="Permalink to this headline">¶</a></h2>
 </div>

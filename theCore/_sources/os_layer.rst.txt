@@ -1,0 +1,14 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+OS abstraction layer
+====================
+
+No-OS abstractions
+------------------
+
+FreeRTOS
+--------
+
+POSIX (host)
+------------

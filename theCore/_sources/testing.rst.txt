@@ -1,0 +1,14 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+Testing and CI
+==============
+
+Unit tests
+----------
+
+On-device tests
+---------------
+
+Travis
+------

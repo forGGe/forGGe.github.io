@@ -1,0 +1,20 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+.. _theCore_DeveloperDocs:
+
+Community and developer guidelines
+==================================
+
+.. _theCore_Roadmap:
+
+Roadmap
+-------
+
+.. _theCore_Branching:
+
+Brancing model
+--------------
+
+Code and commit style
+---------------------

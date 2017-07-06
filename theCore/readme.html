@@ -36,6 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="theCore  documentation" href="index.html"/>
+        <link rel="next" title="Guides" href="guides.html"/>
         <link rel="prev" title="Welcome to theCore documentation!" href="index.html"/> 
 
   
@@ -90,6 +91,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">theCore: C++ Embedded Framework</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#where-to-get-thecore">Where to get theCore</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#supported-platforms">Supported platforms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#license">License</a></li>
@@ -97,6 +99,18 @@
 <li class="toctree-l2"><a class="reference internal" href="#contribution-using">Contribution &amp; Using</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Standalone examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_structure.html">Project structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arch.html">Supported architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platforms.html">Supported platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drivers.html">Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utilities.html">Libraries and utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="os_layer.html">OS abstraction layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="community.html">Community and developer guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation development and contribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
 </ul>
 
             
@@ -160,7 +174,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="thecore-c-embedded-framework">
+  <div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This documentation is completely incomplete!
+Designing and aggregating is in progress.</p>
+</div>
+<div class="section" id="thecore-c-embedded-framework">
 <h1>theCore: C++ Embedded Framework<a class="headerlink" href="#thecore-c-embedded-framework" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://travis-ci.org/forGGe/theCore"><img alt="Build Status" src="https://travis-ci.org/forGGe/theCore.svg?branch=master" /></a> <a class="reference external" href="https://gitter.im/forGGe/theCore?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/forGGe/theCore" src="https://badges.gitter.im/forGGe/theCore.svg" /></a></p>
 <div class="section" id="description">
@@ -181,7 +200,7 @@ bare-metal embedded applications.</p>
 greatly reduces error rate and debugging time. Shifting different sanity checks
 to compile time rather than runtime not only makes code more performant, but
 also secure and easier to extend.</p>
-<p>The project is at the initial stage. You can check <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section
+<p>The project is at the initial stage. You can check <a class="reference internal" href="community.html#thecore-roadmap"><span class="std std-ref">Roadmap</span></a> section
 in the documentation or <a class="reference external" href="https://github.com/forGGe/theCore/issues">github issues</a> to get insights on what happens
 right now and where project is moving.</p>
 </div>
@@ -191,17 +210,23 @@ right now and where project is moving.</p>
 <a class="reference external" href="https://forgge.github.io/theCore/html/">multi-page HTML</a> for ease of navigation and <a class="reference external" href="https://forgge.github.io/theCore/singlehtml/">single-page HTML</a> for ease
 of manual searching.</p>
 </div>
+<div class="section" id="where-to-get-thecore">
+<h2>Where to get theCore<a class="headerlink" href="#where-to-get-thecore" title="Permalink to this headline">¶</a></h2>
+<p>theCore is now available only from source and hosted solely on <a class="reference external" href="https://github.com/forGGe/theCore/">GitHub</a>.
+There are different branches for development and stable versions. Check <a class="reference internal" href="community.html#thecore-branching"><span class="std std-ref">Brancing model</span></a>
+section for information about branches purpose.</p>
+</div>
 <div class="section" id="getting-started">
 <h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
-<p>You can start using theCore by completing guides and tutorials in the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a>
+<p>You can start using theCore by completing guides and tutorials in the <a class="reference internal" href="guides.html#thecore-guides"><span class="std std-ref">Guides</span></a>
 section or check the source code of <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the standalone blinky example project</a>.</p>
 <p>It is also worth to look at examples that are placed in <cite>examples</cite> dir and
-read the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section to understand how to build and launch them.</p>
+read the <a class="reference internal" href="examples.html#thecore-examples"><span class="std std-ref">Standalone examples</span></a> section to understand how to build and launch them.</p>
 </div>
 <div class="section" id="supported-platforms">
 <h2>Supported platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h2>
 <p>Supported platform list along with information about each platform is located
-in <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section.</p>
+in <a class="reference internal" href="platforms.html#thecore-platforms"><span class="std std-ref">Supported platforms</span></a> section.</p>
 </div>
 <div class="section" id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
@@ -213,19 +238,19 @@ in <a class="reference internal" href="index.html#thecore-stub"><span class="std
 <ul class="simple">
 <li>C++11 and C++14 - as a main programming language standards.</li>
 <li>Python 3 and <a class="reference external" href="https://nedbatchelder.com/code/cog/">cog</a> - code generation.</li>
-<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> and <a class="reference external" href="http://www.sphinx-doc.org/en">Sphinx</a> - in-source and project-wide documentation.</li>
+<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/">Doxygen</a> and <a class="reference external" href="http://www.sphinx-doc.org/">Sphinx</a> - in-source and project-wide documentation.</li>
 <li><a class="reference external" href="https://cmake.org/">CMake</a> - build-system.</li>
 <li><a class="reference external" href="https://nixos.org/nix/">Nix</a> - development environment management.</li>
 <li><a class="reference external" href="http://cpputest.github.io/">CppUTest</a> and <a class="reference external" href="http://www.throwtheswitch.org/unity/">Unity</a> - unit and on-device testing.</li>
 <li><a class="reference external" href="https://travis-ci.org/forGGe/theCore/">Travis</a> - continuos integration.</li>
 </ul>
-<p>Check the <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section for more.</p>
+<p>Check the <a class="reference internal" href="credits.html#thecore-credits"><span class="std std-ref">Credits and acknowledgements</span></a> section for more.</p>
 </div>
 <div class="section" id="contribution-using">
 <h2>Contribution &amp; Using<a class="headerlink" href="#contribution-using" title="Permalink to this headline">¶</a></h2>
 <p>The project is on its very beginning, so any help is more than welcome
 and highly appreciated. If you’d like to take a part in the project
-growth and (or) have any questions – take a look at <a class="reference internal" href="index.html#thecore-stub"><span class="std std-ref">Stub section</span></a> section,
+growth and (or) have any questions – take a look at <a class="reference internal" href="community.html#thecore-developerdocs"><span class="std std-ref">Community and developer guidelines</span></a> section,
 leave message at <a class="reference external" href="https://gitter.im/forGGe/theCore">gitter</a>, contact me directly at <a class="reference external" href="mailto:forgge&#37;&#52;&#48;gmail&#46;com">forgge<span>&#64;</span>gmail<span>&#46;</span>com</a>,
 or simply check out <a class="reference external" href="https://github.com/forGGe/theCore/issues">a list of theCore issues</a>.</p>
 <p>If you have any suggestions on theCore improvement or just
@@ -246,6 +271,8 @@ open some issues and we will do our best to handle this ASAP. Good luck!</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="guides.html" class="btn btn-neutral float-right" title="Guides" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Welcome to theCore documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

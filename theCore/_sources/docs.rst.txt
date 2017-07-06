@@ -1,0 +1,14 @@
+.. warning:: This documentation is completely incomplete!
+             Designing and aggregating is in progress.
+
+Documentation development and contribution
+==========================================
+
+What all this section are about?
+--------------------------------
+
+Building documentation
+----------------------
+
+Publishing docs on github pages
+-------------------------------

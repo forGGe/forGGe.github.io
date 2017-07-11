@@ -99,8 +99,16 @@
 <li class="toctree-l1"><a class="reference internal" href="os_layer.html">OS abstraction layer</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Community and developer guidelines</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#roadmap">Roadmap</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#brancing-model">Brancing model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#code-and-commit-style">Code and commit style</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#branching-and-release-model">Branching and release model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-style">Code style</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#whitespaces-and-indentation">Whitespaces and indentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bracket-placement">Bracket placement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-length">Code length</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#naming">Naming</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#commit-and-pr-style">Commit and PR style</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation development and contribution</a></li>
@@ -176,14 +184,177 @@ Designing and aggregating is in progress.</p>
 </div>
 <div class="section" id="community-and-developer-guidelines">
 <span id="thecore-developerdocs"></span><h1>Community and developer guidelines<a class="headerlink" href="#community-and-developer-guidelines" title="Permalink to this headline">¶</a></h1>
+<p>To make referencing easier, rules and guidelines (if present) are numbered inside section.</p>
 <div class="section" id="roadmap">
 <span id="thecore-roadmap"></span><h2>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="brancing-model">
-<span id="thecore-branching"></span><h2>Brancing model<a class="headerlink" href="#brancing-model" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="branching-and-release-model">
+<span id="thecore-branching"></span><h2>Branching and release model<a class="headerlink" href="#branching-and-release-model" title="Permalink to this headline">¶</a></h2>
+<p>There are two main branches - <code class="docutils literal"><span class="pre">develop</span></code> and <code class="docutils literal"><span class="pre">master</span></code>.
+Both branches are protected against force-pushing unless it is really-really
+required (almost never happen).</p>
+<p>As names state, all the development (normally) happens in <code class="docutils literal"><span class="pre">develop</span></code> branch,
+while <code class="docutils literal"><span class="pre">master</span></code> contains stable versions. <code class="docutils literal"><span class="pre">master</span></code> branch is tagged according
+to <a class="reference external" href="http://semver.org/">the semantic versioning approach</a>.</p>
+<p>Full explanation of branching model, accepted in theCore you can find in <a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/">nvie git article</a>.</p>
 </div>
-<div class="section" id="code-and-commit-style">
-<h2>Code and commit style<a class="headerlink" href="#code-and-commit-style" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="code-style">
+<h2>Code style<a class="headerlink" href="#code-style" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The source formatting script called <code class="docutils literal"><span class="pre">srcformat.sh</span></code> in <code class="docutils literal"><span class="pre">scripts</span></code> directory,
+through it is still under development.</p>
+</div>
+<div class="section" id="whitespaces-and-indentation">
+<h3>Whitespaces and indentation<a class="headerlink" href="#whitespaces-and-indentation" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Do not use tabs. Only spaces are allowed.</p>
+</li>
+<li><p class="first">Set indent to 4 spaces per indent.</p>
+</li>
+<li><p class="first">Indent <code class="docutils literal"><span class="pre">public</span></code>, <code class="docutils literal"><span class="pre">private</span></code>, <code class="docutils literal"><span class="pre">protected</span></code> with the same indent as
+a <code class="docutils literal"><span class="pre">class</span></code> block.</p>
+</li>
+<li><p class="first">Indent <code class="docutils literal"><span class="pre">class</span></code> block with the same indent as a namespace:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// OK</span>
+<span class="k">namespace</span> <span class="n">foo</span>
+<span class="p">{</span>
+
+<span class="k">class</span> <span class="nc">entity</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="cm">/* */</span>
+<span class="k">private</span><span class="o">:</span>
+    <span class="cm">/* */</span>
+<span class="k">protected</span><span class="o">:</span>
+    <span class="cm">/* */</span>
+<span class="p">};</span>
+
+<span class="p">}</span> <span class="c1">// namespace foo</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Indent switch blocks so that the <code class="docutils literal"><span class="pre">case</span> <span class="pre">X:</span></code> statements are indented in the switch block:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// OK</span>
+<span class="k">switch</span> <span class="p">(</span><span class="n">foo</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
+        <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+
+    <span class="k">case</span> <span class="mi">2</span><span class="o">:</span> <span class="p">{</span>
+        <span class="n">a</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span>
+        <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Do not indent labels.</p>
+</li>
+<li><p class="first">Do not indent preprocessor block.</p>
+</li>
+<li><p class="first">Insert space around operators.</p>
+</li>
+<li><p class="first">Insert space padding between <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code> and the following bracket.</p>
+</li>
+<li><p class="first"><strong>Do not leave trailing whitespaces.</strong></p>
+</li>
+</ol>
+</div>
+<div class="section" id="bracket-placement">
+<h3>Bracket placement<a class="headerlink" href="#bracket-placement" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Indent_style#Variant:_1TBS_.28OTBS.29">One True Bracket Style</a>.</p>
+</li>
+<li><p class="first">Place brackets in namespaces, classes, extern-“C” and functions on the next line, e.g:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// Wrong</span>
+<span class="k">namespace</span> <span class="n">foo</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="c1">// OK</span>
+<span class="k">namespace</span> <span class="n">bar</span>
+<span class="p">{</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code>…).</p>
+</li>
+<li><p class="first">Close whitespace in the angle brackets of template definitions:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="code-length">
+<h3>Code length<a class="headerlink" href="#code-length" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Prefer 80 character code line length. 100 characters is a maximum allowed line length.</li>
+<li>Prefer to keep functions and methods with not more than 100 lines of code.</li>
+</ol>
+</div>
+<div class="section" id="naming">
+<h3>Naming<a class="headerlink" href="#naming" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> for identifer names.</p>
+</li>
+<li><p class="first">Use <code class="docutils literal"><span class="pre">m_</span></code> prefix when naming private and protected class members.</p>
+</li>
+<li><p class="first">Use CamelCase style only for template parameters:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">CrazyAllocator</span><span class="o">&gt;</span>
+<span class="k">class</span> <span class="nc">my_strange_container</span><span class="p">;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first"><strong>Do not leave commented code.</strong></p>
+</li>
+<li><p class="first">Prefer not keeping <code class="docutils literal"><span class="pre">TODO</span></code> in code without corresponding issue.
+Place issue number next to the <code class="docutils literal"><span class="pre">TODO</span></code> with a little explanation why it is there:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// TODO #123: replace foo() with something that exposes smaller IRQ latency.</span>
+<span class="n">foo</span><span class="p">();</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Use doxygen for commenting the function prototypes and class methods.</p>
+</li>
+<li><p class="first">Use C++ comment lines for doxygen commenting:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">//! This function does something.</span>
+<span class="c1">//! \details Also it calls 911.</span>
+<span class="kt">void</span> <span class="nf">foo</span><span class="p">();</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Do not use <code class="docutils literal"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first comment line.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="commit-and-pr-style">
+<h2>Commit and PR style<a class="headerlink" href="#commit-and-pr-style" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Try to follow common <a class="reference external" href="https://chris.beams.io/posts/git-commit/">git guidelines</a>.</p>
+</li>
+<li><p class="first"><strong>Do not keep commits named just</strong> <code class="docutils literal"><span class="pre">FIX</span></code> <strong>,</strong> <code class="docutils literal"><span class="pre">Review</span></code> <strong>,</strong> <code class="docutils literal"><span class="pre">tmp</span></code> <strong>, etc.</strong></p>
+</li>
+<li><p class="first">Prefer placing issue number at the start of the summary line, prefixed with <code class="docutils literal"><span class="pre">&gt;#</span></code>:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>&gt;#911 Implement calling police officer
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Do not</strong> include issue number in the pull request name.</p>
+</li>
+<li><p class="first">Use <code class="docutils literal"><span class="pre">[WIP]</span></code> (Work In Progress) prefix for PRs that are still in progress or review
+and should not be merged right away.</p>
+</li>
+</ol>
 </div>
 </div>
 

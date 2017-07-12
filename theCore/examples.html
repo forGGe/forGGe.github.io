@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Standalone examples &mdash; theCore  documentation</title>
+  <title>Examples &mdash; theCore  documentation</title>
   
 
   
@@ -90,9 +90,15 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="readme.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Standalone examples</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#initial-setup">Initial setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-blinky-project">STM32F4 discovery blinky project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#simple-host-hello-world-example">Simple host hello world example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-host-hello-world-example">Simple host hello world example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expected-output">Expected output</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-external-interrupts-from-user-button">STM32F4 discovery and external interrupts from user button</a></li>
@@ -154,7 +160,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Standalone examples</li>
+      <li>Examples</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -178,13 +184,82 @@
 <p class="last">This documentation is completely incomplete!
 Designing and aggregating is in progress.</p>
 </div>
-<div class="section" id="standalone-examples">
-<span id="thecore-examples"></span><h1>Standalone examples<a class="headerlink" href="#standalone-examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="examples">
+<span id="thecore-examples"></span><h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<p>theCore examples are organized in a form of separate projects that can be
+extracted and used as a base for custom application.</p>
+<p>Examples are of two types. First is standalone example, placed in
+the separate repository for convenience. For such, in each section you will
+find a reference to the project location. Second type of examples is in-source
+examples, placed under <code class="docutils literal"><span class="pre">examples</span></code> directory within theCore source tree.</p>
+<div class="section" id="initial-setup">
+<h2>Initial setup<a class="headerlink" href="#initial-setup" title="Permalink to this headline">¶</a></h2>
+<p>Before any example can be built, an appropriate development environment must
+be configured either manually by installing packages like toolchains or
+by using Nix.</p>
+<p>Using Nix is recommended. The <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> section contains
+the explanation about how to install and run Nix.</p>
+<p>To manually install required software without Nix (not recommended),
+refer to <a class="reference internal" href="guides.html#thecore-nonixinstall"><span class="std std-ref">Getting required development pacakges without Nix</span></a> section.
+There you will find some insights about getting hand-made development environment.</p>
+</div>
 <div class="section" id="stm32f4-discovery-blinky-project">
 <h2>STM32F4 discovery blinky project<a class="headerlink" href="#stm32f4-discovery-blinky-project" title="Permalink to this headline">¶</a></h2>
+<p>The example runs on Discovery kit with STM32F407VG MCU and demonstrates
+simple project that uses onboard LEDs.</p>
+<p>Refer to <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the dedicated repository</a> to check how to build and run the example.</p>
 </div>
 <div class="section" id="simple-host-hello-world-example">
 <h2>Simple host hello world example<a class="headerlink" href="#simple-host-hello-world-example" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/host_hello</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">host</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">none</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">gcc/g++ v5.2 or newer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">none</td>
+</tr>
+</tbody>
+</table>
+<p>This example shows theCore running on the host target.
+By <cite>host</cite> target is understood an environment capable to both compile and
+run theCore applications.</p>
+<p>Application demonstrates a console stream usage and a simple assertion.</p>
+<div class="section" id="building">
+<h3>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Complete <a class="reference internal" href="#initial-setup">Initial setup</a> section.</li>
+<li>Execute build commands.</li>
+</ol>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
+<span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="o">..</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running">
+<h3>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h3>
+<p>Execute resulting application.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">hello</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="expected-output">
+<h3>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Hello, Host World!
+This is an assert demonstration. Application will abort.
+hello: /home/user/projects/thecore/examples/host_hello/main.cpp:7: int main(): Assertion `1 == 0&#39; failed.
+Aborted (core dumped)
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="stm32f4-discovery-audio-example-with-cs43l22-audio-dac">
 <h2>STM32F4 discovery audio example with CS43L22 audio DAC<a class="headerlink" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h2>

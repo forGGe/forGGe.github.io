@@ -6,6 +6,8 @@
 Guides
 ======
 
+.. _theCore_GettingStarted:
+
 Getting started
 ---------------
 
@@ -14,3 +16,8 @@ Creating your first Hello World application
 
 Multi-platform application
 --------------------------
+
+.. _theCore_NoNixInstall:
+
+Getting required development pacakges without Nix
+-------------------------------------------------

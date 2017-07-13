@@ -55,22 +55,18 @@ Building
 ~~~~~~~~
 
 #. Complete `Initial setup`_ section.
-#. Execute build commands.
+#. Execute build commands::
 
-::
-
-  cd examples/host_hello
-  mkdir build
-  cd build
-  cmake ..
-  make
+     cd examples/host_hello
+     mkdir build
+     cd build
+     cmake ..
+     make
 
 Running
 ~~~~~~~
 
-Execute resulting application.
-
-::
+Execute resulting application::
 
   ./hello
 
@@ -156,24 +152,18 @@ Firmware will be flashed via ``openocd`` and ``gdb``.
      openocd -f ./scripts/stm32f4discovery.cfg
 
 #. Launch ``minicom`` with device associated with USB <-> UART converter.
-   (``/dev/ttyUSB0`` here used as an example).
-
-   ::
+   (``/dev/ttyUSB0`` here used as an example)::
 
      # From new terminal
      minicom -D /dev/ttyUSB0
 
 #. Provided that your main terminal's current directory is ``build``,
-   launch ``gdb``.
-
-   ::
+   launch ``gdb``::
 
      # From the build directory
      arm-none-eabi-gdb htu21d_example
 
-#. Under GDB shell, connect to ``openocd`` and flash firmware.
-
-   ::
+#. Under GDB shell, connect to ``openocd`` and flash firmware::
 
      (gdb) target remote :3333
      Remote debugging using :3333
@@ -190,9 +180,7 @@ Firmware will be flashed via ``openocd`` and ``gdb``.
      Start address 0x800477c, load size 30388
      Transfer rate: 18 KB/sec, 10129 bytes/write.
 
-#. Start new firmware.
-
-   ::
+#. Start new firmware::
 
      (gdb) continue
      Continuing.
@@ -202,9 +190,7 @@ Firmware will be flashed via ``openocd`` and ``gdb``.
 Expected output
 ~~~~~~~~~~~~~~~
 
-In ``minicom`` you should be able to see:
-
-::
+In ``minicom`` you should be able to see::
 
   Welcome to theCore
   Starting HTU21D sensor...

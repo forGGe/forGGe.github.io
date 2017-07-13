@@ -1,6 +1,3 @@
-.. warning:: This documentation is completely incomplete!
-             Designing and aggregating is in progress.
-
 .. This file serves only one main purpose - include readme into the sphinx,
    and allow to process its ToC as needed.
 

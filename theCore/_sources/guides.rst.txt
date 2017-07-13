@@ -19,5 +19,5 @@ Multi-platform application
 
 .. _theCore_NoNixInstall:
 
-Getting required development pacakges without Nix
+Getting required development packages without Nix
 -------------------------------------------------

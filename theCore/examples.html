@@ -100,7 +100,13 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">STM32F4 discovery and HTU21D temperature and humidity sensor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#wiring">Wiring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Expected output</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-external-interrupts-from-user-button">STM32F4 discovery and external interrupts from user button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-blinky">STM32F4 discovery blinky</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tm4c123g-launchpad-blinky">TM4C123G LaunchPad blinky</a></li>
@@ -200,7 +206,7 @@ by using Nix.</p>
 <p>Using Nix is recommended. The <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> section contains
 the explanation about how to install and run Nix.</p>
 <p>To manually install required software without Nix (not recommended),
-refer to <a class="reference internal" href="guides.html#thecore-nonixinstall"><span class="std std-ref">Getting required development pacakges without Nix</span></a> section.
+refer to <a class="reference internal" href="guides.html#thecore-nonixinstall"><span class="std std-ref">Getting required development packages without Nix</span></a> section.
 There you will find some insights about getting hand-made development environment.</p>
 </div>
 <div class="section" id="stm32f4-discovery-blinky-project">
@@ -237,7 +243,8 @@ run theCore applications.</p>
 <li>Complete <a class="reference internal" href="#initial-setup">Initial setup</a> section.</li>
 <li>Execute build commands.</li>
 </ol>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">examples</span><span class="o">/</span><span class="n">host_hello</span>
+<span class="n">mkdir</span> <span class="n">build</span>
 <span class="n">cd</span> <span class="n">build</span>
 <span class="n">cmake</span> <span class="o">..</span>
 <span class="n">make</span>
@@ -266,6 +273,156 @@ Aborted (core dumped)
 </div>
 <div class="section" id="stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">
 <h2>STM32F4 discovery and HTU21D temperature and humidity sensor<a class="headerlink" href="#stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/htu21d</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">STM32F4 Discovery board</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART2, HTU21D sensor</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">GNU arm-none-eabi v.5.2 or newer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">openocd, minicom</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="wiring">
+<h3>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Connect <a class="reference external" href="https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf">HTU21D</a> to I2C1 on the Discovery board using following pins:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PB6 (I2C1 SCL)</td>
+<td>sensor’s SCL</td>
+</tr>
+<tr class="row-even"><td>PB9 (I2C1 SDA)</td>
+<td>sensor’s SDA</td>
+</tr>
+<tr class="row-odd"><td>+3.3V</td>
+<td>sensor’s VDD</td>
+</tr>
+<tr class="row-even"><td>GND</td>
+<td>sensor’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Attach any preferable UART-to-USB converter <a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a> module according to following pinout:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PD5 (USART2 TX)</td>
+<td>module’s RX</td>
+</tr>
+<tr class="row-even"><td>PD6 (USART2 RX)</td>
+<td>module’s TX</td>
+</tr>
+<tr class="row-odd"><td>GND</td>
+<td>module’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>Below is the example wiring.</p>
+<img alt="_images/htu21d.jpg" src="_images/htu21d.jpg" />
+</div>
+<div class="section" id="id1">
+<h3>Building<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Complete <a class="reference internal" href="#initial-setup">Initial setup</a> section.</p>
+</li>
+<li><p class="first">Execute build commands.
+The CMake Toolchain file is required to build this application.
+theCore already has one suitable for this target.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">examples</span><span class="o">/</span><span class="n">htu21d</span>
+<span class="n">mkdir</span> <span class="n">build</span>
+<span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_TOOLCHAIN_FILE</span><span class="o">=../../../</span><span class="n">toolchains</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">cm4</span><span class="o">-</span><span class="n">gnu</span><span class="o">.</span><span class="n">cmake</span> <span class="o">..</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>Running<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Firmware will be flashed via <code class="docutils literal"><span class="pre">openocd</span></code> and <code class="docutils literal"><span class="pre">gdb</span></code>.</p>
+<ol class="arabic">
+<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> in the separate terminal using script provided by theCore.
+Alternatively, you can use script from openocd installation.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">theCore</span>
+<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
+(<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example).</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">minicom</span> <span class="o">-</span><span class="n">D</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
+launch <code class="docutils literal"><span class="pre">gdb</span></code>.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
+<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">htu21d_example</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
+Remote debugging using :3333
+0x00000000 in ?? ()
+
+(gdb) monitor reset halt
+target state: halted
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
+
+(gdb) load
+Loading section .text, size 0x7678 lma 0x8000000
+Loading section .data, size 0x3c lma 0x8007678
+Start address 0x800477c, load size 30388
+Transfer rate: 18 KB/sec, 10129 bytes/write.
+</pre></div>
+</div>
+</li>
+<li><p class="first">Start new firmware.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
+<span class="n">Continuing</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Watch console output.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h3>Expected output<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>In <code class="docutils literal"><span class="pre">minicom</span></code> you should be able to see:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Welcome</span> <span class="n">to</span> <span class="n">theCore</span>
+<span class="n">Starting</span> <span class="n">HTU21D</span> <span class="n">sensor</span><span class="o">...</span>
+<span class="n">Reset</span> <span class="n">done</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">21.722</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">40.882</span><span class="o">%</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">21.712</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">40.859</span><span class="o">%</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">21.701</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">40.852</span><span class="o">%</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="stm32f4-discovery-and-external-interrupts-from-user-button">
 <h2>STM32F4 discovery and external interrupts from user button<a class="headerlink" href="#stm32f4-discovery-and-external-interrupts-from-user-button" title="Permalink to this headline">¶</a></h2>

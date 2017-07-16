@@ -7,8 +7,8 @@
 Welcome to theCore documentation!
 ===================================
 
-.. warning:: This documentation is completely incomplete!
-             Designing and aggregating is in progress.
+.. note:: This documentation is under construction.
+          You may find that many sections are incomplete.
 
 .. only:: builder_html
 

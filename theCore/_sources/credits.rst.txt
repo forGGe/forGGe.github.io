@@ -1,7 +1,6 @@
-.. warning:: This documentation is completely incomplete!
-             Designing and aggregating is in progress.
-
 .. _theCore_Credits:
 
 Credits and acknowledgements
 ============================
+
+.. note:: This section is under construction.

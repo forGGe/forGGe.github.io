@@ -1,14 +1,19 @@
-.. warning:: This documentation is completely incomplete!
-             Designing and aggregating is in progress.
-
 Documentation development and contribution
 ==========================================
+
+.. note:: This section is under construction.
 
 What all this section are about?
 --------------------------------
 
+.. note:: This section is under construction.
+
 Building documentation
 ----------------------
 
+.. note:: This section is under construction.
+
 Publishing docs on github pages
 -------------------------------
+
+.. note:: This section is under construction.

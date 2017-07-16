@@ -7,8 +7,14 @@ Testing and CI
 Unit tests
 ----------
 
+.. note:: This section is under construction.
+
 On-device tests
 ---------------
 
+.. note:: This section is under construction.
+
 Travis
 ------
+
+.. note:: This section is under construction.

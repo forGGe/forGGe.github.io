@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -46,7 +44,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -83,10 +80,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+                <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="readme.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
@@ -99,8 +93,8 @@
 <li class="toctree-l1"><a class="reference internal" href="os_layer.html">OS abstraction layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community.html">Community and developer guidelines</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation development and contribution</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#what-all-this-section-are-about">What all this section are about?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#building-documentation">Building documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-all-this-sections-are-about">What all this sections are about?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-docs-on-github-pages">Publishing docs on github pages</a></li>
 </ul>
 </li>
@@ -118,10 +112,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">theCore</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">theCore</a>
       </nav>
 
 
@@ -130,40 +122,23 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Documentation development and contribution</li>
-    
-    
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Documentation development and contribution</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/docs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -171,19 +146,47 @@
             
   <div class="section" id="documentation-development-and-contribution">
 <h1>Documentation development and contribution<a class="headerlink" href="#documentation-development-and-contribution" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-<div class="section" id="what-all-this-section-are-about">
-<h2>What all this section are about?<a class="headerlink" href="#what-all-this-section-are-about" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
+<p>theCore documentation, as you may noticed, hosted on GitHub pages and
+built using <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> with a few extensions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://docs.readthedocs.io/en/latest/theme.html">Read The Docs theme</a> - awesome theme.</li>
+<li><a class="reference external" href="https://sphinxcontrib-fulltoc.readthedocs.io">FullToc</a> - full ToC in the sidebar.</li>
+</ul>
+</div></blockquote>
+<p>All the documentation sources placed under <code class="docutils literal"><span class="pre">doc</span></code> top-level directory.</p>
+<p>To contribute to the documentation, you probably would like to first build
+and validate docs locally. For that, build dependencies must be installed either
+manually or by using Nix. Check the <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> for more info about
+Nix case.</p>
+<p>Following sections will provide you with insights about docs structure and build
+procedure.</p>
 <div class="section" id="building-documentation">
 <h2>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h2>
+<p>theCore build system provides separate target for building documentation, so
+there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
+<ol class="arabic">
+<li><p class="first">Finish <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
+</li>
+<li><p class="first">Launch documentation build:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From theCore directory</span>
+<span class="n">mkdir</span> <span class="n">doc_build</span>
+<span class="n">cd</span> <span class="n">doc_build</span>
+<span class="n">cmake</span> <span class="o">..</span>
+<span class="n">make</span> <span class="n">core_sphinx</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open generated docs by any preferable browser:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">doc_build/doc/sphinx/theCore/index.html</span></code> - main page of multi-page version.</li>
+<li><code class="docutils literal"><span class="pre">doc_build/doc/sphinx/theCore/singlehtml/index.html</span></code> - main page of single-paged version.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="what-all-this-sections-are-about">
+<h2>What all this sections are about?<a class="headerlink" href="#what-all-this-sections-are-about" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
@@ -191,27 +194,42 @@
 </div>
 <div class="section" id="publishing-docs-on-github-pages">
 <h2>Publishing docs on github pages<a class="headerlink" href="#publishing-docs-on-github-pages" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
+<p>As noted previously, docs are hosted in GitHub pages. <a class="reference external" href="https://github.com/forGGe/forGGe.github.io">The separate repository</a>
+holds auto-generated static HTML files which are automatically displayed if placed in
+master branch of that repo. Jekyll is disabled.</p>
+<p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
+<p>Contributing to the documentation consist of creating the PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
+<p>After PR is opened, the new documentation is processed by the author manually in following fashion:</p>
+<ol class="arabic">
+<li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-documentation">Building documentation</a> section.</p>
+</li>
+<li><p class="first">Generated static files are copied to the github pages clone:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">doc_build</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">sphinx</span><span class="o">/*</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">the</span><span class="o">/</span><span class="n">gh_pages</span><span class="o">/</span> <span class="o">-</span><span class="n">rv</span>
+</pre></div>
 </div>
+</li>
+<li><p class="first">Changes are committed and pushed to the remote:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span>
+<span class="n">git</span> <span class="n">commit</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="testing.html" class="btn btn-neutral float-right" title="Testing and CI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="testing.html" class="btn btn-neutral float-right" title="Testing and CI" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="community.html" class="btn btn-neutral" title="Community and developer guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="community.html" class="btn btn-neutral" title="Community and developer guidelines" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -220,7 +238,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Max Olender.
+        &copy; Copyright 1970, Max Olender.
 
     </p>
   </div>
@@ -245,8 +263,7 @@
             VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

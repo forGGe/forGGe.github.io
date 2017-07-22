@@ -31,7 +31,7 @@ you need during development of the embedded application.
 You can either do it manually and spend decent time on that or ask
 package manager called Nix_ to setup all the development packages for you.
 
-If you prefer to manually install dependencies, refer to :ref:theCore_NoNixInstall
+If you prefer to manually install dependencies, refer to :ref:`theCore_NoNixInstall`
 section for more details.
 
 Otherwise start with following.

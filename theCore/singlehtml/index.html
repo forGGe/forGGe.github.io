@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -44,7 +42,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -74,9 +71,7 @@
           
             
             
-            
-              <!-- Local TOC -->
-              <div class="local-toc"><p class="caption"><span class="caption-text">Contents:</span></p>
+                <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-readme">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-guides">Guides</a></li>
@@ -92,7 +87,7 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-testing">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-credits">Credits and acknowledgements</a></li>
 </ul>
-</div>
+
             
           
         </div>
@@ -103,10 +98,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html#document-index">theCore</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html#document-index">theCore</a>
       </nav>
 
 
@@ -119,34 +112,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html#document-index">Docs</a> &raquo;</li>
-        
-      <li>theCore  documentation</li>
-    
-    
+    <li><a href="index.html#document-index">Docs</a> &raquo;</li>
+      
+    <li>theCore  documentation</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -274,7 +250,7 @@ build dependencies and some additional host utilities. Everything that
 you need during development of the embedded application.</p>
 <p>You can either do it manually and spend decent time on that or ask
 package manager called <a class="reference external" href="https://nixos.org/nix/">Nix</a> to setup all the development packages for you.</p>
-<p>If you prefer to manually install dependencies, refer to :ref:theCore_NoNixInstall
+<p>If you prefer to manually install dependencies, refer to <a class="reference internal" href="#thecore-nonixinstall"><span class="std std-ref">Getting required development packages without Nix</span></a>
 section for more details.</p>
 <p>Otherwise start with following.</p>
 <ol class="arabic">
@@ -296,7 +272,7 @@ the following shell command (as a user other than root):</p>
 </div>
 <div class="section" id="more-info-about-nix">
 <h4>More info about Nix<a class="headerlink" href="#more-info-about-nix" title="Permalink to this headline">¶</a></h4>
-<p>If you want to get yourself more familiar with Nix, check out <a class="reference external" href="https://www.domenkozar.com/2014/01/02/getting-started-with-nix-package-manager/">the Domenkozar’s blog</a>
+<p>If you want to get yourself more familiar with Nix, check out <a class="reference external" href="https://www.domenkozar.com/2014/01/02/getting-started-with-nix-package-manager/">the Domenkozar&#8217;s blog</a>
 or read the <a class="reference external" href="https://nixos.org/nix/manual/">official documentation</a>.</p>
 </div>
 </div>
@@ -429,13 +405,13 @@ Aborted (core dumped)
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>PD8 (USART3 TX)</td>
-<td>module’s RX</td>
+<td>module&#8217;s RX</td>
 </tr>
 <tr class="row-even"><td>PD9 (USART3 RX)</td>
-<td>module’s TX</td>
+<td>module&#8217;s TX</td>
 </tr>
 <tr class="row-odd"><td>GND</td>
-<td>module’s GND</td>
+<td>module&#8217;s GND</td>
 </tr>
 </tbody>
 </table>
@@ -482,7 +458,7 @@ Alternatively, you can use script from openocd installation.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
+<li><p class="first">Provided that your main terminal&#8217;s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
 launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
 <span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">audio</span>
@@ -558,16 +534,16 @@ Transfer rate: 14 KB/sec, 3762 bytes/write.
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>PB6 (I2C1 SCL)</td>
-<td>sensor’s SCL</td>
+<td>sensor&#8217;s SCL</td>
 </tr>
 <tr class="row-even"><td>PB9 (I2C1 SDA)</td>
-<td>sensor’s SDA</td>
+<td>sensor&#8217;s SDA</td>
 </tr>
 <tr class="row-odd"><td>+3.3V</td>
-<td>sensor’s VDD</td>
+<td>sensor&#8217;s VDD</td>
 </tr>
 <tr class="row-even"><td>GND</td>
-<td>sensor’s GND</td>
+<td>sensor&#8217;s GND</td>
 </tr>
 </tbody>
 </table>
@@ -580,13 +556,13 @@ Transfer rate: 14 KB/sec, 3762 bytes/write.
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>PD5 (USART2 TX)</td>
-<td>module’s RX</td>
+<td>module&#8217;s RX</td>
 </tr>
 <tr class="row-even"><td>PD6 (USART2 RX)</td>
-<td>module’s TX</td>
+<td>module&#8217;s TX</td>
 </tr>
 <tr class="row-odd"><td>GND</td>
-<td>module’s GND</td>
+<td>module&#8217;s GND</td>
 </tr>
 </tbody>
 </table>
@@ -634,7 +610,7 @@ Alternatively, you can use script from openocd installation.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
+<li><p class="first">Provided that your main terminal&#8217;s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
 launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
 <span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">htu21d_example</span>
@@ -724,13 +700,13 @@ pressed), interrupt is generated.</p>
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>PD8 (USART3 TX)</td>
-<td>module’s RX</td>
+<td>module&#8217;s RX</td>
 </tr>
 <tr class="row-even"><td>PD9 (USART3 RX)</td>
-<td>module’s TX</td>
+<td>module&#8217;s TX</td>
 </tr>
 <tr class="row-odd"><td>GND</td>
-<td>module’s GND</td>
+<td>module&#8217;s GND</td>
 </tr>
 </tbody>
 </table>
@@ -778,7 +754,7 @@ Alternatively, you can use script from openocd installation.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
+<li><p class="first">Provided that your main terminal&#8217;s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
 launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
 <span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">htu21d_example</span>
@@ -1184,7 +1160,7 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <ol class="arabic">
 <li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Indent_style#Variant:_1TBS_.28OTBS.29">One True Bracket Style</a>.</p>
 </li>
-<li><p class="first">Place brackets in namespaces, classes, extern-“C” and functions on the next line, e.g:</p>
+<li><p class="first">Place brackets in namespaces, classes, extern-&#8220;C&#8221; and functions on the next line, e.g:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// Wrong</span>
 <span class="k">namespace</span> <span class="n">foo</span> <span class="p">{</span>
 
@@ -1198,7 +1174,7 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </pre></div>
 </div>
 </li>
-<li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code>…).</p>
+<li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code>...).</p>
 </li>
 <li><p class="first">Close whitespace in the angle brackets of template definitions:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
@@ -1277,19 +1253,47 @@ and should not be merged right away.</p>
 </div>
 <span id="document-docs"></span><div class="section" id="documentation-development-and-contribution">
 <h2>Documentation development and contribution<a class="headerlink" href="#documentation-development-and-contribution" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-<div class="section" id="what-all-this-section-are-about">
-<h3>What all this section are about?<a class="headerlink" href="#what-all-this-section-are-about" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
+<p>theCore documentation, as you may noticed, hosted on GitHub pages and
+built using <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> with a few extensions:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference external" href="http://docs.readthedocs.io/en/latest/theme.html">Read The Docs theme</a> - awesome theme.</li>
+<li><a class="reference external" href="https://sphinxcontrib-fulltoc.readthedocs.io">FullToc</a> - full ToC in the sidebar.</li>
+</ul>
+</div></blockquote>
+<p>All the documentation sources placed under <code class="docutils literal"><span class="pre">doc</span></code> top-level directory.</p>
+<p>To contribute to the documentation, you probably would like to first build
+and validate docs locally. For that, build dependencies must be installed either
+manually or by using Nix. Check the <a class="reference internal" href="index.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> for more info about
+Nix case.</p>
+<p>Following sections will provide you with insights about docs structure and build
+procedure.</p>
 <div class="section" id="building-documentation">
 <h3>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h3>
+<p>theCore build system provides separate target for building documentation, so
+there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
+<ol class="arabic">
+<li><p class="first">Finish <a class="reference internal" href="index.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
+</li>
+<li><p class="first">Launch documentation build:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span># From theCore directory
+mkdir doc_build
+cd doc_build
+cmake ..
+make core_sphinx
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open generated docs by any preferable browser:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">doc_build/doc/sphinx/theCore/index.html</span></code> - main page of multi-page version.</li>
+<li><code class="docutils literal"><span class="pre">doc_build/doc/sphinx/theCore/singlehtml/index.html</span></code> - main page of single-paged version.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="what-all-this-sections-are-about">
+<h3>What all this sections are about?<a class="headerlink" href="#what-all-this-sections-are-about" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
@@ -1297,10 +1301,28 @@ and should not be merged right away.</p>
 </div>
 <div class="section" id="publishing-docs-on-github-pages">
 <h3>Publishing docs on github pages<a class="headerlink" href="#publishing-docs-on-github-pages" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
+<p>As noted previously, docs are hosted in GitHub pages. <a class="reference external" href="https://github.com/forGGe/forGGe.github.io">The separate repository</a>
+holds auto-generated static HTML files which are automatically displayed if placed in
+master branch of that repo. Jekyll is disabled.</p>
+<p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
+<p>Contributing to the documentation consist of creating the PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
+<p>After PR is opened, the new documentation is processed by the author manually in following fashion:</p>
+<ol class="arabic">
+<li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-documentation">Building documentation</a> section.</p>
+</li>
+<li><p class="first">Generated static files are copied to the github pages clone:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>cp doc_build/doc/sphinx/* /path/to/the/gh_pages/ -rv
+</pre></div>
 </div>
+</li>
+<li><p class="first">Changes are committed and pushed to the remote:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>git add -u
+git commit
+git push origin master
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 <span id="document-testing"></span><div class="section" id="testing-and-ci">
@@ -1333,14 +1355,13 @@ and should not be merged right away.</p>
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
 </div>
+<div class="section" id="invoking-sphinx-from-cmake">
+<h3>Invoking Sphinx from CMake<a class="headerlink" href="#invoking-sphinx-from-cmake" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://eb2.co/blog/2012/03/sphinx-and-cmake-beautiful-documentation-for-c-projects/">Sphinx and CMake: Beautiful Documentation For C++ Projects</a> by Eric Scott Barr
+is a great article, describes how to integrate those tools together.
+This is how theCore builds and deploys its documentation.</p>
 </div>
 </div>
-<p>Release: </p>
-<p>Version: </p>
-<p>Today: Jul 16, 2017</p>
-<p>Root URL: <a class="reference external" href="http://forgge.github.io/theCore/">root URL</a></p>
-<div class="section" id="stub-section">
-<span id="thecore-stub"></span><h2>Stub section<a class="headerlink" href="#stub-section" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
@@ -1353,9 +1374,6 @@ and should not be merged right away.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
           <footer>
   
@@ -1364,7 +1382,7 @@ and should not be merged right away.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Max Olender.
+        &copy; Copyright 1970, Max Olender.
 
     </p>
   </div>
@@ -1389,8 +1407,7 @@ and should not be merged right away.</p>
             VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

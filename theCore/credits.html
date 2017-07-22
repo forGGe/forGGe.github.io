@@ -13,8 +13,6 @@
 
   
   
-  
-  
 
   
 
@@ -45,7 +43,6 @@
 
 <body class="wy-body-for-nav" role="document">
 
-   
   <div class="wy-grid-for-nav">
 
     
@@ -82,10 +79,7 @@
           
             
             
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+                <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="readme.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides.html">Guides</a></li>
@@ -99,7 +93,10 @@
 <li class="toctree-l1"><a class="reference internal" href="community.html">Community and developer guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation development and contribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Credits and acknowledgements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Credits and acknowledgements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#invoking-sphinx-from-cmake">Invoking Sphinx from CMake</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -112,10 +109,8 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">theCore</a>
-        
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">theCore</a>
       </nav>
 
 
@@ -124,40 +119,23 @@
         <div class="rst-content">
           
 
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
-
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
-      <li>Credits and acknowledgements</li>
-    
-    
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Credits and acknowledgements</li>
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/credits.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -169,12 +147,15 @@
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
 </div>
+<div class="section" id="invoking-sphinx-from-cmake">
+<h2>Invoking Sphinx from CMake<a class="headerlink" href="#invoking-sphinx-from-cmake" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://eb2.co/blog/2012/03/sphinx-and-cmake-beautiful-documentation-for-c-projects/">Sphinx and CMake: Beautiful Documentation For C++ Projects</a> by Eric Scott Barr
+is a great article, describes how to integrate those tools together.
+This is how theCore builds and deploys its documentation.</p>
+</div>
 </div>
 
 
-           </div>
-           <div class="articleComments">
-            
            </div>
           </div>
           <footer>
@@ -182,7 +163,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="testing.html" class="btn btn-neutral" title="Testing and CI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="testing.html" class="btn btn-neutral" title="Testing and CI" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -191,7 +172,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Max Olender.
+        &copy; Copyright 1970, Max Olender.
 
     </p>
   </div>
@@ -216,8 +197,7 @@
             VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            HAS_SOURCE:  true
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

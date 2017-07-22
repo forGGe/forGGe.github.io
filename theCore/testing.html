@@ -95,7 +95,15 @@
 <li class="toctree-l1"><a class="reference internal" href="docs.html">Documentation development and contribution</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Testing and CI</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#unit-tests">Unit tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#on-device-tests">On-device tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#on-device-tests">On-device tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#basic-entities">Basic entities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#targets-and-mcus">Targets and MCUs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#suites">Suites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-thecore-suites">Building theCore suites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#launching-suites">Launching suites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#relationship-to-the-examples">Relationship to the examples</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#travis">Travis</a></li>
 </ul>
 </li>
@@ -155,9 +163,133 @@
 </div>
 <div class="section" id="on-device-tests">
 <h2>On-device tests<a class="headerlink" href="#on-device-tests" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
+<p>theCore testing facilities provides way to create on-device and system tests
+in modular and reusable manner.
+theCore uses <a class="reference external" href="http://www.throwtheswitch.org/unity/">the Unity test framework</a> to create test cases.</p>
+<p>On-device tests are located in the <code class="docutils literal"><span class="pre">tests</span></code> top-level directory.</p>
+<div class="section" id="basic-entities">
+<h3>Basic entities<a class="headerlink" href="#basic-entities" title="Permalink to this headline">¶</a></h3>
+<p>A test case is a code that performs validation of the particular theCore
+component or module.</p>
+<p>Each test, or test case, resides in separate directory under <code class="docutils literal"><span class="pre">tests/cases</span></code> dir.
+To be recognizable by theCore testing facilities the test case
+must contain a definition file with <code class="docutils literal"><span class="pre">case_defs.cmake</span></code> name.</p>
+<p>Test case definition file must (at least) define <code class="docutils literal"><span class="pre">CASE_SOURCES</span></code> CMake variable.
+<code class="docutils literal"><span class="pre">CASE_SOURCES</span></code> must contain list of test case source files.</p>
+<p>See [the unity_demo test case](cases/unity_demo) as an example.</p>
+<p>You may check <code class="docutils literal"><span class="pre">tests/cases/unity_demo</span></code> as an example.</p>
+</div>
+<div class="section" id="targets-and-mcus">
+<h3>Targets and MCUs<a class="headerlink" href="#targets-and-mcus" title="Permalink to this headline">¶</a></h3>
+<p>A target is a board where tests should be executed.</p>
+<p>Multiple boards can be built around single MCU type.
+MCU types are placed in the <code class="docutils literal"><span class="pre">tests/mcus</span></code> directory.
+Each MCU must contain <code class="docutils literal"><span class="pre">mcu_defs.cmake</span></code> and <code class="docutils literal"><span class="pre">mcu_defs.hpp</span></code> files.
+Those definition files can contain arbitrary data specific to the concrete microcontroller.</p>
+<p>The TM4C MCU definition file (<code class="docutils literal"><span class="pre">tests/mcus/tm4c123gh6pm/mcu_defs.cmake</span></code>)
+provided here as an example:</p>
+<div class="highlight-cmake"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM</span> <span class="s">tm4c</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM_DEVICE</span> <span class="s">TM4C123GH6PM</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>As shown, CMake file sets the platform associated with that MCU (<code class="docutils literal"><span class="pre">CONFIG_PLATFORM</span></code>)
+and the MCU model (<code class="docutils literal"><span class="pre">CONFIG_PLATFORM_DEVICE</span></code>).</p>
+<p>Targets are residing in <code class="docutils literal"><span class="pre">tests/targets</span></code> directory and can reuse
+MCU definitions in its own definition files: <code class="docutils literal"><span class="pre">target_defs.cmake</span></code>
+and <code class="docutils literal"><span class="pre">target_defs.hpp</span></code>.</p>
+<p>Targets must also declare set of test suites that they can handle
+(more on this in the <a class="reference internal" href="#suites">Suites</a> section).</p>
+<p>Good example of the test target is a  STM32 discovery target.
+It can be found in <code class="docutils literal"><span class="pre">targets/stm32f4discovery_simple</span></code> directory.</p>
+</div>
+<div class="section" id="suites">
+<h3>Suites<a class="headerlink" href="#suites" title="Permalink to this headline">¶</a></h3>
+<p>Every target can run <cite>limited</cite> set of possible tests.
+Limitations might be caused by lack of ROM, RAM or absence of the required hardware.
+Sets of tests that can be executed on the target called <strong>suite</strong>.</p>
+<p>Suites are specific to the target, thus placed under <code class="docutils literal"><span class="pre">&lt;target_name&gt;/suites</span></code> directory.
+Suites are compiled into executables, thus every suite must contain ordinary
+<code class="docutils literal"><span class="pre">CMakeLists.txt</span></code> usable with theCore.</p>
+<p>Suite does not need to contain any source files except the init code
+(usually placed in <code class="docutils literal"><span class="pre">suite_init.cpp</span></code>) that runs when board starts.
+Suite launchers are autogenerated by <code class="docutils literal"><span class="pre">scripts/gen_suite.py</span></code> script.</p>
+<p>See Unity demo suite on stm32f4 discovery target placed under
+<code class="docutils literal"><span class="pre">targets/stm32f4discovery_simple/suites/unity_demo</span></code> as an example.</p>
+</div>
+<div class="section" id="building-thecore-suites">
+<h3>Building theCore suites<a class="headerlink" href="#building-thecore-suites" title="Permalink to this headline">¶</a></h3>
+<p>Existing test suites can be compiled by the following procedure
+(do not forget to complete <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> guide to obtain Nix environment):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">tests_build</span>
+<span class="n">cd</span> <span class="n">tests_build</span>
+<span class="n">cmake</span> <span class="o">../</span><span class="n">tests</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+<p>Paths to suite binaries are recorded in <cite>suite_list.txt</cite> file in the build directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cat suite_list.txt
+platform_bat,tivac_tm4,/tmp/theCore/tests/build/tivac_tm4/platform_bat.gnu//build/platform_bat,/tmp/build3/tivac_tm4/platform_bat.gnu//build/platform_bat.bin
+platform_bat,stm32f4discovery_simple,/tmp/theCore/tests/build/stm32f4discovery_simple/platform_bat.gnu//build/platform_bat,/tmp/build3/stm32f4discovery_simple/platform_bat.gnu//build/platform_bat.bin
+platform_bat,stm32f4discovery_simple,/tmp/theCore/tests/build/stm32f4discovery_simple/platform_bat.clang//build/platform_bat,/tmp/build3/stm32f4discovery_simple/platform_bat.clang//build/platform_bat.bin
+unity_demo,stm32f4discovery_simple,/tmp/theCore/tests/build/stm32f4discovery_simple/unity_demo.gnu//build/unity_demo,/tmp/build3/stm32f4discovery_simple/unity_demo.gnu//build/unity_demo.bin
+unity_demo,tivac_tm4,/tmp/theCore/tests/build/tivac_tm4/unity_demo.gnu//build/unity_demo,/tmp/build3/tivac_tm4/unity_demo.gnu//build/unity_demo.bin
+</pre></div>
+</div>
+</div>
+<div class="section" id="launching-suites">
+<h3>Launching suites<a class="headerlink" href="#launching-suites" title="Permalink to this headline">¶</a></h3>
+<p>Suite binaries obtained in the <a class="reference internal" href="#building-thecore-suites">Building theCore suites</a> can be flashed
+into the MCU using either manual approach (using appropriate programmer)
+or using <code class="docutils literal"><span class="pre">scripts/flasher.py</span></code> script.</p>
+<p>The flasher script tries to flash suite binaries to connected boards
+using <code class="docutils literal"><span class="pre">suite_list.txt</span></code> and the description of connected devices
+in a form of JSON.</p>
+<p>Such JSON must be filled manually with respect to board connected.
+Example of the description file (<code class="docutils literal"><span class="pre">/scripts/connected_devices_example.json</span></code>)
+demonstrated below:</p>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;stm32f4discovery_simple&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;debugger&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;openocd&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;flash_params&quot;</span><span class="p">:</span> <span class="s2">&quot;init; reset halt; wait_halt; flash write_image erase {elf_path}; reset run; shutdown&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;conf_file&quot;</span> <span class="p">:</span> <span class="s2">&quot;stm32f4discovery.cfg&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+
+  <span class="nt">&quot;tivac_tm4&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;debugger&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;openocd&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;flash_params&quot;</span><span class="p">:</span> <span class="s2">&quot;init; reset halt; wait_halt; flash write_image erase {elf_path}; reset run; shutdown&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;conf_file&quot;</span> <span class="p">:</span> <span class="s2">&quot;ek-lm4f120xl.cfg&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="relationship-to-the-examples">
+<h3>Relationship to the examples<a class="headerlink" href="#relationship-to-the-examples" title="Permalink to this headline">¶</a></h3>
+<p>Examples described in <a class="reference internal" href="examples.html#thecore-examples"><span class="std std-ref">Examples</span></a> section and on-device tests
+sometimes contains overlapping functionality but have different purpose.</p>
+<p>Test cases and suites are not so well documented and indicative to be threatened
+as good examples.</p>
 </div>
 </div>
 <div class="section" id="travis">

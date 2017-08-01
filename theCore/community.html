@@ -177,7 +177,7 @@ to <a class="reference external" href="http://semver.org/">the semantic versioni
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The source formatting script called <code class="docutils literal"><span class="pre">srcformat.sh</span></code> in <code class="docutils literal"><span class="pre">scripts</span></code> directory,
-through it is still under development.</p>
+though it is still under development.</p>
 </div>
 <div class="section" id="whitespaces-and-indentation">
 <h3>Whitespaces and indentation<a class="headerlink" href="#whitespaces-and-indentation" title="Permalink to this headline">¶</a></h3>
@@ -227,7 +227,7 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </li>
 <li><p class="first">Do not indent preprocessor block.</p>
 </li>
-<li><p class="first">Insert space around operators.</p>
+<li><p class="first">Insert spaces around operators, except <code class="docutils literal"><span class="pre">++</span></code>, <code class="docutils literal"><span class="pre">--</span></code>, <code class="docutils literal"><span class="pre">!</span></code>, <code class="docutils literal"><span class="pre">.</span></code>, <code class="docutils literal"><span class="pre">-&gt;</span></code>, <code class="docutils literal"><span class="pre">*</span></code> and <code class="docutils literal"><span class="pre">&amp;</span></code>.</p>
 </li>
 <li><p class="first">Insert space padding between <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code> and the following bracket.</p>
 </li>
@@ -256,8 +256,12 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </li>
 <li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code>...).</p>
 </li>
-<li><p class="first">Close whitespace in the angle brackets of template definitions:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
+<li><p class="first">Do not put whitespace between angle brackets in template definitions:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// Good</span>
+<span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
+
+<span class="c1">// Bad</span>
+<span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">obj</span><span class="p">;</span>
 </pre></div>
 </div>
 </li>
@@ -273,11 +277,11 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <div class="section" id="naming">
 <h3>Naming<a class="headerlink" href="#naming" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> for identifer names.</p>
+<li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> for identifiers.</p>
 </li>
 <li><p class="first">Use <code class="docutils literal"><span class="pre">m_</span></code> prefix when naming private and protected class members.</p>
 </li>
-<li><p class="first">Use CamelCase style only for template parameters:</p>
+<li><p class="first">Use CamelCase style for template parameters only:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">CrazyAllocator</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">my_strange_container</span><span class="p">;</span>
 </pre></div>
@@ -288,10 +292,10 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <div class="section" id="comments">
 <h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
-<li><p class="first"><strong>Do not leave commented code.</strong></p>
+<li><p class="first"><strong>Do not leave commented out code.</strong></p>
 </li>
 <li><p class="first">Prefer not keeping <code class="docutils literal"><span class="pre">TODO</span></code> in code without corresponding issue.
-Place issue number next to the <code class="docutils literal"><span class="pre">TODO</span></code> with a little explanation why it is there:</p>
+Place issue number next to the <code class="docutils literal"><span class="pre">TODO</span></code> with a short explanation why it is there:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// TODO #123: replace foo() with something that exposes smaller IRQ latency.</span>
 <span class="n">foo</span><span class="p">();</span>
 </pre></div>
@@ -306,7 +310,15 @@ Place issue number next to the <code class="docutils literal"><span class="pre">
 </pre></div>
 </div>
 </li>
-<li><p class="first">Do not use <code class="docutils literal"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first comment line.</p>
+<li><p class="first">Do not use <code class="docutils literal"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first sentence (until the first dot).
+See also <a class="reference external" href="https://www.stack.nl/~dimitri/doxygen/manual/config.html#cfg_javadoc_autobrief">autobrief docs</a>.</p>
+</li>
+<li><p class="first">Do not add redundant Doxygen comments, like:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">//! Set the size.</span>
+<span class="c1">//! \param size The size.</span>
+<span class="kt">void</span> <span class="nf">set_size</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">);</span>
+</pre></div>
+</div>
 </li>
 </ol>
 </div>
@@ -322,6 +334,9 @@ Place issue number next to the <code class="docutils literal"><span class="pre">
 <div class="highlight-none"><div class="highlight"><pre><span></span>&gt;#911 Implement calling police officer
 </pre></div>
 </div>
+<p>This will be recognized by GitHub as issue reference.
+Note that simply putting <code class="docutils literal"><span class="pre">#</span></code> at the beginning will not do the trick.
+Since a line with the <code class="docutils literal"><span class="pre">#</span></code> at the start is interpreted as the commentary.</p>
 </li>
 <li><p class="first"><strong>Do not</strong> include issue number in the pull request name.</p>
 </li>

@@ -94,7 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="community.html">Community and developer guidelines</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation development and contribution</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#building-documentation">Building documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-all-this-sections-are-about">What all this sections are about?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-all-these-sections-are-about">What all these sections are about?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-docs-on-github-pages">Publishing docs on github pages</a></li>
 </ul>
 </li>
@@ -146,8 +146,8 @@
             
   <div class="section" id="documentation-development-and-contribution">
 <h1>Documentation development and contribution<a class="headerlink" href="#documentation-development-and-contribution" title="Permalink to this headline">¶</a></h1>
-<p>theCore documentation, as you may noticed, hosted on GitHub pages and
-built using <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> with a few extensions:</p>
+<p>theCore documentation, as you may have noticed, is hosted on GitHub pages and
+built using <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> with few extensions:</p>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference external" href="http://docs.readthedocs.io/en/latest/theme.html">Read The Docs theme</a> - awesome theme.</li>
@@ -158,12 +158,12 @@ built using <a class="reference external" href="http://www.sphinx-doc.org/en/sta
 <p>To contribute to the documentation, you probably would like to first build
 and validate docs locally. For that, build dependencies must be installed either
 manually or by using Nix. Check the <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> for more info about
-Nix case.</p>
+Nix option.</p>
 <p>Following sections will provide you with insights about docs structure and build
 procedure.</p>
 <div class="section" id="building-documentation">
 <h2>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h2>
-<p>theCore build system provides separate target for building documentation, so
+<p>theCore build system provides a separate target for building documentation, so
 there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 <ol class="arabic">
 <li><p class="first">Finish <a class="reference internal" href="guides.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
@@ -185,8 +185,8 @@ there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 </li>
 </ol>
 </div>
-<div class="section" id="what-all-this-sections-are-about">
-<h2>What all this sections are about?<a class="headerlink" href="#what-all-this-sections-are-about" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-all-these-sections-are-about">
+<h2>What all these sections are about?<a class="headerlink" href="#what-all-these-sections-are-about" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
@@ -198,8 +198,8 @@ there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 holds auto-generated static HTML files which are automatically displayed if placed in
 master branch of that repo. Jekyll is disabled.</p>
 <p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
-<p>Contributing to the documentation consist of creating the PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
-<p>After PR is opened, the new documentation is processed by the author manually in following fashion:</p>
+<p>Contributing to the documentation consist of creating a PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
+<p>After the PR is opened, the new documentation is processed by the author manually in following fashion:</p>
 <ol class="arabic">
 <li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-documentation">Building documentation</a> section.</p>
 </li>

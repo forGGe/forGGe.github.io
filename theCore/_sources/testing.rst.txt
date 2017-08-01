@@ -118,8 +118,8 @@ demonstrated below:
    :language: json
    :linenos:
 
-Relationship to the examples
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Relation to the examples
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Examples described in :ref:`theCore_Examples` section and on-device tests
 sometimes contains overlapping functionality but have different purpose.

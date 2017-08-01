@@ -151,14 +151,14 @@ to reduce development, testing and hardware migration efforts for a wide range o
 bare-metal embedded applications.</p>
 <p>theCore tries to provide all that is necessary to create portable application code:</p>
 <ul class="simple">
-<li>Startup, initialization and periphery code per each supported platform.</li>
+<li>Startup, initialization and periphery code for each supported platform.</li>
 <li>Build system support for different platform and target configurations.</li>
 <li>Platform-independent device drivers, like temperature sensors or displays.</li>
 <li>Optional OS-related abstractions: semaphores, mutexes and threads.</li>
 <li>Easy-to-deploy development environment.</li>
 <li>Different libraries and utilities.</li>
 </ul>
-<p>theCore uses strong type system based on modern C++ and code generation that
+<p>theCore uses powerful type system based on modern C++ and code generation that
 greatly reduces error rate and debugging time. Shifting different sanity checks
 to compile time rather than runtime not only makes code more performant, but
 also secure and easier to extend.</p>
@@ -304,7 +304,7 @@ or read the <a class="reference external" href="https://nixos.org/nix/manual/">o
 extracted and used as a base for custom application.</p>
 <p>Examples are of two types. First is standalone example, placed in
 the separate repository for convenience. For such, in each section you will
-find a reference to the project location. Second type of examples is in-source
+find a reference to the project location. Second type of examples are in-source
 examples, placed under <code class="docutils literal"><span class="pre">examples</span></code> directory within theCore source tree.</p>
 <div class="section" id="initial-setup">
 <h3>Initial setup<a class="headerlink" href="#initial-setup" title="Permalink to this headline">¶</a></h3>
@@ -1097,7 +1097,7 @@ to <a class="reference external" href="http://semver.org/">the semantic versioni
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">The source formatting script called <code class="docutils literal"><span class="pre">srcformat.sh</span></code> in <code class="docutils literal"><span class="pre">scripts</span></code> directory,
-through it is still under development.</p>
+though it is still under development.</p>
 </div>
 <div class="section" id="whitespaces-and-indentation">
 <h4>Whitespaces and indentation<a class="headerlink" href="#whitespaces-and-indentation" title="Permalink to this headline">¶</a></h4>
@@ -1147,7 +1147,7 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </li>
 <li><p class="first">Do not indent preprocessor block.</p>
 </li>
-<li><p class="first">Insert space around operators.</p>
+<li><p class="first">Insert spaces around operators, except <code class="docutils literal"><span class="pre">++</span></code>, <code class="docutils literal"><span class="pre">--</span></code>, <code class="docutils literal"><span class="pre">!</span></code>, <code class="docutils literal"><span class="pre">.</span></code>, <code class="docutils literal"><span class="pre">-&gt;</span></code>, <code class="docutils literal"><span class="pre">*</span></code> and <code class="docutils literal"><span class="pre">&amp;</span></code>.</p>
 </li>
 <li><p class="first">Insert space padding between <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code> and the following bracket.</p>
 </li>
@@ -1176,8 +1176,12 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </li>
 <li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code>...).</p>
 </li>
-<li><p class="first">Close whitespace in the angle brackets of template definitions:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
+<li><p class="first">Do not put whitespace between angle brackets in template definitions:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// Good</span>
+<span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
+
+<span class="c1">// Bad</span>
+<span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&gt;</span> <span class="n">obj</span><span class="p">;</span>
 </pre></div>
 </div>
 </li>
@@ -1193,11 +1197,11 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <div class="section" id="naming">
 <h4>Naming<a class="headerlink" href="#naming" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
-<li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> for identifer names.</p>
+<li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> for identifiers.</p>
 </li>
 <li><p class="first">Use <code class="docutils literal"><span class="pre">m_</span></code> prefix when naming private and protected class members.</p>
 </li>
-<li><p class="first">Use CamelCase style only for template parameters:</p>
+<li><p class="first">Use CamelCase style for template parameters only:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">CrazyAllocator</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">my_strange_container</span><span class="p">;</span>
 </pre></div>
@@ -1208,10 +1212,10 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <div class="section" id="comments">
 <h4>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
-<li><p class="first"><strong>Do not leave commented code.</strong></p>
+<li><p class="first"><strong>Do not leave commented out code.</strong></p>
 </li>
 <li><p class="first">Prefer not keeping <code class="docutils literal"><span class="pre">TODO</span></code> in code without corresponding issue.
-Place issue number next to the <code class="docutils literal"><span class="pre">TODO</span></code> with a little explanation why it is there:</p>
+Place issue number next to the <code class="docutils literal"><span class="pre">TODO</span></code> with a short explanation why it is there:</p>
 <div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// TODO #123: replace foo() with something that exposes smaller IRQ latency.</span>
 <span class="n">foo</span><span class="p">();</span>
 </pre></div>
@@ -1226,7 +1230,15 @@ Place issue number next to the <code class="docutils literal"><span class="pre">
 </pre></div>
 </div>
 </li>
-<li><p class="first">Do not use <code class="docutils literal"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first comment line.</p>
+<li><p class="first">Do not use <code class="docutils literal"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first sentence (until the first dot).
+See also <a class="reference external" href="https://www.stack.nl/~dimitri/doxygen/manual/config.html#cfg_javadoc_autobrief">autobrief docs</a>.</p>
+</li>
+<li><p class="first">Do not add redundant Doxygen comments, like:</p>
+<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">//! Set the size.</span>
+<span class="c1">//! \param size The size.</span>
+<span class="kt">void</span> <span class="nf">set_size</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">);</span>
+</pre></div>
+</div>
 </li>
 </ol>
 </div>
@@ -1242,6 +1254,9 @@ Place issue number next to the <code class="docutils literal"><span class="pre">
 <div class="highlight-none"><div class="highlight"><pre><span></span>&gt;#911 Implement calling police officer
 </pre></div>
 </div>
+<p>This will be recognized by GitHub as issue reference.
+Note that simply putting <code class="docutils literal"><span class="pre">#</span></code> at the beginning will not do the trick.
+Since a line with the <code class="docutils literal"><span class="pre">#</span></code> at the start is interpreted as the commentary.</p>
 </li>
 <li><p class="first"><strong>Do not</strong> include issue number in the pull request name.</p>
 </li>
@@ -1253,8 +1268,8 @@ and should not be merged right away.</p>
 </div>
 <span id="document-docs"></span><div class="section" id="documentation-development-and-contribution">
 <h2>Documentation development and contribution<a class="headerlink" href="#documentation-development-and-contribution" title="Permalink to this headline">¶</a></h2>
-<p>theCore documentation, as you may noticed, hosted on GitHub pages and
-built using <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> with a few extensions:</p>
+<p>theCore documentation, as you may have noticed, is hosted on GitHub pages and
+built using <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">Sphinx</a> with few extensions:</p>
 <blockquote>
 <div><ul class="simple">
 <li><a class="reference external" href="http://docs.readthedocs.io/en/latest/theme.html">Read The Docs theme</a> - awesome theme.</li>
@@ -1265,12 +1280,12 @@ built using <a class="reference external" href="http://www.sphinx-doc.org/en/sta
 <p>To contribute to the documentation, you probably would like to first build
 and validate docs locally. For that, build dependencies must be installed either
 manually or by using Nix. Check the <a class="reference internal" href="index.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> for more info about
-Nix case.</p>
+Nix option.</p>
 <p>Following sections will provide you with insights about docs structure and build
 procedure.</p>
 <div class="section" id="building-documentation">
 <h3>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h3>
-<p>theCore build system provides separate target for building documentation, so
+<p>theCore build system provides a separate target for building documentation, so
 there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 <ol class="arabic">
 <li><p class="first">Finish <a class="reference internal" href="index.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
@@ -1292,8 +1307,8 @@ make core_sphinx
 </li>
 </ol>
 </div>
-<div class="section" id="what-all-this-sections-are-about">
-<h3>What all this sections are about?<a class="headerlink" href="#what-all-this-sections-are-about" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="what-all-these-sections-are-about">
+<h3>What all these sections are about?<a class="headerlink" href="#what-all-these-sections-are-about" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
@@ -1305,8 +1320,8 @@ make core_sphinx
 holds auto-generated static HTML files which are automatically displayed if placed in
 master branch of that repo. Jekyll is disabled.</p>
 <p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
-<p>Contributing to the documentation consist of creating the PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
-<p>After PR is opened, the new documentation is processed by the author manually in following fashion:</p>
+<p>Contributing to the documentation consist of creating a PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
+<p>After the PR is opened, the new documentation is processed by the author manually in following fashion:</p>
 <ol class="arabic">
 <li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-documentation">Building documentation</a> section.</p>
 </li>
@@ -1457,8 +1472,8 @@ demonstrated below:</p>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="relationship-to-the-examples">
-<h4>Relationship to the examples<a class="headerlink" href="#relationship-to-the-examples" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="relation-to-the-examples">
+<h4>Relation to the examples<a class="headerlink" href="#relation-to-the-examples" title="Permalink to this headline">¶</a></h4>
 <p>Examples described in <a class="reference internal" href="index.html#thecore-examples"><span class="std std-ref">Examples</span></a> section and on-device tests
 sometimes contains overlapping functionality but have different purpose.</p>
 <p>Test cases and suites are not so well documented and indicative to be threatened

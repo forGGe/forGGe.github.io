@@ -1,8 +1,8 @@
 Documentation development and contribution
 ==========================================
 
-theCore documentation, as you may noticed, hosted on GitHub pages and
-built using Sphinx_ with a few extensions:
+theCore documentation, as you may have noticed, is hosted on GitHub pages and
+built using Sphinx_ with few extensions:
 
  - `Read The Docs theme`_ - awesome theme.
  - FullToc_ - full ToC in the sidebar.
@@ -12,7 +12,7 @@ All the documentation sources placed under ``doc`` top-level directory.
 To contribute to the documentation, you probably would like to first build
 and validate docs locally. For that, build dependencies must be installed either
 manually or by using Nix. Check the :ref:`theCore_GettingStarted` for more info about
-Nix case.
+Nix option.
 
 Following sections will provide you with insights about docs structure and build
 procedure.
@@ -20,7 +20,7 @@ procedure.
 Building documentation
 ----------------------
 
-theCore build system provides separate target for building documentation, so
+theCore build system provides a separate target for building documentation, so
 there is no need to invoke Sphinx manually. Instead, proceed as follows:
 
 #. Finish :ref:`theCore_GettingStarted` to get Sphinx and additional extensions.
@@ -37,8 +37,8 @@ there is no need to invoke Sphinx manually. Instead, proceed as follows:
    - ``doc_build/doc/sphinx/theCore/index.html`` - main page of multi-page version.
    - ``doc_build/doc/sphinx/theCore/singlehtml/index.html`` - main page of single-paged version.
 
-What all this sections are about?
----------------------------------
+What all these sections are about?
+----------------------------------
 
 .. note:: This section is under construction.
 
@@ -51,9 +51,9 @@ master branch of that repo. Jekyll is disabled.
 
 See also `the GitHub pages docs`_ for more information.
 
-Contributing to the documentation consist of creating the PR against `theCore repository`_.
+Contributing to the documentation consist of creating a PR against `theCore repository`_.
 
-After PR is opened, the new documentation is processed by the author manually in following fashion:
+After the PR is opened, the new documentation is processed by the author manually in following fashion:
 
 #. New docs are build and tested locally, as described in `Building documentation`_ section.
 #. Generated static files are copied to the github pages clone::

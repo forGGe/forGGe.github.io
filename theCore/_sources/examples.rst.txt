@@ -8,7 +8,7 @@ extracted and used as a base for custom application.
 
 Examples are of two types. First is standalone example, placed in
 the separate repository for convenience. For such, in each section you will
-find a reference to the project location. Second type of examples is in-source
+find a reference to the project location. Second type of examples are in-source
 examples, placed under ``examples`` directory within theCore source tree.
 
 Initial setup

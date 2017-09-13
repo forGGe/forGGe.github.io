@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id1">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Expected output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#target-json-config-for-the-audio-example">Target JSON config for the audio example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">STM32F4 discovery and HTU21D temperature and humidity sensor</a><ul>
@@ -116,6 +117,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id4">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id5">Running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id6">Expected output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#target-json-config-for-the-temperature-and-humidity-example">Target JSON config for the temperature and humidity example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-and-external-interrupts-from-user-button">STM32F4 discovery and external interrupts from user button</a><ul>
@@ -123,6 +125,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#id8">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id9">Running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id10">Expected output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#target-json-config-for-the-exti-example">Target JSON config for the EXTI example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#tm4c123g-launchpad-blinky">TM4C123G LaunchPad blinky</a><ul>
@@ -269,7 +272,7 @@ Aborted (core dumped)
 </div>
 </div>
 <div class="section" id="stm32f4-discovery-audio-example-with-cs43l22-audio-dac">
-<h2>STM32F4 discovery audio example with CS43L22 audio DAC<a class="headerlink" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h2>
+<span id="thecore-stm32f4-cs43l22"></span><h2>STM32F4 discovery audio example with CS43L22 audio DAC<a class="headerlink" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h2>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -393,6 +396,122 @@ Transfer rate: 14 KB/sec, 3762 bytes/write.
 </pre></div>
 </div>
 <p>In headphones you should hear cool 8-bit sound.</p>
+</div>
+<div class="section" id="target-json-config-for-the-audio-example">
+<h3>Target JSON config for the audio example<a class="headerlink" href="#target-json-config-for-the-audio-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bypass_console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Bypass and console UART&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;i2c&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;IRQ&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="s2">&quot;duty_cycle&quot;</span><span class="p">:</span> <span class="s2">&quot;2/1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;ack&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+                <span class="s2">&quot;own_addr&quot;</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>
+                <span class="s2">&quot;ack_addr_bit&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 I2C&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2c1&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;dma&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+                <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;i2s&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2S3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;dma_tx&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;dma_rx&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;standard&quot;</span><span class="p">:</span> <span class="s2">&quot;phillips&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;data_bits&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
+                <span class="s2">&quot;master_clk&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+                <span class="s2">&quot;audio_freq&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+                <span class="s2">&quot;CPOL&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PD8&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PD9&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART, PD8 - TX, PD9 - RX&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PC7&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PC10&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PC12&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PA4&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="s2">&quot;50MHz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 I2S&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PB6&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PB9&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;otype&quot;</span><span class="p">:</span> <span class="s2">&quot;OD&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="s2">&quot;50MHz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 I2C&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PD4&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;OUT&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;otype&quot;</span><span class="p">:</span> <span class="s2">&quot;PP&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="s2">&quot;50MHz&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 RST&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;export_gpio&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PD4&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;rst_gpio&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">
@@ -548,6 +667,63 @@ Transfer rate: 18 KB/sec, 10129 bytes/write.
 </pre></div>
 </div>
 </div>
+<div class="section" id="target-json-config-for-the-temperature-and-humidity-example">
+<h3>Target JSON config for the temperature and humidity example<a class="headerlink" href="#target-json-config-for-the-temperature-and-humidity-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bypass_console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+
+        <span class="s2">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
+        <span class="p">},</span>
+
+        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Bypass and console UART&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+
+        <span class="s2">&quot;i2c&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;IRQ&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
+                <span class="s2">&quot;duty_cycle&quot;</span><span class="p">:</span> <span class="s2">&quot;2/1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;ack&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+                <span class="s2">&quot;ack_addr_bit&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
+                <span class="s2">&quot;own_addr&quot;</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;HTU21D I2C&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2c1&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PD8&quot;</span><span class="p">,</span> <span class="s2">&quot;PD9&quot;</span><span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART, PD8 - RX, PD9 - TX&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PB6&quot;</span><span class="p">,</span> <span class="s2">&quot;PB9&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;otype&quot;</span><span class="p">:</span> <span class="s2">&quot;OD&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;HTU21D I2C pins&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="stm32f4-discovery-and-external-interrupts-from-user-button">
 <h2>STM32F4 discovery and external interrupts from user button<a class="headerlink" href="#stm32f4-discovery-and-external-interrupts-from-user-button" title="Permalink to this headline">¶</a></h2>
@@ -697,6 +873,54 @@ Hello, Embedded World!
 </div>
 </li>
 </ul>
+</div>
+<div class="section" id="target-json-config-for-the-exti-example">
+<h3>Target JSON config for the EXTI example<a class="headerlink" href="#target-json-config-for-the-exti-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bypass_console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Bypass and console UART&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PD8&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;PD9&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s2">&quot;PA0&quot;</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;IN&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Push button&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;export_gpio&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PA0&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;usr_btn&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="tm4c123g-launchpad-blinky">

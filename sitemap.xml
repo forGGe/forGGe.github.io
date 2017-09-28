@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://forgge.github.io/</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/index.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/index.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/contents.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/singlehtml/contents.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/guides.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/examples.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/project_structure.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/arch.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/platforms.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/drivers.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/utilities.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/os_layer.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/community.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/docs.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/testing.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/credits.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/genindex.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://forgge.github.io/theCore/search.html</loc>
+  <lastmod>2017-09-28T19:51:53+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>

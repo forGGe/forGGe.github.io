@@ -119,6 +119,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#kinetis-ke02z">Kinetis KE02Z</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#particle-electron">Particle Electron</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tiva-c-series-tm4c123g">Tiva C series TM4C123G</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#host">Host</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="drivers.html">Drivers</a></li>
@@ -175,7 +176,7 @@
   <div class="section" id="supported-platforms">
 <span id="thecore-platforms"></span><h1>Supported platforms<a class="headerlink" href="#supported-platforms" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="stm32">
-<h2>STM32<a class="headerlink" href="#stm32" title="Permalink to this headline">¶</a></h2>
+<span id="thecore-stm32"></span><h2>STM32<a class="headerlink" href="#stm32" title="Permalink to this headline">¶</a></h2>
 <p>The STM32 is a family of 32-bit Flash microcontrollers based on the
 ARM Cortex-M processor. theCore supports two families of STM32: STM32F4 and STM32L1</p>
 <div class="admonition important">
@@ -1375,6 +1376,31 @@ a guidance when enabling console for your application.</p>
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
 </div>
+</div>
+<div class="section" id="host">
+<h2>Host<a class="headerlink" href="#host" title="Permalink to this headline">¶</a></h2>
+<p>Host platform is not a full-featured platform, like <a class="reference internal" href="#thecore-stm32"><span class="std std-ref">STM32</span></a>,
+but rather a place for evaluation and running unit tests.</p>
+<p>Example configuration:</p>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+     <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span>
+         <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="kc">true</span>
+     <span class="p">}</span>
+ <span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p><code class="docutils literal"><span class="pre">console</span></code> property controls whether console is enabled in the platform, or not.
+For more details on theCore console, check the <a class="reference internal" href="utilities.html#thecore-console"><span class="std std-ref">Console streams</span></a> section.</p>
+<p>Related references:</p>
+<ul class="simple">
+<li><a class="reference internal" href="examples.html#thecore-host-hello"><span class="std std-ref">Simple host hello world example</span></a></li>
+</ul>
 </div>
 </div>
 

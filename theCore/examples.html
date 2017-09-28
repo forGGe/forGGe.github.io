@@ -103,6 +103,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#expected-output">Expected output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#target-json-for-hello-world-example">Target JSON for Hello World example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#stm32f4-discovery-audio-example-with-cs43l22-audio-dac">STM32F4 discovery audio example with CS43L22 audio DAC</a><ul>
@@ -217,7 +218,7 @@ simple project that uses onboard LEDs.</p>
 <p>Refer to <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the dedicated repository</a> to check how to build and run the example.</p>
 </div>
 <div class="section" id="simple-host-hello-world-example">
-<h2>Simple host hello world example<a class="headerlink" href="#simple-host-hello-world-example" title="Permalink to this headline">¶</a></h2>
+<span id="thecore-host-hello"></span><h2>Simple host hello world example<a class="headerlink" href="#simple-host-hello-world-example" title="Permalink to this headline">¶</a></h2>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -267,6 +268,14 @@ run theCore applications.</p>
 This is an assert demonstration. Application will abort.
 hello: /home/user/projects/thecore/examples/host_hello/main.cpp:7: int main(): Assertion `1 == 0&#39; failed.
 Aborted (core dumped)
+</pre></div>
+</div>
+</div>
+<div class="section" id="target-json-for-hello-world-example">
+<h3>Target JSON for Hello World example<a class="headerlink" href="#target-json-for-hello-world-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span>  <span class="p">{</span> <span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="n">true</span> <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 </div>

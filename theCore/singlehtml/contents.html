@@ -204,7 +204,15 @@ in <a class="reference internal" href="contents.html#thecore-platforms"><span cl
 </div>
 <div class="section" id="license">
 <h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
-<p>The source code is distributed under LGPL v3.0 License.</p>
+<p>The source code is distributed under <a class="reference external" href="https://www.mozilla.org/en-US/MPL/">MPL v2.0 License</a> (Mozilla Public License
+Version 2.0).</p>
+<p>MPL is like LGPL, but with static linking exception.</p>
+<p>For many practical cases it means that <strong>you can use theCore in your proprietary
+embedded applications without disclosing the application source code</strong>.</p>
+<p>Keep it private, if needed. MPL allows you to do that.</p>
+<p>Pay note though, that MPL is still a copy-left license. So you are obligated
+to distribute any changes of theCore itself if there were any.</p>
+<p>It is strongly recommended to read <a class="reference external" href="https://www.mozilla.org/en-US/MPL/2.0/FAQ/">MPL 2.0 FAQ</a> to get more familiar with it.</p>
 </div>
 <div class="section" id="technologies-and-projects-used">
 <h3>Technologies and projects used<a class="headerlink" href="#technologies-and-projects-used" title="Permalink to this headline">¶</a></h3>
@@ -1632,20 +1640,20 @@ string, suitable for C/C++ comments.</li>
 13
 14
 15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
 
-    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
 
-      <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="s2">&quot;SW&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;nums&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span> <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">}</span> <span class="p">},</span>
-        <span class="nt">&quot;alias&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-      <span class="p">}</span>
+    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="s2">&quot;SW&quot;</span> <span class="p">},</span>
+      <span class="nt">&quot;nums&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span> <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">}</span> <span class="p">},</span>
+      <span class="nt">&quot;alias&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
+      <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
     <span class="p">}</span>
   <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
 <ul class="simple">
@@ -2899,7 +2907,15 @@ Those definition files can contain arbitrary data specific to the concrete micro
 <p>The TM4C MCU definition file (<code class="docutils literal"><span class="pre">tests/mcus/tm4c123gh6pm/mcu_defs.cmake</span></code>)
 provided here as an example:</p>
 <div class="highlight-cmake"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM</span> <span class="s">tm4c</span><span class="p">)</span>
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM</span> <span class="s">tm4c</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM_DEVICE</span> <span class="s">TM4C123GH6PM</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>

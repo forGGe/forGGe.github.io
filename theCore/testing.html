@@ -201,7 +201,15 @@ Those definition files can contain arbitrary data specific to the concrete micro
 <p>The TM4C MCU definition file (<code class="docutils literal"><span class="pre">tests/mcus/tm4c123gh6pm/mcu_defs.cmake</span></code>)
 provided here as an example:</p>
 <div class="highlight-cmake"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM</span> <span class="s">tm4c</span><span class="p">)</span>
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c"># This Source Code Form is subject to the terms of the Mozilla Public</span>
+<span class="c"># License, v. 2.0. If a copy of the MPL was not distributed with this</span>
+<span class="c"># file, You can obtain one at http://mozilla.org/MPL/2.0/.</span>
+
+<span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM</span> <span class="s">tm4c</span><span class="p">)</span>
 <span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM_DEVICE</span> <span class="s">TM4C123GH6PM</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>

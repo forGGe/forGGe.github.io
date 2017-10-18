@@ -132,6 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l3"><a class="reference internal" href="#id12">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id13">Running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id14">Expected output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#target-json-config-for-the-tm4c-led-example">Target JSON config for the TM4C LED example</a></li>
 </ul>
 </li>
 </ul>
@@ -514,7 +515,7 @@ Transfer rate: 14 KB/sec, 3762 bytes/write.
                 <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 RST&quot;</span>
             <span class="p">}</span>
         <span class="p">],</span>
-        <span class="s2">&quot;export_gpio&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PD4&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;rst_gpio&quot;</span>
@@ -923,7 +924,7 @@ Hello, Embedded World!
                 <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Push button&quot;</span>
             <span class="p">}</span>
         <span class="p">],</span>
-        <span class="s2">&quot;export_gpio&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PA0&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;usr_btn&quot;</span>
@@ -995,6 +996,56 @@ theCore already has one suitable for this target.</p>
 <p>In <code class="docutils literal"><span class="pre">minicom</span></code> you should be able to see:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Welcome</span> <span class="n">to</span> <span class="n">theCore</span>
 <span class="n">Starting</span> <span class="n">TM4C</span> <span class="n">led</span> <span class="n">demo</span><span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="target-json-config-for-the-tm4c-led-example">
+<h3>Target JSON config for the TM4C LED example<a class="headerlink" href="#target-json-config-for-the-tm4c-led-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;tm4c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;TM4C123GH6PM&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART-over-USB console output&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span> <span class="s2">&quot;PF3&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;out&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pin_type&quot;</span><span class="p">:</span> <span class="s2">&quot;std&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;strength&quot;</span><span class="p">:</span> <span class="s2">&quot;2mA&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;LED pins&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PA0&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;hw&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hws&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;PA0&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_RX&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_TX&quot;</span> <span class="p">},</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0 console pins&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_red&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Red LED&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_blue&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Blue LED&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_green&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Green LED&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>On-board LED will blink with the different (RGB) colors.</p>

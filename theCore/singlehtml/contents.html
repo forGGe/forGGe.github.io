@@ -3886,8 +3886,8 @@ manually or by using Nix. Check the <a class="reference internal" href="contents
 Nix option.</p>
 <p>Following sections will provide you with insights about docs structure and build
 procedure.</p>
-<div class="section" id="building-documentation">
-<h3>Building documentation<a class="headerlink" href="#building-documentation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="building-sphinx-documentation">
+<span id="thecore-building-sphinx"></span><h3>Building Sphinx documentation<a class="headerlink" href="#building-sphinx-documentation" title="Permalink to this headline">¶</a></h3>
 <p>theCore build system provides a separate target for building documentation, so
 there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 <ol class="arabic">
@@ -3897,16 +3897,32 @@ there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 <div class="highlight-none"><div class="highlight"><pre><span></span># From theCore directory
 mkdir doc_build
 cd doc_build
-cmake ..
+cmake ../doc
 make core_sphinx
 </pre></div>
 </div>
 </li>
 <li><p class="first">Open generated docs by any preferable browser:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">doc_build/doc/sphinx/theCore/index.html</span></code> - main page of multi-page version.</li>
-<li><code class="docutils literal"><span class="pre">doc_build/doc/sphinx/theCore/singlehtml/index.html</span></code> - main page of single-paged version.</li>
+<li><code class="docutils literal"><span class="pre">doc_build/sphinx/theCore/index.html</span></code> - main page of multi-page version.</li>
+<li><code class="docutils literal"><span class="pre">doc_build/sphinx/theCore/singlehtml/index.html</span></code> - main page of single-paged version.</li>
 </ul>
+</li>
+</ol>
+</div>
+<div class="section" id="building-doxygen-documentation">
+<h3>Building Doxygen documentation<a class="headerlink" href="#building-doxygen-documentation" title="Permalink to this headline">¶</a></h3>
+<p>theCore also contains Doxygen and it is possible to generate Doxygen pages
+locally using CMake target:</p>
+<ol class="arabic">
+<li><p class="first">Launch command in the <code class="docutils literal"><span class="pre">doc_build</span></code> directory
+<a class="reference internal" href="#thecore-building-sphinx"><span class="std std-ref">created on previous step</span></a>:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>make core_doxygen
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open index page of generated Doxygen by any preferable browser:
+<code class="docutils literal"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
 </li>
 </ol>
 </div>
@@ -3926,7 +3942,7 @@ master branch of that repo. Jekyll is disabled.</p>
 <p>Contributing to the documentation consist of creating a PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
 <p>After the PR is opened, the new documentation is processed by the author manually in following fashion:</p>
 <ol class="arabic">
-<li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-documentation">Building documentation</a> section.</p>
+<li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-sphinx-documentation">Building Sphinx documentation</a> section.</p>
 </li>
 <li><p class="first">Generated static files are copied to the github pages clone:</p>
 <div class="highlight-none"><div class="highlight"><pre><span></span>cp doc_build/doc/sphinx/* /path/to/the/gh_pages/ -rv

@@ -214,6 +214,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1i2c__bus__cfg.html">i2c_bus_cfg</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base template class for the I2C configuration.  <a href="structecl_1_1i2c__bus__cfg.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1i2c__bus__cfg_3_01i2c__device_1_1wire0_01_4.html">i2c_bus_cfg&lt; i2c_device::wire0 &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1i2c__config.html">i2c_config</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C configuration struct.  <a href="structecl_1_1i2c__config.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,41 +318,97 @@ Typedefs</h2></td></tr>
 <tr class="memitem:aa72ace4f3d4dbd8e99e036e3f7398035"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa72ace4f3d4dbd8e99e036e3f7398035">handler_storage</a> = std::aligned_storage_t&lt; sizeof(<a class="el" href="namespaceecl_1_1irq.html#ae8abb04e084f9088df505ccb76b598d5">irq::handler_type</a>), alignof(<a class="el" href="namespaceecl_1_1irq.html#ae8abb04e084f9088df505ccb76b598d5">irq::handler_type</a>)&gt;</td></tr>
 <tr class="memdesc:aa72ace4f3d4dbd8e99e036e3f7398035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage type for the IRQ handlers.  <a href="#aa72ace4f3d4dbd8e99e036e3f7398035">More...</a><br /></td></tr>
 <tr class="separator:aa72ace4f3d4dbd8e99e036e3f7398035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa844cf5ed9d6788988dacc48a81d86d3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa844cf5ed9d6788988dacc48a81d86d3">ADC1_driver</a> = <a class="el" href="classecl_1_1adc.html">adc</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">adc_dev::dev1</a> &gt;</td></tr>
-<tr class="separator:aa844cf5ed9d6788988dacc48a81d86d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaedc6f548d58803fcc3520a062d43279"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aaedc6f548d58803fcc3520a062d43279">example_adc</a> = <a class="el" href="namespaceecl.html#aa844cf5ed9d6788988dacc48a81d86d3">ADC1_driver</a></td></tr>
-<tr class="separator:aaedc6f548d58803fcc3520a062d43279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07f96814e248f89d324cc29a451ef1d5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a07f96814e248f89d324cc29a451ef1d5">test_channels</a> = <a class="el" href="structecl_1_1channel__group__sw__trigger.html">channel_group_sw_trigger</a>&lt; <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">adc_channel::ch1</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">adc_channel::ch16</a> &gt;</td></tr>
-<tr class="separator:a07f96814e248f89d324cc29a451ef1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdabd171e686fa9da10c5396ca218003"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#acdabd171e686fa9da10c5396ca218003">i2s3_tx_dma</a> = <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a9e8b79a33496a185ee54672acc94749d">ecl::dma_stream::dma1_5</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt;</td></tr>
-<tr class="separator:acdabd171e686fa9da10c5396ca218003"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e035b8a9b9a2e0f65e162afca42c807"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a2e035b8a9b9a2e0f65e162afca42c807">i2s3_rx_dma</a> = <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a4a403d4982b8620d97e6e5b329844298">ecl::dma_stream::dma1_0</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt;</td></tr>
-<tr class="separator:a2e035b8a9b9a2e0f65e162afca42c807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e2c65df8926974b3d12f09499db39e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a27e2c65df8926974b3d12f09499db39e">I2C1_driver_cfg</a> = <a class="el" href="structecl_1_1i2c__config.html">i2c_config</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4afccf268d870cf9a101fd1d2eb30155c5">i2c_device::bus1</a>, <a class="el" href="namespaceecl.html#a67433879873f74ee382108a92741acb3a19d751dff27aea339cf66284e97e1d5e">i2c_mode::IRQ</a>, 1000, I2C_Mode_I2C, I2C_DutyCycle_2, 51, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit &gt;</td></tr>
-<tr class="separator:a27e2c65df8926974b3d12f09499db39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b63268a621f8dc4724b902683e34b3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a53b63268a621f8dc4724b902683e34b3">I2C1_driver</a> = <a class="el" href="classecl_1_1i2c__bus.html">i2c_bus</a>&lt; <a class="el" href="namespaceecl.html#a27e2c65df8926974b3d12f09499db39e">I2C1_driver_cfg</a> &gt;</td></tr>
-<tr class="separator:a53b63268a621f8dc4724b902683e34b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9dea5c09ac3fd3c6c6dbd4a07061dd1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ad9dea5c09ac3fd3c6c6dbd4a07061dd1">i2c1</a> = <a class="el" href="namespaceecl.html#a53b63268a621f8dc4724b902683e34b3">I2C1_driver</a></td></tr>
-<tr class="separator:ad9dea5c09ac3fd3c6c6dbd4a07061dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf3f089d12390d77b3fd3788eefa242f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aaf3f089d12390d77b3fd3788eefa242f">I2S3_driver</a> = <a class="el" href="classecl_1_1spi__i2s__bus.html">spi_i2s_bus</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4a824173600db39732496dfb92d711f61b">spi_device::bus3</a> &gt;</td></tr>
-<tr class="separator:aaf3f089d12390d77b3fd3788eefa242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87392183077587ea86756bf46a0a12b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a87392183077587ea86756bf46a0a12b9">the_i2s3_alias</a> = <a class="el" href="namespaceecl.html#aaf3f089d12390d77b3fd3788eefa242f">I2S3_driver</a></td></tr>
-<tr class="separator:a87392183077587ea86756bf46a0a12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad8313636fd324bcc00967d9b1172ca2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aad8313636fd324bcc00967d9b1172ca2">USART3_cfg</a> = <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a> &gt;</td></tr>
-<tr class="separator:aad8313636fd324bcc00967d9b1172ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab26aeb25300b9313f37d95dcb5b82f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aab26aeb25300b9313f37d95dcb5b82f1">USART3_driver</a> = <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a> &gt;</td></tr>
-<tr class="separator:aab26aeb25300b9313f37d95dcb5b82f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57794e39a54a80e4d133f1644c7d41f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac57794e39a54a80e4d133f1644c7d41f">console_uart</a> = <a class="el" href="namespaceecl.html#aab26aeb25300b9313f37d95dcb5b82f1">USART3_driver</a></td></tr>
-<tr class="separator:ac57794e39a54a80e4d133f1644c7d41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac39fd1c30e12858f8767c136f49d8d23"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac39fd1c30e12858f8767c136f49d8d23">UART1_cfg</a> = <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a> &gt;</td></tr>
-<tr class="separator:ac39fd1c30e12858f8767c136f49d8d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a292d7446eb5ef7a135d2761fbf4959b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a292d7446eb5ef7a135d2761fbf4959b9">UART1_driver</a> = <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a> &gt;</td></tr>
-<tr class="separator:a292d7446eb5ef7a135d2761fbf4959b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad00083420fcc845363f037c17d58ebe1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ad00083420fcc845363f037c17d58ebe1">my_uart</a> = <a class="el" href="namespaceecl.html#a292d7446eb5ef7a135d2761fbf4959b9">UART1_driver</a></td></tr>
-<tr class="separator:ad00083420fcc845363f037c17d58ebe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285e0b9f0e0ddb6357229128e69d0784"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a285e0b9f0e0ddb6357229128e69d0784">cs43l22_instance</a> = <a class="el" href="classecl_1_1cs43l22.html">cs43l22</a>&lt; <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt; <a class="el" href="namespaceecl.html#ad9dea5c09ac3fd3c6c6dbd4a07061dd1">i2c1</a> &gt;, <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt; i2s3 &gt;, rst_gpio &gt;</td></tr>
+<tr class="memitem:a7903fa5bd086cf75111e90e102d3b4c7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a7903fa5bd086cf75111e90e102d3b4c7">i2s3_tx_dma</a> = <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a9e8b79a33496a185ee54672acc94749d">ecl::dma_stream::dma1_5</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt;</td></tr>
+<tr class="separator:a7903fa5bd086cf75111e90e102d3b4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d00457403bf248da873ea96774b913"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ab4d00457403bf248da873ea96774b913">i2s3_rx_dma</a> = <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a4a403d4982b8620d97e6e5b329844298">ecl::dma_stream::dma1_0</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt;</td></tr>
+<tr class="separator:ab4d00457403bf248da873ea96774b913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee00fa1c12059beb37da39b862fb251"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#acee00fa1c12059beb37da39b862fb251">GPIO_PD4_driver</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a508102cf58d3c826d3e42cf61c07020b">gpio_num::pin4</a> &gt;</td></tr>
+<tr class="separator:acee00fa1c12059beb37da39b862fb251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfa6c63fec2224290164b3b354325e8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#acfa6c63fec2224290164b3b354325e8c">rst_gpio</a> = <a class="el" href="namespaceecl.html#acee00fa1c12059beb37da39b862fb251">GPIO_PD4_driver</a></td></tr>
+<tr class="separator:acfa6c63fec2224290164b3b354325e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb35f120a2fc7083c3dd4f330797f7c4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#afb35f120a2fc7083c3dd4f330797f7c4">I2C1_driver_cfg</a> = <a class="el" href="structecl_1_1i2c__config.html">i2c_config</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4afccf268d870cf9a101fd1d2eb30155c5">i2c_device::bus1</a>, <a class="el" href="namespaceecl.html#a67433879873f74ee382108a92741acb3a19d751dff27aea339cf66284e97e1d5e">i2c_mode::IRQ</a>, 1000, I2C_Mode_I2C, I2C_DutyCycle_2, 51, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit &gt;</td></tr>
+<tr class="separator:afb35f120a2fc7083c3dd4f330797f7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39fc466364c58f9acecbd3c975c9451"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae39fc466364c58f9acecbd3c975c9451">I2C1_driver</a> = <a class="el" href="classecl_1_1i2c__bus.html">i2c_bus</a>&lt; <a class="el" href="namespaceecl.html#afb35f120a2fc7083c3dd4f330797f7c4">I2C1_driver_cfg</a> &gt;</td></tr>
+<tr class="separator:ae39fc466364c58f9acecbd3c975c9451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ae8c5b0dcc0bb87434359e0da47121"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a18ae8c5b0dcc0bb87434359e0da47121">i2c1</a> = <a class="el" href="namespaceecl.html#ae39fc466364c58f9acecbd3c975c9451">I2C1_driver</a></td></tr>
+<tr class="separator:a18ae8c5b0dcc0bb87434359e0da47121"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e357c493b7b8b24c0f31bfb0fd7fbc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a22e357c493b7b8b24c0f31bfb0fd7fbc">I2S3_driver</a> = <a class="el" href="classecl_1_1spi__i2s__bus.html">spi_i2s_bus</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4a824173600db39732496dfb92d711f61b">spi_device::bus3</a> &gt;</td></tr>
+<tr class="separator:a22e357c493b7b8b24c0f31bfb0fd7fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55eca2606dc7de4a7b1814dc6e12218"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae55eca2606dc7de4a7b1814dc6e12218">i2s3</a> = <a class="el" href="namespaceecl.html#a22e357c493b7b8b24c0f31bfb0fd7fbc">I2S3_driver</a></td></tr>
+<tr class="separator:ae55eca2606dc7de4a7b1814dc6e12218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa130e313e314a333a7e6d1b51e3f2981"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa130e313e314a333a7e6d1b51e3f2981">USART3_cfg</a> = <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a> &gt;</td></tr>
+<tr class="separator:aa130e313e314a333a7e6d1b51e3f2981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22498965434aa2cd27850a0e7572a5d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a> = <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a> &gt;</td></tr>
+<tr class="separator:a22498965434aa2cd27850a0e7572a5d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee5942ade0730c36573452a7fa002d9d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aee5942ade0730c36573452a7fa002d9d">platform_console</a> = <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a></td></tr>
+<tr class="separator:aee5942ade0730c36573452a7fa002d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd33b070fc1b975d2782a771b3f86799"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#acd33b070fc1b975d2782a771b3f86799">bypass_console_bus</a> = <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a></td></tr>
+<tr class="separator:acd33b070fc1b975d2782a771b3f86799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174f9da298bc6b8b938090b1d779599c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a174f9da298bc6b8b938090b1d779599c">bypass_config</a> = <a class="el" href="namespaceecl.html#aa130e313e314a333a7e6d1b51e3f2981">USART3_cfg</a></td></tr>
+<tr class="separator:a174f9da298bc6b8b938090b1d779599c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d7117b3549f699b647869177e2ca65a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a8d7117b3549f699b647869177e2ca65a">GPIO_PA0_driver</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a0cc175b9c0f1b6a831c399e269772661">gpio_port::a</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a4dc2eb55d3953d9c657a8abbf57cce0f">gpio_num::pin0</a> &gt;</td></tr>
+<tr class="separator:a8d7117b3549f699b647869177e2ca65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad857dd2df1daa7bd5f6a2bdb51089f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a9ad857dd2df1daa7bd5f6a2bdb51089f">usr_btn</a> = <a class="el" href="namespaceecl.html#a8d7117b3549f699b647869177e2ca65a">GPIO_PA0_driver</a></td></tr>
+<tr class="separator:a9ad857dd2df1daa7bd5f6a2bdb51089f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e76abf47f2c03d9883b073805de3866"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a5e76abf47f2c03d9883b073805de3866">led_red</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba7c1890779d5dda9bbb157eb3afcfdb26">gpio_hw::num::pin1</a> &gt;</td></tr>
+<tr class="separator:a5e76abf47f2c03d9883b073805de3866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed3c0f8bc9ec4d0c074429de8f2dab75"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aed3c0f8bc9ec4d0c074429de8f2dab75">led_blue</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba1ce8f9c8c598a33e655651c0899ef7bc">gpio_hw::num::pin2</a> &gt;</td></tr>
+<tr class="separator:aed3c0f8bc9ec4d0c074429de8f2dab75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ae7ff052d8fd0193efcb1da39a29a46"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a0ae7ff052d8fd0193efcb1da39a29a46">led_green</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba4159b35a5108f290a76464fad870a647">gpio_hw::num::pin3</a> &gt;</td></tr>
+<tr class="separator:a0ae7ff052d8fd0193efcb1da39a29a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0107e247f0c654294f996525bc2e3d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a2b0107e247f0c654294f996525bc2e3d">serial_device0</a> = <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a414d4f2f258870841651939e80cdf441">uart_device::serial0</a> &gt;</td></tr>
+<tr class="separator:a2b0107e247f0c654294f996525bc2e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69a0d9dcc0bffec34d47f697be51d60f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a69a0d9dcc0bffec34d47f697be51d60f">test_uart</a> = <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a></td></tr>
+<tr class="separator:a69a0d9dcc0bffec34d47f697be51d60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d6a0838f8d8d3a720ddb4c13d5baa9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a49d6a0838f8d8d3a720ddb4c13d5baa9">adc_dma</a> = <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94aeb8c87ca5ecf67c8bbed299615e8faa0">ecl::dma_stream::dma2_0</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt;</td></tr>
+<tr class="separator:a49d6a0838f8d8d3a720ddb4c13d5baa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a1677c096e2b35ce3e3c56b6bcb761a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a9a1677c096e2b35ce3e3c56b6bcb761a">ADC1_driver</a> = <a class="el" href="classecl_1_1adc.html">adc</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">adc_dev::dev1</a> &gt;</td></tr>
+<tr class="separator:a9a1677c096e2b35ce3e3c56b6bcb761a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf10b889ab7ada378695b1d0b69429e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aadf10b889ab7ada378695b1d0b69429e">test_adc</a> = <a class="el" href="namespaceecl.html#a9a1677c096e2b35ce3e3c56b6bcb761a">ADC1_driver</a></td></tr>
+<tr class="separator:aadf10b889ab7ada378695b1d0b69429e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac094163c5881c35bf701416ab1ed4908"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac094163c5881c35bf701416ab1ed4908">test_channel</a> = <a class="el" href="structecl_1_1channel__group__sw__trigger.html">channel_group_sw_trigger</a>&lt; <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">adc_channel::ch1</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">adc_channel::ch16</a> &gt;</td></tr>
+<tr class="separator:ac094163c5881c35bf701416ab1ed4908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae314478d07655469e4378478c0658a3a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae314478d07655469e4378478c0658a3a">GPIO_PD12_driver</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a6c31412de99950f0840e043e01f989ff">gpio_num::pin12</a> &gt;</td></tr>
+<tr class="separator:ae314478d07655469e4378478c0658a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0722189f1ec192d21f0aa9462cc9b3a4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a0722189f1ec192d21f0aa9462cc9b3a4">green_led</a> = <a class="el" href="namespaceecl.html#ae314478d07655469e4378478c0658a3a">GPIO_PD12_driver</a></td></tr>
+<tr class="separator:a0722189f1ec192d21f0aa9462cc9b3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410fc09ec62313c6966b20b9a3b2ba4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a410fc09ec62313c6966b20b9a3b2ba4a">GPIO_PD13_driver</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a6dd15586f3226d354f9bad7379050684">gpio_num::pin13</a> &gt;</td></tr>
+<tr class="separator:a410fc09ec62313c6966b20b9a3b2ba4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3247f7085fbbb2c22335f14152c3ae5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae3247f7085fbbb2c22335f14152c3ae5">orange_led</a> = <a class="el" href="namespaceecl.html#a410fc09ec62313c6966b20b9a3b2ba4a">GPIO_PD13_driver</a></td></tr>
+<tr class="separator:ae3247f7085fbbb2c22335f14152c3ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a6da8637e4cbe7d1e246230dee4251"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ab1a6da8637e4cbe7d1e246230dee4251">GPIO_PD14_driver</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9ac8b9d9370fc1111e705e86ea52284e5b">gpio_num::pin14</a> &gt;</td></tr>
+<tr class="separator:ab1a6da8637e4cbe7d1e246230dee4251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac294d691d449dba9feb2c3379450e7ac"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac294d691d449dba9feb2c3379450e7ac">red_led</a> = <a class="el" href="namespaceecl.html#ab1a6da8637e4cbe7d1e246230dee4251">GPIO_PD14_driver</a></td></tr>
+<tr class="separator:ac294d691d449dba9feb2c3379450e7ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70cc1991ee1841486c4464f2d2366cf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae70cc1991ee1841486c4464f2d2366cf">GPIO_PD15_driver</a> = <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9ab2723794ebf83d9e93089245230f521e">gpio_num::pin15</a> &gt;</td></tr>
+<tr class="separator:ae70cc1991ee1841486c4464f2d2366cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80daceac0bc3e9b67720e5d6b9373d35"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a80daceac0bc3e9b67720e5d6b9373d35">blue_led</a> = <a class="el" href="namespaceecl.html#ae70cc1991ee1841486c4464f2d2366cf">GPIO_PD15_driver</a></td></tr>
+<tr class="separator:a80daceac0bc3e9b67720e5d6b9373d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5937e80afdb8b82dfe8fc781fb23d6a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#af5937e80afdb8b82dfe8fc781fb23d6a">push_button</a> = <a class="el" href="namespaceecl.html#a8d7117b3549f699b647869177e2ca65a">GPIO_PA0_driver</a></td></tr>
+<tr class="separator:af5937e80afdb8b82dfe8fc781fb23d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf817ac74941a2989b1c4153a0024318"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a> = <a class="el" href="classecl_1_1i2c__bus.html">i2c_bus</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4a9dcb794da416409fafb46758cd82baf9">i2c_device::wire0</a> &gt;</td></tr>
+<tr class="separator:abf817ac74941a2989b1c4153a0024318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedcf03a4c64b70cf411a37dd6fb30124"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aedcf03a4c64b70cf411a37dd6fb30124">serial_device2</a> = <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a45e2be32f5ce9f011470cddc7579959a">uart_device::serial2</a> &gt;</td></tr>
+<tr class="separator:aedcf03a4c64b70cf411a37dd6fb30124"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88973fe8504d4023a74390ba7956c133"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a88973fe8504d4023a74390ba7956c133">serial_device3</a> = <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; uart_device::serial3 &gt;</td></tr>
+<tr class="separator:a88973fe8504d4023a74390ba7956c133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4ea4562d467951611af4207b54f1ff"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#add4ea4562d467951611af4207b54f1ff">example_adc</a> = <a class="el" href="namespaceecl.html#a9a1677c096e2b35ce3e3c56b6bcb761a">ADC1_driver</a></td></tr>
+<tr class="separator:add4ea4562d467951611af4207b54f1ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6b95db3b46903ba5a3745eb51e3460"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#abc6b95db3b46903ba5a3745eb51e3460">test_channels</a> = <a class="el" href="structecl_1_1channel__group__sw__trigger.html">channel_group_sw_trigger</a>&lt; <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">adc_channel::ch1</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">adc_channel::ch16</a> &gt;</td></tr>
+<tr class="separator:abc6b95db3b46903ba5a3745eb51e3460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861696a30d8cd910246b41711f137cc0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a861696a30d8cd910246b41711f137cc0">the_i2s3_alias</a> = <a class="el" href="namespaceecl.html#a22e357c493b7b8b24c0f31bfb0fd7fbc">I2S3_driver</a></td></tr>
+<tr class="separator:a861696a30d8cd910246b41711f137cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c5f35dffe650718b1d0ec047a80461"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a72c5f35dffe650718b1d0ec047a80461">console_uart</a> = <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a></td></tr>
+<tr class="separator:a72c5f35dffe650718b1d0ec047a80461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c5817518e3feb8296a3569bc55a270"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a56c5817518e3feb8296a3569bc55a270">UART1_cfg</a> = <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a> &gt;</td></tr>
+<tr class="separator:a56c5817518e3feb8296a3569bc55a270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca5f9475c29a78d426a3f6bf0548f55"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#afca5f9475c29a78d426a3f6bf0548f55">UART1_driver</a> = <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a> &gt;</td></tr>
+<tr class="separator:afca5f9475c29a78d426a3f6bf0548f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87866cb5482c208d188bc2a281790ad2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a87866cb5482c208d188bc2a281790ad2">my_uart</a> = <a class="el" href="namespaceecl.html#afca5f9475c29a78d426a3f6bf0548f55">UART1_driver</a></td></tr>
+<tr class="separator:a87866cb5482c208d188bc2a281790ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285e0b9f0e0ddb6357229128e69d0784"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a285e0b9f0e0ddb6357229128e69d0784">cs43l22_instance</a> = <a class="el" href="classecl_1_1cs43l22.html">cs43l22</a>&lt; <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt; <a class="el" href="namespaceecl.html#a18ae8c5b0dcc0bb87434359e0da47121">i2c1</a> &gt;, <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt; <a class="el" href="namespaceecl.html#ae55eca2606dc7de4a7b1814dc6e12218">i2s3</a> &gt;, <a class="el" href="namespaceecl.html#acfa6c63fec2224290164b3b354325e8c">rst_gpio</a> &gt;</td></tr>
 <tr class="separator:a285e0b9f0e0ddb6357229128e69d0784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ba2870a1a112a06e9985762bf274d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae4ba2870a1a112a06e9985762bf274d8">htu21d</a> = <a class="el" href="classecl_1_1sensor_1_1htu21d.html">sensor::htu21d</a>&lt; <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt; <a class="el" href="namespaceecl.html#ad9dea5c09ac3fd3c6c6dbd4a07061dd1">i2c1</a> &gt;&gt;</td></tr>
+<tr class="memitem:ae4ba2870a1a112a06e9985762bf274d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae4ba2870a1a112a06e9985762bf274d8">htu21d</a> = <a class="el" href="classecl_1_1sensor_1_1htu21d.html">sensor::htu21d</a>&lt; <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt; <a class="el" href="namespaceecl.html#a18ae8c5b0dcc0bb87434359e0da47121">i2c1</a> &gt;&gt;</td></tr>
 <tr class="separator:ae4ba2870a1a112a06e9985762bf274d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0512e057a69d3d7382c422eb35ac807"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ad0512e057a69d3d7382c422eb35ac807">thread_handle</a> = void *</td></tr>
 <tr class="memdesc:ad0512e057a69d3d7382c422eb35ac807"><td class="mdescLeft">&#160;</td><td class="mdescRight">OS-specific handle.  <a href="#ad0512e057a69d3d7382c422eb35ac807">More...</a><br /></td></tr>
@@ -363,9 +421,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:af39c00c205362618099b25ff2439fe86"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#af39c00c205362618099b25ff2439fe86">adc_evh</a> = std::function&lt; void(<a class="el" href="namespaceecl.html#a6ec0377ffa8c54d9437870b727b81dd0">adc_event</a>)&gt;</td></tr>
 <tr class="memdesc:af39c00c205362618099b25ff2439fe86"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC event handler. Event code signifies result of a conversion.  <a href="#af39c00c205362618099b25ff2439fe86">More...</a><br /></td></tr>
 <tr class="separator:af39c00c205362618099b25ff2439fe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69a0d9dcc0bffec34d47f697be51d60f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a69a0d9dcc0bffec34d47f697be51d60f">test_uart</a> = serial_device0</td></tr>
-<tr class="separator:a69a0d9dcc0bffec34d47f697be51d60f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a010af4924c87e82bda9b5ec823f10e65"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a010af4924c87e82bda9b5ec823f10e65">test_gpios</a> = <a class="el" href="structecl_1_1gpio__list.html">gpio_list</a>&lt; red_led, blue_led, green_led, orange_led &gt;</td></tr>
+<tr class="memitem:a010af4924c87e82bda9b5ec823f10e65"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a010af4924c87e82bda9b5ec823f10e65">test_gpios</a> = <a class="el" href="structecl_1_1gpio__list.html">gpio_list</a>&lt; <a class="el" href="namespaceecl.html#ac294d691d449dba9feb2c3379450e7ac">red_led</a>, <a class="el" href="namespaceecl.html#a80daceac0bc3e9b67720e5d6b9373d35">blue_led</a>, <a class="el" href="namespaceecl.html#a0722189f1ec192d21f0aa9462cc9b3a4">green_led</a>, <a class="el" href="namespaceecl.html#ae3247f7085fbbb2c22335f14152c3ae5">orange_led</a> &gt;</td></tr>
 <tr class="memdesc:a010af4924c87e82bda9b5ec823f10e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exported list of GPIOs.  <a href="#a010af4924c87e82bda9b5ec823f10e65">More...</a><br /></td></tr>
 <tr class="separator:a010af4924c87e82bda9b5ec823f10e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -794,6 +850,21 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a71c7767e464015a9ed128bbeb298a204"><td class="memTemplParams" colspan="2">template&lt;class I2C_Dev &gt; </td></tr>
+<tr class="memitem:a71c7767e464015a9ed128bbeb298a204"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a71c7767e464015a9ed128bbeb298a204">dispatch</a> ()</td></tr>
+<tr class="memdesc:a71c7767e464015a9ed128bbeb298a204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real dispatch function that operates over given I2C theCore driver.  <a href="#a71c7767e464015a9ed128bbeb298a204">More...</a><br /></td></tr>
+<tr class="separator:a71c7767e464015a9ed128bbeb298a204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0da76b561bf59ee68ac097ed45d232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a8f0da76b561bf59ee68ac097ed45d232">i2c_dispatch</a> ()</td></tr>
+<tr class="separator:a8f0da76b561bf59ee68ac097ed45d232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8973f601121164e037e6b3b0d9e1fe3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a8973f601121164e037e6b3b0d9e1fe3d">serial_tx_dispatch</a> ()</td></tr>
+<tr class="separator:a8973f601121164e037e6b3b0d9e1fe3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8df28c57e0ccaaec1292cc7e8aedd9f"><td class="memTemplParams" colspan="2">template&lt;uart_device dev&gt; </td></tr>
+<tr class="memitem:ac8df28c57e0ccaaec1292cc7e8aedd9f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac8df28c57e0ccaaec1292cc7e8aedd9f">serial_rx_dispatch</a> ()</td></tr>
+<tr class="separator:ac8df28c57e0ccaaec1292cc7e8aedd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c7767e464015a9ed128bbeb298a204"><td class="memTemplParams" colspan="2">template&lt;class I2C_Dev &gt; </td></tr>
+<tr class="memitem:a71c7767e464015a9ed128bbeb298a204"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a71c7767e464015a9ed128bbeb298a204">dispatch</a> ()</td></tr>
+<tr class="memdesc:a71c7767e464015a9ed128bbeb298a204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real dispatch function that operates over given I2C theCore driver.  <a href="#a71c7767e464015a9ed128bbeb298a204">More...</a><br /></td></tr>
+<tr class="separator:a71c7767e464015a9ed128bbeb298a204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a193e9430dfe9bc0821c3dcd85cea7c09"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09">default_handler</a> ()</td></tr>
 <tr class="memdesc:a193e9430dfe9bc0821c3dcd85cea7c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unhandled interrupt must cause the abort.  <a href="#a193e9430dfe9bc0821c3dcd85cea7c09">More...</a><br /></td></tr>
 <tr class="separator:a193e9430dfe9bc0821c3dcd85cea7c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -807,13 +878,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a71c7767e464015a9ed128bbeb298a204"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a71c7767e464015a9ed128bbeb298a204">dispatch</a> ()</td></tr>
 <tr class="memdesc:a71c7767e464015a9ed128bbeb298a204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real dispatch function that operates over given I2C theCore driver.  <a href="#a71c7767e464015a9ed128bbeb298a204">More...</a><br /></td></tr>
 <tr class="separator:a71c7767e464015a9ed128bbeb298a204"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f0da76b561bf59ee68ac097ed45d232"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a8f0da76b561bf59ee68ac097ed45d232">i2c_dispatch</a> ()</td></tr>
-<tr class="separator:a8f0da76b561bf59ee68ac097ed45d232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8973f601121164e037e6b3b0d9e1fe3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a8973f601121164e037e6b3b0d9e1fe3d">serial_tx_dispatch</a> ()</td></tr>
-<tr class="separator:a8973f601121164e037e6b3b0d9e1fe3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8df28c57e0ccaaec1292cc7e8aedd9f"><td class="memTemplParams" colspan="2">template&lt;uart_device dev&gt; </td></tr>
-<tr class="memitem:ac8df28c57e0ccaaec1292cc7e8aedd9f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac8df28c57e0ccaaec1292cc7e8aedd9f">serial_rx_dispatch</a> ()</td></tr>
-<tr class="separator:ac8df28c57e0ccaaec1292cc7e8aedd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa662cfb3b8e439975905bd0004393d20"><td class="memItemLeft" align="right" valign="top">static Timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa662cfb3b8e439975905bd0004393d20">dev_tmr</a> (1000,&amp;<a class="el" href="structecl_1_1dispatcher__timer.html#acbcb4b0ef6d7f74ee381b1aa2fcc38c2">dispatcher_timer::check_xfer</a>, <a class="el" href="namespaceecl.html#a311e14d560946683021865e562b9fc7d">dispatcher_obj</a>)</td></tr>
 <tr class="memdesc:aa662cfb3b8e439975905bd0004393d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Soft-IRQ dispatcher timer.  <a href="#aa662cfb3b8e439975905bd0004393d20">More...</a><br /></td></tr>
 <tr class="separator:aa662cfb3b8e439975905bd0004393d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -823,7 +887,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a00441eda816316b4fed2ce0420e83e1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a">bypass_console_init</a> ()</td></tr>
 <tr class="separator:a00441eda816316b4fed2ce0420e83e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ac19eee68fd988d5567a7bf0e1193c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c">bypass_putc</a> (char c)</td></tr>
-<tr class="memdesc:a77ac19eee68fd988d5567a7bf0e1193c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypasses console drivers and puts data directly to the UART.  <a href="#a77ac19eee68fd988d5567a7bf0e1193c">More...</a><br /></td></tr>
+<tr class="memdesc:a77ac19eee68fd988d5567a7bf0e1193c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts character to bypass console. Does nothing if console is disabled.  <a href="#a77ac19eee68fd988d5567a7bf0e1193c">More...</a><br /></td></tr>
 <tr class="separator:a77ac19eee68fd988d5567a7bf0e1193c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7d75559488b93ee4ad7d1d942950e82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa7d75559488b93ee4ad7d1d942950e82">__attribute__</a> ((noreturn)) static inline void <a class="el" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3">abort</a>()</td></tr>
 <tr class="memdesc:aa7d75559488b93ee4ad7d1d942950e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aborts execution of currently running code. Never return.  <a href="#aa7d75559488b93ee4ad7d1d942950e82">More...</a><br /></td></tr>
@@ -837,6 +901,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ae0baa923668dc284b3939a24acc793c1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae0baa923668dc284b3939a24acc793c1">arch_spin_wait</a> (uint32_t ms)</td></tr>
 <tr class="memdesc:ae0baa923668dc284b3939a24acc793c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a dummy busy wait for specified amount of milliseconds.  <a href="#ae0baa923668dc284b3939a24acc793c1">More...</a><br /></td></tr>
 <tr class="separator:ae0baa923668dc284b3939a24acc793c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2053fc04d8109974fb1989548e8304d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a2053fc04d8109974fb1989548e8304d8">bypass_init</a> ()</td></tr>
+<tr class="memdesc:a2053fc04d8109974fb1989548e8304d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bypass console.  <a href="#a2053fc04d8109974fb1989548e8304d8">More...</a><br /></td></tr>
+<tr class="separator:a2053fc04d8109974fb1989548e8304d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2053fc04d8109974fb1989548e8304d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a2053fc04d8109974fb1989548e8304d8">bypass_init</a> ()</td></tr>
+<tr class="memdesc:a2053fc04d8109974fb1989548e8304d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bypass console.  <a href="#a2053fc04d8109974fb1989548e8304d8">More...</a><br /></td></tr>
+<tr class="separator:a2053fc04d8109974fb1989548e8304d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2053fc04d8109974fb1989548e8304d8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a2053fc04d8109974fb1989548e8304d8">bypass_init</a> ()</td></tr>
+<tr class="memdesc:a2053fc04d8109974fb1989548e8304d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bypass console.  <a href="#a2053fc04d8109974fb1989548e8304d8">More...</a><br /></td></tr>
+<tr class="separator:a2053fc04d8109974fb1989548e8304d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92d2cdb61c450632ad5676ed9f1a26d3"><td class="memTemplParams" colspan="2">template&lt;typename T , class Alloc , class... Args&gt; </td></tr>
 <tr class="memitem:a92d2cdb61c450632ad5676ed9f1a26d3"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a92d2cdb61c450632ad5676ed9f1a26d3">allocate_shared</a> (const Alloc &amp;<a class="el" href="shared__unit_8cpp.html#aefef57ad4ea73a0352c5d10eaad82203">alloc</a>, Args...args)</td></tr>
 <tr class="separator:a92d2cdb61c450632ad5676ed9f1a26d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -979,6 +1052,14 @@ Variables</h2></td></tr>
 <tr class="separator:a8b2b8867aa750a7e54b14840bece20bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311e14d560946683021865e562b9fc7d"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structecl_1_1dispatcher__timer.html">ecl::dispatcher_timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a311e14d560946683021865e562b9fc7d">dispatcher_obj</a></td></tr>
 <tr class="separator:a311e14d560946683021865e562b9fc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac11067abfe13bf55ba8a6e36e57a353"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aac11067abfe13bf55ba8a6e36e57a353">template_console_dev</a> = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td></tr>
+<tr class="separator:aac11067abfe13bf55ba8a6e36e57a353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac11067abfe13bf55ba8a6e36e57a353"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aac11067abfe13bf55ba8a6e36e57a353">template_console_dev</a> = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td></tr>
+<tr class="separator:aac11067abfe13bf55ba8a6e36e57a353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac11067abfe13bf55ba8a6e36e57a353"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aac11067abfe13bf55ba8a6e36e57a353">template_console_dev</a> = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td></tr>
+<tr class="separator:aac11067abfe13bf55ba8a6e36e57a353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410dcb336b45f913e82612cddeebc73c"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a410dcb336b45f913e82612cddeebc73c">template_console_dev</a> = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td></tr>
+<tr class="separator:a410dcb336b45f913e82612cddeebc73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d2320951343cd001bc77e588533164"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structecl_1_1iostream__initializer.html">ecl::iostream_initializer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa0d2320951343cd001bc77e588533164">stream_initializer</a></td></tr>
 <tr class="separator:aa0d2320951343cd001bc77e588533164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae05f1768dbdcc6b1206b4ea6f89393a2"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ae05f1768dbdcc6b1206b4ea6f89393a2">adc_irqn</a> = ADC_IRQn</td></tr>
@@ -1001,12 +1082,24 @@ Variables</h2></td></tr>
 <tr class="separator:a0904da04965e801c49f72055df6a9262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="aa844cf5ed9d6788988dacc48a81d86d3"></a>
+<a class="anchor" id="a9a1677c096e2b35ce3e3c56b6bcb761a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#aa844cf5ed9d6788988dacc48a81d86d3">ecl::ADC1_driver</a> = typedef <a class="el" href="classecl_1_1adc.html">adc</a>&lt;<a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">adc_dev::dev1</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1adc.html">adc</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">adc_dev::dev1</a> &gt; <a class="el" href="namespaceecl.html#a9a1677c096e2b35ce3e3c56b6bcb761a">ecl::ADC1_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a49d6a0838f8d8d3a720ddb4c13d5baa9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94aeb8c87ca5ecf67c8bbed299615e8faa0">ecl::dma_stream::dma2_0</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt; <a class="el" href="namespaceecl.html#a49d6a0838f8d8d3a720ddb4c13d5baa9">ecl::adc_dma</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1024,6 +1117,18 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>ADC event handler. Event code signifies result of a conversion. </p>
+
+</div>
+</div>
+<a class="anchor" id="a80daceac0bc3e9b67720e5d6b9373d35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba1ce8f9c8c598a33e655651c0899ef7bc">gpio_hw::num::pin2</a> &gt; <a class="el" href="namespaceecl.html#a80daceac0bc3e9b67720e5d6b9373d35">ecl::blue_led</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1047,6 +1152,30 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1generic__bus.html#a4c7eed2b45da51f420d08649f156f253" title="Performs xfer in blocking mode using buffers set previously with optional timeout. ">generic_bus::xfer()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a174f9da298bc6b8b938090b1d779599c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#aa130e313e314a333a7e6d1b51e3f2981">USART3_cfg</a> <a class="el" href="namespaceecl.html#a174f9da298bc6b8b938090b1d779599c">ecl::bypass_config</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acd33b070fc1b975d2782a771b3f86799"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a> <a class="el" href="namespaceecl.html#acd33b070fc1b975d2782a771b3f86799">ecl::bypass_console_bus</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1074,12 +1203,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac57794e39a54a80e4d133f1644c7d41f"></a>
+<a class="anchor" id="a72c5f35dffe650718b1d0ec047a80461"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#ac57794e39a54a80e4d133f1644c7d41f">ecl::console_uart</a> = typedef <a class="el" href="namespaceecl.html#aab26aeb25300b9313f37d95dcb5b82f1">USART3_driver</a></td>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">USART3_driver</a> <a class="el" href="namespaceecl.html#a72c5f35dffe650718b1d0ec047a80461">ecl::console_uart</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1103,19 +1232,103 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a285e0b9f0e0ddb6357229128e69d0784">ecl::cs43l22_instance</a> = typedef <a class="el" href="classecl_1_1cs43l22.html">cs43l22</a>&lt;<a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt;<a class="el" href="namespaceecl.html#ad9dea5c09ac3fd3c6c6dbd4a07061dd1">i2c1</a>&gt;, <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt;i2s3&gt;, rst_gpio&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceecl.html#a285e0b9f0e0ddb6357229128e69d0784">ecl::cs43l22_instance</a> = typedef <a class="el" href="classecl_1_1cs43l22.html">cs43l22</a>&lt;<a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt;<a class="el" href="namespaceecl.html#a18ae8c5b0dcc0bb87434359e0da47121">i2c1</a>&gt;, <a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt;<a class="el" href="namespaceecl.html#ae55eca2606dc7de4a7b1814dc6e12218">i2s3</a>&gt;, <a class="el" href="namespaceecl.html#acfa6c63fec2224290164b3b354325e8c">rst_gpio</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aaedc6f548d58803fcc3520a062d43279"></a>
+<a class="anchor" id="add4ea4562d467951611af4207b54f1ff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#aaedc6f548d58803fcc3520a062d43279">ecl::example_adc</a> = typedef <a class="el" href="namespaceecl.html#aa844cf5ed9d6788988dacc48a81d86d3">ADC1_driver</a></td>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#a9a1677c096e2b35ce3e3c56b6bcb761a">ADC1_driver</a> <a class="el" href="namespaceecl.html#add4ea4562d467951611af4207b54f1ff">ecl::example_adc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8d7117b3549f699b647869177e2ca65a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a0cc175b9c0f1b6a831c399e269772661">gpio_port::a</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a4dc2eb55d3953d9c657a8abbf57cce0f">gpio_num::pin0</a> &gt; <a class="el" href="namespaceecl.html#a8d7117b3549f699b647869177e2ca65a">ecl::GPIO_PA0_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae314478d07655469e4378478c0658a3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a6c31412de99950f0840e043e01f989ff">gpio_num::pin12</a> &gt; <a class="el" href="namespaceecl.html#ae314478d07655469e4378478c0658a3a">ecl::GPIO_PD12_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a410fc09ec62313c6966b20b9a3b2ba4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a6dd15586f3226d354f9bad7379050684">gpio_num::pin13</a> &gt; <a class="el" href="namespaceecl.html#a410fc09ec62313c6966b20b9a3b2ba4a">ecl::GPIO_PD13_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab1a6da8637e4cbe7d1e246230dee4251"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9ac8b9d9370fc1111e705e86ea52284e5b">gpio_num::pin14</a> &gt; <a class="el" href="namespaceecl.html#ab1a6da8637e4cbe7d1e246230dee4251">ecl::GPIO_PD14_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae70cc1991ee1841486c4464f2d2366cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9ab2723794ebf83d9e93089245230f521e">gpio_num::pin15</a> &gt; <a class="el" href="namespaceecl.html#ae70cc1991ee1841486c4464f2d2366cf">ecl::GPIO_PD15_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acee00fa1c12059beb37da39b862fb251"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceecl.html#acee00fa1c12059beb37da39b862fb251">ecl::GPIO_PD4_driver</a> = typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt;<a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">gpio_port::d</a>, <a class="el" href="namespaceecl.html#a3d98b43c99b447ff6db9ed3a01c294b9a508102cf58d3c826d3e42cf61c07020b">gpio_num::pin4</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a0722189f1ec192d21f0aa9462cc9b3a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba4159b35a5108f290a76464fad870a647">gpio_hw::num::pin3</a> &gt; <a class="el" href="namespaceecl.html#a0722189f1ec192d21f0aa9462cc9b3a4">ecl::green_led</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1141,79 +1354,103 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#ae4ba2870a1a112a06e9985762bf274d8">ecl::htu21d</a> = typedef <a class="el" href="classecl_1_1sensor_1_1htu21d.html">sensor::htu21d</a>&lt;<a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt;<a class="el" href="namespaceecl.html#ad9dea5c09ac3fd3c6c6dbd4a07061dd1">i2c1</a>&gt;&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceecl.html#ae4ba2870a1a112a06e9985762bf274d8">ecl::htu21d</a> = typedef <a class="el" href="classecl_1_1sensor_1_1htu21d.html">sensor::htu21d</a>&lt;<a class="el" href="classecl_1_1generic__bus.html">generic_bus</a>&lt;<a class="el" href="namespaceecl.html#a18ae8c5b0dcc0bb87434359e0da47121">i2c1</a>&gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ad9dea5c09ac3fd3c6c6dbd4a07061dd1"></a>
+<a class="anchor" id="a18ae8c5b0dcc0bb87434359e0da47121"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#ad9dea5c09ac3fd3c6c6dbd4a07061dd1">ecl::i2c1</a> = typedef <a class="el" href="namespaceecl.html#a53b63268a621f8dc4724b902683e34b3">I2C1_driver</a></td>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#ae39fc466364c58f9acecbd3c975c9451">I2C1_driver</a> <a class="el" href="namespaceecl.html#a18ae8c5b0dcc0bb87434359e0da47121">ecl::i2c1</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a53b63268a621f8dc4724b902683e34b3"></a>
+<a class="anchor" id="ae39fc466364c58f9acecbd3c975c9451"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a53b63268a621f8dc4724b902683e34b3">ecl::I2C1_driver</a> = typedef <a class="el" href="classecl_1_1i2c__bus.html">i2c_bus</a>&lt;<a class="el" href="namespaceecl.html#a27e2c65df8926974b3d12f09499db39e">I2C1_driver_cfg</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1i2c__bus.html">i2c_bus</a>&lt; <a class="el" href="namespaceecl.html#afb35f120a2fc7083c3dd4f330797f7c4">I2C1_driver_cfg</a> &gt; <a class="el" href="namespaceecl.html#ae39fc466364c58f9acecbd3c975c9451">ecl::I2C1_driver</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a27e2c65df8926974b3d12f09499db39e"></a>
+<a class="anchor" id="afb35f120a2fc7083c3dd4f330797f7c4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a27e2c65df8926974b3d12f09499db39e">ecl::I2C1_driver_cfg</a> = typedef <a class="el" href="structecl_1_1i2c__config.html">i2c_config</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4afccf268d870cf9a101fd1d2eb30155c5">i2c_device::bus1</a>, <a class="el" href="namespaceecl.html#a67433879873f74ee382108a92741acb3a19d751dff27aea339cf66284e97e1d5e">i2c_mode::IRQ</a>, 1000, I2C_Mode_I2C, I2C_DutyCycle_2, 51, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit &gt;</td>
+          <td class="memname">typedef <a class="el" href="structecl_1_1i2c__config.html">i2c_config</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4afccf268d870cf9a101fd1d2eb30155c5">i2c_device::bus1</a>, <a class="el" href="namespaceecl.html#a67433879873f74ee382108a92741acb3a19d751dff27aea339cf66284e97e1d5e">i2c_mode::IRQ</a>, 1000, I2C_Mode_I2C, I2C_DutyCycle_2, 51, I2C_Ack_Enable, I2C_AcknowledgedAddress_7bit &gt; <a class="el" href="namespaceecl.html#afb35f120a2fc7083c3dd4f330797f7c4">ecl::I2C1_driver_cfg</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aaf3f089d12390d77b3fd3788eefa242f"></a>
+<a class="anchor" id="abf817ac74941a2989b1c4153a0024318"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#aaf3f089d12390d77b3fd3788eefa242f">ecl::I2S3_driver</a> = typedef <a class="el" href="classecl_1_1spi__i2s__bus.html">spi_i2s_bus</a>&lt;<a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4a824173600db39732496dfb92d711f61b">spi_device::bus3</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">ecl::i2c_dev</a> = typedef <a class="el" href="classecl_1_1i2c__bus.html">i2c_bus</a>&lt;<a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4a9dcb794da416409fafb46758cd82baf9">i2c_device::wire0</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a2e035b8a9b9a2e0f65e162afca42c807"></a>
+<a class="anchor" id="ae55eca2606dc7de4a7b1814dc6e12218"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a2e035b8a9b9a2e0f65e162afca42c807">ecl::i2s3_rx_dma</a> = typedef <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt;<a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a4a403d4982b8620d97e6e5b329844298">ecl::dma_stream::dma1_0</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a>&gt;</td>
+          <td class="memname">using <a class="el" href="namespaceecl.html#ae55eca2606dc7de4a7b1814dc6e12218">ecl::i2s3</a> = typedef <a class="el" href="namespaceecl.html#a22e357c493b7b8b24c0f31bfb0fd7fbc">I2S3_driver</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="acdabd171e686fa9da10c5396ca218003"></a>
+<a class="anchor" id="a22e357c493b7b8b24c0f31bfb0fd7fbc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#acdabd171e686fa9da10c5396ca218003">ecl::i2s3_tx_dma</a> = typedef <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt;<a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a9e8b79a33496a185ee54672acc94749d">ecl::dma_stream::dma1_5</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1spi__i2s__bus.html">spi_i2s_bus</a>&lt; <a class="el" href="namespaceecl.html#a5607936d048b25948c76640724dcb3b4a824173600db39732496dfb92d711f61b">spi_device::bus3</a> &gt; <a class="el" href="namespaceecl.html#a22e357c493b7b8b24c0f31bfb0fd7fbc">ecl::I2S3_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4d00457403bf248da873ea96774b913"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a4a403d4982b8620d97e6e5b329844298">ecl::dma_stream::dma1_0</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt; <a class="el" href="namespaceecl.html#ab4d00457403bf248da873ea96774b913">ecl::i2s3_rx_dma</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7903fa5bd086cf75111e90e102d3b4c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; <a class="el" href="namespaceecl.html#a8cf36eef78c8dbb519911d064d259f94a9e8b79a33496a185ee54672acc94749d">ecl::dma_stream::dma1_5</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::dma_channel::ch0</a> &gt; <a class="el" href="namespaceecl.html#a7903fa5bd086cf75111e90e102d3b4c7">ecl::i2s3_tx_dma</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1232,24 +1469,180 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad00083420fcc845363f037c17d58ebe1"></a>
+<a class="anchor" id="aed3c0f8bc9ec4d0c074429de8f2dab75"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#ad00083420fcc845363f037c17d58ebe1">ecl::my_uart</a> = typedef <a class="el" href="namespaceecl.html#a292d7446eb5ef7a135d2761fbf4959b9">UART1_driver</a></td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba1ce8f9c8c598a33e655651c0899ef7bc">gpio_hw::num::pin2</a> &gt; <a class="el" href="namespaceecl.html#aed3c0f8bc9ec4d0c074429de8f2dab75">ecl::led_blue</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a07f96814e248f89d324cc29a451ef1d5"></a>
+<a class="anchor" id="a0ae7ff052d8fd0193efcb1da39a29a46"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a07f96814e248f89d324cc29a451ef1d5">ecl::test_channels</a> = typedef <a class="el" href="structecl_1_1channel__group__sw__trigger.html">channel_group_sw_trigger</a>&lt;<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">adc_channel::ch1</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">adc_channel::ch16</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba4159b35a5108f290a76464fad870a647">gpio_hw::num::pin3</a> &gt; <a class="el" href="namespaceecl.html#a0ae7ff052d8fd0193efcb1da39a29a46">ecl::led_green</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5e76abf47f2c03d9883b073805de3866"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba7c1890779d5dda9bbb157eb3afcfdb26">gpio_hw::num::pin1</a> &gt; <a class="el" href="namespaceecl.html#a5e76abf47f2c03d9883b073805de3866">ecl::led_red</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a87866cb5482c208d188bc2a281790ad2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#afca5f9475c29a78d426a3f6bf0548f55">UART1_driver</a> <a class="el" href="namespaceecl.html#a87866cb5482c208d188bc2a281790ad2">ecl::my_uart</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae3247f7085fbbb2c22335f14152c3ae5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#a410fc09ec62313c6966b20b9a3b2ba4a">GPIO_PD13_driver</a> <a class="el" href="namespaceecl.html#ae3247f7085fbbb2c22335f14152c3ae5">ecl::orange_led</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aee5942ade0730c36573452a7fa002d9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; <a class="el" href="namespaceecl.html#aac11067abfe13bf55ba8a6e36e57a353">template_console_dev</a> &gt; <a class="el" href="classecl_1_1platform__console.html">ecl::platform_console</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af5937e80afdb8b82dfe8fc781fb23d6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba508102cf58d3c826d3e42cf61c07020b">gpio_hw::num::pin4</a> &gt; <a class="el" href="namespaceecl.html#af5937e80afdb8b82dfe8fc781fb23d6a">ecl::push_button</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac294d691d449dba9feb2c3379450e7ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1gpio.html">gpio</a>&lt; <a class="el" href="namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a8fa14cdd754f91cc6554c9e71929cce7">gpio_hw::port::f</a>, <a class="el" href="namespaceecl_1_1gpio__hw.html#a9489f6b120c38e79898b39695f9815aba7c1890779d5dda9bbb157eb3afcfdb26">gpio_hw::num::pin1</a> &gt; <a class="el" href="namespaceecl.html#ac294d691d449dba9feb2c3379450e7ac">ecl::red_led</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acfa6c63fec2224290164b3b354325e8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceecl.html#acfa6c63fec2224290164b3b354325e8c">ecl::rst_gpio</a> = typedef <a class="el" href="namespaceecl.html#acee00fa1c12059beb37da39b862fb251">GPIO_PD4_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2b0107e247f0c654294f996525bc2e3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a414d4f2f258870841651939e80cdf441">uart_device::serial0</a> &gt; <a class="el" href="namespaceecl.html#a2b0107e247f0c654294f996525bc2e3d">ecl::serial_device0</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aedcf03a4c64b70cf411a37dd6fb30124"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceecl.html#aedcf03a4c64b70cf411a37dd6fb30124">ecl::serial_device2</a> = typedef <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt;<a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a45e2be32f5ce9f011470cddc7579959a">uart_device::serial2</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a88973fe8504d4023a74390ba7956c133"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceecl.html#a88973fe8504d4023a74390ba7956c133">ecl::serial_device3</a> = typedef <a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt;uart_device::serial3&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aadf10b889ab7ada378695b1d0b69429e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#a9a1677c096e2b35ce3e3c56b6bcb761a">ADC1_driver</a> <a class="el" href="namespaceecl.html#aadf10b889ab7ada378695b1d0b69429e">ecl::test_adc</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac094163c5881c35bf701416ab1ed4908"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structecl_1_1channel__group__sw__trigger.html">channel_group_sw_trigger</a>&lt; <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">adc_channel::ch1</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">adc_channel::ch16</a> &gt; <a class="el" href="namespaceecl.html#ac094163c5881c35bf701416ab1ed4908">ecl::test_channel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abc6b95db3b46903ba5a3745eb51e3460"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structecl_1_1channel__group__sw__trigger.html">channel_group_sw_trigger</a>&lt; <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">adc_channel::ch1</a>, <a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">adc_channel::ch16</a> &gt; <a class="el" href="namespaceecl.html#abc6b95db3b46903ba5a3745eb51e3460">ecl::test_channels</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1261,7 +1654,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structecl_1_1gpio__list.html">gpio_list</a>&lt; red_led, blue_led, green_led &gt; <a class="el" href="namespaceecl.html#a010af4924c87e82bda9b5ec823f10e65">ecl::test_gpios</a></td>
+          <td class="memname">typedef <a class="el" href="structecl_1_1gpio__list.html">gpio_list</a>&lt; <a class="el" href="namespaceecl.html#ac294d691d449dba9feb2c3379450e7ac">red_led</a>, <a class="el" href="namespaceecl.html#a80daceac0bc3e9b67720e5d6b9373d35">blue_led</a>, <a class="el" href="namespaceecl.html#a0722189f1ec192d21f0aa9462cc9b3a4">green_led</a> &gt; <a class="el" href="namespaceecl.html#a010af4924c87e82bda9b5ec823f10e65">ecl::test_gpios</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1282,12 +1675,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a87392183077587ea86756bf46a0a12b9"></a>
+<a class="anchor" id="a861696a30d8cd910246b41711f137cc0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a87392183077587ea86756bf46a0a12b9">ecl::the_i2s3_alias</a> = typedef <a class="el" href="namespaceecl.html#aaf3f089d12390d77b3fd3788eefa242f">I2S3_driver</a></td>
+          <td class="memname">typedef <a class="el" href="namespaceecl.html#a22e357c493b7b8b24c0f31bfb0fd7fbc">I2S3_driver</a> <a class="el" href="namespaceecl.html#a861696a30d8cd910246b41711f137cc0">ecl::the_i2s3_alias</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1309,48 +1702,60 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac39fd1c30e12858f8767c136f49d8d23"></a>
+<a class="anchor" id="a56c5817518e3feb8296a3569bc55a270"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#ac39fd1c30e12858f8767c136f49d8d23">ecl::UART1_cfg</a> = typedef <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt;<a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a> &gt; <a class="el" href="namespaceecl.html#a56c5817518e3feb8296a3569bc55a270">ecl::UART1_cfg</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a292d7446eb5ef7a135d2761fbf4959b9"></a>
+<a class="anchor" id="afca5f9475c29a78d426a3f6bf0548f55"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#a292d7446eb5ef7a135d2761fbf4959b9">ecl::UART1_driver</a> = typedef <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt;<a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">usart_device::dev1</a> &gt; <a class="el" href="namespaceecl.html#afca5f9475c29a78d426a3f6bf0548f55">ecl::UART1_driver</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aad8313636fd324bcc00967d9b1172ca2"></a>
+<a class="anchor" id="aa130e313e314a333a7e6d1b51e3f2981"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#aad8313636fd324bcc00967d9b1172ca2">ecl::USART3_cfg</a> = typedef <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt;<a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="structecl_1_1usart__cfg.html">usart_cfg</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a> &gt; <a class="el" href="namespaceecl.html#aa130e313e314a333a7e6d1b51e3f2981">ecl::USART3_cfg</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="aab26aeb25300b9313f37d95dcb5b82f1"></a>
+<a class="anchor" id="a22498965434aa2cd27850a0e7572a5d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="namespaceecl.html#aab26aeb25300b9313f37d95dcb5b82f1">ecl::USART3_driver</a> = typedef <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt;<a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a>&gt;</td>
+          <td class="memname">typedef <a class="el" href="classecl_1_1usart__bus.html">usart_bus</a>&lt; <a class="el" href="namespaceecl.html#a88d590d9b882163efaf3c24ac3ff54e2a8ed7dfcff4e017e4f61d36bbbf1f08bc">usart_device::dev3</a> &gt; <a class="el" href="namespaceecl.html#a22498965434aa2cd27850a0e7572a5d2">ecl::USART3_driver</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9ad857dd2df1daa7bd5f6a2bdb51089f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceecl.html#a9ad857dd2df1daa7bd5f6a2bdb51089f">ecl::usr_btn</a> = typedef <a class="el" href="namespaceecl.html#a8d7117b3549f699b647869177e2ca65a">GPIO_PA0_driver</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2691,7 +3096,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_ae0baa923668dc284b3939a24acc793c1_cgraph.png" border="0" usemap="#namespaceecl_ae0baa923668dc284b3939a24acc793c1_cgraph" alt=""/></div>
 <map name="namespaceecl_ae0baa923668dc284b3939a24acc793c1_cgraph" id="namespaceecl_ae0baa923668dc284b3939a24acc793c1_cgraph">
-<area shape="rect" id="node2" href="arch_2arm__cm_2export_2arch_2execution_8hpp.html#aaa92f65328ef8d3aa0be7bcba7dcb0ad" title="Provides a small delay. " alt="" coords="187,5,272,32"/>
+<area shape="rect" id="node2" href="arch_2arm__cm_2export_2arch_2execution_8hpp.html#aaa92f65328ef8d3aa0be7bcba7dcb0ad" title="Provides a small delay. " alt="" coords="188,5,273,32"/>
 </map>
 </div>
 </p>
@@ -2885,7 +3290,112 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph.png" border="0" usemap="#namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" alt=""/></div>
 <map name="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" id="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="167,5,288,32"/>
+<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="167,5,288,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2053fc04d8109974fb1989548e8304d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::bypass_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes bypass console. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph.png" border="0" usemap="#namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" alt=""/></div>
+<map name="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" id="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="167,5,288,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2053fc04d8109974fb1989548e8304d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::bypass_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes bypass console. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph.png" border="0" usemap="#namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" alt=""/></div>
+<map name="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" id="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="167,5,288,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2053fc04d8109974fb1989548e8304d8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::bypass_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes bypass console. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph.png" border="0" usemap="#namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" alt=""/></div>
+<map name="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph" id="namespaceecl_a2053fc04d8109974fb1989548e8304d8_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="167,5,288,32"/>
 </map>
 </div>
 </p>
@@ -2914,9 +3424,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Bypasses console drivers and puts data directly to the UART. </p>
+<p>Puts character to bypass console. Does nothing if console is disabled. </p>
 <p>Does nothing if console is disabled.</p>
-<p>Puts character to bypass console. Does nothing if console is disabled.</p>
+<p>Bypasses console drivers and puts data directly to the UART.</p>
 <p>Required to print debug of the failed asserts. Check other platforms to get idea why this function is provided. </p>
 
 </div>
@@ -2950,7 +3460,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a60ced95d5969a16195a141f4bcc28067_cgraph.png" border="0" usemap="#namespaceecl_a60ced95d5969a16195a141f4bcc28067_cgraph" alt=""/></div>
 <map name="namespaceecl_a60ced95d5969a16195a141f4bcc28067_cgraph" id="namespaceecl_a60ced95d5969a16195a141f4bcc28067_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="175,5,296,32"/>
+<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="175,5,296,32"/>
 </map>
 </div>
 </p>
@@ -3057,6 +3567,94 @@ template&lt;uint32_t SplExti&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if EXTI is direct and false if otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a71c7767e464015a9ed128bbeb298a204"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2C_Dev &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::dispatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Real dispatch function that operates over given I2C theCore driver. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">I2C_Dev</td><td>theCore I2C driver.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Upon call, it will determine if data should be send or received from the I2C driver. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph.png" border="0" usemap="#namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph" alt=""/></div>
+<map name="namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph" id="namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a8f0da76b561bf59ee68ac097ed45d232" title="ecl::i2c_dispatch" alt="" coords="149,5,269,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a71c7767e464015a9ed128bbeb298a204"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I2C_Dev &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::dispatch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Real dispatch function that operates over given I2C theCore driver. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">I2C_Dev</td><td>theCore I2C driver.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Upon call, it will determine if data should be send or received from the I2C driver. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph.png" border="0" usemap="#namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph" alt=""/></div>
+<map name="namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph" id="namespaceecl_a71c7767e464015a9ed128bbeb298a204_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a8f0da76b561bf59ee68ac097ed45d232" title="ecl::i2c_dispatch" alt="" coords="149,5,269,32"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -3725,8 +4323,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph.png" border="0" usemap="#namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph" alt=""/></div>
 <map name="namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph" id="namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="155,5,327,32"/>
-<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="375,5,467,32"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="156,5,328,32"/>
+<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="376,5,469,32"/>
 </map>
 </div>
 </p>
@@ -3770,8 +4368,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a69319df4ac974e92a51f968888fc25cf_cgraph.png" border="0" usemap="#namespaceecl_a69319df4ac974e92a51f968888fc25cf_cgraph" alt=""/></div>
 <map name="namespaceecl_a69319df4ac974e92a51f968888fc25cf_cgraph" id="namespaceecl_a69319df4ac974e92a51f968888fc25cf_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#ae0baa923668dc284b3939a24acc793c1" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="155,5,288,32"/>
-<area shape="rect" id="node3" href="arch_2arm__cm_2export_2arch_2execution_8hpp.html#aaa92f65328ef8d3aa0be7bcba7dcb0ad" title="Provides a small delay. " alt="" coords="336,5,421,32"/>
+<area shape="rect" id="node2" href="namespaceecl.html#ae0baa923668dc284b3939a24acc793c1" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="156,5,291,32"/>
+<area shape="rect" id="node3" href="arch_2arm__cm_2export_2arch_2execution_8hpp.html#aaa92f65328ef8d3aa0be7bcba7dcb0ad" title="Provides a small delay. " alt="" coords="339,5,424,32"/>
 </map>
 </div>
 </p>
@@ -3815,8 +4413,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph.png" border="0" usemap="#namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph" alt=""/></div>
 <map name="namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph" id="namespaceecl_a6e1134bd784ee687b2a6d7b499205a4b_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="155,5,327,32"/>
-<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="375,5,467,32"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="156,5,328,32"/>
+<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="376,5,469,32"/>
 </map>
 </div>
 </p>
@@ -3896,13 +4494,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph.png" border="0" usemap="#namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph" alt=""/></div>
 <map name="namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph" id="namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="313,5,448,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="315,81,446,108"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="314,144,447,171"/>
-<area shape="rect" id="node5" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="163,100,229,127"/>
-<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="313,201,449,228"/>
-<area shape="rect" id="node7" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="145,303,247,329"/>
-<area shape="rect" id="node8" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="295,277,467,304"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="316,5,451,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="318,81,449,108"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="317,144,450,171"/>
+<area shape="rect" id="node5" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="164,100,232,127"/>
+<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="315,201,451,228"/>
+<area shape="rect" id="node7" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="147,303,249,329"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="297,277,469,304"/>
 </map>
 </div>
 </p>
@@ -3972,13 +4570,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph.png" border="0" usemap="#namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph" alt=""/></div>
 <map name="namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph" id="namespaceecl_a4277e787d66577447b0885c0f09cea71_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="313,5,448,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="315,81,446,108"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="314,144,447,171"/>
-<area shape="rect" id="node5" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="163,100,229,127"/>
-<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="313,201,449,228"/>
-<area shape="rect" id="node7" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="145,303,247,329"/>
-<area shape="rect" id="node8" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="295,277,467,304"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="316,5,451,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="318,81,449,108"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="317,144,450,171"/>
+<area shape="rect" id="node5" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="164,100,232,127"/>
+<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="315,201,451,228"/>
+<area shape="rect" id="node7" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="147,303,249,329"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="297,277,469,304"/>
 </map>
 </div>
 </p>
@@ -4021,8 +4619,8 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a886fc423dd371bd1f90a6eee695fb5b4_cgraph.png" border="0" usemap="#namespaceecl_a886fc423dd371bd1f90a6eee695fb5b4_cgraph" alt=""/></div>
 <map name="namespaceecl_a886fc423dd371bd1f90a6eee695fb5b4_cgraph" id="namespaceecl_a886fc423dd371bd1f90a6eee695fb5b4_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="145,5,237,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="285,5,457,32"/>
+<area shape="rect" id="node2" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="147,5,240,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="288,5,460,32"/>
 </map>
 </div>
 </p>
@@ -4058,10 +4656,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph.png" border="0" usemap="#namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph" alt=""/></div>
 <map name="namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph" id="namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="121,5,255,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="120,56,256,83"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="123,107,253,133"/>
-<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="121,157,255,184"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="123,5,256,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="121,56,257,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="124,107,255,133"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="122,157,257,184"/>
 </map>
 </div>
 </p>
@@ -4097,10 +4695,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph.png" border="0" usemap="#namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph" alt=""/></div>
 <map name="namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph" id="namespaceecl_a16a20a7eaf786bc5dca3e88b4d07d305_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="121,5,255,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="120,56,256,83"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="123,107,253,133"/>
-<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="121,157,255,184"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="123,5,256,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="121,56,257,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="124,107,255,133"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="122,157,257,184"/>
 </map>
 </div>
 </p>
@@ -4502,6 +5100,86 @@ Here is the call graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">struct <a class="el" href="structecl_1_1iostream__initializer.html">ecl::iostream_initializer</a>  ecl::stream_initializer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac11067abfe13bf55ba8a6e36e57a353"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a> ecl::template_console_dev = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac11067abfe13bf55ba8a6e36e57a353"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a> ecl::template_console_dev = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aac11067abfe13bf55ba8a6e36e57a353"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a> ecl::template_console_dev = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a410dcb336b45f913e82612cddeebc73c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1">uart_device</a> ecl::template_console_dev = <a class="el" href="namespaceecl.html#aeabbc115949117eea536dda9adec61c1a67ae729c14c97c36ddf75527003654f6">uart_device::dev0</a></td>
         </tr>
       </table>
   </td>

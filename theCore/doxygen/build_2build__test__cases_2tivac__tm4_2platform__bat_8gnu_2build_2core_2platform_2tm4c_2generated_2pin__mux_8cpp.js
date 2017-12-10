@@ -1,0 +1,4 @@
+var build_2build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2pin__mux_8cpp =
+[
+    [ "gpio_init_generated", "build_2build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2pin__mux_8cpp.html#a3fe15c42dce5b9ef9201bfb60bccaf38", null ]
+];

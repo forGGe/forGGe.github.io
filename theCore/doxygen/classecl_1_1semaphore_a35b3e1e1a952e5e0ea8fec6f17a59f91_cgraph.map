@@ -1,7 +1,7 @@
 <map id="ecl::semaphore::try_wait" name="ecl::semaphore::try_wait">
-<area shape="rect" id="node2" href="$task_8h.html#a5e6dc39f0eaf64a3c825fc1c2dc4c5f6" title="xTaskGetTickCount" alt="" coords="217,5,355,32"/>
-<area shape="rect" id="node3" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="243,56,329,83"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="403,56,549,83"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="597,56,769,83"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="817,56,909,83"/>
+<area shape="rect" id="node2" href="$task_8h.html#a5e6dc39f0eaf64a3c825fc1c2dc4c5f6" title="xTaskGetTickCount" alt="" coords="219,5,357,32"/>
+<area shape="rect" id="node3" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="245,56,331,83"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="405,56,552,83"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="600,56,772,83"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="820,56,913,83"/>
 </map>

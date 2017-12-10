@@ -29,6 +29,7 @@ var namespaceecl =
     [ "hm10_sync", "classecl_1_1hm10__sync.html", "classecl_1_1hm10__sync" ],
     [ "i2c_bus", "classecl_1_1i2c__bus.html", "classecl_1_1i2c__bus" ],
     [ "i2c_bus_cfg", "structecl_1_1i2c__bus__cfg.html", null ],
+    [ "i2c_bus_cfg< i2c_device::wire0 >", "structecl_1_1i2c__bus__cfg_3_01i2c__device_1_1wire0_01_4.html", "structecl_1_1i2c__bus__cfg_3_01i2c__device_1_1wire0_01_4" ],
     [ "i2c_config", "structecl_1_1i2c__config.html", "structecl_1_1i2c__config" ],
     [ "iostream", "classecl_1_1iostream.html", "classecl_1_1iostream" ],
     [ "iostream_initializer", "structecl_1_1iostream__initializer.html", "structecl_1_1iostream__initializer" ],

@@ -1,0 +1,8 @@
+<map id="/home/travis/build/forGGe/theCore/build/build_test_cases/stm32f4discovery_simple/platform_bat.gnu/build/core/platform/stm32/generated/export/aux/spi_i2s_cfg.hpp" name="/home/travis/build/forGGe/theCore/build/build_test_cases/stm32f4discovery_simple/platform_bat.gnu/build/core/platform/stm32/generated/export/aux/spi_i2s_cfg.hpp">
+<area shape="rect" id="node3" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="447,153,564,180"/>
+<area shape="rect" id="node5" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,228,277,255"/>
+<area shape="rect" id="node6" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="301,228,424,255"/>
+<area shape="rect" id="node11" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,228,792,255"/>
+<area shape="rect" id="node13" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="816,228,963,255"/>
+<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="269,303,352,329"/>
+</map>

@@ -7,7 +7,7 @@
 <area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="349,60,449,87"/>
 <area shape="rect" id="node7" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="338,111,461,137"/>
 <area shape="rect" id="node9" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="312,161,487,188"/>
-<area shape="rect" id="node8" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="540,136,689,163"/>
-<area shape="rect" id="node11" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="338,212,461,239"/>
-<area shape="rect" id="node12" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="535,212,695,239"/>
+<area shape="rect" id="node8" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="541,136,690,163"/>
+<area shape="rect" id="node11" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="337,212,461,239"/>
+<area shape="rect" id="node12" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="535,212,696,239"/>
 </map>

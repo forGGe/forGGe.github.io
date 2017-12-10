@@ -1,8 +1,8 @@
 <map id="ecl::weak_ptr::operator=" name="ecl::weak_ptr::operator=">
-<area shape="rect" id="node2" href="$classecl_1_1weak__ptr.html#a0db449f53375be606605f87eff2a5cee" title="ecl::weak_ptr::expired" alt="" coords="216,56,365,83"/>
-<area shape="rect" id="node5" href="$classecl_1_1aux.html#a84ca3f7a9b8f407c6bd744b74b5467de" title="Decrements weak reference counter and returns new value. " alt="" coords="597,107,732,133"/>
-<area shape="rect" id="node7" href="$classecl_1_1aux.html#af645c2d6c1ad9fc30b6f93f08eb41983" title="Incremets weak reference counter and returns new value. " alt="" coords="225,157,356,184"/>
-<area shape="rect" id="node3" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="619,5,710,32"/>
-<area shape="rect" id="node4" href="$classecl_1_1weak__ptr.html#a20dc199f7017b66fcbb1e7ce730424f1" title="ecl::weak_ptr::reset" alt="" coords="413,56,549,83"/>
-<area shape="rect" id="node6" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="605,56,724,83"/>
+<area shape="rect" id="node2" href="$classecl_1_1weak__ptr.html#a0db449f53375be606605f87eff2a5cee" title="ecl::weak_ptr::expired" alt="" coords="216,56,367,83"/>
+<area shape="rect" id="node5" href="$classecl_1_1aux.html#a84ca3f7a9b8f407c6bd744b74b5467de" title="Decrements weak reference counter and returns new value. " alt="" coords="600,107,735,133"/>
+<area shape="rect" id="node7" href="$classecl_1_1aux.html#af645c2d6c1ad9fc30b6f93f08eb41983" title="Incremets weak reference counter and returns new value. " alt="" coords="226,157,357,184"/>
+<area shape="rect" id="node3" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="622,5,713,32"/>
+<area shape="rect" id="node4" href="$classecl_1_1weak__ptr.html#a20dc199f7017b66fcbb1e7ce730424f1" title="ecl::weak_ptr::reset" alt="" coords="415,56,552,83"/>
+<area shape="rect" id="node6" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="608,56,727,83"/>
 </map>

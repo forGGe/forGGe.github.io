@@ -1,5 +1,7 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="109,5,240,32"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="129,56,221,83"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="288,56,460,83"/>
+<area shape="rect" id="node2" href="$classecl_1_1adc.html#ae8f61c6f673e7b0df0661fc452d2351f" title="Initializes given ADC. " alt="" coords="129,5,223,32"/>
+<area shape="rect" id="node3" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="109,56,243,83"/>
+<area shape="rect" id="node4" href="$classecl_1_1adc.html#a098ed289d18d261cb7e42f1a5dca8cbf" title="Performs single conversion of the previously configured channels and waits till the end of the conver..." alt="" coords="121,107,231,133"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="129,157,223,184"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="291,157,463,184"/>
 </map>

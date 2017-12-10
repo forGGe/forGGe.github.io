@@ -13,5 +13,6 @@ var searchData=
   ['dir_5finode_2ecpp',['dir_inode.cpp',['../dir__inode_8cpp.html',1,'']]],
   ['dir_5finode_2ehpp',['dir_inode.hpp',['../dir__inode_8hpp.html',1,'']]],
   ['dma_5fcfg_2ein_2ehpp',['dma_cfg.in.hpp',['../dma__cfg_8in_8hpp.html',1,'']]],
-  ['dma_5fexample_2ehpp',['dma_example.hpp',['../dma__example_8hpp.html',1,'']]]
+  ['dma_5fexample_2ehpp',['dma_example.hpp',['../title_2__static_2generated_2stm32_2f4xx_2dma__example_8hpp.html',1,'']]],
+  ['dma_5fexample_2ehpp',['dma_example.hpp',['../__static_2generated_2stm32_2f4xx_2dma__example_8hpp.html',1,'']]]
 ];

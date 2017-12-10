@@ -1,29 +1,51 @@
-<map id="/home/executor/projects/thecore/thecore/platform/stm32/family/l1xx/export/stm32_device.h" name="/home/executor/projects/thecore/thecore/platform/stm32/family/l1xx/export/stm32_device.h">
-<area shape="rect" id="node2" href="$l1xx_2export_2stm32__device_8hpp.html" title="STM32 C++ header collection. " alt="" coords="1712,124,1881,195"/>
-<area shape="rect" id="node3" href="$stm32_2console_8cpp.html" title="Platform console implementation. " alt="" coords="287,250,453,306"/>
-<area shape="rect" id="node4" href="$dma__example_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="477,250,644,306"/>
-<area shape="rect" id="node5" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="668,250,845,306"/>
-<area shape="rect" id="node8" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="/home/executor/projects\l/thecore/thecore/platform\l/stm32/export/aux/i2c_bus.hpp" alt="" coords="869,250,1071,306"/>
-<area shape="rect" id="node13" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="1131,250,1332,306"/>
-<area shape="rect" id="node16" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="1357,250,1570,306"/>
-<area shape="rect" id="node19" href="$cm__device_8hpp.html" title="Proxy header, required by architecture module due to CMSIS&#45;compliancy. " alt="" coords="1595,243,1769,313"/>
-<area shape="rect" id="node20" href="$platform_2stm32_2export_2platform_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="1793,250,2032,306"/>
-<area shape="rect" id="node21" href="$stm32_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for STM32 platform. " alt="" coords="2109,361,2287,432"/>
-<area shape="rect" id="node22" href="$stm32_2export_2platform_2gpio__device_8hpp.html" title="GPIO device interface for STM32 platform. " alt="" coords="2107,243,2289,313"/>
-<area shape="rect" id="node23" href="$platform_2stm32_2export_2platform_2irq_8hpp.html" title="STM32 IRQ interface. " alt="" coords="2313,250,2509,306"/>
-<area shape="rect" id="node24" href="$stm32__dma__wrap__interface_8hpp.html" title="DMA wrapper interface for STM32 platform. " alt="" coords="2534,243,2715,313"/>
-<area shape="rect" id="node28" href="$dma__cfg_8in_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="2740,243,2931,313"/>
-<area shape="rect" id="node6" href="$adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="5,369,172,425"/>
-<area shape="rect" id="node7" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="196,369,408,425"/>
-<area shape="rect" id="node9" href="$i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="432,369,599,425"/>
-<area shape="rect" id="node10" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="623,361,805,432"/>
-<area shape="rect" id="node11" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="830,369,1038,425"/>
-<area shape="rect" id="node12" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="1063,369,1272,425"/>
-<area shape="rect" id="node14" href="$i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1296,369,1463,425"/>
-<area shape="rect" id="node15" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1487,361,1655,432"/>
-<area shape="rect" id="node17" href="$uart__example_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="1680,369,1847,425"/>
-<area shape="rect" id="node18" href="$stm32_2templates_2uart__cfg_8in_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="1871,369,2085,425"/>
-<area shape="rect" id="node25" href="$stm32f4xx__dma__wrap_8hpp.html" title="STM32F4XX DMA wrappers implementation. " alt="" coords="2535,361,2714,432"/>
-<area shape="rect" id="node27" href="$stm32l1xx__dma__wrap_8hpp.html" title="STM32L1XX DMA wrappers implementation. " alt="" coords="2809,361,2987,432"/>
-<area shape="rect" id="node26" href="$f4xx_2export_2stm32__device_8hpp.html" title="STM32F4 collection of C++ headers. " alt="" coords="2539,480,2710,551"/>
+<map id="/home/travis/build/forGGe/theCore/platform/stm32/family/l1xx/export/stm32_device.h" name="/home/travis/build/forGGe/theCore/platform/stm32/family/l1xx/export/stm32_device.h">
+<area shape="rect" id="node2" href="$l1xx_2export_2stm32__device_8hpp.html" title="STM32 C++ header collection. " alt="" coords="2976,124,3146,195"/>
+<area shape="rect" id="node3" href="$stm32_2console_8cpp.html" title="Platform console implementation. " alt="" coords="242,272,411,328"/>
+<area shape="rect" id="node4" href="$build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platf026133bcadbd0c16d5a44a79fd40db36.html" title="Header provides template of DMA driver configuration. " alt="" coords="436,243,630,357"/>
+<area shape="rect" id="node5" href="$build__examples_2stm32f4__exti-prefix_2src_2stm32f4__exti-build_2core_2platform_2stm32_2family_2export_2family__dma__cfg_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="655,243,835,357"/>
+<area shape="rect" id="node6" href="$build__examples_2stm32f4__htu21d__example-prefix_2src_2stm32f4__htu21d__example-build_2core_2plab1fcdfcfd7035b7778ca2dc509d9cffe.html" title="Header provides template of DMA driver configuration. " alt="" coords="860,243,1081,357"/>
+<area shape="rect" id="node7" href="$build__test__cases_2stm32f4discovery__rtos_2concurrency__suite_8gnu_2build_2core_2platform_2stm30a0ecf3d0acbce06c02b7347591a20f7.html" title="Header provides template of DMA driver configuration. " alt="" coords="1106,250,1336,350"/>
+<area shape="rect" id="node8" href="$build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2da8ec7c45ec4ae8ede986fb3f8980360.html" title="Header provides template of DMA driver configuration. " alt="" coords="1360,250,1591,350"/>
+<area shape="rect" id="node9" href="$build__test__cases_2stm32f4discovery__simple_2unity__demo_8gnu_2build_2core_2platform_2stm32_2fac6cbcc17a120fa57aa5fe0b12ffbd5a7.html" title="Header provides template of DMA driver configuration. " alt="" coords="1615,250,1846,350"/>
+<area shape="rect" id="node11" href="$__static_2generated_2stm32_2f4xx_2dma__example_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="1870,272,2022,328"/>
+<area shape="rect" id="node12" href="$title_2__static_2generated_2stm32_2f4xx_2dma__example_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="2047,272,2214,328"/>
+<area shape="rect" id="node13" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="2238,272,2415,328"/>
+<area shape="rect" id="node23" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="/home/travis/build\l/forGGe/theCore/platform\l/stm32/export/aux/i2c_bus.hpp" alt="" coords="3328,272,3530,328"/>
+<area shape="rect" id="node38" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="3554,272,3755,328"/>
+<area shape="rect" id="node43" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="3779,265,3948,335"/>
+<area shape="rect" id="node44" href="$cm__device_8hpp.html" title="Proxy header, required by architecture module due to CMSIS&#45;compliancy. " alt="" coords="3972,265,4142,335"/>
+<area shape="rect" id="node45" href="$platform_2stm32_2export_2platform_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="4166,265,4335,335"/>
+<area shape="rect" id="node46" href="$stm32_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for STM32 platform. " alt="" coords="6266,427,6435,498"/>
+<area shape="rect" id="node47" href="$stm32_2export_2platform_2gpio__device_8hpp.html" title="GPIO device interface for STM32 platform. " alt="" coords="4411,265,4580,335"/>
+<area shape="rect" id="node48" href="$platform_2stm32_2export_2platform_2irq_8hpp.html" title="STM32 IRQ interface. " alt="" coords="4604,265,4774,335"/>
+<area shape="rect" id="node49" href="$stm32__dma__wrap__interface_8hpp.html" title="DMA wrapper interface for STM32 platform. " alt="" coords="4798,265,4980,335"/>
+<area shape="rect" id="node50" href="$dma__cfg_8in_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="5004,265,5195,335"/>
+<area shape="rect" id="node10" href="$stm32_2export_2aux_2generated_8hpp.html" title="Enlists all generated headers by stm32 platform. " alt="" coords="1245,568,1458,624"/>
+<area shape="rect" id="node14" href="$build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platf6c6eab5df8f4e01de9028243c51f39af.html" title="Header provides template of ADC driver configuration. " alt="" coords="44,405,246,520"/>
+<area shape="rect" id="node15" href="$build__examples_2stm32f4__exti-prefix_2src_2stm32f4__exti-build_2core_2platform_2stm32_2generated_2export_2aux_2adc__cfg_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="271,405,459,520"/>
+<area shape="rect" id="node16" href="$build__examples_2stm32f4__htu21d__example-prefix_2src_2stm32f4__htu21d__example-build_2core_2pla70a5eb8031e5d843445360fd92dd3840.html" title="Header provides template of ADC driver configuration. " alt="" coords="483,405,690,520"/>
+<area shape="rect" id="node17" href="$build__test__cases_2stm32f4discovery__rtos_2concurrency__suite_8gnu_2build_2core_2platform_2stm3a937586e24e722b10491b206f61efe90.html" title="Header provides template of ADC driver configuration. " alt="" coords="714,413,957,513"/>
+<area shape="rect" id="node18" href="$build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2286e667a98fde4dc5b076b7d4dfa85cf.html" title="Header provides template of ADC driver configuration. " alt="" coords="982,413,1212,513"/>
+<area shape="rect" id="node19" href="$build__test__cases_2stm32f4discovery__simple_2unity__demo_8gnu_2build_2core_2platform_2stm32_2gef3adee5131fffa3e5bb564315a69320c.html" title="Header provides template of ADC driver configuration. " alt="" coords="1236,413,1467,513"/>
+<area shape="rect" id="node20" href="$__static_2generated_2stm32_2adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="1491,435,1639,491"/>
+<area shape="rect" id="node21" href="$title_2__static_2generated_2stm32_2adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="1663,435,1830,491"/>
+<area shape="rect" id="node22" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="1854,435,2066,491"/>
+<area shape="rect" id="node24" href="$build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platfb495f8dcc04ac5365b8c2873c8fca452.html" title="Header provides template of I2C driver configuration. " alt="" coords="2090,405,2293,520"/>
+<area shape="rect" id="node25" href="$build__examples_2stm32f4__exti-prefix_2src_2stm32f4__exti-build_2core_2platform_2stm32_2generated_2export_2aux_2i2c__cfg_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="2318,405,2506,520"/>
+<area shape="rect" id="node26" href="$build__examples_2stm32f4__htu21d__example-prefix_2src_2stm32f4__htu21d__example-build_2core_2pla35ede28115397af25d1660dcfaff39e2.html" title="Header provides template of I2C driver configuration. " alt="" coords="2530,405,2736,520"/>
+<area shape="rect" id="node27" href="$platform__bat_8gnu_2build_2core_2platform_2particle__electron_2export_2aux_2i2c__wire__cfgs_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="2760,413,3010,513"/>
+<area shape="rect" id="node28" href="$unity__demo_8gnu_2build_2core_2platform_2particle__electron_2export_2aux_2i2c__wire__cfgs_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="3034,413,3283,513"/>
+<area shape="rect" id="node29" href="$build__test__cases_2stm32f4discovery__rtos_2concurrency__suite_8gnu_2build_2core_2platform_2stm37d2c005bff1910a6706bfbbdb7e226a3.html" title="Header provides template of I2C driver configuration. " alt="" coords="3308,413,3550,513"/>
+<area shape="rect" id="node30" href="$build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2e9b19a8127ad777f85ec121313c3d7b3.html" title="Header provides template of I2C driver configuration. " alt="" coords="3575,413,3806,513"/>
+<area shape="rect" id="node31" href="$build__test__cases_2stm32f4discovery__simple_2unity__demo_8gnu_2build_2core_2platform_2stm32_2geb1945458180f530179a56529bd37639c.html" title="Header provides template of I2C driver configuration. " alt="" coords="3830,413,4060,513"/>
+<area shape="rect" id="node32" href="$__static_2generated_2particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="4084,435,4267,491"/>
+<area shape="rect" id="node33" href="$__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="4292,435,4438,491"/>
+<area shape="rect" id="node34" href="$title_2__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="4463,435,4630,491"/>
+<area shape="rect" id="node35" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="4654,427,4836,498"/>
+<area shape="rect" id="node36" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="4861,435,5069,491"/>
+<area shape="rect" id="node37" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="5094,435,5303,491"/>
+<area shape="rect" id="node39" href="$build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platff4e9a22fbe750d02af4fff612ffbbd20.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5328,405,5530,520"/>
+<area shape="rect" id="node40" href="$build__examples_2stm32f4__exti-prefix_2src_2stm32f4__exti-build_2core_2platform_2stm32_2generate004645472999dbef58b535fd5f5698b4.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5555,405,5743,520"/>
+<area shape="rect" id="node41" href="$build__examples_2stm32f4__htu21d__example-prefix_2src_2stm32f4__htu21d__example-build_2core_2plaed8e6e9dc98ef5ff3aef87d01e5a1461.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5767,405,5974,520"/>
+<area shape="rect" id="node42" href="$build__test__cases_2stm32f4discovery__rtos_2concurrency__suite_8gnu_2build_2core_2platform_2stm31dad51e2ccee85cd7ca5c8087c9220b1.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5998,413,6241,513"/>
 </map>

@@ -5,7 +5,7 @@ var structpin__info =
     [ "otype", "structpin__info.html#a70f6a8c439c1db6e8952fa8bfcc84651", null ],
     [ "pin", "structpin__info.html#a51eacf36a05a99e29c49551c88aee2da", null ],
     [ "pin_src", "structpin__info.html#a89652dc490acd5743dd7d3829cb26b0b", null ],
-    [ "port", "structpin__info.html#aca66eb362fc611d26d96261c0467c94e", null ],
+    [ "port", "structpin__info.html#a164d89c751a92880bbf6ef6f7d5c7660", null ],
     [ "pull", "structpin__info.html#ad47fb4e3006e5c0975cb3faf698b22da", null ],
     [ "speed", "structpin__info.html#a2596f42812f38a7e88e084a19fd8c467", null ]
 ];

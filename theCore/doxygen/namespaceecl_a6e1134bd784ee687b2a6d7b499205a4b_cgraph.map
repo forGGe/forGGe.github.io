@@ -1,0 +1,4 @@
+<map id="ecl::spin_wait" name="ecl::spin_wait">
+<area shape="rect" id="node2" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="155,5,327,32"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="375,5,467,32"/>
+</map>

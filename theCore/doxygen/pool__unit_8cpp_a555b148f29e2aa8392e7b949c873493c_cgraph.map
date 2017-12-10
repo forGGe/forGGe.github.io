@@ -1,0 +1,10 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="119,64,273,105"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a6cfb039a61d7b31b75eb741e097046ca" title="ecl::for_each" alt="" coords="147,181,245,207"/>
+<area shape="rect" id="node7" href="$classecl_1_1pool__base.html#ae006a6c3645afbc772e334dbbff61324" title="Deallocates memory, previously allocated by aligned_alloc. " alt="" coords="109,130,283,157"/>
+<area shape="rect" id="node9" href="$pool__unit_8cpp.html#a9cbe427aa4c1b43d82ffe945418c41bc" title="check_if_empty_pool\l_is_empty" alt="" coords="123,232,269,273"/>
+<area shape="rect" id="node3" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="331,5,465,47"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="363,71,433,98"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#ac79e8a5d7659ad54a94a9f929e6e710e" title="ecl::for_each_impl" alt="" coords="334,189,462,215"/>
+<area shape="rect" id="node8" href="$classecl_1_1pool__base.html#a24f1960a5cf1f46640e2baa142f4ca23" title="Deallocates chunk of given address and length. " alt="" coords="331,123,465,164"/>
+</map>

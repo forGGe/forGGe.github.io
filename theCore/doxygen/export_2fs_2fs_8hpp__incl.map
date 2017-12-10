@@ -1,0 +1,15 @@
+<map id="/home/executor/projects/thecore/thecore/lib/fs/export/fs/fs.hpp" name="/home/executor/projects/thecore/thecore/lib/fs/export/fs/fs.hpp">
+<area shape="rect" id="node2" href="$fs__descriptor_8hpp.html" title="fs_descriptor.hpp" alt="" coords="276,109,397,136"/>
+<area shape="rect" id="node9" href="$inode_8hpp.html" title="inode.hpp" alt="" coords="173,109,252,136"/>
+<area shape="rect" id="node15" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="5,109,97,136"/>
+<area shape="rect" id="node16" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="660,109,779,136"/>
+<area shape="rect" id="node3" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="160,259,239,285"/>
+<area shape="rect" id="node4" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="142,333,257,360"/>
+<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="679,408,770,435"/>
+<area shape="rect" id="node10" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="327,184,453,211"/>
+<area shape="rect" id="node13" href="$dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="127,184,251,211"/>
+<area shape="rect" id="node17" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="478,184,569,211"/>
+<area shape="rect" id="node20" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="977,184,1072,211"/>
+<area shape="rect" id="node23" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="593,184,723,211"/>
+<area shape="rect" id="node25" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="743,259,826,285"/>
+</map>

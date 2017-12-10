@@ -1,0 +1,7 @@
+<map id="ecl::irq::unsubscribe" name="ecl::irq::unsubscribe">
+<area shape="rect" id="node2" href="$namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="192,5,335,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="208,56,319,83"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="196,107,331,133"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="210,157,317,184"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="383,107,459,133"/>
+</map>

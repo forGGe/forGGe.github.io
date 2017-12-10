@@ -1,0 +1,5 @@
+<map id="/home/executor/projects/thecore/thecore/platform/stm32/export/aux/spi_bus.hpp" name="/home/executor/projects/thecore/thecore/platform/stm32/export/aux/spi_bus.hpp">
+<area shape="rect" id="node2" href="$i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5,117,172,173"/>
+<area shape="rect" id="node3" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="197,109,365,180"/>
+<area shape="rect" id="node4" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="389,117,599,173"/>
+</map>

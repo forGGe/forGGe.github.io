@@ -1,0 +1,9 @@
+<map id="/home/executor/projects/thecore/thecore/platform/common/export/common/spi.hpp" name="/home/executor/projects/thecore/thecore/platform/common/export/common/spi.hpp">
+<area shape="rect" id="node2" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="82,109,273,165"/>
+<area shape="rect" id="node5" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="338,109,539,165"/>
+<area shape="rect" id="node3" href="$cs43l22__audio_2target_8hpp.html" title="/home/executor/projects\l/thecore/thecore/examples\l/cs43l22_audio/target.hpp" alt="" coords="5,221,181,277"/>
+<area shape="rect" id="node4" href="$cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="5,332,181,388"/>
+<area shape="rect" id="node6" href="$i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="206,221,373,277"/>
+<area shape="rect" id="node7" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="397,213,565,284"/>
+<area shape="rect" id="node8" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="590,221,799,277"/>
+</map>

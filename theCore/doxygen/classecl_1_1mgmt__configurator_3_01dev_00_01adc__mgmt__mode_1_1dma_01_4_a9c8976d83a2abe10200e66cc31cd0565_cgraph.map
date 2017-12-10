@@ -1,0 +1,8 @@
+<map id="ecl::mgmt_configurator&lt; dev, adc_mgmt_mode::dma &gt;::init" name="ecl::mgmt_configurator&lt; dev, adc_mgmt_mode::dma &gt;::init">
+<area shape="rect" id="node2" href="$namespaceecl_1_1gpio__hw.html#a69198301fc0bb7daa3faedc207e7a768" title="Obtains IRQ number of given port. " alt="" coords="224,5,372,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="235,56,361,83"/>
+<area shape="rect" id="node7" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="241,107,355,133"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="420,5,563,32"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="436,56,547,83"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="438,107,545,133"/>
+</map>

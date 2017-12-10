@@ -1,0 +1,19 @@
+<map id="/home/executor/projects/thecore/thecore/lib/fs/export/fs/types.hpp" name="/home/executor/projects/thecore/thecore/lib/fs/export/fs/types.hpp">
+<area shape="rect" id="node2" href="$dir__descriptor_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/export/fs/dir_descriptor.hpp" alt="" coords="369,109,551,165"/>
+<area shape="rect" id="node11" href="$dir__inode_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/export/fat/dir_inode.hpp" alt="" coords="565,317,747,373"/>
+<area shape="rect" id="node17" href="$file__descriptor_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/export/fs/file_descriptor.hpp" alt="" coords="755,109,941,165"/>
+<area shape="rect" id="node18" href="$fs__descriptor_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/export/fs/fs_descriptor.hpp" alt="" coords="1305,213,1485,269"/>
+<area shape="rect" id="node3" href="$dir__descriptor_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/dir_descriptor.cpp" alt="" coords="192,317,355,373"/>
+<area shape="rect" id="node4" href="$inode_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/inode.cpp" alt="" coords="5,317,168,373"/>
+<area shape="rect" id="node5" href="$inode_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/export/fs/inode.hpp" alt="" coords="703,213,865,269"/>
+<area shape="rect" id="node8" href="$dir_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/export/fat/dir.hpp" alt="" coords="379,317,541,373"/>
+<area shape="rect" id="node6" href="$file__descriptor_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/file_descriptor.cpp" alt="" coords="1029,317,1192,373"/>
+<area shape="rect" id="node7" href="$export_2fs_2fs_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/export/fs/fs.hpp" alt="" coords="1403,317,1565,373"/>
+<area shape="rect" id="node12" href="$fat_2export_2fat_2fs_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/export/fat/fs.hpp" alt="" coords="757,421,920,477"/>
+<area shape="rect" id="node13" href="$file_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/export/fat/file.hpp" alt="" coords="1216,317,1379,373"/>
+<area shape="rect" id="node16" href="$file__inode_8hpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/export/fat/file_inode.hpp" alt="" coords="821,317,1005,373"/>
+<area shape="rect" id="node9" href="$dir_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/dir.cpp" alt="" coords="571,421,733,477"/>
+<area shape="rect" id="node10" href="$dir__inode_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/dir_inode.cpp" alt="" coords="381,421,544,477"/>
+<area shape="rect" id="node14" href="$file_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/file.cpp" alt="" coords="1216,421,1379,477"/>
+<area shape="rect" id="node15" href="$file__inode_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/fs\l/fat/file_inode.cpp" alt="" coords="987,421,1149,477"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classecl_1_1dma__wrap__base.html" title="ecl::dma_wrap_base\l\&lt; dma_wrap\&lt; Channel \&gt; \&gt;" alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$structecl_1_1dma__wrap.html" title="DMA wrapper for STM32F4XX. " alt="" coords="229,43,393,84"/>
+<area shape="rect" id="node3" href="$classecl_1_1dma__wrap__base.html" title="ecl::dma_wrap_base\l\&lt; dma_wrap\&lt; Stream,\l Channel \&gt; \&gt;" alt="" coords="18,71,169,127"/>
+</map>

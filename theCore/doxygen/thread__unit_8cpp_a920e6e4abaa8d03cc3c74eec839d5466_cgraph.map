@@ -1,0 +1,20 @@
+<map id="TEST_GROUP" name="TEST_GROUP">
+<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="199,56,254,83"/>
+<area shape="rect" id="node8" href="$classecl_1_1native__thread.html#a4aebec64c7eec517f224fce54fbc6c4e" title="ecl::native_thread\l::set_routine" alt="" coords="164,107,289,149"/>
+<area shape="rect" id="node9" href="$thread__unit_8cpp.html#a599f2a1ad0fbe10cc5df2447b0e6f918" title="test_routine" alt="" coords="181,173,272,200"/>
+<area shape="rect" id="node14" href="$classecl_1_1native__thread.html#aa359e0230df622f0db3b7d1701a1c875" title="ecl::native_thread\l::start" alt="" coords="164,225,289,266"/>
+<area shape="rect" id="node19" href="$classecl_1_1native__thread.html#a114d5a5eb957e748381e46f59c1c4cea" title="ecl::native_thread\l::detach" alt="" coords="164,290,289,331"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="361,5,456,32"/>
+<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="353,56,464,83"/>
+<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="369,107,448,133"/>
+<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="579,31,630,57"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="567,81,643,108"/>
+<area shape="rect" id="node10" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="337,173,480,200"/>
+<area shape="rect" id="node11" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="528,166,681,207"/>
+<area shape="rect" id="node12" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="754,173,877,200"/>
+<area shape="rect" id="node13" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="949,173,1109,200"/>
+<area shape="rect" id="node15" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="366,232,451,259"/>
+<area shape="rect" id="node16" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="531,232,678,259"/>
+<area shape="rect" id="node17" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="729,232,901,259"/>
+<area shape="rect" id="node18" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="983,232,1075,259"/>
+</map>

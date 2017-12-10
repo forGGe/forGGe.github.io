@@ -1,0 +1,34 @@
+<map id="/home/executor/projects/thecore/thecore/platform/common/export/common/irq.hpp" name="/home/executor/projects/thecore/thecore/platform/common/export/common/irq.hpp">
+<area shape="rect" id="node2" href="$freertos_2semaphore_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/thread\l/freertos/semaphore.cpp" alt="" coords="5,117,179,173"/>
+<area shape="rect" id="node3" href="$signal_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/thread\l/freertos/signal.cpp" alt="" coords="203,117,376,173"/>
+<area shape="rect" id="node4" href="$utils_8cpp.html" title="/home/executor/projects\l/thecore/thecore/lib/thread\l/freertos/utils.cpp" alt="" coords="400,117,573,173"/>
+<area shape="rect" id="node5" href="$irq_8cpp.html" title="Common IRQ implementation. " alt="" coords="598,117,765,173"/>
+<area shape="rect" id="node6" href="$stm32_2exti__manager_8cpp.html" title="EXTI manager implementation for STM32 platform. " alt="" coords="172,243,340,299"/>
+<area shape="rect" id="node7" href="$stm32_2platform_8cpp.html" title="/home/executor/projects\l/thecore/thecore/platform\l/stm32/platform.cpp" alt="" coords="365,243,531,299"/>
+<area shape="rect" id="node8" href="$tm4c_2exti__manager_8cpp.html" title="External interrupt manager implementation. " alt="" coords="555,243,722,299"/>
+<area shape="rect" id="node9" href="$tm4c_2platform_8cpp.html" title="/home/executor/projects\l/thecore/thecore/platform\l/tm4c/platform.cpp" alt="" coords="1139,243,1306,299"/>
+<area shape="rect" id="node10" href="$sys_8cpp.html" title="theCore system initialization module. " alt="" coords="1187,124,1378,165"/>
+<area shape="rect" id="node11" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="1402,117,1579,173"/>
+<area shape="rect" id="node14" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="/home/executor/projects\l/thecore/thecore/platform\l/stm32/export/aux/i2c_bus.hpp" alt="" coords="1938,117,2139,173"/>
+<area shape="rect" id="node19" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="2483,117,2685,173"/>
+<area shape="rect" id="node22" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="2903,117,3116,173"/>
+<area shape="rect" id="node25" href="$stm32_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for STM32 platform. " alt="" coords="3140,109,3319,180"/>
+<area shape="rect" id="node26" href="$tm4c_2export_2aux_2uart__bus_8hpp.html" title="UART implementation for TI TM4C MCU. " alt="" coords="3527,117,3726,173"/>
+<area shape="rect" id="node31" href="$tm4c_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for TM4C platform. " alt="" coords="941,109,1112,180"/>
+<area shape="rect" id="node12" href="$adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="1566,243,1733,299"/>
+<area shape="rect" id="node13" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="1330,243,1542,299"/>
+<area shape="rect" id="node15" href="$i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="1757,243,1923,299"/>
+<area shape="rect" id="node16" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="1947,235,2130,306"/>
+<area shape="rect" id="node17" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="2155,243,2363,299"/>
+<area shape="rect" id="node18" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="2387,243,2597,299"/>
+<area shape="rect" id="node20" href="$i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="2814,243,2981,299"/>
+<area shape="rect" id="node21" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="2621,235,2789,306"/>
+<area shape="rect" id="node23" href="$uart__example_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="3243,243,3410,299"/>
+<area shape="rect" id="node24" href="$stm32_2templates_2uart__cfg_8in_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="3005,243,3219,299"/>
+<area shape="rect" id="node27" href="$serial__cfgs_8in_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="3434,235,3617,306"/>
+<area shape="rect" id="node28" href="$tm4c_2templates_2uart__cfg_8in_8hpp.html" title="TM4C UART definitions template. " alt="" coords="3641,243,3847,299"/>
+<area shape="rect" id="node29" href="$tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for platform BAT test. " alt="" coords="3871,228,4038,313"/>
+<area shape="rect" id="node30" href="$uart__bat_2case_8cpp.html" title="/home/executor/projects\l/thecore/thecore/tests\l/cases/uart_bat/case.cpp" alt="" coords="3870,361,4039,417"/>
+<area shape="rect" id="node32" href="$stm32f4__exti_2main_8cpp.html" title="/home/executor/projects\l/thecore/thecore/examples\l/stm32f4_exti/main.cpp" alt="" coords="939,243,1115,299"/>
+<area shape="rect" id="node33" href="$exti__manager__bat_2case_8cpp.html" title="/home/executor/projects\l/thecore/thecore/tests\l/cases/exti_manager_bat\l/case.cpp" alt="" coords="747,235,915,306"/>
+</map>

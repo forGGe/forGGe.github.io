@@ -1,0 +1,6 @@
+<map id="ecl::adc::enable_channels" name="ecl::adc::enable_channels">
+<area shape="rect" id="node2" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="448,59,573,85"/>
+<area shape="rect" id="node3" href="$structecl_1_1extractor.html#abf0178678d12bb4aeb0b0c0a37a2c8ad" title="Returns scan mode for given channels. " alt="" coords="227,29,400,56"/>
+<area shape="rect" id="node4" href="$structecl_1_1extractor.html#a25ec1da347d29c09c75edb5f2b76c11c" title="Returns amount of conversions required to convert given channels. " alt="" coords="230,80,397,107"/>
+<area shape="rect" id="node5" href="$structecl_1_1extractor.html#a53b443e1afc484b78df9f5ac7fc7194f" title="Initialize channels. " alt="" coords="252,131,375,173"/>
+</map>

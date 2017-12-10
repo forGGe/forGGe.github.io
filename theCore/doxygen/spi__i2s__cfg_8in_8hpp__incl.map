@@ -1,0 +1,8 @@
+<map id="/home/executor/projects/thecore/thecore/platform/stm32/templates/spi_i2s_cfg.in.hpp" name="/home/executor/projects/thecore/thecore/platform/stm32/templates/spi_i2s_cfg.in.hpp">
+<area shape="rect" id="node3" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="447,124,564,151"/>
+<area shape="rect" id="node5" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,199,277,225"/>
+<area shape="rect" id="node6" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="301,199,424,225"/>
+<area shape="rect" id="node11" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,199,792,225"/>
+<area shape="rect" id="node13" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="816,199,963,225"/>
+<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="269,273,352,300"/>
+</map>

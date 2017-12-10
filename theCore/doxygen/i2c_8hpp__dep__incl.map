@@ -1,0 +1,7 @@
+<map id="/home/executor/projects/thecore/thecore/platform/common/export/common/i2c.hpp" name="/home/executor/projects/thecore/thecore/platform/common/export/common/i2c.hpp">
+<area shape="rect" id="node2" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="/home/executor/projects\l/thecore/thecore/platform\l/stm32/export/aux/i2c_bus.hpp" alt="" coords="296,109,497,165"/>
+<area shape="rect" id="node3" href="$i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="5,221,172,277"/>
+<area shape="rect" id="node4" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="196,213,379,284"/>
+<area shape="rect" id="node5" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="403,221,611,277"/>
+<area shape="rect" id="node6" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="636,221,845,277"/>
+</map>

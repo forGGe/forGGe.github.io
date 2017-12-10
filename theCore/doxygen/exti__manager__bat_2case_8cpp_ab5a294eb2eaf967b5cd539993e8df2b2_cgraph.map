@@ -1,0 +1,6 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$classecl_1_1exti__manager.html#a4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="291,5,456,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1exti__manager.html#a8c400678c55aa8935c96807704c1a563" title="Unmasks (enables) pending EXTI request. " alt="" coords="109,55,243,97"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="325,60,422,87"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="316,111,431,137"/>
+</map>

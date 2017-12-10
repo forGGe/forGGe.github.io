@@ -1,0 +1,3 @@
+<map id="ecl::platform_console::cancel_xfer" name="ecl::platform_console::cancel_xfer">
+<area shape="rect" id="node2" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="200,13,321,39"/>
+</map>

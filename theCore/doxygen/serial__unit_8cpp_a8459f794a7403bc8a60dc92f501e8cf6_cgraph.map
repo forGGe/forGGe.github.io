@@ -1,0 +1,7 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$classplatform__mock.html#a9909d4d33d9ae18af35d9121b8ee7178" title="platform_mock::copy\l_to_rx" alt="" coords="115,5,259,47"/>
+<area shape="rect" id="node3" href="$classplatform__mock.html#a53254956637716ea86dfd359a29c79e6" title="platform_mock::invoke" alt="" coords="109,71,264,98"/>
+<area shape="rect" id="node4" href="$classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46" title="Gets buffer from serial device. " alt="" coords="119,122,255,149"/>
+<area shape="rect" id="node5" href="$classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="117,173,256,199"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="312,173,403,199"/>
+</map>

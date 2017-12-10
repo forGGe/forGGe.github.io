@@ -1,0 +1,5 @@
+var build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2platform__defines_8hpp =
+[
+    [ "THECORE_CONFIG_USE_CONSOLE", "build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2platform__defines_8hpp.html#ac042873d3e5a1588b4f13c6bdc61a4c9", null ],
+    [ "USE_WFI_WFE", "build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2platform__defines_8hpp.html#a6321a4ac2ded35b318e542c623bbe822", null ]
+];

@@ -1,4 +1,4 @@
-<map id="/home/executor/projects/thecore/thecore/platform/stm32/family/f4xx/export/stm32_device.hpp" name="/home/executor/projects/thecore/thecore/platform/stm32/family/f4xx/export/stm32_device.hpp">
+<map id="/home/travis/build/forGGe/theCore/platform/stm32/family/f4xx/export/stm32_device.hpp" name="/home/travis/build/forGGe/theCore/platform/stm32/family/f4xx/export/stm32_device.hpp">
 <area shape="rect" id="node2" href="$f4xx_2export_2stm32__device_8h.html" title="STM32F4 collection of C&#45;headers. " alt="" coords="1364,146,1479,173"/>
 <area shape="rect" id="node17" href="$stm32f4xx__dma__wrap_8hpp.html" title="STM32F4XX DMA wrappers implementation. " alt="" coords="535,146,710,173"/>
 <area shape="rect" id="node23" href="$stm32f4xx__exti__wrap_8hpp.html" title="EXTI wrapper implementation. " alt="" coords="1503,146,1673,173"/>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['path_5fptr',['path_ptr',['../namespacefat.html#a2472588dbd27f2b55aa43793f2c2cd97',1,'fat']]],
-  ['platform_5fhandle',['platform_handle',['../classecl_1_1generic__bus.html#a9a48ce41c43cd645b9a16b14f77c38c0',1,'ecl::generic_bus::platform_handle()'],['../classecl_1_1serial.html#a4193561a0f92ba97c75d92b9e2950a88',1,'ecl::serial::platform_handle()']]]
+  ['orange_5fled',['orange_led',['../namespaceecl.html#ae3247f7085fbbb2c22335f14152c3ae5',1,'ecl']]],
+  ['ostream_5funit',['ostream_unit',['../ostream__unit_8cpp.html#ae868c9d03613497ab05f5c240acb2d1e',1,'ostream_unit.cpp']]]
 ];

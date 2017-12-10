@@ -1,0 +1,4 @@
+var build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2da8ec7c45ec4ae8ede986fb3f8980360 =
+[
+    [ "adc_dma", "build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2da8ec7c45ec4ae8ede986fb3f8980360.html#a49d6a0838f8d8d3a720ddb4c13d5baa9", null ]
+];

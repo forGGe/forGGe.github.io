@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['moisture_5ftype',['moisture_type',['../namespaceecl_1_1sensor_1_1fc28__defs.html#a4f1590ee21100fe42e2d67b989ae3a79',1,'ecl::sensor::fc28_defs']]],
-  ['my_5fuart',['my_uart',['../namespaceecl.html#ad00083420fcc845363f037c17d58ebe1',1,'ecl']]]
+  ['led_5fblue',['led_blue',['../namespaceecl.html#aed3c0f8bc9ec4d0c074429de8f2dab75',1,'ecl']]],
+  ['led_5fgreen',['led_green',['../namespaceecl.html#a0ae7ff052d8fd0193efcb1da39a29a46',1,'ecl']]],
+  ['led_5fred',['led_red',['../namespaceecl.html#a5e76abf47f2c03d9883b073805de3866',1,'ecl']]]
 ];

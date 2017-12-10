@@ -1,0 +1,5 @@
+var build__examples_2stm32f4__htu21d__example_prefix_2src_2stm32f4__htu21d__example_build_2core_2pladc1bc3928f39b182db4a01b41a03d7c9 =
+[
+    [ "THECORE_CONFIG_USE_BYPASS_CONSOLE", "build__examples_2stm32f4__htu21d__example-prefix_2src_2stm32f4__htu21d__example-build_2core_2pladc1bc3928f39b182db4a01b41a03d7c9.html#a1cd37664e4764ffda799185b0444b012", null ],
+    [ "THECORE_CONFIG_USE_CONSOLE", "build__examples_2stm32f4__htu21d__example-prefix_2src_2stm32f4__htu21d__example-build_2core_2pladc1bc3928f39b182db4a01b41a03d7c9.html#ac042873d3e5a1588b4f13c6bdc61a4c9", null ]
+];

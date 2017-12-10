@@ -1,10 +1,10 @@
-<map id="/home/executor/projects/thecore/thecore/dev/bus/export/dev/bus.hpp" name="/home/executor/projects/thecore/thecore/dev/bus/export/dev/bus.hpp">
-<area shape="rect" id="node2" href="$bus__unit_8cpp.html" title="/home/executor/projects\l/thecore/thecore/dev/bus\l/tests/bus_unit.cpp" alt="" coords="5,213,172,269"/>
-<area shape="rect" id="node3" href="$platform__bus_8hpp.html" title="/home/executor/projects\l/thecore/thecore/dev/bus\l/tests/mocks/platform_bus.hpp" alt="" coords="126,109,329,165"/>
-<area shape="rect" id="node5" href="$cs43l22__audio_2target_8hpp.html" title="/home/executor/projects\l/thecore/thecore/examples\l/cs43l22_audio/target.hpp" alt="" coords="399,213,575,269"/>
-<area shape="rect" id="node7" href="$htu21d_2target_8hpp.html" title="/home/executor/projects\l/thecore/thecore/examples\l/htu21d/target.hpp" alt="" coords="619,109,795,165"/>
-<area shape="rect" id="node9" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="404,109,595,165"/>
-<area shape="rect" id="node4" href="$serial__unit_8cpp.html" title="/home/executor/projects\l/thecore/thecore/dev/bus\l/tests/serial_unit.cpp" alt="" coords="196,213,363,269"/>
-<area shape="rect" id="node6" href="$cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="399,317,575,373"/>
-<area shape="rect" id="node8" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="619,213,795,269"/>
+<map id="/home/travis/build/forGGe/theCore/dev/bus/export/dev/bus.hpp" name="/home/travis/build/forGGe/theCore/dev/bus/export/dev/bus.hpp">
+<area shape="rect" id="node2" href="$bus__unit_8cpp.html" title="/home/travis/build\l/forGGe/theCore/dev\l/bus/tests/bus_unit.cpp" alt="" coords="5,228,164,284"/>
+<area shape="rect" id="node3" href="$platform__bus_8hpp.html" title="/home/travis/build\l/forGGe/theCore/dev\l/bus/tests/mocks/platform\l_bus.hpp" alt="" coords="123,109,297,180"/>
+<area shape="rect" id="node5" href="$cs43l22__audio_2target_8hpp.html" title="/home/travis/build\l/forGGe/theCore/examples\l/cs43l22_audio/target.hpp" alt="" coords="385,228,563,284"/>
+<area shape="rect" id="node7" href="$htu21d_2target_8hpp.html" title="/home/travis/build\l/forGGe/theCore/examples\l/htu21d/target.hpp" alt="" coords="607,117,786,173"/>
+<area shape="rect" id="node9" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="373,117,583,173"/>
+<area shape="rect" id="node4" href="$serial__unit_8cpp.html" title="/home/travis/build\l/forGGe/theCore/dev\l/bus/tests/serial_unit.cpp" alt="" coords="189,228,357,284"/>
+<area shape="rect" id="node6" href="$examples_2cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="385,332,563,388"/>
+<area shape="rect" id="node8" href="$examples_2htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="607,228,786,284"/>
 </map>

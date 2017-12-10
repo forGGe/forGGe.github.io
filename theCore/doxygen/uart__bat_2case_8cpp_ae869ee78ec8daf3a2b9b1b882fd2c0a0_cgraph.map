@@ -1,5 +1,10 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$uart__bat_2case_8cpp.html#aac9e13d286cb019c8cd64828d5de9d02" title="test_handler" alt="" coords="141,5,234,32"/>
-<area shape="rect" id="node3" href="$uart__bat_2case_8cpp.html#ad9bf29246461c787b2d715cb0df009e5" title="wait_transfer_complete" alt="" coords="109,56,265,83"/>
-<area shape="rect" id="node4" href="$adc__bat_2case_8cpp.html#a1fdb9430a2d9f7e78d1ec160044264de" title="TEST_GROUP" alt="" coords="313,56,424,83"/>
+<area shape="rect" id="node2" href="$classecl_1_1usart__bus.html#abc0efbe1637080faab4b9b4637ff371a" title="Sets tx buffer made&#45;up from sequence of similar bytes. " alt="" coords="114,5,262,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1usart__bus.html#a8a407c1c443a4b489f0ef677507fff91" title="Sets event handler. " alt="" coords="123,57,253,98"/>
+<area shape="rect" id="node6" href="$uart__bat_2case_8cpp.html#aac9e13d286cb019c8cd64828d5de9d02" title="test_handler" alt="" coords="141,123,235,149"/>
+<area shape="rect" id="node7" href="$classecl_1_1usart__bus.html#aacd16375ae5c45d93231e835ab2a4378" title="Executes xfer, using buffers previously set. " alt="" coords="111,173,265,200"/>
+<area shape="rect" id="node8" href="$uart__bat_2case_8cpp.html#ad9bf29246461c787b2d715cb0df009e5" title="wait_transfer_complete" alt="" coords="109,224,267,251"/>
+<area shape="rect" id="node4" href="$examples_2cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="319,64,422,91"/>
+<area shape="rect" id="node5" href="$examples_2cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="475,64,625,91"/>
+<area shape="rect" id="node9" href="$adc__bat_2case_8cpp.html#a1fdb9430a2d9f7e78d1ec160044264de" title="TEST_GROUP" alt="" coords="315,224,427,251"/>
 </map>

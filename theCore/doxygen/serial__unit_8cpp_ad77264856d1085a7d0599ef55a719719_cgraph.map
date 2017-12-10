@@ -4,12 +4,12 @@
 <area shape="rect" id="node7" href="$classplatform__mock.html#a53254956637716ea86dfd359a29c79e6" title="platform_mock::invoke" alt="" coords="118,122,273,149"/>
 <area shape="rect" id="node8" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="119,173,272,215"/>
 <area shape="rect" id="node13" href="$classecl_1_1serial.html#adfd5ab3f61eace104d696dda8abfdc9c" title="Obtains a byte from serial device. " alt="" coords="124,257,267,283"/>
-<area shape="rect" id="node3" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="355,13,478,39"/>
-<area shape="rect" id="node4" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="552,13,712,39"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="371,71,463,98"/>
+<area shape="rect" id="node3" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="355,13,479,39"/>
+<area shape="rect" id="node4" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="552,13,713,39"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="370,71,463,98"/>
 <area shape="rect" id="node9" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="367,126,467,153"/>
 <area shape="rect" id="node10" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="355,177,478,203"/>
 <area shape="rect" id="node12" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="329,227,504,254"/>
-<area shape="rect" id="node11" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="557,202,707,229"/>
+<area shape="rect" id="node11" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="558,202,707,229"/>
 <area shape="rect" id="node14" href="$classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46" title="Gets buffer from serial device. " alt="" coords="349,278,485,305"/>
 </map>

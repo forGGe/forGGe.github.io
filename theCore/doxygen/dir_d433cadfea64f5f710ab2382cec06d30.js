@@ -1,0 +1,6 @@
+var dir_d433cadfea64f5f710ab2382cec06d30 =
+[
+    [ "i2c_wire_cfgs.hpp", "platform__bat_8gnu_2build_2core_2platform_2particle__electron_2export_2aux_2i2c__wire__cfgs_8hpp.html", null ],
+    [ "platform_defines.hpp", "build__test__cases_2particle__electron_2platform__bat_8gnu_2build_2core_2platform_2particle__eleae4ce91729b7a40cd153df71f01fdff9.html", "build__test__cases_2particle__electron_2platform__bat_8gnu_2build_2core_2platform_2particle__eleae4ce91729b7a40cd153df71f01fdff9" ],
+    [ "serial_cfgs.hpp", "platform__bat_8gnu_2build_2core_2platform_2particle__electron_2export_2aux_2serial__cfgs_8hpp.html", "platform__bat_8gnu_2build_2core_2platform_2particle__electron_2export_2aux_2serial__cfgs_8hpp" ]
+];

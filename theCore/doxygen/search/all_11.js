@@ -10,6 +10,7 @@ var searchData=
   ['recv',['recv',['../classecl_1_1hm10__sync.html#a13602c8615420926d2ed9c941c7a8950',1,'ecl::hm10_sync']]],
   ['recv_5fbuf',['recv_buf',['../classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46',1,'ecl::serial']]],
   ['recv_5fbyte',['recv_byte',['../classecl_1_1serial.html#adfd5ab3f61eace104d696dda8abfdc9c',1,'ecl::serial']]],
+  ['red_5fled',['red_led',['../namespaceecl.html#ac294d691d449dba9feb2c3379450e7ac',1,'ecl']]],
   ['ref',['ref',['../classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e',1,'ecl::aux']]],
   ['reg',['reg',['../structecl_1_1mmio_1_1reg.html',1,'ecl::mmio']]],
   ['required_5fretval',['required_retval',['../structtest__arg.html#a53de6a890c0620cd4e08814f37b76748',1,'test_arg']]],
@@ -31,6 +32,7 @@ var searchData=
   ['rofs',['rofs',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810acc0ad535efeb3e837f338ba0aabd1fed',1,'ecl']]],
   ['routine',['routine',['../classecl_1_1native__thread.html#a0e4b5e12de4013f36681591f32d8995b',1,'ecl::native_thread::routine()'],['../classecl_1_1native__thread.html#a0e4b5e12de4013f36681591f32d8995b',1,'ecl::native_thread::routine()']]],
   ['routine_5farg',['routine_arg',['../thread__unit_8cpp.html#af7f1d17681a785c1da5c9f77c8fb62f3',1,'thread_unit.cpp']]],
+  ['rst_5fgpio',['rst_gpio',['../namespaceecl.html#acfa6c63fec2224290164b3b354325e8c',1,'ecl']]],
   ['rw_5fmut',['rw_mut',['../structecl_1_1mmio_1_1rw__mut.html',1,'ecl::mmio']]],
   ['rx',['rx',['../namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa22770fbdd1177351a869401a0e1427bc',1,'ecl']]],
   ['rx_5fcomplete',['rx_complete',['../uart__bat_2case_8cpp.html#ae94fb144578e5eb00fcc4859082a4036',1,'case.cpp']]]

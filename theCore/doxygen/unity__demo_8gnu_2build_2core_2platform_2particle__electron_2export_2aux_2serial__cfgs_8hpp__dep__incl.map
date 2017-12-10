@@ -1,0 +1,8 @@
+<map id="/home/travis/build/forGGe/theCore/build/build_test_cases/particle_electron/unity_demo.gnu/build/core/platform/particle_electron/export/aux/serial_cfgs.hpp" name="/home/travis/build/forGGe/theCore/build/build_test_cases/particle_electron/unity_demo.gnu/build/core/platform/particle_electron/export/aux/serial_cfgs.hpp">
+<area shape="rect" id="node2" href="$platform__bat_8gnu_2build_2core_2platform_2particle__electron_2serial__dispatcher_8cpp.html" title="Particle Serial dispatcher template. " alt="" coords="5,153,208,253"/>
+<area shape="rect" id="node3" href="$unity__demo_8gnu_2build_2core_2platform_2particle__electron_2serial__dispatcher_8cpp.html" title="Particle Serial dispatcher template. " alt="" coords="232,153,435,253"/>
+<area shape="rect" id="node4" href="$serial__dispatcher_8in_8cpp.html" title="Particle Serial dispatcher template. " alt="" coords="459,168,642,239"/>
+<area shape="rect" id="node5" href="$particle__electron_2export_2aux_2generated_8hpp.html" title="Enlists all generated headers by Particle platform. " alt="" coords="666,168,835,239"/>
+<area shape="rect" id="node6" href="$particle__electron_2export_2platform_2console_8hpp.html" title="Electron bypass console driver. " alt="" coords="859,168,1029,239"/>
+<area shape="rect" id="node7" href="$particle__electron_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for uart_case test. " alt="" coords="1053,161,1230,246"/>
+</map>

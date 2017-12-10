@@ -14,7 +14,7 @@ var searchData=
   ['endl',['endl',['../namespaceecl.html#abf70b61cc734c2dcdc322714607b344a',1,'ecl']]],
   ['err',['err',['../classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1',1,'ecl::dma_wrap_base']]],
   ['err_5fto_5fstr',['err_to_str',['../namespaceecl.html#af38a3e6192880841a2e1206268a3d355',1,'ecl']]],
-  ['event_5fhandler',['event_handler',['../cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed',1,'main.cpp']]],
+  ['event_5fhandler',['event_handler',['../examples_2cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed',1,'main.cpp']]],
   ['events',['events',['../namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef',1,'ecl::systmr']]],
   ['expired',['expired',['../classecl_1_1weak__ptr.html#a0db449f53375be606605f87eff2a5cee',1,'ecl::weak_ptr']]],
   ['exti_5fmanager',['exti_manager',['../classecl_1_1exti__manager.html#a28b5fe0f254dc20ff3ddbfa8180376e1',1,'ecl::exti_manager::exti_manager()=delete'],['../classecl_1_1exti__manager.html#a28b5fe0f254dc20ff3ddbfa8180376e1',1,'ecl::exti_manager::exti_manager()=delete']]],

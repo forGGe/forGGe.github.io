@@ -1,0 +1,5 @@
+var build__examples_2stm32f4__cs43l22__audio_prefix_2src_2stm32f4__cs43l22__audio_build_2core_2platf026133bcadbd0c16d5a44a79fd40db36 =
+[
+    [ "i2s3_rx_dma", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platf026133bcadbd0c16d5a44a79fd40db36.html#ab4d00457403bf248da873ea96774b913", null ],
+    [ "i2s3_tx_dma", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platf026133bcadbd0c16d5a44a79fd40db36.html#a7903fa5bd086cf75111e90e102d3b4c7", null ]
+];

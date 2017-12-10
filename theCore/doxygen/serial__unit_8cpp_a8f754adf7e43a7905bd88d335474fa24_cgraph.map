@@ -4,11 +4,11 @@
 <area shape="rect" id="node4" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="119,107,272,149"/>
 <area shape="rect" id="node7" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="109,173,281,200"/>
 <area shape="rect" id="node9" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="119,246,272,287"/>
-<area shape="rect" id="node5" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="355,115,478,141"/>
-<area shape="rect" id="node6" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="552,115,712,141"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="371,173,463,200"/>
+<area shape="rect" id="node5" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="355,115,479,141"/>
+<area shape="rect" id="node6" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="552,115,713,141"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="370,173,463,200"/>
 <area shape="rect" id="node10" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="367,224,467,251"/>
 <area shape="rect" id="node11" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="355,275,478,301"/>
 <area shape="rect" id="node13" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="329,325,504,352"/>
-<area shape="rect" id="node12" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="557,300,707,327"/>
+<area shape="rect" id="node12" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="558,300,707,327"/>
 </map>

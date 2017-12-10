@@ -14,7 +14,7 @@ var searchData=
   ['close',['close',['../classecl_1_1pcd8544.html#af1f755004c5db28938cd300d01a6972c',1,'ecl::pcd8544::close()'],['../classecl_1_1sd__spi.html#acbd7a8f2eae323bd89b804b0434b159b',1,'ecl::sd_spi::close()'],['../classfs_1_1dir__descriptor.html#abc90968232058020345f56f1a63394ab',1,'fs::dir_descriptor::close()'],['../classfs_1_1file__descriptor.html#a21489f942e77f4d4dbc00758e8c8cb90',1,'fs::file_descriptor::close()'],['../classfat_1_1dir.html#a029141fda153823abd5072c27530d812',1,'fat::dir::close()'],['../classfat_1_1file.html#a91c1cbf965a7df2fb5cc4cfe30d20523',1,'fat::file::close()']]],
   ['cmd_5ftimeout',['cmd_timeout',['../classecl_1_1hm10__sync.html#a79f6de8d59f56e46e8f9ecddb3beddaa',1,'ecl::hm10_sync']]],
   ['conv_5fnum',['conv_num',['../structecl_1_1extractor.html#a25ec1da347d29c09c75edb5f2b76c11c',1,'ecl::extractor']]],
-  ['copy_5fmono_5fto_5fstereo',['copy_mono_to_stereo',['../cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5',1,'main.cpp']]],
+  ['copy_5fmono_5fto_5fstereo',['copy_mono_to_stereo',['../examples_2cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5',1,'main.cpp']]],
   ['copy_5fto_5frx',['copy_to_rx',['../classplatform__mock.html#a9909d4d33d9ae18af35d9121b8ee7178',1,'platform_mock']]],
   ['core_5fmain',['core_main',['../sys_8cpp.html#afa3328ea994a9f1d5d394a3f883cac43',1,'sys.cpp']]]
 ];

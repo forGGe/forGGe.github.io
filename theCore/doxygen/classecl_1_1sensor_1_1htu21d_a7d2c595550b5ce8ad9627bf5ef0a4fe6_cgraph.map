@@ -1,5 +1,5 @@
 <map id="ecl::sensor::htu21d::try_xfer" name="ecl::sensor::htu21d::try_xfer">
-<area shape="rect" id="node2" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="187,13,288,39"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="336,13,508,39"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="556,13,648,39"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="187,13,289,39"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="337,13,509,39"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="557,13,651,39"/>
 </map>

@@ -53,6 +53,7 @@ var hierarchy =
     [ "ecl::sensor::htu21d< i2c_dev >", "classecl_1_1sensor_1_1htu21d.html", null ],
     [ "ecl::i2c_bus< dev >", "classecl_1_1i2c__bus.html", null ],
     [ "ecl::i2c_bus_cfg< dev >", "structecl_1_1i2c__bus__cfg.html", null ],
+    [ "ecl::i2c_bus_cfg< i2c_device::wire0 >", "structecl_1_1i2c__bus__cfg_3_01i2c__device_1_1wire0_01_4.html", null ],
     [ "ecl::i2c_config< dev, mode, clock_speed, operation_mode, duty_cycle, own_address, ack, ack_addr >", "structecl_1_1i2c__config.html", null ],
     [ "fs::inode", "classfs_1_1inode.html", [
       [ "fat::dir_inode", "classfat_1_1dir__inode.html", null ],

@@ -1,6 +1,6 @@
-<map id="/home/executor/projects/thecore/thecore/dev/bus/tests/mocks/platform_bus.hpp" name="/home/executor/projects/thecore/thecore/dev/bus/tests/mocks/platform_bus.hpp">
-<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="775,259,857,285"/>
-<area shape="rect" id="node6" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="557,109,651,136"/>
-<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="5,184,96,211"/>
-<area shape="rect" id="node11" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="485,184,608,211"/>
+<map id="/home/travis/build/forGGe/theCore/dev/bus/tests/mocks/platform_bus.hpp" name="/home/travis/build/forGGe/theCore/dev/bus/tests/mocks/platform_bus.hpp">
+<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="775,273,857,300"/>
+<area shape="rect" id="node6" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="557,124,651,151"/>
+<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="5,199,96,225"/>
+<area shape="rect" id="node11" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="485,199,608,225"/>
 </map>

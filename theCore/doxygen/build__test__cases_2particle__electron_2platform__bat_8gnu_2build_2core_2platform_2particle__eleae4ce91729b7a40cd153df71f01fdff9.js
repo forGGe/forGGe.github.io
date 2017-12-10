@@ -1,0 +1,5 @@
+var build__test__cases_2particle__electron_2platform__bat_8gnu_2build_2core_2platform_2particle__eleae4ce91729b7a40cd153df71f01fdff9 =
+[
+    [ "THECORE_CONFIG_USE_CONSOLE", "build__test__cases_2particle__electron_2platform__bat_8gnu_2build_2core_2platform_2particle__eleae4ce91729b7a40cd153df71f01fdff9.html#ac042873d3e5a1588b4f13c6bdc61a4c9", null ],
+    [ "THECORE_SYSTMR_FREQ", "build__test__cases_2particle__electron_2platform__bat_8gnu_2build_2core_2platform_2particle__eleae4ce91729b7a40cd153df71f01fdff9.html#a0ee6e208137915f3bdbef6cba3d8ec06", null ]
+];

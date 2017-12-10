@@ -1,4 +1,4 @@
-<map id="/home/executor/projects/thecore/thecore/platform/stm32/templates/spi_i2s_cfg.in.hpp" name="/home/executor/projects/thecore/thecore/platform/stm32/templates/spi_i2s_cfg.in.hpp">
+<map id="/home/travis/build/forGGe/theCore/platform/stm32/templates/spi_i2s_cfg.in.hpp" name="/home/travis/build/forGGe/theCore/platform/stm32/templates/spi_i2s_cfg.in.hpp">
 <area shape="rect" id="node3" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="447,124,564,151"/>
 <area shape="rect" id="node5" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,199,277,225"/>
 <area shape="rect" id="node6" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="301,199,424,225"/>

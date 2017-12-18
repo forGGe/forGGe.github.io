@@ -1,5 +1,0 @@
-<map id="ecl::uart_bus::do_xfer" name="ecl::uart_bus::do_xfer">
-<area shape="rect" id="node2" href="$namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="201,5,343,32"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="227,56,317,83"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="391,5,485,32"/>
-</map>

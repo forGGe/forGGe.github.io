@@ -1,8 +1,0 @@
-<map id="sphinx/source/_static/generated/stm32/i2s_example.hpp" name="sphinx/source/_static/generated/stm32/i2s_example.hpp">
-<area shape="rect" id="node3" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="447,109,564,136"/>
-<area shape="rect" id="node5" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,184,277,211"/>
-<area shape="rect" id="node6" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="301,184,424,211"/>
-<area shape="rect" id="node11" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,184,792,211"/>
-<area shape="rect" id="node13" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="816,184,963,211"/>
-<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="269,259,352,285"/>
-</map>

@@ -1,4 +1,0 @@
-var dir_2130d1dded4181f897c6ccfa85f06ebd =
-[
-    [ "platform_defines.hpp", "build__test__cases_2host_2unity__demo_2build_2core_2platform_2host_2export_2aux_2platform__defines_8hpp.html", "build__test__cases_2host_2unity__demo_2build_2core_2platform_2host_2export_2aux_2platform__defines_8hpp" ]
-];

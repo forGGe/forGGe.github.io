@@ -1,5 +1,0 @@
-var build__examples_2stm32f4__cs43l22__audio_prefix_2src_2stm32f4__cs43l22__audio_build_2core_2platf59a5886ca578a0420c93cb46b812745b =
-[
-    [ "GPIO_PD4_driver", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platf59a5886ca578a0420c93cb46b812745b.html#acee00fa1c12059beb37da39b862fb251", null ],
-    [ "rst_gpio", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platf59a5886ca578a0420c93cb46b812745b.html#acfa6c63fec2224290164b3b354325e8c", null ]
-];

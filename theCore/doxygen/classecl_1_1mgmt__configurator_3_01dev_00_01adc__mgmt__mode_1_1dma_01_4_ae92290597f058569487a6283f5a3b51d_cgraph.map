@@ -1,7 +1,0 @@
-<map id="ecl::mgmt_configurator&lt; dev, adc_mgmt_mode::dma &gt;::single" name="ecl::mgmt_configurator&lt; dev, adc_mgmt_mode::dma &gt;::single">
-<area shape="rect" id="node2" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="232,5,365,32"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1gpio__hw.html#a69198301fc0bb7daa3faedc207e7a768" title="Obtains IRQ number of given port. " alt="" coords="224,56,373,83"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="231,107,367,133"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="250,157,347,184"/>
-<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="241,208,356,235"/>
-</map>

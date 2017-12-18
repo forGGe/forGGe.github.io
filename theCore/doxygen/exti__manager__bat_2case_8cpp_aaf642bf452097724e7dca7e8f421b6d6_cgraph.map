@@ -1,5 +1,0 @@
-<map id="TEST_TEAR_DOWN" name="TEST_TEAR_DOWN">
-<area shape="rect" id="node2" href="$classecl_1_1exti__manager.html#a4e38ff24f728f801821e33505ad1fe3c" title="Unsubscribes handler from any event. " alt="" coords="203,23,336,65"/>
-<area shape="rect" id="node3" href="$classecl_1_1list__node.html#a54de41b8ec068ac177b9b06cac68e805" title="Unlinks this node from a list. " alt="" coords="396,5,537,32"/>
-<area shape="rect" id="node4" href="$classecl_1_1exti__manager.html#a4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="384,56,549,83"/>
-</map>

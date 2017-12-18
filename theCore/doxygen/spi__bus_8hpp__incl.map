@@ -1,7 +1,0 @@
-<map id="/home/travis/build/forGGe/theCore/platform/stm32/export/aux/spi_bus.hpp" name="/home/travis/build/forGGe/theCore/platform/stm32/export/aux/spi_bus.hpp">
-<area shape="rect" id="node3" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,109,277,136"/>
-<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="301,109,424,136"/>
-<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,109,792,136"/>
-<area shape="rect" id="node11" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="816,109,963,136"/>
-<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="269,184,352,211"/>
-</map>

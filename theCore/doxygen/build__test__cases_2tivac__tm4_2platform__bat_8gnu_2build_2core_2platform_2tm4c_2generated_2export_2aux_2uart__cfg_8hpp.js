@@ -1,4 +1,0 @@
-var build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2uart__cfg_8hpp =
-[
-    [ "template_console_dev", "build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2uart__cfg_8hpp.html#aac11067abfe13bf55ba8a6e36e57a353", null ]
-];

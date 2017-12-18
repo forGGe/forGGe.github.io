@@ -1,5 +1,0 @@
-<map id="ecl::dma_wrap::get_global_flag" name="ecl::dma_wrap::get_global_flag">
-<area shape="rect" id="node2" href="$structecl_1_1dma__wrap.html#a84e5339621a7777e6976bcd43e0dd41b" title="Gets half&#45;transfer interrupt flag of the DMA. " alt="" coords="187,5,320,47"/>
-<area shape="rect" id="node3" href="$structecl_1_1dma__wrap.html#a775bb9f107371cef73b8e0061621d1c1" title="Gets transfer&#45;complete interrupt flag of the DMA. " alt="" coords="187,71,320,112"/>
-<area shape="rect" id="node4" href="$structecl_1_1dma__wrap.html#a41aff2ec30b8a1a7907e244932043199" title="Gets error interrupt flag of the DMA. " alt="" coords="187,136,320,177"/>
-</map>

@@ -1,4 +1,0 @@
-var build_2build__examples_2tm4c__led__example_prefix_2src_2tm4c__led__example_build_2core_2platform18ad8b6b298b2cc47e2bf2c241636693 =
-[
-    [ "gpio_init_generated", "build_2build__examples_2tm4c__led__example-prefix_2src_2tm4c__led__example-build_2core_2platform18ad8b6b298b2cc47e2bf2c241636693.html#a3fe15c42dce5b9ef9201bfb60bccaf38", null ]
-];

@@ -1,6 +1,0 @@
-<map id="ecl::spi_i2s_bus::init" name="ecl::spi_i2s_bus::init">
-<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="195,56,320,83"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="368,5,511,32"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="384,56,495,83"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="386,107,493,133"/>
-</map>

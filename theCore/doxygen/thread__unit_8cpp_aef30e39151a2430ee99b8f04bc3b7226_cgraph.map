@@ -1,0 +1,9 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="109,56,263,83"/>
+<area shape="rect" id="node8" href="$classecl_1_1native__thread.html#a6ba87367e0de98f17c34e423a2ad8671" title="ecl::native_thread\l::join" alt="" coords="123,107,249,149"/>
+<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="311,49,464,90"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="549,5,649,32"/>
+<area shape="rect" id="node5" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="538,56,661,83"/>
+<area shape="rect" id="node7" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="512,107,687,133"/>
+<area shape="rect" id="node6" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="735,81,884,108"/>
+</map>

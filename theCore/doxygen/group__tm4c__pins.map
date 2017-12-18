@@ -1,0 +1,18 @@
+<map id="Pin configuration helpers" name="Pin configuration helpers">
+<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="483,5,576,32"/>
+<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="483,56,576,83"/>
+<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="445,107,614,133"/>
+<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="495,157,564,184"/>
+<area shape="rect" id="node5" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="469,209,590,250"/>
+<area shape="rect" id="node6" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="444,275,615,331"/>
+<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="487,355,572,381"/>
+<area shape="rect" id="node8" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,398,164,439"/>
+<area shape="rect" id="node9" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="465,405,594,432"/>
+<area shape="rect" id="node10" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="480,456,579,483"/>
+<area shape="rect" id="node11" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="469,507,590,549"/>
+<area shape="rect" id="node12" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="490,573,569,600"/>
+<area shape="rect" id="node13" href="$group__stm32__irq.html" title="IRQ control" alt="" coords="485,624,573,651"/>
+<area shape="rect" id="node14" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="445,675,614,701"/>
+<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="480,725,579,752"/>
+<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="485,776,573,803"/>
+</map>

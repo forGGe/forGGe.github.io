@@ -1,0 +1,20 @@
+<map id="dir.cpp" name="dir.cpp">
+<area shape="rect" id="node2" href="$dir_8hpp.html" title="fat/dir.hpp" alt="" coords="273,80,351,107"/>
+<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="72,453,163,480"/>
+<area shape="rect" id="node24" href="$dir__inode_8hpp.html" title="fat/dir_inode.hpp" alt="" coords="381,80,499,107"/>
+<area shape="rect" id="node25" href="$file__inode_8hpp.html" title="fat/file_inode.hpp" alt="" coords="523,80,645,107"/>
+<area shape="rect" id="node26" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="994,155,1113,181"/>
+<area shape="rect" id="node3" href="$dir__descriptor_8hpp.html" title="fs/dir_descriptor.hpp" alt="" coords="192,229,331,256"/>
+<area shape="rect" id="node10" href="$inode_8hpp.html" title="fs/inode.hpp" alt="" coords="263,155,356,181"/>
+<area shape="rect" id="node15" href="$fat_2export_2fat_2types_8hpp.html" title="fat/types.hpp" alt="" coords="140,155,239,181"/>
+<area shape="rect" id="node22" href="$path_8hpp.html" title="../../path.hpp" alt="" coords="431,155,527,181"/>
+<area shape="rect" id="node4" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="217,379,332,405"/>
+<area shape="rect" id="node9" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="423,304,502,331"/>
+<area shape="rect" id="node11" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="406,229,533,256"/>
+<area shape="rect" id="node16" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="75,229,167,256"/>
+<area shape="rect" id="node17" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="313,304,399,331"/>
+<area shape="rect" id="node27" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="1193,229,1284,256"/>
+<area shape="rect" id="node29" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="1321,229,1415,256"/>
+<area shape="rect" id="node32" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="988,229,1119,256"/>
+<area shape="rect" id="node34" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="905,304,988,331"/>
+</map>

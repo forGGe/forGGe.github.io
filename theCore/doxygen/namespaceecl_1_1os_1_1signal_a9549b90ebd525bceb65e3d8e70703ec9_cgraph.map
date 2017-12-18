@@ -1,0 +1,5 @@
+<map id="ecl::os::signal::clear" name="ecl::os::signal::clear">
+<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="383,5,483,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#a0193668afd67afb897c2e65698ac9fff" title="Gets a thread handle of currently running thread. " alt="" coords="192,53,329,94"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="377,60,488,87"/>
+</map>

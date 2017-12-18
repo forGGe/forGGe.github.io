@@ -1,0 +1,25 @@
+var platform_2tm4c_2export_2platform_2execution_8hpp =
+[
+    [ "__I", "group__tm4c__execution.html#gaf63697ed9952cc71e1225efe205f6cd3", null ],
+    [ "__IM", "group__tm4c__execution.html#ga4cc1649793116d7c2d8afce7a4ffce43", null ],
+    [ "__IO", "group__tm4c__execution.html#gaec43007d9998a0a0e01faede4133d6be", null ],
+    [ "__IOM", "group__tm4c__execution.html#gab6caba5853a60a17e8e04499b52bf691", null ],
+    [ "__O", "group__tm4c__execution.html#ga7e25d9380f9ef903923964322e71f2f6", null ],
+    [ "__OM", "group__tm4c__execution.html#ga0ea2009ed8fd9ef35b48708280fdb758", null ],
+    [ "CoreDebug", "group__tm4c__execution.html#gab6e30a2b802d9021619dbb0be7f5d63d", null ],
+    [ "CoreDebug_BASE", "group__tm4c__execution.html#ga680604dbcda9e9b31a1639fcffe5230b", null ],
+    [ "CoreDebug_DEMCR_TRCENA_Msk", "group__tm4c__execution.html#ga5e99652c1df93b441257389f49407834", null ],
+    [ "CoreDebug_DEMCR_TRCENA_Pos", "group__tm4c__execution.html#ga6ff2102b98f86540224819a1b767ba39", null ],
+    [ "DWT", "group__tm4c__execution.html#gabbe5a060185e1d5afa3f85b14e10a6ce", null ],
+    [ "DWT_CTRL_CYCCNTENA_Msk", "group__tm4c__execution.html#ga4a9d209dc2a81ea6bfa0ea21331769d3", null ],
+    [ "DWT_CTRL_CYCCNTENA_Pos", "group__tm4c__execution.html#gaa4509f5f8514a7200be61691f0e01f10", null ],
+    [ "SCB", "group__tm4c__execution.html#gaaaf6477c2bde2f00f99e3c2fd1060b01", null ],
+    [ "SCB_BASE", "group__tm4c__execution.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd", null ],
+    [ "SCB_ICSR_VECTACTIVE_Msk", "group__tm4c__execution.html#ga5533791a4ecf1b9301c883047b3e8396", null ],
+    [ "SCB_ICSR_VECTACTIVE_Pos", "group__tm4c__execution.html#gae4f602c7c5c895d5fb687b71b0979fc3", null ],
+    [ "SCS_BASE", "group__tm4c__execution.html#ga3c14ed93192c8d9143322bbf77ebf770", null ],
+    [ "__attribute__", "platform_2tm4c_2export_2platform_2execution_8hpp.html#aa7d75559488b93ee4ad7d1d942950e82", null ],
+    [ "spin_wait", "platform_2tm4c_2export_2platform_2execution_8hpp.html#a69319df4ac974e92a51f968888fc25cf", null ],
+    [ "wfe", "platform_2tm4c_2export_2platform_2execution_8hpp.html#a16a20a7eaf786bc5dca3e88b4d07d305", null ],
+    [ "wfi", "platform_2tm4c_2export_2platform_2execution_8hpp.html#ae1d2fbc1927567eaaa8211a5451360fb", null ]
+];

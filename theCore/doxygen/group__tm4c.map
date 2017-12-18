@@ -1,0 +1,11 @@
+<map id="Texas Instruments Tiva C TM4C123G platform" name="Texas Instruments Tiva C TM4C123G platform">
+<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="429,5,522,32"/>
+<area shape="rect" id="node2" href="$group__tm4c__other.html" title="Other modules" alt="" coords="422,56,529,83"/>
+<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="391,107,560,133"/>
+<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="441,157,510,184"/>
+<area shape="rect" id="node5" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="415,209,536,250"/>
+<area shape="rect" id="node7" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="426,275,525,301"/>
+<area shape="rect" id="node9" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="393,325,558,352"/>
+<area shape="rect" id="node10" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="431,376,519,403"/>
+<area shape="rect" id="node8" href="$group__platform.html" title="Platform defintions\l and drivers" alt="" coords="5,179,136,221"/>
+</map>

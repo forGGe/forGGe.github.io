@@ -1,0 +1,9 @@
+<map id="serial_unit.cpp" name="serial_unit.cpp">
+<area shape="rect" id="node3" href="$serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="330,169,433,196"/>
+<area shape="rect" id="node17" href="$platform__bus_8hpp.html" title="mocks/platform_bus.hpp" alt="" coords="781,87,947,114"/>
+<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="705,319,788,345"/>
+<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="336,244,427,271"/>
+<area shape="rect" id="node7" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="23,244,115,271"/>
+<area shape="rect" id="node10" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="587,244,709,271"/>
+<area shape="rect" id="node18" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="745,169,839,196"/>
+</map>

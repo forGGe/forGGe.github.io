@@ -1,0 +1,3 @@
+<map id="board_init" name="board_init">
+<area shape="rect" id="node2" href="$pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="132,5,267,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ecl::cs43l22::set_beep_volume" name="ecl::cs43l22::set_beep_volume">
+<area shape="rect" id="node2" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="207,31,285,57"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="339,5,430,32"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="333,56,436,83"/>
+</map>

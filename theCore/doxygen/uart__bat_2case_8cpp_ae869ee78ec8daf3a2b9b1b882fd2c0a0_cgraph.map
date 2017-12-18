@@ -1,0 +1,11 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node2" href="$classecl_1_1uart__bus.html#aff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made&#45;up from sequence of similar bytes. " alt="" coords="117,5,258,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1uart__bus.html#af67df94c86eb2a640a6b66cc550eb992" title="Sets event handler. " alt="" coords="126,57,249,98"/>
+<area shape="rect" id="node4" href="$uart__bat_2case_8cpp.html#aac9e13d286cb019c8cd64828d5de9d02" title="test_handler" alt="" coords="141,123,234,149"/>
+<area shape="rect" id="node5" href="$classecl_1_1uart__bus.html#a1230079588b108c8c1a2271edd866053" title="Executes xfer, using buffers previously set. " alt="" coords="113,173,261,200"/>
+<area shape="rect" id="node9" href="$uart__bat_2case_8cpp.html#ad9bf29246461c787b2d715cb0df009e5" title="wait_transfer_complete" alt="" coords="109,224,265,251"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="313,123,455,149"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="339,173,429,200"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="503,123,597,149"/>
+<area shape="rect" id="node10" href="$uart__bat_2case_8cpp.html#ae3ca8d508a711ae4959bb6474226dab4" title="TEST_GROUP" alt="" coords="329,224,439,251"/>
+</map>

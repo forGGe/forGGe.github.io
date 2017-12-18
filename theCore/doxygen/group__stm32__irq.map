@@ -1,0 +1,18 @@
+<map id="IRQ control" name="IRQ control">
+<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="393,5,487,32"/>
+<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="393,56,487,83"/>
+<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="355,107,525,133"/>
+<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="405,157,475,184"/>
+<area shape="rect" id="node5" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="379,209,501,250"/>
+<area shape="rect" id="node6" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="355,275,525,331"/>
+<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="397,355,483,381"/>
+<area shape="rect" id="node8" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="375,405,505,432"/>
+<area shape="rect" id="node9" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="391,456,489,483"/>
+<area shape="rect" id="node10" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="379,507,501,549"/>
+<area shape="rect" id="node11" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="401,573,479,600"/>
+<area shape="rect" id="node13" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="355,624,525,651"/>
+<area shape="rect" id="node14" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="357,675,523,701"/>
+<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="391,725,489,752"/>
+<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="396,776,484,803"/>
+<area shape="rect" id="node15" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,405,152,432"/>
+</map>

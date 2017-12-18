@@ -1,0 +1,6 @@
+<map id="ecl::shared_ptr::operator bool" name="ecl::shared_ptr::operator bool">
+<area shape="rect" id="node2" href="$classecl_1_1shared__ptr.html#a66d3ac7c084a28eced61d643f4d767a8" title="Returns true if this pointer holds the last remaining node. " alt="" coords="244,5,399,32"/>
+<area shape="rect" id="node4" href="$classecl_1_1aux.html#a138f7b81ca1f4d57603f97167841eb14" title="Decrements reference counter and returns new value. " alt="" coords="273,56,370,83"/>
+<area shape="rect" id="node5" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="262,107,381,133"/>
+<area shape="rect" id="node3" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="447,5,537,32"/>
+</map>

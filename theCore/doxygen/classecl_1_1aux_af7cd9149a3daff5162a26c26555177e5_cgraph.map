@@ -1,0 +1,3 @@
+<map id="ecl::aux::weak_ref" name="ecl::aux::weak_ref">
+<area shape="rect" id="node2" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="181,5,300,32"/>
+</map>

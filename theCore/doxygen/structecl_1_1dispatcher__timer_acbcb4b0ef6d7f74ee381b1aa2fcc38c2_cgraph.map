@@ -1,0 +1,4 @@
+<map id="ecl::dispatcher_timer::check_xfer" name="ecl::dispatcher_timer::check_xfer">
+<area shape="rect" id="node2" href="$namespaceecl.html#a8973f601121164e037e6b3b0d9e1fe3d" title="ecl::serial_tx_dispatch" alt="" coords="196,5,348,32"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a8f0da76b561bf59ee68ac097ed45d232" title="ecl::i2c_dispatch" alt="" coords="212,56,332,83"/>
+</map>

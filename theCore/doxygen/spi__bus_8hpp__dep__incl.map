@@ -1,0 +1,6 @@
+<map id="spi_bus.hpp" name="spi_bus.hpp">
+<area shape="rect" id="node2" href="$__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5,80,125,107"/>
+<area shape="rect" id="node3" href="$title_2__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="149,80,269,107"/>
+<area shape="rect" id="node4" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="294,80,421,107"/>
+<area shape="rect" id="node5" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="445,80,549,107"/>
+</map>

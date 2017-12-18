@@ -1,0 +1,8 @@
+<map id="uart_bus.hpp" name="uart_bus.hpp">
+<area shape="rect" id="node2" href="$serial__example_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$__static_2generated_2tm4c_2uart__example_8hpp.html" title="TM4C UART definitions template. " alt="" coords="165,80,290,107"/>
+<area shape="rect" id="node4" href="$serial__cfgs_8in_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="315,80,439,107"/>
+<area shape="rect" id="node5" href="$tm4c_2templates_2uart__cfg_8in_8hpp.html" title="TM4C UART definitions template. " alt="" coords="463,80,571,107"/>
+<area shape="rect" id="node6" href="$tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for platform BAT test. " alt="" coords="595,80,694,107"/>
+<area shape="rect" id="node7" href="$uart__bat_2case_8cpp.html" title="case.cpp" alt="" coords="607,155,682,181"/>
+</map>

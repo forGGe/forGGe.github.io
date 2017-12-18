@@ -1,6 +1,0 @@
-<map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#afad22a26f544e4ceed1acf2d36bc058a" title="Inits a bus. " alt="" coords="109,31,252,57"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="300,31,379,57"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="433,5,523,32"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="427,56,529,83"/>
-</map>

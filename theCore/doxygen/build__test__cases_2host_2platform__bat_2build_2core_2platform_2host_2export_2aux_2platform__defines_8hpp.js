@@ -1,4 +1,0 @@
-var build__test__cases_2host_2platform__bat_2build_2core_2platform_2host_2export_2aux_2platform__defines_8hpp =
-[
-    [ "THECORE_CONFIG_USE_CONSOLE", "build__test__cases_2host_2platform__bat_2build_2core_2platform_2host_2export_2aux_2platform__defines_8hpp.html#ac042873d3e5a1588b4f13c6bdc61a4c9", null ]
-];

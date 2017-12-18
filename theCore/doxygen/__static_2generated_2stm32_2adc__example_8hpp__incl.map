@@ -1,6 +1,0 @@
-<map id="sphinx/source/_static/generated/stm32/adc_example.hpp" name="sphinx/source/_static/generated/stm32/adc_example.hpp">
-<area shape="rect" id="node3" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="448,109,541,136"/>
-<area shape="rect" id="node6" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="337,184,429,211"/>
-<area shape="rect" id="node9" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="453,184,536,211"/>
-<area shape="rect" id="node10" href="$common_2export_2common_2adc_8hpp.html" title="Common definitions for ADC module. " alt="" coords="560,184,683,211"/>
-</map>

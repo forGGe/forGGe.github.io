@@ -1,4 +1,0 @@
-var build__test__cases_2tivac__tm4_2unity__demo_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2gpio__cfg_8hpp =
-[
-    [ "gpio_init_generated", "build__test__cases_2tivac__tm4_2unity__demo_8gnu_2build_2core_2platform_2tm4c_2generated_2export_2aux_2gpio__cfg_8hpp.html#a3fe15c42dce5b9ef9201bfb60bccaf38", null ]
-];

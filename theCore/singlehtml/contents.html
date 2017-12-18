@@ -96,6 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-docs">Documentation development and contribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-testing">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-credits">Credits and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-changelog">Change Log</a></li>
 </ul>
 
             
@@ -162,11 +163,8 @@ For multi-page version, click <a class="reference external" href="http://forgge.
 <a class="reference external" href="https://t.me/joinchat/HQF-SEgtMQXoNOq_D71pSg"><img alt="Join the chat at https://t.me/joinchat/HQF-SEgtMQXoNOq_D71pSg" src="https://img.shields.io/badge/chat-telegram-blue.svg" /></a>
 <a class="reference external" href="https://t.me/theCoreEmbedded"><img alt="Follow us at https://t.me/theCoreEmbedded" src="https://img.shields.io/badge/follow-telegram-blue.svg" /></a>
 <a class="reference external" href="https://gitter.im/forGGe/theCore?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img alt="Join the chat at https://gitter.im/forGGe/theCore" src="https://badges.gitter.im/forGGe/theCore.svg" /></a></p>
-<div class="section" id="description">
-<h3>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
-<p>theCore is the open source, highly configurable and straightforward C++ embedded
-framework aimed to reduce development, testing and hardware migration
-efforts for a wide range of bare-metal embedded applications.</p>
+<p>theCore is the C++ embedded framework for various microcontroller applications,
+with or without RTOS (bare-metal).</p>
 <p>theCore tries to provide all that is necessary to create portable application code:</p>
 <ul class="simple">
 <li>Startup, initialization and periphery code for each supported platform.</li>
@@ -176,19 +174,12 @@ efforts for a wide range of bare-metal embedded applications.</p>
 <li>Easy-to-deploy development environment.</li>
 <li>Different libraries and utilities.</li>
 </ul>
-<p>theCore uses powerful type system based on modern C++ and code generation that
-greatly reduces error rate and debugging time. Shifting different sanity checks
-to compile time rather than runtime not only makes code more performant, but
-also secure and easier to extend.</p>
-<p>The project is at the initial stage. You can check <a class="reference internal" href="contents.html#thecore-roadmap"><span class="std std-ref">Roadmap</span></a> section
-in the documentation or <a class="reference external" href="https://github.com/forGGe/theCore/issues">github issues</a> to get insights on what happens
-right now and where project is moving.</p>
-</div>
 <div class="section" id="documentation">
 <h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
 <p>theCore documentation hosted on GitHub pages and available in two formats:
 <a class="reference external" href="https://forgge.github.io/theCore/">multi-page HTML</a> for ease of navigation and <a class="reference external" href="https://forgge.github.io/theCore/singlehtml/contents.html">single-page HTML</a> for ease
 of manual searching.</p>
+<p><a class="reference external" href="./doxygen/index.html">Doxygen documentation</a> is also available (trough it is not complete).</p>
 </div>
 <div class="section" id="where-to-get-thecore">
 <h3>Where to get theCore<a class="headerlink" href="#where-to-get-thecore" title="Permalink to this headline">¶</a></h3>
@@ -335,6 +326,50 @@ or read the <a class="reference external" href="https://nixos.org/nix/manual/">o
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
+</div>
+</div>
+<span id="document-guides/thirdparty-cache"></span><div class="section" id="cache-common-thirdparties">
+<h3>Cache common thirdparties<a class="headerlink" href="#cache-common-thirdparties" title="Permalink to this headline">¶</a></h3>
+<p>By default theCore will not download any of thirdparty repository, unless it is
+really required. For example, if bare-metal application is built, there is no need
+to download FreeRTOS.</p>
+<p>However, when multiple applications are built on top of theCore, thirdparties
+will be downloaded separately per each app. To avoid re-downloading external projects
+it is possible to specify cache directory, where additional and optional
+build dependencies will be stored.</p>
+<p>Two variables can be set to control caching:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">THECORE_THIRDPARTY_DIR</span></code> - directory where to download dependencies</li>
+<li><code class="docutils literal"><span class="pre">THECORE_BUILD_THIRDPARTY_DIR</span></code> - worktree and build directory for thirdparties</li>
+</ul>
+<p>Variables can be passed via an environment or CMake command-line arguments.</p>
+<div class="section" id="using-environment-variables">
+<h4>Using environment variables<a class="headerlink" href="#using-environment-variables" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Set variables</p>
+<p><code class="docutils literal"><span class="pre">`</span>
+<span class="pre">export</span> <span class="pre">THECORE_THIRDPARTY_DIR=~/.thecore_thirdparty</span>
+<span class="pre">#</span> <span class="pre">Note</span> <span class="pre">that</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">build</span> <span class="pre">applications</span> <span class="pre">concurrently,</span> <span class="pre">you</span> <span class="pre">need</span> <span class="pre">DTHECORE_BUILD_THIRDPARTY_DIR</span>
+<span class="pre">#</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">application.</span>
+<span class="pre">export</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR=~/.thecore_thirdparty_worktree</span>
+<span class="pre">`</span></code></p>
+</li>
+</ol>
+<ol class="arabic">
+<li><p class="first">Run CMake as usual</p>
+<p><code class="docutils literal"><span class="pre">`</span>
+<span class="pre">cmake</span> <span class="pre">/path/to/application</span>
+<span class="pre">`</span></code></p>
+</li>
+</ol>
+</div>
+<div class="section" id="using-cmake-command-line">
+<h4>Using CMake command line<a class="headerlink" href="#using-cmake-command-line" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal"><span class="pre">`</span>
+<span class="pre">#</span> <span class="pre">Note</span> <span class="pre">that</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">build</span> <span class="pre">applications</span> <span class="pre">concurrently,</span> <span class="pre">you</span> <span class="pre">need</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR</span>
+<span class="pre">#</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">application.</span>
+<span class="pre">cmake</span> <span class="pre">-DTHECORE_THIRDPARTY_DIR=~/.thecore_thirdparty</span> <span class="pre">-DTHECORE_BUILD_THIRDPARTY_DIR=~/.thecore_thirdparty_worktree</span> <span class="pre">/path/to/application</span>
+<span class="pre">`</span></code></p>
 </div>
 </div>
 </div>
@@ -1591,7 +1626,16 @@ string, suitable for C/C++ comments.</li>
 38
 39
 40
-41</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+41</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \file</span>
+<span class="c1">//! \brief Header provides template of u(s)art driver configuration</span>
+<span class="cp">#ifndef STM32XX_UART_CFGS_HPP_</span>
+<span class="cp">#define STM32XX_UART_CFGS_HPP_</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;aux/platform_defines.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;aux/usart_bus.hpp&gt;</span><span class="cp"></span>
+
+
+<span class="k">namespace</span> <span class="n">ecl</span>
 <span class="p">{</span>
 
 <span class="c1">// UART configuration ---------------------------------------------------------</span>
@@ -1603,8 +1647,8 @@ string, suitable for C/C++ comments.</li>
 <span class="k">struct</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev3</span><span class="o">&gt;</span>
 <span class="p">{</span>
     <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">baudrate</span>  <span class="o">=</span> <span class="mi">115200</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">word_len</span>  <span class="o">=</span> <span class="n">USART_WordLength_8b</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">stop_bit</span>  <span class="o">=</span> <span class="n">USART_StopBits_1</span><span class="p">;</span>
+<span class="hll">    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">word_len</span>  <span class="o">=</span> <span class="n">USART_WordLength_8b</span><span class="p">;</span>
+</span>    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">stop_bit</span>  <span class="o">=</span> <span class="n">USART_StopBits_1</span><span class="p">;</span>
     <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">parity</span>    <span class="o">=</span> <span class="n">USART_Parity_No</span><span class="p">;</span>
     <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">mode</span>      <span class="o">=</span> <span class="n">USART_Mode_Rx</span> <span class="o">|</span> <span class="n">USART_Mode_Tx</span><span class="p">;</span>
     <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">hw_flow</span>   <span class="o">=</span> <span class="n">USART_HardwareFlowControl_None</span><span class="p">;</span>
@@ -1612,26 +1656,17 @@ string, suitable for C/C++ comments.</li>
 
 <span class="k">using</span> <span class="n">USART3_cfg</span> <span class="o">=</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev3</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="k">using</span> <span class="n">USART3_driver</span> <span class="o">=</span> <span class="n">usart_bus</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="hll"><span class="k">using</span> <span class="n">console_uart</span> <span class="o">=</span> <span class="n">USART3_driver</span><span class="p">;</span>
-</span>
+<span class="k">using</span> <span class="n">console_uart</span> <span class="o">=</span> <span class="n">USART3_driver</span><span class="p">;</span>
+
 <span class="cm">/* Just another driver */</span>
 
 <span class="k">template</span><span class="o">&lt;&gt;</span>
 <span class="k">struct</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span>
 <span class="p">{</span>
     <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">baudrate</span>  <span class="o">=</span> <span class="mi">9600</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">word_len</span>  <span class="o">=</span> <span class="n">USART_WordLength_8b</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">stop_bit</span>  <span class="o">=</span> <span class="n">USART_StopBits_1</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">parity</span>    <span class="o">=</span> <span class="n">USART_Parity_No</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">mode</span>      <span class="o">=</span> <span class="n">USART_Mode_Rx</span> <span class="o">|</span> <span class="n">USART_Mode_Tx</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">hw_flow</span>   <span class="o">=</span> <span class="n">USART_HardwareFlowControl_None</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="k">using</span> <span class="n">UART1_cfg</span> <span class="o">=</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">UART1_driver</span> <span class="o">=</span> <span class="n">usart_bus</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="hll"><span class="k">using</span> <span class="n">my_uart</span> <span class="o">=</span> <span class="n">UART1_driver</span><span class="p">;</span>
-</span>
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
+<span class="hll">    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">word_len</span>  <span class="o">=</span> <span class="n">USART_WordLength_8b</span><span class="p">;</span>
+</span>    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">stop_bit</span>  <span class="o">=</span> <span class="n">USART_StopBits_1</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">my_uart</span> <span class="o">=</span> <span class="n">UART1_driver</span><span class="p">;</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/uart_example.hpp">Full STM32 UART example header</a></p>
@@ -1849,9 +1884,15 @@ string, suitable for C/C++ comments.</li>
 24
 25
 26
-27
-28
-29</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \file</span>
+<span class="c1">//! \brief Header provides template of ADC driver configuration</span>
+<span class="cp">#ifndef STM32XX_ADC_CFGS_HPP_</span>
+<span class="cp">#define STM32XX_ADC_CFGS_HPP_</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;aux/platform_defines.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;aux/adc.hpp&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">ecl</span>
 <span class="p">{</span>
 
 
@@ -1870,16 +1911,6 @@ string, suitable for C/C++ comments.</li>
 
 <span class="k">using</span> <span class="n">ADC1_driver</span> <span class="o">=</span> <span class="n">adc</span><span class="o">&lt;</span><span class="n">adc_dev</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="k">using</span> <span class="n">example_adc</span> <span class="o">=</span> <span class="n">ADC1_driver</span><span class="p">;</span>
-
-<span class="c1">// ADC channels configuration --------------------------------------------------</span>
-
-<span class="cm">/* PA1 pin and the temperature channel */</span>
-
-
-<span class="k">using</span> <span class="n">test_channels</span> <span class="o">=</span> <span class="n">channel_group_sw_trigger</span><span class="o">&lt;</span><span class="n">adc_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">,</span> <span class="n">adc_channel</span><span class="o">::</span><span class="n">ch16</span><span class="o">&gt;</span><span class="p">;</span>
-
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/adc_example.hpp">Full STM32 ADC example header</a></p>
@@ -2028,8 +2059,15 @@ string, suitable for C/C++ comments.</li>
 18
 19
 20
-21
-22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \file</span>
+<span class="c1">//! \brief Header provides template of I2C driver configuration.</span>
+<span class="cp">#ifndef STM32XX_I2C_CFGS_HPP_</span>
+<span class="cp">#define STM32XX_I2C_CFGS_HPP_</span>
+
+<span class="cp">#include</span> <span class="cpf">&lt;aux/platform_defines.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;aux/i2c_bus.hpp&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">ecl</span>
 <span class="p">{</span>
 
 <span class="c1">// I2C configuration -----------------------------------------------------------</span>
@@ -2042,15 +2080,6 @@ string, suitable for C/C++ comments.</li>
     <span class="mi">1000</span><span class="p">,</span>
     <span class="n">I2C_Mode_I2C</span><span class="p">,</span>
     <span class="n">I2C_DutyCycle_2</span><span class="p">,</span>
-    <span class="mi">51</span><span class="p">,</span>
-    <span class="n">I2C_Ack_Enable</span><span class="p">,</span>
-    <span class="n">I2C_AcknowledgedAddress_7bit</span>
-<span class="o">&gt;</span><span class="p">;</span>
-
-<span class="k">using</span> <span class="n">I2C1_driver</span> <span class="o">=</span> <span class="n">i2c_bus</span><span class="o">&lt;</span><span class="n">I2C1_driver_cfg</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">i2c1</span> <span class="o">=</span> <span class="n">I2C1_driver</span><span class="p">;</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/i2c_example.hpp">Full STM32 I2C example header</a></p>
@@ -2226,7 +2255,18 @@ string, suitable for C/C++ comments.</li>
 23
 24
 25
-26</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">// I2S configuration -----------------------------------------------------------</span>
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;aux/spi_bus.hpp&gt;</span><span class="cp"></span>
+
+<span class="k">namespace</span> <span class="n">ecl</span>
+<span class="p">{</span>
+
+
+<span class="c1">// SPI configuration -----------------------------------------------------------</span>
+
+<span class="c1">// TODO</span>
+
+<span class="c1">// I2S configuration -----------------------------------------------------------</span>
 
 
 <span class="k">template</span><span class="o">&lt;&gt;</span>
@@ -2243,15 +2283,6 @@ string, suitable for C/C++ comments.</li>
         <span class="n">I2S_DataFormat_16b</span><span class="p">,</span>
         <span class="n">I2S_MCLKOutput_Enable</span><span class="p">,</span>
         <span class="n">I2S_AudioFreq_8k</span><span class="p">,</span>
-        <span class="n">I2S_CPOL_High</span><span class="p">,</span>
-    <span class="p">};</span>
-<span class="p">};</span>
-
-
-<span class="k">using</span> <span class="n">I2S3_driver</span> <span class="o">=</span> <span class="n">spi_i2s_bus</span><span class="o">&lt;</span><span class="n">spi_device</span><span class="o">::</span><span class="n">bus3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">the_i2s3_alias</span> <span class="o">=</span> <span class="n">I2S3_driver</span><span class="p">;</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/i2s_example.hpp">Full STM32 I2S example header</a></p>
@@ -3909,10 +3940,27 @@ manually or by using Nix. Check the <a class="reference internal" href="contents
 Nix option.</p>
 <p>Following sections will provide you with insights about docs structure and build
 procedure.</p>
+<div class="section" id="building-doxygen-documentation">
+<h3>Building Doxygen documentation<a class="headerlink" href="#building-doxygen-documentation" title="Permalink to this headline">¶</a></h3>
+<p>theCore contains Doxygen and it is possible to generate Doxygen pages
+locally using CMake target:</p>
+<ol class="arabic">
+<li><p class="first">Launch command in the <code class="docutils literal"><span class="pre">doc_build</span></code> directory
+<a class="reference internal" href="#thecore-building-sphinx"><span class="std std-ref">created on previous step</span></a>:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>make core_doxygen
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open index page of generated Doxygen by any preferable browser:
+<code class="docutils literal"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
+</li>
+</ol>
+</div>
 <div class="section" id="building-sphinx-documentation">
 <span id="thecore-building-sphinx"></span><h3>Building Sphinx documentation<a class="headerlink" href="#building-sphinx-documentation" title="Permalink to this headline">¶</a></h3>
 <p>theCore build system provides a separate target for building documentation, so
-there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
+there is no need to invoke Sphinx manually. Doxygen will be built automatically
+before Sphinx. Proceed as follows:</p>
 <ol class="arabic">
 <li><p class="first">Finish <a class="reference internal" href="contents.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
 </li>
@@ -3933,22 +3981,6 @@ make core_sphinx
 </li>
 </ol>
 </div>
-<div class="section" id="building-doxygen-documentation">
-<h3>Building Doxygen documentation<a class="headerlink" href="#building-doxygen-documentation" title="Permalink to this headline">¶</a></h3>
-<p>theCore also contains Doxygen and it is possible to generate Doxygen pages
-locally using CMake target:</p>
-<ol class="arabic">
-<li><p class="first">Launch command in the <code class="docutils literal"><span class="pre">doc_build</span></code> directory
-<a class="reference internal" href="#thecore-building-sphinx"><span class="std std-ref">created on previous step</span></a>:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>make core_doxygen
-</pre></div>
-</div>
-</li>
-<li><p class="first">Open index page of generated Doxygen by any preferable browser:
-<code class="docutils literal"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
-</li>
-</ol>
-</div>
 <div class="section" id="what-all-these-sections-are-about">
 <h3>What all these sections are about?<a class="headerlink" href="#what-all-these-sections-are-about" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
@@ -3963,23 +3995,8 @@ holds auto-generated static HTML files which are automatically displayed if plac
 master branch of that repo. Jekyll is disabled.</p>
 <p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
 <p>Contributing to the documentation consist of creating a PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
-<p>After the PR is opened, the new documentation is processed by the author manually in following fashion:</p>
-<ol class="arabic">
-<li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-sphinx-documentation">Building Sphinx documentation</a> section.</p>
-</li>
-<li><p class="first">Generated static files are copied to the github pages clone:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>cp doc_build/doc/sphinx/* /path/to/the/gh_pages/ -rv
-</pre></div>
-</div>
-</li>
-<li><p class="first">Changes are committed and pushed to the remote:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>git add -u
-git commit
-git push origin master
-</pre></div>
-</div>
-</li>
-</ol>
+<p>After the PR is merged, the new documentation is deployed using <code class="docutils literal"><span class="pre">scripts/doc_deploy.sh</span></code>
+script.</p>
 </div>
 </div>
 <span id="document-testing"></span><div class="section" id="testing-and-ci">
@@ -4149,6 +4166,163 @@ as good examples.</p>
 <p><a class="reference external" href="https://eb2.co/blog/2012/03/sphinx-and-cmake-beautiful-documentation-for-c-projects/">Sphinx and CMake: Beautiful Documentation For C++ Projects</a> by Eric Scott Barr
 is a great article, describes how to integrate those tools together.
 This is how theCore builds and deploys its documentation.</p>
+</div>
+</div>
+<span id="document-changelog"></span><div class="section" id="change-log">
+<span id="change-log"></span><h2>Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="v0-3-0-2016-12-11">
+<span id="v0-3-0-2016-12-11"></span><h3><a class="reference external" href="https://github.com/forGGe/theCore/tree/v0.3.0">v0.3.0</a> (2016-12-11)<a class="headerlink" href="#v0-3-0-2016-12-11" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/forGGe/theCore/compare/v0.2.1...v0.3.0">Full Changelog</a></p>
+<p><strong>Closed issues:</strong></p>
+<ul class="simple">
+<li>cs43l22 example does not produce any sound <a class="reference external" href="https://github.com/forGGe/theCore/issues/192">#192</a></li>
+<li>Attempt to run board flasher under nix shell results in openocd error <a class="reference external" href="https://github.com/forGGe/theCore/issues/190">#190</a></li>
+<li>Enable EXTI manager test for stm32f4 discovery suite <a class="reference external" href="https://github.com/forGGe/theCore/issues/179">#179</a></li>
+<li>Console driver interfers with uart_bat test in platform_bat suite <a class="reference external" href="https://github.com/forGGe/theCore/issues/176">#176</a></li>
+<li>stm32, l1: review and fix DMA wrapper in a light of get_size_div() changes <a class="reference external" href="https://github.com/forGGe/theCore/issues/167">#167</a></li>
+<li>Use stm32f4x.cfg instead of stm32f4x_stlink.cfg <a class="reference external" href="https://github.com/forGGe/theCore/issues/165">#165</a></li>
+<li>Enable console support <a class="reference external" href="https://github.com/forGGe/theCore/issues/164">#164</a></li>
+<li>Implement EXTI platform driver <a class="reference external" href="https://github.com/forGGe/theCore/issues/163">#163</a></li>
+<li>Add notion of examples and on-device tests into README file <a class="reference external" href="https://github.com/forGGe/theCore/issues/160">#160</a></li>
+<li>Improve tuple iteration using C++14 <a class="reference external" href="https://github.com/forGGe/theCore/issues/149">#149</a></li>
+<li>undefined variable ‘gcc-arm-embedded-5_2’ when running nix on master <a class="reference external" href="https://github.com/forGGe/theCore/issues/144">#144</a></li>
+<li>Hello World test case: loop output with delay <a class="reference external" href="https://github.com/forGGe/theCore/issues/141">#141</a></li>
+<li>Replace CMAKE_FORCE_C_COMPILER since it is depreceated <a class="reference external" href="https://github.com/forGGe/theCore/issues/139">#139</a></li>
+<li>Platform defaults to host, even if it is not expected <a class="reference external" href="https://github.com/forGGe/theCore/issues/136">#136</a></li>
+<li>Find a way to produce objects instead of library archives and integrate it into theCore <a class="reference external" href="https://github.com/forGGe/theCore/issues/133">#133</a></li>
+<li>Move Petite FAT to the separate submodule <a class="reference external" href="https://github.com/forGGe/theCore/issues/98">#98</a></li>
+<li>Create CS43L22 usage example <a class="reference external" href="https://github.com/forGGe/theCore/issues/94">#94</a></li>
+<li>Abort build for stm32f4xx platform if cross-compiler wasn't set <a class="reference external" href="https://github.com/forGGe/theCore/issues/87">#87</a></li>
+<li>TI TM4C12x support <a class="reference external" href="https://github.com/forGGe/theCore/issues/52">#52</a></li>
+<li>Create code style guide <a class="reference external" href="https://github.com/forGGe/theCore/issues/41">#41</a></li>
+<li>stm32l1xx support <a class="reference external" href="https://github.com/forGGe/theCore/issues/38">#38</a></li>
+<li>Clang toolchain file for cortex-m4 <a class="reference external" href="https://github.com/forGGe/theCore/issues/14">#14</a></li>
+</ul>
+<p><strong>Merged pull requests:</strong></p>
+<ul class="simple">
+<li>v0.3.0 Release fixes <a class="reference external" href="https://github.com/forGGe/theCore/pull/193">#193</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>theCore: code style guide and formatting script <a class="reference external" href="https://github.com/forGGe/theCore/pull/188">#188</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>utils: new tuple iteration algorithm and test <a class="reference external" href="https://github.com/forGGe/theCore/pull/187">#187</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>stm32: fix incorrect size calculation in L1 DMA wrap <a class="reference external" href="https://github.com/forGGe/theCore/pull/185">#185</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Readme updates: tests and examples <a class="reference external" href="https://github.com/forGGe/theCore/pull/182">#182</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Petite FAT moved to submodule <a class="reference external" href="https://github.com/forGGe/theCore/pull/181">#181</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>EXTI test for stm32 and console fixes <a class="reference external" href="https://github.com/forGGe/theCore/pull/180">#180</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>TM4C EXTI driver, tests and improvements <a class="reference external" href="https://github.com/forGGe/theCore/pull/178">#178</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>TM4C platform: enabled console subsystem support <a class="reference external" href="https://github.com/forGGe/theCore/pull/174">#174</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Clang support for M4 processor <a class="reference external" href="https://github.com/forGGe/theCore/pull/173">#173</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>theCore: abort build if cross-compiler is not set <a class="reference external" href="https://github.com/forGGe/theCore/pull/171">#171</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>theCore: fix platform selection based on cross-compilation facts <a class="reference external" href="https://github.com/forGGe/theCore/pull/170">#170</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>cs43l22 complete example, cmake FORCE_COMPILER removal and interface library approach <a class="reference external" href="https://github.com/forGGe/theCore/pull/169">#169</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Bunch of improvements <a class="reference external" href="https://github.com/forGGe/theCore/pull/166">#166</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Static platform buses <a class="reference external" href="https://github.com/forGGe/theCore/pull/161">#161</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>tm4c UART fill and RX mode <a class="reference external" href="https://github.com/forGGe/theCore/pull/159">#159</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>TM4C Draft UART driver <a class="reference external" href="https://github.com/forGGe/theCore/pull/158">#158</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Interactive flashing of theCore tests <a class="reference external" href="https://github.com/forGGe/theCore/pull/157">#157</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Tm4c bypass console <a class="reference external" href="https://github.com/forGGe/theCore/pull/156">#156</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Test generator and integration <a class="reference external" href="https://github.com/forGGe/theCore/pull/155">#155</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+</ul>
+</div>
+<div class="section" id="v0-2-1-2016-10-12">
+<span id="v0-2-1-2016-10-12"></span><h3><a class="reference external" href="https://github.com/forGGe/theCore/tree/v0.2.1">v0.2.1</a> (2016-10-12)<a class="headerlink" href="#v0-2-1-2016-10-12" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/forGGe/theCore/compare/v0.2.0...v0.2.1">Full Changelog</a></p>
+<p><strong>Closed issues:</strong></p>
+<ul class="simple">
+<li>Thread library: change semaphore try_wait() API  <a class="reference external" href="https://github.com/forGGe/theCore/issues/135">#135</a></li>
+<li>create or use existing hardware register access library <a class="reference external" href="https://github.com/forGGe/theCore/issues/130">#130</a></li>
+<li>stm32 platform: make sure it works with FreeRTOS <a class="reference external" href="https://github.com/forGGe/theCore/issues/124">#124</a></li>
+<li>stm32f4xx -&gt; stm32: port EXTI driver from stm32f4xx <a class="reference external" href="https://github.com/forGGe/theCore/issues/122">#122</a></li>
+<li>Support of building for different platforms and configuraions on travis <a class="reference external" href="https://github.com/forGGe/theCore/issues/6">#6</a></li>
+</ul>
+<p><strong>Merged pull requests:</strong></p>
+<ul class="simple">
+<li>stm32: platform BAT suite and missing pinconfigs <a class="reference external" href="https://github.com/forGGe/theCore/pull/153">#153</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Workaround corrupted greeting when using bypass console <a class="reference external" href="https://github.com/forGGe/theCore/pull/152">#152</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>stm32: missing EXTI initiliaztion <a class="reference external" href="https://github.com/forGGe/theCore/pull/150">#150</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>TI TM4C GPIO control, TivaWare and  BAT tests <a class="reference external" href="https://github.com/forGGe/theCore/pull/148">#148</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>[#135] changed semaphore try_wait() API <a class="reference external" href="https://github.com/forGGe/theCore/pull/147">#147</a> (<a class="reference external" href="https://github.com/velichechka">velichechka</a>)</li>
+<li>Test suites instead of just tests <a class="reference external" href="https://github.com/forGGe/theCore/pull/143">#143</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Unity integration <a class="reference external" href="https://github.com/forGGe/theCore/pull/142">#142</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>TI TM4C platform stub and tests <a class="reference external" href="https://github.com/forGGe/theCore/pull/140">#140</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Basic tests cases implementation and skeleton <a class="reference external" href="https://github.com/forGGe/theCore/pull/137">#137</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Memory mapped I/O abstractions and tests <a class="reference external" href="https://github.com/forGGe/theCore/pull/131">#131</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>stm32f4xx: platform dropped in favor of the new stm32 platform <a class="reference external" href="https://github.com/forGGe/theCore/pull/129">#129</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>stm32: update stm32 system file for F4 family <a class="reference external" href="https://github.com/forGGe/theCore/pull/127">#127</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>STM32 L1 support for FreeRTOS <a class="reference external" href="https://github.com/forGGe/theCore/pull/126">#126</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>stm32 platform: EXTI driver for F4/L1 platforms and generalization of the EXTI definitions <a class="reference external" href="https://github.com/forGGe/theCore/pull/123">#123</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>STM32 L1 and F4 platforms merge <a class="reference external" href="https://github.com/forGGe/theCore/pull/117">#117</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>[WIP] 0.3.0 to develop test PR <a class="reference external" href="https://github.com/forGGe/theCore/pull/116">#116</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+</ul>
+</div>
+<div class="section" id="v0-2-0-2016-07-14">
+<span id="v0-2-0-2016-07-14"></span><h3><a class="reference external" href="https://github.com/forGGe/theCore/tree/v0.2.0">v0.2.0</a> (2016-07-14)<a class="headerlink" href="#v0-2-0-2016-07-14" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/forGGe/theCore/compare/v0.1.1...v0.2.0">Full Changelog</a></p>
+<p><strong>Closed issues:</strong></p>
+<ul class="simple">
+<li>stm32f4xx: gcc v6.0 can't build theCore <a class="reference external" href="https://github.com/forGGe/theCore/issues/93">#93</a></li>
+<li>stm32f4xx:  this_thread namespace for non-os environments is missing <a class="reference external" href="https://github.com/forGGe/theCore/issues/70">#70</a></li>
+<li>Add demo examples into separate directory inside the Core <a class="reference external" href="https://github.com/forGGe/theCore/issues/65">#65</a></li>
+<li>Create WiKi page for EXTI driver usage <a class="reference external" href="https://github.com/forGGe/theCore/issues/57">#57</a></li>
+<li>Consolidate common platform definitions  <a class="reference external" href="https://github.com/forGGe/theCore/issues/50">#50</a></li>
+<li>Implement driver for digital light sensor BH1750 <a class="reference external" href="https://github.com/forGGe/theCore/issues/49">#49</a></li>
+<li>Implement CS43L22 driver <a class="reference external" href="https://github.com/forGGe/theCore/issues/46">#46</a></li>
+<li>Binary semaphroe exists for FreeRTOS thread, but missing in default thread library <a class="reference external" href="https://github.com/forGGe/theCore/issues/44">#44</a></li>
+<li>Implement intrusive list <a class="reference external" href="https://github.com/forGGe/theCore/issues/39">#39</a></li>
+<li>the bus driver: support xfer() while in IRQ  <a class="reference external" href="https://github.com/forGGe/theCore/issues/36">#36</a></li>
+<li>stm32f4xx: EXTI driver <a class="reference external" href="https://github.com/forGGe/theCore/issues/35">#35</a></li>
+<li>stm32f4xx: configurable usart module <a class="reference external" href="https://github.com/forGGe/theCore/issues/34">#34</a></li>
+<li>Protect build from non-existing CppUTest library <a class="reference external" href="https://github.com/forGGe/theCore/issues/32">#32</a></li>
+<li>Implement platform-level/IRQ debug console and asserts <a class="reference external" href="https://github.com/forGGe/theCore/issues/27">#27</a></li>
+<li>Disable assertions in Release and MinSizeRel modes <a class="reference external" href="https://github.com/forGGe/theCore/issues/25">#25</a></li>
+<li>Merge irq platform code and irq_manager <a class="reference external" href="https://github.com/forGGe/theCore/issues/22">#22</a></li>
+<li>Add I2S bus implementation  <a class="reference external" href="https://github.com/forGGe/theCore/issues/20">#20</a></li>
+<li>Provide reliable semaphore based on FreeRTOS implementation <a class="reference external" href="https://github.com/forGGe/theCore/issues/11">#11</a></li>
+</ul>
+<p><strong>Merged pull requests:</strong></p>
+<ul class="simple">
+<li>Added driver for cs43l22 audio DAC <a class="reference external" href="https://github.com/forGGe/theCore/pull/111">#111</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>Added circular mode is spi_i2s_bus <a class="reference external" href="https://github.com/forGGe/theCore/pull/101">#101</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>Move CMSIS and SPL into the submodules <a class="reference external" href="https://github.com/forGGe/theCore/pull/92">#92</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Clarified platform definitions <a class="reference external" href="https://github.com/forGGe/theCore/pull/89">#89</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>TheCore Examples: EXTI and host hello world  <a class="reference external" href="https://github.com/forGGe/theCore/pull/88">#88</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Semaphore implemented for FreeRTOS thread library <a class="reference external" href="https://github.com/forGGe/theCore/pull/86">#86</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Fix usart_config implementation. <a class="reference external" href="https://github.com/forGGe/theCore/pull/85">#85</a> (<a class="reference external" href="https://github.com/GamovCoder">GamovCoder</a>)</li>
+<li>Console subsystem redesigned <a class="reference external" href="https://github.com/forGGe/theCore/pull/81">#81</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>The Bus: continuation mode test and few fixes <a class="reference external" href="https://github.com/forGGe/theCore/pull/80">#80</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>fixed incorrect last_event handling in gbus <a class="reference external" href="https://github.com/forGGe/theCore/pull/79">#79</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>stm32f4xx: USART compile-time configuration capabilities <a class="reference external" href="https://github.com/forGGe/theCore/pull/78">#78</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Disabled asserts for no-debug builds <a class="reference external" href="https://github.com/forGGe/theCore/pull/77">#77</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Build protect from missing CppUTest library <a class="reference external" href="https://github.com/forGGe/theCore/pull/76">#76</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Non-OS implementation of sleep_for() routine along with stm32f4xx counterpart  <a class="reference external" href="https://github.com/forGGe/theCore/pull/73">#73</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Use travis_retry for network commands <a class="reference external" href="https://github.com/forGGe/theCore/pull/71">#71</a> (<a class="reference external" href="https://github.com/rasendubi">rasendubi</a>)</li>
+<li>Implemented driver for BH1750 light sensor <a class="reference external" href="https://github.com/forGGe/theCore/pull/68">#68</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>stm32f4xx: standart library included to support long integer arithmetic <a class="reference external" href="https://github.com/forGGe/theCore/pull/66">#66</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>The bus: #36 Basic support of running xfer() during IRQ <a class="reference external" href="https://github.com/forGGe/theCore/pull/64">#64</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Improves offset_of() function. <a class="reference external" href="https://github.com/forGGe/theCore/pull/62">#62</a> (<a class="reference external" href="https://github.com/GamovCoder">GamovCoder</a>)</li>
+<li>Thread lib: #44 Missing binary semaphore in the common library <a class="reference external" href="https://github.com/forGGe/theCore/pull/61">#61</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Bumped GCC host version to GCC 6 and fixed couple of typos <a class="reference external" href="https://github.com/forGGe/theCore/pull/58">#58</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>EXTI manager for stm32f4xx platform <a class="reference external" href="https://github.com/forGGe/theCore/pull/56">#56</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>I2S bus support <a class="reference external" href="https://github.com/forGGe/theCore/pull/48">#48</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>Added initialisation of the static objects in the bus init method <a class="reference external" href="https://github.com/forGGe/theCore/pull/47">#47</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>Split cpp and utils library to granulate dependencies <a class="reference external" href="https://github.com/forGGe/theCore/pull/42">#42</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Intrusive list implementation and tests <a class="reference external" href="https://github.com/forGGe/theCore/pull/40">#40</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Minor refactor <a class="reference external" href="https://github.com/forGGe/theCore/pull/33">#33</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Right dependenices and library types <a class="reference external" href="https://github.com/forGGe/theCore/pull/30">#30</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Nifty counter implementation for ecl streams <a class="reference external" href="https://github.com/forGGe/theCore/pull/28">#28</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>The HTU21 sensor bring up <a class="reference external" href="https://github.com/forGGe/theCore/pull/23">#23</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>I2C bus implementation <a class="reference external" href="https://github.com/forGGe/theCore/pull/18">#18</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>stm32f4 IRQ manager correct static members initialization <a class="reference external" href="https://github.com/forGGe/theCore/pull/17">#17</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>gbus updates <a class="reference external" href="https://github.com/forGGe/theCore/pull/15">#15</a> (<a class="reference external" href="https://github.com/vadimol">vadimol</a>)</li>
+<li>Improvements to provide correct order of static initialization inside the Bus module <a class="reference external" href="https://github.com/forGGe/theCore/pull/12">#12</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+<li>Naive implementation of static guards <a class="reference external" href="https://github.com/forGGe/theCore/pull/8">#8</a> (<a class="reference external" href="https://github.com/forGGe">forGGe</a>)</li>
+</ul>
+</div>
+<div class="section" id="v0-1-1-2016-04-14">
+<span id="v0-1-1-2016-04-14"></span><h3><a class="reference external" href="https://github.com/forGGe/theCore/tree/v0.1.1">v0.1.1</a> (2016-04-14)<a class="headerlink" href="#v0-1-1-2016-04-14" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://github.com/forGGe/theCore/compare/v0.1.0...v0.1.1">Full Changelog</a></p>
+</div>
+<div class="section" id="v0-1-0-2016-04-12">
+<span id="v0-1-0-2016-04-12"></span><h3><a class="reference external" href="https://github.com/forGGe/theCore/tree/v0.1.0">v0.1.0</a> (2016-04-12)<a class="headerlink" href="#v0-1-0-2016-04-12" title="Permalink to this headline">¶</a></h3>
+<p>* <em>This Change Log was automatically generated by <a class="reference external" href="https://github.com/skywinder/Github-Changelog-Generator">github_changelog_generator</a></em></p>
 </div>
 </div>
 </div>

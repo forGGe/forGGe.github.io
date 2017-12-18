@@ -1,6 +1,0 @@
-<map id="ecl::weak_ptr::expired" name="ecl::weak_ptr::expired">
-<area shape="rect" id="node2" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="411,5,502,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1weak__ptr.html#a20dc199f7017b66fcbb1e7ce730424f1" title="ecl::weak_ptr::reset" alt="" coords="204,56,341,83"/>
-<area shape="rect" id="node4" href="$classecl_1_1aux.html#a84ca3f7a9b8f407c6bd744b74b5467de" title="Decrements weak reference counter and returns new value. " alt="" coords="389,56,524,83"/>
-<area shape="rect" id="node5" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="397,107,516,133"/>
-</map>

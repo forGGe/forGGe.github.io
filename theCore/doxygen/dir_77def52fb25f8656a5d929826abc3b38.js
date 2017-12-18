@@ -1,4 +1,0 @@
-var dir_77def52fb25f8656a5d929826abc3b38 =
-[
-    [ "CMakeCCompilerId.c", "build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2CMakeFiles_23_89_86_2CompilerIdC_2CMakeCCompilerId_8c.html", "build__test__cases_2tivac__tm4_2platform__bat_8gnu_2build_2CMakeFiles_23_89_86_2CompilerIdC_2CMakeCCompilerId_8c" ]
-];

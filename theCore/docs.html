@@ -103,14 +103,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="os_layer.html">OS abstraction layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="community.html">Community and developer guidelines</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Documentation development and contribution</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#building-sphinx-documentation">Building Sphinx documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#building-doxygen-documentation">Building Doxygen documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#building-sphinx-documentation">Building Sphinx documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-all-these-sections-are-about">What all these sections are about?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#publishing-docs-on-github-pages">Publishing docs on github pages</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
 </ul>
 
             
@@ -177,10 +178,27 @@ manually or by using Nix. Check the <a class="reference internal" href="guides/g
 Nix option.</p>
 <p>Following sections will provide you with insights about docs structure and build
 procedure.</p>
+<div class="section" id="building-doxygen-documentation">
+<h2>Building Doxygen documentation<a class="headerlink" href="#building-doxygen-documentation" title="Permalink to this headline">¶</a></h2>
+<p>theCore contains Doxygen and it is possible to generate Doxygen pages
+locally using CMake target:</p>
+<ol class="arabic">
+<li><p class="first">Launch command in the <code class="docutils literal"><span class="pre">doc_build</span></code> directory
+<a class="reference internal" href="#thecore-building-sphinx"><span class="std std-ref">created on previous step</span></a>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">core_doxygen</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open index page of generated Doxygen by any preferable browser:
+<code class="docutils literal"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
+</li>
+</ol>
+</div>
 <div class="section" id="building-sphinx-documentation">
 <span id="thecore-building-sphinx"></span><h2>Building Sphinx documentation<a class="headerlink" href="#building-sphinx-documentation" title="Permalink to this headline">¶</a></h2>
 <p>theCore build system provides a separate target for building documentation, so
-there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
+there is no need to invoke Sphinx manually. Doxygen will be built automatically
+before Sphinx. Proceed as follows:</p>
 <ol class="arabic">
 <li><p class="first">Finish <a class="reference internal" href="guides/getting-started.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
 </li>
@@ -201,22 +219,6 @@ there is no need to invoke Sphinx manually. Instead, proceed as follows:</p>
 </li>
 </ol>
 </div>
-<div class="section" id="building-doxygen-documentation">
-<h2>Building Doxygen documentation<a class="headerlink" href="#building-doxygen-documentation" title="Permalink to this headline">¶</a></h2>
-<p>theCore also contains Doxygen and it is possible to generate Doxygen pages
-locally using CMake target:</p>
-<ol class="arabic">
-<li><p class="first">Launch command in the <code class="docutils literal"><span class="pre">doc_build</span></code> directory
-<a class="reference internal" href="#thecore-building-sphinx"><span class="std std-ref">created on previous step</span></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">core_doxygen</span>
-</pre></div>
-</div>
-</li>
-<li><p class="first">Open index page of generated Doxygen by any preferable browser:
-<code class="docutils literal"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
-</li>
-</ol>
-</div>
 <div class="section" id="what-all-these-sections-are-about">
 <h2>What all these sections are about?<a class="headerlink" href="#what-all-these-sections-are-about" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
@@ -231,23 +233,8 @@ holds auto-generated static HTML files which are automatically displayed if plac
 master branch of that repo. Jekyll is disabled.</p>
 <p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
 <p>Contributing to the documentation consist of creating a PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
-<p>After the PR is opened, the new documentation is processed by the author manually in following fashion:</p>
-<ol class="arabic">
-<li><p class="first">New docs are build and tested locally, as described in <a class="reference internal" href="#building-sphinx-documentation">Building Sphinx documentation</a> section.</p>
-</li>
-<li><p class="first">Generated static files are copied to the github pages clone:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">doc_build</span><span class="o">/</span><span class="n">doc</span><span class="o">/</span><span class="n">sphinx</span><span class="o">/*</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">the</span><span class="o">/</span><span class="n">gh_pages</span><span class="o">/</span> <span class="o">-</span><span class="n">rv</span>
-</pre></div>
-</div>
-</li>
-<li><p class="first">Changes are committed and pushed to the remote:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">u</span>
-<span class="n">git</span> <span class="n">commit</span>
-<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">master</span>
-</pre></div>
-</div>
-</li>
-</ol>
+<p>After the PR is merged, the new documentation is deployed using <code class="docutils literal"><span class="pre">scripts/doc_deploy.sh</span></code>
+script.</p>
 </div>
 </div>
 

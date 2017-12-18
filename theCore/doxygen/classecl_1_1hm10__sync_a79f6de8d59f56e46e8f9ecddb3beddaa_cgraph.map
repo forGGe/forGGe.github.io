@@ -1,6 +1,0 @@
-<map id="ecl::hm10_sync::cmd_timeout" name="ecl::hm10_sync::cmd_timeout">
-<area shape="rect" id="node2" href="$classecl_1_1hm10__sync.html#a193689c1b12368b37185cf8e8c62d8f9" title="Initializes BT module. " alt="" coords="206,5,345,32"/>
-<area shape="rect" id="node4" href="$classecl_1_1hm10__sync.html#adacbb951592b5feb6e61ba27ba3fc78a" title="Sends data to the module. " alt="" coords="200,56,351,83"/>
-<area shape="rect" id="node5" href="$classecl_1_1hm10__sync.html#a13602c8615420926d2ed9c941c7a8950" title="Receives data from the module with given timeout. " alt="" coords="202,107,349,133"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="399,56,489,83"/>
-</map>

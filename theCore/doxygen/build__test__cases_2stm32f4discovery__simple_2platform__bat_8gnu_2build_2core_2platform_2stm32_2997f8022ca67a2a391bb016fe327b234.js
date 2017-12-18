@@ -1,4 +1,0 @@
-var build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2997f8022ca67a2a391bb016fe327b234 =
-[
-    [ "THECORE_CONFIG_USE_BYPASS_CONSOLE", "build__test__cases_2stm32f4discovery__simple_2platform__bat_8gnu_2build_2core_2platform_2stm32_2997f8022ca67a2a391bb016fe327b234.html#a1cd37664e4764ffda799185b0444b012", null ]
-];

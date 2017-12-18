@@ -1,6 +1,0 @@
-var build__examples_2stm32f4__cs43l22__audio_prefix_2src_2stm32f4__cs43l22__audio_build_2core_2platfb495f8dcc04ac5365b8c2873c8fca452 =
-[
-    [ "i2c1", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platfb495f8dcc04ac5365b8c2873c8fca452.html#a18ae8c5b0dcc0bb87434359e0da47121", null ],
-    [ "I2C1_driver", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platfb495f8dcc04ac5365b8c2873c8fca452.html#ae39fc466364c58f9acecbd3c975c9451", null ],
-    [ "I2C1_driver_cfg", "build__examples_2stm32f4__cs43l22__audio-prefix_2src_2stm32f4__cs43l22__audio-build_2core_2platfb495f8dcc04ac5365b8c2873c8fca452.html#afb35f120a2fc7083c3dd4f330797f7c4", null ]
-];

@@ -1,3 +1,0 @@
-<map id="ecl::platform_console::cancel_xfer" name="ecl::platform_console::cancel_xfer">
-<area shape="rect" id="node2" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="200,13,321,39"/>
-</map>

@@ -1,5 +1,5 @@
 <map id="fc28.hpp" name="fc28.hpp">
-<area shape="rect" id="node2" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="120,80,203,107"/>
-<area shape="rect" id="node5" href="$gpio_8hpp.html" title="Common GPIO definitions for all platforms. " alt="" coords="227,80,352,107"/>
+<area shape="rect" id="node2" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="40,80,137,107"/>
+<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="162,80,253,107"/>
+<area shape="rect" id="node6" href="$gpio_8hpp.html" title="Common GPIO definitions for all platforms. " alt="" coords="277,80,415,107"/>
 </map>

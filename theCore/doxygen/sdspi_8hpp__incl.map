@@ -1,10 +1,10 @@
 <map id="sdspi.hpp" name="sdspi.hpp">
-<area shape="rect" id="node5" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="421,80,539,107"/>
-<area shape="rect" id="node21" href="$endian_8hpp.html" title="ecl/endian.hpp" alt="" coords="744,80,851,107"/>
-<area shape="rect" id="node23" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="619,80,706,107"/>
-<area shape="rect" id="node6" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="515,155,605,181"/>
-<area shape="rect" id="node11" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="186,155,281,181"/>
-<area shape="rect" id="node16" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="360,155,491,181"/>
-<area shape="rect" id="node13" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="5,229,96,256"/>
-<area shape="rect" id="node18" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="381,229,464,256"/>
+<area shape="rect" id="node5" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="505,80,636,107"/>
+<area shape="rect" id="node21" href="$endian_8hpp.html" title="ecl/endian.hpp" alt="" coords="1020,80,1137,107"/>
+<area shape="rect" id="node23" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="889,80,983,107"/>
+<area shape="rect" id="node6" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="777,155,877,181"/>
+<area shape="rect" id="node11" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="420,155,524,181"/>
+<area shape="rect" id="node16" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="608,155,752,181"/>
+<area shape="rect" id="node13" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="423,229,521,256"/>
+<area shape="rect" id="node18" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="644,229,735,256"/>
 </map>

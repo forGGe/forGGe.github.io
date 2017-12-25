@@ -1,7 +1,8 @@
 <map id="spi_bus.hpp" name="spi_bus.hpp">
-<area shape="rect" id="node3" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,80,277,107"/>
-<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="301,80,424,107"/>
-<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,80,792,107"/>
-<area shape="rect" id="node11" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="816,80,963,107"/>
-<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="269,155,352,181"/>
+<area shape="rect" id="node3" href="$spi_8hpp.html" title="common/spi.hpp" alt="" coords="171,80,301,107"/>
+<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="326,80,461,107"/>
+<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="758,80,855,107"/>
+<area shape="rect" id="node12" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="879,80,1041,107"/>
+<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="292,155,383,181"/>
+<area shape="rect" id="node14" href="$version_8hpp.html" title="General the Core version library. " alt="" coords="1061,155,1182,181"/>
 </map>

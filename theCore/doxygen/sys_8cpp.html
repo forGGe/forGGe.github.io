@@ -120,13 +120,15 @@ $(document).ready(function(){initNavTree('sys_8cpp.html','');});
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;common/irq.hpp&gt;</code><br />
-<code>#include &lt;platform/console.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="common_2export_2common_2console_8hpp.html">common/console.hpp</a>&gt;</code><br />
 <code>#include &lt;common/execution.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for sys.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp__incl.png" border="0" usemap="#sys_8cpp" alt=""/></div>
 <map name="sys_8cpp" id="sys_8cpp">
+<area shape="rect" id="node5" href="common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="352,80,513,107"/>
+<area shape="rect" id="node7" href="version_8hpp.html" title="General the Core version library. " alt="" coords="455,155,576,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -230,7 +232,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_a277857bf3232366ece05321dbd27e0b8_cgraph.png" border="0" usemap="#sys_8cpp_a277857bf3232366ece05321dbd27e0b8_cgraph" alt=""/></div>
 <map name="sys_8cpp_a277857bf3232366ece05321dbd27e0b8_cgraph" id="sys_8cpp_a277857bf3232366ece05321dbd27e0b8_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="199,5,309,32"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="212,5,333,32"/>
 </map>
 </div>
 </p>
@@ -256,55 +258,55 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_aabbaf49822ba4dc6603956ac651f309d_cgraph.png" border="0" usemap="#sys_8cpp_aabbaf49822ba4dc6603956ac651f309d_cgraph" alt=""/></div>
 <map name="sys_8cpp_aabbaf49822ba4dc6603956ac651f309d_cgraph" id="sys_8cpp_aabbaf49822ba4dc6603956ac651f309d_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="777,85,883,112"/>
-<area shape="rect" id="node3" href="group__stm32__other.html#ga390c450e83ddc7807da2e9f0a894d8d1" title="platform_init" alt="" coords="199,237,292,264"/>
-<area shape="rect" id="node17" href="sys_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="206,414,285,441"/>
-<area shape="rect" id="node19" href="sys_8cpp.html#ada8402e0c504af8cafef5cc76c076003" title="kernel_main" alt="" coords="199,564,291,590"/>
-<area shape="rect" id="node24" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="595,740,646,766"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#abb135414a94b66e812a0b3866f6af1b5" title="Initializes storage for callbacks and setups default handler for every IRQ. " alt="" coords="355,85,491,112"/>
-<area shape="rect" id="node7" href="classecl_1_1exti__manager.html#a72d5ee2e164e688e9f93b25c3b5bd163" title="Initializes EXTI manager. " alt="" coords="347,237,498,264"/>
-<area shape="rect" id="node12" href="namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a" title="ecl::bypass_console_init" alt="" coords="340,338,505,365"/>
-<area shape="rect" id="node13" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="355,136,490,162"/>
-<area shape="rect" id="node14" href="systmr__bat_2case_8cpp.html#a7a31900dd3ad8c462c35e9ebaf3a3d7f" title="systmr_handler" alt="" coords="367,288,478,314"/>
-<area shape="rect" id="node16" href="namespaceecl.html#a2827830e1941c654a3d4083f7dfb546d" title="Handles IRQ and visible to the startup code. " alt="" coords="361,186,484,213"/>
-<area shape="rect" id="node5" href="namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="553,48,688,74"/>
-<area shape="rect" id="node6" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="792,34,868,61"/>
-<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="558,174,683,201"/>
-<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="773,237,887,264"/>
-<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="759,136,901,162"/>
-<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="775,186,885,213"/>
-<area shape="rect" id="node15" href="systmr__bat_2case_8cpp.html#afe9ec5ec7359259d4c1ae7da0a2394f3" title="TEST_GROUP" alt="" coords="565,288,676,314"/>
-<area shape="rect" id="node18" href="pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="355,414,490,441"/>
-<area shape="rect" id="node20" href="kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="351,564,495,590"/>
-<area shape="rect" id="node22" href="kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="380,640,465,666"/>
-<area shape="rect" id="node21" href="kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="578,564,663,590"/>
-<area shape="rect" id="node23" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="560,640,681,666"/>
-<area shape="rect" id="node25" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="795,1170,865,1197"/>
-<area shape="rect" id="node26" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="771,886,889,913"/>
-<area shape="rect" id="node27" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="1009,737,1088,764"/>
-<area shape="rect" id="node30" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="753,586,907,613"/>
-<area shape="rect" id="node31" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="747,938,913,979"/>
-<area shape="rect" id="node32" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="736,1003,924,1044"/>
-<area shape="rect" id="node33" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="749,404,911,446"/>
-<area shape="rect" id="node34" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="744,470,916,511"/>
-<area shape="rect" id="node35" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="779,288,881,314"/>
-<area shape="rect" id="node37" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="763,339,897,380"/>
-<area shape="rect" id="node39" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="763,638,897,679"/>
-<area shape="rect" id="node40" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="763,703,897,744"/>
-<area shape="rect" id="node41" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="736,769,924,796"/>
-<area shape="rect" id="node42" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="763,820,897,862"/>
-<area shape="rect" id="node43" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="744,1221,916,1248"/>
-<area shape="rect" id="node44" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="1003,1221,1095,1248"/>
-<area shape="rect" id="node45" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="761,1272,899,1298"/>
-<area shape="rect" id="node48" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="759,1326,901,1353"/>
-<area shape="rect" id="node50" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="773,1120,887,1146"/>
-<area shape="rect" id="node28" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="1205,712,1295,738"/>
-<area shape="rect" id="node29" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="1199,762,1301,789"/>
-<area shape="rect" id="node36" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="973,288,1124,314"/>
-<area shape="rect" id="node38" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="990,346,1107,373"/>
-<area shape="rect" id="node46" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="972,1272,1125,1298"/>
-<area shape="rect" id="node47" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="1173,1264,1327,1306"/>
-<area shape="rect" id="node49" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="972,1323,1125,1364"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="845,208,964,235"/>
+<area shape="rect" id="node3" href="group__stm32__other.html#ga390c450e83ddc7807da2e9f0a894d8d1" title="platform_init" alt="" coords="212,157,319,184"/>
+<area shape="rect" id="node17" href="sys_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="222,360,309,387"/>
+<area shape="rect" id="node19" href="sys_8cpp.html#ada8402e0c504af8cafef5cc76c076003" title="kernel_main" alt="" coords="214,411,317,437"/>
+<area shape="rect" id="node25" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="645,919,700,945"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#abb135414a94b66e812a0b3866f6af1b5" title="Initializes storage for callbacks and setups default handler for every IRQ. " alt="" coords="381,157,532,184"/>
+<area shape="rect" id="node7" href="classecl_1_1exti__manager.html#a72d5ee2e164e688e9f93b25c3b5bd163" title="Initializes EXTI manager. " alt="" coords="373,309,541,336"/>
+<area shape="rect" id="node12" href="namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a" title="ecl::bypass_console_init" alt="" coords="367,56,547,83"/>
+<area shape="rect" id="node13" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="383,107,530,133"/>
+<area shape="rect" id="node14" href="systmr__bat_2case_8cpp.html#a7a31900dd3ad8c462c35e9ebaf3a3d7f" title="systmr_handler" alt="" coords="395,5,518,32"/>
+<area shape="rect" id="node16" href="namespaceecl.html#a2827830e1941c654a3d4083f7dfb546d" title="Handles IRQ and visible to the startup code. " alt="" coords="390,208,523,235"/>
+<area shape="rect" id="node5" href="namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="597,157,748,184"/>
+<area shape="rect" id="node6" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="863,157,946,184"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="605,309,741,336"/>
+<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="841,411,968,437"/>
+<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="825,259,984,285"/>
+<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="844,309,965,336"/>
+<area shape="rect" id="node15" href="systmr__bat_2case_8cpp.html#afe9ec5ec7359259d4c1ae7da0a2394f3" title="TEST_GROUP" alt="" coords="619,5,727,32"/>
+<area shape="rect" id="node18" href="pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="381,360,532,387"/>
+<area shape="rect" id="node20" href="kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="375,411,538,437"/>
+<area shape="rect" id="node22" href="kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="409,461,504,488"/>
+<area shape="rect" id="node21" href="kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="625,411,720,437"/>
+<area shape="rect" id="node23" href="namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="595,461,751,488"/>
+<area shape="rect" id="node24" href="namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="839,360,970,387"/>
+<area shape="rect" id="node26" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="866,1147,943,1173"/>
+<area shape="rect" id="node27" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="841,1329,969,1356"/>
+<area shape="rect" id="node28" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="1103,1355,1185,1381"/>
+<area shape="rect" id="node31" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="819,1431,990,1457"/>
+<area shape="rect" id="node32" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="815,1482,995,1523"/>
+<area shape="rect" id="node33" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="801,1198,1008,1239"/>
+<area shape="rect" id="node34" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="815,1263,994,1305"/>
+<area shape="rect" id="node35" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="811,462,999,503"/>
+<area shape="rect" id="node36" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="847,528,962,555"/>
+<area shape="rect" id="node38" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="832,579,977,621"/>
+<area shape="rect" id="node40" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="832,645,977,686"/>
+<area shape="rect" id="node41" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="832,710,977,751"/>
+<area shape="rect" id="node42" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="799,776,1011,803"/>
+<area shape="rect" id="node43" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="832,827,977,869"/>
+<area shape="rect" id="node44" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="809,893,1000,920"/>
+<area shape="rect" id="node45" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="1093,893,1195,920"/>
+<area shape="rect" id="node46" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="827,995,982,1021"/>
+<area shape="rect" id="node48" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="825,1045,984,1072"/>
+<area shape="rect" id="node50" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="841,1096,968,1123"/>
+<area shape="rect" id="node29" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="1283,1329,1382,1356"/>
+<area shape="rect" id="node30" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="1277,1380,1388,1407"/>
+<area shape="rect" id="node37" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="1061,528,1227,555"/>
+<area shape="rect" id="node39" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="1081,587,1207,613"/>
+<area shape="rect" id="node47" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="1059,991,1229,1017"/>
+<area shape="rect" id="node49" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="1059,1042,1229,1083"/>
 </map>
 </div>
 </p>
@@ -362,7 +364,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_ad7d81512b0ce3a7214547801a3e41264_cgraph.png" border="0" usemap="#sys_8cpp_ad7d81512b0ce3a7214547801a3e41264_cgraph" alt=""/></div>
 <map name="sys_8cpp_ad7d81512b0ce3a7214547801a3e41264_cgraph" id="sys_8cpp_ad7d81512b0ce3a7214547801a3e41264_cgraph">
-<area shape="rect" id="node2" href="pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="132,5,267,32"/>
+<area shape="rect" id="node2" href="pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="140,5,291,32"/>
 </map>
 </div>
 </p>
@@ -390,55 +392,55 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_afa3328ea994a9f1d5d394a3f883cac43_cgraph.png" border="0" usemap="#sys_8cpp_afa3328ea994a9f1d5d394a3f883cac43_cgraph" alt=""/></div>
 <map name="sys_8cpp_afa3328ea994a9f1d5d394a3f883cac43_cgraph" id="sys_8cpp_afa3328ea994a9f1d5d394a3f883cac43_cgraph">
-<area shape="rect" id="node2" href="group__stm32__other.html#ga390c450e83ddc7807da2e9f0a894d8d1" title="platform_init" alt="" coords="136,208,229,235"/>
-<area shape="rect" id="node17" href="sys_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="143,360,222,387"/>
-<area shape="rect" id="node19" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="721,259,813,285"/>
-<area shape="rect" id="node21" href="sys_8cpp.html#ada8402e0c504af8cafef5cc76c076003" title="kernel_main" alt="" coords="137,556,229,583"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#abb135414a94b66e812a0b3866f6af1b5" title="Initializes storage for callbacks and setups default handler for every IRQ. " alt="" coords="292,56,428,83"/>
-<area shape="rect" id="node7" href="classecl_1_1exti__manager.html#a72d5ee2e164e688e9f93b25c3b5bd163" title="Initializes EXTI manager. " alt="" coords="285,107,435,133"/>
-<area shape="rect" id="node12" href="namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a" title="ecl::bypass_console_init" alt="" coords="277,157,443,184"/>
-<area shape="rect" id="node13" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="293,208,427,235"/>
-<area shape="rect" id="node14" href="systmr__bat_2case_8cpp.html#a7a31900dd3ad8c462c35e9ebaf3a3d7f" title="systmr_handler" alt="" coords="305,259,415,285"/>
-<area shape="rect" id="node16" href="namespaceecl.html#a2827830e1941c654a3d4083f7dfb546d" title="Handles IRQ and visible to the startup code. " alt="" coords="299,309,421,336"/>
-<area shape="rect" id="node4" href="namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="491,5,625,32"/>
-<area shape="rect" id="node6" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="714,56,821,83"/>
-<area shape="rect" id="node5" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="729,5,805,32"/>
-<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="495,107,621,133"/>
-<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="710,208,825,235"/>
-<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="696,107,839,133"/>
-<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="712,157,823,184"/>
-<area shape="rect" id="node15" href="systmr__bat_2case_8cpp.html#afe9ec5ec7359259d4c1ae7da0a2394f3" title="TEST_GROUP" alt="" coords="503,259,613,285"/>
-<area shape="rect" id="node18" href="pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="293,360,427,387"/>
-<area shape="rect" id="node20" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="909,259,1081,285"/>
-<area shape="rect" id="node22" href="kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="288,556,432,583"/>
-<area shape="rect" id="node24" href="kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="317,703,403,729"/>
-<area shape="rect" id="node23" href="kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="515,556,601,583"/>
-<area shape="rect" id="node25" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="497,753,619,780"/>
-<area shape="rect" id="node26" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="533,703,583,729"/>
-<area shape="rect" id="node27" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="732,360,803,387"/>
-<area shape="rect" id="node28" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="709,593,826,620"/>
-<area shape="rect" id="node29" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="956,564,1035,591"/>
-<area shape="rect" id="node32" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="690,411,845,437"/>
-<area shape="rect" id="node33" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="685,527,850,569"/>
-<area shape="rect" id="node34" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="673,695,861,737"/>
-<area shape="rect" id="node35" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="686,462,849,503"/>
-<area shape="rect" id="node36" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="681,761,853,802"/>
-<area shape="rect" id="node37" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="716,827,819,853"/>
-<area shape="rect" id="node39" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="701,878,834,919"/>
-<area shape="rect" id="node41" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="701,943,834,985"/>
-<area shape="rect" id="node42" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="701,1009,834,1050"/>
-<area shape="rect" id="node43" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="673,1075,861,1101"/>
-<area shape="rect" id="node44" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="701,1126,834,1167"/>
-<area shape="rect" id="node45" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="698,1192,837,1219"/>
-<area shape="rect" id="node48" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="696,1243,839,1269"/>
-<area shape="rect" id="node50" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="710,1293,825,1320"/>
-<area shape="rect" id="node30" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="1161,539,1251,565"/>
-<area shape="rect" id="node31" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="1155,589,1257,616"/>
-<area shape="rect" id="node38" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="920,827,1071,853"/>
-<area shape="rect" id="node40" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="937,885,1054,912"/>
-<area shape="rect" id="node46" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="919,1188,1072,1215"/>
-<area shape="rect" id="node47" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="1129,1181,1283,1222"/>
-<area shape="rect" id="node49" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="919,1239,1072,1281"/>
+<area shape="rect" id="node2" href="group__stm32__other.html#ga390c450e83ddc7807da2e9f0a894d8d1" title="platform_init" alt="" coords="144,271,251,297"/>
+<area shape="rect" id="node17" href="sys_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="154,683,241,709"/>
+<area shape="rect" id="node19" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="785,1295,888,1321"/>
+<area shape="rect" id="node21" href="sys_8cpp.html#ada8402e0c504af8cafef5cc76c076003" title="kernel_main" alt="" coords="146,733,249,760"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#abb135414a94b66e812a0b3866f6af1b5" title="Initializes storage for callbacks and setups default handler for every IRQ. " alt="" coords="313,56,464,83"/>
+<area shape="rect" id="node7" href="classecl_1_1exti__manager.html#a72d5ee2e164e688e9f93b25c3b5bd163" title="Initializes EXTI manager. " alt="" coords="305,169,473,196"/>
+<area shape="rect" id="node12" href="namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a" title="ecl::bypass_console_init" alt="" coords="299,220,479,247"/>
+<area shape="rect" id="node13" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="315,271,462,297"/>
+<area shape="rect" id="node14" href="systmr__bat_2case_8cpp.html#a7a31900dd3ad8c462c35e9ebaf3a3d7f" title="systmr_handler" alt="" coords="327,321,450,348"/>
+<area shape="rect" id="node16" href="namespaceecl.html#a2827830e1941c654a3d4083f7dfb546d" title="Handles IRQ and visible to the startup code. " alt="" coords="322,372,455,399"/>
+<area shape="rect" id="node4" href="namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="529,5,680,32"/>
+<area shape="rect" id="node6" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="777,56,896,83"/>
+<area shape="rect" id="node5" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="795,5,878,32"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="537,132,673,159"/>
+<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="773,208,900,235"/>
+<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="757,107,916,133"/>
+<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="776,157,897,184"/>
+<area shape="rect" id="node15" href="systmr__bat_2case_8cpp.html#afe9ec5ec7359259d4c1ae7da0a2394f3" title="TEST_GROUP" alt="" coords="551,321,659,348"/>
+<area shape="rect" id="node18" href="pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38" title="Init all GPIOs using generated code based on incoming JSON. " alt="" coords="313,683,464,709"/>
+<area shape="rect" id="node20" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="991,1295,1181,1321"/>
+<area shape="rect" id="node22" href="kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="307,733,470,760"/>
+<area shape="rect" id="node24" href="kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="341,784,436,811"/>
+<area shape="rect" id="node23" href="kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="557,733,652,760"/>
+<area shape="rect" id="node25" href="namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="527,1345,683,1372"/>
+<area shape="rect" id="node29" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="577,784,632,811"/>
+<area shape="rect" id="node26" href="namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="771,1345,902,1372"/>
+<area shape="rect" id="node28" href="namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="788,1396,885,1423"/>
+<area shape="rect" id="node27" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="1021,1345,1151,1372"/>
+<area shape="rect" id="node30" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="798,544,875,571"/>
+<area shape="rect" id="node31" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="773,843,901,869"/>
+<area shape="rect" id="node32" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="1045,813,1127,840"/>
+<area shape="rect" id="node35" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="751,1011,922,1037"/>
+<area shape="rect" id="node36" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="747,646,927,687"/>
+<area shape="rect" id="node37" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="733,777,940,818"/>
+<area shape="rect" id="node38" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="747,711,926,753"/>
+<area shape="rect" id="node39" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="743,945,931,986"/>
+<area shape="rect" id="node40" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="779,595,894,621"/>
+<area shape="rect" id="node42" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="764,478,909,519"/>
+<area shape="rect" id="node44" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="764,1113,909,1154"/>
+<area shape="rect" id="node45" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="764,1178,909,1219"/>
+<area shape="rect" id="node46" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="731,1244,943,1271"/>
+<area shape="rect" id="node47" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="764,259,909,301"/>
+<area shape="rect" id="node48" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="759,325,914,352"/>
+<area shape="rect" id="node49" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="757,376,916,403"/>
+<area shape="rect" id="node50" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="773,427,900,453"/>
+<area shape="rect" id="node33" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="1235,788,1334,815"/>
+<area shape="rect" id="node34" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="1229,839,1340,865"/>
+<area shape="rect" id="node41" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="1003,595,1169,621"/>
+<area shape="rect" id="node43" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="1023,485,1149,512"/>
 </map>
 </div>
 </p>
@@ -466,41 +468,44 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_a8270157a7d61615f2f8aeef853fd7fbd_cgraph.png" border="0" usemap="#sys_8cpp_a8270157a7d61615f2f8aeef853fd7fbd_cgraph" alt=""/></div>
 <map name="sys_8cpp_a8270157a7d61615f2f8aeef853fd7fbd_cgraph" id="sys_8cpp_a8270157a7d61615f2f8aeef853fd7fbd_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="139,512,260,539"/>
-<area shape="rect" id="node3" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="174,563,225,589"/>
-<area shape="rect" id="node4" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="367,5,437,32"/>
-<area shape="rect" id="node5" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="343,56,461,83"/>
-<area shape="rect" id="node6" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="581,187,660,213"/>
-<area shape="rect" id="node9" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="325,157,479,184"/>
-<area shape="rect" id="node10" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="319,209,485,250"/>
-<area shape="rect" id="node11" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="308,274,496,315"/>
-<area shape="rect" id="node12" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="321,339,483,381"/>
-<area shape="rect" id="node13" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="316,405,488,446"/>
-<area shape="rect" id="node14" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="351,471,453,497"/>
-<area shape="rect" id="node16" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="335,522,469,563"/>
-<area shape="rect" id="node18" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="335,587,469,629"/>
-<area shape="rect" id="node19" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="335,653,469,694"/>
-<area shape="rect" id="node20" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="308,719,496,745"/>
-<area shape="rect" id="node21" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="335,770,469,811"/>
-<area shape="rect" id="node22" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="316,836,488,863"/>
-<area shape="rect" id="node23" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="575,836,667,863"/>
-<area shape="rect" id="node24" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="333,937,471,964"/>
-<area shape="rect" id="node31" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="331,988,473,1015"/>
-<area shape="rect" id="node35" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="345,1039,459,1065"/>
-<area shape="rect" id="node36" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="345,1089,459,1116"/>
-<area shape="rect" id="node7" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="777,161,867,188"/>
-<area shape="rect" id="node8" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="771,212,873,239"/>
-<area shape="rect" id="node15" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="545,471,696,497"/>
-<area shape="rect" id="node17" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="562,529,679,556"/>
-<area shape="rect" id="node25" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="544,908,697,935"/>
-<area shape="rect" id="node26" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="745,895,899,937"/>
-<area shape="rect" id="node27" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="984,841,1084,868"/>
-<area shape="rect" id="node28" href="semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="973,892,1095,919"/>
-<area shape="rect" id="node30" href="semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="947,943,1121,969"/>
-<area shape="rect" id="node29" href="classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="1169,917,1319,944"/>
-<area shape="rect" id="node32" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="544,986,697,1027"/>
-<area shape="rect" id="node33" href="semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="761,993,883,1020"/>
-<area shape="rect" id="node34" href="classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="954,993,1114,1020"/>
+<area shape="rect" id="node2" href="namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="148,56,304,83"/>
+<area shape="rect" id="node6" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="199,631,253,657"/>
+<area shape="rect" id="node3" href="namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="393,5,523,32"/>
+<area shape="rect" id="node5" href="namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="409,56,507,83"/>
+<area shape="rect" id="node4" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="632,5,763,32"/>
+<area shape="rect" id="node7" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="419,107,497,133"/>
+<area shape="rect" id="node8" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="394,157,522,184"/>
+<area shape="rect" id="node9" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="656,288,739,315"/>
+<area shape="rect" id="node12" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="373,259,543,285"/>
+<area shape="rect" id="node13" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="368,310,548,351"/>
+<area shape="rect" id="node14" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="355,375,561,417"/>
+<area shape="rect" id="node15" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="369,441,547,482"/>
+<area shape="rect" id="node16" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="364,506,552,547"/>
+<area shape="rect" id="node17" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="401,572,515,599"/>
+<area shape="rect" id="node19" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="385,623,531,665"/>
+<area shape="rect" id="node21" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="385,689,531,730"/>
+<area shape="rect" id="node22" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="385,754,531,795"/>
+<area shape="rect" id="node23" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="352,820,564,847"/>
+<area shape="rect" id="node24" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="385,871,531,913"/>
+<area shape="rect" id="node25" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="363,937,553,964"/>
+<area shape="rect" id="node26" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="646,937,749,964"/>
+<area shape="rect" id="node27" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="381,1039,535,1065"/>
+<area shape="rect" id="node34" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="379,1089,537,1116"/>
+<area shape="rect" id="node38" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="395,1140,521,1167"/>
+<area shape="rect" id="node39" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="395,1191,521,1217"/>
+<area shape="rect" id="node10" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="867,263,965,289"/>
+<area shape="rect" id="node11" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="861,313,971,340"/>
+<area shape="rect" id="node18" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="615,572,780,599"/>
+<area shape="rect" id="node20" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="634,631,761,657"/>
+<area shape="rect" id="node28" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="613,1009,782,1036"/>
+<area shape="rect" id="node29" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="831,997,1001,1038"/>
+<area shape="rect" id="node30" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="1088,943,1197,969"/>
+<area shape="rect" id="node31" href="semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="1075,993,1210,1020"/>
+<area shape="rect" id="node33" href="semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="1049,1044,1236,1071"/>
+<area shape="rect" id="node32" href="classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="1284,1019,1451,1045"/>
+<area shape="rect" id="node35" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="612,1087,783,1129"/>
+<area shape="rect" id="node36" href="semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="849,1095,983,1121"/>
+<area shape="rect" id="node37" href="classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="1053,1095,1233,1121"/>
 </map>
 </div>
 </p>
@@ -525,44 +530,47 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_ada8402e0c504af8cafef5cc76c076003_cgraph.png" border="0" usemap="#sys_8cpp_ada8402e0c504af8cafef5cc76c076003_cgraph" alt=""/></div>
 <map name="sys_8cpp_ada8402e0c504af8cafef5cc76c076003_cgraph" id="sys_8cpp_ada8402e0c504af8cafef5cc76c076003_cgraph">
-<area shape="rect" id="node2" href="kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="145,461,289,488"/>
-<area shape="rect" id="node4" href="kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="175,512,260,539"/>
-<area shape="rect" id="node3" href="kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="355,461,441,488"/>
-<area shape="rect" id="node5" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="337,512,459,539"/>
-<area shape="rect" id="node6" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="373,563,423,589"/>
-<area shape="rect" id="node7" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="565,5,636,32"/>
-<area shape="rect" id="node8" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="542,56,659,83"/>
-<area shape="rect" id="node9" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="780,187,859,213"/>
-<area shape="rect" id="node12" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="523,157,678,184"/>
-<area shape="rect" id="node13" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="518,209,683,250"/>
-<area shape="rect" id="node14" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="507,274,695,315"/>
-<area shape="rect" id="node15" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="519,339,682,381"/>
-<area shape="rect" id="node16" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="515,405,687,446"/>
-<area shape="rect" id="node17" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="549,471,652,497"/>
-<area shape="rect" id="node19" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="534,522,667,563"/>
-<area shape="rect" id="node21" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="534,587,667,629"/>
-<area shape="rect" id="node22" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="534,653,667,694"/>
-<area shape="rect" id="node23" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="507,719,695,745"/>
-<area shape="rect" id="node24" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="534,770,667,811"/>
-<area shape="rect" id="node25" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="515,836,687,863"/>
-<area shape="rect" id="node26" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="773,836,865,863"/>
-<area shape="rect" id="node27" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="531,937,670,964"/>
-<area shape="rect" id="node34" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="529,988,672,1015"/>
-<area shape="rect" id="node38" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="543,1039,658,1065"/>
-<area shape="rect" id="node39" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="543,1089,658,1116"/>
-<area shape="rect" id="node10" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="975,161,1066,188"/>
-<area shape="rect" id="node11" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="969,212,1072,239"/>
-<area shape="rect" id="node18" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="744,471,895,497"/>
-<area shape="rect" id="node20" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="761,529,878,556"/>
-<area shape="rect" id="node28" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="743,908,896,935"/>
-<area shape="rect" id="node29" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="944,895,1097,937"/>
-<area shape="rect" id="node30" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="1183,841,1283,868"/>
-<area shape="rect" id="node31" href="semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="1171,892,1294,919"/>
-<area shape="rect" id="node33" href="semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="1145,943,1320,969"/>
-<area shape="rect" id="node32" href="classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="1368,917,1517,944"/>
-<area shape="rect" id="node35" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="743,986,896,1027"/>
-<area shape="rect" id="node36" href="semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="959,993,1082,1020"/>
-<area shape="rect" id="node37" href="classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="1153,993,1313,1020"/>
+<area shape="rect" id="node2" href="kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="156,5,319,32"/>
+<area shape="rect" id="node4" href="kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="190,56,285,83"/>
+<area shape="rect" id="node3" href="kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="397,5,492,32"/>
+<area shape="rect" id="node5" href="namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="367,56,523,83"/>
+<area shape="rect" id="node9" href="sys_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="417,631,472,657"/>
+<area shape="rect" id="node6" href="namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="611,5,742,32"/>
+<area shape="rect" id="node8" href="namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="628,56,725,83"/>
+<area shape="rect" id="node7" href="namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="851,5,981,32"/>
+<area shape="rect" id="node10" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="638,107,715,133"/>
+<area shape="rect" id="node11" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="613,157,741,184"/>
+<area shape="rect" id="node12" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="875,288,957,315"/>
+<area shape="rect" id="node15" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="591,259,762,285"/>
+<area shape="rect" id="node16" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="587,310,767,351"/>
+<area shape="rect" id="node17" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="573,375,780,417"/>
+<area shape="rect" id="node18" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="587,441,766,482"/>
+<area shape="rect" id="node19" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="583,506,771,547"/>
+<area shape="rect" id="node20" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="619,572,734,599"/>
+<area shape="rect" id="node22" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="604,623,749,665"/>
+<area shape="rect" id="node24" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="604,689,749,730"/>
+<area shape="rect" id="node25" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="604,754,749,795"/>
+<area shape="rect" id="node26" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="571,820,783,847"/>
+<area shape="rect" id="node27" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="604,871,749,913"/>
+<area shape="rect" id="node28" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="581,937,772,964"/>
+<area shape="rect" id="node29" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="865,937,967,964"/>
+<area shape="rect" id="node30" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="599,1039,754,1065"/>
+<area shape="rect" id="node37" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="597,1089,756,1116"/>
+<area shape="rect" id="node41" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="613,1140,740,1167"/>
+<area shape="rect" id="node42" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="613,1191,740,1217"/>
+<area shape="rect" id="node13" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="1085,263,1184,289"/>
+<area shape="rect" id="node14" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="1079,313,1190,340"/>
+<area shape="rect" id="node21" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="833,572,999,599"/>
+<area shape="rect" id="node23" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="853,631,979,657"/>
+<area shape="rect" id="node31" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="831,1009,1001,1036"/>
+<area shape="rect" id="node32" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="1049,997,1220,1038"/>
+<area shape="rect" id="node33" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="1307,943,1416,969"/>
+<area shape="rect" id="node34" href="semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="1294,993,1429,1020"/>
+<area shape="rect" id="node36" href="semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="1268,1044,1455,1071"/>
+<area shape="rect" id="node35" href="classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="1503,1019,1669,1045"/>
+<area shape="rect" id="node38" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="831,1087,1001,1129"/>
+<area shape="rect" id="node39" href="semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="1067,1095,1202,1121"/>
+<area shape="rect" id="node40" href="classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="1271,1095,1451,1121"/>
 </map>
 </div>
 </p>
@@ -587,39 +595,39 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="sys_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.png" border="0" usemap="#sys_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" alt=""/></div>
 <map name="sys_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph" id="sys_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="163,5,233,32"/>
-<area shape="rect" id="node3" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="139,56,257,83"/>
-<area shape="rect" id="node4" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="377,187,456,213"/>
-<area shape="rect" id="node7" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="121,157,275,184"/>
-<area shape="rect" id="node8" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="115,209,281,250"/>
-<area shape="rect" id="node9" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="104,274,292,315"/>
-<area shape="rect" id="node10" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="117,339,279,381"/>
-<area shape="rect" id="node11" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="112,405,284,446"/>
-<area shape="rect" id="node12" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="147,471,249,497"/>
-<area shape="rect" id="node14" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="131,522,265,563"/>
-<area shape="rect" id="node16" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="131,587,265,629"/>
-<area shape="rect" id="node17" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="131,653,265,694"/>
-<area shape="rect" id="node18" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="104,719,292,745"/>
-<area shape="rect" id="node19" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="131,770,265,811"/>
-<area shape="rect" id="node20" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="112,836,284,863"/>
-<area shape="rect" id="node21" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="371,836,463,863"/>
-<area shape="rect" id="node22" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="129,937,267,964"/>
-<area shape="rect" id="node29" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="127,988,269,1015"/>
-<area shape="rect" id="node33" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="141,1039,255,1065"/>
-<area shape="rect" id="node34" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="141,1089,255,1116"/>
-<area shape="rect" id="node5" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="573,161,663,188"/>
-<area shape="rect" id="node6" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="567,212,669,239"/>
-<area shape="rect" id="node13" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="341,471,492,497"/>
-<area shape="rect" id="node15" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="358,529,475,556"/>
-<area shape="rect" id="node23" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="340,908,493,935"/>
-<area shape="rect" id="node24" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="541,895,695,937"/>
-<area shape="rect" id="node25" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="780,841,880,868"/>
-<area shape="rect" id="node26" href="semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="769,892,891,919"/>
-<area shape="rect" id="node28" href="semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="743,943,917,969"/>
-<area shape="rect" id="node27" href="classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="965,917,1115,944"/>
-<area shape="rect" id="node30" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="340,986,493,1027"/>
-<area shape="rect" id="node31" href="semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="557,993,679,1020"/>
-<area shape="rect" id="node32" href="classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="750,993,910,1020"/>
+<area shape="rect" id="node2" href="namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="175,5,253,32"/>
+<area shape="rect" id="node3" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="150,56,278,83"/>
+<area shape="rect" id="node4" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="412,187,495,213"/>
+<area shape="rect" id="node7" href="classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="129,157,299,184"/>
+<area shape="rect" id="node8" href="classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="124,209,304,250"/>
+<area shape="rect" id="node9" href="classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="111,274,317,315"/>
+<area shape="rect" id="node10" href="classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="125,339,303,381"/>
+<area shape="rect" id="node11" href="classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="120,405,308,446"/>
+<area shape="rect" id="node12" href="cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="157,471,271,497"/>
+<area shape="rect" id="node14" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="141,522,287,563"/>
+<area shape="rect" id="node16" href="classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="141,587,287,629"/>
+<area shape="rect" id="node17" href="classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="141,653,287,694"/>
+<area shape="rect" id="node18" href="structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="108,719,320,745"/>
+<area shape="rect" id="node19" href="classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="141,770,287,811"/>
+<area shape="rect" id="node20" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="119,836,309,863"/>
+<area shape="rect" id="node21" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="402,836,505,863"/>
+<area shape="rect" id="node22" href="stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="137,937,291,964"/>
+<area shape="rect" id="node29" href="classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="135,988,293,1015"/>
+<area shape="rect" id="node33" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="151,1039,277,1065"/>
+<area shape="rect" id="node34" href="classecl_1_1gpio.html#a08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="151,1089,277,1116"/>
+<area shape="rect" id="node5" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="623,161,721,188"/>
+<area shape="rect" id="node6" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="617,212,727,239"/>
+<area shape="rect" id="node13" href="cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="371,471,536,497"/>
+<area shape="rect" id="node15" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="390,529,517,556"/>
+<area shape="rect" id="node23" href="classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="369,908,538,935"/>
+<area shape="rect" id="node24" href="classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="587,895,757,937"/>
+<area shape="rect" id="node25" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="844,841,953,868"/>
+<area shape="rect" id="node26" href="semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="831,892,966,919"/>
+<area shape="rect" id="node28" href="semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="805,943,992,969"/>
+<area shape="rect" id="node27" href="classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="1040,917,1207,944"/>
+<area shape="rect" id="node30" href="classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="368,986,539,1027"/>
+<area shape="rect" id="node31" href="semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="605,993,739,1020"/>
+<area shape="rect" id="node32" href="classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="809,993,989,1020"/>
 </map>
 </div>
 </p>

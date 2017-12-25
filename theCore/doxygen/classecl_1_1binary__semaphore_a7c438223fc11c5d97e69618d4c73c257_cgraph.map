@@ -1,4 +1,4 @@
 <map id="ecl::binary_semaphore::try_wait" name="ecl::binary_semaphore::try_wait">
-<area shape="rect" id="node2" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="207,13,329,39"/>
-<area shape="rect" id="node3" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="377,13,537,39"/>
+<area shape="rect" id="node2" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="224,13,359,39"/>
+<area shape="rect" id="node3" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="407,13,587,39"/>
 </map>

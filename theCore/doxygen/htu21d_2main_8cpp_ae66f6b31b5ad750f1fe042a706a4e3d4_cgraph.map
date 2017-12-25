@@ -1,11 +1,11 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="163,5,233,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="131,57,265,98"/>
-<area shape="rect" id="node5" href="$classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="131,122,265,163"/>
-<area shape="rect" id="node6" href="$classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="131,187,265,229"/>
-<area shape="rect" id="node7" href="$structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="104,253,292,280"/>
-<area shape="rect" id="node8" href="$classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="131,305,265,346"/>
-<area shape="rect" id="node9" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="112,371,284,397"/>
-<area shape="rect" id="node4" href="$classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="340,64,457,91"/>
-<area shape="rect" id="node10" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="353,371,445,397"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="175,5,253,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="141,57,287,98"/>
+<area shape="rect" id="node5" href="$classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="141,122,287,163"/>
+<area shape="rect" id="node6" href="$classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="141,187,287,229"/>
+<area shape="rect" id="node7" href="$structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="108,253,320,280"/>
+<area shape="rect" id="node8" href="$classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="141,305,287,346"/>
+<area shape="rect" id="node9" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="119,371,309,397"/>
+<area shape="rect" id="node4" href="$classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="368,64,495,91"/>
+<area shape="rect" id="node10" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="380,371,483,397"/>
 </map>

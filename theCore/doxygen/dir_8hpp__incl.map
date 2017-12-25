@@ -1,12 +1,12 @@
 <map id="dir.hpp" name="dir.hpp">
-<area shape="rect" id="node2" href="$dir__descriptor_8hpp.html" title="fs/dir_descriptor.hpp" alt="" coords="269,155,408,181"/>
-<area shape="rect" id="node9" href="$inode_8hpp.html" title="fs/inode.hpp" alt="" coords="249,80,342,107"/>
-<area shape="rect" id="node14" href="$fat_2export_2fat_2types_8hpp.html" title="fat/types.hpp" alt="" coords="417,80,516,107"/>
-<area shape="rect" id="node21" href="$path_8hpp.html" title="../../path.hpp" alt="" coords="636,80,732,107"/>
-<area shape="rect" id="node3" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="221,304,336,331"/>
-<area shape="rect" id="node8" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="228,229,307,256"/>
-<area shape="rect" id="node4" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="485,379,576,405"/>
-<area shape="rect" id="node10" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="110,155,236,181"/>
-<area shape="rect" id="node15" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="483,155,575,181"/>
-<area shape="rect" id="node16" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="383,229,470,256"/>
+<area shape="rect" id="node2" href="$dir__descriptor_8hpp.html" title="fs/dir_descriptor.hpp" alt="" coords="5,155,160,181"/>
+<area shape="rect" id="node10" href="$inode_8hpp.html" title="fs/inode.hpp" alt="" coords="221,80,323,107"/>
+<area shape="rect" id="node15" href="$fat_2export_2fat_2types_8hpp.html" title="fat/types.hpp" alt="" coords="389,80,497,107"/>
+<area shape="rect" id="node22" href="$path_8hpp.html" title="../../path.hpp" alt="" coords="641,155,743,181"/>
+<area shape="rect" id="node3" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="47,304,174,331"/>
+<area shape="rect" id="node9" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="30,229,117,256"/>
+<area shape="rect" id="node4" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="367,379,465,405"/>
+<area shape="rect" id="node11" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="201,155,343,181"/>
+<area shape="rect" id="node16" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="441,155,543,181"/>
+<area shape="rect" id="node17" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="635,229,728,256"/>
 </map>

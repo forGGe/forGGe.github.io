@@ -1,6 +1,6 @@
 <map id="ecl::native_thread::start" name="ecl::native_thread::start">
-<area shape="rect" id="node2" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="179,13,264,39"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="312,13,459,39"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="507,13,679,39"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="727,13,819,39"/>
+<area shape="rect" id="node2" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="192,13,279,39"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="327,13,489,39"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="537,13,728,39"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="776,13,879,39"/>
 </map>

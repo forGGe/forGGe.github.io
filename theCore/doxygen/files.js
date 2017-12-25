@@ -33,7 +33,7 @@ var files =
     [ "uart_bat/case.cpp", "uart__bat_2case_8cpp.html", "uart__bat_2case_8cpp" ],
     [ "unity_demo/case.cpp", "unity__demo_2case_8cpp.html", "unity__demo_2case_8cpp" ],
     [ "cm_device.hpp", "cm__device_8hpp.html", null ],
-    [ "host/console.cpp", "host_2console_8cpp.html", null ],
+    [ "host/console.cpp", "host_2console_8cpp.html", "host_2console_8cpp" ],
     [ "stm32/console.cpp", "stm32_2console_8cpp.html", null ],
     [ "tm4c/console.cpp", "tm4c_2console_8cpp.html", "tm4c_2console_8cpp" ],
     [ "common/export/common/console.hpp", "common_2export_2common_2console_8hpp.html", "common_2export_2common_2console_8hpp" ],
@@ -328,5 +328,7 @@ var files =
     [ "thread/freertos/export/ecl/thread/utils.hpp", "thread_2freertos_2export_2ecl_2thread_2utils_8hpp.html", "thread_2freertos_2export_2ecl_2thread_2utils_8hpp" ],
     [ "thread/no_os/export/ecl/thread/utils.hpp", "thread_2no__os_2export_2ecl_2thread_2utils_8hpp.html", "thread_2no__os_2export_2ecl_2thread_2utils_8hpp" ],
     [ "utils/export/ecl/utils.hpp", "utils_2export_2ecl_2utils_8hpp.html", "utils_2export_2ecl_2utils_8hpp" ],
-    [ "utils_unit.cpp", "utils__unit_8cpp.html", "utils__unit_8cpp" ]
+    [ "utils_unit.cpp", "utils__unit_8cpp.html", "utils__unit_8cpp" ],
+    [ "version.hpp", "version_8hpp.html", "version_8hpp" ],
+    [ "version.in.cpp", "version_8in_8cpp.html", "version_8in_8cpp" ]
 ];

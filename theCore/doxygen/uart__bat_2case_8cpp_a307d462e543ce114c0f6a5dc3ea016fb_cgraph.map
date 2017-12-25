@@ -1,9 +1,9 @@
 <map id="TEST_SETUP" name="TEST_SETUP">
-<area shape="rect" id="node2" href="$classecl_1_1uart__bus.html#ad03ae2d035ca0886ab2738def4e1443b" title="Lazy initialization. " alt="" coords="166,31,289,57"/>
-<area shape="rect" id="node7" href="$classecl_1_1uart__bus.html#a9cbaeaaa7d3bcb2f67b3216633d84277" title="Reset xfer buffers. " alt="" coords="160,82,295,123"/>
-<area shape="rect" id="node8" href="$classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. " alt="" coords="160,147,295,189"/>
-<area shape="rect" id="node3" href="$classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514" title="Initialize serial driver and underlying platform bus. " alt="" coords="343,31,445,57"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="626,5,717,32"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="493,56,572,83"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="620,56,723,83"/>
+<area shape="rect" id="node2" href="$classecl_1_1uart__bus.html#ad03ae2d035ca0886ab2738def4e1443b" title="Lazy initialization. " alt="" coords="162,31,297,57"/>
+<area shape="rect" id="node7" href="$classecl_1_1uart__bus.html#a9cbaeaaa7d3bcb2f67b3216633d84277" title="Reset xfer buffers. " alt="" coords="156,82,303,123"/>
+<area shape="rect" id="node8" href="$classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. " alt="" coords="156,147,303,189"/>
+<area shape="rect" id="node3" href="$classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514" title="Initialize serial driver and underlying platform bus. " alt="" coords="351,31,465,57"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="650,5,749,32"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="513,56,596,83"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="644,56,755,83"/>
 </map>

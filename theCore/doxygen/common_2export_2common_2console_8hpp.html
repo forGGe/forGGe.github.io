@@ -116,11 +116,13 @@ $(document).ready(function(){initNavTree('common_2export_2common_2console_8hpp.h
 <p>Common bypas console implementation.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;platform/console.hpp&gt;</code><br />
+<code>#include &lt;<a class="el" href="version_8hpp.html">ecl/version.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for common/export/common/console.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_2export_2common_2console_8hpp__incl.png" border="0" usemap="#console_8hpp" alt=""/></div>
 <map name="console_8hpp" id="console_8hpp">
+<area shape="rect" id="node3" href="version_8hpp.html" title="General the Core version library. " alt="" coords="190,80,311,107"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -128,12 +130,15 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="common_2export_2common_2console_8hpp__dep__incl.png" border="0" usemap="#console_8hppdep" alt=""/></div>
 <map name="console_8hppdep" id="console_8hppdep">
-<area shape="rect" id="node2" href="assert_8cpp.html" title="assert.cpp" alt="" coords="129,80,212,107"/>
-<area shape="rect" id="node3" href="spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="237,80,329,107"/>
-<area shape="rect" id="node4" href="__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="5,155,125,181"/>
-<area shape="rect" id="node5" href="title_2__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="149,155,269,181"/>
-<area shape="rect" id="node6" href="spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="294,155,421,181"/>
-<area shape="rect" id="node7" href="stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="445,155,549,181"/>
+<area shape="rect" id="node2" href="assert_8cpp.html" title="assert.cpp" alt="" coords="5,80,95,107"/>
+<area shape="rect" id="node3" href="host_2console_8cpp.html" title="Console class implementation for the host platform. " alt="" coords="119,80,218,107"/>
+<area shape="rect" id="node4" href="user__side_8cpp.html" title="User&#45;side code that should be compiled directly into resulting application. " alt="" coords="243,80,353,107"/>
+<area shape="rect" id="node5" href="sys_8cpp.html" title="theCore system initialization module. " alt="" coords="377,80,448,107"/>
+<area shape="rect" id="node6" href="spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="473,80,571,107"/>
+<area shape="rect" id="node7" href="__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="218,155,351,181"/>
+<area shape="rect" id="node8" href="title_2__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="375,155,509,181"/>
+<area shape="rect" id="node9" href="spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="533,155,671,181"/>
+<area shape="rect" id="node10" href="stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="696,155,809,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -147,6 +152,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a60ced95d5969a16195a141f4bcc28067"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a60ced95d5969a16195a141f4bcc28067">ecl::bypass_puts</a> (const char *str)</td></tr>
 <tr class="memdesc:a60ced95d5969a16195a141f4bcc28067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypasses console drivers and puts string directly to the UART.  <a href="namespaceecl.html#a60ced95d5969a16195a141f4bcc28067">More...</a><br /></td></tr>
 <tr class="separator:a60ced95d5969a16195a141f4bcc28067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac115a5d23a10590be5a05efa9a1eb7a0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0">ecl::bypass_greeting</a> ()</td></tr>
+<tr class="memdesc:ac115a5d23a10590be5a05efa9a1eb7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts a greeting to a theCore console.  <a href="namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0">More...</a><br /></td></tr>
+<tr class="separator:ac115a5d23a10590be5a05efa9a1eb7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Common bypas console implementation. </p>

@@ -1,5 +1,5 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1shared__ptr.html#a66d3ac7c084a28eced61d643f4d767a8" title="Returns true if this pointer holds the last remaining node. " alt="" coords="109,5,264,32"/>
-<area shape="rect" id="node4" href="$classecl_1_1shared__ptr.html#a37cedf36d48105cbc0ad2a138392ae49" title="Returs a value itself. " alt="" coords="119,56,254,83"/>
-<area shape="rect" id="node3" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="312,5,403,32"/>
+<area shape="rect" id="node2" href="$classecl_1_1shared__ptr.html#a66d3ac7c084a28eced61d643f4d767a8" title="Returns true if this pointer holds the last remaining node. " alt="" coords="108,5,279,32"/>
+<area shape="rect" id="node4" href="$classecl_1_1shared__ptr.html#a37cedf36d48105cbc0ad2a138392ae49" title="Returs a value itself. " alt="" coords="120,56,267,83"/>
+<area shape="rect" id="node3" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="327,5,425,32"/>
 </map>

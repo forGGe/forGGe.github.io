@@ -1,22 +1,22 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="156,5,227,32"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="118,107,265,133"/>
-<area shape="rect" id="node7" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="115,217,268,244"/>
-<area shape="rect" id="node13" href="$semaphore__unit_8cpp.html#ac6d0497ea4a7d9b04284c42f781a223b" title="test_for_each" alt="" coords="141,279,242,305"/>
-<area shape="rect" id="node16" href="$semaphore__unit_8cpp.html#aa20dc1b418c8809150e24005fc3d2f5f" title="test_delay" alt="" coords="150,161,233,188"/>
-<area shape="rect" id="node20" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="109,56,273,83"/>
-<area shape="rect" id="node4" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="365,56,450,83"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="321,107,493,133"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="583,107,675,133"/>
-<area shape="rect" id="node8" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="331,223,484,265"/>
-<area shape="rect" id="node9" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="579,309,679,336"/>
-<area shape="rect" id="node10" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="567,208,690,235"/>
-<area shape="rect" id="node12" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="541,259,716,285"/>
-<area shape="rect" id="node11" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="769,233,919,260"/>
-<area shape="rect" id="node14" href="$namespaceecl.html#a6cfb039a61d7b31b75eb741e097046ca" title="ecl::for_each" alt="" coords="359,324,456,351"/>
-<area shape="rect" id="node15" href="$namespaceecl.html#ac79e8a5d7659ad54a94a9f929e6e710e" title="ecl::for_each_impl" alt="" coords="565,360,693,387"/>
-<area shape="rect" id="node17" href="$classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257" title="Tries to wait on semaphore without lock. " alt="" coords="331,158,484,199"/>
-<area shape="rect" id="node18" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="567,157,690,184"/>
-<area shape="rect" id="node19" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="764,157,924,184"/>
-<area shape="rect" id="node21" href="$task_8h.html#a5e6dc39f0eaf64a3c825fc1c2dc4c5f6" title="xTaskGetTickCount" alt="" coords="339,5,476,32"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="161,5,238,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="118,107,281,133"/>
+<area shape="rect" id="node7" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="115,217,284,244"/>
+<area shape="rect" id="node13" href="$semaphore__unit_8cpp.html#ac6d0497ea4a7d9b04284c42f781a223b" title="test_for_each" alt="" coords="144,279,255,305"/>
+<area shape="rect" id="node16" href="$semaphore__unit_8cpp.html#aa20dc1b418c8809150e24005fc3d2f5f" title="test_delay" alt="" coords="154,161,245,188"/>
+<area shape="rect" id="node20" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="108,56,291,83"/>
+<area shape="rect" id="node4" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="391,56,477,83"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="339,107,529,133"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="619,107,722,133"/>
+<area shape="rect" id="node8" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="349,223,519,265"/>
+<area shape="rect" id="node9" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="616,309,725,336"/>
+<area shape="rect" id="node10" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="603,208,738,235"/>
+<area shape="rect" id="node12" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="577,259,764,285"/>
+<area shape="rect" id="node11" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="819,233,985,260"/>
+<area shape="rect" id="node14" href="$namespaceecl.html#a6cfb039a61d7b31b75eb741e097046ca" title="ecl::for_each" alt="" coords="381,324,487,351"/>
+<area shape="rect" id="node15" href="$namespaceecl.html#ac79e8a5d7659ad54a94a9f929e6e710e" title="ecl::for_each_impl" alt="" coords="600,360,741,387"/>
+<area shape="rect" id="node17" href="$classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257" title="Tries to wait on semaphore without lock. " alt="" coords="349,158,519,199"/>
+<area shape="rect" id="node18" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="603,157,738,184"/>
+<area shape="rect" id="node19" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="812,157,992,184"/>
+<area shape="rect" id="node21" href="$task_8h.html#a5e6dc39f0eaf64a3c825fc1c2dc4c5f6" title="xTaskGetTickCount" alt="" coords="361,5,507,32"/>
 </map>

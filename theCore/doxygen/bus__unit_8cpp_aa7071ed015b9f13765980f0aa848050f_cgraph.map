@@ -1,17 +1,17 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#a4c7eed2b45da51f420d08649f156f253" title="Performs xfer in blocking mode using buffers set previously with optional timeout. " alt="" coords="132,111,279,138"/>
-<area shape="rect" id="node12" href="$classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d" title="Cancels xfer. " alt="" coords="109,162,301,189"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257" title="Tries to wait on semaphore without lock. " alt="" coords="351,5,504,47"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="388,137,467,163"/>
-<area shape="rect" id="node9" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="351,71,504,112"/>
-<area shape="rect" id="node10" href="$namespaceecl_1_1os_1_1signal.html#a4d165308499159c21b605a093dc5739d" title="Tries to wait a signal. " alt="" coords="349,187,505,214"/>
-<area shape="rect" id="node4" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="579,26,702,53"/>
-<area shape="rect" id="node5" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="776,26,936,53"/>
-<area shape="rect" id="node7" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="595,87,686,114"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="589,138,692,165"/>
-<area shape="rect" id="node11" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="591,190,691,217"/>
-<area shape="rect" id="node13" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="351,239,504,280"/>
-<area shape="rect" id="node14" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="579,245,702,271"/>
-<area shape="rect" id="node16" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="553,295,728,322"/>
-<area shape="rect" id="node15" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="781,270,931,297"/>
+<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#a4c7eed2b45da51f420d08649f156f253" title="Performs xfer in blocking mode using buffers set previously with optional timeout. " alt="" coords="133,111,294,138"/>
+<area shape="rect" id="node12" href="$classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d" title="Cancels xfer. " alt="" coords="108,162,319,189"/>
+<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257" title="Tries to wait on semaphore without lock. " alt="" coords="367,5,538,47"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="411,137,494,163"/>
+<area shape="rect" id="node9" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="367,71,538,112"/>
+<area shape="rect" id="node10" href="$namespaceecl_1_1os_1_1signal.html#a4d165308499159c21b605a093dc5739d" title="Tries to wait a signal. " alt="" coords="367,187,539,214"/>
+<area shape="rect" id="node4" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="613,26,747,53"/>
+<area shape="rect" id="node5" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="821,26,1001,53"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="631,87,729,114"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="625,138,735,165"/>
+<area shape="rect" id="node11" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="625,190,735,217"/>
+<area shape="rect" id="node13" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="367,239,538,280"/>
+<area shape="rect" id="node14" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="613,245,747,271"/>
+<area shape="rect" id="node16" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="587,295,773,322"/>
+<area shape="rect" id="node15" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="828,270,995,297"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="ecl::weak_ptr::reset" name="ecl::weak_ptr::reset">
-<area shape="rect" id="node2" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="211,5,302,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1aux.html#a84ca3f7a9b8f407c6bd744b74b5467de" title="Decrements weak reference counter and returns new value. " alt="" coords="189,56,324,83"/>
-<area shape="rect" id="node4" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="197,107,316,133"/>
+<area shape="rect" id="node2" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="228,5,327,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1aux.html#a84ca3f7a9b8f407c6bd744b74b5467de" title="Decrements weak reference counter and returns new value. " alt="" coords="204,56,351,83"/>
+<area shape="rect" id="node4" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="212,107,343,133"/>
 </map>

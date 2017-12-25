@@ -1,7 +1,7 @@
 <map id="task.h" name="task.h">
-<area shape="rect" id="node2" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="5,80,116,107"/>
-<area shape="rect" id="node3" href="$signal_8cpp.html" title="signal.cpp" alt="" coords="140,80,221,107"/>
-<area shape="rect" id="node4" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="245,80,316,107"/>
-<area shape="rect" id="node5" href="$freertos_2export_2ecl_2thread_2thread_8hpp.html" title="thread.hpp" alt="" coords="341,80,423,107"/>
-<area shape="rect" id="node6" href="$kernel__main_8c.html" title="FreeRTOS main module. " alt="" coords="448,80,551,107"/>
+<area shape="rect" id="node2" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node3" href="$signal_8cpp.html" title="signal.cpp" alt="" coords="152,80,240,107"/>
+<area shape="rect" id="node4" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="264,80,341,107"/>
+<area shape="rect" id="node5" href="$freertos_2export_2ecl_2thread_2thread_8hpp.html" title="thread.hpp" alt="" coords="366,80,458,107"/>
+<area shape="rect" id="node6" href="$kernel__main_8c.html" title="FreeRTOS main module. " alt="" coords="483,80,597,107"/>
 </map>

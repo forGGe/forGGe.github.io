@@ -1,18 +1,18 @@
 <map id="Auto&#45;generated code, Python COG and CMake templates" name="Auto&#45;generated code, Python COG and CMake templates">
-<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="475,5,569,32"/>
-<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="475,56,569,83"/>
-<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="437,107,607,133"/>
-<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="487,157,557,184"/>
-<area shape="rect" id="node5" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="461,209,583,250"/>
-<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="479,275,565,301"/>
-<area shape="rect" id="node8" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="457,325,587,352"/>
-<area shape="rect" id="node9" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="473,376,571,403"/>
-<area shape="rect" id="node10" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="461,427,583,469"/>
-<area shape="rect" id="node11" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="483,493,561,520"/>
-<area shape="rect" id="node12" href="$group__stm32__irq.html" title="IRQ control" alt="" coords="478,544,566,571"/>
-<area shape="rect" id="node13" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="437,595,607,621"/>
-<area shape="rect" id="node14" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="439,645,605,672"/>
-<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="473,696,571,723"/>
-<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="478,747,566,773"/>
-<area shape="rect" id="node15" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,376,152,403"/>
+<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="511,5,610,32"/>
+<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="511,56,610,83"/>
+<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="467,107,655,133"/>
+<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="523,157,598,184"/>
+<area shape="rect" id="node5" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="493,209,629,250"/>
+<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="515,275,607,301"/>
+<area shape="rect" id="node8" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="493,325,629,352"/>
+<area shape="rect" id="node9" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="509,376,612,403"/>
+<area shape="rect" id="node10" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="493,427,629,469"/>
+<area shape="rect" id="node11" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="518,493,603,520"/>
+<area shape="rect" id="node12" href="$group__stm32__irq.html" title="IRQ control" alt="" coords="513,544,608,571"/>
+<area shape="rect" id="node13" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="467,595,655,621"/>
+<area shape="rect" id="node14" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="469,645,652,672"/>
+<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="509,696,612,723"/>
+<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="513,747,608,773"/>
+<area shape="rect" id="node15" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,376,169,403"/>
 </map>

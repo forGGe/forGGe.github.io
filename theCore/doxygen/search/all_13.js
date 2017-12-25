@@ -67,6 +67,7 @@ var searchData=
   ['test_5fuart_2ehpp',['test_uart.hpp',['../tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html',1,'']]],
   ['the_5fi2s3_5falias',['the_i2s3_alias',['../namespaceecl.html#a861696a30d8cd910246b41711f137cc0',1,'ecl']]],
   ['thecore_5fconfig_5fuse_5fconsole',['THECORE_CONFIG_USE_CONSOLE',['../host_2templates_2defines_8in_8hpp.html#ac042873d3e5a1588b4f13c6bdc61a4c9',1,'defines.in.hpp']]],
+  ['thecore_5fver4git_5ffound',['THECORE_VER4GIT_FOUND',['../version_8in_8cpp.html#a87a48d6cd1ee804497772972bee02688',1,'version.in.cpp']]],
   ['thread_5fhandle',['thread_handle',['../namespaceecl.html#ad0512e057a69d3d7382c422eb35ac807',1,'ecl']]],
   ['thread_5funit_2ecpp',['thread_unit.cpp',['../thread__unit_8cpp.html',1,'']]],
   ['threads_5fcount',['threads_count',['../semaphore__unit_8cpp.html#acb6aae1acd3fc9c8ed1e973dac1c7eb7',1,'semaphore_unit.cpp']]],

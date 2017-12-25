@@ -1,5 +1,5 @@
 <map id="ecl::adc_irq_dispatcher::subscribe" name="ecl::adc_irq_dispatcher::subscribe">
-<area shape="rect" id="node2" href="$namespaceecl.html#a99317c9e4a0c3abf534e028ee8a77154" title="Maps ADC to index in the ADC array. " alt="" coords="209,5,327,32"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="213,56,323,83"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="215,107,321,133"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#a99317c9e4a0c3abf534e028ee8a77154" title="Maps ADC to index in the ADC array. " alt="" coords="224,5,351,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="227,56,348,83"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="228,107,347,133"/>
 </map>

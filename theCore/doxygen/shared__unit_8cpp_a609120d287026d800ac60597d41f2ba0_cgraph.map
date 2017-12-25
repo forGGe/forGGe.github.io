@@ -1,11 +1,11 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$namespaceecl.html#a92d2cdb61c450632ad5676ed9f1a26d3" title="ecl::allocate_shared" alt="" coords="130,42,269,69"/>
-<area shape="rect" id="node7" href="$structdummy__type.html#ac0e7b3d25fef30040275d25a9b94d705" title="dummy_type::dummy_type" alt="" coords="109,93,289,119"/>
-<area shape="rect" id="node8" href="$classecl_1_1shared__ptr.html#a66d3ac7c084a28eced61d643f4d767a8" title="Returns true if this pointer holds the last remaining node. " alt="" coords="122,143,277,170"/>
-<area shape="rect" id="node10" href="$classecl_1_1shared__ptr.html#a37cedf36d48105cbc0ad2a138392ae49" title="Returs a value itself. " alt="" coords="132,194,267,221"/>
-<area shape="rect" id="node3" href="$classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78" title="Allocates memory for given object count. " alt="" coords="337,35,464,76"/>
-<area shape="rect" id="node4" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="512,35,667,76"/>
-<area shape="rect" id="node5" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="715,5,849,47"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="747,71,817,98"/>
-<area shape="rect" id="node9" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="355,143,446,170"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#a92d2cdb61c450632ad5676ed9f1a26d3" title="ecl::allocate_shared" alt="" coords="133,42,285,69"/>
+<area shape="rect" id="node7" href="$structdummy__type.html#ac0e7b3d25fef30040275d25a9b94d705" title="dummy_type::dummy_type" alt="" coords="108,93,311,119"/>
+<area shape="rect" id="node8" href="$classecl_1_1shared__ptr.html#a66d3ac7c084a28eced61d643f4d767a8" title="Returns true if this pointer holds the last remaining node. " alt="" coords="124,143,295,170"/>
+<area shape="rect" id="node10" href="$classecl_1_1shared__ptr.html#a37cedf36d48105cbc0ad2a138392ae49" title="Returs a value itself. " alt="" coords="136,194,283,221"/>
+<area shape="rect" id="node3" href="$classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78" title="Allocates memory for given object count. " alt="" coords="359,35,500,76"/>
+<area shape="rect" id="node4" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="548,35,719,76"/>
+<area shape="rect" id="node5" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="767,5,915,47"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="802,71,879,98"/>
+<area shape="rect" id="node9" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="380,143,479,170"/>
 </map>

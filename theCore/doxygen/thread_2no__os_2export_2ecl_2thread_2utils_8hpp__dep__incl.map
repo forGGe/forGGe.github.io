@@ -1,8 +1,8 @@
 <map id="utils.hpp" name="utils.hpp">
-<area shape="rect" id="node2" href="$cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="5,80,80,107"/>
-<area shape="rect" id="node3" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="104,80,179,107"/>
-<area shape="rect" id="node4" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="203,80,277,107"/>
-<area shape="rect" id="node5" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="302,80,413,107"/>
-<area shape="rect" id="node6" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="437,80,507,107"/>
-<area shape="rect" id="node7" href="$pcd8544_8hpp.html" title="pcd8544.hpp" alt="" coords="532,80,628,107"/>
+<area shape="rect" id="node2" href="$cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="112,80,195,107"/>
+<area shape="rect" id="node4" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="219,80,301,107"/>
+<area shape="rect" id="node5" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="325,80,448,107"/>
+<area shape="rect" id="node6" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="472,80,549,107"/>
+<area shape="rect" id="node7" href="$pcd8544_8hpp.html" title="pcd8544.hpp" alt="" coords="574,80,679,107"/>
 </map>

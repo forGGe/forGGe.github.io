@@ -1,4 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$namespaceecl_1_1mmio.html#a61ef0226e893c06054d252af72dcfcf4" title="Generates shifted mask. " alt="" coords="109,13,285,39"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1mmio.html#a9bf45f9a8ed6b66c55e2e5924ca361a0" title="Generates bitstring of consequent &#39;1&#39;s of the given width. " alt="" coords="333,5,471,47"/>
+<area shape="rect" id="node2" href="$namespaceecl_1_1mmio.html#a61ef0226e893c06054d252af72dcfcf4" title="Generates shifted mask. " alt="" coords="108,13,304,39"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1mmio.html#a9bf45f9a8ed6b66c55e2e5924ca361a0" title="Generates bitstring of consequent &#39;1&#39;s of the given width. " alt="" coords="352,5,505,47"/>
 </map>

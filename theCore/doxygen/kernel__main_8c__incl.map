@@ -1,5 +1,5 @@
 <map id="kernel_main.c" name="kernel_main.c">
 <area shape="rect" id="node2" href="$FreeRTOS_8h.html" title="FreeRTOSS mock header. " alt="" coords="5,80,100,107"/>
-<area shape="rect" id="node4" href="$task_8h.html" title="FreeRTOS task mock header. " alt="" coords="125,80,183,107"/>
-<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="207,80,298,107"/>
+<area shape="rect" id="node4" href="$task_8h.html" title="FreeRTOS task mock header. " alt="" coords="124,80,187,107"/>
+<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="211,80,308,107"/>
 </map>

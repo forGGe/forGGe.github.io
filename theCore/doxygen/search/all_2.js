@@ -51,6 +51,7 @@ var searchData=
   ['busy',['busy',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a8bc1b2f84252c3df4edd53e4aad097a7',1,'ecl']]],
   ['bypass_5fconsole',['bypass_console',['../classecl_1_1usart__bus.html#a9ae7eace616371476efeea32974b4bb0',1,'ecl::usart_bus']]],
   ['bypass_5fconsole_5finit',['bypass_console_init',['../classecl_1_1uart__bus.html#a3561adbbf5a3f7c9b03f99ba0028d9dd',1,'ecl::uart_bus::bypass_console_init()'],['../namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a',1,'ecl::bypass_console_init()']]],
+  ['bypass_5fgreeting',['bypass_greeting',['../namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0',1,'ecl']]],
   ['bypass_5finit',['bypass_init',['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl::bypass_init()'],['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl::bypass_init()']]],
   ['bypass_5fputc',['bypass_putc',['../classecl_1_1uart__bus.html#a67021227786363d133030f11c7667896',1,'ecl::uart_bus::bypass_putc()'],['../namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c',1,'ecl::bypass_putc()']]],
   ['bypass_5fputs',['bypass_puts',['../namespaceecl.html#a60ced95d5969a16195a141f4bcc28067',1,'ecl']]],

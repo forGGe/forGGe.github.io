@@ -1,3 +1,3 @@
 <map id="ecl::usart_bus::cancel_rx" name="ecl::usart_bus::cancel_rx">
-<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="221,5,319,32"/>
+<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="236,5,343,32"/>
 </map>

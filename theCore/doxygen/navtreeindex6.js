@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"namespaces.html":[3,0],
+"namespacestd.html":[3,0,3],
+"no__os_2export_2ecl_2thread_2mutex_8hpp.html":[5,0,138],
 "no__os_2export_2ecl_2thread_2semaphore_8hpp.html":[5,0,163],
 "no__os_2semaphore_8cpp.html":[5,0,160],
 "ostream_8hpp.html":[5,0,140],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "semaphore__unit_8cpp.html#adace15bac0690c5e5180672f848c96fd":[5,0,165,11],
 "semaphore__unit_8cpp.html#ae95c48518ab9c6573a632e69a7d86aec":[5,0,165,3],
 "semaphore__unit_8cpp.html#afd34890ce7615a958bdb4f2fcb490811":[5,0,165,5],
-"semphr_8h.html":[5,0,166],
-"semphr_8h.html#a1b251aac602368af2de28669d8d4cd09":[5,0,166,3],
-"semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d":[5,0,166,4],
-"semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34":[5,0,166,5]
+"semphr_8h.html":[5,0,166]
 };

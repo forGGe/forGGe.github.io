@@ -1,18 +1,18 @@
 <map id="External interrupt manager" name="External interrupt manager">
-<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="439,5,532,32"/>
-<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="439,56,532,83"/>
-<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="401,107,570,133"/>
-<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="451,157,520,184"/>
-<area shape="rect" id="node6" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="400,208,571,264"/>
-<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="443,288,528,315"/>
-<area shape="rect" id="node9" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="421,339,550,365"/>
-<area shape="rect" id="node10" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="436,389,535,416"/>
-<area shape="rect" id="node11" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="425,441,546,482"/>
-<area shape="rect" id="node12" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="446,507,525,533"/>
-<area shape="rect" id="node13" href="$group__stm32__irq.html" title="IRQ control" alt="" coords="441,557,529,584"/>
-<area shape="rect" id="node14" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="401,608,570,635"/>
-<area shape="rect" id="node15" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="403,659,568,685"/>
-<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="436,709,535,736"/>
-<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="441,760,529,787"/>
-<area shape="rect" id="node8" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,382,164,423"/>
+<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="477,5,575,32"/>
+<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="477,56,575,83"/>
+<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="432,107,620,133"/>
+<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="489,157,563,184"/>
+<area shape="rect" id="node6" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="436,208,616,264"/>
+<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="480,288,572,315"/>
+<area shape="rect" id="node9" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="458,339,594,365"/>
+<area shape="rect" id="node10" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="475,389,577,416"/>
+<area shape="rect" id="node11" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="458,441,594,482"/>
+<area shape="rect" id="node12" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="483,507,569,533"/>
+<area shape="rect" id="node13" href="$group__stm32__irq.html" title="IRQ control" alt="" coords="479,557,573,584"/>
+<area shape="rect" id="node14" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="432,608,620,635"/>
+<area shape="rect" id="node15" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="435,659,617,685"/>
+<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="475,709,577,736"/>
+<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="479,760,573,787"/>
+<area shape="rect" id="node8" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,382,179,423"/>
 </map>

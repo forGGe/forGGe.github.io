@@ -97,7 +97,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Getting started</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#downloading-thecore">Downloading theCore</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#deploying-development-environment">Deploying development environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deploying-development-environment">Deploying development environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-docker">Using Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-nix">Using Nix</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#moving-forward">Moving forward</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#more-info-about-nix">More info about Nix</a></li>
 </ul>
 </li>
@@ -193,11 +198,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>Now it is time to get the development environment - toolchains,
 build dependencies and some additional host utilities. Everything that
 you need during development of the embedded application.</p>
+<p>You can obtain the environment using few ways:</p>
+<ul class="simple">
+<li>By <a class="reference internal" href="#using-nix">using Nix</a>.</li>
+<li>By <a class="reference internal" href="#using-docker">using Docker</a>.</li>
+<li>Install everything manually. See <a class="reference internal" href="without-nix.html#thecore-nonixinstall"><span class="std std-ref">Getting required development packages without Nix</span></a> section for more
+details on that.</li>
+</ul>
 <p>You can either do it manually and spend decent time on that or ask
 package manager called <a class="reference external" href="https://nixos.org/nix/">Nix</a> to setup all the development packages for you.</p>
 <p>If you prefer to manually install dependencies, refer to <a class="reference internal" href="without-nix.html#thecore-nonixinstall"><span class="std std-ref">Getting required development packages without Nix</span></a>
 section for more details.</p>
-<p>Otherwise start with following.</p>
+<div class="section" id="using-docker">
+<h3>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Install docker.
+Installation depends on your Linux distributions, but here are some insights:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04">Docker installation on Ubuntu 16.04</a></li>
+<li><a class="reference external" href="https://wiki.archlinux.org/index.php/Docker">Docker installation on ArchLinux</a></li>
+</ul>
+</li>
+<li><p class="first">After Docker is installed and Docker daemon is running, you can launch
+theCore environment image. Execute:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Pulls Docker image from dockerhub
+# https://hub.docker.com/r/thecoreembedded/thecore/
+docker pull thecoreembedded/thecore
+
+# Run shell in the docker with all environment deployed
+docker run -v $(pwd):/root/thecore -w /root/thecore -it thecoreembedded/thecore
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="using-nix">
+<h3>Using Nix<a class="headerlink" href="#using-nix" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Install Nix.
 On Linux and Mac OS X, the easiest way to install Nix is to run
@@ -213,7 +249,13 @@ the following shell command (as a user other than root):</p>
 </div>
 </li>
 </ol>
-<p>From now on, you are ready for creating embedded applications using theCore.</p>
+</div>
+</div>
+<div class="section" id="moving-forward">
+<h2>Moving forward<a class="headerlink" href="#moving-forward" title="Permalink to this headline">¶</a></h2>
+<p>From now on, you are ready for creating embedded applications using theCore.
+Check <a class="reference internal" href="../examples/index.html#thecore-examples"><span class="std std-ref">Examples</span></a> section to understand how such applications
+are built.</p>
 </div>
 <div class="section" id="more-info-about-nix">
 <h2>More info about Nix<a class="headerlink" href="#more-info-about-nix" title="Permalink to this headline">¶</a></h2>

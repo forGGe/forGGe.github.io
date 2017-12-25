@@ -1,9 +1,9 @@
 <map id="i2c.hpp" name="i2c.hpp">
-<area shape="rect" id="node2" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="385,80,477,107"/>
-<area shape="rect" id="node3" href="$__static_2generated_2particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="5,155,125,181"/>
-<area shape="rect" id="node4" href="$__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="149,155,269,181"/>
-<area shape="rect" id="node5" href="$title_2__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="293,155,413,181"/>
-<area shape="rect" id="node6" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="438,155,578,181"/>
-<area shape="rect" id="node7" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="602,155,705,181"/>
-<area shape="rect" id="node8" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="729,155,833,181"/>
+<area shape="rect" id="node2" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="421,80,520,107"/>
+<area shape="rect" id="node3" href="$__static_2generated_2particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="5,155,139,181"/>
+<area shape="rect" id="node4" href="$__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="163,155,296,181"/>
+<area shape="rect" id="node5" href="$title_2__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="320,155,453,181"/>
+<area shape="rect" id="node6" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="477,155,632,181"/>
+<area shape="rect" id="node7" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="656,155,768,181"/>
+<area shape="rect" id="node8" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="793,155,906,181"/>
 </map>

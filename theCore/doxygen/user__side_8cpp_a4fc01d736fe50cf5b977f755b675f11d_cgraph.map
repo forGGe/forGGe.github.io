@@ -1,7 +1,11 @@
 <map id="setup" name="setup">
-<area shape="rect" id="node2" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="116,5,211,32"/>
-<area shape="rect" id="node3" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="108,56,219,83"/>
-<area shape="rect" id="node6" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="124,107,203,133"/>
-<area shape="rect" id="node4" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="279,31,330,57"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="267,81,343,108"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="139,5,241,32"/>
+<area shape="rect" id="node3" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="128,56,252,83"/>
+<area shape="rect" id="node6" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="147,107,233,133"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="112,157,268,184"/>
+<area shape="rect" id="node4" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="354,19,409,45"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="340,69,423,96"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="316,132,447,159"/>
+<area shape="rect" id="node10" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="333,183,430,209"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="495,132,625,159"/>
 </map>

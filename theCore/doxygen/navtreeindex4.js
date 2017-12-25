@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a1d12af8ef9c2df9e4b7a87ed2500d5fb":[5,0,55,0,21],
 "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a1ebf4e55c604b92cce9b0f1fd7debcc0":[5,0,55,0,7],
 "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a2019c8e18bec8dc776dce289ad397239":[5,0,55,0,76],
 "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a20826a3cb51d6c7d9c219c7f4bf4e5c9":[5,0,55,0,66],
@@ -178,8 +179,8 @@ var NAVTREEINDEX4 =
 "functions_w.html":[4,3,0,20],
 "functions_x.html":[4,3,0,21],
 "functions_y.html":[4,3,0,22],
-"globals.html":[5,1,0],
 "globals.html":[5,1,0,0],
+"globals.html":[5,1,0],
 "globals_a.html":[5,1,0,1],
 "globals_b.html":[5,1,0,2],
 "globals_c.html":[5,1,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "group__stm32__gpio.html":[2,0,0,9],
 "group__stm32__i2c.html":[2,0,0,5],
 "group__stm32__irq.html":[2,0,0,10],
-"group__stm32__other.html":[2,0,0,2],
-"group__stm32__other.html#ga390c450e83ddc7807da2e9f0a894d8d1":[2,0,0,2,3]
+"group__stm32__other.html":[2,0,0,2]
 };

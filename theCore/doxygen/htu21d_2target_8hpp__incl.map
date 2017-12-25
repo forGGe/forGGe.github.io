@@ -1,7 +1,7 @@
 <map id="target.hpp" name="target.hpp">
-<area shape="rect" id="node3" href="$htu21d_8hpp.html" title="Driver for HTU21D digital humidity sensor with temperature output See, https://cdn&#45;shop.adafruit.com/datasheets/1899_HTU21D.pdf. " alt="" coords="159,80,314,107"/>
-<area shape="rect" id="node6" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="653,80,746,107"/>
-<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="307,229,390,256"/>
-<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="902,155,993,181"/>
-<area shape="rect" id="node11" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="390,155,513,181"/>
+<area shape="rect" id="node3" href="$htu21d_8hpp.html" title="Driver for HTU21D digital humidity sensor with temperature output See, https://cdn&#45;shop.adafruit.com/datasheets/1899_HTU21D.pdf. " alt="" coords="173,80,344,107"/>
+<area shape="rect" id="node6" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="711,80,812,107"/>
+<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="335,229,425,256"/>
+<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="983,155,1081,181"/>
+<area shape="rect" id="node12" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="422,155,557,181"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="Platform defintions and drivers" name="Platform defintions and drivers">
-<area shape="rect" id="node1" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="184,5,343,47"/>
-<area shape="rect" id="node3" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="190,71,337,98"/>
+<area shape="rect" id="node1" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="200,5,373,47"/>
+<area shape="rect" id="node3" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="205,71,369,98"/>
 </map>

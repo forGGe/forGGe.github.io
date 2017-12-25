@@ -1,7 +1,7 @@
 <map id="ecl::mgmt_configurator&lt; dev, adc_mgmt_mode::irq &gt;::init" name="ecl::mgmt_configurator&lt; dev, adc_mgmt_mode::irq &gt;::init">
-<area shape="rect" id="node2" href="$classecl_1_1adc__irq__dispatcher.html#a0bdfb696a157b07a8b40d11d7d891afa" title="Gets dispatcher instance. " alt="" coords="224,5,380,47"/>
-<area shape="rect" id="node3" href="$classecl_1_1adc__irq__dispatcher.html#a9dd901ceb736fef7135792e368ec7062" title="Subscribes for ADC events and registers given handler handler. " alt="" coords="224,71,380,112"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a99317c9e4a0c3abf534e028ee8a77154" title="Maps ADC to index in the ADC array. " alt="" coords="428,27,545,54"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="431,78,542,105"/>
-<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="433,129,540,155"/>
+<area shape="rect" id="node2" href="$classecl_1_1adc__irq__dispatcher.html#a0bdfb696a157b07a8b40d11d7d891afa" title="Gets dispatcher instance. " alt="" coords="244,5,415,47"/>
+<area shape="rect" id="node3" href="$classecl_1_1adc__irq__dispatcher.html#a9dd901ceb736fef7135792e368ec7062" title="Subscribes for ADC events and registers given handler handler. " alt="" coords="244,71,415,112"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a99317c9e4a0c3abf534e028ee8a77154" title="Maps ADC to index in the ADC array. " alt="" coords="463,27,589,54"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="465,78,587,105"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="467,129,585,155"/>
 </map>

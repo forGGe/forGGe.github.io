@@ -9,6 +9,7 @@ var searchData=
   ['board_5finit',['board_init',['../cs43l22__audio_2main_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;main.cpp'],['../htu21d_2main_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;main.cpp'],['../stm32f4__exti_2main_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;main.cpp'],['../tm4c__led_2main_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;main.cpp'],['../user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;main.cpp'],['../sys_8cpp.html#ad7d81512b0ce3a7214547801a3e41264',1,'board_init():&#160;main.cpp']]],
   ['bus_5fpipe',['bus_pipe',['../classecl_1_1bus__pipe.html#a93c6572f961501a837cf6b301aafc0b5',1,'ecl::bus_pipe']]],
   ['bypass_5fconsole_5finit',['bypass_console_init',['../namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a',1,'ecl']]],
+  ['bypass_5fgreeting',['bypass_greeting',['../namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0',1,'ecl']]],
   ['bypass_5finit',['bypass_init',['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl::bypass_init()'],['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl::bypass_init()']]],
   ['bypass_5fputc',['bypass_putc',['../namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c',1,'ecl']]],
   ['bypass_5fputs',['bypass_puts',['../namespaceecl.html#a60ced95d5969a16195a141f4bcc28067',1,'ecl']]],

@@ -1,8 +1,8 @@
 <map id="FreeRTOS.h" name="FreeRTOS.h">
-<area shape="rect" id="node2" href="$signal_8cpp.html" title="signal.cpp" alt="" coords="5,80,87,107"/>
-<area shape="rect" id="node3" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="111,80,181,107"/>
-<area shape="rect" id="node4" href="$freertos_2export_2ecl_2thread_2mutex_8hpp.html" title="mutex.hpp" alt="" coords="206,80,289,107"/>
-<area shape="rect" id="node5" href="$freertos_2export_2ecl_2thread_2semaphore_8hpp.html" title="semaphore.hpp" alt="" coords="313,80,424,107"/>
-<area shape="rect" id="node6" href="$freertos_2export_2ecl_2thread_2thread_8hpp.html" title="thread.hpp" alt="" coords="449,80,531,107"/>
-<area shape="rect" id="node7" href="$kernel__main_8c.html" title="FreeRTOS main module. " alt="" coords="556,80,659,107"/>
+<area shape="rect" id="node2" href="$signal_8cpp.html" title="signal.cpp" alt="" coords="5,80,93,107"/>
+<area shape="rect" id="node3" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="117,80,195,107"/>
+<area shape="rect" id="node4" href="$freertos_2export_2ecl_2thread_2mutex_8hpp.html" title="mutex.hpp" alt="" coords="219,80,311,107"/>
+<area shape="rect" id="node5" href="$freertos_2export_2ecl_2thread_2semaphore_8hpp.html" title="semaphore.hpp" alt="" coords="336,80,459,107"/>
+<area shape="rect" id="node6" href="$freertos_2export_2ecl_2thread_2thread_8hpp.html" title="thread.hpp" alt="" coords="483,80,575,107"/>
+<area shape="rect" id="node7" href="$kernel__main_8c.html" title="FreeRTOS main module. " alt="" coords="600,80,715,107"/>
 </map>

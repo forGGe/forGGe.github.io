@@ -1,4 +1,4 @@
 <map id="ecl::pool_base::deallocate" name="ecl::pool_base::deallocate">
-<area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="259,5,329,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1pool__base.html#a24f1960a5cf1f46640e2baa142f4ca23" title="Deallocates chunk of given address and length. " alt="" coords="227,57,361,98"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="279,5,357,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1pool__base.html#a24f1960a5cf1f46640e2baa142f4ca23" title="Deallocates chunk of given address and length. " alt="" coords="244,57,392,98"/>
 </map>

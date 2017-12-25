@@ -41,6 +41,10 @@ var searchData=
   ['get_5ftype',['get_type',['../classfs_1_1inode.html#addf9fc88900f35a2ff080a1b8a06cca5',1,'fs::inode::get_type()'],['../classfat_1_1dir__inode.html#a3ec2573533f5ffda2b1ab10168d82cc3',1,'fat::dir_inode::get_type()'],['../classfat_1_1file__inode.html#a6719bb411d42837e3bbaa43de1834195',1,'fat::file_inode::get_type()']]],
   ['get_5fx',['get_x',['../classecl_1_1point.html#aebb0a3dcca63bc056a52ad36b5816ee6',1,'ecl::point']]],
   ['get_5fy',['get_y',['../classecl_1_1point.html#a1622db6e0edf9bbcfe439e529d077b3a',1,'ecl::point']]],
+  ['git_5fbranch',['git_branch',['../namespaceecl.html#af8b5e49336536aec302e71b39f1b12e8',1,'ecl']]],
+  ['git_5fcommit',['git_commit',['../namespaceecl.html#a454510fb72ceec44021012da35067a0b',1,'ecl']]],
+  ['git_5furl',['git_url',['../namespaceecl.html#a62aa11d8aadfb19db81b9cfd8349d2c7',1,'ecl']]],
   ['gpio_5finit_5fgenerated',['gpio_init_generated',['../pin__mux_8cpp.html#ga3fe15c42dce5b9ef9201bfb60bccaf38',1,'gpio_init_generated():&#160;pin_mux.cpp'],['../pin__mux__example_8cpp.html#a3fe15c42dce5b9ef9201bfb60bccaf38',1,'gpio_init_generated():&#160;pin_mux_example.cpp'],['../group__stm32__templates.html#ga3fe15c42dce5b9ef9201bfb60bccaf38',1,'gpio_init_generated():&#160;pin_mux.in.cpp'],['../group__stm32__templates.html#ga3fe15c42dce5b9ef9201bfb60bccaf38',1,'gpio_init_generated():&#160;pin_mux.in.cpp'],['../group__stm32__templates.html#ga3fe15c42dce5b9ef9201bfb60bccaf38',1,'gpio_init_generated():&#160;pin_mux.cpp'],['../group__stm32__templates.html#ga3fe15c42dce5b9ef9201bfb60bccaf38',1,'gpio_init_generated():&#160;pin_mux.cpp']]],
+  ['greeter',['greeter',['../structecl_1_1greeter.html#a64e4418d6758636d90e916cdd2f49c4c',1,'ecl::greeter']]],
   ['grouped_5fexti',['grouped_exti',['../namespaceecl.html#a126957a2fd34d73132a73e23cb9bfc08',1,'ecl']]]
 ];

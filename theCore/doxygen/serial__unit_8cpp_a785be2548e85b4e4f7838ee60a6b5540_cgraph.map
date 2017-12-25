@@ -1,5 +1,5 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1serial.html#ae689fbc25d61273aef8e2b597fe1be7d" title="Sends byte to a serial device. " alt="" coords="109,5,256,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="304,5,443,32"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="491,5,581,32"/>
+<area shape="rect" id="node2" href="$classecl_1_1serial.html#ae689fbc25d61273aef8e2b597fe1be7d" title="Sends byte to a serial device. " alt="" coords="108,5,268,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="316,5,468,32"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="516,5,615,32"/>
 </map>

@@ -192,7 +192,7 @@ Static Public Member Functions</h2></td></tr>
 class ecl::dma_wrap_base&lt; Impl &gt;</h3>
 
 <p>Generic interface of the DMA on STM32 platforms. </p>
-<p>The STM32 MCU family module must implement each method in its own headers. Depends on the family the entity behind the class may differ. <a class="el" href="namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0ab2f5ff47436671b6e533d8dc3614845d">E.g</a>. in STM32F4 each DMA instance is unambiguously described by the pair of "stream" and "channel" in contrast to just "channel" in STM32L1. Template parameter allows to incapsulate additional methods into separate class required by the MCU family while keeping in it the scope of a base class and not exposing it in its body. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>The STM32 MCU family module must implement each method in its own headers. Depends on the family the entity behind the class may differ. <a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0ab2f5ff47436671b6e533d8dc3614845d">E.g</a>. in STM32F4 each DMA instance is unambiguously described by the pair of "stream" and "channel" in contrast to just "channel" in STM32L1. Template parameter allows to incapsulate additional methods into separate class required by the MCU family while keeping in it the scope of a base class and not exposing it in its body. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Impl</td><td>Desired additional implementation, defined by the platform. </td></tr>
   </table>

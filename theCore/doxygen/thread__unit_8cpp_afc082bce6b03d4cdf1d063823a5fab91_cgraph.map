@@ -15,7 +15,7 @@
 <area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="649,56,732,83"/>
 <area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="625,108,756,135"/>
 <area shape="rect" id="node11" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="642,159,739,185"/>
-<area shape="rect" id="node10" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="862,108,993,135"/>
+<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="862,108,993,135"/>
 <area shape="rect" id="node14" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="385,221,543,248"/>
 <area shape="rect" id="node15" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="605,214,776,255"/>
 <area shape="rect" id="node16" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="860,221,995,248"/>
@@ -24,7 +24,7 @@
 <area shape="rect" id="node20" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="609,284,772,311"/>
 <area shape="rect" id="node22" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="1109,312,1212,339"/>
 <area shape="rect" id="node24" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="379,411,549,453"/>
-<area shape="rect" id="node25" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="636,389,745,416"/>
+<area shape="rect" id="node25" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="636,389,745,416"/>
 <area shape="rect" id="node26" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="623,440,758,467"/>
 <area shape="rect" id="node28" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="597,491,784,517"/>
 <area shape="rect" id="node27" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="844,465,1011,492"/>

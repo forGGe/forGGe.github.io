@@ -5,7 +5,7 @@ var group__stm32__templates =
     [ "_static/generated/stm32/i2c_example.hpp", "__static_2generated_2stm32_2i2c__example_8hpp.html", null ],
     [ "_static/generated/stm32/i2s_example.hpp", "__static_2generated_2stm32_2i2s__example_8hpp.html", null ],
     [ "_static/generated/stm32/uart_example.hpp", "__static_2generated_2stm32_2uart__example_8hpp.html", null ],
-    [ "stm32/export/aux/generated.hpp", "stm32_2export_2aux_2generated_8hpp.html", null ],
+    [ "stm32/family/templates/defines.in.hpp", "stm32_2family_2templates_2defines_8in_8hpp.html", null ],
     [ "adc_cfg.in.hpp", "adc__cfg_8in_8hpp.html", null ],
     [ "stm32/templates/defines.in.hpp", "stm32_2templates_2defines_8in_8hpp.html", null ],
     [ "stm32/templates/gpio_cfg.in.hpp", "stm32_2templates_2gpio__cfg_8in_8hpp.html", null ],
@@ -23,5 +23,17 @@ var group__stm32__templates =
       [ "pull", "structpin__info.html#ad47fb4e3006e5c0975cb3faf698b22da", null ],
       [ "speed", "structpin__info.html#a2596f42812f38a7e88e084a19fd8c467", null ]
     ] ],
+    [ "adc_cfg< adc_dev::dev1 >", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html", [
+      [ "dma", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#ab1e73403c303acdd981004b4963fb342", null ],
+      [ "dma", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#ab1e73403c303acdd981004b4963fb342", null ],
+      [ "mgtm_mode", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a2c403c7d151887edb84a0e7073e3db08", null ]
+    ] ],
+    [ "stm32", "group__stm32__templates.html#ga09973e626495ad8ce90f49300a7078ca", null ],
+    [ "ADC1_driver", "group__stm32__templates.html#ga9a1677c096e2b35ce3e3c56b6bcb761a", null ],
+    [ "example_adc", "group__stm32__templates.html#gadd4ea4562d467951611af4207b54f1ff", null ],
+    [ "i2c1", "group__stm32__templates.html#ga18ae8c5b0dcc0bb87434359e0da47121", null ],
+    [ "I2C1_driver", "group__stm32__templates.html#gae39fc466364c58f9acecbd3c975c9451", null ],
+    [ "I2C1_driver_cfg", "group__stm32__templates.html#gafb35f120a2fc7083c3dd4f330797f7c4", null ],
+    [ "test_channels", "group__stm32__templates.html#gabc6b95db3b46903ba5a3745eb51e3460", null ],
     [ "gpio_init_generated", "group__stm32__templates.html#ga3fe15c42dce5b9ef9201bfb60bccaf38", null ]
 ];

@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classecl_1_1safe__storage.html" title="ecl::safe_storage\&lt;\l adc_evh \&gt;" alt="" coords="5,5,149,47"/>
+<area shape="rect" id="node1" href="$classecl_1_1pool__base.html" title="Base class for memory pool. " alt="" coords="5,78,120,105"/>
+<area shape="rect" id="node2" href="$classecl_1_1pool.html" title="Holds given buffer as a pool. " alt="" coords="175,5,312,47"/>
+<area shape="rect" id="node3" href="$classecl_1_1pool.html" title="ecl::pool\&lt; get_alloc\l_blk_size(), 256 \&gt;" alt="" coords="168,71,319,112"/>
+<area shape="rect" id="node4" href="$classpool__mock.html" title="pool_mock" alt="" coords="197,137,290,163"/>
 </map>

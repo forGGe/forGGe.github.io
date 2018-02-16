@@ -12,7 +12,7 @@
 <area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="660,56,743,83"/>
 <area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="636,107,767,133"/>
 <area shape="rect" id="node11" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="653,157,750,184"/>
-<area shape="rect" id="node10" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="843,107,974,133"/>
+<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="843,107,974,133"/>
 <area shape="rect" id="node13" href="$classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78" title="Allocates memory for given object count. " alt="" coords="419,209,561,250"/>
 <area shape="rect" id="node14" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="616,209,787,250"/>
 <area shape="rect" id="node15" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="835,183,983,225"/>

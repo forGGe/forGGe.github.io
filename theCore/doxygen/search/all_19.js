@@ -12,7 +12,7 @@ var searchData=
   ['_7efile_5fdescriptor',['~file_descriptor',['../classfs_1_1file__descriptor.html#a626d294bf15e6cf99b1fdf709909a367',1,'fs::file_descriptor']]],
   ['_7efile_5finode',['~file_inode',['../classfat_1_1file__inode.html#acf207961770c0bff422eb3f367c65de6',1,'fat::file_inode']]],
   ['_7egeneric_5fbus',['~generic_bus',['../classecl_1_1generic__bus.html#aed14e010e70ab6b6a2da294a52e722b3',1,'ecl::generic_bus']]],
-  ['_7ehandler',['~handler',['../classecl_1_1exti__manager_1_1handler.html#a9b3ff1faa2b6ffd76fe3cc1135a40536',1,'ecl::exti_manager::handler::~handler()'],['../classecl_1_1exti__manager_1_1handler.html#a9b3ff1faa2b6ffd76fe3cc1135a40536',1,'ecl::exti_manager::handler::~handler()']]],
+  ['_7ehandler',['~handler',['../group__stm32__exti.html#ga9b3ff1faa2b6ffd76fe3cc1135a40536',1,'ecl::exti_manager::handler::~handler()'],['../classecl_1_1exti__manager_1_1handler.html#a9b3ff1faa2b6ffd76fe3cc1135a40536',1,'ecl::exti_manager::handler::~handler()']]],
   ['_7ehtu21d',['~htu21d',['../classecl_1_1sensor_1_1htu21d.html#af827e8c2b344ae524e6b0ea39f4c7555',1,'ecl::sensor::htu21d']]],
   ['_7ei2c_5fbus',['~i2c_bus',['../classecl_1_1i2c__bus.html#a8333a38c4c6484afe6404c17d116c06b',1,'ecl::i2c_bus']]],
   ['_7einode',['~inode',['../classfs_1_1inode.html#a3479b21a98d86da7955434aebb8b6565',1,'fs::inode']]],

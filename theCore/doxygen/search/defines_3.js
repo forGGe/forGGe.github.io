@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['ecl_5fassert',['ecl_assert',['../assert_8h.html#a602233f42e839e946a41f4c6cb2fee2a',1,'assert.h']]],
-  ['ecl_5fassert_5fmsg',['ecl_assert_msg',['../assert_8h.html#a28b53d55ed7b83a64bea378cafdfa0e5',1,'assert.h']]]
+  ['dirty',['DIRTY',['../version_8in_8cpp.html#ab78f34451c5c2be60321d0fa2fc0daac',1,'version.in.cpp']]],
+  ['dwt',['DWT',['../platform_2tm4c_2export_2platform_2execution_8hpp.html#abbe5a060185e1d5afa3f85b14e10a6ce',1,'execution.hpp']]],
+  ['dwt_5fctrl_5fcyccntena_5fmsk',['DWT_CTRL_CYCCNTENA_Msk',['../platform_2tm4c_2export_2platform_2execution_8hpp.html#a4a9d209dc2a81ea6bfa0ea21331769d3',1,'execution.hpp']]],
+  ['dwt_5fctrl_5fcyccntena_5fpos',['DWT_CTRL_CYCCNTENA_Pos',['../platform_2tm4c_2export_2platform_2execution_8hpp.html#aa4509f5f8514a7200be61691f0e01f10',1,'execution.hpp']]]
 ];

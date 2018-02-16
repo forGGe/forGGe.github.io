@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('classecl_1_1uart__bus.html','');});
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a>  </div>
   <div class="headertitle">
-<div class="title">ecl::uart_bus&lt; dev &gt; Class Template Reference</div>  </div>
+<div class="title">ecl::uart_bus&lt; dev &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__tm4c.html">Texas Instruments Tiva C TM4C123G platform</a> &raquo; <a class="el" href="group__tm4c__uart.html">UART driver</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -149,37 +149,37 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad03ae2d035ca0886ab2738def4e1443b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#ad03ae2d035ca0886ab2738def4e1443b">init</a> ()</td></tr>
-<tr class="memdesc:ad03ae2d035ca0886ab2738def4e1443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lazy initialization.  <a href="#ad03ae2d035ca0886ab2738def4e1443b">More...</a><br /></td></tr>
-<tr class="separator:ad03ae2d035ca0886ab2738def4e1443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71207b20d63f15423d0be84383132efa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a71207b20d63f15423d0be84383132efa">set_rx</a> (uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa22770fbdd1177351a869401a0e1427bc">rx</a>, size_t size)</td></tr>
-<tr class="memdesc:a71207b20d63f15423d0be84383132efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets rx buffer with given size.  <a href="#a71207b20d63f15423d0be84383132efa">More...</a><br /></td></tr>
-<tr class="separator:a71207b20d63f15423d0be84383132efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff85f0efd275ed077fc8079dd2f9f53d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#aff85f0efd275ed077fc8079dd2f9f53d">set_tx</a> (size_t size, uint8_t fill_byte=0xff)</td></tr>
-<tr class="memdesc:aff85f0efd275ed077fc8079dd2f9f53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer made-up from sequence of similar bytes.  <a href="#aff85f0efd275ed077fc8079dd2f9f53d">More...</a><br /></td></tr>
-<tr class="separator:aff85f0efd275ed077fc8079dd2f9f53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c14783da95d3754c47188b56b6033fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a7c14783da95d3754c47188b56b6033fc">set_tx</a> (const uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa7da685001e153f41a83eb6255069dc3d">tx</a>, size_t size)</td></tr>
-<tr class="memdesc:a7c14783da95d3754c47188b56b6033fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer with given size.  <a href="#a7c14783da95d3754c47188b56b6033fc">More...</a><br /></td></tr>
-<tr class="separator:a7c14783da95d3754c47188b56b6033fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af67df94c86eb2a640a6b66cc550eb992"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#af67df94c86eb2a640a6b66cc550eb992">set_handler</a> (const <a class="el" href="classecl_1_1uart__bus.html#a96c8528a74c62317abb1ce62a2c2acae">handler_fn</a> &amp;handler)</td></tr>
-<tr class="memdesc:af67df94c86eb2a640a6b66cc550eb992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets event handler.  <a href="#af67df94c86eb2a640a6b66cc550eb992">More...</a><br /></td></tr>
-<tr class="separator:af67df94c86eb2a640a6b66cc550eb992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cbaeaaa7d3bcb2f67b3216633d84277"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a9cbaeaaa7d3bcb2f67b3216633d84277">reset_buffers</a> ()</td></tr>
-<tr class="memdesc:a9cbaeaaa7d3bcb2f67b3216633d84277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset xfer buffers.  <a href="#a9cbaeaaa7d3bcb2f67b3216633d84277">More...</a><br /></td></tr>
-<tr class="separator:a9cbaeaaa7d3bcb2f67b3216633d84277"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef905cac8f99d1b6fbf02a1865bf708"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708">reset_handler</a> ()</td></tr>
-<tr class="memdesc:a6ef905cac8f99d1b6fbf02a1865bf708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets previously set handler.  <a href="#a6ef905cac8f99d1b6fbf02a1865bf708">More...</a><br /></td></tr>
-<tr class="separator:a6ef905cac8f99d1b6fbf02a1865bf708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1230079588b108c8c1a2271edd866053"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a1230079588b108c8c1a2271edd866053">do_xfer</a> ()</td></tr>
-<tr class="memdesc:a1230079588b108c8c1a2271edd866053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes xfer, using buffers previously set.  <a href="#a1230079588b108c8c1a2271edd866053">More...</a><br /></td></tr>
-<tr class="separator:a1230079588b108c8c1a2271edd866053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad03ae2d035ca0886ab2738def4e1443b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#gad03ae2d035ca0886ab2738def4e1443b">init</a> ()</td></tr>
+<tr class="memdesc:gad03ae2d035ca0886ab2738def4e1443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lazy initialization.  <a href="group__tm4c__uart.html#gad03ae2d035ca0886ab2738def4e1443b">More...</a><br /></td></tr>
+<tr class="separator:gad03ae2d035ca0886ab2738def4e1443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71207b20d63f15423d0be84383132efa"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#ga71207b20d63f15423d0be84383132efa">set_rx</a> (uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa22770fbdd1177351a869401a0e1427bc">rx</a>, size_t size)</td></tr>
+<tr class="memdesc:ga71207b20d63f15423d0be84383132efa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets rx buffer with given size.  <a href="group__tm4c__uart.html#ga71207b20d63f15423d0be84383132efa">More...</a><br /></td></tr>
+<tr class="separator:ga71207b20d63f15423d0be84383132efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff85f0efd275ed077fc8079dd2f9f53d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#gaff85f0efd275ed077fc8079dd2f9f53d">set_tx</a> (size_t size, uint8_t fill_byte=0xff)</td></tr>
+<tr class="memdesc:gaff85f0efd275ed077fc8079dd2f9f53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer made-up from sequence of similar bytes.  <a href="group__tm4c__uart.html#gaff85f0efd275ed077fc8079dd2f9f53d">More...</a><br /></td></tr>
+<tr class="separator:gaff85f0efd275ed077fc8079dd2f9f53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c14783da95d3754c47188b56b6033fc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#ga7c14783da95d3754c47188b56b6033fc">set_tx</a> (const uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa7da685001e153f41a83eb6255069dc3d">tx</a>, size_t size)</td></tr>
+<tr class="memdesc:ga7c14783da95d3754c47188b56b6033fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer with given size.  <a href="group__tm4c__uart.html#ga7c14783da95d3754c47188b56b6033fc">More...</a><br /></td></tr>
+<tr class="separator:ga7c14783da95d3754c47188b56b6033fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf67df94c86eb2a640a6b66cc550eb992"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#gaf67df94c86eb2a640a6b66cc550eb992">set_handler</a> (const <a class="el" href="classecl_1_1uart__bus.html#a96c8528a74c62317abb1ce62a2c2acae">handler_fn</a> &amp;handler)</td></tr>
+<tr class="memdesc:gaf67df94c86eb2a640a6b66cc550eb992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets event handler.  <a href="group__tm4c__uart.html#gaf67df94c86eb2a640a6b66cc550eb992">More...</a><br /></td></tr>
+<tr class="separator:gaf67df94c86eb2a640a6b66cc550eb992"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cbaeaaa7d3bcb2f67b3216633d84277"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#ga9cbaeaaa7d3bcb2f67b3216633d84277">reset_buffers</a> ()</td></tr>
+<tr class="memdesc:ga9cbaeaaa7d3bcb2f67b3216633d84277"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset xfer buffers.  <a href="group__tm4c__uart.html#ga9cbaeaaa7d3bcb2f67b3216633d84277">More...</a><br /></td></tr>
+<tr class="separator:ga9cbaeaaa7d3bcb2f67b3216633d84277"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ef905cac8f99d1b6fbf02a1865bf708"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#ga6ef905cac8f99d1b6fbf02a1865bf708">reset_handler</a> ()</td></tr>
+<tr class="memdesc:ga6ef905cac8f99d1b6fbf02a1865bf708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets previously set handler.  <a href="group__tm4c__uart.html#ga6ef905cac8f99d1b6fbf02a1865bf708">More...</a><br /></td></tr>
+<tr class="separator:ga6ef905cac8f99d1b6fbf02a1865bf708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1230079588b108c8c1a2271edd866053"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#ga1230079588b108c8c1a2271edd866053">do_xfer</a> ()</td></tr>
+<tr class="memdesc:ga1230079588b108c8c1a2271edd866053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes xfer, using buffers previously set.  <a href="group__tm4c__uart.html#ga1230079588b108c8c1a2271edd866053">More...</a><br /></td></tr>
+<tr class="separator:ga1230079588b108c8c1a2271edd866053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b90a33612d76c59c9bc4188d5688e10"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a2b90a33612d76c59c9bc4188d5688e10">do_tx</a> ()</td></tr>
 <tr class="separator:a2b90a33612d76c59c9bc4188d5688e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2724546461681c53a4034a9b085fdbf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#ae2724546461681c53a4034a9b085fdbf">do_rx</a> ()</td></tr>
 <tr class="separator:ae2724546461681c53a4034a9b085fdbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4510d42670624724af5e646d935d962"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#ac4510d42670624724af5e646d935d962">cancel_xfer</a> ()</td></tr>
-<tr class="memdesc:ac4510d42670624724af5e646d935d962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels xfer.  <a href="#ac4510d42670624724af5e646d935d962">More...</a><br /></td></tr>
-<tr class="separator:ac4510d42670624724af5e646d935d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4510d42670624724af5e646d935d962"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__uart.html#gac4510d42670624724af5e646d935d962">cancel_xfer</a> ()</td></tr>
+<tr class="memdesc:gac4510d42670624724af5e646d935d962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels xfer.  <a href="group__tm4c__uart.html#gac4510d42670624724af5e646d935d962">More...</a><br /></td></tr>
+<tr class="separator:gac4510d42670624724af5e646d935d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e48e105104f5af66663e6fb113bc2f1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1uart__bus.html#a5e48e105104f5af66663e6fb113bc2f1">init</a> ()</td></tr>
 <tr class="memdesc:a5e48e105104f5af66663e6fb113bc2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lazy initialization.  <a href="#a5e48e105104f5af66663e6fb113bc2f1">More...</a><br /></td></tr>
 <tr class="separator:a5e48e105104f5af66663e6fb113bc2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,34 +408,6 @@ template&lt;uart_device dev&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac4510d42670624724af5e646d935d962"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::cancel_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cancels xfer. </p>
-<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ae2724546461681c53a4034a9b085fdbf"></a>
 <div class="memitem">
 <div class="memproto">
@@ -514,46 +486,6 @@ template&lt;uart_device dev&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a1230079588b108c8c1a2271edd866053"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes xfer, using buffers previously set. </p>
-<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph.png" border="0" usemap="#classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph" alt=""/></div>
-<map name="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph" id="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="216,5,373,32"/>
-<area shape="rect" id="node4" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="245,56,344,83"/>
-<area shape="rect" id="node3" href="namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="421,5,524,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a5e48e105104f5af66663e6fb113bc2f1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -579,47 +511,6 @@ template&lt;uart_device dev&gt; </div>
 
 <p>Lazy initialization. </p>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad03ae2d035ca0886ab2738def4e1443b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Lazy initialization. </p>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1uart__bus_ad03ae2d035ca0886ab2738def4e1443b_cgraph.png" border="0" usemap="#classecl_1_1uart__bus_ad03ae2d035ca0886ab2738def4e1443b_cgraph" alt=""/></div>
-<map name="classecl_1_1uart__bus_ad03ae2d035ca0886ab2738def4e1443b_cgraph" id="classecl_1_1uart__bus_ad03ae2d035ca0886ab2738def4e1443b_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514" title="Initialize serial driver and underlying platform bus. " alt="" coords="188,31,303,57"/>
-<area shape="rect" id="node3" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="487,5,586,32"/>
-<area shape="rect" id="node4" href="namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="351,56,433,83"/>
-<area shape="rect" id="node5" href="namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="481,56,592,83"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -699,39 +590,9 @@ template&lt;uart_device dev&gt; </div>
 </div><div class="memdoc">
 
 <p>Reset xfer buffers. </p>
-<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1uart__bus.html#aff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
+<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__tm4c__uart.html#gaff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
 <dd>
-<a class="el" href="classecl_1_1uart__bus.html#a71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9cbaeaaa7d3bcb2f67b3216633d84277"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_buffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset xfer buffers. </p>
-<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1uart__bus.html#aff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
-<dd>
-<a class="el" href="classecl_1_1uart__bus.html#a71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
+<a class="el" href="group__tm4c__uart.html#ga71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
 
 </div>
 </div>
@@ -746,33 +607,6 @@ template&lt;uart_device dev&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">static void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Resets previously set handler. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6ef905cac8f99d1b6fbf02a1865bf708"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_handler </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -814,41 +648,7 @@ template&lt;uart_device dev&gt; </div>
 </div><div class="memdoc">
 
 <p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af67df94c86eb2a640a6b66cc550eb992"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_handler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classecl_1_1uart__bus.html#a96c8528a74c62317abb1ce62a2c2acae">handler_fn</a> &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Handler will be used by the bus, until <a class="el" href="group__tm4c__uart.html#ga6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
   </table>
@@ -868,51 +668,6 @@ template&lt;uart_device dev&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">static void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_rx </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>rx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets rx buffer with given size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">rx</td><td>Buffer to write data to. Optional. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a71207b20d63f15423d0be84383132efa"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_rx </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>rx</em>, </td>
@@ -1003,96 +758,6 @@ template&lt;uart_device dev&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">static void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_tx </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets tx buffer with given size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tx</td><td>Buffer to transmit. Optional. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Buffer size. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aff85f0efd275ed077fc8079dd2f9f53d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_tx </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fill_byte</em> = <code>0xff</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets tx buffer made-up from sequence of similar bytes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of sequence </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fill_byte</td><td>Byte to fill a sequence. Optional. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a7c14783da95d3754c47188b56b6033fc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_tx </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>tx</em>, </td>

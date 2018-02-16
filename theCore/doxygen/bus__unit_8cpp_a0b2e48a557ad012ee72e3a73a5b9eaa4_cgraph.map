@@ -14,6 +14,6 @@
 <area shape="rect" id="node10" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="769,197,949,224"/>
 <area shape="rect" id="node13" href="$classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257" title="Tries to wait on semaphore without lock. " alt="" coords="367,158,538,199"/>
 <area shape="rect" id="node14" href="$namespaceecl_1_1os_1_1signal.html#a4d165308499159c21b605a093dc5739d" title="Tries to wait a signal. " alt="" coords="367,107,539,133"/>
-<area shape="rect" id="node15" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="599,107,709,133"/>
+<area shape="rect" id="node15" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="599,107,709,133"/>
 <area shape="rect" id="node18" href="$classecl_1_1mutex.html#a5a984445165aed9ba9b7ee58de579950" title="ecl::mutex::unlock" alt="" coords="381,340,524,367"/>
 </map>

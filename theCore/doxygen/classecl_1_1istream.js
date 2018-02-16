@@ -11,5 +11,6 @@ var classecl_1_1istream =
     [ "operator>>", "classecl_1_1istream.html#a73116efb66285d4a54bdac37626caf52", null ],
     [ "operator>>", "classecl_1_1istream.html#aed0c97788e4fb34c988558d45d4e8849", null ],
     [ "operator>>", "classecl_1_1istream.html#a327925ace03e7a231bc48c71213dc73a", null ],
-    [ "operator>>", "classecl_1_1istream.html#af2475080c2ad9fdea9e5df109b25e7e1", null ]
+    [ "operator>>", "classecl_1_1istream.html#af2475080c2ad9fdea9e5df109b25e7e1", null ],
+    [ "skipws", "classecl_1_1istream.html#a4a82fc0cb059bee4984f96a5f72933d6", null ]
 ];

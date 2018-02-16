@@ -1,5 +1,5 @@
 <map id="ecl::bypass_greeting" name="ecl::bypass_greeting">
 <area shape="rect" id="node2" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="209,5,340,32"/>
 <area shape="rect" id="node4" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="226,56,323,83"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="388,5,519,32"/>
+<area shape="rect" id="node3" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="388,5,519,32"/>
 </map>

@@ -89,7 +89,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-project_structure">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-arch">Supported architectures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-platform/index">Supported platforms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contents.html#document-drivers">Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-devices/index">Device drivers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-utilities">Libraries and utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-os_layer">OS abstraction layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-community">Community and developer guidelines</a></li>
@@ -497,6 +497,7 @@ Aborted (core dumped)
 </table>
 <div class="section" id="wiring">
 <h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<img alt="UART and HTU21D example wiring for stm32f4discovery board" src="https://i.imgur.com/vX2uOb5.jpg" />
 <ol class="arabic">
 <li><p class="first">Connect <a class="reference external" href="https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf">HTU21D</a> to I2C1 on the Discovery board using following pins:</p>
 <table border="1" class="docutils">
@@ -540,8 +541,6 @@ Aborted (core dumped)
 </table>
 </li>
 </ol>
-<p>Below is the example wiring.</p>
-<img alt="https://i.imgur.com/vX2uOb5.jpg" src="https://i.imgur.com/vX2uOb5.jpg" />
 </div>
 <div class="section" id="building">
 <h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
@@ -706,6 +705,9 @@ Transfer rate: 18 KB/sec, 10129 bytes/write.
 </tr>
 </tbody>
 </table>
+<div class="section" id="wiring">
+<h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<img alt="CS43L22 stm32f4discovery wiring" src="https://i.imgur.com/fhWxQ4Z.jpg" />
 <ol class="arabic">
 <li><p class="first">Attach any preferable UART-to-USB converter <a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a> module according to following pinout:</p>
 <table border="1" class="docutils">
@@ -727,8 +729,7 @@ Transfer rate: 18 KB/sec, 10129 bytes/write.
 </table>
 </li>
 </ol>
-<p>Below is the example wiring.</p>
-<img alt="https://i.imgur.com/fhWxQ4Z.jpg" src="https://i.imgur.com/fhWxQ4Z.jpg" />
+</div>
 <div class="section" id="building">
 <h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
@@ -963,6 +964,7 @@ GPIO line interrupt. When voltage level changes on the line (e.g. when button is
 pressed), interrupt is generated.</p>
 <div class="section" id="wiring">
 <h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<img alt="UART wiring for stm32f4discovery EXTI example" src="https://i.imgur.com/dRVRHV2.jpg" />
 <ol class="arabic">
 <li><p class="first">Attach any preferable UART-to-USB converter <a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a> module according to following pinout:</p>
 <table border="1" class="docutils">
@@ -985,7 +987,6 @@ pressed), interrupt is generated.</p>
 </li>
 </ol>
 <p>Below is the example wiring.</p>
-<img alt="https://i.imgur.com/dRVRHV2.jpg" src="https://i.imgur.com/dRVRHV2.jpg" />
 </div>
 <div class="section" id="building">
 <h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
@@ -1135,6 +1136,222 @@ Hello, Embedded World!
 simple project that uses onboard LEDs.</p>
 <p>Refer to <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the dedicated repository</a> to check how to build and run the example.</p>
 </div>
+<span id="document-examples/stm32f4-discovery-bluetooth-hm10"></span><div class="section" id="stm32f4-discovery-and-hm-10-bluetooth-le-4-0-wireless-module">
+<span id="thecore-stm32f4-hm-10-example"></span><h3>STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module<a class="headerlink" href="#stm32f4-discovery-and-hm-10-bluetooth-le-4-0-wireless-module" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/hm10</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">STM32F4 Discovery board</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART2, HM-10 module, Android device</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">GNU arm-none-eabi v.5.2 or newer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">openocd, minicom, <a class="reference external" href="https://play.google.com/store/apps/details?id=com.mightyit.gops.bleterminal&amp;hl=en">BLE Terminal</a> Android app</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="wiring">
+<h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<img alt="UART, HM-10 and stm32f4discovery board wiring" src="https://i.imgur.com/ZlNgnD5.jpg" />
+<ol class="arabic">
+<li><p class="first">Connect USART2 and power to <a class="reference external" href="https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf">HM-10</a>  on the Discovery board using following pins:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PA2 (USART2 TX)</td>
+<td>module’s RX</td>
+</tr>
+<tr class="row-even"><td>PA3 (USART2 RX)</td>
+<td>module’s TX</td>
+</tr>
+<tr class="row-odd"><td>+3.3V</td>
+<td>module’s VDD</td>
+</tr>
+<tr class="row-even"><td>GND</td>
+<td>module’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Attach any preferable UART-to-USB converter <a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a> module according to following pinout:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PD8 (USART3 TX)</td>
+<td>module’s RX</td>
+</tr>
+<tr class="row-even"><td>PD9 (USART3 RX)</td>
+<td>module’s TX</td>
+</tr>
+<tr class="row-odd"><td>GND</td>
+<td>module’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="section" id="installing-additional-software-on-android-smartphone">
+<h4>Installing additional software on Android smartphone<a class="headerlink" href="#installing-additional-software-on-android-smartphone" title="Permalink to this headline">¶</a></h4>
+<img alt="BLE Terminal download app" src="https://i.imgur.com/ag4DVY3.jpg" />
+<p>To be able to communicate with HM-10 module via Android smartphone, a special
+application must be installed.</p>
+<p>Open Play Store and find <a class="reference external" href="https://play.google.com/store/apps/details?id=com.mightyit.gops.bleterminal&amp;hl=en">BLE Terminal</a> app. Install it as usual.</p>
+</div>
+<div class="section" id="building">
+<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Complete <a class="reference internal" href="contents.html#thecore-examples-initial-setup"><span class="std std-ref">Initial setup</span></a> section.</p>
+</li>
+<li><p class="first">Execute build commands.
+The CMake Toolchain file is required to build this application.
+theCore already has one suitable for this target.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">examples</span><span class="o">/</span><span class="n">hm10</span>
+<span class="n">mkdir</span> <span class="n">build</span>
+<span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_TOOLCHAIN_FILE</span><span class="o">=../../../</span><span class="n">toolchains</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">cm4</span><span class="o">-</span><span class="n">gnu</span><span class="o">.</span><span class="n">cmake</span> <span class="o">..</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="running">
+<h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
+<p>Firmware will be flashed via <code class="docutils literal"><span class="pre">openocd</span></code> and <code class="docutils literal"><span class="pre">gdb</span></code>.</p>
+<ol class="arabic">
+<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> using script from openocd installation.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="n">board</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
+(<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">minicom</span> <span class="o">-</span><span class="n">D</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
+launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
+<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">hm10_example</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
+Remote debugging using :3333
+0x00000000 in ?? ()
+
+(gdb) monitor reset halt
+target state: halted
+target halted due to debug-request, current mode: Thread
+xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
+
+(gdb) load
+Loading section .text, size 0x7678 lma 0x8000000
+Loading section .data, size 0x3c lma 0x8007678
+Start address 0x800477c, load size 30388
+Transfer rate: 18 KB/sec, 10129 bytes/write.
+</pre></div>
+</div>
+</li>
+<li><p class="first">Start new firmware:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
+<span class="n">Continuing</span><span class="o">.</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Check <code class="docutils literal"><span class="pre">minicom</span></code> terminal. You should be able to see:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Welcome</span> <span class="n">to</span> <span class="n">theCore</span>
+<span class="n">the_core</span> <span class="n">v0</span><span class="o">.</span><span class="mf">3.236</span> <span class="n">b9c05be</span><span class="o">-</span><span class="n">dirty</span>
+<span class="n">Starting</span> <span class="n">HM</span><span class="o">-</span><span class="mi">10</span> <span class="n">Bluetooth</span> <span class="n">example</span><span class="o">...</span>
+<span class="n">Bytes</span> <span class="n">sent</span><span class="p">:</span> <span class="mi">16</span>
+<span class="n">Bytes</span> <span class="n">received</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Bytes</span> <span class="n">sent</span><span class="p">:</span> <span class="mi">16</span>
+<span class="n">Bytes</span> <span class="n">received</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Bytes</span> <span class="n">sent</span><span class="p">:</span> <span class="mi">16</span>
+<span class="n">Bytes</span> <span class="n">received</span><span class="p">:</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Open <a class="reference external" href="https://play.google.com/store/apps/details?id=com.mightyit.gops.bleterminal&amp;hl=en">BLE Terminal</a> on your smartphone. You must be able to see nearby BT devices:</p>
+<img alt="BLE Terminal app main window" src="https://i.imgur.com/YT1Ggju.png" />
+</li>
+<li><p class="first">Select HM-10 device.</p>
+</li>
+<li><p class="first">You will be presented with a terminal window where the data sent from device is displayed</p>
+</li>
+<li><p class="first">Now, type something to the terminal prompt in BLE Terminal app and tap “Send ASCII” button:</p>
+<img alt="BLE Terminal and HM-10 output window" src="https://i.imgur.com/68eWX1n.png" />
+</li>
+<li><p class="first">Check <code class="docutils literal"><span class="pre">minicom</span></code> terminal again:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Bytes</span> <span class="n">received</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">Bytes</span> <span class="n">sent</span><span class="p">:</span> <span class="mi">16</span>
+<span class="n">Bytes</span> <span class="n">received</span><span class="p">:</span> <span class="mi">16</span>
+<span class="n">data</span> <span class="ow">in</span> <span class="k">return</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="target-json-config-for-the-bluetooth-example">
+<h4>Target JSON config for the Bluetooth example<a class="headerlink" href="#target-json-config-for-the-bluetooth-example" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART2&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;hm10_uart&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">9600</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;bypass_console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PA2&quot;</span><span class="p">,</span> <span class="s2">&quot;PA3&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART2&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;HM10 UART: PA2 - TX, PA3 - RX&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PD8&quot;</span><span class="p">,</span> <span class="s2">&quot;PD9&quot;</span><span class="p">],</span>
+                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART: PD8 - TX, PD9 - RX&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
 <span id="document-examples/ti-tm4c123g-launchpad-blink"></span><div class="section" id="ti-tm4c123g-launchpad-blinky">
 <h3>TI TM4C123G LaunchPad blinky<a class="headerlink" href="#ti-tm4c123g-launchpad-blinky" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1155,9 +1372,8 @@ simple project that uses onboard LEDs.</p>
 </table>
 <div class="section" id="wiring">
 <h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<img alt="TI TM4C123G USB connection" src="https://i.imgur.com/Msv5xoR.jpg" />
 <p>No special wiring is required. Just connect the board to the powered USB port.</p>
-<p>Below is the board image showing simple USB connection.</p>
-<img alt="https://i.imgur.com/Msv5xoR.jpg" src="https://i.imgur.com/Msv5xoR.jpg" />
 </div>
 <div class="section" id="building">
 <h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
@@ -1926,11 +2142,8 @@ string, suitable for C/C++ comments.</li>
 23
 24
 25
-26
-27
-28
-29</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
+26</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
+<span class="c1">//! @{</span>
 
 
 <span class="c1">// ADC configuration -----------------------------------------------------------</span>
@@ -1955,9 +2168,6 @@ string, suitable for C/C++ comments.</li>
 
 
 <span class="k">using</span> <span class="n">test_channels</span> <span class="o">=</span> <span class="n">channel_group_sw_trigger</span><span class="o">&lt;</span><span class="n">adc_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">,</span> <span class="n">adc_channel</span><span class="o">::</span><span class="n">ch16</span><span class="o">&gt;</span><span class="p">;</span>
-
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/adc_example.hpp">Full STM32 ADC example header</a></p>
@@ -2105,10 +2315,8 @@ string, suitable for C/C++ comments.</li>
 17
 18
 19
-20
-21
-22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
+<span class="c1">//! @{</span>
 
 <span class="c1">// I2C configuration -----------------------------------------------------------</span>
 
@@ -2127,8 +2335,6 @@ string, suitable for C/C++ comments.</li>
 
 <span class="k">using</span> <span class="n">I2C1_driver</span> <span class="o">=</span> <span class="n">i2c_bus</span><span class="o">&lt;</span><span class="n">I2C1_driver_cfg</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="k">using</span> <span class="n">i2c1</span> <span class="o">=</span> <span class="n">I2C1_driver</span><span class="p">;</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/i2c_example.hpp">Full STM32 I2C example header</a></p>
@@ -3589,55 +3795,87 @@ For more details on theCore console, check the <a class="reference internal" hre
 </div>
 </div>
 </div>
-<span id="document-drivers"></span><div class="section" id="drivers">
-<h2>Drivers<a class="headerlink" href="#drivers" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="cirrus-logic-cs43l22-audio-dac">
-<span id="thecore-cs43l22"></span><h3>Cirrus Logic CS43L22 audio DAC<a class="headerlink" href="#cirrus-logic-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
-<div class="section" id="hm-10-bluetooth-btle-module">
-<h3>HM-10 Bluetooth BTLE module<a class="headerlink" href="#hm-10-bluetooth-btle-module" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
-<div class="section" id="pc8544-nokia-5110-display">
-<h3>PC8544 Nokia 5110 display<a class="headerlink" href="#pc8544-nokia-5110-display" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
-<div class="section" id="sdspi-driver">
-<h3>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
-<div class="section" id="bh1750-digital-light-sensor">
+<span id="document-devices/index"></span><div class="section" id="device-drivers">
+<h2>Device drivers<a class="headerlink" href="#device-drivers" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<span id="document-devices/bh1750-light-sensor"></span><div class="section" id="bh1750-digital-light-sensor">
 <h3>BH1750 Digital Light sensor<a class="headerlink" href="#bh1750-digital-light-sensor" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
 </div>
 </div>
-<div class="section" id="fc-28-moisture-sensor">
+<span id="document-devices/cs43l22-audio"></span><div class="section" id="cirrus-logic-cs43l22-audio-dac">
+<span id="thecore-cs43l22"></span><h3>Cirrus Logic CS43L22 audio DAC<a class="headerlink" href="#cirrus-logic-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section is under construction.</p>
+</div>
+</div>
+<span id="document-devices/fc28-moisture-sensor"></span><div class="section" id="fc-28-moisture-sensor">
 <h3>FC-28 moisture sensor<a class="headerlink" href="#fc-28-moisture-sensor" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
 </div>
 </div>
-<div class="section" id="htu21d-humidity-and-temperature-sensor">
+<span id="document-devices/hm-10-bluetooth"></span><div class="section" id="hm-10-bluetooth-btle-module">
+<h3>HM-10 Bluetooth BTLE module<a class="headerlink" href="#hm-10-bluetooth-btle-module" title="Permalink to this headline">¶</a></h3>
+<img alt="HM-10 Bluetooth Module BTLE" src="https://cdn.itead.cc/media/catalog/product/h/m/hm_10_03.jpg" />
+<p>HM-10 is a BLE module for embedded system to get BLE wireless communication
+with BLE capable devices (e.g. iPhone and iPad).
+It is fully configurable by a rich and well documented AT command-set and
+allows transparent data communication via serial UART (default baudrate 9600bps).</p>
+<div class="section" id="datasheet">
+<h4>Datasheet<a class="headerlink" href="#datasheet" title="Permalink to this headline">¶</a></h4>
+<p>Datasheet v524 can be found at <a class="reference external" href="http://fab.cba.mit.edu/classes/863.15/doc/tutorials/programming/bluetooth/bluetooth40_en.pdf">fab.cba.mit.edu website</a></p>
+</div>
+<div class="section" id="source-code">
+<h4>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h4>
+<p>HM-10 driver implementation is located under <code class="docutils literal"><span class="pre">dev/hm10/</span></code> directory, relative to
+theCore root.</p>
+</div>
+<div class="section" id="driver-documentation">
+<h4>Driver documentation<a class="headerlink" href="#driver-documentation" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="../doxygen/group__hm10.html">Click here to open HM-10 Doxygen docs</a>.</p>
+</div>
+<div class="section" id="hm-10-usage-example">
+<h4>HM-10 usage example<a class="headerlink" href="#hm-10-usage-example" title="Permalink to this headline">¶</a></h4>
+<p>Refer to <a class="reference internal" href="contents.html#thecore-stm32f4-hm-10-example"><span class="std std-ref">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</span></a> page for usage example.</p>
+</div>
+<div class="section" id="known-limitations">
+<h4>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h4>
+<p>theCore HM-10 driver operates only in slave mode.
+For master mode, see <a class="reference external" href="https://github.com/forGGe/theCore/issues/354">“Implement HM-10 master mode” GitHub issue</a>.</p>
+</div>
+<div class="section" id="references">
+<h4>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference external" href="http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/">Martyn Currey’s “HM-10 Bluetooth 4 BLE Modules” guide</a></li>
+<li><a class="reference external" href="http://www.instructables.com/id/How-to-Use-Bluetooth-40-HM10/">Instructable’s “HOW TO USE BLUETOOTH 4.0 HM10”</a></li>
+</ul>
+</div>
+</div>
+<span id="document-devices/htu21d-humidity-temperature-sensor"></span><div class="section" id="htu21d-humidity-and-temperature-sensor">
 <h3>HTU21D humidity and temperature sensor<a class="headerlink" href="#htu21d-humidity-and-temperature-sensor" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
+</div>
+</div>
+<span id="document-devices/pc8544-nokia-5110-display"></span><div class="section" id="pc8544-nokia-5110-display">
+<h3>PC8544 Nokia 5110 display<a class="headerlink" href="#pc8544-nokia-5110-display" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section is under construction.</p>
+</div>
+</div>
+<span id="document-devices/sdspi"></span><div class="section" id="sdspi-driver">
+<h3>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section is under construction.</p>
+</div>
 </div>
 </div>
 </div>

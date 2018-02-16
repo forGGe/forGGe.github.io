@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['uart_20driver',['UART driver',['../group__stm32__uart.html',1,'']]],
-  ['uart_20driver',['UART driver',['../group__tm4c__uart.html',1,'']]]
+  ['texas_20instruments_20tiva_20c_20tm4c123g_20platform',['Texas Instruments Tiva C TM4C123G platform',['../group__tm4c.html',1,'']]]
 ];

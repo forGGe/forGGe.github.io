@@ -12,7 +12,7 @@
 <area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="599,56,681,83"/>
 <area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="575,108,705,135"/>
 <area shape="rect" id="node11" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="591,159,689,185"/>
-<area shape="rect" id="node10" href="$namespaceecl.html#a77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="803,108,934,135"/>
+<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="803,108,934,135"/>
 <area shape="rect" id="node14" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="348,221,507,248"/>
 <area shape="rect" id="node15" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="555,214,725,255"/>
 <area shape="rect" id="node16" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="801,221,936,248"/>

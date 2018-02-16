@@ -30,6 +30,7 @@ var namespaceecl =
     [ "gpio", "classecl_1_1gpio.html", "classecl_1_1gpio" ],
     [ "gpio_list", "structecl_1_1gpio__list.html", "structecl_1_1gpio__list" ],
     [ "greeter", "structecl_1_1greeter.html", "structecl_1_1greeter" ],
+    [ "hm10_serial_mock", "structecl_1_1hm10__serial__mock.html", "structecl_1_1hm10__serial__mock" ],
     [ "hm10_sync", "classecl_1_1hm10__sync.html", "classecl_1_1hm10__sync" ],
     [ "i2c_bus", "classecl_1_1i2c__bus.html", "classecl_1_1i2c__bus" ],
     [ "i2c_bus_cfg", "structecl_1_1i2c__bus__cfg.html", null ],

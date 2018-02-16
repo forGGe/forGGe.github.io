@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('stm32_2export_2aux_2adc_8hpp.html','')
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">stm32/export/aux/adc.hpp File Reference<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__stm32.html">STM32 multi-platform</a> &raquo; <a class="el" href="group__stm32__adc.html">ADC driver</a></div></div>  </div>
+<div class="title">stm32/export/aux/adc.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -188,74 +188,74 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:af39c00c205362618099b25ff2439fe86"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#af39c00c205362618099b25ff2439fe86">ecl::adc_evh</a> = std::function&lt; void(adc_event)&gt;</td></tr>
-<tr class="memdesc:af39c00c205362618099b25ff2439fe86"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC event handler. Event code signifies result of a conversion.  <a href="namespaceecl.html#af39c00c205362618099b25ff2439fe86">More...</a><br /></td></tr>
-<tr class="separator:af39c00c205362618099b25ff2439fe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf39c00c205362618099b25ff2439fe86"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__adc.html#gaf39c00c205362618099b25ff2439fe86">ecl::adc_evh</a> = std::function&lt; void(adc_event)&gt;</td></tr>
+<tr class="memdesc:gaf39c00c205362618099b25ff2439fe86"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC event handler. Event code signifies result of a conversion.  <a href="group__stm32__adc.html#gaf39c00c205362618099b25ff2439fe86">More...</a><br /></td></tr>
+<tr class="separator:gaf39c00c205362618099b25ff2439fe86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a52ec44080130fa19c34d0669610600fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a52ec44080130fa19c34d0669610600fe">ecl::adc_mgmt_mode</a> { <a class="el" href="namespaceecl.html#a52ec44080130fa19c34d0669610600fea695578cfd3a6c798fefb9d3f475360ba">ecl::adc_mgmt_mode::dma</a>, 
-<a class="el" href="namespaceecl.html#a52ec44080130fa19c34d0669610600fea0246c2251217c97899bc8c89f5126045">ecl::adc_mgmt_mode::irq</a>
- }<tr class="memdesc:a52ec44080130fa19c34d0669610600fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC management mode.  <a href="namespaceecl.html#a52ec44080130fa19c34d0669610600fe">More...</a><br /></td></tr>
+<tr class="memitem:ga52ec44080130fa19c34d0669610600fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__adc.html#ga52ec44080130fa19c34d0669610600fe">ecl::adc_mgmt_mode</a> { <a class="el" href="group__stm32__adc.html#gga52ec44080130fa19c34d0669610600fea695578cfd3a6c798fefb9d3f475360ba">ecl::adc_mgmt_mode::dma</a>, 
+<a class="el" href="group__stm32__adc.html#gga52ec44080130fa19c34d0669610600fea0246c2251217c97899bc8c89f5126045">ecl::adc_mgmt_mode::irq</a>
+ }<tr class="memdesc:ga52ec44080130fa19c34d0669610600fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC management mode.  <a href="group__stm32__adc.html#ga52ec44080130fa19c34d0669610600fe">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:a52ec44080130fa19c34d0669610600fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5de186d720f541f9b66085049e2c7f6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6">ecl::adc_trigger</a> { <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6acbdc28f093eb83367fcdbc62c4166c80">ecl::adc_trigger::t1_cc1</a> = ADC_ExternalTrigConv_T1_CC1, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6ab2280d1bf237387083c62a51815e5ffe">ecl::adc_trigger::t1_cc2</a> = ADC_ExternalTrigConv_T1_CC2, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a776674b761145a7f1fb94a36890b412d">ecl::adc_trigger::t1_cc3</a> = ADC_ExternalTrigConv_T1_CC3, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a6c03cf7fca07d8d572ed51718404c694">ecl::adc_trigger::t2_cc2</a> = ADC_ExternalTrigConv_T2_CC2, 
+<tr class="separator:ga52ec44080130fa19c34d0669610600fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5de186d720f541f9b66085049e2c7f6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__adc.html#gaa5de186d720f541f9b66085049e2c7f6">ecl::adc_trigger</a> { <br />
+&#160;&#160;<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6acbdc28f093eb83367fcdbc62c4166c80">ecl::adc_trigger::t1_cc1</a> = ADC_ExternalTrigConv_T1_CC1, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6ab2280d1bf237387083c62a51815e5ffe">ecl::adc_trigger::t1_cc2</a> = ADC_ExternalTrigConv_T1_CC2, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a776674b761145a7f1fb94a36890b412d">ecl::adc_trigger::t1_cc3</a> = ADC_ExternalTrigConv_T1_CC3, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a6c03cf7fca07d8d572ed51718404c694">ecl::adc_trigger::t2_cc2</a> = ADC_ExternalTrigConv_T2_CC2, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a14d93b4cf63dc93d71b7b04c0ecfce98">ecl::adc_trigger::t2_cc3</a> = ADC_ExternalTrigConv_T2_CC3, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a5a7b7b78173bd9bf3d8adea9745cc308">ecl::adc_trigger::t2_cc4</a> = ADC_ExternalTrigConv_T2_CC4, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6ab701a49767ccb05f3a4ad3cb56f97873">ecl::adc_trigger::t2_trgo</a> = ADC_ExternalTrigConv_T2_TRGO, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a38338ee70469f120768f5625e920e123">ecl::adc_trigger::t3_cc1</a> = ADC_ExternalTrigConv_T3_CC1, 
+&#160;&#160;<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a14d93b4cf63dc93d71b7b04c0ecfce98">ecl::adc_trigger::t2_cc3</a> = ADC_ExternalTrigConv_T2_CC3, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a5a7b7b78173bd9bf3d8adea9745cc308">ecl::adc_trigger::t2_cc4</a> = ADC_ExternalTrigConv_T2_CC4, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6ab701a49767ccb05f3a4ad3cb56f97873">ecl::adc_trigger::t2_trgo</a> = ADC_ExternalTrigConv_T2_TRGO, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a38338ee70469f120768f5625e920e123">ecl::adc_trigger::t3_cc1</a> = ADC_ExternalTrigConv_T3_CC1, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6aa99ca0b60d259965fbac5b061291e9aa">ecl::adc_trigger::t3_trgo</a> = ADC_ExternalTrigConv_T3_TRGO, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a7d5c1a8073d53f0faff23660b01da053">ecl::adc_trigger::t4_cc4</a> = ADC_ExternalTrigConv_T4_CC4, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a3393dd634bf80796fd5b438558ed9653">ecl::adc_trigger::t5_cc1</a> = ADC_ExternalTrigConv_T5_CC1, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a50641386ad980603c8201fbe89d509e0">ecl::adc_trigger::t5_cc2</a> = ADC_ExternalTrigConv_T5_CC2, 
+&#160;&#160;<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6aa99ca0b60d259965fbac5b061291e9aa">ecl::adc_trigger::t3_trgo</a> = ADC_ExternalTrigConv_T3_TRGO, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a7d5c1a8073d53f0faff23660b01da053">ecl::adc_trigger::t4_cc4</a> = ADC_ExternalTrigConv_T4_CC4, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a3393dd634bf80796fd5b438558ed9653">ecl::adc_trigger::t5_cc1</a> = ADC_ExternalTrigConv_T5_CC1, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a50641386ad980603c8201fbe89d509e0">ecl::adc_trigger::t5_cc2</a> = ADC_ExternalTrigConv_T5_CC2, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a8eba3a03412540e869540f907351b31c">ecl::adc_trigger::t5_cc3</a> = ADC_ExternalTrigConv_T5_CC3, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a04ee3f350c464cdc0727c9fca26fd16d">ecl::adc_trigger::t8_cc1</a> = ADC_ExternalTrigConv_T8_CC1, 
-<a class="el" href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6a520013811101aafeb943aa2b2cbce1aa">ecl::adc_trigger::t8_trgo</a> = ADC_ExternalTrigConv_T8_TRGO
+&#160;&#160;<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a8eba3a03412540e869540f907351b31c">ecl::adc_trigger::t5_cc3</a> = ADC_ExternalTrigConv_T5_CC3, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a04ee3f350c464cdc0727c9fca26fd16d">ecl::adc_trigger::t8_cc1</a> = ADC_ExternalTrigConv_T8_CC1, 
+<a class="el" href="group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a520013811101aafeb943aa2b2cbce1aa">ecl::adc_trigger::t8_trgo</a> = ADC_ExternalTrigConv_T8_TRGO
 <br />
- }<tr class="memdesc:aa5de186d720f541f9b66085049e2c7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The external event used to trigger the start of conversion of a group.  <a href="namespaceecl.html#aa5de186d720f541f9b66085049e2c7f6">More...</a><br /></td></tr>
+ }<tr class="memdesc:gaa5de186d720f541f9b66085049e2c7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The external event used to trigger the start of conversion of a group.  <a href="group__stm32__adc.html#gaa5de186d720f541f9b66085049e2c7f6">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:aa5de186d720f541f9b66085049e2c7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af358cbafab508fe166c168f0f4a076b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#af358cbafab508fe166c168f0f4a076b1">ecl::adc_trigger_edge</a> { <a class="el" href="namespaceecl.html#af358cbafab508fe166c168f0f4a076b1a637aa1a3f3fe939460e3e6126a3cb76a">ecl::adc_trigger_edge::rising</a> = ADC_ExternalTrigConvEdge_Rising, 
-<a class="el" href="namespaceecl.html#af358cbafab508fe166c168f0f4a076b1a465223d16534b847faf7b88e6cd17139">ecl::adc_trigger_edge::falling</a> = ADC_ExternalTrigConvEdge_Falling, 
-<a class="el" href="namespaceecl.html#af358cbafab508fe166c168f0f4a076b1af6cb3e816496528d4187db53bc66567f">ecl::adc_trigger_edge::both</a> = ADC_ExternalTrigConvEdge_RisingFalling
- }<tr class="memdesc:af358cbafab508fe166c168f0f4a076b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The external trigger edge in case of EXTI line used as a trigger.  <a href="namespaceecl.html#af358cbafab508fe166c168f0f4a076b1">More...</a><br /></td></tr>
+<tr class="separator:gaa5de186d720f541f9b66085049e2c7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf358cbafab508fe166c168f0f4a076b1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__adc.html#gaf358cbafab508fe166c168f0f4a076b1">ecl::adc_trigger_edge</a> { <a class="el" href="group__stm32__adc.html#ggaf358cbafab508fe166c168f0f4a076b1a637aa1a3f3fe939460e3e6126a3cb76a">ecl::adc_trigger_edge::rising</a> = ADC_ExternalTrigConvEdge_Rising, 
+<a class="el" href="group__stm32__adc.html#ggaf358cbafab508fe166c168f0f4a076b1a465223d16534b847faf7b88e6cd17139">ecl::adc_trigger_edge::falling</a> = ADC_ExternalTrigConvEdge_Falling, 
+<a class="el" href="group__stm32__adc.html#ggaf358cbafab508fe166c168f0f4a076b1af6cb3e816496528d4187db53bc66567f">ecl::adc_trigger_edge::both</a> = ADC_ExternalTrigConvEdge_RisingFalling
+ }<tr class="memdesc:gaf358cbafab508fe166c168f0f4a076b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The external trigger edge in case of EXTI line used as a trigger.  <a href="group__stm32__adc.html#gaf358cbafab508fe166c168f0f4a076b1">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:af358cbafab508fe166c168f0f4a076b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4377973d3e356a39b194850cda957de8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8">ecl::adc_channel</a> { <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::adc_channel::ch0</a> = ADC_Channel_0, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">ecl::adc_channel::ch1</a> = ADC_Channel_1, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a3a311ff8b8f78d17f31045bb51219543">ecl::adc_channel::ch2</a> = ADC_Channel_2, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ab9869bec82b6ab24d914fdba43450a1e">ecl::adc_channel::ch3</a> = ADC_Channel_3, 
+<tr class="separator:gaf358cbafab508fe166c168f0f4a076b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4377973d3e356a39b194850cda957de8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__adc.html#ga4377973d3e356a39b194850cda957de8">ecl::adc_channel</a> { <br />
+&#160;&#160;<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a">ecl::adc_channel::ch0</a> = ADC_Channel_0, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">ecl::adc_channel::ch1</a> = ADC_Channel_1, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a3a311ff8b8f78d17f31045bb51219543">ecl::adc_channel::ch2</a> = ADC_Channel_2, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8ab9869bec82b6ab24d914fdba43450a1e">ecl::adc_channel::ch3</a> = ADC_Channel_3, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a3ee3610c5d928069e7658a07faacb839">ecl::adc_channel::ch4</a> = ADC_Channel_4, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a392eaddaad661bee57305104a022bb0e">ecl::adc_channel::ch5</a> = ADC_Channel_5, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a0f365b180960ebe019d7c0af0c1f5776">ecl::adc_channel::ch6</a> = ADC_Channel_6, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a25075fb6bfb5485941a88400f0895224">ecl::adc_channel::ch7</a> = ADC_Channel_7, 
+&#160;&#160;<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a3ee3610c5d928069e7658a07faacb839">ecl::adc_channel::ch4</a> = ADC_Channel_4, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a392eaddaad661bee57305104a022bb0e">ecl::adc_channel::ch5</a> = ADC_Channel_5, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a0f365b180960ebe019d7c0af0c1f5776">ecl::adc_channel::ch6</a> = ADC_Channel_6, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a25075fb6bfb5485941a88400f0895224">ecl::adc_channel::ch7</a> = ADC_Channel_7, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a18d72c721da6357241a4b189e0fbf981">ecl::adc_channel::ch8</a> = ADC_Channel_8, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8aa4982a32d0f4ba20f67e1219ccb080d4">ecl::adc_channel::ch9</a> = ADC_Channel_9, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a2ba72bdbc08ebcb70a6c967c1044cd1b">ecl::adc_channel::ch10</a> = ADC_Channel_10, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a5d494204b2294de0db8b5c0bfd7f0b98">ecl::adc_channel::ch11</a> = ADC_Channel_11, 
+&#160;&#160;<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a18d72c721da6357241a4b189e0fbf981">ecl::adc_channel::ch8</a> = ADC_Channel_8, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8aa4982a32d0f4ba20f67e1219ccb080d4">ecl::adc_channel::ch9</a> = ADC_Channel_9, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a2ba72bdbc08ebcb70a6c967c1044cd1b">ecl::adc_channel::ch10</a> = ADC_Channel_10, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a5d494204b2294de0db8b5c0bfd7f0b98">ecl::adc_channel::ch11</a> = ADC_Channel_11, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af3e9ea04a42a9a8f4d7ac8e0c5b1a5e8">ecl::adc_channel::ch12</a> = ADC_Channel_12, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a28754fda0a7f338e8fccfe7206ab9be8">ecl::adc_channel::ch13</a> = ADC_Channel_13, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8aa2a96704d21232d23aa4dd76ee33dc5b">ecl::adc_channel::ch14</a> = ADC_Channel_14, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a91ad7bbdb985c42e11ff5d2d12b8450c">ecl::adc_channel::ch15</a> = ADC_Channel_15, 
+&#160;&#160;<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8af3e9ea04a42a9a8f4d7ac8e0c5b1a5e8">ecl::adc_channel::ch12</a> = ADC_Channel_12, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a28754fda0a7f338e8fccfe7206ab9be8">ecl::adc_channel::ch13</a> = ADC_Channel_13, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8aa2a96704d21232d23aa4dd76ee33dc5b">ecl::adc_channel::ch14</a> = ADC_Channel_14, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a91ad7bbdb985c42e11ff5d2d12b8450c">ecl::adc_channel::ch15</a> = ADC_Channel_15, 
 <br />
-&#160;&#160;<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">ecl::adc_channel::ch16</a> = ADC_Channel_16, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8ac6bf0b746ac26e1f693d1fa26572be03">ecl::adc_channel::ch17</a> = ADC_Channel_17, 
-<a class="el" href="namespaceecl.html#a4377973d3e356a39b194850cda957de8a415434634f5e7e3bf8547f8e0fec8782">ecl::adc_channel::ch18</a> = ADC_Channel_18
+&#160;&#160;<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8af0117651551ace4974e30c7551823305">ecl::adc_channel::ch16</a> = ADC_Channel_16, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8ac6bf0b746ac26e1f693d1fa26572be03">ecl::adc_channel::ch17</a> = ADC_Channel_17, 
+<a class="el" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a415434634f5e7e3bf8547f8e0fec8782">ecl::adc_channel::ch18</a> = ADC_Channel_18
 <br />
- }<tr class="memdesc:a4377973d3e356a39b194850cda957de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC possible channels.  <a href="namespaceecl.html#a4377973d3e356a39b194850cda957de8">More...</a><br /></td></tr>
+ }<tr class="memdesc:ga4377973d3e356a39b194850cda957de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC possible channels.  <a href="group__stm32__adc.html#ga4377973d3e356a39b194850cda957de8">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:a4377973d3e356a39b194850cda957de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga4377973d3e356a39b194850cda957de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>STM32 ADC driver. </p>

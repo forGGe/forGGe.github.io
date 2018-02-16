@@ -8,5 +8,5 @@ var __static_2generated_2stm32_2uart__example_8hpp =
     [ "UART1_driver", "__static_2generated_2stm32_2uart__example_8hpp.html#afca5f9475c29a78d426a3f6bf0548f55", null ],
     [ "USART3_cfg", "__static_2generated_2stm32_2uart__example_8hpp.html#aa130e313e314a333a7e6d1b51e3f2981", null ],
     [ "USART3_driver", "__static_2generated_2stm32_2uart__example_8hpp.html#a22498965434aa2cd27850a0e7572a5d2", null ],
-    [ "bypass_putc", "__static_2generated_2stm32_2uart__example_8hpp.html#a77ac19eee68fd988d5567a7bf0e1193c", null ]
+    [ "bypass_putc", "__static_2generated_2stm32_2uart__example_8hpp.html#ga77ac19eee68fd988d5567a7bf0e1193c", null ]
 ];

@@ -108,6 +108,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-blink.html">STM32F4 discovery blinky project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-bluetooth-hm10.html">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-launchpad-blink.html">TI TM4C123G LaunchPad blinky</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#initial-setup">Initial setup</a></li>
 </ul>
@@ -115,7 +116,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platform/index.html">Supported platforms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../drivers.html">Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devices/index.html">Device drivers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities.html">Libraries and utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../os_layer.html">OS abstraction layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community.html">Community and developer guidelines</a></li>
@@ -206,6 +207,7 @@ GPIO line interrupt. When voltage level changes on the line (e.g. when button is
 pressed), interrupt is generated.</p>
 <div class="section" id="wiring">
 <h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
+<img alt="UART wiring for stm32f4discovery EXTI example" src="https://i.imgur.com/dRVRHV2.jpg" />
 <ol class="arabic">
 <li><p class="first">Attach any preferable UART-to-USB converter <a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a> module according to following pinout:</p>
 <table border="1" class="docutils">
@@ -228,7 +230,6 @@ pressed), interrupt is generated.</p>
 </li>
 </ol>
 <p>Below is the example wiring.</p>
-<img alt="https://i.imgur.com/dRVRHV2.jpg" src="https://i.imgur.com/dRVRHV2.jpg" />
 </div>
 <div class="section" id="building">
 <h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>

@@ -12,7 +12,6 @@ var annotated_dup =
     [ "exactly_block", "structexactly__block.html", "structexactly__block" ],
     [ "gpio_tests", "structgpio__tests.html", "structgpio__tests" ],
     [ "helper_semphr", "classhelper__semphr.html", "classhelper__semphr" ],
-    [ "hm10_uart_mock", "structhm10__uart__mock.html", "structhm10__uart__mock" ],
     [ "less_than_block", "structless__than__block.html", "structless__than__block" ],
     [ "measurement", "structmeasurement.html", "structmeasurement" ],
     [ "mock_aux", "structmock__aux.html", "structmock__aux" ],

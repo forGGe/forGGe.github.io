@@ -9,5 +9,5 @@
 <area shape="rect" id="node5" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="732,25,912,51"/>
 <area shape="rect" id="node7" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="567,86,666,113"/>
 <area shape="rect" id="node8" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="561,137,672,163"/>
-<area shape="rect" id="node11" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="562,187,671,214"/>
+<area shape="rect" id="node11" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="562,187,671,214"/>
 </map>

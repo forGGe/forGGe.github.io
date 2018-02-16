@@ -1,18 +1,6 @@
 <map id="I2C driver" name="I2C driver">
-<area shape="rect" id="node1" href="$group__tm4c__uart.html" title="UART driver" alt="" coords="417,5,515,32"/>
-<area shape="rect" id="node2" href="$group__stm32__uart.html" title="UART driver" alt="" coords="417,56,515,83"/>
-<area shape="rect" id="node3" href="$group__tm4c__execution.html" title="Execution control module" alt="" coords="372,107,560,133"/>
-<area shape="rect" id="node4" href="$group__tm4c__console.html" title="Console" alt="" coords="429,157,503,184"/>
-<area shape="rect" id="node5" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="398,209,534,250"/>
-<area shape="rect" id="node6" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="376,275,556,331"/>
-<area shape="rect" id="node7" href="$group__stm32__adc.html" title="ADC driver" alt="" coords="420,355,512,381"/>
-<area shape="rect" id="node8" href="$group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="398,405,534,432"/>
-<area shape="rect" id="node9" href="$group__tm4c__gpio.html" title="GPIO control" alt="" coords="415,456,517,483"/>
-<area shape="rect" id="node10" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="398,507,534,549"/>
-<area shape="rect" id="node12" href="$group__stm32__irq.html" title="IRQ control" alt="" coords="419,573,513,600"/>
-<area shape="rect" id="node13" href="$group__stm32__execution.html" title="Execution control module" alt="" coords="372,624,560,651"/>
-<area shape="rect" id="node14" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="375,675,557,701"/>
-<area shape="rect" id="node16" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="415,725,517,752"/>
-<area shape="rect" id="node17" href="$group__tm4c__irq.html" title="IRQ control" alt="" coords="419,776,513,803"/>
-<area shape="rect" id="node15" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,405,169,432"/>
+<area shape="rect" id="node1" href="$group__tm4c__console.html" title="Console" alt="" coords="426,5,501,32"/>
+<area shape="rect" id="node2" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="373,56,553,112"/>
+<area shape="rect" id="node4" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="372,136,555,163"/>
+<area shape="rect" id="node5" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,71,169,97"/>
 </map>

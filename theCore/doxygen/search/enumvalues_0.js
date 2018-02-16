@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a',['a',['../namespaceecl.html#ad60cff4932a4d112ce19db3a380774a0a0cc175b9c0f1b6a831c399e269772661',1,'ecl::a()'],['../namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a0cc175b9c0f1b6a831c399e269772661',1,'ecl::gpio_hw::a()']]],
+  ['a',['a',['../group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a0cc175b9c0f1b6a831c399e269772661',1,'ecl::a()'],['../namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759a0cc175b9c0f1b6a831c399e269772661',1,'ecl::gpio_hw::a()']]],
   ['acces',['acces',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a7cb8ee526db177f3f14f326aabdac215',1,'ecl']]],
   ['addrinuse',['addrinuse',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810abd67aae71a38916d5ad00dd87692ab9a',1,'ecl']]],
   ['addrnotavail',['addrnotavail',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a099e8d3488e03ee0203bbabb7844ee44',1,'ecl']]],

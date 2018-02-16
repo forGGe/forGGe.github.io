@@ -2,5 +2,5 @@
 <area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#a1bdc87f006f254d1b8dde1a2e3c0f720" title="Gets current IRQ number. " alt="" coords="160,5,340,32"/>
 <area shape="rect" id="node4" href="$namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="171,56,329,83"/>
 <area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="195,107,305,133"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="388,5,497,32"/>
+<area shape="rect" id="node3" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="388,5,497,32"/>
 </map>

@@ -100,10 +100,7 @@ $(document).ready(function(){initNavTree('group__tm4c__execution.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#files">Files</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Execution control module<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__tm4c.html">Texas Instruments Tiva C TM4C123G platform</a></div></div>  </div>
 </div><!--header-->
@@ -113,318 +110,142 @@ Collaboration diagram for Execution control module:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__tm4c__execution.png" border="0" alt="" usemap="#group____tm4c____execution"/>
 <map name="group____tm4c____execution" id="group____tm4c____execution">
-<area shape="rect" id="node1" href="group__tm4c__uart.html" title="UART driver" alt="" coords="529,5,627,32"/>
-<area shape="rect" id="node2" href="group__stm32__uart.html" title="UART driver" alt="" coords="529,56,627,83"/>
-<area shape="rect" id="node4" href="group__tm4c__console.html" title="Console" alt="" coords="541,107,615,133"/>
-<area shape="rect" id="node5" href="group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="510,158,646,199"/>
-<area shape="rect" id="node6" href="group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="488,224,668,280"/>
-<area shape="rect" id="node7" href="group__stm32__adc.html" title="ADC driver" alt="" coords="532,304,624,331"/>
-<area shape="rect" id="node9" href="group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="510,355,646,381"/>
-<area shape="rect" id="node10" href="group__tm4c__gpio.html" title="GPIO control" alt="" coords="527,405,629,432"/>
-<area shape="rect" id="node11" href="group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="510,457,646,498"/>
-<area shape="rect" id="node12" href="group__stm32__i2c.html" title="I2C driver" alt="" coords="535,523,621,549"/>
-<area shape="rect" id="node13" href="group__stm32__irq.html" title="IRQ control" alt="" coords="531,573,625,600"/>
-<area shape="rect" id="node14" href="group__stm32__execution.html" title="Execution control module" alt="" coords="484,624,672,651"/>
-<area shape="rect" id="node15" href="group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="487,675,669,701"/>
-<area shape="rect" id="node16" href="group__stm32__gpio.html" title="GPIO control" alt="" coords="527,725,629,752"/>
-<area shape="rect" id="node17" href="group__tm4c__irq.html" title="IRQ control" alt="" coords="531,776,625,803"/>
-<area shape="rect" id="node8" href="group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,398,179,439"/>
+<area shape="rect" id="node2" href="group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,5,179,47"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
-Files</h2></td></tr>
-<tr class="memitem:platform_2tm4c_2export_2platform_2execution_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform_2tm4c_2export_2platform_2execution_8hpp.html">platform/tm4c/export/platform/execution.hpp</a></td></tr>
-<tr class="memdesc:platform_2tm4c_2export_2platform_2execution_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execution control for TM4C platform. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceecl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html">ecl</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCoreDebug__Type.html">CoreDebug_Type</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure type to access the Core Debug Register (CoreDebug).  <a href="structCoreDebug__Type.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDWT__Type.html">DWT_Type</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure type to access the Data Watchpoint and Trace Register (DWT).  <a href="structDWT__Type.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSCB__Type.html">SCB_Type</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure type to access the System Control Block (SCB).  <a href="structSCB__Type.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gaf63697ed9952cc71e1225efe205f6cd3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gaf63697ed9952cc71e1225efe205f6cd3">__I</a>&#160;&#160;&#160;volatile const</td></tr>
-<tr class="separator:gaf63697ed9952cc71e1225efe205f6cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e25d9380f9ef903923964322e71f2f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga7e25d9380f9ef903923964322e71f2f6">__O</a>&#160;&#160;&#160;volatile</td></tr>
-<tr class="separator:ga7e25d9380f9ef903923964322e71f2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaec43007d9998a0a0e01faede4133d6be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gaec43007d9998a0a0e01faede4133d6be">__IO</a>&#160;&#160;&#160;volatile</td></tr>
-<tr class="separator:gaec43007d9998a0a0e01faede4133d6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4cc1649793116d7c2d8afce7a4ffce43"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga4cc1649793116d7c2d8afce7a4ffce43">__IM</a>&#160;&#160;&#160;volatile const      /*! Defines 'read only' structure member permissions */</td></tr>
-<tr class="separator:ga4cc1649793116d7c2d8afce7a4ffce43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ea2009ed8fd9ef35b48708280fdb758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga0ea2009ed8fd9ef35b48708280fdb758">__OM</a>&#160;&#160;&#160;volatile            /*! Defines 'write only' structure member permissions */</td></tr>
-<tr class="separator:ga0ea2009ed8fd9ef35b48708280fdb758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6caba5853a60a17e8e04499b52bf691"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gab6caba5853a60a17e8e04499b52bf691">__IOM</a>&#160;&#160;&#160;volatile            /*! Defines 'read / write' structure member permissions */</td></tr>
-<tr class="separator:gab6caba5853a60a17e8e04499b52bf691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4f602c7c5c895d5fb687b71b0979fc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gae4f602c7c5c895d5fb687b71b0979fc3">SCB_ICSR_VECTACTIVE_Pos</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:gae4f602c7c5c895d5fb687b71b0979fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5533791a4ecf1b9301c883047b3e8396"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga5533791a4ecf1b9301c883047b3e8396">SCB_ICSR_VECTACTIVE_Msk</a>&#160;&#160;&#160;(0x1FFUL &lt;&lt; SCB_ICSR_VECTACTIVE_Pos)</td></tr>
-<tr class="separator:ga5533791a4ecf1b9301c883047b3e8396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6ff2102b98f86540224819a1b767ba39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga6ff2102b98f86540224819a1b767ba39">CoreDebug_DEMCR_TRCENA_Pos</a>&#160;&#160;&#160;24U</td></tr>
-<tr class="separator:ga6ff2102b98f86540224819a1b767ba39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e99652c1df93b441257389f49407834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga5e99652c1df93b441257389f49407834">CoreDebug_DEMCR_TRCENA_Msk</a>&#160;&#160;&#160;(1UL &lt;&lt; CoreDebug_DEMCR_TRCENA_Pos)</td></tr>
-<tr class="separator:ga5e99652c1df93b441257389f49407834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa4509f5f8514a7200be61691f0e01f10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gaa4509f5f8514a7200be61691f0e01f10">DWT_CTRL_CYCCNTENA_Pos</a>&#160;&#160;&#160;0U</td></tr>
-<tr class="separator:gaa4509f5f8514a7200be61691f0e01f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a9d209dc2a81ea6bfa0ea21331769d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga4a9d209dc2a81ea6bfa0ea21331769d3">DWT_CTRL_CYCCNTENA_Msk</a>&#160;&#160;&#160;(0x1UL /*&lt;&lt; DWT_CTRL_CYCCNTENA_Pos*/)</td></tr>
-<tr class="separator:ga4a9d209dc2a81ea6bfa0ea21331769d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a>&#160;&#160;&#160;(0xE000E000UL)</td></tr>
-<tr class="separator:ga3c14ed93192c8d9143322bbf77ebf770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>&#160;&#160;&#160;(<a class="el" href="group__tm4c__execution.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td></tr>
-<tr class="separator:gad55a7ddb8d4b2398b0c1cfec76c0d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gaaaf6477c2bde2f00f99e3c2fd1060b01">SCB</a>&#160;&#160;&#160;((<a class="el" href="structSCB__Type.html">SCB_Type</a>       *)     <a class="el" href="group__tm4c__execution.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td></tr>
-<tr class="separator:gaaaf6477c2bde2f00f99e3c2fd1060b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>&#160;&#160;&#160;(0xE000EDF0UL)</td></tr>
-<tr class="separator:ga680604dbcda9e9b31a1639fcffe5230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gab6e30a2b802d9021619dbb0be7f5d63d">CoreDebug</a>&#160;&#160;&#160;((<a class="el" href="structCoreDebug__Type.html">CoreDebug_Type</a> *)     <a class="el" href="group__tm4c__execution.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td></tr>
-<tr class="separator:gab6e30a2b802d9021619dbb0be7f5d63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gabbe5a060185e1d5afa3f85b14e10a6ce">DWT</a>&#160;&#160;&#160;((<a class="el" href="structDWT__Type.html">DWT_Type</a>       *)     DWT_BASE      )</td></tr>
-<tr class="separator:gabbe5a060185e1d5afa3f85b14e10a6ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaa7d75559488b93ee4ad7d1d942950e82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gaa7d75559488b93ee4ad7d1d942950e82">ecl::__attribute__</a> ((noreturn)) static inline void abort()</td></tr>
+<tr class="memdesc:gaa7d75559488b93ee4ad7d1d942950e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aborts execution of currently running code. Never return.  <a href="group__tm4c__execution.html#gaa7d75559488b93ee4ad7d1d942950e82">More...</a><br /></td></tr>
+<tr class="separator:gaa7d75559488b93ee4ad7d1d942950e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1d2fbc1927567eaaa8211a5451360fb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#gae1d2fbc1927567eaaa8211a5451360fb">ecl::wfi</a> ()</td></tr>
+<tr class="memdesc:gae1d2fbc1927567eaaa8211a5451360fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for interrupts.  <a href="group__tm4c__execution.html#gae1d2fbc1927567eaaa8211a5451360fb">More...</a><br /></td></tr>
+<tr class="separator:gae1d2fbc1927567eaaa8211a5451360fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16a20a7eaf786bc5dca3e88b4d07d305"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga16a20a7eaf786bc5dca3e88b4d07d305">ecl::wfe</a> ()</td></tr>
+<tr class="memdesc:ga16a20a7eaf786bc5dca3e88b4d07d305"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for events.  <a href="group__tm4c__execution.html#ga16a20a7eaf786bc5dca3e88b4d07d305">More...</a><br /></td></tr>
+<tr class="separator:ga16a20a7eaf786bc5dca3e88b4d07d305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69319df4ac974e92a51f968888fc25cf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__execution.html#ga69319df4ac974e92a51f968888fc25cf">ecl::spin_wait</a> (uint32_t ms)</td></tr>
+<tr class="memdesc:ga69319df4ac974e92a51f968888fc25cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a dummy busy wait for specified amount of milliseconds.  <a href="group__tm4c__execution.html#ga69319df4ac974e92a51f968888fc25cf">More...</a><br /></td></tr>
+<tr class="separator:ga69319df4ac974e92a51f968888fc25cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gaf63697ed9952cc71e1225efe205f6cd3"></a>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gaa7d75559488b93ee4ad7d1d942950e82"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define __I&#160;&#160;&#160;volatile const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>defines 'read only' permissions </p>
-
-</div>
-</div>
-<a class="anchor" id="ga4cc1649793116d7c2d8afce7a4ffce43"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __IM&#160;&#160;&#160;volatile const      /*! Defines 'read only' structure member permissions */</td>
+          <td class="memname">ecl::__attribute__ </td>
+          <td>(</td>
+          <td class="paramtype">(noreturn)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="gaec43007d9998a0a0e01faede4133d6be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define __IO&#160;&#160;&#160;volatile</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>defines 'read / write' permissions </p>
+<p>Aborts execution of currently running code. Never return. </p>
 
 </div>
 </div>
-<a class="anchor" id="gab6caba5853a60a17e8e04499b52bf691"></a>
+<a class="anchor" id="ga69319df4ac974e92a51f968888fc25cf"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define __IOM&#160;&#160;&#160;volatile            /*! Defines 'read / write' structure member permissions */</td>
+          <td class="memname">static void ecl::spin_wait </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Performs a dummy busy wait for specified amount of milliseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>number of milliseconds to wait.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function is useful for a short delays.</p>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ga7e25d9380f9ef903923964322e71f2f6"></a>
+<a class="anchor" id="ga16a20a7eaf786bc5dca3e88b4d07d305"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define __O&#160;&#160;&#160;volatile</td>
+          <td class="memname">static void ecl::wfe </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>defines 'write only' permissions </p>
+
+<p>Waits for events. </p>
+<p>Processor will stop executing until any event will occur. </p><dl class="section note"><dt>Note</dt><dd>Event flag will be set regardless of execution state. To track spurious wakeup, additional flags must be checked. See also: <a href="http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html">http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html</a> </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__tm4c__execution_ga16a20a7eaf786bc5dca3e88b4d07d305_cgraph.png" border="0" usemap="#group__tm4c__execution_ga16a20a7eaf786bc5dca3e88b4d07d305_cgraph" alt=""/></div>
+<map name="group__tm4c__execution_ga16a20a7eaf786bc5dca3e88b4d07d305_cgraph" id="group__tm4c__execution_ga16a20a7eaf786bc5dca3e88b4d07d305_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="128,5,275,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="127,56,276,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="131,107,272,133"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="128,157,275,184"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="ga0ea2009ed8fd9ef35b48708280fdb758"></a>
+<a class="anchor" id="gae1d2fbc1927567eaaa8211a5451360fb"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define __OM&#160;&#160;&#160;volatile            /*! Defines 'write only' structure member permissions */</td>
+          <td class="memname">static void ecl::wfi </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="gab6e30a2b802d9021619dbb0be7f5d63d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CoreDebug&#160;&#160;&#160;((<a class="el" href="structCoreDebug__Type.html">CoreDebug_Type</a> *)     <a class="el" href="group__tm4c__execution.html#ga680604dbcda9e9b31a1639fcffe5230b">CoreDebug_BASE</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Core Debug configuration struct </p>
-
-</div>
-</div>
-<a class="anchor" id="ga680604dbcda9e9b31a1639fcffe5230b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CoreDebug_BASE&#160;&#160;&#160;(0xE000EDF0UL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Core Debug Base Address </p>
-
-</div>
-</div>
-<a class="anchor" id="ga5e99652c1df93b441257389f49407834"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CoreDebug_DEMCR_TRCENA_Msk&#160;&#160;&#160;(1UL &lt;&lt; CoreDebug_DEMCR_TRCENA_Pos)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CoreDebug DEMCR: TRCENA Mask </p>
-
-</div>
-</div>
-<a class="anchor" id="ga6ff2102b98f86540224819a1b767ba39"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CoreDebug_DEMCR_TRCENA_Pos&#160;&#160;&#160;24U</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>CoreDebug DEMCR: TRCENA Position </p>
-
-</div>
-</div>
-<a class="anchor" id="gabbe5a060185e1d5afa3f85b14e10a6ce"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DWT&#160;&#160;&#160;((<a class="el" href="structDWT__Type.html">DWT_Type</a>       *)     DWT_BASE      )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DWT configuration struct </p>
-
-</div>
-</div>
-<a class="anchor" id="ga4a9d209dc2a81ea6bfa0ea21331769d3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DWT_CTRL_CYCCNTENA_Msk&#160;&#160;&#160;(0x1UL /*&lt;&lt; DWT_CTRL_CYCCNTENA_Pos*/)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DWT CTRL: CYCCNTENA Mask </p>
-
-</div>
-</div>
-<a class="anchor" id="gaa4509f5f8514a7200be61691f0e01f10"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DWT_CTRL_CYCCNTENA_Pos&#160;&#160;&#160;0U</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>DWT CTRL: CYCCNTENA Position </p>
-
-</div>
-</div>
-<a class="anchor" id="gaaaf6477c2bde2f00f99e3c2fd1060b01"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCB&#160;&#160;&#160;((<a class="el" href="structSCB__Type.html">SCB_Type</a>       *)     <a class="el" href="group__tm4c__execution.html#gad55a7ddb8d4b2398b0c1cfec76c0d9fd">SCB_BASE</a>      )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>SCB configuration struct </p>
-
-</div>
-</div>
-<a class="anchor" id="gad55a7ddb8d4b2398b0c1cfec76c0d9fd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCB_BASE&#160;&#160;&#160;(<a class="el" href="group__tm4c__execution.html#ga3c14ed93192c8d9143322bbf77ebf770">SCS_BASE</a> +  0x0D00UL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>System Control Block Base Address </p>
-
-</div>
-</div>
-<a class="anchor" id="ga5533791a4ecf1b9301c883047b3e8396"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCB_ICSR_VECTACTIVE_Msk&#160;&#160;&#160;(0x1FFUL &lt;&lt; SCB_ICSR_VECTACTIVE_Pos)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>SCB ICSR: VECTACTIVE Mask </p>
-
-</div>
-</div>
-<a class="anchor" id="gae4f602c7c5c895d5fb687b71b0979fc3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCB_ICSR_VECTACTIVE_Pos&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>SCB ICSR: VECTACTIVE Position </p>
-
-</div>
-</div>
-<a class="anchor" id="ga3c14ed93192c8d9143322bbf77ebf770"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SCS_BASE&#160;&#160;&#160;(0xE000E000UL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>System Control Space Base Address </p>
+<p>Waits for interrupts. </p>
+<p>Processor will stop executing until any interrupt will occur. See also: <a href="http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html">http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html</a> </p>
 
 </div>
 </div>

@@ -7,5 +7,5 @@ var stm32_2family_2templates_2defines_8in_8hpp =
     [ "CONFIG_SPI_COUNT", "stm32_2family_2templates_2defines_8in_8hpp.html#ac90da2023647c37ac1838c32550897a0", null ],
     [ "HSE_VALUE", "stm32_2family_2templates_2defines_8in_8hpp.html#aeafcff4f57440c60e64812dddd13e7cb", null ],
     [ "ST_DEVICE", "stm32_2family_2templates_2defines_8in_8hpp.html#a5f8f4a24628c7191c9adde97ae751bf2", null ],
-    [ "stm32", "group__stm32.html#ga09973e626495ad8ce90f49300a7078ca", null ]
+    [ "stm32", "group__stm32__templates.html#ga09973e626495ad8ce90f49300a7078ca", null ]
 ];

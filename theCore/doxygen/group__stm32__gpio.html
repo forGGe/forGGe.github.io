@@ -101,7 +101,9 @@ $(document).ready(function(){initNavTree('group__stm32__gpio.html','');});
 <div class="header">
   <div class="summary">
 <a href="#files">Files</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">GPIO control<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__stm32.html">STM32 multi-platform</a></div></div>  </div>
 </div><!--header-->
@@ -111,22 +113,8 @@ Collaboration diagram for GPIO control:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="group__stm32__gpio.png" border="0" alt="" usemap="#group____stm32____gpio"/>
 <map name="group____stm32____gpio" id="group____stm32____gpio">
-<area shape="rect" id="node1" href="group__tm4c__uart.html" title="UART driver" alt="" coords="434,5,533,32"/>
-<area shape="rect" id="node2" href="group__stm32__uart.html" title="UART driver" alt="" coords="434,56,533,83"/>
-<area shape="rect" id="node3" href="group__tm4c__execution.html" title="Execution control module" alt="" coords="389,107,577,133"/>
-<area shape="rect" id="node4" href="group__tm4c__console.html" title="Console" alt="" coords="446,157,521,184"/>
-<area shape="rect" id="node5" href="group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="415,209,551,250"/>
-<area shape="rect" id="node6" href="group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="393,275,573,331"/>
-<area shape="rect" id="node7" href="group__stm32__adc.html" title="ADC driver" alt="" coords="437,355,529,381"/>
-<area shape="rect" id="node8" href="group__stm32__spi__i2s.html" title="I2S and SPI driver" alt="" coords="415,405,551,432"/>
-<area shape="rect" id="node9" href="group__tm4c__gpio.html" title="GPIO control" alt="" coords="432,456,535,483"/>
-<area shape="rect" id="node10" href="group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="415,507,551,549"/>
-<area shape="rect" id="node11" href="group__stm32__i2c.html" title="I2C driver" alt="" coords="441,573,526,600"/>
-<area shape="rect" id="node12" href="group__stm32__irq.html" title="IRQ control" alt="" coords="436,624,531,651"/>
-<area shape="rect" id="node13" href="group__stm32__execution.html" title="Execution control module" alt="" coords="389,675,577,701"/>
-<area shape="rect" id="node14" href="group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="392,725,575,752"/>
-<area shape="rect" id="node15" href="group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,405,169,432"/>
-<area shape="rect" id="node17" href="group__tm4c__irq.html" title="IRQ control" alt="" coords="436,776,531,803"/>
+<area shape="rect" id="node1" href="group__tm4c__gpio.html" title="GPIO control" alt="" coords="425,7,528,33"/>
+<area shape="rect" id="node2" href="group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,7,169,33"/>
 </map>
 </td></tr></table></center>
 </div>
@@ -137,12 +125,286 @@ Files</h2></td></tr>
 <tr class="memdesc:stm32_2export_2platform_2gpio__device_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO device interface for STM32 platform. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespaceecl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html">ecl</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1gpio.html">ecl::gpio&lt; Port, Pin &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsulates pin usage.  <a href="classecl_1_1gpio.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga3d98b43c99b447ff6db9ed3a01c294b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__gpio.html#ga3d98b43c99b447ff6db9ed3a01c294b9">ecl::gpio_num</a> { <br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a4dc2eb55d3953d9c657a8abbf57cce0f">ecl::gpio_num::pin0</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a7c1890779d5dda9bbb157eb3afcfdb26">ecl::gpio_num::pin1</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a1ce8f9c8c598a33e655651c0899ef7bc">ecl::gpio_num::pin2</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a4159b35a5108f290a76464fad870a647">ecl::gpio_num::pin3</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a508102cf58d3c826d3e42cf61c07020b">ecl::gpio_num::pin4</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a750efaf61e4ceb5a617e378dbab3b790">ecl::gpio_num::pin5</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a1c86c4e9065114ab7f3a63164cffaff2">ecl::gpio_num::pin6</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9ac4b81ca956928fc27692cd606131c99e">ecl::gpio_num::pin7</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9ad1e6e4e19c14a85d35431b41d206d22c">ecl::gpio_num::pin8</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9af2a14f88ca54c72d274bb60be36a9916">ecl::gpio_num::pin9</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a02e9a75fa009c4c21331abf0ae45c5bc">ecl::gpio_num::pin10</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a6ed3cf5f381fdbfedea42ebf3a8c3f8b">ecl::gpio_num::pin11</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a6c31412de99950f0840e043e01f989ff">ecl::gpio_num::pin12</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a6dd15586f3226d354f9bad7379050684">ecl::gpio_num::pin13</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9ac8b9d9370fc1111e705e86ea52284e5b">ecl::gpio_num::pin14</a>, 
+<a class="el" href="group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9ab2723794ebf83d9e93089245230f521e">ecl::gpio_num::pin15</a>
+<br />
+ }<tr class="memdesc:ga3d98b43c99b447ff6db9ed3a01c294b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO numbers.  <a href="group__stm32__gpio.html#ga3d98b43c99b447ff6db9ed3a01c294b9">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ga3d98b43c99b447ff6db9ed3a01c294b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad60cff4932a4d112ce19db3a380774a0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__gpio.html#gad60cff4932a4d112ce19db3a380774a0">ecl::gpio_port</a> { <br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a0cc175b9c0f1b6a831c399e269772661">ecl::gpio_port::a</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a92eb5ffee6ae2fec3ad71c777531578f">ecl::gpio_port::b</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a4a8a08f09d37b73795649038408b5f33">ecl::gpio_port::c</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad">ecl::gpio_port::d</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0ae1671797c52e15f763380b45e841ec32">ecl::gpio_port::e</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a8fa14cdd754f91cc6554c9e71929cce7">ecl::gpio_port::f</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0ab2f5ff47436671b6e533d8dc3614845d">ecl::gpio_port::g</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a2510c39011c5be704182423e3a695e91">ecl::gpio_port::h</a>, 
+<br />
+&#160;&#160;<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a865c0c0b4ab0e063e5caa3387c1a8741">ecl::gpio_port::i</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a363b122c528f54df4a0446b6bab05515">ecl::gpio_port::j</a>, 
+<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a8ce4b16b22b58894aa86c421e8759df3">ecl::gpio_port::k</a>
+<br />
+ }<tr class="memdesc:gad60cff4932a4d112ce19db3a380774a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO ports.  <a href="group__stm32__gpio.html#gad60cff4932a4d112ce19db3a380774a0">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gad60cff4932a4d112ce19db3a380774a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gaed9aea0a1db68c91f3181070d135d6e0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__gpio.html#gaed9aea0a1db68c91f3181070d135d6e0">ecl::gpio&lt; Port, Pin &gt;::set</a> ()</td></tr>
+<tr class="memdesc:gaed9aea0a1db68c91f3181070d135d6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets output pin level to high.  <a href="#gaed9aea0a1db68c91f3181070d135d6e0">More...</a><br /></td></tr>
+<tr class="separator:gaed9aea0a1db68c91f3181070d135d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac90838f6b9529d463a89e3783dc80c1a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__gpio.html#gac90838f6b9529d463a89e3783dc80c1a">ecl::gpio&lt; Port, Pin &gt;::reset</a> ()</td></tr>
+<tr class="memdesc:gac90838f6b9529d463a89e3783dc80c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets output pin level to low.  <a href="#gac90838f6b9529d463a89e3783dc80c1a">More...</a><br /></td></tr>
+<tr class="separator:gac90838f6b9529d463a89e3783dc80c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08abf6f1437d39d65f7b4332073a1414"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__gpio.html#ga08abf6f1437d39d65f7b4332073a1414">ecl::gpio&lt; Port, Pin &gt;::toggle</a> ()</td></tr>
+<tr class="memdesc:ga08abf6f1437d39d65f7b4332073a1414"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles pin level.  <a href="#ga08abf6f1437d39d65f7b4332073a1414">More...</a><br /></td></tr>
+<tr class="separator:ga08abf6f1437d39d65f7b4332073a1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b58be7e1f5cd0616d59c0988d357c74"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__gpio.html#ga8b58be7e1f5cd0616d59c0988d357c74">ecl::gpio&lt; Port, Pin &gt;::get</a> ()</td></tr>
+<tr class="memdesc:ga8b58be7e1f5cd0616d59c0988d357c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets level on a pin.  <a href="#ga8b58be7e1f5cd0616d59c0988d357c74">More...</a><br /></td></tr>
+<tr class="separator:ga8b58be7e1f5cd0616d59c0988d357c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga3d98b43c99b447ff6db9ed3a01c294b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__stm32__gpio.html#ga3d98b43c99b447ff6db9ed3a01c294b9">ecl::gpio_num</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GPIO numbers. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a4dc2eb55d3953d9c657a8abbf57cce0f"></a>pin0&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a7c1890779d5dda9bbb157eb3afcfdb26"></a>pin1&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a1ce8f9c8c598a33e655651c0899ef7bc"></a>pin2&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a4159b35a5108f290a76464fad870a647"></a>pin3&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a508102cf58d3c826d3e42cf61c07020b"></a>pin4&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a750efaf61e4ceb5a617e378dbab3b790"></a>pin5&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a1c86c4e9065114ab7f3a63164cffaff2"></a>pin6&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9ac4b81ca956928fc27692cd606131c99e"></a>pin7&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9ad1e6e4e19c14a85d35431b41d206d22c"></a>pin8&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9af2a14f88ca54c72d274bb60be36a9916"></a>pin9&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a02e9a75fa009c4c21331abf0ae45c5bc"></a>pin10&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a6ed3cf5f381fdbfedea42ebf3a8c3f8b"></a>pin11&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a6c31412de99950f0840e043e01f989ff"></a>pin12&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9a6dd15586f3226d354f9bad7379050684"></a>pin13&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9ac8b9d9370fc1111e705e86ea52284e5b"></a>pin14&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga3d98b43c99b447ff6db9ed3a01c294b9ab2723794ebf83d9e93089245230f521e"></a>pin15&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="gad60cff4932a4d112ce19db3a380774a0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__stm32__gpio.html#gad60cff4932a4d112ce19db3a380774a0">ecl::gpio_port</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>GPIO ports. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a0cc175b9c0f1b6a831c399e269772661"></a>a&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a92eb5ffee6ae2fec3ad71c777531578f"></a>b&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a4a8a08f09d37b73795649038408b5f33"></a>c&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a8277e0910d750195b448797616e091ad"></a>d&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0ae1671797c52e15f763380b45e841ec32"></a>e&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a8fa14cdd754f91cc6554c9e71929cce7"></a>f&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0ab2f5ff47436671b6e533d8dc3614845d"></a>g&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a2510c39011c5be704182423e3a695e91"></a>h&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a865c0c0b4ab0e063e5caa3387c1a8741"></a>i&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a363b122c528f54df4a0446b6bab05515"></a>j&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad60cff4932a4d112ce19db3a380774a0a8ce4b16b22b58894aa86c421e8759df3"></a>k&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga8b58be7e1f5cd0616d59c0988d357c74"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets level on a pin. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if level is high, false if level is low. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac90838f6b9529d463a89e3783dc80c1a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets output pin level to low. </p>
+
+</div>
+</div>
+<a class="anchor" id="gaed9aea0a1db68c91f3181070d135d6e0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::set </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets output pin level to high. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga08abf6f1437d39d65f7b4332073a1414"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::toggle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Toggles pin level. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

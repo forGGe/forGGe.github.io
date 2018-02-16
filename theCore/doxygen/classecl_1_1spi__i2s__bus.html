@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classecl_1_1spi__i2s__bus.html','');})
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">ecl::spi_i2s_bus&lt; dev &gt; Class Template Reference</div>  </div>
+<div class="title">ecl::spi_i2s_bus&lt; dev &gt; Class Template Reference<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__stm32.html">STM32 multi-platform</a> &raquo; <a class="el" href="group__stm32__spi__i2s.html">I2S and SPI driver</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -142,47 +142,47 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6821f8fcb75fbf697d95b22331051887"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a6821f8fcb75fbf697d95b22331051887">init</a> ()</td></tr>
-<tr class="memdesc:a6821f8fcb75fbf697d95b22331051887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lazy initialization.  <a href="#a6821f8fcb75fbf697d95b22331051887">More...</a><br /></td></tr>
-<tr class="separator:a6821f8fcb75fbf697d95b22331051887"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7fd5555966adce96d1dad51ee5fa090"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#aa7fd5555966adce96d1dad51ee5fa090">set_rx</a> (uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa22770fbdd1177351a869401a0e1427bc">rx</a>, size_t size)</td></tr>
-<tr class="memdesc:aa7fd5555966adce96d1dad51ee5fa090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets rx buffer with given size.  <a href="#aa7fd5555966adce96d1dad51ee5fa090">More...</a><br /></td></tr>
-<tr class="separator:aa7fd5555966adce96d1dad51ee5fa090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17160ae2034977b2cf08187ef27e895f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a17160ae2034977b2cf08187ef27e895f">set_tx</a> (size_t size, uint8_t fill_byte=0xff)</td></tr>
-<tr class="memdesc:a17160ae2034977b2cf08187ef27e895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer made-up from sequence of similar bytes.  <a href="#a17160ae2034977b2cf08187ef27e895f">More...</a><br /></td></tr>
-<tr class="separator:a17160ae2034977b2cf08187ef27e895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11ca4e3503e97ac1af54ec86ae19f118"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a11ca4e3503e97ac1af54ec86ae19f118">set_tx</a> (const uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa7da685001e153f41a83eb6255069dc3d">tx</a>, size_t size)</td></tr>
-<tr class="memdesc:a11ca4e3503e97ac1af54ec86ae19f118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer with given size.  <a href="#a11ca4e3503e97ac1af54ec86ae19f118">More...</a><br /></td></tr>
-<tr class="separator:a11ca4e3503e97ac1af54ec86ae19f118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1704ce695763313710a32e29476bc72a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a1704ce695763313710a32e29476bc72a">set_handler</a> (const <a class="el" href="classecl_1_1spi__i2s__bus.html#a7e0e54890c363dda0537a91cbb158bb8">handler_fn</a> &amp;handler)</td></tr>
-<tr class="memdesc:a1704ce695763313710a32e29476bc72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets event handler.  <a href="#a1704ce695763313710a32e29476bc72a">More...</a><br /></td></tr>
-<tr class="separator:a1704ce695763313710a32e29476bc72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d28234dd793ce05342705e2642909f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a93d28234dd793ce05342705e2642909f">reset_buffers</a> ()</td></tr>
-<tr class="memdesc:a93d28234dd793ce05342705e2642909f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset xfer buffers.  <a href="#a93d28234dd793ce05342705e2642909f">More...</a><br /></td></tr>
-<tr class="separator:a93d28234dd793ce05342705e2642909f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e6392462a774ca4d0322edd2c3f115d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a1e6392462a774ca4d0322edd2c3f115d">reset_handler</a> ()</td></tr>
-<tr class="memdesc:a1e6392462a774ca4d0322edd2c3f115d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets previously set handler.  <a href="#a1e6392462a774ca4d0322edd2c3f115d">More...</a><br /></td></tr>
-<tr class="separator:a1e6392462a774ca4d0322edd2c3f115d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a0ccc726a9de0935b9a64e0e9850225"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a9a0ccc726a9de0935b9a64e0e9850225">do_xfer</a> ()</td></tr>
-<tr class="memdesc:a9a0ccc726a9de0935b9a64e0e9850225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes xfer, using buffers previously set.  <a href="#a9a0ccc726a9de0935b9a64e0e9850225">More...</a><br /></td></tr>
-<tr class="separator:a9a0ccc726a9de0935b9a64e0e9850225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae79bf9014b82454bef5e38755386871a"><td class="memTemplParams" colspan="2">template&lt;ecl::i2s::audio_frequency frequency, class Iface_cfg  = config&gt; </td></tr>
-<tr class="memitem:ae79bf9014b82454bef5e38755386871a"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if_t&lt; Iface_cfg::bus_type==<a class="el" href="namespaceecl.html#a2f4299ddec47c1881c4a9454690854aaa7f68529abb01e6b228ceec06ec220ec1">spi_bus_type::i2s</a>, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#ae79bf9014b82454bef5e38755386871a">i2s_set_audio_frequency</a> ()</td></tr>
-<tr class="memdesc:ae79bf9014b82454bef5e38755386871a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets audio frequency for I2S mode.  <a href="#ae79bf9014b82454bef5e38755386871a">More...</a><br /></td></tr>
-<tr class="separator:ae79bf9014b82454bef5e38755386871a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d48b7d0247f3d7adf711e4793239b0"><td class="memTemplParams" colspan="2">template&lt;ecl::i2s::data_format format, class Iface_cfg  = config&gt; </td></tr>
-<tr class="memitem:ad1d48b7d0247f3d7adf711e4793239b0"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if_t&lt; Iface_cfg::bus_type==<a class="el" href="namespaceecl.html#a2f4299ddec47c1881c4a9454690854aaa7f68529abb01e6b228ceec06ec220ec1">spi_bus_type::i2s</a>, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#ad1d48b7d0247f3d7adf711e4793239b0">i2s_set_data_format</a> ()</td></tr>
-<tr class="memdesc:ad1d48b7d0247f3d7adf711e4793239b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets data format for I2S mode.  <a href="#ad1d48b7d0247f3d7adf711e4793239b0">More...</a><br /></td></tr>
-<tr class="separator:ad1d48b7d0247f3d7adf711e4793239b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5440e98fe0367518006fd7d2fdd6caa1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#a5440e98fe0367518006fd7d2fdd6caa1">enable_circular_mode</a> ()</td></tr>
-<tr class="memdesc:a5440e98fe0367518006fd7d2fdd6caa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables circular mode for the bus.  <a href="#a5440e98fe0367518006fd7d2fdd6caa1">More...</a><br /></td></tr>
-<tr class="separator:a5440e98fe0367518006fd7d2fdd6caa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf6c8e89bebd39531ff5a93d4eb079f6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#abf6c8e89bebd39531ff5a93d4eb079f6">disable_circular_mode</a> ()</td></tr>
-<tr class="memdesc:abf6c8e89bebd39531ff5a93d4eb079f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables circular mode for the bus.  <a href="#abf6c8e89bebd39531ff5a93d4eb079f6">More...</a><br /></td></tr>
-<tr class="separator:abf6c8e89bebd39531ff5a93d4eb079f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfe9ed80c9f9545d7c399757d4cbdec1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1spi__i2s__bus.html#abfe9ed80c9f9545d7c399757d4cbdec1">is_circular_mode</a> ()</td></tr>
-<tr class="memdesc:abfe9ed80c9f9545d7c399757d4cbdec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the circular mode state.  <a href="#abfe9ed80c9f9545d7c399757d4cbdec1">More...</a><br /></td></tr>
-<tr class="separator:abfe9ed80c9f9545d7c399757d4cbdec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6821f8fcb75fbf697d95b22331051887"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga6821f8fcb75fbf697d95b22331051887">init</a> ()</td></tr>
+<tr class="memdesc:ga6821f8fcb75fbf697d95b22331051887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lazy initialization.  <a href="group__stm32__spi__i2s.html#ga6821f8fcb75fbf697d95b22331051887">More...</a><br /></td></tr>
+<tr class="separator:ga6821f8fcb75fbf697d95b22331051887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7fd5555966adce96d1dad51ee5fa090"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#gaa7fd5555966adce96d1dad51ee5fa090">set_rx</a> (uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa22770fbdd1177351a869401a0e1427bc">rx</a>, size_t size)</td></tr>
+<tr class="memdesc:gaa7fd5555966adce96d1dad51ee5fa090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets rx buffer with given size.  <a href="group__stm32__spi__i2s.html#gaa7fd5555966adce96d1dad51ee5fa090">More...</a><br /></td></tr>
+<tr class="separator:gaa7fd5555966adce96d1dad51ee5fa090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17160ae2034977b2cf08187ef27e895f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga17160ae2034977b2cf08187ef27e895f">set_tx</a> (size_t size, uint8_t fill_byte=0xff)</td></tr>
+<tr class="memdesc:ga17160ae2034977b2cf08187ef27e895f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer made-up from sequence of similar bytes.  <a href="group__stm32__spi__i2s.html#ga17160ae2034977b2cf08187ef27e895f">More...</a><br /></td></tr>
+<tr class="separator:ga17160ae2034977b2cf08187ef27e895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11ca4e3503e97ac1af54ec86ae19f118"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga11ca4e3503e97ac1af54ec86ae19f118">set_tx</a> (const uint8_t *<a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa7da685001e153f41a83eb6255069dc3d">tx</a>, size_t size)</td></tr>
+<tr class="memdesc:ga11ca4e3503e97ac1af54ec86ae19f118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets tx buffer with given size.  <a href="group__stm32__spi__i2s.html#ga11ca4e3503e97ac1af54ec86ae19f118">More...</a><br /></td></tr>
+<tr class="separator:ga11ca4e3503e97ac1af54ec86ae19f118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1704ce695763313710a32e29476bc72a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga1704ce695763313710a32e29476bc72a">set_handler</a> (const <a class="el" href="classecl_1_1spi__i2s__bus.html#a7e0e54890c363dda0537a91cbb158bb8">handler_fn</a> &amp;handler)</td></tr>
+<tr class="memdesc:ga1704ce695763313710a32e29476bc72a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets event handler.  <a href="group__stm32__spi__i2s.html#ga1704ce695763313710a32e29476bc72a">More...</a><br /></td></tr>
+<tr class="separator:ga1704ce695763313710a32e29476bc72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93d28234dd793ce05342705e2642909f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga93d28234dd793ce05342705e2642909f">reset_buffers</a> ()</td></tr>
+<tr class="memdesc:ga93d28234dd793ce05342705e2642909f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset xfer buffers.  <a href="group__stm32__spi__i2s.html#ga93d28234dd793ce05342705e2642909f">More...</a><br /></td></tr>
+<tr class="separator:ga93d28234dd793ce05342705e2642909f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e6392462a774ca4d0322edd2c3f115d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga1e6392462a774ca4d0322edd2c3f115d">reset_handler</a> ()</td></tr>
+<tr class="memdesc:ga1e6392462a774ca4d0322edd2c3f115d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets previously set handler.  <a href="group__stm32__spi__i2s.html#ga1e6392462a774ca4d0322edd2c3f115d">More...</a><br /></td></tr>
+<tr class="separator:ga1e6392462a774ca4d0322edd2c3f115d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9a0ccc726a9de0935b9a64e0e9850225"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga9a0ccc726a9de0935b9a64e0e9850225">do_xfer</a> ()</td></tr>
+<tr class="memdesc:ga9a0ccc726a9de0935b9a64e0e9850225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes xfer, using buffers previously set.  <a href="group__stm32__spi__i2s.html#ga9a0ccc726a9de0935b9a64e0e9850225">More...</a><br /></td></tr>
+<tr class="separator:ga9a0ccc726a9de0935b9a64e0e9850225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae79bf9014b82454bef5e38755386871a"><td class="memTemplParams" colspan="2">template&lt;ecl::i2s::audio_frequency frequency, class Iface_cfg  = config&gt; </td></tr>
+<tr class="memitem:gae79bf9014b82454bef5e38755386871a"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if_t&lt; Iface_cfg::bus_type==<a class="el" href="group__stm32__spi__i2s.html#gga2f4299ddec47c1881c4a9454690854aaa7f68529abb01e6b228ceec06ec220ec1">spi_bus_type::i2s</a>, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#gae79bf9014b82454bef5e38755386871a">i2s_set_audio_frequency</a> ()</td></tr>
+<tr class="memdesc:gae79bf9014b82454bef5e38755386871a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets audio frequency for I2S mode.  <a href="group__stm32__spi__i2s.html#gae79bf9014b82454bef5e38755386871a">More...</a><br /></td></tr>
+<tr class="separator:gae79bf9014b82454bef5e38755386871a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1d48b7d0247f3d7adf711e4793239b0"><td class="memTemplParams" colspan="2">template&lt;ecl::i2s::data_format format, class Iface_cfg  = config&gt; </td></tr>
+<tr class="memitem:gad1d48b7d0247f3d7adf711e4793239b0"><td class="memTemplItemLeft" align="right" valign="top">static std::enable_if_t&lt; Iface_cfg::bus_type==<a class="el" href="group__stm32__spi__i2s.html#gga2f4299ddec47c1881c4a9454690854aaa7f68529abb01e6b228ceec06ec220ec1">spi_bus_type::i2s</a>, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#gad1d48b7d0247f3d7adf711e4793239b0">i2s_set_data_format</a> ()</td></tr>
+<tr class="memdesc:gad1d48b7d0247f3d7adf711e4793239b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets data format for I2S mode.  <a href="group__stm32__spi__i2s.html#gad1d48b7d0247f3d7adf711e4793239b0">More...</a><br /></td></tr>
+<tr class="separator:gad1d48b7d0247f3d7adf711e4793239b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5440e98fe0367518006fd7d2fdd6caa1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#ga5440e98fe0367518006fd7d2fdd6caa1">enable_circular_mode</a> ()</td></tr>
+<tr class="memdesc:ga5440e98fe0367518006fd7d2fdd6caa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables circular mode for the bus.  <a href="group__stm32__spi__i2s.html#ga5440e98fe0367518006fd7d2fdd6caa1">More...</a><br /></td></tr>
+<tr class="separator:ga5440e98fe0367518006fd7d2fdd6caa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf6c8e89bebd39531ff5a93d4eb079f6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#gabf6c8e89bebd39531ff5a93d4eb079f6">disable_circular_mode</a> ()</td></tr>
+<tr class="memdesc:gabf6c8e89bebd39531ff5a93d4eb079f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables circular mode for the bus.  <a href="group__stm32__spi__i2s.html#gabf6c8e89bebd39531ff5a93d4eb079f6">More...</a><br /></td></tr>
+<tr class="separator:gabf6c8e89bebd39531ff5a93d4eb079f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfe9ed80c9f9545d7c399757d4cbdec1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__spi__i2s.html#gabfe9ed80c9f9545d7c399757d4cbdec1">is_circular_mode</a> ()</td></tr>
+<tr class="memdesc:gabfe9ed80c9f9545d7c399757d4cbdec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the circular mode state.  <a href="group__stm32__spi__i2s.html#gabfe9ed80c9f9545d7c399757d4cbdec1">More...</a><br /></td></tr>
+<tr class="separator:gabfe9ed80c9f9545d7c399757d4cbdec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;spi_device dev&gt;<br />
@@ -300,479 +300,6 @@ template&lt;spi_device dev&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="abf6c8e89bebd39531ff5a93d4eb079f6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::disable_circular_mode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disables circular mode for the bus. </p>
-<p>This method allows to stop xfer() that was started with circular mode. It is recommended to call this method in event handler during processing of the HT or TC event. The xfer is always stopped after TC. If circular mode is disabled during processing of the TC (or between HT and TC), the xfer will be stopped immediately after current TC will be processed. If circular mode is disabled during processing of the HT (or between TC and HT), the xfer will be finished after next TC will be processed. This method also can be called when xfer() is not active. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9a0ccc726a9de0935b9a64e0e9850225"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::do_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes xfer, using buffers previously set. </p>
-<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1spi__i2s__bus_a9a0ccc726a9de0935b9a64e0e9850225_cgraph.png" border="0" usemap="#classecl_1_1spi__i2s__bus_a9a0ccc726a9de0935b9a64e0e9850225_cgraph" alt=""/></div>
-<map name="classecl_1_1spi__i2s__bus_a9a0ccc726a9de0935b9a64e0e9850225_cgraph" id="classecl_1_1spi__i2s__bus_a9a0ccc726a9de0935b9a64e0e9850225_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="243,5,389,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1gpio__hw.html#a69198301fc0bb7daa3faedc207e7a768" title="Obtains IRQ number of given port. " alt="" coords="235,56,397,83"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="263,107,369,133"/>
-<area shape="rect" id="node5" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="253,157,379,184"/>
-<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="241,208,391,235"/>
-<area shape="rect" id="node7" href="namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="261,259,371,285"/>
-<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="248,309,384,336"/>
-<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="445,259,604,285"/>
-<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="464,309,585,336"/>
-<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="465,360,584,387"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a5440e98fe0367518006fd7d2fdd6caa1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::enable_circular_mode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enables circular mode for the bus. </p>
-<p>In circular mode when xfer is finished, the new xfer is started automatically without interruption. The same buffer is used. The process continues until circular mode is disabled. This method must not be called during xfer(). </p>
-
-</div>
-</div>
-<a class="anchor" id="ae79bf9014b82454bef5e38755386871a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<div class="memtemplate">
-template&lt;ecl::i2s::audio_frequency frequency, class Iface_cfg &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt; Iface_cfg::bus_type==<a class="el" href="namespaceecl.html#a2f4299ddec47c1881c4a9454690854aaa7f68529abb01e6b228ceec06ec220ec1">spi_bus_type::i2s</a>, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt; <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::i2s_set_audio_frequency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets audio frequency for I2S mode. </p>
-<p>Is not used in SPI mode. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">frequency</td><td>Can be a type of <a class="el" href="namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6" title="Common audio sample frequencies for I2S. ">ecl::i2s::audio_frequency</a> </td></tr>
-    <tr><td class="paramname">Iface_cfg</td><td>Used for correct enable_if mechanism. Must not be passed by user. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ad1d48b7d0247f3d7adf711e4793239b0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<div class="memtemplate">
-template&lt;ecl::i2s::data_format format, class Iface_cfg &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt; Iface_cfg::bus_type==<a class="el" href="namespaceecl.html#a2f4299ddec47c1881c4a9454690854aaa7f68529abb01e6b228ceec06ec220ec1">spi_bus_type::i2s</a>, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt; <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::i2s_set_data_format </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets data format for I2S mode. </p>
-<p>Is not used in SPI mode. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">format</td><td>Can be a type of <a class="el" href="namespaceecl_1_1i2s.html#ae875af45cdc7a823e40a7fb58d0e6638" title="Common sample sizes for I2S. ">ecl::i2s::data_format</a> </td></tr>
-    <tr><td class="paramname">Iface_cfg</td><td>Used for correct enable_if mechanism. Must not be passed by user. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6821f8fcb75fbf697d95b22331051887"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Lazy initialization. </p>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1spi__i2s__bus_a6821f8fcb75fbf697d95b22331051887_cgraph.png" border="0" usemap="#classecl_1_1spi__i2s__bus_a6821f8fcb75fbf697d95b22331051887_cgraph" alt=""/></div>
-<map name="classecl_1_1spi__i2s__bus_a6821f8fcb75fbf697d95b22331051887_cgraph" id="classecl_1_1spi__i2s__bus_a6821f8fcb75fbf697d95b22331051887_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="207,56,343,83"/>
-<area shape="rect" id="node3" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="391,5,549,32"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="409,56,531,83"/>
-<area shape="rect" id="node5" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="411,107,529,133"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="abfe9ed80c9f9545d7c399757d4cbdec1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::is_circular_mode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the circular mode state. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if circular mode is enabled, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a93d28234dd793ce05342705e2642909f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::reset_buffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset xfer buffers. </p>
-<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1spi__i2s__bus.html#a17160ae2034977b2cf08187ef27e895f" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
-<dd>
-<a class="el" href="classecl_1_1spi__i2s__bus.html#aa7fd5555966adce96d1dad51ee5fa090" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1e6392462a774ca4d0322edd2c3f115d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::reset_handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Resets previously set handler. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1704ce695763313710a32e29476bc72a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::set_handler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classecl_1_1spi__i2s__bus.html#a7e0e54890c363dda0537a91cbb158bb8">handler_fn</a> &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1spi__i2s__bus.html#a1e6392462a774ca4d0322edd2c3f115d" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aa7fd5555966adce96d1dad51ee5fa090"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::set_rx </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>rx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets rx buffer with given size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">rx</td><td>Buffer to write data to. Optional. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a17160ae2034977b2cf08187ef27e895f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::set_tx </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fill_byte</em> = <code>0xff</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets tx buffer made-up from sequence of similar bytes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of sequence </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fill_byte</td><td>Byte to fill a sequence. Optional. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a11ca4e3503e97ac1af54ec86ae19f118"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::set_tx </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets tx buffer with given size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tx</td><td>Buffer to transmit. Optional. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Buffer size. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

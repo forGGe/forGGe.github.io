@@ -1,7 +1,7 @@
 var searchData=
 [
   ['tcb_5ft',['TCB_t',['../utils_8cpp.html#ae9916d7ededf65cec89b92fa4fb9ed58',1,'utils.cpp']]],
-  ['test_5fchannels',['test_channels',['../namespaceecl.html#abc6b95db3b46903ba5a3745eb51e3460',1,'ecl']]],
+  ['test_5fchannels',['test_channels',['../group__stm32__templates.html#gabc6b95db3b46903ba5a3745eb51e3460',1,'ecl']]],
   ['test_5ffc28',['test_fc28',['../fc28__unit_8cpp.html#ae523dadef9ce6dc1a972c4483b6684b4',1,'fc28_unit.cpp']]],
   ['test_5fgpios',['test_gpios',['../namespaceecl.html#a010af4924c87e82bda9b5ec823f10e65',1,'ecl']]],
   ['test_5fuart',['test_uart',['../namespaceecl.html#a69a0d9dcc0bffec34d47f697be51d60f',1,'ecl']]],

@@ -4,5 +4,6 @@
 <area shape="rect" id="node4" href="$stm32_2platform_8cpp.html" title="STM32 platform main file. " alt="" coords="275,80,381,107"/>
 <area shape="rect" id="node5" href="$tm4c_2exti__manager_8cpp.html" title="External interrupt manager implementation. " alt="" coords="405,80,544,107"/>
 <area shape="rect" id="node6" href="$tm4c_2platform_8cpp.html" title="platform.cpp" alt="" coords="569,80,674,107"/>
-<area shape="rect" id="node7" href="$exti__manager__bat_2case_8cpp.html" title="case.cpp" alt="" coords="698,80,777,107"/>
+<area shape="rect" id="node7" href="$irq_8in_8cpp.html" title="TM4C IRQ handlers template. " alt="" coords="697,80,780,107"/>
+<area shape="rect" id="node8" href="$exti__manager__bat_2case_8cpp.html" title="case.cpp" alt="" coords="805,80,883,107"/>
 </map>

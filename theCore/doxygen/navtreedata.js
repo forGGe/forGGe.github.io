@@ -48,13 +48,13 @@ var NAVTREEINDEX =
 "classecl_1_1mutex.html#a0c382d447f65ae3c86759548ae7c923c",
 "classecl_1_1usart__bus.html#a16775c84e30ad3f6866a23f7c4bc09aa",
 "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a685b0d3a76e4165e5aac689757bd61db",
-"group__stm32__adc.html#ga66b9bcbdd90f9e76c281e41d24b5acfd",
-"group__tm4c__uart.html",
-"ostream__unit_8cpp.html",
-"semaphore__unit_8cpp.html#a2d2ea1056cab7d6fddf095d27a5abc7a",
-"stm32f4xx__dma__wrap_8hpp.html#a8cf36eef78c8dbb519911d064d259f94a7213de81b859f0c3edb3aac4e484d55a",
-"structecl_1_1shared__allocation__size.html#ac19ae79450af453c7dcb7a29dcdbbfc5",
-"user__side_8cpp.html#abfb21a036bd761663b4e5d07ede21138"
+"group__stm32__adc.html#ga451f3dfff267033efefac51d348c526e",
+"group__tm4c__irq.html#gad9c53481b0e8421c2bde2e19c9b2301c",
+"list__unit_8cpp.html#a2a9be99f8224003e69eb326b876e2621",
+"platform_2stm32_2export_2platform_2irq_8hpp.html#ga1bdc87f006f254d1b8dde1a2e3c0f720",
+"stm32_2export_2platform_2gpio__device_8hpp.html#gga3d98b43c99b447ff6db9ed3a01c294b9a6c31412de99950f0840e043e01f989ff",
+"structecl_1_1channel__group__exti__trigger.html#aec6d8e37bc53a8bb2e2b3ee0cdb9fa8fac4af5951b6f29bf2882247a85bb85626",
+"title_2__static_2generated_2stm32_2i2c__example_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

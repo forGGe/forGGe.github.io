@@ -18,6 +18,7 @@ var searchData=
   ['deferred',['deferred',['../namespaceecl.html#aca4194795dab8d7b9cdafce56172d9cea43fff3df3fc0b3417c86dc3040fb2d86',1,'ecl']]],
   ['deinit',['deinit',['../classecl_1_1generic__bus.html#a0076b1fb7cd7e434a91cdca47542a4b1',1,'ecl::generic_bus::deinit()'],['../classecl_1_1serial.html#a03cdd6820ea32fed60d9b6893cda3593',1,'ecl::serial::deinit()'],['../classecl_1_1safe__storage.html#ac33d866954274b8f3114d2b6608b8a74',1,'ecl::safe_storage::deinit()']]],
   ['deleted',['deleted',['../structchunk__info.html#a342565735f37e39c1f63a8b034cf9aa2',1,'chunk_info']]],
+  ['deliver_5firq',['deliver_irq',['../structecl_1_1exti__irq__proxy.html#a33ba2da403514d9ab64253d13f39e8d0',1,'ecl::exti_irq_proxy::deliver_irq()'],['../structecl_1_1uart__irq__proxy.html#a4ea549368218136c43ccb9b26e06706c',1,'ecl::uart_irq_proxy::deliver_irq()']]],
   ['demcr',['DEMCR',['../structCoreDebug__Type.html#aeb3126abc4c258a858f21f356c0df6ee',1,'CoreDebug_Type']]],
   ['destaddrreq',['destaddrreq',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a11bccc12d3b0447f2f348e05c2f65de8',1,'ecl']]],
   ['destroy',['destroy',['../structmock__aux.html#a4068ead51bfddb419dfe86ef53f75792',1,'mock_aux::destroy()'],['../classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd',1,'ecl::aux::destroy()']]],

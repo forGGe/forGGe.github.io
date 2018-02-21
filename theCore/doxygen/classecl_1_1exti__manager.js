@@ -15,6 +15,7 @@ var classecl_1_1exti__manager =
     [ "~exti_manager", "classecl_1_1exti__manager.html#ad618eb0c0374c7f1ff49e00931c6b582", null ],
     [ "init", "classecl_1_1exti__manager.html#a6691017f3dcc8daea013a8cfe1c31f22", null ],
     [ "init", "group__stm32__exti.html#ga72d5ee2e164e688e9f93b25c3b5bd163", null ],
+    [ "irq_port_handler", "group__tm4c__exti.html#gac72ba729a62f014464b2a1534c9c7779", null ],
     [ "mask", "group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08", null ],
     [ "mask", "classecl_1_1exti__manager.html#a2b9b0a5dacbc0e9c3d777b557e421c0e", null ],
     [ "subscribe", "classecl_1_1exti__manager.html#a3ee125e1a4d0e3e7cb9bb598432496d6", null ],

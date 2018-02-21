@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['i2c0_5fhandler',['I2C0_Handler',['../irq_8in_8cpp.html#abb6f20d30622daf1087c6afa9b9daa0c',1,'irq.in.cpp']]],
+  ['i2c1_5fhandler',['I2C1_Handler',['../irq_8in_8cpp.html#adb156a55a7c7593cb57169fd6c69bd3a',1,'irq.in.cpp']]],
+  ['i2c2_5fhandler',['I2C2_Handler',['../irq_8in_8cpp.html#a6327f95bc7cc845fafa8d5d832f60d36',1,'irq.in.cpp']]],
+  ['i2c3_5fhandler',['I2C3_Handler',['../irq_8in_8cpp.html#a061e33c1c69ecbf5fee90bd9304b5666',1,'irq.in.cpp']]],
   ['i2c_5fbus',['i2c_bus',['../classecl_1_1i2c__bus.html#a92dd40d7bdda027f59b55271978b9b09',1,'ecl::i2c_bus']]],
   ['i2c_5fdispatch',['i2c_dispatch',['../namespaceecl.html#a8f0da76b561bf59ee68ac097ed45d232',1,'ecl']]],
   ['i2s_5fset_5faudio_5ffrequency',['i2s_set_audio_frequency',['../group__stm32__spi__i2s.html#gae79bf9014b82454bef5e38755386871a',1,'ecl::spi_i2s_bus']]],
@@ -15,6 +19,8 @@ var searchData=
   ['invoke',['invoke',['../classplatform__mock.html#a53254956637716ea86dfd359a29c79e6',1,'platform_mock']]],
   ['iostream',['iostream',['../classecl_1_1iostream.html#a6e14333b3369ba528f098aea85ec0e2d',1,'ecl::iostream']]],
   ['iostream_5finitializer',['iostream_initializer',['../structecl_1_1iostream__initializer.html#a669dc8167304e05a5de66c724d26fd5d',1,'ecl::iostream_initializer']]],
+  ['irq_5fbus_5fhandler',['irq_bus_handler',['../group__tm4c__uart.html#gaec426fdfec7a9e0a788cc5ebb5fc700e',1,'ecl::uart_bus']]],
+  ['irq_5fport_5fhandler',['irq_port_handler',['../group__tm4c__exti.html#gac72ba729a62f014464b2a1534c9c7779',1,'ecl::exti_manager']]],
   ['is_5fbattery_5flow',['is_battery_low',['../classecl_1_1sensor_1_1htu21d.html#a6fbb32e4aeb6aa4073d148ba6221b2f2',1,'ecl::sensor::htu21d']]],
   ['is_5fcircular_5fmode',['is_circular_mode',['../group__stm32__spi__i2s.html#gabfe9ed80c9f9545d7c399757d4cbdec1',1,'ecl::spi_i2s_bus']]],
   ['is_5ferror',['is_error',['../namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8',1,'ecl']]],

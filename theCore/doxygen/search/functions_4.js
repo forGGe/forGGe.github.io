@@ -6,6 +6,7 @@ var searchData=
   ['dec',['dec',['../classecl_1_1aux.html#a138f7b81ca1f4d57603f97167841eb14',1,'ecl::aux']]],
   ['default_5fhandler',['default_handler',['../namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09',1,'ecl']]],
   ['deinit',['deinit',['../classecl_1_1generic__bus.html#a0076b1fb7cd7e434a91cdca47542a4b1',1,'ecl::generic_bus::deinit()'],['../classecl_1_1serial.html#a03cdd6820ea32fed60d9b6893cda3593',1,'ecl::serial::deinit()'],['../classecl_1_1safe__storage.html#ac33d866954274b8f3114d2b6608b8a74',1,'ecl::safe_storage::deinit()']]],
+  ['deliver_5firq',['deliver_irq',['../structecl_1_1exti__irq__proxy.html#a33ba2da403514d9ab64253d13f39e8d0',1,'ecl::exti_irq_proxy::deliver_irq()'],['../structecl_1_1uart__irq__proxy.html#a4ea549368218136c43ccb9b26e06706c',1,'ecl::uart_irq_proxy::deliver_irq()']]],
   ['destroy',['destroy',['../structmock__aux.html#a4068ead51bfddb419dfe86ef53f75792',1,'mock_aux::destroy()'],['../classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd',1,'ecl::aux::destroy()']]],
   ['detach',['detach',['../classecl_1_1native__thread.html#a114d5a5eb957e748381e46f59c1c4cea',1,'ecl::native_thread::detach()'],['../classecl_1_1native__thread.html#a114d5a5eb957e748381e46f59c1c4cea',1,'ecl::native_thread::detach()']]],
   ['dev_5ftmr',['dev_tmr',['../namespaceecl.html#aa662cfb3b8e439975905bd0004393d20',1,'ecl']]],

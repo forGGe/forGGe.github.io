@@ -38,7 +38,9 @@ var hierarchy =
     [ "ecl::explode_chunk_impl< S, B, L, c >", "structecl_1_1explode__chunk__impl.html", null ],
     [ "ecl::explode_chunk_impl< S, B, 0, c... >", "structecl_1_1explode__chunk__impl_3_01S_00_01B_00_010_00_01c_8_8_8_01_4.html", null ],
     [ "ecl::exploded_string< c >", "structecl_1_1exploded__string.html", null ],
-    [ "ecl::exti_manager", "classecl_1_1exti__manager.html", null ],
+    [ "ecl::exti_manager", "classecl_1_1exti__manager.html", [
+      [ "ecl::exti_irq_proxy", "structecl_1_1exti__irq__proxy.html", null ]
+    ] ],
     [ "ecl::extractor< chs >", "structecl_1_1extractor.html", null ],
     [ "ecl::sensor::fc28< PowerPin >", "classecl_1_1sensor_1_1fc28.html", null ],
     [ "fs::file_descriptor", "classfs_1_1file__descriptor.html", [
@@ -131,7 +133,9 @@ var hierarchy =
     [ "test_arg", "structtest__arg.html", null ],
     [ "test_type", "structtest__type.html", null ],
     [ "tmr_cb", "structtmr__cb.html", null ],
-    [ "ecl::uart_bus< dev >", "classecl_1_1uart__bus.html", null ],
+    [ "ecl::uart_bus< dev >", "classecl_1_1uart__bus.html", [
+      [ "ecl::uart_irq_proxy< dev >", "structecl_1_1uart__irq__proxy.html", null ]
+    ] ],
     [ "ecl::usart_bus< dev >", "classecl_1_1usart__bus.html", null ],
     [ "ecl::usart_cfg< dev >", "structecl_1_1usart__cfg.html", null ],
     [ "ecl::usart_cfg< usart_device::dev1 >", "structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html", null ],

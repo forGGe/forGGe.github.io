@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['can0_5fhandler',['CAN0_Handler',['../irq_8in_8cpp.html#aba38745a7e320286105ee4941d3ba7a2',1,'irq.in.cpp']]],
+  ['can1_5fhandler',['CAN1_Handler',['../irq_8in_8cpp.html#a7cfefdd5b198a604454fe7189597170d',1,'irq.in.cpp']]],
   ['cancel_5frx',['cancel_rx',['../classplatform__mock.html#a2435bd4c778e51128a6c29b7f764f3c2',1,'platform_mock::cancel_rx()'],['../group__stm32__uart.html#gad06d705f7fd1a25d9753616911adb770',1,'ecl::usart_bus::cancel_rx()']]],
   ['cancel_5ftx',['cancel_tx',['../classplatform__mock.html#ab52b668bfc606681490a72fadf88f097',1,'platform_mock::cancel_tx()'],['../group__stm32__uart.html#ga1dad7d9a91b59322a54ffd4e2956a47e',1,'ecl::usart_bus::cancel_tx()']]],
   ['cancel_5fxfer',['cancel_xfer',['../classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d',1,'ecl::generic_bus::cancel_xfer()'],['../classplatform__mock.html#a1b40f32368833035eee3a25684a7aebe',1,'platform_mock::cancel_xfer()'],['../classecl_1_1dummy__platform__bus.html#a5d2e227bfeea36a9f2b013c48bdf0b94',1,'ecl::dummy_platform_bus::cancel_xfer()'],['../classecl_1_1platform__console.html#a0c22643cfd17c220a97b45a5ab187757',1,'ecl::platform_console::cancel_xfer()'],['../classecl_1_1i2c__bus.html#a9d9c17582c3f1f52e7cd278d87a85513',1,'ecl::i2c_bus::cancel_xfer()'],['../group__tm4c__uart.html#gac4510d42670624724af5e646d935d962',1,'ecl::uart_bus::cancel_xfer()'],['../classecl_1_1i2c__bus.html#a548a90c334dcce613be193ecaefdddfb',1,'ecl::i2c_bus::cancel_xfer()'],['../group__stm32__uart.html#ga04dbefeb7862766db479088a4d8bfce0',1,'ecl::usart_bus::cancel_xfer()'],['../classecl_1_1uart__bus.html#a151232494ac50ce0f40ca878fbb479d0',1,'ecl::uart_bus::cancel_xfer()']]],
@@ -12,6 +14,8 @@ var searchData=
   ['clear_5ftc',['clear_tc',['../classecl_1_1dma__wrap__base.html#a79c7a0a39cfb0daf903ce41633aa20a1',1,'ecl::dma_wrap_base']]],
   ['close',['close',['../classecl_1_1pcd8544.html#af1f755004c5db28938cd300d01a6972c',1,'ecl::pcd8544::close()'],['../classecl_1_1sd__spi.html#acbd7a8f2eae323bd89b804b0434b159b',1,'ecl::sd_spi::close()'],['../classfs_1_1dir__descriptor.html#abc90968232058020345f56f1a63394ab',1,'fs::dir_descriptor::close()'],['../classfs_1_1file__descriptor.html#a21489f942e77f4d4dbc00758e8c8cb90',1,'fs::file_descriptor::close()'],['../classfat_1_1dir.html#a029141fda153823abd5072c27530d812',1,'fat::dir::close()'],['../classfat_1_1file.html#a91c1cbf965a7df2fb5cc4cfe30d20523',1,'fat::file::close()']]],
   ['cmd_5ftimeout',['cmd_timeout',['../classecl_1_1hm10__sync.html#ac777f134ba9a28117e0b5a8a0f1d8dcc',1,'ecl::hm10_sync']]],
+  ['comp0_5fhandler',['COMP0_Handler',['../irq_8in_8cpp.html#a94dd63a55cdde7d1b7ed4b67fec42d75',1,'irq.in.cpp']]],
+  ['comp1_5fhandler',['COMP1_Handler',['../irq_8in_8cpp.html#a8857c77c493ceafe172e5383f083bdbb',1,'irq.in.cpp']]],
   ['conv_5fnum',['conv_num',['../structecl_1_1extractor.html#a25ec1da347d29c09c75edb5f2b76c11c',1,'ecl::extractor']]],
   ['copy_5fmono_5fto_5fstereo',['copy_mono_to_stereo',['../cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5',1,'main.cpp']]],
   ['copy_5fto_5frx',['copy_to_rx',['../classplatform__mock.html#a9909d4d33d9ae18af35d9121b8ee7178',1,'platform_mock']]],

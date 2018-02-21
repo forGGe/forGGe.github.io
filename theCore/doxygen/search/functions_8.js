@@ -4,6 +4,7 @@ var searchData=
   ['headphone_5fmute',['headphone_mute',['../classecl_1_1cs43l22.html#ac8289e5e0c9d06a56629eccf4fdc0c60',1,'ecl::cs43l22']]],
   ['headphone_5funmute',['headphone_unmute',['../classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d',1,'ecl::cs43l22']]],
   ['helper_5fsemphr',['helper_semphr',['../classhelper__semphr.html#adcbb7ac39ef0bd479340edc34f96b211',1,'helper_semphr']]],
+  ['hibernate_5fhandler',['HIBERNATE_Handler',['../irq_8in_8cpp.html#a746226e1af4de7c3722cf9c9c428f0be',1,'irq.in.cpp']]],
   ['hm10_5fcheck_5fcommand',['hm10_check_command',['../hm10__unit_8cpp.html#a0a8294ca9f0e3716b9c7fb54e8d6da55',1,'hm10_unit.cpp']]],
   ['ht',['ht',['../classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1',1,'ecl::dma_wrap_base']]],
   ['htu21d',['htu21d',['../classecl_1_1sensor_1_1htu21d.html#a88bc20688870d3f00596d2cf28bec3e7',1,'ecl::sensor::htu21d']]]

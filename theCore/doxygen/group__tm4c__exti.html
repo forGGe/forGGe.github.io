@@ -100,7 +100,8 @@ $(document).ready(function(){initNavTree('group__tm4c__exti.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">External interrupt manager<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__tm4c.html">Texas Instruments Tiva C TM4C123G platform</a></div></div>  </div>
 </div><!--header-->
@@ -121,8 +122,68 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1exti__manager.html">ecl::exti_manager</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">External interrupt manager class.  <a href="classecl_1_1exti__manager.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac72ba729a62f014464b2a1534c9c7779"><td class="memTemplParams" colspan="2">template&lt;gpio_hw::port Port&gt; </td></tr>
+<tr class="memitem:gac72ba729a62f014464b2a1534c9c7779"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tm4c__exti.html#gac72ba729a62f014464b2a1534c9c7779">ecl::exti_manager::irq_port_handler</a> ()</td></tr>
+<tr class="memdesc:gac72ba729a62f014464b2a1534c9c7779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles event from given port.  <a href="#gac72ba729a62f014464b2a1534c9c7779">More...</a><br /></td></tr>
+<tr class="separator:gac72ba729a62f014464b2a1534c9c7779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gac72ba729a62f014464b2a1534c9c7779"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_hw::port Port&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ecl::exti_manager::irq_port_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles event from given port. </p>
+<p>Called internally by theCore when interrupt happens. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Port</td><td>Port where interrupt has occur. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__tm4c__exti_gac72ba729a62f014464b2a1534c9c7779_cgraph.png" border="0" usemap="#group__tm4c__exti_gac72ba729a62f014464b2a1534c9c7779_cgraph" alt=""/></div>
+<map name="group__tm4c__exti_gac72ba729a62f014464b2a1534c9c7779_cgraph" id="group__tm4c__exti_gac72ba729a62f014464b2a1534c9c7779_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="212,5,351,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1gpio__hw.html#a69198301fc0bb7daa3faedc207e7a768" title="Obtains IRQ number of given port. " alt="" coords="200,56,363,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="228,107,335,133"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="218,157,345,184"/>
+<area shape="rect" id="node6" href="group__stm32__exti.html#gaa187cb4e77c6fd6adebe56f7c29bd9ac" title="Subscribes to event on the given GPIO. " alt="" coords="208,209,355,250"/>
+<area shape="rect" id="node8" href="classecl_1_1list__node.html#a16f12e040e819e318e2bfc9df70efcca" title="Checks if node is connected to any other node. " alt="" coords="203,275,359,301"/>
+<area shape="rect" id="node9" href="namespaceecl_1_1gpio__hw.html#a721a48c36dc65a7d3f9c617ca18cfe77" title="Obtains interrupt flag used for corresponding GPIO pin. " alt="" coords="202,326,361,367"/>
+<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="221,392,342,419"/>
+<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="222,443,341,469"/>
+<area shape="rect" id="node7" href="group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="411,216,593,243"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

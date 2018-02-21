@@ -1,0 +1,19 @@
+<map id="ecl::uart_bus::irq_bus_handler" name="ecl::uart_bus::irq_bus_handler">
+<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="223,5,333,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="215,56,341,83"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="225,107,331,133"/>
+<area shape="rect" id="node5" href="$group__tm4c__uart.html#gad03ae2d035ca0886ab2738def4e1443b" title="Lazy initialization. " alt="" coords="211,507,345,533"/>
+<area shape="rect" id="node10" href="$group__tm4c__uart.html#ga71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. " alt="" coords="201,208,355,235"/>
+<area shape="rect" id="node11" href="$group__tm4c__uart.html#gaff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made&#45;up from sequence of similar bytes. " alt="" coords="201,259,355,285"/>
+<area shape="rect" id="node12" href="$group__tm4c__uart.html#gaf67df94c86eb2a640a6b66cc550eb992" title="Sets event handler. " alt="" coords="211,310,345,351"/>
+<area shape="rect" id="node13" href="$group__tm4c__uart.html#ga9cbaeaaa7d3bcb2f67b3216633d84277" title="Reset xfer buffers. " alt="" coords="205,375,351,417"/>
+<area shape="rect" id="node14" href="$group__tm4c__uart.html#ga6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. " alt="" coords="205,441,351,482"/>
+<area shape="rect" id="node15" href="$group__tm4c__uart.html#ga1230079588b108c8c1a2271edd866053" title="Executes xfer, using buffers previously set. " alt="" coords="197,157,359,184"/>
+<area shape="rect" id="node18" href="$group__tm4c__uart.html#gac4510d42670624724af5e646d935d962" title="Cancels xfer. " alt="" coords="184,557,372,584"/>
+<area shape="rect" id="node6" href="$classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514" title="Initialize serial driver and underlying platform bus. " alt="" coords="441,408,556,435"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="782,357,881,384"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="635,408,718,435"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="776,408,887,435"/>
+<area shape="rect" id="node16" href="$namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="420,208,577,235"/>
+<area shape="rect" id="node17" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="625,208,728,235"/>
+</map>

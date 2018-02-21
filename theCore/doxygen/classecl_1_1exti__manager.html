@@ -111,7 +111,8 @@ $(document).ready(function(){initNavTree('classecl_1_1exti__manager.html','');})
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ecl::exti_manager Class Reference<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__stm32.html">STM32 multi-platform</a> &raquo; <a class="el" href="group__stm32__exti.html">External interrupt manager</a><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__tm4c.html">Texas Instruments Tiva C TM4C123G platform</a> &raquo;  &#124; <a class="el" href="group__tm4c__exti.html">External interrupt manager</a></div></div>  </div>
 </div><!--header-->
@@ -121,6 +122,14 @@ $(document).ready(function(){initNavTree('classecl_1_1exti__manager.html','');})
  <a href="classecl_1_1exti__manager.html#details">More...</a></p>
 
 <p><code>#include &lt;/root/thecore/platform/tm4c/export/platform/exti_manager.hpp&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ecl::exti_manager:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1exti__manager__inherit__graph.png" border="0" usemap="#ecl_1_1exti__manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="ecl_1_1exti__manager_inherit__map" id="ecl_1_1exti__manager_inherit__map">
+<area shape="rect" id="node2" href="structecl_1_1exti__irq__proxy.html" title="EXTI interrupt proxy. " alt="" coords="5,80,148,107"/>
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -195,6 +204,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af3f7d8fc4df2e5e9aa5764676d713baf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1exti__manager.html#af3f7d8fc4df2e5e9aa5764676d713baf">unmask</a> (<a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;<a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a2510c39011c5be704182423e3a695e91">h</a>)</td></tr>
 <tr class="memdesc:af3f7d8fc4df2e5e9aa5764676d713baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmasks (enables) pending EXTI request.  <a href="#af3f7d8fc4df2e5e9aa5764676d713baf">More...</a><br /></td></tr>
 <tr class="separator:af3f7d8fc4df2e5e9aa5764676d713baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:gac72ba729a62f014464b2a1534c9c7779"><td class="memTemplParams" colspan="2">template&lt;gpio_hw::port Port&gt; </td></tr>
+<tr class="memitem:gac72ba729a62f014464b2a1534c9c7779"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tm4c__exti.html#gac72ba729a62f014464b2a1534c9c7779">irq_port_handler</a> ()</td></tr>
+<tr class="memdesc:gac72ba729a62f014464b2a1534c9c7779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles event from given port.  <a href="group__tm4c__exti.html#gac72ba729a62f014464b2a1534c9c7779">More...</a><br /></td></tr>
+<tr class="separator:gac72ba729a62f014464b2a1534c9c7779"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>External interrupt manager class. </p>

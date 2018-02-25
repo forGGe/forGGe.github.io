@@ -2,6 +2,7 @@ var irq_8in_8cpp =
 [
     [ "exti_irq_proxy", "structecl_1_1exti__irq__proxy.html", "structecl_1_1exti__irq__proxy" ],
     [ "uart_irq_proxy", "structecl_1_1uart__irq__proxy.html", "structecl_1_1uart__irq__proxy" ],
+    [ "spi_irq_proxy", "structecl_1_1spi__irq__proxy.html", "structecl_1_1spi__irq__proxy" ],
     [ "ADC0SS0_Handler", "irq_8in_8cpp.html#a98ca5315acaa54dffcb85fa4309c1f55", null ],
     [ "ADC0SS1_Handler", "irq_8in_8cpp.html#af8cd8ffafd9d509754c9f3bc6d1734dc", null ],
     [ "ADC0SS2_Handler", "irq_8in_8cpp.html#a0d176fa62741d4a348abfba20810a237", null ],

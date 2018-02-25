@@ -1,8 +1,7 @@
 <map id="i2c_bus.hpp" name="i2c_bus.hpp">
-<area shape="rect" id="node2" href="$__static_2generated_2particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="5,80,139,107"/>
-<area shape="rect" id="node3" href="$__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="163,80,296,107"/>
-<area shape="rect" id="node4" href="$title_2__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="320,80,453,107"/>
-<area shape="rect" id="node5" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="477,80,632,107"/>
-<area shape="rect" id="node6" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="656,80,768,107"/>
-<area shape="rect" id="node7" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="793,80,906,107"/>
+<area shape="rect" id="node2" href="$particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node3" href="$stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="163,80,296,107"/>
+<area shape="rect" id="node4" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="320,80,475,107"/>
+<area shape="rect" id="node5" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="499,80,611,107"/>
+<area shape="rect" id="node6" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="635,80,749,107"/>
 </map>

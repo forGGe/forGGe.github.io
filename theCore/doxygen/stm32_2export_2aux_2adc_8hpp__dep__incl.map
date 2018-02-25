@@ -1,5 +1,4 @@
 <map id="adc.hpp" name="adc.hpp">
-<area shape="rect" id="node2" href="$__static_2generated_2stm32_2adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="5,80,143,107"/>
-<area shape="rect" id="node3" href="$title_2__static_2generated_2stm32_2adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="167,80,304,107"/>
-<area shape="rect" id="node4" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="328,80,444,107"/>
+<area shape="rect" id="node2" href="$adc__example_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="5,80,143,107"/>
+<area shape="rect" id="node3" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="167,80,283,107"/>
 </map>

@@ -118,6 +118,8 @@ $(document).ready(function(){initNavTree('irq_8in_8cpp.html','');});
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;platform/exti_manager.hpp&gt;</code><br />
 <code>#include &lt;platform/execution.hpp&gt;</code><br />
+<code>#include &quot;aux/uart_cfg.hpp&quot;</code><br />
+<code>#include &quot;aux/spi_cfg.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for irq.in.cpp:</div>
 <div class="dyncontent">
@@ -131,8 +133,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1exti__irq__proxy.html">ecl::exti_irq_proxy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">EXTI interrupt proxy.  <a href="structecl_1_1exti__irq__proxy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1uart__irq__proxy.html">ecl::uart_irq_proxy&lt; dev &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1uart__irq__proxy.html">ecl::uart_irq_proxy&lt; ch &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART interrupt proxy.  <a href="structecl_1_1uart__irq__proxy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1spi__irq__proxy.html">ecl::spi_irq_proxy&lt; ch &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI interrupt proxy.  <a href="structecl_1_1spi__irq__proxy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -1165,16 +1170,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="irq_8in_8cpp_a383380b76ca4cf30abf112250e0b1a02_cgraph.png" border="0" usemap="#irq_8in_8cpp_a383380b76ca4cf30abf112250e0b1a02_cgraph" alt=""/></div>
-<map name="irq_8in_8cpp_a383380b76ca4cf30abf112250e0b1a02_cgraph" id="irq_8in_8cpp_a383380b76ca4cf30abf112250e0b1a02_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="161,5,244,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="af9dfd673c037843e49c4d5a260fe0e5c"></a>
@@ -1189,16 +1184,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="irq_8in_8cpp_af9dfd673c037843e49c4d5a260fe0e5c_cgraph.png" border="0" usemap="#irq_8in_8cpp_af9dfd673c037843e49c4d5a260fe0e5c_cgraph" alt=""/></div>
-<map name="irq_8in_8cpp_af9dfd673c037843e49c4d5a260fe0e5c_cgraph" id="irq_8in_8cpp_af9dfd673c037843e49c4d5a260fe0e5c_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="161,5,244,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -1215,16 +1200,6 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="irq_8in_8cpp_a54959cc6525559d7b06f5fc22125e1a8_cgraph.png" border="0" usemap="#irq_8in_8cpp_a54959cc6525559d7b06f5fc22125e1a8_cgraph" alt=""/></div>
-<map name="irq_8in_8cpp_a54959cc6525559d7b06f5fc22125e1a8_cgraph" id="irq_8in_8cpp_a54959cc6525559d7b06f5fc22125e1a8_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="161,5,244,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ae1d2414cdcadd1113c8111c1178bdf01"></a>
@@ -1239,16 +1214,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="irq_8in_8cpp_ae1d2414cdcadd1113c8111c1178bdf01_cgraph.png" border="0" usemap="#irq_8in_8cpp_ae1d2414cdcadd1113c8111c1178bdf01_cgraph" alt=""/></div>
-<map name="irq_8in_8cpp_ae1d2414cdcadd1113c8111c1178bdf01_cgraph" id="irq_8in_8cpp_ae1d2414cdcadd1113c8111c1178bdf01_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="161,5,244,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>

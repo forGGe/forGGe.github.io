@@ -1,5 +1,5 @@
 <map id="usart_bus.hpp" name="usart_bus.hpp">
-<area shape="rect" id="node2" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="49,80,183,107"/>
+<area shape="rect" id="node2" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="49,80,183,107"/>
 <area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,155,96,181"/>
 <area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="259,80,357,107"/>
 </map>

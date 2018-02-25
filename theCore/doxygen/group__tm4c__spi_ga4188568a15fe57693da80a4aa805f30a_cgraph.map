@@ -1,0 +1,11 @@
+<map id="ecl::spi::cancel_xfer" name="ecl::spi::cancel_xfer">
+<area shape="rect" id="node2" href="$group__skel__spi.html#ga9d0c83091d7e1986502187d2c479b8d4" title="Enables circular mode for the bus. " alt="" coords="206,5,425,32"/>
+<area shape="rect" id="node3" href="$group__skel__spi.html#ga7afcf1670a7a5bed08237f5041626fd6" title="Disables circular mode for the bus. " alt="" coords="204,56,427,83"/>
+<area shape="rect" id="node4" href="$group__skel__spi.html#ga64dac8402ea356b82973f25bbd7402a8" title="Returns the circular mode state. " alt="" coords="222,107,409,133"/>
+<area shape="rect" id="node5" href="$group__skel__spi.html#gabb137665c484e1604314f023c2531b96" title="SPI interrupt handler. " alt="" coords="241,157,390,184"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="246,208,385,235"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="274,259,357,285"/>
+<area shape="rect" id="node8" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="262,309,369,336"/>
+<area shape="rect" id="node9" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="260,360,371,387"/>
+<area shape="rect" id="node10" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="252,411,379,437"/>
+</map>

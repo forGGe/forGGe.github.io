@@ -22,12 +22,12 @@ var searchData=
   ['max_5fheadphone_5fvolume',['max_headphone_volume',['../classecl_1_1cs43l22.html#a6945a4512f5dc46d098bfb2b1df3fafd',1,'ecl::cs43l22']]],
   ['max_5fmaster_5fvolume',['max_master_volume',['../classecl_1_1cs43l22.html#a3735e2d2a511658b743eccd3392a0f6b',1,'ecl::cs43l22']]],
   ['max_5fmoisture',['max_moisture',['../namespaceecl_1_1sensor_1_1fc28__defs.html#accd6411b19e9523806d9c6f2c4a9b6cd',1,'ecl::sensor::fc28_defs']]],
-  ['mgtm_5fmode',['mgtm_mode',['../structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a2c403c7d151887edb84a0e7073e3db08',1,'ecl::adc_cfg&lt; adc_dev::dev1 &gt;']]],
+  ['mgtm_5fmode',['mgtm_mode',['../structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a0245b324434f624d0b832ccfd906e6db',1,'ecl::adc_cfg&lt; adc_dev::dev1 &gt;']]],
   ['min_5fmoisture',['min_moisture',['../namespaceecl_1_1sensor_1_1fc28__defs.html#a83b2d6a269c49201a58c9ad87ff981a4',1,'ecl::sensor::fc28_defs']]],
   ['mmfar',['MMFAR',['../structSCB__Type.html#ac49b24b3f222508464f111772f2c44dd',1,'SCB_Type']]],
   ['mmfr',['MMFR',['../structSCB__Type.html#aec2f8283d2737c6897188568a4214976',1,'SCB_Type']]],
   ['mnt_5fpoint',['mnt_point',['../classfs_1_1fs__descriptor.html#a59630365b5561b5ca9365951d140eaa8',1,'fs::fs_descriptor']]],
   ['mock_5ftime',['mock_time',['../semaphore__unit_8cpp.html#adace15bac0690c5e5180672f848c96fd',1,'mock_time():&#160;semaphore_unit.cpp'],['../task_8h.html#adace15bac0690c5e5180672f848c96fd',1,'mock_time():&#160;semaphore_unit.cpp']]],
-  ['mode',['mode',['../structpin__info.html#ab05ac4b041bdb1441c6edf8fb6e0c74f',1,'pin_info::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#a7f5f3641659bb253278faa35a925fa41',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#ab30f7a221a03a92e2fb88d87f2591065',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::mode()']]],
+  ['mode',['mode',['../structpin__info.html#ab05ac4b041bdb1441c6edf8fb6e0c74f',1,'pin_info::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#ad07519a4149ecd5c0d35b54fb5497861',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#ac35857861cde34d06da52d55ed432b98',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::mode()']]],
   ['my_5fptr',['my_ptr',['../classfs_1_1inode.html#a9856a868037409f68825dcdd9dcf1b0f',1,'fs::inode']]]
 ];

@@ -1,0 +1,6 @@
+<map id="ecl::uart_irq_proxy::deliver_irq" name="ecl::uart_irq_proxy::deliver_irq">
+<area shape="rect" id="node2" href="$group__tm4c__uart.html#ga7ea23810c6832bab5d01a274989bd857" title="UART interrupt handler. " alt="" coords="196,49,327,90"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="383,5,493,32"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="375,56,501,83"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="385,107,491,133"/>
+</map>

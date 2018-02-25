@@ -22,6 +22,7 @@ var searchData=
   ['mask1',['MASK1',['../structDWT__Type.html#aabf94936c9340e62fed836dcfb152405',1,'DWT_Type']]],
   ['mask2',['MASK2',['../structDWT__Type.html#a00ac4d830dfe0070a656cda9baed170f',1,'DWT_Type']]],
   ['mask3',['MASK3',['../structDWT__Type.html#a2a509d8505c37a3b64f6b24993df5f3f',1,'DWT_Type']]],
+  ['master',['master',['../group__skel__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()'],['../group__tm4c__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()'],['../group__skel__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()'],['../group__tm4c__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()']]],
   ['max_5fbeep_5fvolume',['max_beep_volume',['../classecl_1_1cs43l22.html#a51b1191c6ac00d3117e3ae1cf0b88484',1,'ecl::cs43l22']]],
   ['max_5fheadphone_5fvolume',['max_headphone_volume',['../classecl_1_1cs43l22.html#a6945a4512f5dc46d098bfb2b1df3fafd',1,'ecl::cs43l22']]],
   ['max_5fmaster_5fvolume',['max_master_volume',['../classecl_1_1cs43l22.html#a3735e2d2a511658b743eccd3392a0f6b',1,'ecl::cs43l22']]],
@@ -34,7 +35,7 @@ var searchData=
   ['mgmt_5fconfigurator',['mgmt_configurator',['../classecl_1_1mgmt__configurator.html',1,'ecl']]],
   ['mgmt_5fconfigurator_3c_20dev_2c_20adc_5fmgmt_5fmode_3a_3adma_20_3e',['mgmt_configurator&lt; dev, adc_mgmt_mode::dma &gt;',['../classecl_1_1mgmt__configurator_3_01dev_00_01adc__mgmt__mode_1_1dma_01_4.html',1,'ecl']]],
   ['mgmt_5fconfigurator_3c_20dev_2c_20adc_5fmgmt_5fmode_3a_3airq_20_3e',['mgmt_configurator&lt; dev, adc_mgmt_mode::irq &gt;',['../classecl_1_1mgmt__configurator_3_01dev_00_01adc__mgmt__mode_1_1irq_01_4.html',1,'ecl']]],
-  ['mgtm_5fmode',['mgtm_mode',['../structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a2c403c7d151887edb84a0e7073e3db08',1,'ecl::adc_cfg&lt; adc_dev::dev1 &gt;']]],
+  ['mgtm_5fmode',['mgtm_mode',['../structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a0245b324434f624d0b832ccfd906e6db',1,'ecl::adc_cfg&lt; adc_dev::dev1 &gt;']]],
   ['min_5fmoisture',['min_moisture',['../namespaceecl_1_1sensor_1_1fc28__defs.html#a83b2d6a269c49201a58c9ad87ff981a4',1,'ecl::sensor::fc28_defs']]],
   ['mlink',['mlink',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a4ef70f202a26fb70670ea583ab190651',1,'ecl']]],
   ['mmfar',['MMFAR',['../structSCB__Type.html#ac49b24b3f222508464f111772f2c44dd',1,'SCB_Type']]],
@@ -52,7 +53,7 @@ var searchData=
   ['mock_5ftype2',['mock_type2',['../structmock__type2.html',1,'']]],
   ['mock_5ftype3',['mock_type3',['../structmock__type3.html',1,'']]],
   ['mock_5ftype4',['mock_type4',['../structmock__type4.html',1,'']]],
-  ['mode',['mode',['../structpin__info.html#ab05ac4b041bdb1441c6edf8fb6e0c74f',1,'pin_info::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#a7f5f3641659bb253278faa35a925fa41',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#ab30f7a221a03a92e2fb88d87f2591065',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::mode()']]],
+  ['mode',['mode',['../structpin__info.html#ab05ac4b041bdb1441c6edf8fb6e0c74f',1,'pin_info::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#ad07519a4149ecd5c0d35b54fb5497861',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::mode()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#ac35857861cde34d06da52d55ed432b98',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::mode()']]],
   ['moisture_5ftype',['moisture_type',['../namespaceecl_1_1sensor_1_1fc28__defs.html#a4f1590ee21100fe42e2d67b989ae3a79',1,'ecl::sensor::fc28_defs']]],
   ['more_5fthan_5fblock',['more_than_block',['../structmore__than__block.html',1,'']]],
   ['mount',['mount',['../classfs_1_1fs__descriptor.html#ac5cd5d45bcc462f85c7f31a5e8a96de7',1,'fs::fs_descriptor::mount()'],['../classfat_1_1petit.html#a3f63cf5088369731ca186136d98f5004',1,'fat::petit::mount()']]],
@@ -85,5 +86,5 @@ var searchData=
   ['mutex',['mutex',['../classecl_1_1mutex.html',1,'ecl']]],
   ['mutex',['mutex',['../classecl_1_1mutex.html#afb310ef41a313dd18988c88c59d8c8c5',1,'ecl::mutex::mutex()'],['../classecl_1_1mutex.html#a0c382d447f65ae3c86759548ae7c923c',1,'ecl::mutex::mutex(const mutex &amp;)=delete'],['../classecl_1_1mutex.html#a7e83ee6c5190ea95a7750054233278b6',1,'ecl::mutex::mutex()=default'],['../classecl_1_1mutex.html#a0c382d447f65ae3c86759548ae7c923c',1,'ecl::mutex::mutex(const mutex &amp;)=delete'],['../classecl_1_1mutex.html#afb310ef41a313dd18988c88c59d8c8c5',1,'ecl::mutex::mutex()'],['../classecl_1_1mutex.html#a0c382d447f65ae3c86759548ae7c923c',1,'ecl::mutex::mutex(const mutex &amp;)=delete']]],
   ['my_5fptr',['my_ptr',['../classfs_1_1inode.html#a9856a868037409f68825dcdd9dcf1b0f',1,'fs::inode']]],
-  ['my_5fuart',['my_uart',['../namespaceecl.html#a87866cb5482c208d188bc2a281790ad2',1,'ecl']]]
+  ['my_5fuart',['my_uart',['../namespaceecl.html#ad00083420fcc845363f037c17d58ebe1',1,'ecl']]]
 ];

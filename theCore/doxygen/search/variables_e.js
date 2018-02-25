@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parity',['parity',['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#acdeb4113e86c0752531dd757ee5913d1',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::parity()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#afaf6af09e92c3c65dbccd450b3e269ce',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::parity()']]],
+  ['parity',['parity',['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#aefc8080a92d1e8e6cf0ffe339289f157',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::parity()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#afc532b908ae44d9910cfd230001f5f9c',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::parity()']]],
   ['particle_5ftmr',['particle_tmr',['../particle__electron_2platform_8cpp.html#ac520f2979ba833a333e805699798e95f',1,'platform.cpp']]],
   ['pcsr',['PCSR',['../structDWT__Type.html#a6353ca1d1ad9bc1be05d3b5632960113',1,'DWT_Type']]],
   ['pfr',['PFR',['../structSCB__Type.html#a3f51c43f952f3799951d0c54e76b0cb7',1,'SCB_Type']]],

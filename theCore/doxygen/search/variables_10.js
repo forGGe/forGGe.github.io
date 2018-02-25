@@ -16,7 +16,7 @@ var searchData=
   ['started',['started',['../structtest__arg.html#a76440d4cab603dc2f91e61ed02042e4d',1,'test_arg']]],
   ['started_5ftr',['started_tr',['../thread__unit_8cpp.html#a1301b5969db66187ab9e21cecd1645d7',1,'thread_unit.cpp']]],
   ['started_5ftr_5fjoined_5for_5fdetached',['started_tr_joined_or_detached',['../thread__unit_8cpp.html#a3453ac689c227d3e6088872dd30dc81a',1,'thread_unit.cpp']]],
-  ['stop_5fbit',['stop_bit',['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#ae14a9b2b0688a955e62f488f72497d6e',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::stop_bit()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#a2708ce0183925321badab09cff34e643',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::stop_bit()']]],
+  ['stop_5fbit',['stop_bit',['../structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html#a022a32c61f4690a471c17ef86fb28643',1,'ecl::usart_cfg&lt; usart_device::dev3 &gt;::stop_bit()'],['../structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html#a1f0924284e2c737aafdd59cd365a07aa',1,'ecl::usart_cfg&lt; usart_device::dev1 &gt;::stop_bit()']]],
   ['storage',['storage',['../namespaceecl.html#a8b2b8867aa750a7e54b14840bece20bd',1,'ecl']]],
   ['stream',['stream',['../structecl_1_1dma__wrap.html#a201a3d97e8d224cc387527108bc57704',1,'ecl::dma_wrap']]],
   ['stream_5finitializer',['stream_initializer',['../namespaceecl.html#aa0d2320951343cd001bc77e588533164',1,'ecl']]],

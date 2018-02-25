@@ -1,0 +1,9 @@
+<map id="ecl::spinlock::spinlock" name="ecl::spinlock::spinlock">
+<area shape="rect" id="node2" href="$classecl_1_1spinlock.html#a59a2476301365a404e7f869a66cc2b91" title="ecl::spinlock::lock" alt="" coords="227,81,365,108"/>
+<area shape="rect" id="node8" href="$classecl_1_1spinlock.html#af43f453b60ff2a150b36d41622d3a3d2" title="ecl::spinlock::unlock" alt="" coords="219,132,373,159"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="421,81,495,108"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="544,5,691,32"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="543,56,692,83"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="547,107,688,133"/>
+<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="544,157,691,184"/>
+</map>

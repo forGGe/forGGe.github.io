@@ -10,7 +10,6 @@ var searchData=
   ['dma_5fwrap_5fbase_3c_20dma_5fwrap_3c_20stream_2c_20channel_20_3e_20_3e',['dma_wrap_base&lt; dma_wrap&lt; Stream, Channel &gt; &gt;',['../classecl_1_1dma__wrap__base.html',1,'ecl']]],
   ['dummy_5fallocator',['dummy_allocator',['../structdummy__allocator.html',1,'']]],
   ['dummy_5fdata',['dummy_data',['../structdummy__data.html',1,'']]],
-  ['dummy_5fplatform_5fbus',['dummy_platform_bus',['../classecl_1_1dummy__platform__bus.html',1,'ecl']]],
   ['dummy_5ftype',['dummy_type',['../structdummy__type.html',1,'']]],
   ['dwt_5ftype',['DWT_Type',['../structDWT__Type.html',1,'']]]
 ];

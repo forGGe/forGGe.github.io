@@ -30,12 +30,5 @@ var searchData=
   ['_5ftimes',['_times',['../stubs_8cpp.html#a246d70ca40ab8628b6ad4fa9337fc726',1,'stubs.cpp']]],
   ['_5funlink',['_unlink',['../stubs_8cpp.html#ad599bf257f9250292653296049317388',1,'stubs.cpp']]],
   ['_5fwait',['_wait',['../stubs_8cpp.html#aeef0c3372d04caa1bcc99fed2ab6ec72',1,'stubs.cpp']]],
-  ['_5fwrite',['_write',['../stubs_8cpp.html#ae35277e3f812d58cf602419b510198d7',1,'stubs.cpp']]],
-  ['adc_5fexample_2ehpp',['adc_example.hpp',['../__static_2generated_2stm32_2adc__example_8hpp.html',1,'']]],
-  ['dma_5fexample_2ehpp',['dma_example.hpp',['../__static_2generated_2stm32_2f4xx_2dma__example_8hpp.html',1,'']]],
-  ['i2c_5fexample_2ehpp',['i2c_example.hpp',['../__static_2generated_2stm32_2i2c__example_8hpp.html',1,'']]],
-  ['i2c_5fexample_2ehpp',['i2c_example.hpp',['../__static_2generated_2particle__electron_2i2c__example_8hpp.html',1,'']]],
-  ['i2s_5fexample_2ehpp',['i2s_example.hpp',['../__static_2generated_2stm32_2i2s__example_8hpp.html',1,'']]],
-  ['uart_5fexample_2ehpp',['uart_example.hpp',['../__static_2generated_2stm32_2uart__example_8hpp.html',1,'']]],
-  ['uart_5fexample_2ehpp',['uart_example.hpp',['../__static_2generated_2tm4c_2uart__example_8hpp.html',1,'']]]
+  ['_5fwrite',['_write',['../stubs_8cpp.html#ae35277e3f812d58cf602419b510198d7',1,'stubs.cpp']]]
 ];

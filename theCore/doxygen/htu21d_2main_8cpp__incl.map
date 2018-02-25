@@ -5,7 +5,7 @@
 <area shape="rect" id="node7" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="500,155,601,181"/>
 <area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="643,304,733,331"/>
 <area shape="rect" id="node10" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="1090,229,1187,256"/>
-<area shape="rect" id="node13" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="931,229,1066,256"/>
+<area shape="rect" id="node13" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="931,229,1066,256"/>
 <area shape="rect" id="node18" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="1607,155,1707,181"/>
 <area shape="rect" id="node23" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="1223,155,1327,181"/>
 <area shape="rect" id="node26" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="1439,155,1583,181"/>

@@ -30,7 +30,6 @@ var hierarchy =
     ] ],
     [ "dummy_allocator< T >", "structdummy__allocator.html", null ],
     [ "dummy_data", "structdummy__data.html", null ],
-    [ "ecl::dummy_platform_bus", "classecl_1_1dummy__platform__bus.html", null ],
     [ "dummy_type", "structdummy__type.html", null ],
     [ "DWT_Type", "structDWT__Type.html", null ],
     [ "ecl::empty_gpio", "structecl_1_1empty__gpio.html", null ],
@@ -126,6 +125,12 @@ var hierarchy =
     [ "ecl::shared_ptr< T >", "classecl_1_1shared__ptr.html", null ],
     [ "ecl::shared_ptr< inode >", "classecl_1_1shared__ptr.html", null ],
     [ "ecl::shared_ptr< path_handle >", "classecl_1_1shared__ptr.html", null ],
+    [ "ecl::spi< ch >", "classecl_1_1spi.html", [
+      [ "ecl::spi_irq_proxy< ch >", "structecl_1_1spi__irq__proxy.html", null ]
+    ] ],
+    [ "ecl::spi_cfg< ch >", "structecl_1_1spi__cfg.html", null ],
+    [ "ecl::spi_cfg< spi_channel::ch1 >", "structecl_1_1spi__cfg_3_01spi__channel_1_1ch1_01_4.html", null ],
+    [ "ecl::spi_cfg< spi_channel::ch3 >", "structecl_1_1spi__cfg_3_01spi__channel_1_1ch3_01_4.html", null ],
     [ "ecl::spi_i2s_bus< dev >", "classecl_1_1spi__i2s__bus.html", null ],
     [ "ecl::spi_i2s_cfg< dev >", "structecl_1_1spi__i2s__cfg.html", null ],
     [ "ecl::spi_i2s_cfg< spi_device::bus3 >", "structecl_1_1spi__i2s__cfg_3_01spi__device_1_1bus3_01_4.html", null ],
@@ -133,9 +138,10 @@ var hierarchy =
     [ "test_arg", "structtest__arg.html", null ],
     [ "test_type", "structtest__type.html", null ],
     [ "tmr_cb", "structtmr__cb.html", null ],
-    [ "ecl::uart_bus< dev >", "classecl_1_1uart__bus.html", [
-      [ "ecl::uart_irq_proxy< dev >", "structecl_1_1uart__irq__proxy.html", null ]
+    [ "ecl::uart< ch >", "classecl_1_1uart.html", [
+      [ "ecl::uart_irq_proxy< ch >", "structecl_1_1uart__irq__proxy.html", null ]
     ] ],
+    [ "ecl::uart_bus< dev >", "classecl_1_1uart__bus.html", null ],
     [ "ecl::usart_bus< dev >", "classecl_1_1usart__bus.html", null ],
     [ "ecl::usart_cfg< dev >", "structecl_1_1usart__cfg.html", null ],
     [ "ecl::usart_cfg< usart_device::dev1 >", "structecl_1_1usart__cfg_3_01usart__device_1_1dev1_01_4.html", null ],

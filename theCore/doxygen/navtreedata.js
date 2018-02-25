@@ -44,17 +44,18 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Findcppcheck_8cpp.html",
-"classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fa405b6318dc47ed2f633ac3c0b5a39b7c",
-"classecl_1_1mutex.html#a0c382d447f65ae3c86759548ae7c923c",
-"classecl_1_1usart__bus.html#a16775c84e30ad3f6866a23f7c4bc09aa",
-"err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a685b0d3a76e4165e5aac689757bd61db",
-"group__stm32__adc.html#ga451f3dfff267033efefac51d348c526e",
-"group__tm4c__irq.html#gad9c53481b0e8421c2bde2e19c9b2301c",
-"list__unit_8cpp.html#a2a9be99f8224003e69eb326b876e2621",
-"platform_2stm32_2export_2platform_2irq_8hpp.html#ga1bdc87f006f254d1b8dde1a2e3c0f720",
-"stm32_2export_2platform_2gpio__device_8hpp.html#gga3d98b43c99b447ff6db9ed3a01c294b9a6c31412de99950f0840e043e01f989ff",
-"structecl_1_1channel__group__exti__trigger.html#aec6d8e37bc53a8bb2e2b3ee0cdb9fa8fac4af5951b6f29bf2882247a85bb85626",
-"title_2__static_2generated_2stm32_2i2c__example_8hpp.html"
+"classecl_1_1cs43l22.html#ac364e0a2548019a7abbd2c7e950193bd",
+"classecl_1_1native__thread.html#a4418d2d0ba17390fb623457f0e1869a5",
+"classecl_1_1uart__bus.html#a57b9a10cd25aea3c21df1ac53747400e",
+"endian_8hpp.html#a5178b25c9a191850db226a0c3c69b57b",
+"globals_w.html",
+"group__stm32__other.html#ga390c450e83ddc7807da2e9f0a894d8d1",
+"irq_8cpp.html#a217940487ba606a6ab0547583066eaaa",
+"particle__electron_2i2c__example_8hpp.html#abf817ac74941a2989b1c4153a0024318",
+"serial__unit_8cpp.html#ae6d17dd23d4aaa809d2f836e3e0b2460",
+"stm32f4xx__dma__wrap_8hpp.html#aa64cb1862e59e9d83260706f9255063eae26fd7c8b4fd8eafbb9f99a19a1c3701",
+"structecl_1_1usart__cfg_3_01usart__device_1_1dev3_01_4.html",
+"usart__bus_8hpp.html#gga88d590d9b882163efaf3c24ac3ff54e2af77648e5d3e027222417fcba0f7291cb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

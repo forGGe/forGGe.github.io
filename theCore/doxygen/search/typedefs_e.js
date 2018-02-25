@@ -10,6 +10,8 @@ var searchData=
   ['serial_5fmock_5finst',['serial_mock_inst',['../hm10__unit_8cpp.html#a46422b26eeea206c2dee8486f2638e18',1,'hm10_unit.cpp']]],
   ['serial_5ft',['serial_t',['../serial__unit_8cpp.html#a19969c867eed74de90d3f021ff6879eb',1,'serial_unit.cpp']]],
   ['spi1',['spi1',['../namespaceecl_1_1test.html#a41a782015902d9abc8e28352c78853c5',1,'ecl::test']]],
+  ['spi_5f1_5fdriver',['spi_1_driver',['../group__tm4c__templates.html#gaef5d47ec662cbc257b160245a34ad55b',1,'ecl']]],
+  ['spi_5f3_5fdriver',['spi_3_driver',['../group__tm4c__templates.html#ga54779a58217f12a14299c35b819978f1',1,'ecl']]],
   ['spi_5fi2s2',['spi_i2s2',['../namespaceecl_1_1test.html#acc2e91534f7ac171dcf77064ec1530ab',1,'ecl::test']]],
   ['spi_5fi2s3',['spi_i2s3',['../namespaceecl_1_1test.html#a06320befb1a0ad66b35d575557482ab0',1,'ecl::test']]]
 ];

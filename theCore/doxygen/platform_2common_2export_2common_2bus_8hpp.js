@@ -1,6 +1,5 @@
 var platform_2common_2export_2common_2bus_8hpp =
 [
-    [ "dummy_platform_bus", "classecl_1_1dummy__platform__bus.html", "classecl_1_1dummy__platform__bus" ],
     [ "bus_handler", "platform_2common_2export_2common_2bus_8hpp.html#ac1d657f13504c88de2aa1f36963fc64f", null ],
     [ "async_type", "platform_2common_2export_2common_2bus_8hpp.html#aca4194795dab8d7b9cdafce56172d9ce", [
       [ "deferred", "platform_2common_2export_2common_2bus_8hpp.html#aca4194795dab8d7b9cdafce56172d9cea43fff3df3fc0b3417c86dc3040fb2d86", null ],

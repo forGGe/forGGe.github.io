@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['uart',['uart',['../classecl_1_1uart.html#a74aeb7538e07a4afd0f4914820270eda',1,'ecl::uart']]],
   ['uart0_5fhandler',['UART0_Handler',['../irq_8in_8cpp.html#a0ea8a7ef7c550f391d37887e477b4b45',1,'irq.in.cpp']]],
   ['uart1_5fhandler',['UART1_Handler',['../irq_8in_8cpp.html#a3223b33ea7a47c29abdd4b9e0f0d80ed',1,'irq.in.cpp']]],
   ['uart2_5fhandler',['UART2_Handler',['../irq_8in_8cpp.html#a9a5772e5d7bdd25d107ce832ed76582c',1,'irq.in.cpp']]],
@@ -8,7 +9,7 @@ var searchData=
   ['uart5_5fhandler',['UART5_Handler',['../irq_8in_8cpp.html#a87659aeddc988f84ce7b6802ed901ef7',1,'irq.in.cpp']]],
   ['uart6_5fhandler',['UART6_Handler',['../irq_8in_8cpp.html#a009faa7586c26208e97028de74e00cd5',1,'irq.in.cpp']]],
   ['uart7_5fhandler',['UART7_Handler',['../irq_8in_8cpp.html#a23313da0fb4777d453b23607fe4f8492',1,'irq.in.cpp']]],
-  ['uart_5fbus',['uart_bus',['../classecl_1_1uart__bus.html#a63878607a5c02ba2998465b114411724',1,'ecl::uart_bus::uart_bus()=delete'],['../classecl_1_1uart__bus.html#a57b9a10cd25aea3c21df1ac53747400e',1,'ecl::uart_bus::uart_bus(uart_bus &amp;)=delete'],['../classecl_1_1uart__bus.html#a0396aaadb97ea0c663acdfd0c0792e12',1,'ecl::uart_bus::uart_bus(const uart_bus &amp;)=delete']]],
+  ['uart_5fbus',['uart_bus',['../classecl_1_1uart__bus.html#a63878607a5c02ba2998465b114411724',1,'ecl::uart_bus::uart_bus()=delete'],['../classecl_1_1uart__bus.html#a57b9a10cd25aea3c21df1ac53747400e',1,'ecl::uart_bus::uart_bus(uart_bus &amp;)=delete']]],
   ['udma_5fhandler',['UDMA_Handler',['../irq_8in_8cpp.html#a47e05a4a2d927fd60946d6ea6d136e69',1,'irq.in.cpp']]],
   ['udmaerr_5fhandler',['UDMAERR_Handler',['../irq_8in_8cpp.html#aec2061649fae6d6698878d623286a0d6',1,'irq.in.cpp']]],
   ['unique',['unique',['../classecl_1_1shared__ptr.html#a66d3ac7c084a28eced61d643f4d767a8',1,'ecl::shared_ptr']]],

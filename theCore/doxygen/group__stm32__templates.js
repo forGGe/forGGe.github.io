@@ -1,10 +1,10 @@
 var group__stm32__templates =
 [
     [ "stm32/templates/pin_mux.in.cpp", "stm32_2templates_2pin__mux_8in_8cpp.html", null ],
-    [ "_static/generated/stm32/adc_example.hpp", "__static_2generated_2stm32_2adc__example_8hpp.html", null ],
-    [ "_static/generated/stm32/i2c_example.hpp", "__static_2generated_2stm32_2i2c__example_8hpp.html", null ],
-    [ "_static/generated/stm32/i2s_example.hpp", "__static_2generated_2stm32_2i2s__example_8hpp.html", null ],
-    [ "_static/generated/stm32/uart_example.hpp", "__static_2generated_2stm32_2uart__example_8hpp.html", null ],
+    [ "adc_example.hpp", "adc__example_8hpp.html", null ],
+    [ "stm32/i2c_example.hpp", "stm32_2i2c__example_8hpp.html", null ],
+    [ "i2s_example.hpp", "i2s__example_8hpp.html", null ],
+    [ "stm32/uart_example.hpp", "stm32_2uart__example_8hpp.html", null ],
     [ "stm32/family/templates/defines.in.hpp", "stm32_2family_2templates_2defines_8in_8hpp.html", null ],
     [ "adc_cfg.in.hpp", "adc__cfg_8in_8hpp.html", null ],
     [ "stm32/templates/defines.in.hpp", "stm32_2templates_2defines_8in_8hpp.html", null ],
@@ -25,15 +25,14 @@ var group__stm32__templates =
     ] ],
     [ "adc_cfg< adc_dev::dev1 >", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html", [
       [ "dma", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#ab1e73403c303acdd981004b4963fb342", null ],
-      [ "dma", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#ab1e73403c303acdd981004b4963fb342", null ],
-      [ "mgtm_mode", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a2c403c7d151887edb84a0e7073e3db08", null ]
+      [ "mgtm_mode", "structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#a0245b324434f624d0b832ccfd906e6db", null ]
     ] ],
     [ "stm32", "group__stm32__templates.html#ga09973e626495ad8ce90f49300a7078ca", null ],
-    [ "ADC1_driver", "group__stm32__templates.html#ga9a1677c096e2b35ce3e3c56b6bcb761a", null ],
-    [ "example_adc", "group__stm32__templates.html#gadd4ea4562d467951611af4207b54f1ff", null ],
-    [ "i2c1", "group__stm32__templates.html#ga18ae8c5b0dcc0bb87434359e0da47121", null ],
-    [ "I2C1_driver", "group__stm32__templates.html#gae39fc466364c58f9acecbd3c975c9451", null ],
-    [ "I2C1_driver_cfg", "group__stm32__templates.html#gafb35f120a2fc7083c3dd4f330797f7c4", null ],
-    [ "test_channels", "group__stm32__templates.html#gabc6b95db3b46903ba5a3745eb51e3460", null ],
+    [ "ADC1_driver", "group__stm32__templates.html#gaa844cf5ed9d6788988dacc48a81d86d3", null ],
+    [ "example_adc", "group__stm32__templates.html#gaaedc6f548d58803fcc3520a062d43279", null ],
+    [ "i2c1", "group__stm32__templates.html#gad9dea5c09ac3fd3c6c6dbd4a07061dd1", null ],
+    [ "I2C1_driver", "group__stm32__templates.html#ga53b63268a621f8dc4724b902683e34b3", null ],
+    [ "I2C1_driver_cfg", "group__stm32__templates.html#ga27e2c65df8926974b3d12f09499db39e", null ],
+    [ "test_channels", "group__stm32__templates.html#ga07f96814e248f89d324cc29a451ef1d5", null ],
     [ "gpio_init_generated", "group__stm32__templates.html#ga3fe15c42dce5b9ef9201bfb60bccaf38", null ]
 ];

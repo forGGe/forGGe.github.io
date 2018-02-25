@@ -2142,7 +2142,34 @@ string, suitable for C/C++ comments.</li>
 23
 24
 25
-26</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+<span class="p">{</span>
+
+<span class="c1">//! \addtogroup platform Platform defintions and drivers</span>
+<span class="c1">//! @{</span>
+
+<span class="c1">//! \addtogroup stm32 STM32 multi-platform</span>
+<span class="c1">//! @{</span>
+
+<span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
 <span class="c1">//! @{</span>
 
 
@@ -2168,6 +2195,15 @@ string, suitable for C/C++ comments.</li>
 
 
 <span class="k">using</span> <span class="n">test_channels</span> <span class="o">=</span> <span class="n">channel_group_sw_trigger</span><span class="o">&lt;</span><span class="n">adc_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">,</span> <span class="n">adc_channel</span><span class="o">::</span><span class="n">ch16</span><span class="o">&gt;</span><span class="p">;</span>
+
+
+<span class="c1">//! @}</span>
+
+<span class="c1">//! @}</span>
+
+<span class="c1">//! @}</span>
+
+<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/adc_example.hpp">Full STM32 ADC example header</a></p>
@@ -2259,7 +2295,9 @@ driver instance in C++. Must be valid C++ identifier.</li>
 <li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes a driver purpose. Must be valid
 string, suitable for C/C++ comments.</li>
 </ul>
-<p>Example configuration:</p>
+</div>
+<div class="section" id="id6">
+<h5>Example configuration<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -2295,7 +2333,9 @@ string, suitable for C/C++ comments.</li>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
-<p>Example output:</p>
+</div>
+<div class="section" id="example-output">
+<h5>Example output<a class="headerlink" href="#example-output" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -2315,7 +2355,33 @@ string, suitable for C/C++ comments.</li>
 17
 18
 19
-20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+<span class="p">{</span>
+
+<span class="c1">//! \addtogroup platform Platform defintions and drivers</span>
+<span class="c1">//! @{</span>
+
+<span class="c1">//! \addtogroup stm32 STM32 multi-platform</span>
+<span class="c1">//! @{</span>
+
+<span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
 <span class="c1">//! @{</span>
 
 <span class="c1">// I2C configuration -----------------------------------------------------------</span>
@@ -2335,12 +2401,20 @@ string, suitable for C/C++ comments.</li>
 
 <span class="k">using</span> <span class="n">I2C1_driver</span> <span class="o">=</span> <span class="n">i2c_bus</span><span class="o">&lt;</span><span class="n">I2C1_driver_cfg</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="k">using</span> <span class="n">i2c1</span> <span class="o">=</span> <span class="n">I2C1_driver</span><span class="p">;</span>
+
+<span class="c1">//! @}</span>
+
+<span class="c1">//! @}</span>
+
+<span class="c1">//! @}</span>
+
+<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/i2c_example.hpp">Full STM32 I2C example header</a></p>
 </div>
-<div class="section" id="id6">
-<h5>Usage<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id7">
+<h5>Usage<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h5>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction</p>
@@ -2349,8 +2423,8 @@ string, suitable for C/C++ comments.</li>
 </div>
 <div class="section" id="i2s">
 <h4>I2S<a class="headerlink" href="#i2s" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="id7">
-<h5>JSON schema<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id8">
+<h5>JSON schema<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -2395,8 +2469,8 @@ string, suitable for C/C++ comments.</li>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="id8">
-<h5>Properties<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id9">
+<h5>Properties<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">id</span></code> - I2S periphery ID, named after identifier found in <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>.
 Examples are: <code class="docutils literal"><span class="pre">I2S</span></code> or <code class="docutils literal"><span class="pre">I2S</span></code>.
@@ -2419,7 +2493,7 @@ string, suitable for C/C++ comments.</li>
 </ul>
 </div>
 <div class="section" id="stm32-i2s-example">
-<span id="id9"></span><h5>Example configuration<a class="headerlink" href="#stm32-i2s-example" title="Permalink to this headline">¶</a></h5>
+<span id="id10"></span><h5>Example configuration<a class="headerlink" href="#stm32-i2s-example" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -2556,8 +2630,8 @@ string, suitable for C/C++ comments.</li>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/stm32/i2s_example.hpp">Full STM32 I2S example header</a></p>
 </div>
-<div class="section" id="id10">
-<h5>Usage<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id11">
+<h5>Usage<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction</p>
@@ -2648,8 +2722,8 @@ Refer to the <a class="reference internal" href="#stm32-rm"><span class="std std
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="id11">
-<h5>Properties<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id12">
+<h5>Properties<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">num</span></code> - DMA number. There are 2 DMAs on STM32F4. There are two DMA controllers in STM32F4.
 Refer to the section <em>10. DMA controller (DMA)</em> of the <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>
@@ -2668,8 +2742,8 @@ for examples.</li>
 string, suitable for C/C++ comments.</li>
 </ul>
 </div>
-<div class="section" id="id12">
-<h5>Example configuration<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id13">
+<h5>Example configuration<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -2716,8 +2790,8 @@ string, suitable for C/C++ comments.</li>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="example-output">
-<h5>Example output<a class="headerlink" href="#example-output" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id14">
+<h5>Example output<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -2864,7 +2938,8 @@ placed under <code class="docutils literal"><span class="pre">platform/tm4c/sche
 13
 14
 15
-16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+16
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
 
     <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
@@ -2874,6 +2949,7 @@ placed under <code class="docutils literal"><span class="pre">platform/tm4c/sche
 
         <span class="nt">&quot;systmr_cfg&quot;</span><span class="p">:</span>     <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:systmr.schema.json&quot;</span> <span class="p">},</span>
         <span class="nt">&quot;uart&quot;</span><span class="p">:</span>           <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:uart.schema.json&quot;</span> <span class="p">},</span>
+        <span class="nt">&quot;spi&quot;</span><span class="p">:</span>            <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:spi.schema.json&quot;</span> <span class="p">},</span>
         <span class="nt">&quot;pinmux&quot;</span><span class="p">:</span>         <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:pinmux.schema.json&quot;</span> <span class="p">},</span>
         <span class="nt">&quot;gpio_alias&quot;</span><span class="p">:</span>     <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:gpio_alias.schema.json&quot;</span> <span class="p">}</span>
     <span class="p">},</span>
@@ -2921,8 +2997,7 @@ Proceed to the <a class="reference internal" href="#tm4c-multiplexing">TM4C Mult
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/export/aux/execution.hpp</span></code>
-<code class="docutils literal"><span class="pre">platform/tm4c/export/aux/execution.hpp</span></code></td>
+<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/export/aux/execution.hpp</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -2996,7 +3071,7 @@ Proceed to the <a class="reference internal" href="#tm4c-multiplexing">TM4C Mult
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/export/aux/uart_bus.hpp</span></code></td>
+<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/export/aux/uart.hpp</span></code></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/templates/uart_cfg.in.hpp</span></code></td>
 </tr>
@@ -3100,18 +3175,18 @@ Proceed to the <a class="reference internal" href="#tm4c-multiplexing">TM4C Mult
 
 
 <span class="cm">/* UART-over-USB console output */</span>
-<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_device</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_device</span><span class="o">::</span><span class="n">dev0</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart_bus</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch0</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
 
 <span class="cm">/* Example UART */</span>
-<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_device</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_device</span><span class="o">::</span><span class="n">dev1</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart_bus</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
 
 
 <span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
-<p><a class="reference external" href="_static/generated/tm4c/uart_example.hpp">Full TM4C UART example header</a></p>
+<p><a class="reference external" href="../_static/generated/tm4c/uart_example.hpp">Full TM4C UART example header</a></p>
 </div>
 <div class="section" id="console">
 <h5>Console<a class="headerlink" href="#console" title="Permalink to this headline">¶</a></h5>
@@ -3153,6 +3228,224 @@ library.</p>
 </div>
 </div>
 </div>
+<div class="section" id="ssi-spi">
+<h4>SSI / SPI<a class="headerlink" href="#ssi-spi" title="Permalink to this headline">¶</a></h4>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/export/aux/spi.hpp</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/tm4c/templates/spi.in.hpp</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="known-limitations">
+<h5>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li>theCore SPI driver for TM4C can work only in master mode.
+See <a class="reference external" href="https://github.com/forGGe/theCore/issues/361">issue #361</a>.</li>
+<li>SPI clock is not yet configurable in the driver and it is set to a
+fraction of the system clock: <code class="docutils literal"><span class="pre">spi_clock</span> <span class="pre">=</span> <span class="pre">system_clock</span> <span class="pre">/</span> <span class="pre">4</span></code>.
+See <a class="reference external" href="https://github.com/forGGe/theCore/issues/360">issue #360</a>.</li>
+<li>Only Motorola SPI modes are supported, though datasheet lists more than that.
+See <a class="reference external" href="https://github.com/forGGe/theCore/issues/362">issue #362</a>.</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h5>JSON schema<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
+
+    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+
+        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^SPI\\d$&quot;</span> <span class="p">},</span>
+            <span class="nt">&quot;alias&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>  <span class="p">},</span>
+            <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span>  <span class="p">},</span>
+
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;master&quot;</span> <span class="p">]</span> <span class="p">},</span>
+            <span class="nt">&quot;cpol&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">},</span>
+            <span class="nt">&quot;cpha&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">}</span>
+        <span class="p">},</span>
+
+        <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;cpol&quot;</span><span class="p">,</span> <span class="s2">&quot;cpha&quot;</span> <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id5">
+<h5>Example configuration<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;tm4c&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;spi&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI1&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;cpol&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;cpha&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI1 instance&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;cpol&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;cpha&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3 instance&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;test_spi&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id6">
+<h5>Example output<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h5>
+<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+<span class="p">{</span>
+
+<span class="c1">//! \addtogroup platform Platform defintions and drivers</span>
+<span class="c1">//! @{</span>
+
+<span class="c1">//! \addtogroup tm4c Texas Instruments Tiva C TM4C123G platform</span>
+<span class="c1">//! @{</span>
+
+<span class="c1">//! \defgroup tm4c_templates Auto-generated code, Python COG and CMake templates.</span>
+<span class="c1">//! @{</span>
+
+
+<span class="c1">// SPI configuration -----------------------------------------------------------</span>
+
+<span class="cm">/* SPI1 instance */</span>
+
+<span class="k">template</span><span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <span class="n">spi_cfg</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+<span class="p">};</span>
+
+
+<span class="k">using</span> <span class="n">spi_1_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="cm">/* SPI3 instance */</span>
+
+<span class="k">template</span><span class="o">&lt;&gt;</span>
+<span class="k">struct</span> <span class="n">spi_cfg</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">high</span><span class="p">;</span>
+<span class="p">};</span>
+
+
+<span class="k">using</span> <span class="n">spi_3_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">test_spi</span> <span class="o">=</span> <span class="n">spi_3_driver</span><span class="p">;</span>
+
+<span class="c1">//! @}</span>
+
+<span class="c1">//! @}</span>
+
+<span class="c1">//! @}</span>
+
+<span class="p">}</span> <span class="c1">// namespace ecl</span>
+</pre></div>
+</td></tr></table></div>
+<p><a class="reference external" href="../_static/generated/tm4c/spi_example.hpp">Full TM4C SPI example header</a></p>
+</div>
+</div>
 <div class="section" id="pin-multiplexing">
 <span id="tm4c-multiplexing"></span><h4>Pin multiplexing<a class="headerlink" href="#pin-multiplexing" title="Permalink to this headline">¶</a></h4>
 <table class="docutils field-list" frame="void" rules="none">
@@ -3165,8 +3458,8 @@ library.</p>
 </tr>
 </tbody>
 </table>
-<div class="section" id="id4">
-<h5>JSON schema<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id7">
+<h5>JSON schema<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -3227,8 +3520,8 @@ library.</p>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="id5">
-<h5>Example configuration<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id8">
+<h5>Example configuration<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -3271,8 +3564,8 @@ library.</p>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="id6">
-<h5>Example output<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id9">
+<h5>Example output<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -3313,10 +3606,12 @@ library.</p>
 38
 39
 40
-41</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">extern</span> <span class="s">&quot;C&quot;</span> <span class="kt">void</span> <span class="n">gpio_init_generated</span><span class="p">()</span>
+41
+42</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">extern</span> <span class="s">&quot;C&quot;</span> <span class="kt">void</span> <span class="n">gpio_init_generated</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">enable_periph</span><span class="o">&lt;</span><span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">port</span><span class="o">::</span><span class="n">a</span><span class="o">&gt;</span><span class="p">();</span>
     <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">enable_periph</span><span class="o">&lt;</span><span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">port</span><span class="o">::</span><span class="n">f</span><span class="o">&gt;</span><span class="p">();</span>
+
 
     <span class="cm">/* LED pins */</span>
 
@@ -3340,6 +3635,7 @@ library.</p>
             <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">strength</span><span class="o">::</span><span class="n">i2ma</span>
         <span class="p">);</span>
 
+
     <span class="cm">/* UART0 console pins */</span>
 
     <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">apply_cfg</span><span class="o">&lt;</span><span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">port</span><span class="o">::</span><span class="n">a</span><span class="p">,</span> <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">num</span><span class="o">::</span><span class="n">pin0</span><span class="o">&gt;</span><span class="p">(</span>
@@ -3353,13 +3649,12 @@ library.</p>
             <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">dir</span><span class="o">::</span><span class="n">hw</span><span class="p">,</span>
             <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">pad_type</span><span class="o">::</span><span class="n">push_pull</span><span class="p">,</span>
             <span class="n">ecl</span><span class="o">::</span><span class="n">gpio_hw</span><span class="o">::</span><span class="n">strength</span><span class="o">::</span><span class="n">i2ma</span>
-        <span class="p">);</span>
 </pre></div>
 </td></tr></table></div>
-<p><a class="reference external" href="_static/generated/tm4c/pin_mux_example.cpp">Full TM4C GPIO pin multiplexing source file</a></p>
+<p><a class="reference external" href="../_static/generated/tm4c/pin_mux_example.cpp">Full TM4C GPIO pin multiplexing source file</a></p>
 </div>
-<div class="section" id="id7">
-<h5>Usage<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id10">
+<h5>Usage<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h5>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction</p>
@@ -3378,8 +3673,8 @@ library.</p>
 </tr>
 </tbody>
 </table>
-<div class="section" id="id8">
-<h5>JSON schema<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id11">
+<h5>JSON schema<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -3414,8 +3709,8 @@ library.</p>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="id9">
-<h5>Example configuration<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id12">
+<h5>Example configuration<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -3462,8 +3757,8 @@ library.</p>
 </pre></div>
 </td></tr></table></div>
 </div>
-<div class="section" id="id10">
-<h5>Example output<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id13">
+<h5>Example output<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h5>
 <div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -3491,10 +3786,10 @@ library.</p>
 <span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
-<p><a class="reference external" href="_static/generated/tm4c/gpio_alias_example.hpp">Full TM4C GPIO alias example header</a></p>
+<p><a class="reference external" href="../_static/generated/tm4c/gpio_alias_example.hpp">Full TM4C GPIO alias example header</a></p>
 </div>
-<div class="section" id="id11">
-<h5>Usage<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h5>
+<div class="section" id="id14">
+<h5>Usage<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h5>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction</p>

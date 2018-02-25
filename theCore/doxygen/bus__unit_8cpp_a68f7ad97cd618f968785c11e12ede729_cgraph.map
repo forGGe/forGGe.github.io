@@ -1,13 +1,13 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#afad22a26f544e4ceed1acf2d36bc058a" title="Inits a bus. " alt="" coords="119,45,275,72"/>
-<area shape="rect" id="node6" href="$classecl_1_1generic__bus.html#abc62668bfb39f7d024cabab8520bd8fb" title="Locks a bus. " alt="" coords="116,125,279,152"/>
-<area shape="rect" id="node11" href="$classecl_1_1generic__bus.html#a9a4d33e14bf412be321861a0e410aba0" title="Unlocks a bus. " alt="" coords="108,180,287,207"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="379,31,461,57"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="571,5,670,32"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="565,56,676,83"/>
-<area shape="rect" id="node7" href="$classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55" title="ecl::mutex::lock" alt="" coords="357,81,483,108"/>
-<area shape="rect" id="node8" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="335,133,505,174"/>
-<area shape="rect" id="node9" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="553,140,688,167"/>
-<area shape="rect" id="node10" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="736,140,916,167"/>
-<area shape="rect" id="node12" href="$classecl_1_1mutex.html#a5a984445165aed9ba9b7ee58de579950" title="ecl::mutex::unlock" alt="" coords="349,199,491,225"/>
+<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#afad22a26f544e4ceed1acf2d36bc058a" title="Inits a bus. " alt="" coords="119,56,275,83"/>
+<area shape="rect" id="node8" href="$classecl_1_1generic__bus.html#abc62668bfb39f7d024cabab8520bd8fb" title="Locks a bus. " alt="" coords="116,107,279,133"/>
+<area shape="rect" id="node12" href="$classecl_1_1generic__bus.html#a9a4d33e14bf412be321861a0e410aba0" title="Unlocks a bus. " alt="" coords="108,5,287,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55" title="ecl::mutex::lock" alt="" coords="357,107,483,133"/>
+<area shape="rect" id="node4" href="$classecl_1_1mutex.html#a5a984445165aed9ba9b7ee58de579950" title="ecl::mutex::unlock" alt="" coords="349,5,491,32"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="379,56,461,83"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="571,81,670,108"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="565,31,676,57"/>
+<area shape="rect" id="node9" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="335,158,505,199"/>
+<area shape="rect" id="node10" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="553,165,688,192"/>
+<area shape="rect" id="node11" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="736,165,916,192"/>
 </map>

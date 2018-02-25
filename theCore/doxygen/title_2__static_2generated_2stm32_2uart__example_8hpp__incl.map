@@ -1,6 +1,0 @@
-<map id="uart_example.hpp" name="uart_example.hpp">
-<area shape="rect" id="node3" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="375,80,516,107"/>
-<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus example interface. " alt="" coords="49,155,183,181"/>
-<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,229,96,256"/>
-<area shape="rect" id="node7" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="259,155,357,181"/>
-</map>

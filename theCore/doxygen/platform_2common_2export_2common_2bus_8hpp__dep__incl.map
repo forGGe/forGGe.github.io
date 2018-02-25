@@ -1,13 +1,15 @@
 <map id="bus.hpp" name="bus.hpp">
 <area shape="rect" id="node2" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="275,80,349,107"/>
-<area shape="rect" id="node11" href="$bus_2export_2dev_2serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="634,80,721,107"/>
-<area shape="rect" id="node12" href="$host_2export_2platform_2console_8hpp.html" title="console.hpp" alt="" coords="745,80,845,107"/>
-<area shape="rect" id="node13" href="$particle__electron_2export_2aux_2i2c__bus_8hpp.html" title="Electron I2C driver. " alt="" coords="869,80,968,107"/>
-<area shape="rect" id="node14" href="$particle__electron_2export_2aux_2uart__bus_8hpp.html" title="Electron UART driver. " alt="" coords="992,80,1099,107"/>
-<area shape="rect" id="node15" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="1123,80,1221,107"/>
-<area shape="rect" id="node22" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="1487,80,1585,107"/>
-<area shape="rect" id="node26" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="2042,80,2155,107"/>
-<area shape="rect" id="node30" href="$tm4c_2export_2aux_2uart__bus_8hpp.html" title="UART implementation for TI TM4C MCU. " alt="" coords="2691,80,2797,107"/>
+<area shape="rect" id="node11" href="$bus_2export_2dev_2serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="718,80,805,107"/>
+<area shape="rect" id="node12" href="$host_2export_2platform_2console_8hpp.html" title="console.hpp" alt="" coords="829,80,929,107"/>
+<area shape="rect" id="node13" href="$particle__electron_2export_2aux_2i2c__bus_8hpp.html" title="Electron I2C driver. " alt="" coords="953,80,1052,107"/>
+<area shape="rect" id="node14" href="$uart__bus_8hpp.html" title="Electron UART driver. " alt="" coords="1076,80,1183,107"/>
+<area shape="rect" id="node17" href="$skel_2export_2aux_2spi_8hpp.html" title="Contains platform driver skeleton for SPI bus. " alt="" coords="1207,80,1276,107"/>
+<area shape="rect" id="node18" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="1300,80,1399,107"/>
+<area shape="rect" id="node24" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="1589,80,1688,107"/>
+<area shape="rect" id="node27" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="1981,80,2094,107"/>
+<area shape="rect" id="node30" href="$tm4c_2export_2aux_2spi_8hpp.html" title="Contains platform driver skeleton for SPI bus. " alt="" coords="2380,80,2449,107"/>
+<area shape="rect" id="node34" href="$uart_8hpp.html" title="UART implementation for TI TM4C MCU. " alt="" coords="2813,80,2889,107"/>
 <area shape="rect" id="node3" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="5,229,109,256"/>
 <area shape="rect" id="node4" href="$platform__bus_8hpp.html" title="platform_bus.hpp" alt="" coords="95,155,231,181"/>
 <area shape="rect" id="node6" href="$cs43l22__audio_2target_8hpp.html" title="target.hpp" alt="" coords="294,229,383,256"/>
@@ -16,22 +18,22 @@
 <area shape="rect" id="node5" href="$serial__unit_8cpp.html" title="serial_unit.cpp" alt="" coords="133,229,251,256"/>
 <area shape="rect" id="node7" href="$cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="297,304,380,331"/>
 <area shape="rect" id="node9" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="433,229,516,256"/>
-<area shape="rect" id="node16" href="$__static_2generated_2particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="544,155,677,181"/>
-<area shape="rect" id="node17" href="$__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="701,155,835,181"/>
-<area shape="rect" id="node18" href="$title_2__static_2generated_2stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="859,155,992,181"/>
-<area shape="rect" id="node19" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="1016,155,1171,181"/>
-<area shape="rect" id="node20" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="1195,155,1307,181"/>
-<area shape="rect" id="node21" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="1331,155,1445,181"/>
-<area shape="rect" id="node23" href="$__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1469,155,1603,181"/>
-<area shape="rect" id="node24" href="$title_2__static_2generated_2stm32_2i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1627,155,1760,181"/>
-<area shape="rect" id="node25" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1784,155,1923,181"/>
-<area shape="rect" id="node27" href="$__static_2generated_2stm32_2uart__example_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="1947,155,2087,181"/>
-<area shape="rect" id="node28" href="$title_2__static_2generated_2stm32_2uart__example_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="2111,155,2251,181"/>
-<area shape="rect" id="node29" href="$stm32_2templates_2uart__cfg_8in_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="2275,155,2394,181"/>
-<area shape="rect" id="node31" href="$serial__example_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="2418,155,2569,181"/>
-<area shape="rect" id="node32" href="$__static_2generated_2tm4c_2uart__example_8hpp.html" title="TM4C UART definitions template. " alt="" coords="2593,155,2733,181"/>
-<area shape="rect" id="node33" href="$serial__cfgs_8in_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="2757,155,2893,181"/>
-<area shape="rect" id="node34" href="$tm4c_2templates_2uart__cfg_8in_8hpp.html" title="TM4C UART definitions template. " alt="" coords="2918,155,3037,181"/>
-<area shape="rect" id="node35" href="$tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for platform BAT test. " alt="" coords="3061,155,3169,181"/>
-<area shape="rect" id="node36" href="$uart__bat_2case_8cpp.html" title="case.cpp" alt="" coords="3075,229,3154,256"/>
+<area shape="rect" id="node15" href="$serial__example_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="543,155,694,181"/>
+<area shape="rect" id="node16" href="$serial__cfgs_8in_8hpp.html" title="Particle Serial drivers configuration template. " alt="" coords="719,155,855,181"/>
+<area shape="rect" id="node19" href="$particle__electron_2i2c__example_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="879,155,1012,181"/>
+<area shape="rect" id="node20" href="$stm32_2i2c__example_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="1036,155,1169,181"/>
+<area shape="rect" id="node21" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="1193,155,1348,181"/>
+<area shape="rect" id="node22" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="1372,155,1484,181"/>
+<area shape="rect" id="node23" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="1509,155,1622,181"/>
+<area shape="rect" id="node25" href="$i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1647,155,1780,181"/>
+<area shape="rect" id="node26" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="1804,155,1943,181"/>
+<area shape="rect" id="node28" href="$stm32_2uart__example_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="1967,155,2107,181"/>
+<area shape="rect" id="node29" href="$stm32_2templates_2uart__cfg_8in_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="2131,155,2250,181"/>
+<area shape="rect" id="node31" href="$spi__example_8hpp.html" title="Header provides template of SPI and spi drivers configuration. " alt="" coords="2275,155,2408,181"/>
+<area shape="rect" id="node32" href="$skel_2templates_2spi__cfg_8in_8hpp.html" title="Header provides template of SPI and spi drivers configuration. " alt="" coords="2432,155,2544,181"/>
+<area shape="rect" id="node33" href="$tm4c_2templates_2spi__cfg_8in_8hpp.html" title="Header provides template of SPI and spi drivers configuration. " alt="" coords="2568,155,2680,181"/>
+<area shape="rect" id="node35" href="$tm4c_2uart__example_8hpp.html" title="TM4C UART definitions template. " alt="" coords="2705,155,2845,181"/>
+<area shape="rect" id="node36" href="$tm4c_2templates_2uart__cfg_8in_8hpp.html" title="TM4C UART definitions template. " alt="" coords="2869,155,2987,181"/>
+<area shape="rect" id="node37" href="$tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for platform BAT test. " alt="" coords="3011,155,3119,181"/>
+<area shape="rect" id="node38" href="$uart__bat_2case_8cpp.html" title="case.cpp" alt="" coords="3026,229,3105,256"/>
 </map>

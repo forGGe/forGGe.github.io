@@ -173,7 +173,6 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 , <a class="el" href="classecl_1_1console__driver.html#a21400e090f94b0c929617773a5076d32">ecl::console_driver</a>
 , <a class="el" href="classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5">ecl::cs43l22&lt; I2c, I2s, Rst_gpio &gt;</a>
 , <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4">ecl::dma_wrap_base&lt; Impl &gt;</a>
-, <a class="el" href="classecl_1_1dummy__platform__bus.html#a61fa5df41b67aeab93380b2574e01f5c">ecl::dummy_platform_bus</a>
 , <a class="el" href="classecl_1_1exti__manager.html#a6691017f3dcc8daea013a8cfe1c31f22">ecl::exti_manager</a>
 , <a class="el" href="classecl_1_1generic__bus.html#afad22a26f544e4ceed1acf2d36bc058a">ecl::generic_bus&lt; PBus &gt;</a>
 , <a class="el" href="structecl_1_1hm10__serial__mock.html#a18662c70da2b2405c66c948fa9fe2f8b">ecl::hm10_serial_mock&lt; Ignored &gt;</a>
@@ -188,8 +187,10 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 , <a class="el" href="classecl_1_1sensor_1_1bh1750.html#a6d75561bac9b083d733b13590532f0ff">ecl::sensor::bh1750&lt; i2c_dev, address &gt;</a>
 , <a class="el" href="classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1">ecl::sensor::htu21d&lt; i2c_dev &gt;</a>
 , <a class="el" href="classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514">ecl::serial&lt; PBus, buf_size &gt;</a>
+, <a class="el" href="classecl_1_1spi.html#acdd26c16bce8ea46e534f8ffba2da4cb">ecl::spi&lt; ch &gt;</a>
 , <a class="el" href="group__stm32__spi__i2s.html#ga6821f8fcb75fbf697d95b22331051887">ecl::spi_i2s_bus&lt; dev &gt;</a>
-, <a class="el" href="classecl_1_1uart__bus.html#a5e48e105104f5af66663e6fb113bc2f1">ecl::uart_bus&lt; dev &gt;</a>
+, <a class="el" href="group__tm4c__uart.html#ga68a1a7c7bdc3806840c269a66e739304">ecl::uart&lt; ch &gt;</a>
+, <a class="el" href="classecl_1_1uart__bus.html#ad03ae2d035ca0886ab2738def4e1443b">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="group__stm32__uart.html#ga5be8474a6bdc544b6d19d7148c8f9b03">ecl::usart_bus&lt; dev &gt;</a>
 , <a class="el" href="classplatform__mock.html#a7cb4cda30626233e6bc4301c5db6c253">platform_mock</a>
 </li>
@@ -197,7 +198,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="structecl_1_1extractor.html#a53b443e1afc484b78df9f5ac7fc7194f">ecl::extractor&lt; chs &gt;</a>
 </li>
 <li>init_obj
-: <a class="el" href="structecl_1_1spi__i2s__cfg_3_01spi__device_1_1bus3_01_4.html#ae05578064effddd990c036fba061d0bb">ecl::spi_i2s_cfg&lt; spi_device::bus3 &gt;</a>
+: <a class="el" href="structecl_1_1spi__i2s__cfg_3_01spi__device_1_1bus3_01_4.html#a299e6c223f48df67d9ed59377254e981">ecl::spi_i2s_cfg&lt; spi_device::bus3 &gt;</a>
 </li>
 <li>inode()
 : <a class="el" href="classfs_1_1inode.html#a77a54edd6d0dd140b501750b74af9e9e">fs::inode</a>
@@ -212,7 +213,10 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="structecl_1_1iostream__initializer.html#a669dc8167304e05a5de66c724d26fd5d">ecl::iostream_initializer</a>
 </li>
 <li>irq_bus_handler()
-: <a class="el" href="group__tm4c__uart.html#gaec426fdfec7a9e0a788cc5ebb5fc700e">ecl::uart_bus&lt; dev &gt;</a>
+: <a class="el" href="group__tm4c__uart.html#ga7ea23810c6832bab5d01a274989bd857">ecl::uart&lt; ch &gt;</a>
+</li>
+<li>irq_handler()
+: <a class="el" href="group__skel__spi.html#gabb137665c484e1604314f023c2531b96">ecl::spi&lt; ch &gt;</a>
 </li>
 <li>irq_port_handler()
 : <a class="el" href="group__tm4c__exti.html#gac72ba729a62f014464b2a1534c9c7779">ecl::exti_manager</a>
@@ -221,7 +225,8 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="classecl_1_1sensor_1_1htu21d.html#a6fbb32e4aeb6aa4073d148ba6221b2f2">ecl::sensor::htu21d&lt; i2c_dev &gt;</a>
 </li>
 <li>is_circular_mode()
-: <a class="el" href="group__stm32__spi__i2s.html#gabfe9ed80c9f9545d7c399757d4cbdec1">ecl::spi_i2s_bus&lt; dev &gt;</a>
+: <a class="el" href="classecl_1_1spi.html#a1fb29d4b2397807db7860efe19f44d29">ecl::spi&lt; ch &gt;</a>
+, <a class="el" href="group__stm32__spi__i2s.html#gabfe9ed80c9f9545d7c399757d4cbdec1">ecl::spi_i2s_bus&lt; dev &gt;</a>
 </li>
 <li>is_heater_enabled()
 : <a class="el" href="classecl_1_1sensor_1_1htu21d.html#a566dc3a89d15af2728fc7a5a18128d5b">ecl::sensor::htu21d&lt; i2c_dev &gt;</a>

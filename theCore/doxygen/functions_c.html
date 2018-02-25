@@ -164,11 +164,12 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="classplatform__mock.html#ab52b668bfc606681490a72fadf88f097">platform_mock</a>
 </li>
 <li>cancel_xfer()
-: <a class="el" href="classecl_1_1dummy__platform__bus.html#a5d2e227bfeea36a9f2b013c48bdf0b94">ecl::dummy_platform_bus</a>
-, <a class="el" href="classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d">ecl::generic_bus&lt; PBus &gt;</a>
+: <a class="el" href="classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d">ecl::generic_bus&lt; PBus &gt;</a>
 , <a class="el" href="classecl_1_1i2c__bus.html#a9d9c17582c3f1f52e7cd278d87a85513">ecl::i2c_bus&lt; dev &gt;</a>
 , <a class="el" href="classecl_1_1platform__console.html#a0c22643cfd17c220a97b45a5ab187757">ecl::platform_console</a>
-, <a class="el" href="classecl_1_1uart__bus.html#a151232494ac50ce0f40ca878fbb479d0">ecl::uart_bus&lt; dev &gt;</a>
+, <a class="el" href="group__tm4c__spi.html#ga4188568a15fe57693da80a4aa805f30a">ecl::spi&lt; ch &gt;</a>
+, <a class="el" href="group__tm4c__uart.html#ga463c27a330fc7935adc5def6ad9a8085">ecl::uart&lt; ch &gt;</a>
+, <a class="el" href="classecl_1_1uart__bus.html#ac4510d42670624724af5e646d935d962">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="group__stm32__uart.html#ga04dbefeb7862766db479088a4d8bfce0">ecl::usart_bus&lt; dev &gt;</a>
 , <a class="el" href="classplatform__mock.html#a1b40f32368833035eee3a25684a7aebe">platform_mock</a>
 </li>
@@ -183,6 +184,7 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 , <a class="el" href="structecl_1_1dma__wrap.html#a7d4c52235eaff0b888a751350649dcec">ecl::dma_wrap&lt; Stream, Channel &gt;</a>
 , <a class="el" href="classecl_1_1i2c__bus.html#a4a0db6894618a4c83ec76bc336c48679">ecl::i2c_bus&lt; dev &gt;</a>
 , <a class="el" href="classecl_1_1platform__console.html#a68ce3ffd1c107d15a22611dd5d3807ac">ecl::platform_console</a>
+, <a class="el" href="classecl_1_1spi.html#a76ea6f8973cdca8e8c1017305f9c3a74">ecl::spi&lt; ch &gt;</a>
 , <a class="el" href="classecl_1_1spi__i2s__bus.html#a4ae08bd76db36d5257fe0e5d348e7129">ecl::spi_i2s_bus&lt; dev &gt;</a>
 , <a class="el" href="classecl_1_1uart__bus.html#aaa68bd0350ca3c3d9e56ac64602a86cc">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="classecl_1_1usart__bus.html#ae6b0e421e0b0532445a8d451e644d97a">ecl::usart_bus&lt; dev &gt;</a>
@@ -234,7 +236,8 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 : <a class="el" href="structtest__arg.html#aba8d731f94d209385d3cfa4c21011b39">test_arg</a>
 </li>
 <li>config
-: <a class="el" href="classecl_1_1spi__i2s__bus.html#af03038b8ad5c90ead1c356037a65d0aa">ecl::spi_i2s_bus&lt; dev &gt;</a>
+: <a class="el" href="classecl_1_1spi.html#ac83c0191b7ec42561f65741ec2bb1e75">ecl::spi&lt; ch &gt;</a>
+, <a class="el" href="classecl_1_1spi__i2s__bus.html#af03038b8ad5c90ead1c356037a65d0aa">ecl::spi_i2s_bus&lt; dev &gt;</a>
 </li>
 <li>conv_num()
 : <a class="el" href="structecl_1_1extractor.html#a25ec1da347d29c09c75edb5f2b76c11c">ecl::extractor&lt; chs &gt;</a>
@@ -245,8 +248,16 @@ $(document).ready(function(){initNavTree('functions_c.html','');});
 <li>CPACR
 : <a class="el" href="structSCB__Type.html#af460b56ce524a8e3534173f0aee78e85">SCB_Type</a>
 </li>
+<li>cpha
+: <a class="el" href="structecl_1_1spi__cfg_3_01spi__channel_1_1ch1_01_4.html#aa1b90ee5aa0cd864a3b3677b782201ef">ecl::spi_cfg&lt; spi_channel::ch1 &gt;</a>
+, <a class="el" href="structecl_1_1spi__cfg_3_01spi__channel_1_1ch3_01_4.html#a0ec2191bc40fff55b647e5977e813c6c">ecl::spi_cfg&lt; spi_channel::ch3 &gt;</a>
+</li>
 <li>CPICNT
 : <a class="el" href="structDWT__Type.html#a2c08096c82abe245c0fa97badc458154">DWT_Type</a>
+</li>
+<li>cpol
+: <a class="el" href="structecl_1_1spi__cfg_3_01spi__channel_1_1ch1_01_4.html#a65a750733478f4b09a56f786ca999ae6">ecl::spi_cfg&lt; spi_channel::ch1 &gt;</a>
+, <a class="el" href="structecl_1_1spi__cfg_3_01spi__channel_1_1ch3_01_4.html#ad2b260f4cd673cbfe35b27f363a85559">ecl::spi_cfg&lt; spi_channel::ch3 &gt;</a>
 </li>
 <li>CPUID
 : <a class="el" href="structSCB__Type.html#afa7a9ee34dfa1da0b60b4525da285032">SCB_Type</a>

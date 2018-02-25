@@ -8,7 +8,7 @@ var searchData=
   ['adc0ss1_5fhandler',['ADC0SS1_Handler',['../irq_8in_8cpp.html#af8cd8ffafd9d509754c9f3bc6d1734dc',1,'irq.in.cpp']]],
   ['adc0ss2_5fhandler',['ADC0SS2_Handler',['../irq_8in_8cpp.html#a0d176fa62741d4a348abfba20810a237',1,'irq.in.cpp']]],
   ['adc0ss3_5fhandler',['ADC0SS3_Handler',['../irq_8in_8cpp.html#aa2ef6610e5f2207f3f2eb2d9c5f375ae',1,'irq.in.cpp']]],
-  ['adc1_5fdriver',['ADC1_driver',['../group__stm32__templates.html#ga9a1677c096e2b35ce3e3c56b6bcb761a',1,'ecl']]],
+  ['adc1_5fdriver',['ADC1_driver',['../group__stm32__templates.html#gaa844cf5ed9d6788988dacc48a81d86d3',1,'ecl']]],
   ['adc1ss0_5fhandler',['ADC1SS0_Handler',['../irq_8in_8cpp.html#a417666757c3420252ce0576e8d7d7368',1,'irq.in.cpp']]],
   ['adc1ss1_5fhandler',['ADC1SS1_Handler',['../irq_8in_8cpp.html#a0bd8c7d659f66d1dcafd8f0094449f30',1,'irq.in.cpp']]],
   ['adc1ss2_5fhandler',['ADC1SS2_Handler',['../irq_8in_8cpp.html#a6350ee89c58ec2f3d2ea4d2a41590a06',1,'irq.in.cpp']]],
@@ -20,6 +20,7 @@ var searchData=
   ['adc_5fdev',['adc_dev',['../namespaceecl.html#a550aeb7836f022d4f537b3f1015a1c03',1,'ecl']]],
   ['adc_5fevent',['adc_event',['../namespaceecl.html#a6ec0377ffa8c54d9437870b727b81dd0',1,'ecl']]],
   ['adc_5fevh',['adc_evh',['../group__stm32__adc.html#gaf39c00c205362618099b25ff2439fe86',1,'ecl']]],
+  ['adc_5fexample_2ehpp',['adc_example.hpp',['../adc__example_8hpp.html',1,'']]],
   ['adc_5firq_5fdispatcher',['adc_irq_dispatcher',['../classecl_1_1adc__irq__dispatcher.html',1,'ecl']]],
   ['adc_5firqn',['adc_irqn',['../namespaceecl.html#ae05f1768dbdcc6b1206b4ea6f89393a2',1,'ecl']]],
   ['adc_5fmgmt_5fmode',['adc_mgmt_mode',['../group__stm32__adc.html#ga52ec44080130fa19c34d0669610600fe',1,'ecl']]],
@@ -60,12 +61,14 @@ var searchData=
   ['async_5ftype',['async_type',['../namespaceecl.html#aca4194795dab8d7b9cdafce56172d9ce',1,'ecl']]],
   ['atexit',['atexit',['../sys_8cpp.html#a7fd89c82095df80e5e12d6b2834a2acc',1,'sys.cpp']]],
   ['audio_5ffrequency',['audio_frequency',['../namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6',1,'ecl::i2s']]],
-  ['aux',['aux',['../classecl_1_1aux.html',1,'ecl']]],
   ['aux',['aux',['../classecl_1_1aux.html#ab9ebb0a39cdcec33cc0f5346c1c498b9',1,'ecl::aux']]],
+  ['aux',['aux',['../classecl_1_1aux.html',1,'ecl']]],
   ['aux_5ftype',['aux_type',['../structecl_1_1shared__allocation__size.html#ab2e7251b155d1da4ee0fa6117f332c6e',1,'ecl::shared_allocation_size']]],
   ['aux_5funit_2ecpp',['aux_unit.cpp',['../aux__unit_8cpp.html',1,'']]],
   ['case_2ecpp',['case.cpp',['../adc__bat_2case_8cpp.html',1,'']]],
   ['execution_2ehpp',['execution.hpp',['../arch_2arm__cm_2export_2arch_2execution_8hpp.html',1,'']]],
+  ['auto_2dgenerated_20code_2c_20python_20cog_20and_20cmake_20templates',['Auto-generated code, Python COG and CMake templates',['../group__skel__templates.html',1,'']]],
   ['adc_20driver',['ADC driver',['../group__stm32__adc.html',1,'']]],
-  ['auto_2dgenerated_20code_2c_20python_20cog_20and_20cmake_20templates',['Auto-generated code, Python COG and CMake templates',['../group__stm32__templates.html',1,'']]]
+  ['auto_2dgenerated_20code_2c_20python_20cog_20and_20cmake_20templates',['Auto-generated code, Python COG and CMake templates',['../group__stm32__templates.html',1,'']]],
+  ['auto_2dgenerated_20code_2c_20python_20cog_20and_20cmake_20templates_2e',['Auto-generated code, Python COG and CMake templates.',['../group__tm4c__templates.html',1,'']]]
 ];

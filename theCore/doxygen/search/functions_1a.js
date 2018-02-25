@@ -36,6 +36,7 @@ var searchData=
   ['_7esemaphore',['~semaphore',['../classecl_1_1semaphore.html#a36e66daf59787bca60ff0faedbaead45',1,'ecl::semaphore']]],
   ['_7eserial',['~serial',['../classecl_1_1serial.html#a84a9ec63d8687dafbc6aee51600c50ec',1,'ecl::serial']]],
   ['_7eshared_5fptr',['~shared_ptr',['../classecl_1_1shared__ptr.html#a8f80bdd0ad12c0179d30233d0f2d2c8b',1,'ecl::shared_ptr']]],
+  ['_7espi',['~spi',['../classecl_1_1spi.html#a8dfbe8fd1e8b6d05750fb94e4036db85',1,'ecl::spi::~spi()=delete'],['../classecl_1_1spi.html#a8dfbe8fd1e8b6d05750fb94e4036db85',1,'ecl::spi::~spi()=delete']]],
   ['_7espi_5fi2s_5fbus',['~spi_i2s_bus',['../classecl_1_1spi__i2s__bus.html#a9e80deb0b78ce90e374d93ad0c261218',1,'ecl::spi_i2s_bus']]],
   ['_7euart_5fbus',['~uart_bus',['../classecl_1_1uart__bus.html#a86491fbdcd82c0a72a95efe6ba323a49',1,'ecl::uart_bus']]],
   ['_7eusart_5fbus',['~usart_bus',['../classecl_1_1usart__bus.html#a31736bdd76682d11a5f5c7aa501569d2',1,'ecl::usart_bus']]],

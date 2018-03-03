@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::platform_console Class Reference</title>
+<title>theCore C++ embedded framework: ecl::platform_console Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -159,7 +159,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using ecl::platform_console::channel =  <a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32a">ecl::bus_channel</a></td>
+          <td class="memname">using <a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32a">ecl::platform_console::channel</a> =  <a class="el" href="namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32a">ecl::bus_channel</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -171,7 +171,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using ecl::platform_console::event =  <a class="el" href="namespaceecl.html#a1712b117c1d0fb5dc2bb612656aacc84">ecl::bus_event</a></td>
+          <td class="memname">using <a class="el" href="namespaceecl.html#a1712b117c1d0fb5dc2bb612656aacc84">ecl::platform_console::event</a> =  <a class="el" href="namespaceecl.html#a1712b117c1d0fb5dc2bb612656aacc84">ecl::bus_event</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,7 +183,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using ecl::platform_console::handler_fn =  <a class="el" href="namespaceecl.html#ac1d657f13504c88de2aa1f36963fc64f">ecl::bus_handler</a></td>
+          <td class="memname">using <a class="el" href="classecl_1_1platform__console.html#a678f0e1fc567d4ccc2ec6ff85ce3fa45">ecl::platform_console::handler_fn</a> =  <a class="el" href="namespaceecl.html#ac1d657f13504c88de2aa1f36963fc64f">ecl::bus_handler</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,68 +191,6 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0c22643cfd17c220a97b45a5ab187757"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> ecl::platform_console::cancel_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cancels xfer. </p>
-<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph.png" border="0" usemap="#classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph" alt=""/></div>
-<map name="classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph" id="classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph">
-<area shape="rect" id="node2" href="group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="216,13,347,39"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="aa51698b855ab358f51ed0e50a95b03c5"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> ecl::platform_console::do_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes xfer, using buffers previously set. </p>
-<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a43369f539f9554c1b6b9406a2ff73d4d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -276,91 +214,6 @@ Here is the call graph for this function:</div>
 
 <p>Lazy initialization. </p>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="afed0d754907aae56f5996755f8c77295"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::platform_console::reset_buffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset xfer buffers. </p>
-<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1platform__console.html#aef904cb3ee2d45ddfdc04e609bb2e4ac" title="Sets tx buffer with given size. ">set_tx()</a> and </dd>
-<dd>
-<a class="el" href="classecl_1_1platform__console.html#a144dd25fc8bdc304a6ebced0143dc197" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8e4ca6a59d970878b6e232b7ef4f9f0c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::platform_console::reset_handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Resets previously set handler. </p>
-
-</div>
-</div>
-<a class="anchor" id="a14947612f8abb7d20ccc3e2db0d96978"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::platform_console::set_handler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classecl_1_1platform__console.html#a678f0e1fc567d4ccc2ec6ff85ce3fa45">handler_fn</a> &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1platform__console.html#a8e4ca6a59d970878b6e232b7ef4f9f0c" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -447,6 +300,154 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a14947612f8abb7d20ccc3e2db0d96978"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::platform_console::set_handler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classecl_1_1platform__console.html#a678f0e1fc567d4ccc2ec6ff85ce3fa45">handler_fn</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets event handler. </p>
+<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1platform__console.html#a8e4ca6a59d970878b6e232b7ef4f9f0c" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afed0d754907aae56f5996755f8c77295"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::platform_console::reset_buffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset xfer buffers. </p>
+<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1platform__console.html#aef904cb3ee2d45ddfdc04e609bb2e4ac" title="Sets tx buffer with given size. ">set_tx()</a> and </dd>
+<dd>
+<a class="el" href="classecl_1_1platform__console.html#a144dd25fc8bdc304a6ebced0143dc197" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e4ca6a59d970878b6e232b7ef4f9f0c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::platform_console::reset_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets previously set handler. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa51698b855ab358f51ed0e50a95b03c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> ecl::platform_console::do_xfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes xfer, using buffers previously set. </p>
+<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c22643cfd17c220a97b45a5ab187757"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> ecl::platform_console::cancel_xfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cancels xfer. </p>
+<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph.png" border="0" usemap="#classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph" alt=""/></div>
+<map name="classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph" id="classecl_1_1platform__console_a0c22643cfd17c220a97b45a5ab187757_cgraph">
+<area shape="rect" id="node2" href="group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="216,13,347,39"/>
+<area shape="rect" id="node3" href="namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="395,13,533,39"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

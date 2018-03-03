@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: pin_info Struct Reference</title>
+<title>theCore C++ embedded framework: pin_info Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -141,38 +141,12 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Struct holding single pin info. Fields are self-explanatory. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="ac659b052b940b1b1eea5eed381761a45"></a>
+<a class="anchor" id="aca66eb362fc611d26d96261c0467c94e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pin_info::af = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pin AF descriptor. Must be set to valid AF SPL value,. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab05ac4b041bdb1441c6edf8fb6e0c74f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GPIOMode_TypeDef pin_info::mode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a70f6a8c439c1db6e8952fa8bfcc84651"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">GPIOOType_TypeDef pin_info::otype</td>
+          <td class="memname">GPIO_TypeDef* pin_info::port</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -191,26 +165,36 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a89652dc490acd5743dd7d3829cb26b0b"></a>
+<a class="anchor" id="ab05ac4b041bdb1441c6edf8fb6e0c74f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t pin_info::pin_src = 0</td>
+          <td class="memname">GPIOMode_TypeDef pin_info::mode</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pinsource for AF mode. Must be set to valid AF pin source SPL value,. </p>
-
 </div>
 </div>
-<a class="anchor" id="aca66eb362fc611d26d96261c0467c94e"></a>
+<a class="anchor" id="a2596f42812f38a7e88e084a19fd8c467"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GPIO_TypeDef* pin_info::port</td>
+          <td class="memname">GPIOSpeed_TypeDef pin_info::speed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70f6a8c439c1db6e8952fa8bfcc84651"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GPIOOType_TypeDef pin_info::otype</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -229,15 +213,31 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2596f42812f38a7e88e084a19fd8c467"></a>
+<a class="anchor" id="ac659b052b940b1b1eea5eed381761a45"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">GPIOSpeed_TypeDef pin_info::speed</td>
+          <td class="memname">uint8_t pin_info::af = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pin AF descriptor. Must be set to valid AF SPL value,. </p>
+
+</div>
+</div>
+<a class="anchor" id="a89652dc490acd5743dd7d3829cb26b0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t pin_info::pin_src = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pinsource for AF mode. Must be set to valid AF pin source SPL value,. </p>
 
 </div>
 </div>

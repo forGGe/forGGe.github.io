@@ -10,7 +10,7 @@ var searchData=
   ['bus_5fpipe',['bus_pipe',['../classecl_1_1bus__pipe.html#a93c6572f961501a837cf6b301aafc0b5',1,'ecl::bus_pipe']]],
   ['bypass_5fconsole_5finit',['bypass_console_init',['../namespaceecl.html#a00441eda816316b4fed2ce0420e83e1a',1,'ecl']]],
   ['bypass_5fgreeting',['bypass_greeting',['../namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0',1,'ecl']]],
-  ['bypass_5finit',['bypass_init',['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl::bypass_init()'],['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl::bypass_init()']]],
+  ['bypass_5finit',['bypass_init',['../namespaceecl.html#a2053fc04d8109974fb1989548e8304d8',1,'ecl']]],
   ['bypass_5fputc',['bypass_putc',['../group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c',1,'ecl']]],
   ['bypass_5fputs',['bypass_puts',['../namespaceecl.html#a60ced95d5969a16195a141f4bcc28067',1,'ecl']]],
   ['bytes_5fleft',['bytes_left',['../classecl_1_1dma__wrap__base.html#a0f6f7bb5bb3c8a7e5cb033f7f8497f22',1,'ecl::dma_wrap_base']]]

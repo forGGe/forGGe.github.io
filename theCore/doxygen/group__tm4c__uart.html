@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: UART driver</title>
+<title>theCore C++ embedded framework: UART driver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -223,111 +223,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga463c27a330fc7935adc5def6ad9a8085"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_channel ch&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::cancel_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cancels xfer. </p>
-<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph.png" border="0" usemap="#group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph" alt=""/></div>
-<map name="group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph" id="group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="212,5,323,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="214,56,321,83"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="gab86c7c05d86de1f032b02549a3173800"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_channel ch&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::do_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes xfer, using buffers previously set. </p>
-<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph.png" border="0" usemap="#group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph" alt=""/></div>
-<map name="group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph" id="group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="185,5,312,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga68a1a7c7bdc3806840c269a66e739304"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_channel ch&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Lazy initialization. </p>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga7ea23810c6832bab5d01a274989bd857"></a>
 <div class="memitem">
 <div class="memproto">
@@ -365,6 +260,203 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="ga68a1a7c7bdc3806840c269a66e739304"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_channel ch&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">err <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lazy initialization. </p>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga96e9bf23b3eb77acb4ffcdfa133274cb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_channel ch&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_rx </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>rx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets rx buffer with given size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">rx</td><td>Buffer to write data to. Optional. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga58b22c0b5d6de627de625dda038e384e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_channel ch&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_tx </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>tx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets tx buffer with given size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">tx</td><td>Buffer to transmit. Optional. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Buffer size. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga383cd87b21fe52806c3538402b9ccfe4"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_channel ch&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_tx </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fill_byte</em> = <code>0xff</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets rx buffer made-up from sequence of similar bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of sequence </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fill_byte</td><td>Byte to fill a sequence. Optional. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5c949bf49e9f93696ec28355162703ca"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_channel ch&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_handler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="namespaceecl.html#ac1d657f13504c88de2aa1f36963fc64f">bus_handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets event handler. </p>
+<p>Handler will be used by the bus, until <a class="el" href="group__tm4c__uart.html#gad49cafee6fa880f9b001ba94b9025527" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -425,7 +517,7 @@ template&lt;uart_channel ch&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga5c949bf49e9f93696ec28355162703ca"></a>
+<a class="anchor" id="gab86c7c05d86de1f032b02549a3173800"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -435,10 +527,9 @@ template&lt;uart_channel ch&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_handler </td>
+          <td class="memname">err <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::do_xfer </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceecl.html#ac1d657f13504c88de2aa1f36963fc64f">bus_handler</a> &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -449,17 +540,22 @@ template&lt;uart_channel ch&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="group__tm4c__uart.html#gad49cafee6fa880f9b001ba94b9025527" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Executes xfer, using buffers previously set. </p>
+<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph.png" border="0" usemap="#group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph" alt=""/></div>
+<map name="group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph" id="group__tm4c__uart_gab86c7c05d86de1f032b02549a3173800_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="185,5,312,32"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
-<a class="anchor" id="ga96e9bf23b3eb77acb4ffcdfa133274cb"></a>
+<a class="anchor" id="ga463c27a330fc7935adc5def6ad9a8085"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -469,21 +565,10 @@ template&lt;uart_channel ch&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_rx </td>
+          <td class="memname">err <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::cancel_xfer </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>rx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -493,104 +578,19 @@ template&lt;uart_channel ch&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Sets rx buffer with given size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">rx</td><td>Buffer to write data to. Optional. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Cancels xfer. </p>
+<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph.png" border="0" usemap="#group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph" alt=""/></div>
+<map name="group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph" id="group__tm4c__uart_ga463c27a330fc7935adc5def6ad9a8085_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="212,5,323,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="214,56,321,83"/>
+</map>
 </div>
-</div>
-<a class="anchor" id="ga383cd87b21fe52806c3538402b9ccfe4"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_channel ch&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_tx </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>fill_byte</em> = <code>0xff</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets rx buffer made-up from sequence of similar bytes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of sequence </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">fill_byte</td><td>Byte to fill a sequence. Optional. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga58b22c0b5d6de627de625dda038e384e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_channel ch&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart.html">ecl::uart</a>&lt; ch &gt;::set_tx </td>
-          <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets tx buffer with given size. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">tx</td><td>Buffer to transmit. Optional. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Buffer size. </td></tr>
-  </table>
-  </dd>
-</dl>
+</p>
 
 </div>
 </div>

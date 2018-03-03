@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: IRQ control</title>
+<title>theCore C++ embedded framework: IRQ control</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -119,8 +119,8 @@ Collaboration diagram for IRQ control:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
-<tr class="memitem:platform_2stm32_2export_2platform_2irq_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="platform_2stm32_2export_2platform_2irq_8hpp.html">platform/stm32/export/platform/irq.hpp</a></td></tr>
-<tr class="memdesc:platform_2stm32_2export_2platform_2irq_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">STM32 IRQ interface. <br /></td></tr>
+<tr class="memitem:stm32_2export_2platform_2irq_8hpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stm32_2export_2platform_2irq_8hpp.html">stm32/export/platform/irq.hpp</a></td></tr>
+<tr class="memdesc:stm32_2export_2platform_2irq_8hpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">STM32 IRQ interface. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1bdc87f006f254d1b8dde1a2e3c0f720"><td class="memItemLeft" align="right" valign="top">static irq_num&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__irq.html#ga1bdc87f006f254d1b8dde1a2e3c0f720">ecl::irq::get_current_irqn</a> ()</td></tr>
 <tr class="memdesc:ga1bdc87f006f254d1b8dde1a2e3c0f720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets current IRQ number.  <a href="group__stm32__irq.html#ga1bdc87f006f254d1b8dde1a2e3c0f720">More...</a><br /></td></tr>
 <tr class="separator:ga1bdc87f006f254d1b8dde1a2e3c0f720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga472287bfc93e3eb21d237bb9c5ecd2d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7">ecl::irq::in_isr</a> ()</td></tr>
+<tr class="memitem:ga472287bfc93e3eb21d237bb9c5ecd2d7"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7">ecl::irq::in_isr</a> ()</td></tr>
 <tr class="memdesc:ga472287bfc93e3eb21d237bb9c5ecd2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a processor is in handler mode of execution at this time.  <a href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7">More...</a><br /></td></tr>
 <tr class="separator:ga472287bfc93e3eb21d237bb9c5ecd2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae194773889378b1c1eeb7bc63f8c37e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stm32__irq.html#gae194773889378b1c1eeb7bc63f8c37e3">ecl::irq::disable</a> ()</td></tr>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gad9c53481b0e8421c2bde2e19c9b2301c"></a>
+<a class="anchor" id="gae2bb04acb9d49c62cc85414c3b1c35a9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -175,7 +175,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void ecl::irq::clear </td>
+          <td class="memname">static void ecl::irq::mask </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__stm32__irq.html#ga6fa0fb1fd2645c04704c6a4098655c14">irq_num</a>&#160;</td>
           <td class="paramname"><em>irqn</em></td><td>)</td>
@@ -189,10 +189,101 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Clears pending interrupt of the given IRQ. </p>
+<p>Masks or disables the given IRQ. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">irqn</td><td>Valid IRQ number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga0a11d889a6b03252aed26202ff65a4be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::irq::unmask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__stm32__irq.html#ga6fa0fb1fd2645c04704c6a4098655c14">irq_num</a>&#160;</td>
+          <td class="paramname"><em>irqn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unmasks or enables the given IRQ. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">irqn</td><td>Valid IRQ number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1bdc87f006f254d1b8dde1a2e3c0f720"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static irq_num ecl::irq::get_current_irqn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets current IRQ number. </p>
+<dl class="section warning"><dt>Warning</dt><dd>Results are unspecified if called not within IRQ context. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Current IRQ number </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga472287bfc93e3eb21d237bb9c5ecd2d7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool ecl::irq::in_isr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a processor is in handler mode of execution at this time. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>Processor is in handler mode. <a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0ae1671797c52e15f763380b45e841ec32">I.e</a>. servicing IRQ or exception. </td></tr>
+    <tr><td class="paramname">false</td><td>Processor is in thread mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -249,7 +340,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1bdc87f006f254d1b8dde1a2e3c0f720"></a>
+<a class="anchor" id="gad9c53481b0e8421c2bde2e19c9b2301c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -257,76 +348,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static irq_num ecl::irq::get_current_irqn </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets current IRQ number. </p>
-<dl class="section warning"><dt>Warning</dt><dd>Results are unspecified if called not within IRQ context. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Current IRQ number </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__stm32__irq_ga1bdc87f006f254d1b8dde1a2e3c0f720_cgraph.png" border="0" usemap="#group__stm32__irq_ga1bdc87f006f254d1b8dde1a2e3c0f720_cgraph" alt=""/></div>
-<map name="group__stm32__irq_ga1bdc87f006f254d1b8dde1a2e3c0f720_cgraph" id="group__stm32__irq_ga1bdc87f006f254d1b8dde1a2e3c0f720_cgraph">
-<area shape="rect" id="node2" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="233,5,343,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga472287bfc93e3eb21d237bb9c5ecd2d7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool ecl::irq::in_isr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if a processor is in handler mode of execution at this time. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">true</td><td>Processor is in handler mode. <a class="el" href="group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0ae1671797c52e15f763380b45e841ec32">I.e</a>. servicing IRQ or exception. </td></tr>
-    <tr><td class="paramname">false</td><td>Processor is in thread mode. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gae2bb04acb9d49c62cc85414c3b1c35a9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::irq::mask </td>
+          <td class="memname">static void ecl::irq::clear </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__stm32__irq.html#ga6fa0fb1fd2645c04704c6a4098655c14">irq_num</a>&#160;</td>
           <td class="paramname"><em>irqn</em></td><td>)</td>
@@ -340,39 +362,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Masks or disables the given IRQ. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">irqn</td><td>Valid IRQ number. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga0a11d889a6b03252aed26202ff65a4be"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::irq::unmask </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__stm32__irq.html#ga6fa0fb1fd2645c04704c6a4098655c14">irq_num</a>&#160;</td>
-          <td class="paramname"><em>irqn</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unmasks or enables the given IRQ. </p>
+<p>Clears pending interrupt of the given IRQ. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">irqn</td><td>Valid IRQ number. </td></tr>

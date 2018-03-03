@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::aux Class Reference</title>
+<title>theCore C++ embedded framework: ecl::aux Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -193,59 +193,6 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a138f7b81ca1f4d57603f97167841eb14"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t ecl::aux::dec </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Decrements reference counter and returns new value. </p>
-
-</div>
-</div>
-<a class="anchor" id="afff36f010a2c9069f67aa65c116194fd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void ecl::aux::destroy </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Destroys aux and deallocates memory if both shared and weak counter is zero. </p>
-<p>Destructor of the managed object must not be called here. <em>Must</em> be called to destroy whole object. </p>
-
-<p>Implemented in <a class="el" href="structmock__aux.html#a4068ead51bfddb419dfe86ef53f75792">mock_aux</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="acc79576266edebc2cc6852942a43c83b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -268,6 +215,31 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Incremets reference counter and returns new value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a138f7b81ca1f4d57603f97167841eb14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ecl::aux::dec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrements reference counter and returns new value. </p>
 
 </div>
 </div>
@@ -296,31 +268,6 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a84ca3f7a9b8f407c6bd744b74b5467de"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t ecl::aux::weak_dec </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Decrements weak reference counter and returns new value. </p>
-
-</div>
-</div>
 <a class="anchor" id="af645c2d6c1ad9fc30b6f93f08eb41983"></a>
 <div class="memitem">
 <div class="memproto">
@@ -343,6 +290,31 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Incremets weak reference counter and returns new value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84ca3f7a9b8f407c6bd744b74b5467de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t ecl::aux::weak_dec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decrements weak reference counter and returns new value. </p>
 
 </div>
 </div>
@@ -378,6 +350,34 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="afff36f010a2c9069f67aa65c116194fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void ecl::aux::destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Destroys aux and deallocates memory if both shared and weak counter is zero. </p>
+<p>Destructor of the managed object must not be called here. <em>Must</em> be called to destroy whole object. </p>
+
+<p>Implemented in <a class="el" href="structmock__aux.html#a4068ead51bfddb419dfe86ef53f75792">mock_aux</a>.</p>
 
 </div>
 </div>

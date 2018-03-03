@@ -1,5 +1,7 @@
 <map id="exti_manager.hpp" name="exti_manager.hpp">
-<area shape="rect" id="node2" href="$list_8hpp.html" title="The intrusive list interface. " alt="" coords="159,80,253,107"/>
+<area shape="rect" id="node2" href="$list_8hpp.html" title="The intrusive list interface. " alt="" coords="225,80,318,107"/>
 <area shape="rect" id="node3" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="22,155,123,181"/>
-<area shape="rect" id="node8" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="323,80,420,107"/>
+<area shape="rect" id="node8" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="632,80,729,107"/>
+<area shape="rect" id="node11" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="374,80,502,107"/>
+<area shape="rect" id="node13" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="510,155,601,181"/>
 </map>

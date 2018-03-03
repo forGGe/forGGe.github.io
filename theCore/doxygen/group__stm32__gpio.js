@@ -2,16 +2,16 @@ var group__stm32__gpio =
 [
     [ "stm32/export/platform/gpio_device.hpp", "stm32_2export_2platform_2gpio__device_8hpp.html", null ],
     [ "gpio", "classecl_1_1gpio.html", [
-      [ "get", "classecl_1_1gpio.html#ad410ad7573e56c0cca093176372e231f", null ],
-      [ "get", "group__stm32__gpio.html#ga8b58be7e1f5cd0616d59c0988d357c74", null ],
-      [ "reset", "classecl_1_1gpio.html#a199a9be3afb660cb888ef8b2cb4c18da", null ],
-      [ "reset", "group__stm32__gpio.html#gac90838f6b9529d463a89e3783dc80c1a", null ],
-      [ "set", "classecl_1_1gpio.html#a56cc7799d3a138a2c6abbc16767a43bb", null ],
       [ "set", "group__stm32__gpio.html#gaed9aea0a1db68c91f3181070d135d6e0", null ],
-      [ "toggle", "classecl_1_1gpio.html#a365d4c968fc4cd697fcdc2fca3334b14", null ],
+      [ "reset", "group__stm32__gpio.html#gac90838f6b9529d463a89e3783dc80c1a", null ],
       [ "toggle", "group__stm32__gpio.html#ga08abf6f1437d39d65f7b4332073a1414", null ],
-      [ "pin", "classecl_1_1gpio.html#ad7995810147fb215e9a127df4851b72d", null ],
-      [ "port", "classecl_1_1gpio.html#acd35aa1794bbf68ea39289399313f817", null ]
+      [ "get", "group__stm32__gpio.html#ga8b58be7e1f5cd0616d59c0988d357c74", null ],
+      [ "set", "classecl_1_1gpio.html#a56cc7799d3a138a2c6abbc16767a43bb", null ],
+      [ "reset", "classecl_1_1gpio.html#a199a9be3afb660cb888ef8b2cb4c18da", null ],
+      [ "toggle", "classecl_1_1gpio.html#a365d4c968fc4cd697fcdc2fca3334b14", null ],
+      [ "get", "classecl_1_1gpio.html#ad410ad7573e56c0cca093176372e231f", null ],
+      [ "port", "classecl_1_1gpio.html#acd35aa1794bbf68ea39289399313f817", null ],
+      [ "pin", "classecl_1_1gpio.html#ad7995810147fb215e9a127df4851b72d", null ]
     ] ],
     [ "gpio_num", "group__stm32__gpio.html#ga3d98b43c99b447ff6db9ed3a01c294b9", [
       [ "pin0", "group__stm32__gpio.html#gga3d98b43c99b447ff6db9ed3a01c294b9a4dc2eb55d3953d9c657a8abbf57cce0f", null ],
@@ -44,8 +44,8 @@ var group__stm32__gpio =
       [ "j", "group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a363b122c528f54df4a0446b6bab05515", null ],
       [ "k", "group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0a8ce4b16b22b58894aa86c421e8759df3", null ]
     ] ],
-    [ "get", "group__stm32__gpio.html#ga8b58be7e1f5cd0616d59c0988d357c74", null ],
-    [ "reset", "group__stm32__gpio.html#gac90838f6b9529d463a89e3783dc80c1a", null ],
     [ "set", "group__stm32__gpio.html#gaed9aea0a1db68c91f3181070d135d6e0", null ],
-    [ "toggle", "group__stm32__gpio.html#ga08abf6f1437d39d65f7b4332073a1414", null ]
+    [ "reset", "group__stm32__gpio.html#gac90838f6b9529d463a89e3783dc80c1a", null ],
+    [ "toggle", "group__stm32__gpio.html#ga08abf6f1437d39d65f7b4332073a1414", null ],
+    [ "get", "group__stm32__gpio.html#ga8b58be7e1f5cd0616d59c0988d357c74", null ]
 ];

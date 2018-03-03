@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::dma_wrap&lt; Stream, Channel &gt; Struct Template Reference</title>
+<title>theCore C++ embedded framework: ecl::dma_wrap&lt; Stream, Channel &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -343,7 +343,7 @@ struct ecl::dma_wrap&lt; Stream, Channel &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8e58e8f84f15c71ecef8dba65642f83e"></a>
+<a class="anchor" id="aca51311654415859eed344f7b73eca8c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -353,7 +353,7 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_err_flag </td>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_stream_ptr </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -366,38 +366,11 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets error flag of the DMA. </p>
+<p>Gets a pointer to a stream DMA object, suitable for use with SPL. </p>
 
 </div>
 </div>
-<a class="anchor" id="a4be119aabb2bfead94839847b78dcd75"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_err_flag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets error flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="a608213ad3fb48896844050f132e7fbc8"></a>
+<a class="anchor" id="a9a484417ec927bd91547fe03342d3baf"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -407,7 +380,7 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_err_if </td>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_stream_number </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -420,11 +393,11 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets error interrupt flag of the DMA. </p>
+<p>Gets stream DMA number, according to RM. </p>
 
 </div>
 </div>
-<a class="anchor" id="a41aff2ec30b8a1a7907e244932043199"></a>
+<a class="anchor" id="a0c13967999ee30a1940432cf99630e8b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -434,9 +407,10 @@ template&lt;dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_err_if </td>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_size_div </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="namespaceecl.html#aada9dcd0383782fabf7a967dca974ffe">dma_data_sz</a>&#160;</td>
+          <td class="paramname"><em>data_size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -447,208 +421,7 @@ template&lt;dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets error interrupt flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="aba38126a8d1e9291d917389fd3a92fd8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_global_flag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets global flag of the DMA. </p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph.png" border="0" usemap="#structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph" alt=""/></div>
-<map name="structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph" id="structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph">
-<area shape="rect" id="node2" href="structecl_1_1dma__wrap.html#a84e5339621a7777e6976bcd43e0dd41b" title="Gets half&#45;transfer interrupt flag of the DMA. " alt="" coords="200,5,347,47"/>
-<area shape="rect" id="node3" href="structecl_1_1dma__wrap.html#a775bb9f107371cef73b8e0061621d1c1" title="Gets transfer&#45;complete interrupt flag of the DMA. " alt="" coords="200,71,347,112"/>
-<area shape="rect" id="node4" href="structecl_1_1dma__wrap.html#a41aff2ec30b8a1a7907e244932043199" title="Gets error interrupt flag of the DMA. " alt="" coords="200,136,347,177"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a4fd36ea9ad239e8bbfcfdc2d77811cbb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_global_if </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets global interrupt flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="af9ad26ce581005c3a8447a21afa9c267"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_ht_flag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets half-transfer flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="a91efe8a5b4fa81b580965d9f6fbd6d2f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_ht_flag </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets half-transfer flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="a96380ddf4885d805342c22f9fb36ac9b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_ht_if </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets half-transfer interrupt flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="a84e5339621a7777e6976bcd43e0dd41b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_ht_if </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets half-transfer interrupt flag of the DMA. </p>
-
-</div>
-</div>
-<a class="anchor" id="a4739e5d627d6a848e83ffcd720910da5"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_rcc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets RCC peripheral, associated with DMA. </p>
+<p>Gets size divider for given data size bits from DMA control register. </p>
 
 </div>
 </div>
@@ -679,35 +452,7 @@ template&lt;dma_channel Channel&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8390d5b9f0b8e3784813f7d25d3b291c"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_size_div </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceecl.html#aada9dcd0383782fabf7a967dca974ffe">dma_data_sz</a>&#160;</td>
-          <td class="paramname"><em>data_sz</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets size divider according to the size given. </p>
-
-</div>
-</div>
-<a class="anchor" id="a0c13967999ee30a1940432cf99630e8b"></a>
+<a class="anchor" id="a4be119aabb2bfead94839847b78dcd75"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -717,10 +462,9 @@ template&lt;dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_size_div </td>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_err_flag </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceecl.html#aada9dcd0383782fabf7a967dca974ffe">dma_data_sz</a>&#160;</td>
-          <td class="paramname"><em>data_size</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -731,7 +475,142 @@ template&lt;dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets size divider for given data size bits from DMA control register. </p>
+<p>Gets error flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a91efe8a5b4fa81b580965d9f6fbd6d2f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_ht_flag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets half-transfer flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad63fd164e210dabed5593279ea172992"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_tc_flag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets transfer-complete flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a41aff2ec30b8a1a7907e244932043199"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_err_if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets error interrupt flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84e5339621a7777e6976bcd43e0dd41b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_ht_if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets half-transfer interrupt flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a775bb9f107371cef73b8e0061621d1c1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_tc_if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets transfer-complete interrupt flag of the DMA. </p>
 
 </div>
 </div>
@@ -776,7 +655,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a9a484417ec927bd91547fe03342d3baf"></a>
+<a class="anchor" id="a8390d5b9f0b8e3784813f7d25d3b291c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -786,7 +665,35 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_stream_number </td>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_size_div </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceecl.html#aada9dcd0383782fabf7a967dca974ffe">dma_data_sz</a>&#160;</td>
+          <td class="paramname"><em>data_sz</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets size divider according to the size given. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4739e5d627d6a848e83ffcd720910da5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_rcc </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -799,11 +706,11 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets stream DMA number, according to RM. </p>
+<p>Gets RCC peripheral, associated with DMA. </p>
 
 </div>
 </div>
-<a class="anchor" id="aca51311654415859eed344f7b73eca8c"></a>
+<a class="anchor" id="a8e58e8f84f15c71ecef8dba65642f83e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -813,7 +720,7 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_stream_ptr </td>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_err_flag </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -826,7 +733,34 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets a pointer to a stream DMA object, suitable for use with SPL. </p>
+<p>Gets error flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="af9ad26ce581005c3a8447a21afa9c267"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_ht_flag </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets half-transfer flag of the DMA. </p>
 
 </div>
 </div>
@@ -857,7 +791,7 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad63fd164e210dabed5593279ea172992"></a>
+<a class="anchor" id="aba38126a8d1e9291d917389fd3a92fd8"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -867,7 +801,7 @@ template&lt;dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_tc_flag </td>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_global_flag </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -880,7 +814,73 @@ template&lt;dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets transfer-complete flag of the DMA. </p>
+<p>Gets global flag of the DMA. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph.png" border="0" usemap="#structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph" alt=""/></div>
+<map name="structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph" id="structecl_1_1dma__wrap_aba38126a8d1e9291d917389fd3a92fd8_cgraph">
+<area shape="rect" id="node2" href="structecl_1_1dma__wrap.html#a84e5339621a7777e6976bcd43e0dd41b" title="Gets half&#45;transfer interrupt flag of the DMA. " alt="" coords="200,5,347,47"/>
+<area shape="rect" id="node3" href="structecl_1_1dma__wrap.html#a775bb9f107371cef73b8e0061621d1c1" title="Gets transfer&#45;complete interrupt flag of the DMA. " alt="" coords="200,71,347,112"/>
+<area shape="rect" id="node4" href="structecl_1_1dma__wrap.html#a41aff2ec30b8a1a7907e244932043199" title="Gets error interrupt flag of the DMA. " alt="" coords="200,136,347,177"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a608213ad3fb48896844050f132e7fbc8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_err_if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets error interrupt flag of the DMA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a96380ddf4885d805342c22f9fb36ac9b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::get_ht_if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets half-transfer interrupt flag of the DMA. </p>
 
 </div>
 </div>
@@ -911,7 +911,7 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a775bb9f107371cef73b8e0061621d1c1"></a>
+<a class="anchor" id="a4fd36ea9ad239e8bbfcfdc2d77811cbb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -921,7 +921,7 @@ template&lt;dma_channel Channel&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_tc_if </td>
+          <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Channel &gt;::get_global_if </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -934,33 +934,11 @@ template&lt;dma_channel Channel&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets transfer-complete interrupt flag of the DMA. </p>
+<p>Gets global interrupt flag of the DMA. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a7d4c52235eaff0b888a751350649dcec"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::channel = Channel</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a201a3d97e8d224cc387527108bc57704"></a>
 <div class="memitem">
 <div class="memproto">
@@ -972,6 +950,28 @@ template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::stream = Stream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a7d4c52235eaff0b888a751350649dcec"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;dma_stream Stream, dma_channel Channel&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto <a class="el" href="structecl_1_1dma__wrap.html">ecl::dma_wrap</a>&lt; Stream, Channel &gt;::channel = Channel</td>
         </tr>
       </table>
   </td>

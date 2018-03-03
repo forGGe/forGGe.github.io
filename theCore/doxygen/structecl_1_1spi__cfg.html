@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::spi_cfg&lt; ch &gt; Struct Template Reference</title>
+<title>theCore C++ embedded framework: ecl::spi_cfg&lt; ch &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('structecl_1_1spi__cfg.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ecl::spi_cfg&lt; ch &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__skel.html">Platform skeleton</a> &raquo; <a class="el" href="group__skel__spi.html">Skeleton of SPI driver</a><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__tm4c.html">Texas Instruments Tiva C TM4C123G platform</a> &raquo;  &#124; <a class="el" href="group__tm4c__spi.html">SPI driver</a></div></div>  </div>
+<div class="title">ecl::spi_cfg&lt; ch &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__platform.html">Platform defintions and drivers</a> &raquo; <a class="el" href="group__tm4c.html">Texas Instruments Tiva C TM4C123G platform</a> &raquo; <a class="el" href="group__tm4c__spi.html">SPI driver</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,17 +123,15 @@ struct ecl::spi_cfg&lt; ch &gt;</h3>
 <p>Base template class for the SPI configuration. </p>
 <p>In order to advertise configuration parameters user must create template specialization for required SPI device.</p>
 <p>SPI-specific fields must be present:</p><ul>
-<li>SPI type: master/slave <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__skel__spi.html#gac932aa5fcec58630c3bc2799dbe57411" title="SPI master/slave selection. ">ecl::spi_type</a></dd></dl>
-</li>
-<li>SPI clock polarity <dl class="section see"><dt>See also</dt><dd>ecl::cpol</dd></dl>
-</li>
-<li>SPI clock phase <dl class="section see"><dt>See also</dt><dd>ecl::cpha</dd></dl>
-<dl class="section user"><dt>SPI configuration example.</dt><dd>In order to use this configuration class one must create configuration class in the <code>ecl</code> namespace before any access to SPI instance.</dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespaceecl.html">ecl</a></div><div class="line">{</div><div class="line"></div><div class="line"><span class="keyword">template</span>&lt;&gt;</div><div class="line"><span class="keyword">struct </span>spi_cfg&lt;<a class="code" href="group__skel__spi.html#gacd93c80210f791f6bbf4e9c25a739dee">spi_channel</a>::<a class="code" href="group__skel__spi.html#ggacd93c80210f791f6bbf4e9c25a739deeae26fd7c8b4fd8eafbb9f99a19a1c3701">ch1</a>&gt;</div><div class="line">{</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> type = <a class="code" href="group__skel__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212">spi_type::master</a>;</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> cpol = <a class="code" href="group__skel__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa8d966b2253a917086c8604959e152243">spi_cpol::high</a>;</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> cpha = <a class="code" href="group__skel__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7">spi_cpha::low</a>;</div><div class="line">};</div><div class="line"></div><div class="line">} <span class="comment">// namespace ecl</span></div></div><!-- fragment --></li>
+<li>SPI type: master/slave: <a class="el" href="group__tm4c__spi.html#gac932aa5fcec58630c3bc2799dbe57411" title="SPI master/slave selection. ">ecl::spi_type</a></li>
+<li>SPI clock polarity: <a class="el" href="group__tm4c__spi.html#gad336cb0bd21d9b21c306f17db7da7e0a" title="SPI clock polarity. ">ecl::spi_cpol</a></li>
+<li>SPI clock phase: <a class="el" href="group__tm4c__spi.html#gaa712a054d4c9d816c3638d9e83a11960" title="SPI clock phase. ">ecl::spi_cpha</a></li>
+<li>SPI sysclock divider. Must be greather than 2</li>
 </ul>
-<dl class="section warning"><dt>Warning</dt><dd>To avoid potential problems with multiple configurations for single SPI bus, <b>make sure that full specialization is placed in the header included (directly or indirectly) by all dependent modules.</b>. Thus, redefinition of the config class for given SPI will result in compilation errors. <em>Good practice is to place all SPI configuration class in the single target-related header.</em> </dd></dl>
+<dl class="section user"><dt>SPI configuration example.</dt><dd>In order to use this configuration class one must create configuration class in the <code>ecl</code> namespace before any access to SPI instance.</dd></dl>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="namespaceecl.html">ecl</a></div><div class="line">{</div><div class="line"></div><div class="line"><span class="keyword">template</span>&lt;&gt;</div><div class="line"><span class="keyword">struct </span>spi_cfg&lt;<a class="code" href="group__tm4c__spi.html#gacd93c80210f791f6bbf4e9c25a739dee">spi_channel</a>::<a class="code" href="group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8ae26fd7c8b4fd8eafbb9f99a19a1c3701">ch1</a>&gt;</div><div class="line">{</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> type      = <a class="code" href="group__tm4c__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212">spi_type::master</a>;</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> cpol      = <a class="code" href="group__tm4c__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa8d966b2253a917086c8604959e152243">spi_cpol::high</a>;</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> cpha      = <a class="code" href="group__tm4c__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7">spi_cpha::low</a>;</div><div class="line">    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> clk_div   = 2;</div><div class="line">};</div><div class="line"></div><div class="line">} <span class="comment">// namespace ecl</span></div></div><!-- fragment --><dl class="section warning"><dt>Warning</dt><dd>To avoid potential problems with multiple configurations for single SPI bus, <b>make sure that full specialization is placed in the header included (directly or indirectly) by all dependent modules.</b>. Thus, redefinition of the config class for given SPI will result in compilation errors. <em>Good practice is to place all SPI configuration class in the single target-related header.</em> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="skel_2export_2aux_2spi_8hpp.html">skel/export/aux/spi.hpp</a></li>
+<li><a class="el" href="tm4c_2export_2aux_2spi_8hpp.html">tm4c/export/aux/spi.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

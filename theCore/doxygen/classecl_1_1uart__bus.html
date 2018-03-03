@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::uart_bus&lt; dev &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::uart_bus&lt; dev &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -310,7 +310,7 @@ template&lt;uart_device dev&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac4510d42670624724af5e646d935d962"></a>
+<a class="anchor" id="a2b6643348e56f29c2e821510b62ba0dc"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -320,111 +320,19 @@ template&lt;uart_device dev&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::cancel_xfer </td>
+          <td class="memname"><a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&amp; <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::operator= </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; dev &gt; &amp;&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Cancels xfer. </p>
-<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ae2724546461681c53a4034a9b085fdbf"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_rx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2b90a33612d76c59c9bc4188d5688e10"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_tx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a1230079588b108c8c1a2271edd866053"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes xfer, using buffers previously set. </p>
-<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph.png" border="0" usemap="#classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph" alt=""/></div>
-<map name="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph" id="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="216,5,373,32"/>
-<area shape="rect" id="node4" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="245,56,344,83"/>
-<area shape="rect" id="node3" href="namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="421,5,524,32"/>
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -466,123 +374,6 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="a2b6643348e56f29c2e821510b62ba0dc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&amp; <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1uart__bus.html">uart_bus</a>&lt; dev &gt; &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a9cbaeaaa7d3bcb2f67b3216633d84277"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_buffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset xfer buffers. </p>
-<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1uart__bus.html#aff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
-<dd>
-<a class="el" href="classecl_1_1uart__bus.html#a71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6ef905cac8f99d1b6fbf02a1865bf708"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Resets previously set handler. </p>
-
-</div>
-</div>
-<a class="anchor" id="af67df94c86eb2a640a6b66cc550eb992"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;uart_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_handler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classecl_1_1uart__bus.html#a96c8528a74c62317abb1ce62a2c2acae">handler_fn</a> &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -721,20 +512,227 @@ template&lt;uart_device dev&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a82c5d8aa698c3ba3a84a482445483de6"></a>
+<a class="anchor" id="af67df94c86eb2a640a6b66cc550eb992"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;uart_device dev&gt; </div>
-<div class="memtemplate">
-template&lt;uart_device d&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void serial_rx_dispatch </td>
+          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::set_handler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classecl_1_1uart__bus.html#a96c8528a74c62317abb1ce62a2c2acae">handler_fn</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets event handler. </p>
+<p>Handler will be used by the bus, until <a class="el" href="classecl_1_1uart__bus.html#a6ef905cac8f99d1b6fbf02a1865bf708" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9cbaeaaa7d3bcb2f67b3216633d84277"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_buffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset xfer buffers. </p>
+<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1uart__bus.html#aff85f0efd275ed077fc8079dd2f9f53d" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
+<dd>
+<a class="el" href="classecl_1_1uart__bus.html#a71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6ef905cac8f99d1b6fbf02a1865bf708"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::reset_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets previously set handler. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1230079588b108c8c1a2271edd866053"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_xfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes xfer, using buffers previously set. </p>
+<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph.png" border="0" usemap="#classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph" alt=""/></div>
+<map name="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph" id="classecl_1_1uart__bus_a1230079588b108c8c1a2271edd866053_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="216,5,373,32"/>
+<area shape="rect" id="node4" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="245,56,344,83"/>
+<area shape="rect" id="node3" href="namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="421,5,524,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b90a33612d76c59c9bc4188d5688e10"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_tx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae2724546461681c53a4034a9b085fdbf"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::do_rx </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac4510d42670624724af5e646d935d962"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1uart__bus.html">ecl::uart_bus</a>&lt; dev &gt;::cancel_xfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cancels xfer. </p>
+<p>After this call no xfer will occur. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a class="anchor" id="a72a7be18afb74f21f3199be68795796d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;uart_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void serial_tx_dispatch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -749,17 +747,19 @@ template&lt;uart_device d&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a72a7be18afb74f21f3199be68795796d"></a>
+<a class="anchor" id="a82c5d8aa698c3ba3a84a482445483de6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;uart_device dev&gt; </div>
+<div class="memtemplate">
+template&lt;uart_device d&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void serial_tx_dispatch </td>
+          <td class="memname">void serial_rx_dispatch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

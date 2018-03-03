@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['moisture_5ftype',['moisture_type',['../namespaceecl_1_1sensor_1_1fc28__defs.html#a4f1590ee21100fe42e2d67b989ae3a79',1,'ecl::sensor::fc28_defs']]],
-  ['my_5fuart',['my_uart',['../namespaceecl.html#ad00083420fcc845363f037c17d58ebe1',1,'ecl']]]
+  ['path_5fptr',['path_ptr',['../namespacefat.html#a2472588dbd27f2b55aa43793f2c2cd97',1,'fat']]],
+  ['platform_5fhandle',['platform_handle',['../classecl_1_1generic__bus.html#a9a48ce41c43cd645b9a16b14f77c38c0',1,'ecl::generic_bus::platform_handle()'],['../classecl_1_1serial.html#a4193561a0f92ba97c75d92b9e2950a88',1,'ecl::serial::platform_handle()']]]
 ];

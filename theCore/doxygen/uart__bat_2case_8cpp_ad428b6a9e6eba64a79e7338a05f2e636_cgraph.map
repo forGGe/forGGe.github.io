@@ -1,12 +1,6 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node2" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="125,5,267,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1uart__bus.html#a71207b20d63f15423d0be84383132efa" title="Sets rx buffer with given size. " alt="" coords="119,56,273,83"/>
-<area shape="rect" id="node4" href="$classecl_1_1uart__bus.html#af67df94c86eb2a640a6b66cc550eb992" title="Sets event handler. " alt="" coords="129,107,263,149"/>
-<area shape="rect" id="node5" href="$uart__bat_2case_8cpp.html#aac9e13d286cb019c8cd64828d5de9d02" title="test_handler" alt="" coords="145,173,247,200"/>
-<area shape="rect" id="node6" href="$classecl_1_1uart__bus.html#a1230079588b108c8c1a2271edd866053" title="Executes xfer, using buffers previously set. " alt="" coords="115,224,277,251"/>
-<area shape="rect" id="node10" href="$uart__bat_2case_8cpp.html#ad9bf29246461c787b2d715cb0df009e5" title="wait_transfer_complete" alt="" coords="108,275,284,301"/>
-<area shape="rect" id="node7" href="$namespaceecl.html#acf6459f8bd5ddef6c5f1a7bb7abb5413" title="Notifies main loop about pending transactions. " alt="" coords="332,173,489,200"/>
-<area shape="rect" id="node9" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="361,224,460,251"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="537,173,640,200"/>
-<area shape="rect" id="node11" href="$uart__bat_2case_8cpp.html#ae3ca8d508a711ae4959bb6474226dab4" title="TEST_GROUP" alt="" coords="357,275,465,301"/>
+<area shape="rect" id="node3" href="$uart__bat_2case_8cpp.html#aac9e13d286cb019c8cd64828d5de9d02" title="test_handler" alt="" coords="145,56,247,83"/>
+<area shape="rect" id="node4" href="$uart__bat_2case_8cpp.html#ad9bf29246461c787b2d715cb0df009e5" title="wait_transfer_complete" alt="" coords="108,107,284,133"/>
+<area shape="rect" id="node5" href="$uart__bat_2case_8cpp.html#ae3ca8d508a711ae4959bb6474226dab4" title="TEST_GROUP" alt="" coords="332,107,440,133"/>
 </map>

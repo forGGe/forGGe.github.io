@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::bus_pipe&lt; GBus &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::bus_pipe&lt; GBus &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -212,33 +212,43 @@ template&lt;class GBus &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adb0d14622e903b86fcab8f659568c868"></a>
+<a class="anchor" id="ab8ac5f7e8acfaf543a162c25797ed0b0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class GBus &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1bus__pipe.html">ecl::bus_pipe</a>&lt; GBus &gt;::last_error </td>
+          <td class="memname">ssize_t <a class="el" href="classecl_1_1bus__pipe.html">ecl::bus_pipe</a>&lt; GBus &gt;::write </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets last error occurred. </p>
-<dl class="section return"><dt>Returns</dt><dd>Error defined in <a class="el" href="namespaceecl.html#a1712b117c1d0fb5dc2bb612656aacc84a56bd7107802ebe56c6918992f0608ec6" title="Error event. ">ecl::err</a> </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph.png" border="0" usemap="#classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph" alt=""/></div>
-<map name="classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph" id="classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="192,13,291,39"/>
-</map>
-</div>
-</p>
+<p>Writes a data to a pipe. </p>
+<p>If error is occurred before transfer has started then this method will immediately exit and return negative integer value to notify about error. If error occur during transaction then return value will be less than bytes requested or zero, indicating amount of bytes that were successfully written to a pipe. Last error can be obtained via </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1bus__pipe.html#adb0d14622e903b86fcab8f659568c868" title="Gets last error occurred. ">last_error()</a> call Caller will be blocked until all bytes will be transferred or error will occur. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Bus is initialized. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. Must not be null. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Count of bytes that must be written to a pipe. Can be zero. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Value indicating either error if negative or amount of bytes transferred if positive. </dd></dl>
 
 </div>
 </div>
@@ -282,43 +292,33 @@ template&lt;class GBus &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ab8ac5f7e8acfaf543a162c25797ed0b0"></a>
+<a class="anchor" id="adb0d14622e903b86fcab8f659568c868"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class GBus &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">ssize_t <a class="el" href="classecl_1_1bus__pipe.html">ecl::bus_pipe</a>&lt; GBus &gt;::write </td>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1bus__pipe.html">ecl::bus_pipe</a>&lt; GBus &gt;::last_error </td>
           <td>(</td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes a data to a pipe. </p>
-<p>If error is occurred before transfer has started then this method will immediately exit and return negative integer value to notify about error. If error occur during transaction then return value will be less than bytes requested or zero, indicating amount of bytes that were successfully written to a pipe. Last error can be obtained via </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classecl_1_1bus__pipe.html#adb0d14622e903b86fcab8f659568c868" title="Gets last error occurred. ">last_error()</a> call Caller will be blocked until all bytes will be transferred or error will occur. </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>Bus is initialized. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Data to write. Must not be null. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>Count of bytes that must be written to a pipe. Can be zero. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Value indicating either error if negative or amount of bytes transferred if positive. </dd></dl>
+<p>Gets last error occurred. </p>
+<dl class="section return"><dt>Returns</dt><dd>Error defined in <a class="el" href="namespaceecl.html#a1712b117c1d0fb5dc2bb612656aacc84a56bd7107802ebe56c6918992f0608ec6" title="Error event. ">ecl::err</a> </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph.png" border="0" usemap="#classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph" alt=""/></div>
+<map name="classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph" id="classecl_1_1bus__pipe_adb0d14622e903b86fcab8f659568c868_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="192,13,291,39"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

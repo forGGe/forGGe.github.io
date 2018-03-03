@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: Console</title>
+<title>theCore C++ embedded framework: Console</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -137,7 +137,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga77ac19eee68fd988d5567a7bf0e1193c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c">ecl::bypass_putc</a> (char c)</td></tr>
-<tr class="memdesc:ga77ac19eee68fd988d5567a7bf0e1193c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts character to bypass console. Does nothing if console is disabled.  <a href="group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c">More...</a><br /></td></tr>
+<tr class="memdesc:ga77ac19eee68fd988d5567a7bf0e1193c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bypasses console drivers and puts data directly to the UART.  <a href="group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c">More...</a><br /></td></tr>
 <tr class="separator:ga77ac19eee68fd988d5567a7bf0e1193c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -164,10 +164,20 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Puts character to bypass console. Does nothing if console is disabled. </p>
+<p>Bypasses console drivers and puts data directly to the UART. </p>
 <p>Does nothing if console is disabled.</p>
-<p>Bypasses console drivers and puts data directly to the UART.</p>
+<p>Puts character to bypass console. Does nothing if console is disabled.</p>
 <p>Required to print debug of the failed asserts. Check other platforms to get idea why this function is provided. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__tm4c__console_ga77ac19eee68fd988d5567a7bf0e1193c_cgraph.png" border="0" usemap="#group__tm4c__console_ga77ac19eee68fd988d5567a7bf0e1193c_cgraph" alt=""/></div>
+<map name="group__tm4c__console_ga77ac19eee68fd988d5567a7bf0e1193c_cgraph" id="group__tm4c__console_ga77ac19eee68fd988d5567a7bf0e1193c_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="184,5,323,32"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

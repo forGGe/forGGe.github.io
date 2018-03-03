@@ -106,7 +106,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l2"><a class="reference internal" href="hm-10-bluetooth.html">HM-10 Bluetooth BTLE module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="htu21d-humidity-temperature-sensor.html">HTU21D humidity and temperature sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="pc8544-nokia-5110-display.html">PC8544 Nokia 5110 display</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">SDSPI driver</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">SDSPI driver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specification">Specification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#driver-documentation">Driver documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sdspi-usage-example">SDSPI usage example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-limitations">Known limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verified-hardware">Verified hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#additional-references">Additional references</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../utilities.html">Libraries and utilities</a></li>
@@ -169,9 +178,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="section" id="sdspi-driver">
 <h1>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="https://pre00.deviantart.net/39c5/th/pre/f/2010/225/8/5/micro_sd_card_up_by_tash78.png"><img alt="SD card with SD SPI driver" src="https://pre00.deviantart.net/39c5/th/pre/f/2010/225/8/5/micro_sd_card_up_by_tash78.png" style="width: 450px; height: 450px;" /></a>
+<p>(<a class="reference external" href="https://tash78.deviantart.com/art/Micro-SD-Card-UP-175156797">Image by tash78 &#64; devianart</a>)</p>
+<p>theCore SDPSI driver allows to communicate with SD cards using platforms that
+support SPI.</p>
+<div class="section" id="specification">
+<h2>Specification<a class="headerlink" href="#specification" title="Permalink to this headline">¶</a></h2>
+<p>Simplified specification can be downloaded for free from <a class="reference external" href="https://www.sdcard.org/downloads/pls/">SD card association website</a>.</p>
+</div>
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>SDSPI driver implementation is located under <code class="docutils literal"><span class="pre">dev/sdspi/</span></code> directory, relative to
+theCore root.</p>
+</div>
+<div class="section" id="driver-documentation">
+<h2>Driver documentation<a class="headerlink" href="#driver-documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forgge.github.io/theCore/doxygen/group__sdspi.html">Click here to open SDSPI Doxygen docs</a>.</p>
+</div>
+<div class="section" id="sdspi-usage-example">
+<h2>SDSPI usage example<a class="headerlink" href="#sdspi-usage-example" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
+</div>
+</div>
+<div class="section" id="known-limitations">
+<h2>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h2>
+<p>SDSPI driver does not support SPI dynamic clock changing after initialization.
+SDSPI driver, by definition, works only in SPI mode, not SDIO.</p>
+</div>
+<div class="section" id="verified-hardware">
+<h2>Verified hardware<a class="headerlink" href="#verified-hardware" title="Permalink to this headline">¶</a></h2>
+<p>SDSPI driver is tested with <a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">Catalex micro-SD card adapter/module</a> and
+<a class="reference external" href="http://bit.ly/2HU5yr7">high-capacity, class 10 micro SD card</a>.</p>
+</div>
+<div class="section" id="additional-references">
+<h2>Additional references<a class="headerlink" href="#additional-references" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.sdcard.org/">SD card association main page</a></li>
+<li><a class="reference external" href="https://www.sdcard.org/developers/overview/speed_class/">Speed classes of SD cards</a></li>
+<li><a class="reference external" href="http://elm-chan.org/docs/mmc/mmc_e.html">ELEM-chan article on using MMC/SDC in SPI mode</a></li>
+</ul>
 </div>
 </div>
 

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::gpio&lt; Port, Pin &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::gpio&lt; Port, Pin &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -169,7 +169,7 @@ class ecl::gpio&lt; Port, Pin &gt;</h3>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad410ad7573e56c0cca093176372e231f"></a>
+<a class="anchor" id="a56cc7799d3a138a2c6abbc16767a43bb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -179,7 +179,7 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static bool <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::get </td>
+          <td class="memname">static void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::set </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -192,8 +192,7 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets level on a pin. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if level is high, false if level is low. </dd></dl>
+<p>Sets output pin level to high. </p>
 
 </div>
 </div>
@@ -224,33 +223,6 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a56cc7799d3a138a2c6abbc16767a43bb"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;gpio_port Port, gpio_num Pin&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::set </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets output pin level to high. </p>
-
-</div>
-</div>
 <a class="anchor" id="a365d4c968fc4cd697fcdc2fca3334b14"></a>
 <div class="memitem">
 <div class="memproto">
@@ -278,8 +250,7 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="ad7995810147fb215e9a127df4851b72d"></a>
+<a class="anchor" id="ad410ad7573e56c0cca093176372e231f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -289,7 +260,10 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr auto <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::pin = Pin</td>
+          <td class="memname">static bool <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -299,10 +273,12 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Advertised platform pin. </p>
+<p>Gets level on a pin. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if level is high, false if level is low. </dd></dl>
 
 </div>
 </div>
+<h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="acd35aa1794bbf68ea39289399313f817"></a>
 <div class="memitem">
 <div class="memproto">
@@ -324,6 +300,30 @@ template&lt;gpio_port Port, gpio_num Pin&gt; </div>
 </div><div class="memdoc">
 
 <p>Advertised platform port. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad7995810147fb215e9a127df4851b72d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_port Port, gpio_num Pin&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static constexpr auto <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::pin = Pin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Advertised platform pin. </p>
 
 </div>
 </div>

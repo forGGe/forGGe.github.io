@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::adc_cfg&lt; dev &gt; Struct Template Reference</title>
+<title>theCore C++ embedded framework: ecl::adc_cfg&lt; dev &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -134,7 +134,7 @@ struct ecl::adc_cfg&lt; dev &gt;</h3>
 <li>Management mode constexpr field <code>mgtm_mode</code>, set to <code><a class="el" href="group__stm32__adc.html#gga52ec44080130fa19c34d0669610600fea0246c2251217c97899bc8c89f5126045" title="ADC managed using DMA. ">adc_mgmt_mode::irq</a></code></li>
 </ul>
 </dd></dl>
-<p>// Provides configuration of the <a class="el" href="group__stm32__uart.html#gga88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">adc_dev::dev1</a> (ADC1). template&lt;&gt; struct <a class="el" href="structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html">adc_cfg&lt;adc_dev::dev1&gt;</a> { // Signifies IRQ management mode. static constexpr adc_mgmt_mode mgtm_mode = <a class="el" href="group__stm32__adc.html#gga52ec44080130fa19c34d0669610600fea0246c2251217c97899bc8c89f5126045" title="ADC managed using DMA. ">adc_mgmt_mode::irq</a>; };</p>
+<p>// Provides configuration of the <a class="el" href="group__stm32__uart.html#gga88d590d9b882163efaf3c24ac3ff54e2acea099a8f5ac3e289e317d461beb9261">adc_dev::dev1</a> (ADC1). template&lt;&gt; struct adc_cfg&lt;adc_dev::dev1&gt; { // Signifies IRQ management mode. static constexpr adc_mgmt_mode mgtm_mode = <a class="el" href="group__stm32__adc.html#gga52ec44080130fa19c34d0669610600fea0246c2251217c97899bc8c89f5126045" title="ADC managed using DMA. ">adc_mgmt_mode::irq</a>; };</p>
 <dl class="section warning"><dt>Warning</dt><dd>To avoid potential problems with multiple configurations for single ADC, <b>make sure that full specialization is placed in the header included (directly or indirectly) by all dependent modules.</b>. Thus, redefinition of the config class for given ADC will result in compilation errors. <em>Good practice is to place all ADC configuration class in the single target-related header.</em> </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="stm32_2export_2aux_2adc_8hpp.html">stm32/export/aux/adc.hpp</a></li>

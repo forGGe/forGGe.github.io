@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: Data Fields</title>
+<title>theCore C++ embedded framework: Data Fields</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -177,6 +177,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>deinit()
 : <a class="el" href="classecl_1_1generic__bus.html#a0076b1fb7cd7e434a91cdca47542a4b1">ecl::generic_bus&lt; PBus &gt;</a>
 , <a class="el" href="classecl_1_1safe__storage.html#ac33d866954274b8f3114d2b6608b8a74">ecl::safe_storage&lt; T &gt;</a>
+, <a class="el" href="group__sdspi.html#ga235a7af0faf4a5c506bf0bde29de920a">ecl::sdspi&lt; spi_dev, gpio_cs &gt;</a>
 , <a class="el" href="classecl_1_1serial.html#a03cdd6820ea32fed60d9b6893cda3593">ecl::serial&lt; PBus, buf_size &gt;</a>
 </li>
 <li>deleted
@@ -212,7 +213,7 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="structCoreDebug__Type.html#ad63554e4650da91a8e79929cbb63db66">CoreDebug_Type</a>
 </li>
 <li>dir()
-: <a class="el" href="classfat_1_1dir.html#a68021f2aea6ac535b0a01305709bcc96">fat::dir</a>
+: <a class="el" href="classfat_1_1dir.html#a915c5c182ad0a74ae756e3449f4bca38">fat::dir</a>
 </li>
 <li>dir_descriptor()
 : <a class="el" href="classfs_1_1dir__descriptor.html#ab45c30a9969f75784ab4d50bb37d0c50">fs::dir_descriptor</a>
@@ -224,7 +225,8 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 : <a class="el" href="classecl_1_1dma__wrap__base.html#acdbb0553c79c2910aa4d200933b2eb87">ecl::dma_wrap_base&lt; Impl &gt;</a>
 </li>
 <li>disable_circular_mode()
-: <a class="el" href="group__skel__spi.html#ga7afcf1670a7a5bed08237f5041626fd6">ecl::spi&lt; ch &gt;</a>
+: <a class="el" href="group__skel__spi.html#ga3cda02d1c32add1fdf8adeca213d2ef9">ecl::skel::spi&lt; ch &gt;</a>
+, <a class="el" href="group__tm4c__spi.html#ga7afcf1670a7a5bed08237f5041626fd6">ecl::spi&lt; ch &gt;</a>
 , <a class="el" href="group__stm32__spi__i2s.html#gabf6c8e89bebd39531ff5a93d4eb079f6">ecl::spi_i2s_bus&lt; dev &gt;</a>
 </li>
 <li>disable_events_irq()
@@ -235,7 +237,6 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 </li>
 <li>disable_listen_mode()
 : <a class="el" href="group__stm32__uart.html#ga8f657e035a9689178247481fb3bb7f2d">ecl::usart_bus&lt; dev &gt;</a>
-, <a class="el" href="classplatform__mock.html#af771e68e449cd2f354dd2a396e1f7414">platform_mock</a>
 </li>
 <li>disconnect()
 : <a class="el" href="group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0">ecl::hm10_sync&lt; Uart, Serial &gt;</a>
@@ -243,22 +244,12 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>dispatch
 : <a class="el" href="classecl_1_1i2c__bus.html#a0e4e095fceb9961cee3ad3021f144600">ecl::i2c_bus&lt; dev &gt;</a>
 </li>
-<li>dma
-: <a class="el" href="structecl_1_1adc__cfg_3_01adc__dev_1_1dev1_01_4.html#ab1e73403c303acdd981004b4963fb342">ecl::adc_cfg&lt; adc_dev::dev1 &gt;</a>
-</li>
-<li>dma_rx
-: <a class="el" href="structecl_1_1spi__i2s__cfg_3_01spi__device_1_1bus3_01_4.html#a566c10d03517f227973ec425ee7dc9e8">ecl::spi_i2s_cfg&lt; spi_device::bus3 &gt;</a>
-</li>
-<li>dma_tx
-: <a class="el" href="structecl_1_1spi__i2s__cfg_3_01spi__device_1_1bus3_01_4.html#a33b00055ec980b018d196b07a536bc42">ecl::spi_i2s_cfg&lt; spi_device::bus3 &gt;</a>
-</li>
 <li>dma_wrap_base()
-: <a class="el" href="classecl_1_1dma__wrap__base.html#afd221b5c7a902e45cb47b84c44b077fa">ecl::dma_wrap_base&lt; Impl &gt;</a>
+: <a class="el" href="classecl_1_1dma__wrap__base.html#a21cfb7d536319acf3c8e4762ffe3fe16">ecl::dma_wrap_base&lt; Impl &gt;</a>
 </li>
 <li>do_rx()
 : <a class="el" href="classecl_1_1uart__bus.html#ae2724546461681c53a4034a9b085fdbf">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="group__stm32__uart.html#ga955b2cafaf077cad57c2ca23e8f72a27">ecl::usart_bus&lt; dev &gt;</a>
-, <a class="el" href="classplatform__mock.html#ad9b39eecc6dfa691fdc4445237426885">platform_mock</a>
 </li>
 <li>do_set_reset()
 : <a class="el" href="structgpio__tests.html#a9b83e934c29d722a92367c554bf49601">gpio_tests&lt; Ts &gt;</a>
@@ -275,17 +266,16 @@ $(document).ready(function(){initNavTree('functions_d.html','');});
 <li>do_tx()
 : <a class="el" href="classecl_1_1uart__bus.html#a2b90a33612d76c59c9bc4188d5688e10">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="group__stm32__uart.html#ga18b8521b785b373f23960dee0365d6b2">ecl::usart_bus&lt; dev &gt;</a>
-, <a class="el" href="classplatform__mock.html#a092f40f5dfc1a02b8194ea9f9298d1af">platform_mock</a>
 </li>
 <li>do_xfer()
 : <a class="el" href="classecl_1_1i2c__bus.html#a1ac68497399e2c08559ed1c89c2e94fa">ecl::i2c_bus&lt; dev &gt;</a>
 , <a class="el" href="classecl_1_1platform__console.html#aa51698b855ab358f51ed0e50a95b03c5">ecl::platform_console</a>
-, <a class="el" href="group__skel__spi.html#gad2355e9229f0bd7e76074fd50b4318af">ecl::spi&lt; ch &gt;</a>
+, <a class="el" href="group__skel__spi.html#gaa7f7a64e7758d7bf8e0c8b942423145e">ecl::skel::spi&lt; ch &gt;</a>
+, <a class="el" href="group__tm4c__spi.html#gad2355e9229f0bd7e76074fd50b4318af">ecl::spi&lt; ch &gt;</a>
 , <a class="el" href="group__stm32__spi__i2s.html#ga9a0ccc726a9de0935b9a64e0e9850225">ecl::spi_i2s_bus&lt; dev &gt;</a>
 , <a class="el" href="group__tm4c__uart.html#gab86c7c05d86de1f032b02549a3173800">ecl::uart&lt; ch &gt;</a>
 , <a class="el" href="classecl_1_1uart__bus.html#a1230079588b108c8c1a2271edd866053">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="group__stm32__uart.html#gaacd16375ae5c45d93231e835ab2a4378">ecl::usart_bus&lt; dev &gt;</a>
-, <a class="el" href="classplatform__mock.html#a3a54da5ab0216a15876bd979a79a4e52">platform_mock</a>
 </li>
 <li>dummy_type()
 : <a class="el" href="structdummy__type.html#ac0e7b3d25fef30040275d25a9b94d705">dummy_type</a>

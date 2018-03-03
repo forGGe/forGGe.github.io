@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::serial&lt; PBus, buf_size &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::serial&lt; PBus, buf_size &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -299,35 +299,6 @@ template&lt;class PBus , size_t buf_size = 128&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a03cdd6820ea32fed60d9b6893cda3593"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class PBus , size_t buf_size&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1serial.html">ecl::serial</a>&lt; PBus, buf_size &gt;::deinit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deinitialize serial driver and underlying platform bus. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Driver is initialized. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a2e82e2201aed51420730b39750d8f514"></a>
 <div class="memitem">
 <div class="memproto">
@@ -369,6 +340,35 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a03cdd6820ea32fed60d9b6893cda3593"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PBus , size_t buf_size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1serial.html">ecl::serial</a>&lt; PBus, buf_size &gt;::deinit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deinitialize serial driver and underlying platform bus. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Driver is initialized. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a9b05fbd50da9a2fd6162a3271fa6e5a8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -407,6 +407,58 @@ template&lt;class PBus , size_t buf_size&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="adfd5ab3f61eace104d696dda8abfdc9c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class PBus , size_t buf_size&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1serial.html">ecl::serial</a>&lt; PBus, buf_size &gt;::recv_byte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Obtains a byte from serial device. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Driver is initialized.</dd></dl>
+<p>If there is no data to return call with block in blocking mode, and return immediately in non-blocking mode. Otherwise data will be stored in the given argument and method will return. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">byte</td><td>Place for incoming byte. Will remain unchanged if error occurs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c" title="Text file busy. ">err::wouldblock</a></td><td>Non-blocking mode is set and read would block otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph.png" border="0" usemap="#classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph" alt=""/></div>
+<map name="classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph" id="classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph">
+<area shape="rect" id="node2" href="classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46" title="Gets buffer from serial device. " alt="" coords="211,5,360,32"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -456,14 +508,14 @@ template&lt;class PBus , size_t buf_size&gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c">err::wouldblock</a></td><td>Non-blocking mode is set and read would block otherwise. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c" title="Text file busy. ">err::wouldblock</a></td><td>Non-blocking mode is set and read would block otherwise. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="adfd5ab3f61eace104d696dda8abfdc9c"></a>
+<a class="anchor" id="ae689fbc25d61273aef8e2b597fe1be7d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -473,9 +525,9 @@ template&lt;class PBus , size_t buf_size&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1serial.html">ecl::serial</a>&lt; PBus, buf_size &gt;::recv_byte </td>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1serial.html">ecl::serial</a>&lt; PBus, buf_size &gt;::send_byte </td>
           <td>(</td>
-          <td class="paramtype">uint8_t &amp;&#160;</td>
+          <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>byte</em></td><td>)</td>
           <td></td>
         </tr>
@@ -487,18 +539,18 @@ template&lt;class PBus , size_t buf_size&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Obtains a byte from serial device. </p>
+<p>Sends byte to a serial device. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Driver is initialized.</dd></dl>
-<p>If there is no data to return call with block in blocking mode, and return immediately in non-blocking mode. Otherwise data will be stored in the given argument and method will return. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>It may not block if internal buffering is applied. It may also block if platform device is not yet ready to send data. In non-blocking mode special code is returned instead of blocking. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">byte</td><td>Place for incoming byte. Will remain unchanged if error occurs. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byte</td><td>Byte to send. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c">err::wouldblock</a></td><td>Non-blocking mode is set and read would block otherwise. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c" title="Text file busy. ">err::wouldblock</a></td><td>Non-blocking mode is set and send would block otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -506,9 +558,10 @@ template&lt;class PBus , size_t buf_size&gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph.png" border="0" usemap="#classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph" alt=""/></div>
-<map name="classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph" id="classecl_1_1serial_adfd5ab3f61eace104d696dda8abfdc9c_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46" title="Gets buffer from serial device. " alt="" coords="211,5,360,32"/>
+<div class="center"><img src="classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph.png" border="0" usemap="#classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph" alt=""/></div>
+<map name="classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph" id="classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph">
+<area shape="rect" id="node2" href="classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="213,5,365,32"/>
+<area shape="rect" id="node3" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="413,5,512,32"/>
 </map>
 </div>
 </p>
@@ -562,7 +615,7 @@ template&lt;class PBus , size_t buf_size&gt; </div>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">err:again</td><td>The buffer was not consumed entirely. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c">err::wouldblock</a></td><td>Non-blocking mode is set and send would block otherwise. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c" title="Text file busy. ">err::wouldblock</a></td><td>Non-blocking mode is set and send would block otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -573,59 +626,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classecl_1_1serial_a72133dc877cdae49e91d16809a2656aa_cgraph.png" border="0" usemap="#classecl_1_1serial_a72133dc877cdae49e91d16809a2656aa_cgraph" alt=""/></div>
 <map name="classecl_1_1serial_a72133dc877cdae49e91d16809a2656aa_cgraph" id="classecl_1_1serial_a72133dc877cdae49e91d16809a2656aa_cgraph">
 <area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="205,5,304,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae689fbc25d61273aef8e2b597fe1be7d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class PBus , size_t buf_size&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1serial.html">ecl::serial</a>&lt; PBus, buf_size &gt;::send_byte </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>byte</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sends byte to a serial device. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Driver is initialized.</dd></dl>
-<p>It may not block if internal buffering is applied. It may also block if platform device is not yet ready to send data. In non-blocking mode special code is returned instead of blocking. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">byte</td><td>Byte to send. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Operation status. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c">err::wouldblock</a></td><td>Non-blocking mode is set and send would block otherwise. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph.png" border="0" usemap="#classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph" alt=""/></div>
-<map name="classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph" id="classecl_1_1serial_ae689fbc25d61273aef8e2b597fe1be7d_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="213,5,365,32"/>
-<area shape="rect" id="node3" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="413,5,512,32"/>
 </map>
 </div>
 </p>
@@ -656,7 +656,7 @@ template&lt;class PBus , size_t buf_size = 128&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="bus_2export_2dev_2serial_8hpp.html">bus/export/dev/serial.hpp</a></li>
+<li><a class="el" href="serial_8hpp.html">serial.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

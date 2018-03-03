@@ -1,3 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="108,5,239,32"/>
+<area shape="rect" id="node2" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="108,5,239,32"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="287,5,425,32"/>
 </map>

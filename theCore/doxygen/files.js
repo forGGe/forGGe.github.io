@@ -3,7 +3,6 @@ var files =
     [ "common/export/common/adc.hpp", "common_2export_2common_2adc_8hpp.html", "common_2export_2common_2adc_8hpp" ],
     [ "stm32/export/aux/adc.hpp", "stm32_2export_2aux_2adc_8hpp.html", "stm32_2export_2aux_2adc_8hpp" ],
     [ "adc_cfg.in.hpp", "adc__cfg_8in_8hpp.html", null ],
-    [ "adc_example.hpp", "adc__example_8hpp.html", "adc__example_8hpp" ],
     [ "alloc.cpp", "alloc_8cpp.html", null ],
     [ "arch.cpp", "arch_8cpp.html", "arch_8cpp" ],
     [ "arm_eabi.cpp", "arm__eabi_8cpp.html", "arm__eabi_8cpp" ],
@@ -64,13 +63,11 @@ var files =
       [ "dir_inode", "classfat_1_1dir__inode.html", "classfat_1_1dir__inode" ]
     ] ],
     [ "dma_cfg.in.hpp", "dma__cfg_8in_8hpp.html", null ],
-    [ "dma_example.hpp", "dma__example_8hpp.html", "dma__example_8hpp" ],
     [ "endian.hpp", "endian_8hpp.html", "endian_8hpp" ],
     [ "err.cpp", "err_8cpp.html", null ],
     [ "err.hpp", "err_8hpp.html", "err_8hpp" ],
     [ "execution.cpp", "execution_8cpp.html", null ],
     [ "arch/arm_cm/export/arch/execution.hpp", "arch_2arm__cm_2export_2arch_2execution_8hpp.html", "arch_2arm__cm_2export_2arch_2execution_8hpp" ],
-    [ "lib/thread/tests/mocks/common/execution.hpp", "lib_2thread_2tests_2mocks_2common_2execution_8hpp.html", "lib_2thread_2tests_2mocks_2common_2execution_8hpp" ],
     [ "platform/common/export/common/execution.hpp", "platform_2common_2export_2common_2execution_8hpp.html", "platform_2common_2export_2common_2execution_8hpp" ],
     [ "platform/host/export/platform/execution.hpp", "platform_2host_2export_2platform_2execution_8hpp.html", "platform_2host_2export_2platform_2execution_8hpp" ],
     [ "platform/particle_electron/export/platform/execution.hpp", "platform_2particle__electron_2export_2platform_2execution_8hpp.html", "platform_2particle__electron_2export_2platform_2execution_8hpp" ],
@@ -97,8 +94,6 @@ var files =
       [ "file_inode", "classfat_1_1file__inode.html", "classfat_1_1file__inode" ]
     ] ],
     [ "Findcppcheck.cpp", "Findcppcheck_8cpp.html", "Findcppcheck_8cpp" ],
-    [ "FreeRTOS.h", "FreeRTOS_8h.html", "FreeRTOS_8h" ],
-    [ "FreeRTOSConfig.h", "FreeRTOSConfig_8h.html", "FreeRTOSConfig_8h" ],
     [ "fs.cpp", "fs_8cpp.html", null ],
     [ "export/fs/fs.hpp", "export_2fs_2fs_8hpp.html", [
       [ "vfs", "classfs_1_1vfs.html", "classfs_1_1vfs" ]
@@ -109,13 +104,13 @@ var files =
     [ "fs_descriptor.hpp", "fs__descriptor_8hpp.html", [
       [ "fs_descriptor", "classfs_1_1fs__descriptor.html", "classfs_1_1fs__descriptor" ]
     ] ],
-    [ "particle_electron/export/aux/generated.hpp", "particle__electron_2export_2aux_2generated_8hpp.html", null ],
-    [ "stm32/export/aux/generated.hpp", "stm32_2export_2aux_2generated_8hpp.html", "stm32_2export_2aux_2generated_8hpp" ],
-    [ "tm4c/export/aux/generated.hpp", "tm4c_2export_2aux_2generated_8hpp.html", null ],
+    [ "dev/export/dev/generated.hpp", "dev_2export_2dev_2generated_8hpp.html", null ],
+    [ "platform/particle_electron/export/aux/generated.hpp", "platform_2particle__electron_2export_2aux_2generated_8hpp.html", null ],
+    [ "platform/stm32/export/aux/generated.hpp", "platform_2stm32_2export_2aux_2generated_8hpp.html", "platform_2stm32_2export_2aux_2generated_8hpp" ],
+    [ "platform/tm4c/export/aux/generated.hpp", "platform_2tm4c_2export_2aux_2generated_8hpp.html", null ],
     [ "gpio.hpp", "gpio_8hpp.html", [
       [ "empty_gpio", "structecl_1_1empty__gpio.html", "structecl_1_1empty__gpio" ]
     ] ],
-    [ "gpio_alias_example.hpp", "gpio__alias__example_8hpp.html", "gpio__alias__example_8hpp" ],
     [ "stm32/templates/gpio_cfg.in.hpp", "stm32_2templates_2gpio__cfg_8in_8hpp.html", null ],
     [ "tm4c/templates/gpio_cfg.in.hpp", "tm4c_2templates_2gpio__cfg_8in_8hpp.html", "tm4c_2templates_2gpio__cfg_8in_8hpp" ],
     [ "stm32/export/platform/gpio_device.hpp", "stm32_2export_2platform_2gpio__device_8hpp.html", "stm32_2export_2platform_2gpio__device_8hpp" ],
@@ -127,21 +122,17 @@ var files =
     [ "particle_electron/export/aux/i2c_bus.hpp", "particle__electron_2export_2aux_2i2c__bus_8hpp.html", "particle__electron_2export_2aux_2i2c__bus_8hpp" ],
     [ "stm32/export/aux/i2c_bus.hpp", "stm32_2export_2aux_2i2c__bus_8hpp.html", "stm32_2export_2aux_2i2c__bus_8hpp" ],
     [ "i2c_cfg.in.hpp", "i2c__cfg_8in_8hpp.html", null ],
-    [ "particle_electron/i2c_example.hpp", "particle__electron_2i2c__example_8hpp.html", "particle__electron_2i2c__example_8hpp" ],
-    [ "stm32/i2c_example.hpp", "stm32_2i2c__example_8hpp.html", "stm32_2i2c__example_8hpp" ],
     [ "i2c_wire_cfgs.in.hpp", "i2c__wire__cfgs_8in_8hpp.html", null ],
     [ "i2c_wire_dispatcher.in.cpp", "i2c__wire__dispatcher_8in_8cpp.html", "i2c__wire__dispatcher_8in_8cpp" ],
-    [ "i2s_example.hpp", "i2s__example_8hpp.html", "i2s__example_8hpp" ],
     [ "fat/inode.cpp", "fat_2inode_8cpp.html", null ],
     [ "inode.cpp", "inode_8cpp.html", null ],
     [ "inode.hpp", "inode_8hpp.html", "inode_8hpp" ],
     [ "iostream.hpp", "iostream_8hpp.html", "iostream_8hpp" ],
     [ "irq.cpp", "irq_8cpp.html", "irq_8cpp" ],
-    [ "lib/thread/tests/mocks/common/irq.hpp", "lib_2thread_2tests_2mocks_2common_2irq_8hpp.html", "lib_2thread_2tests_2mocks_2common_2irq_8hpp" ],
-    [ "platform/common/export/common/irq.hpp", "platform_2common_2export_2common_2irq_8hpp.html", "platform_2common_2export_2common_2irq_8hpp" ],
-    [ "platform/particle_electron/export/platform/irq.hpp", "platform_2particle__electron_2export_2platform_2irq_8hpp.html", "platform_2particle__electron_2export_2platform_2irq_8hpp" ],
-    [ "platform/stm32/export/platform/irq.hpp", "platform_2stm32_2export_2platform_2irq_8hpp.html", "platform_2stm32_2export_2platform_2irq_8hpp" ],
-    [ "platform/tm4c/export/platform/irq.hpp", "platform_2tm4c_2export_2platform_2irq_8hpp.html", "platform_2tm4c_2export_2platform_2irq_8hpp" ],
+    [ "common/export/common/irq.hpp", "common_2export_2common_2irq_8hpp.html", "common_2export_2common_2irq_8hpp" ],
+    [ "particle_electron/export/platform/irq.hpp", "particle__electron_2export_2platform_2irq_8hpp.html", "particle__electron_2export_2platform_2irq_8hpp" ],
+    [ "stm32/export/platform/irq.hpp", "stm32_2export_2platform_2irq_8hpp.html", "stm32_2export_2platform_2irq_8hpp" ],
+    [ "tm4c/export/platform/irq.hpp", "tm4c_2export_2platform_2irq_8hpp.html", "tm4c_2export_2platform_2irq_8hpp" ],
     [ "irq.in.cpp", "irq_8in_8cpp.html", "irq_8in_8cpp" ],
     [ "istream.hpp", "istream_8hpp.html", "istream_8hpp" ],
     [ "istream_unit.cpp", "istream__unit_8cpp.html", "istream__unit_8cpp" ],
@@ -160,14 +151,9 @@ var files =
     [ "htu21d/main.cpp", "htu21d_2main_8cpp.html", "htu21d_2main_8cpp" ],
     [ "stm32f4_exti/main.cpp", "stm32f4__exti_2main_8cpp.html", "stm32f4__exti_2main_8cpp" ],
     [ "tm4c_led/main.cpp", "tm4c__led_2main_8cpp.html", "tm4c__led_2main_8cpp" ],
-    [ "stm32f407/mcu_defs.hpp", "stm32f407_2mcu__defs_8hpp.html", "stm32f407_2mcu__defs_8hpp" ],
-    [ "tm4c123gh6pm/mcu_defs.hpp", "tm4c123gh6pm_2mcu__defs_8hpp.html", null ],
     [ "memory.hpp", "memory_8hpp.html", "memory_8hpp" ],
     [ "mmio.hpp", "mmio_8hpp.html", "mmio_8hpp" ],
     [ "mmio_unit.cpp", "mmio__unit_8cpp.html", "mmio__unit_8cpp" ],
-    [ "mock_device.hpp", "mock__device_8hpp.html", [
-      [ "mock_device", "classmock__device.html", "classmock__device" ]
-    ] ],
     [ "dev/bus/tests/mocks/mutex.cpp", "dev_2bus_2tests_2mocks_2mutex_8cpp.html", "dev_2bus_2tests_2mocks_2mutex_8cpp" ],
     [ "lib/thread/freertos/mutex.cpp", "lib_2thread_2freertos_2mutex_8cpp.html", null ],
     [ "lib/thread/no_os/mutex.cpp", "lib_2thread_2no__os_2mutex_8cpp.html", null ],
@@ -197,9 +183,6 @@ var files =
     [ "particle_electron/platform.cpp", "particle__electron_2platform_8cpp.html", "particle__electron_2platform_8cpp" ],
     [ "stm32/platform.cpp", "stm32_2platform_8cpp.html", "stm32_2platform_8cpp" ],
     [ "tm4c/platform.cpp", "tm4c_2platform_8cpp.html", "tm4c_2platform_8cpp" ],
-    [ "platform_bus.hpp", "platform__bus_8hpp.html", [
-      [ "platform_mock", "classplatform__mock.html", "classplatform__mock" ]
-    ] ],
     [ "pool.hpp", "pool_8hpp.html", [
       [ "pool_base", "classecl_1_1pool__base.html", "classecl_1_1pool__base" ],
       [ "pool", "classecl_1_1pool.html", "classecl_1_1pool" ],
@@ -209,8 +192,9 @@ var files =
     [ "pool_main.cpp", "pool__main_8cpp.html", "pool__main_8cpp" ],
     [ "pool_unit.cpp", "pool__unit_8cpp.html", "pool__unit_8cpp" ],
     [ "sdspi.hpp", "sdspi_8hpp.html", [
-      [ "sd_spi", "classecl_1_1sd__spi.html", "classecl_1_1sd__spi" ]
+      [ "block_type", "structecl_1_1sdspi_1_1ctx__type_1_1block__type.html", "structecl_1_1sdspi_1_1ctx__type_1_1block__type" ]
     ] ],
+    [ "sdspi_cfg.in.hpp", "sdspi__cfg_8in_8hpp.html", null ],
     [ "freertos/semaphore.cpp", "freertos_2semaphore_8cpp.html", null ],
     [ "no_os/semaphore.cpp", "no__os_2semaphore_8cpp.html", null ],
     [ "posix/semaphore.cpp", "posix_2semaphore_8cpp.html", null ],
@@ -227,14 +211,11 @@ var files =
       [ "binary_semaphore", "classecl_1_1binary__semaphore.html", "classecl_1_1binary__semaphore" ]
     ] ],
     [ "semaphore_unit.cpp", "semaphore__unit_8cpp.html", "semaphore__unit_8cpp" ],
-    [ "semphr.h", "semphr_8h.html", "semphr_8h" ],
-    [ "bus/export/dev/serial.hpp", "bus_2export_2dev_2serial_8hpp.html", [
+    [ "serial.hpp", "serial_8hpp.html", [
       [ "serial", "classecl_1_1serial.html", "classecl_1_1serial" ]
     ] ],
-    [ "hm10/tests/mocks/dev/serial.hpp", "hm10_2tests_2mocks_2dev_2serial_8hpp.html", "hm10_2tests_2mocks_2dev_2serial_8hpp" ],
     [ "serial_cfgs.in.hpp", "serial__cfgs_8in_8hpp.html", "serial__cfgs_8in_8hpp" ],
     [ "serial_dispatcher.in.cpp", "serial__dispatcher_8in_8cpp.html", "serial__dispatcher_8in_8cpp" ],
-    [ "serial_example.hpp", "serial__example_8hpp.html", "serial__example_8hpp" ],
     [ "serial_unit.cpp", "serial__unit_8cpp.html", "serial__unit_8cpp" ],
     [ "shared_unit.cpp", "shared__unit_8cpp.html", "shared__unit_8cpp" ],
     [ "signal.cpp", "signal_8cpp.html", "signal_8cpp" ],
@@ -245,7 +226,6 @@ var files =
     [ "spi_bus.hpp", "spi__bus_8hpp.html", "spi__bus_8hpp" ],
     [ "skel/templates/spi_cfg.in.hpp", "skel_2templates_2spi__cfg_8in_8hpp.html", null ],
     [ "tm4c/templates/spi_cfg.in.hpp", "tm4c_2templates_2spi__cfg_8in_8hpp.html", null ],
-    [ "spi_example.hpp", "spi__example_8hpp.html", "spi__example_8hpp" ],
     [ "spi_i2s_cfg.in.hpp", "spi__i2s__cfg_8in_8hpp.html", null ],
     [ "spinlock.cpp", "spinlock_8cpp.html", null ],
     [ "spinlock.hpp", "spinlock_8hpp.html", [
@@ -275,16 +255,6 @@ var files =
     [ "tivac_tm4/suites/platform_bat/suite_init.cpp", "tivac__tm4_2suites_2platform__bat_2suite__init_8cpp.html", "tivac__tm4_2suites_2platform__bat_2suite__init_8cpp" ],
     [ "tivac_tm4/suites/unity_demo/suite_init.cpp", "tivac__tm4_2suites_2unity__demo_2suite__init_8cpp.html", "tivac__tm4_2suites_2unity__demo_2suite__init_8cpp" ],
     [ "sys.cpp", "sys_8cpp.html", "sys_8cpp" ],
-    [ "cs43l22_audio/target.hpp", "cs43l22__audio_2target_8hpp.html", "cs43l22__audio_2target_8hpp" ],
-    [ "htu21d/target.hpp", "htu21d_2target_8hpp.html", "htu21d_2target_8hpp" ],
-    [ "stm32f4_exti/target.hpp", "stm32f4__exti_2target_8hpp.html", null ],
-    [ "tm4c_led/target.hpp", "tm4c__led_2target_8hpp.html", null ],
-    [ "host/target_defs.hpp", "host_2target__defs_8hpp.html", null ],
-    [ "particle_electron/target_defs.hpp", "particle__electron_2target__defs_8hpp.html", null ],
-    [ "stm32f4discovery_rtos/target_defs.hpp", "stm32f4discovery__rtos_2target__defs_8hpp.html", null ],
-    [ "stm32f4discovery_simple/target_defs.hpp", "stm32f4discovery__simple_2target__defs_8hpp.html", null ],
-    [ "tivac_tm4/target_defs.hpp", "tivac__tm4_2target__defs_8hpp.html", null ],
-    [ "task.h", "task_8h.html", "task_8h" ],
     [ "test_adc.hpp", "test__adc_8hpp.html", null ],
     [ "stm32f4discovery_simple/suites/platform_bat/export/test_gpio.hpp", "stm32f4discovery__simple_2suites_2platform__bat_2export_2test__gpio_8hpp.html", "stm32f4discovery__simple_2suites_2platform__bat_2export_2test__gpio_8hpp" ],
     [ "tivac_tm4/suites/platform_bat/export/test_gpio.hpp", "tivac__tm4_2suites_2platform__bat_2export_2test__gpio_8hpp.html", [
@@ -309,8 +279,6 @@ var files =
     [ "uart_bus.hpp", "uart__bus_8hpp.html", "uart__bus_8hpp" ],
     [ "stm32/templates/uart_cfg.in.hpp", "stm32_2templates_2uart__cfg_8in_8hpp.html", null ],
     [ "tm4c/templates/uart_cfg.in.hpp", "tm4c_2templates_2uart__cfg_8in_8hpp.html", null ],
-    [ "stm32/uart_example.hpp", "stm32_2uart__example_8hpp.html", "stm32_2uart__example_8hpp" ],
-    [ "tm4c/uart_example.hpp", "tm4c_2uart__example_8hpp.html", "tm4c_2uart__example_8hpp" ],
     [ "unity_helpers.hpp", "unity__helpers_8hpp.html", "unity__helpers_8hpp" ],
     [ "unity_stubs.cpp", "unity__stubs_8cpp.html", "unity__stubs_8cpp" ],
     [ "usart_bus.hpp", "usart__bus_8hpp.html", "usart__bus_8hpp" ],

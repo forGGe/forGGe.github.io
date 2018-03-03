@@ -7,7 +7,7 @@
 <area shape="rect" id="node25" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="1140,155,1271,181"/>
 <area shape="rect" id="node4" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="253,453,350,480"/>
 <area shape="rect" id="node7" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="305,304,399,331"/>
-<area shape="rect" id="node23" href="$path_8hpp.html" title="../../path.hpp" alt="" coords="679,155,782,181"/>
+<area shape="rect" id="node23" href="$path_8hpp.html" title="fat/path.hpp" alt="" coords="679,155,780,181"/>
 <area shape="rect" id="node16" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="412,229,553,256"/>
 <area shape="rect" id="node21" href="$dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="199,229,337,256"/>
 <area shape="rect" id="node18" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="423,304,510,331"/>

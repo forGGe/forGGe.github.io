@@ -2,7 +2,7 @@
 <area shape="rect" id="node3" href="$inode_8hpp.html" title="fs/inode.hpp" alt="" coords="117,80,219,107"/>
 <area shape="rect" id="node7" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="278,229,365,256"/>
 <area shape="rect" id="node15" href="$fat_2export_2fat_2types_8hpp.html" title="fat/types.hpp" alt="" coords="607,80,715,107"/>
-<area shape="rect" id="node22" href="$path_8hpp.html" title="../../path.hpp" alt="" coords="737,155,839,181"/>
+<area shape="rect" id="node22" href="$path_8hpp.html" title="fat/path.hpp" alt="" coords="736,155,837,181"/>
 <area shape="rect" id="node4" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="79,155,220,181"/>
 <area shape="rect" id="node13" href="$dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="295,155,433,181"/>
 <area shape="rect" id="node8" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="273,304,399,331"/>

@@ -1,7 +1,7 @@
 var istream__unit_8cpp =
 [
     [ "istream_unit", "istream__unit_8cpp.html#a119df15fb436de3e30dc9c5175b5ff06", null ],
-    [ "main", "istream__unit_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97", null ],
+    [ "TEST_GROUP", "istream__unit_8cpp.html#a7a7c86d853403f2c29cc7dc1d877abe5", null ],
     [ "TEST", "istream__unit_8cpp.html#a76b22877b60773b601552ca35bef86ea", null ],
     [ "TEST", "istream__unit_8cpp.html#a84773384e15d49742cf53ed6a6b6d5ab", null ],
     [ "TEST", "istream__unit_8cpp.html#a720dd4cb24ff23d90f965116a3fc2768", null ],
@@ -20,5 +20,5 @@ var istream__unit_8cpp =
     [ "TEST", "istream__unit_8cpp.html#a1d0132da3353a383f17d8da4f76d0ea1", null ],
     [ "TEST", "istream__unit_8cpp.html#a3a18059959ca7e6cadeea51d0ad12b50", null ],
     [ "TEST", "istream__unit_8cpp.html#a800ab41825570e998a73eceb2e673ee3", null ],
-    [ "TEST_GROUP", "istream__unit_8cpp.html#a7a7c86d853403f2c29cc7dc1d877abe5", null ]
+    [ "main", "istream__unit_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::dma_wrap_base&lt; Impl &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::dma_wrap_base&lt; Impl &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -251,292 +251,6 @@ template&lt;class Impl&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0f6f7bb5bb3c8a7e5cb033f7f8497f22"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::bytes_left </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks how many bytes left to transmit via DMA entity. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a86fc41644801cfb232b10ea3c4997a2f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::clear_err </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clears ERR event. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1" title="Checks if TC event occurred. ">err()</a> == false. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aebef4697c45fc73a9045de2b9a08072a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::clear_ht </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clears HT event. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1" title="Checks if HT event occurred. ">ht()</a> == false. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a79c7a0a39cfb0daf903ce41633aa20a1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::clear_tc </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clears TC event. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classecl_1_1dma__wrap__base.html#a803e1fd6bd272dcc6ca67544c70d5601" title="Checks if TC event occurred. ">tc()</a> == false. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="acdbb0553c79c2910aa4d200933b2eb87"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::disable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disables DMA transaction. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was enabled by <a class="el" href="classecl_1_1dma__wrap__base.html#a69ba74869f4db14f7657447f9449f9dc" title="Enables DMA transaction. ">enable()</a> and not yet disabled. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>DMA transaction stopped and disabled.</dd></dl>
-<p>If to call <a class="el" href="classecl_1_1dma__wrap__base.html#acdbb0553c79c2910aa4d200933b2eb87" title="Disables DMA transaction. ">disable()</a> before TC event occur then DMA will stop only after last data unit will be transfered. </p>
-
-</div>
-</div>
-<a class="anchor" id="abfd4b48c754891979f0c5531108d61e9"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<div class="memtemplate">
-template&lt;bool DisableTC, bool DisableHT, bool DisableErr&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::disable_events_irq </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disables IRQ for the events from DMA entity. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>DMA configure to do not trigger IRQ for selected events.</dd></dl>
-<p>IRQ previously enabled by <a class="el" href="classecl_1_1dma__wrap__base.html#aa8c7ae2577bcbe8093d046d98a132e2e" title="Enables IRQ for the events from DMA entity. ">enable_events_irq()</a> can be disabled using this method.. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">EnableTC</td><td>Set if transfer complete event must be enabled. </td></tr>
-    <tr><td class="paramname">EnableHT</td><td>Set if half transfer event must be enabled. </td></tr>
-    <tr><td class="paramname">EnableErr</td><td>Set if error event must be enabled. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Event IRQ allowance is not changed if relevant argument is not set. See example below <div class="fragment"><div class="line"><span class="comment">// Initial state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - enabled, HT - enabled, ERR - enabled</span></div><div class="line"></div><div class="line">dma_tx::template disable_events_irq&lt;true, false, false&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - disabled, HT - enabled, ERR - enabled</span></div><div class="line"></div><div class="line">dma_tx::template disable_events_irq&lt;false, false, true&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance. Note that HT event state was not</span></div><div class="line"><span class="comment">// changed:</span></div><div class="line"><span class="comment">// TC - disabled, HT - enabled, ERR - disabled</span></div></div><!-- fragment --> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a69ba74869f4db14f7657447f9449f9dc"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::enable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enables DMA transaction. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was configured by one of the <a class="el" href="classecl_1_1dma__wrap__base.html#a8b21bf2235f93c496c6d5fb9a1104e7b" title="Prepares DMA transaction from the peripheral to the given memory buffer. ">periph_to_mem()</a> or <a class="el" href="classecl_1_1dma__wrap__base.html#a593b57ff26b4bbbe8357fae9a8aa643a" title="Prepares DMA transaction from the memory buffer to the given peripheral. ">mem_to_periph()</a> methods. </dd>
-<dd>
-DMA was not yet started or already stopped previously by <a class="el" href="classecl_1_1dma__wrap__base.html#acdbb0553c79c2910aa4d200933b2eb87" title="Disables DMA transaction. ">disable()</a> call. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>DMA transaction enabled and started.</dd></dl>
-<p>By invoking this method one can lauch previously configured transaction. Use <a class="el" href="classecl_1_1dma__wrap__base.html#a803e1fd6bd272dcc6ca67544c70d5601" title="Checks if TC event occurred. ">tc()</a>, <a class="el" href="classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1" title="Checks if HT event occurred. ">ht()</a> and <a class="el" href="classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1" title="Checks if TC event occurred. ">err()</a> to check particular event state. Corresponding IRQ will be triggered if configured by <a class="el" href="classecl_1_1dma__wrap__base.html#aa8c7ae2577bcbe8093d046d98a132e2e" title="Enables IRQ for the events from DMA entity. ">enable_events_irq()</a>. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa8c7ae2577bcbe8093d046d98a132e2e"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<div class="memtemplate">
-template&lt;bool EnableTC, bool EnableHT, bool EnableErr&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::enable_events_irq </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enables IRQ for the events from DMA entity. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section post"><dt>Postcondition</dt><dd>DMA configured to trigger IRQ every time corresponding event occur.</dd></dl>
-<p>Events will be generated by the DMA according to type of events requested. If enabled, events will be delivered via IRQ. To subscribe for it use IRQ descriptor returned by the <a class="el" href="classecl_1_1dma__wrap__base.html#ace9054733f298e9d6e5cb78a757c4cca" title="Gets IRQ number of given DMA entity. ">get_irqn()</a> routine. Use <a class="el" href="classecl_1_1dma__wrap__base.html#a803e1fd6bd272dcc6ca67544c70d5601" title="Checks if TC event occurred. ">tc()</a>, <a class="el" href="classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1" title="Checks if HT event occurred. ">ht()</a> and <a class="el" href="classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1" title="Checks if TC event occurred. ">err()</a> to check if event occurred or not. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">EnableTC</td><td>Set if transfer complete event must be enabled. </td></tr>
-    <tr><td class="paramname">EnableHT</td><td>Set if half transfer event must be enabled. </td></tr>
-    <tr><td class="paramname">EnableErr</td><td>Set if error event must be enabled. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Note</dt><dd>Event IRQ allowance is not changed if relevant argument is not set. See example below <div class="fragment"><div class="line"><span class="comment">// Initial state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - disabled, HT - disabled, ERR - disabled</span></div><div class="line"></div><div class="line">dma_tx::template enable_events_irq&lt;true, false, false&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - enabled, HT - disabled, ERR - disabled</span></div><div class="line"></div><div class="line">dma_tx::template enable_events_irq&lt;false, false, true&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance. Note that HT event state was not</span></div><div class="line"><span class="comment">// changed:</span></div><div class="line"><span class="comment">// TC - enabled, HT - disabled, ERR - enabled</span></div></div><!-- fragment --> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5b07f1d9ec862f5b28760dfb17b1b1f1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if TC event occurred. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>true if error occurred during transaction, false otherwise. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ace9054733f298e9d6e5cb78a757c4cca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -561,35 +275,6 @@ template&lt;class Derived &gt; </div>
 </div><div class="memdoc">
 
 <p>Gets IRQ number of given DMA entity. </p>
-
-</div>
-</div>
-<a class="anchor" id="a55e3a74c5cd6694112de4f9d2f025cf1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Derived &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::ht </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if HT event occurred. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>true if tranfer is half-completed, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -875,6 +560,148 @@ size &gt; 0, periph != nullptr </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="aa8c7ae2577bcbe8093d046d98a132e2e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<div class="memtemplate">
+template&lt;bool EnableTC, bool EnableHT, bool EnableErr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::enable_events_irq </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables IRQ for the events from DMA entity. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>DMA configured to trigger IRQ every time corresponding event occur.</dd></dl>
+<p>Events will be generated by the DMA according to type of events requested. If enabled, events will be delivered via IRQ. To subscribe for it use IRQ descriptor returned by the <a class="el" href="classecl_1_1dma__wrap__base.html#ace9054733f298e9d6e5cb78a757c4cca" title="Gets IRQ number of given DMA entity. ">get_irqn()</a> routine. Use <a class="el" href="classecl_1_1dma__wrap__base.html#a803e1fd6bd272dcc6ca67544c70d5601" title="Checks if TC event occurred. ">tc()</a>, <a class="el" href="classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1" title="Checks if HT event occurred. ">ht()</a> and <a class="el" href="classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1" title="Checks if TC event occurred. ">err()</a> to check if event occurred or not. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">EnableTC</td><td>Set if transfer complete event must be enabled. </td></tr>
+    <tr><td class="paramname">EnableHT</td><td>Set if half transfer event must be enabled. </td></tr>
+    <tr><td class="paramname">EnableErr</td><td>Set if error event must be enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Event IRQ allowance is not changed if relevant argument is not set. See example below <div class="fragment"><div class="line"><span class="comment">// Initial state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - disabled, HT - disabled, ERR - disabled</span></div><div class="line"></div><div class="line">dma_tx::template enable_events_irq&lt;true, false, false&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - enabled, HT - disabled, ERR - disabled</span></div><div class="line"></div><div class="line">dma_tx::template enable_events_irq&lt;false, false, true&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance. Note that HT event state was not</span></div><div class="line"><span class="comment">// changed:</span></div><div class="line"><span class="comment">// TC - enabled, HT - disabled, ERR - enabled</span></div></div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abfd4b48c754891979f0c5531108d61e9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<div class="memtemplate">
+template&lt;bool DisableTC, bool DisableHT, bool DisableErr&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::disable_events_irq </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disables IRQ for the events from DMA entity. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>DMA configure to do not trigger IRQ for selected events.</dd></dl>
+<p>IRQ previously enabled by <a class="el" href="classecl_1_1dma__wrap__base.html#aa8c7ae2577bcbe8093d046d98a132e2e" title="Enables IRQ for the events from DMA entity. ">enable_events_irq()</a> can be disabled using this method.. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">EnableTC</td><td>Set if transfer complete event must be enabled. </td></tr>
+    <tr><td class="paramname">EnableHT</td><td>Set if half transfer event must be enabled. </td></tr>
+    <tr><td class="paramname">EnableErr</td><td>Set if error event must be enabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Event IRQ allowance is not changed if relevant argument is not set. See example below <div class="fragment"><div class="line"><span class="comment">// Initial state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - enabled, HT - enabled, ERR - enabled</span></div><div class="line"></div><div class="line">dma_tx::template disable_events_irq&lt;true, false, false&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance:</span></div><div class="line"><span class="comment">// TC - disabled, HT - enabled, ERR - enabled</span></div><div class="line"></div><div class="line">dma_tx::template disable_events_irq&lt;false, false, true&gt;();</div><div class="line"></div><div class="line"><span class="comment">// New state of the IRQ allowance. Note that HT event state was not</span></div><div class="line"><span class="comment">// changed:</span></div><div class="line"><span class="comment">// TC - disabled, HT - enabled, ERR - disabled</span></div></div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69ba74869f4db14f7657447f9449f9dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables DMA transaction. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was configured by one of the <a class="el" href="classecl_1_1dma__wrap__base.html#a8b21bf2235f93c496c6d5fb9a1104e7b" title="Prepares DMA transaction from the peripheral to the given memory buffer. ">periph_to_mem()</a> or <a class="el" href="classecl_1_1dma__wrap__base.html#a593b57ff26b4bbbe8357fae9a8aa643a" title="Prepares DMA transaction from the memory buffer to the given peripheral. ">mem_to_periph()</a> methods. </dd>
+<dd>
+DMA was not yet started or already stopped previously by <a class="el" href="classecl_1_1dma__wrap__base.html#acdbb0553c79c2910aa4d200933b2eb87" title="Disables DMA transaction. ">disable()</a> call. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>DMA transaction enabled and started.</dd></dl>
+<p>By invoking this method one can lauch previously configured transaction. Use <a class="el" href="classecl_1_1dma__wrap__base.html#a803e1fd6bd272dcc6ca67544c70d5601" title="Checks if TC event occurred. ">tc()</a>, <a class="el" href="classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1" title="Checks if HT event occurred. ">ht()</a> and <a class="el" href="classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1" title="Checks if TC event occurred. ">err()</a> to check particular event state. Corresponding IRQ will be triggered if configured by <a class="el" href="classecl_1_1dma__wrap__base.html#aa8c7ae2577bcbe8093d046d98a132e2e" title="Enables IRQ for the events from DMA entity. ">enable_events_irq()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="acdbb0553c79c2910aa4d200933b2eb87"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disables DMA transaction. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was enabled by <a class="el" href="classecl_1_1dma__wrap__base.html#a69ba74869f4db14f7657447f9449f9dc" title="Enables DMA transaction. ">enable()</a> and not yet disabled. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>DMA transaction stopped and disabled.</dd></dl>
+<p>If to call <a class="el" href="classecl_1_1dma__wrap__base.html#acdbb0553c79c2910aa4d200933b2eb87" title="Disables DMA transaction. ">disable()</a> before TC event occur then DMA will stop only after last data unit will be transfered. </p>
+
+</div>
+</div>
 <a class="anchor" id="a803e1fd6bd272dcc6ca67544c70d5601"></a>
 <div class="memitem">
 <div class="memproto">
@@ -901,6 +728,179 @@ template&lt;class Derived &gt; </div>
 <p>Checks if TC event occurred. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if tranfer completed, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a55e3a74c5cd6694112de4f9d2f025cf1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::ht </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if HT event occurred. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if tranfer is half-completed, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b07f1d9ec862f5b28760dfb17b1b1f1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if TC event occurred. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if error occurred during transaction, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a79c7a0a39cfb0daf903ce41633aa20a1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::clear_tc </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears TC event. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classecl_1_1dma__wrap__base.html#a803e1fd6bd272dcc6ca67544c70d5601" title="Checks if TC event occurred. ">tc()</a> == false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebef4697c45fc73a9045de2b9a08072a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::clear_ht </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears HT event. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classecl_1_1dma__wrap__base.html#a55e3a74c5cd6694112de4f9d2f025cf1" title="Checks if HT event occurred. ">ht()</a> == false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86fc41644801cfb232b10ea3c4997a2f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::clear_err </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears ERR event. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd><a class="el" href="classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1" title="Checks if TC event occurred. ">err()</a> == false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0f6f7bb5bb3c8a7e5cb033f7f8497f22"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="classecl_1_1dma__wrap__base.html">ecl::dma_wrap_base</a>&lt; Derived &gt;::bytes_left </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks how many bytes left to transmit via DMA entity. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>DMA was initialized by calling <a class="el" href="classecl_1_1dma__wrap__base.html#a919df7145de35317beb4a633b8147ec4" title="Initializes DMA. ">init()</a> method. </dd></dl>
 
 </div>
 </div>

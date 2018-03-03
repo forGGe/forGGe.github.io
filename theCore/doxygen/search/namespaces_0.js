@@ -10,7 +10,7 @@ var searchData=
   ['os',['os',['../namespaceecl_1_1os.html',1,'ecl']]],
   ['sensor',['sensor',['../namespaceecl_1_1sensor.html',1,'ecl']]],
   ['signal',['signal',['../namespaceecl_1_1os_1_1signal.html',1,'ecl::os']]],
+  ['skel',['skel',['../namespaceecl_1_1skel.html',1,'ecl']]],
   ['systmr',['systmr',['../namespaceecl_1_1systmr.html',1,'ecl']]],
-  ['test',['test',['../namespaceecl_1_1test.html',1,'ecl']]],
   ['this_5fthread',['this_thread',['../namespaceecl_1_1this__thread.html',1,'ecl']]]
 ];

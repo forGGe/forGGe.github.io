@@ -1,9 +1,0 @@
-<map id="mcu_defs.hpp" name="mcu_defs.hpp">
-<area shape="rect" id="node2" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="486,80,613,107"/>
-<area shape="rect" id="node4" href="$common_2export_2common_2spi_8hpp.html" title="common/spi.hpp" alt="" coords="171,155,301,181"/>
-<area shape="rect" id="node5" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="326,155,461,181"/>
-<area shape="rect" id="node10" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="758,155,855,181"/>
-<area shape="rect" id="node13" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="879,155,1041,181"/>
-<area shape="rect" id="node6" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="292,229,383,256"/>
-<area shape="rect" id="node15" href="$version_8hpp.html" title="General the Core version library. " alt="" coords="1061,229,1182,256"/>
-</map>

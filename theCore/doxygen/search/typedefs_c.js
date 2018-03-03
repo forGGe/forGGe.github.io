@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['path_5fptr',['path_ptr',['../namespacefat.html#a2472588dbd27f2b55aa43793f2c2cd97',1,'fat']]],
-  ['platform_5fconsole',['platform_console',['../namespaceecl.html#aed0b76c7cfef527630a7797a636b8837',1,'ecl']]],
-  ['platform_5fhandle',['platform_handle',['../classecl_1_1generic__bus.html#a9a48ce41c43cd645b9a16b14f77c38c0',1,'ecl::generic_bus::platform_handle()'],['../classecl_1_1serial.html#a4193561a0f92ba97c75d92b9e2950a88',1,'ecl::serial::platform_handle()']]]
+  ['sample_5farray',['sample_array',['../classecl_1_1adc.html#a5db82f9121d91cecd4d907558179433f',1,'ecl::adc']]],
+  ['sample_5ftype',['sample_type',['../classecl_1_1adc.html#ad74fb7b07944467c2f0bed18a59d99ad',1,'ecl::adc']]],
+  ['serial_5fmock_5finst',['serial_mock_inst',['../hm10__unit_8cpp.html#a46422b26eeea206c2dee8486f2638e18',1,'hm10_unit.cpp']]],
+  ['serial_5ft',['serial_t',['../serial__unit_8cpp.html#a19969c867eed74de90d3f021ff6879eb',1,'serial_unit.cpp']]]
 ];

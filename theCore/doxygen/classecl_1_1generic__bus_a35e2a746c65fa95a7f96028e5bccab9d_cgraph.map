@@ -1,10 +1,7 @@
 <map id="ecl::generic_bus::cancel_xfer" name="ecl::generic_bus::cancel_xfer">
-<area shape="rect" id="node2" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="308,56,391,83"/>
-<area shape="rect" id="node5" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="264,129,435,170"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="527,5,625,32"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="521,56,631,83"/>
-<area shape="rect" id="node6" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="521,107,631,133"/>
-<area shape="rect" id="node7" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="509,157,643,184"/>
-<area shape="rect" id="node9" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="483,208,669,235"/>
-<area shape="rect" id="node8" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="717,183,884,209"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="308,52,391,79"/>
+<area shape="rect" id="node5" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="264,103,435,145"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="489,5,587,32"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="483,56,593,83"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="483,111,593,137"/>
 </map>

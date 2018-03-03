@@ -1,7 +1,0 @@
-<map id="serial_example.hpp" name="serial_example.hpp">
-<area shape="rect" id="node2" href="$uart__bus_8hpp.html" title="Electron UART driver. " alt="" coords="449,80,583,107"/>
-<area shape="rect" id="node3" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="78,155,213,181"/>
-<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,229,96,256"/>
-<area shape="rect" id="node6" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="288,155,389,181"/>
-<area shape="rect" id="node9" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="414,155,511,181"/>
-</map>

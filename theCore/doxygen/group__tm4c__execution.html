@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: Execution control module</title>
+<title>theCore C++ embedded framework: Execution control module</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga69319df4ac974e92a51f968888fc25cf"></a>
+<a class="anchor" id="gae1d2fbc1927567eaaa8211a5451360fb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -158,10 +158,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void ecl::spin_wait </td>
+          <td class="memname">static void ecl::wfi </td>
           <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>ms</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -172,15 +171,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Performs a dummy busy wait for specified amount of milliseconds. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ms</td><td>number of milliseconds to wait.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This function is useful for a short delays.</p>
-<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
+<p>Waits for interrupts. </p>
+<p>Processor will stop executing until any interrupt will occur. See also: <a href="http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html">http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html</a> </p>
 
 </div>
 </div>
@@ -223,7 +215,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="gae1d2fbc1927567eaaa8211a5451360fb"></a>
+<a class="anchor" id="ga69319df4ac974e92a51f968888fc25cf"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -231,9 +223,10 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void ecl::wfi </td>
+          <td class="memname">static void ecl::spin_wait </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>ms</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -244,8 +237,15 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Waits for interrupts. </p>
-<p>Processor will stop executing until any interrupt will occur. See also: <a href="http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html">http://infocenter.arm.com/help/topic/com.arm.doc.ihi0014q/CJAJGICJ.html</a> </p>
+<p>Performs a dummy busy wait for specified amount of milliseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ms</td><td>number of milliseconds to wait.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This function is useful for a short delays.</p>
+<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
 
 </div>
 </div>

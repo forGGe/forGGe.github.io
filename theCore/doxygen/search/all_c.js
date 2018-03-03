@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['execution_2ehpp',['execution.hpp',['../lib_2thread_2tests_2mocks_2common_2execution_8hpp.html',1,'']]],
-  ['irq_2ehpp',['irq.hpp',['../lib_2thread_2tests_2mocks_2common_2irq_8hpp.html',1,'']]],
   ['last_5ferror',['last_error',['../classecl_1_1bus__pipe.html#adb0d14622e903b86fcab8f659568c868',1,'ecl::bus_pipe']]],
   ['last_5fpassed_5fdevice',['last_passed_device',['../structmock__mut.html#aab14b9a8d87bf9513a0eb564276eafcf',1,'mock_mut']]],
   ['le',['LE',['../namespaceecl.html#a7c5df9aff3a16d401448de09b43bc91e',1,'ecl']]],
-  ['led_5fblue',['led_blue',['../namespaceecl.html#ab60fdaeb1b7ac4ad86a3eef4fe8ce4b8',1,'ecl']]],
-  ['led_5fgreen',['led_green',['../namespaceecl.html#ab25bb0ef708d2cba20bfec75ec13bcb3',1,'ecl']]],
-  ['led_5fred',['led_red',['../namespaceecl.html#a79396635a7be07dcbdee99d171ffd49b',1,'ecl']]],
   ['left',['left',['../classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daa811882fecd5c7618d7099ebbd39ea254',1,'ecl::cs43l22']]],
   ['less_5fthan_5fblock',['less_than_block',['../structless__than__block.html',1,'']]],
   ['linked',['linked',['../classecl_1_1list__node.html#a16f12e040e819e318e2bfc9df70efcca',1,'ecl::list_node']]],
@@ -21,10 +16,10 @@ var searchData=
   ['list_5funit_2ecpp',['list_unit.cpp',['../list__unit_8cpp.html',1,'']]],
   ['lock',['lock',['../classecl_1_1generic__bus.html#abc62668bfb39f7d024cabab8520bd8fb',1,'ecl::generic_bus::lock()'],['../classecl_1_1weak__ptr.html#a8d04026d3384b7688f222ea848cc96fd',1,'ecl::weak_ptr::lock()'],['../classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55',1,'ecl::mutex::lock()'],['../classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55',1,'ecl::mutex::lock()'],['../classecl_1_1spinlock.html#a59a2476301365a404e7f869a66cc2b91',1,'ecl::spinlock::lock()'],['../classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55',1,'ecl::mutex::lock()']]],
   ['loop',['loop',['../user__side_8cpp.html#afe461d27b9c48d5921c00d521181f12f',1,'loop():&#160;user_side.cpp'],['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810ae48b981fb62db33b98a27fc6cf8bf40a',1,'ecl::loop()']]],
-  ['low',['low',['../namespaceecl_1_1sensor_1_1bh1750__cfg.html#ae89d8c3ce64c833a57da154a184578dea53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::sensor::bh1750_cfg::low()'],['../namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::sensor::bh1750_cfg::low()'],['../group__skel__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__tm4c__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__skel__spi.html#ggaa712a054d4c9d816c3638d9e83a11960a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__tm4c__spi.html#ggaa712a054d4c9d816c3638d9e83a11960a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../namespaceecl_1_1gpio__hw.html#abf4986d315309404a9931943c28e5774a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::gpio_hw::low()'],['../group__skel__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__tm4c__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__skel__spi.html#ggaa712a054d4c9d816c3638d9e83a11960a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__tm4c__spi.html#ggaa712a054d4c9d816c3638d9e83a11960a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()']]],
+  ['low',['low',['../namespaceecl_1_1sensor_1_1bh1750__cfg.html#ae89d8c3ce64c833a57da154a184578dea53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::sensor::bh1750_cfg::low()'],['../namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::sensor::bh1750_cfg::low()'],['../group__skel__spi.html#gga3339fd396d65d790e344fb29030ed501a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::skel::low()'],['../group__skel__spi.html#ggada11ac9cc87a656612993234e0e70236a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::skel::low()'],['../namespaceecl_1_1gpio__hw.html#abf4986d315309404a9931943c28e5774a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::gpio_hw::low()'],['../group__tm4c__spi.html#ggad336cb0bd21d9b21c306f17db7da7e0aa53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()'],['../group__tm4c__spi.html#ggaa712a054d4c9d816c3638d9e83a11960a53cced8d281a1a0ace3cb6594daaa4f7',1,'ecl::low()']]],
   ['lsucnt',['LSUCNT',['../structDWT__Type.html#acc05d89bdb1b4fe2fa499920ec02d0b1',1,'DWT_Type']]],
-  ['mutex_2ecpp',['mutex.cpp',['../lib_2thread_2freertos_2mutex_8cpp.html',1,'']]],
   ['mutex_2ecpp',['mutex.cpp',['../lib_2thread_2no__os_2mutex_8cpp.html',1,'']]],
+  ['mutex_2ecpp',['mutex.cpp',['../lib_2thread_2freertos_2mutex_8cpp.html',1,'']]],
   ['mutex_2ecpp',['mutex.cpp',['../lib_2thread_2posix_2mutex_8cpp.html',1,'']]],
   ['stm32_5fdevice_2eh',['stm32_device.h',['../l1xx_2export_2stm32__device_8h.html',1,'']]],
   ['stm32_5fdevice_2ehpp',['stm32_device.hpp',['../l1xx_2export_2stm32__device_8hpp.html',1,'']]]

@@ -1,3 +1,4 @@
 <map id="External device drivers" name="External device drivers">
 <area shape="rect" id="node2" href="$group__connectivity.html" title="Connectivity and IoT\l drivers" alt="" coords="225,5,381,47"/>
+<area shape="rect" id="node3" href="$group__sdspi.html" title="SDSPI driver module" alt="" coords="226,71,381,98"/>
 </map>

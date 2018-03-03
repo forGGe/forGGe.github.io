@@ -518,12 +518,12 @@ Proceed to the <a class="reference internal" href="#tm4c-multiplexing">TM4C Mult
 
 
 <span class="cm">/* UART-over-USB console output */</span>
-<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch0</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">console_channel</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch0</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">console_channel</span><span class="o">&gt;</span><span class="p">;</span>
 
 <span class="cm">/* Example UART */</span>
-<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">console_channel</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">console_channel</span><span class="o">&gt;</span><span class="p">;</span>
 
 
 <span class="p">}</span> <span class="c1">// namespace ecl</span>
@@ -616,7 +616,8 @@ See <a class="reference external" href="https://github.com/forGGe/theCore/issues
 17
 18
 19
-20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
 
@@ -630,7 +631,8 @@ See <a class="reference external" href="https://github.com/forGGe/theCore/issues
 
             <span class="nt">&quot;type&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;master&quot;</span> <span class="p">]</span> <span class="p">},</span>
             <span class="nt">&quot;cpol&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;cpha&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">}</span>
+            <span class="nt">&quot;cpha&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">},</span>
+            <span class="nt">&quot;clk_div&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">}</span>
         <span class="p">},</span>
 
         <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;cpol&quot;</span><span class="p">,</span> <span class="s2">&quot;cpha&quot;</span> <span class="p">]</span>
@@ -756,34 +758,34 @@ See <a class="reference external" href="https://github.com/forGGe/theCore/issues
 <span class="k">template</span><span class="o">&lt;&gt;</span>
 <span class="k">struct</span> <span class="n">spi_cfg</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span>
 <span class="p">{</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">clk_div</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="p">};</span>
 
 
-<span class="k">using</span> <span class="n">spi_1_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">SPI1_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="cm">/* SPI3 instance */</span>
 
 <span class="k">template</span><span class="o">&lt;&gt;</span>
 <span class="k">struct</span> <span class="n">spi_cfg</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span>
 <span class="p">{</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">high</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">high</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">clk_div</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="p">};</span>
 
 
-<span class="k">using</span> <span class="n">spi_3_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">test_spi</span> <span class="o">=</span> <span class="n">spi_3_driver</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">SPI3_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">test_spi</span> <span class="o">=</span> <span class="n">SPI3_driver</span><span class="p">;</span>
 
 <span class="c1">//! @}</span>
 
 <span class="c1">//! @}</span>
 
 <span class="c1">//! @}</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/tm4c/spi_example.hpp">Full TM4C SPI example header</a></p>

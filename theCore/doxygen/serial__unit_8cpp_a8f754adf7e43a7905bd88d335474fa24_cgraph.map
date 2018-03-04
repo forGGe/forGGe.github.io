@@ -1,14 +1,14 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classplatform__mock.html#a53254956637716ea86dfd359a29c79e6" title="platform_mock::invoke" alt="" coords="117,5,290,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46" title="Gets buffer from serial device. " alt="" coords="129,56,278,83"/>
-<area shape="rect" id="node4" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="118,107,289,149"/>
-<area shape="rect" id="node7" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="108,173,299,200"/>
-<area shape="rect" id="node9" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="118,246,289,287"/>
-<area shape="rect" id="node5" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="373,115,507,141"/>
-<area shape="rect" id="node6" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="581,115,761,141"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="389,173,491,200"/>
-<area shape="rect" id="node10" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="385,224,495,251"/>
-<area shape="rect" id="node11" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="373,275,507,301"/>
-<area shape="rect" id="node13" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="347,325,533,352"/>
-<area shape="rect" id="node12" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="588,300,755,327"/>
+<area shape="rect" id="node2" href="$classecl_1_1serial.html#acf4bfb7315efadf4a7ec104f5523ce46" title="Gets buffer from serial device. " alt="" coords="129,5,278,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="118,57,289,98"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="108,123,299,149"/>
+<area shape="rect" id="node12" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="118,174,289,215"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="350,127,453,153"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="664,133,811,160"/>
+<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="667,191,808,217"/>
+<area shape="rect" id="node8" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="664,253,811,280"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="523,177,596,204"/>
+<area shape="rect" id="node10" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="663,80,812,107"/>
+<area shape="rect" id="node11" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="504,25,615,52"/>
+<area shape="rect" id="node13" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="347,181,456,208"/>
 </map>

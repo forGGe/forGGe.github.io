@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::exti_manager Class Reference</title>
+<title>theCore C++ embedded framework: ecl::exti_manager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -423,41 +423,6 @@ Only GPIO interrupts are supported. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a2b9b0a5dacbc0e9c3d777b557e421c0e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::exti_manager::mask </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Masks (disables) pending EXTI request. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Subscribed handler. </dd>
-<dd>
-Initialized EXTI manager. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Previously subscribed handler. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a3ee125e1a4d0e3e7cb9bb598432496d6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -511,41 +476,6 @@ Unused handler. </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af3f7d8fc4df2e5e9aa5764676d713baf"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void ecl::exti_manager::unmask </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unmasks (enables) pending EXTI request. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Subscribed handler. </dd>
-<dd>
-Initialized EXTI manager. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Previously subscribed handler. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a062762dbed53d73abc8ed511225c20d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -576,6 +506,76 @@ Previously subscribed handler. </dd></dl>
 <p>It is possible to use the same handler for <a class="el" href="group__stm32__exti.html#gaa187cb4e77c6fd6adebe56f7c29bd9ac" title="Subscribes to event on the given GPIO. ">subscribe()</a> call if it was successfully unsubscribed(). </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Handler, must be previously subscribed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b9b0a5dacbc0e9c3d777b557e421c0e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::exti_manager::mask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Masks (disables) pending EXTI request. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Subscribed handler. </dd>
+<dd>
+Initialized EXTI manager. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Previously subscribed handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af3f7d8fc4df2e5e9aa5764676d713baf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ecl::exti_manager::unmask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unmasks (enables) pending EXTI request. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Subscribed handler. </dd>
+<dd>
+Initialized EXTI manager. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Previously subscribed handler. </td></tr>
   </table>
   </dd>
 </dl>

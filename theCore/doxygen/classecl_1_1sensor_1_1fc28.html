@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::sensor::fc28&lt; PowerPin &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::sensor::fc28&lt; PowerPin &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -145,6 +145,60 @@ class ecl::sensor::fc28&lt; PowerPin &gt;</h3>
 </dl>
 <p>According to what can be found in Web, power pin must be capable to supply around as 20-30 ma at 5V. In practice, 3V is enough too. If sensor is connected directly to the power output pin on the board and there is no way to control it (usually it is always "on") then <a class="el" href="structecl_1_1empty__gpio.html">ecl::empty_gpio</a> can be used in a place of PowerPin. </p><dl class="section user"><dt>ADC control</dt><dd>ADC must be controlled outside of this sensor. This is required to avoid any race conditions when multiple sensors access the same ADC. To convert ADC sample to the moisture value, use <a class="el" href="classecl_1_1sensor_1_1fc28.html#a008a8f868f186944b604dce5f9419c41">get_moisture()</a> routine. </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9f5243c816b545d0763dbe3a5d38458b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PowerPin &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1sensor_1_1fc28.html">ecl::sensor::fc28</a>&lt; PowerPin &gt;::power_on </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Power-on the sensor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d43eb08907c4c0bb030790e73a2c690"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename PowerPin &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1sensor_1_1fc28.html">ecl::sensor::fc28</a>&lt; PowerPin &gt;::power_off </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Power-off the sensor. </p>
+
+</div>
+</div>
 <a class="anchor" id="a008a8f868f186944b604dce5f9419c41"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,60 +258,6 @@ template&lt;typename St , typename Rt &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a> indicates successfull operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a0d43eb08907c4c0bb030790e73a2c690"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PowerPin &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1sensor_1_1fc28.html">ecl::sensor::fc28</a>&lt; PowerPin &gt;::power_off </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Power-off the sensor. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9f5243c816b545d0763dbe3a5d38458b"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename PowerPin &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1sensor_1_1fc28.html">ecl::sensor::fc28</a>&lt; PowerPin &gt;::power_on </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Power-on the sensor. </p>
 
 </div>
 </div>

@@ -1,3 +1,0 @@
-<map id="ecl::irq::get_current_irqn" name="ecl::irq::get_current_irqn">
-<area shape="rect" id="node2" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="233,5,343,32"/>
-</map>

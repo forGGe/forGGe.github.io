@@ -1,0 +1,6 @@
+<map id="ecl::sdspi::get_state" name="ecl::sdspi::get_state">
+<area shape="rect" id="node2" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="211,5,310,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="205,56,316,83"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a630c5fe179139749d0aa1a3e6eb45dd6" title="ecl::BE" alt="" coords="227,107,294,133"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="222,157,299,184"/>
+</map>

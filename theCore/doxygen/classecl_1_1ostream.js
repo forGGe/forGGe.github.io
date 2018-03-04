@@ -9,6 +9,6 @@ var classecl_1_1ostream =
     [ "operator<<", "classecl_1_1ostream.html#a88779fd46ddfa14fd16ffa2960237540", null ],
     [ "operator<<", "classecl_1_1ostream.html#adeca70085cc565b63bb6d843542f9909", null ],
     [ "operator<<", "classecl_1_1ostream.html#a8ed3ad5c54e73640ef236c4287b036b7", null ],
-    [ "operator=", "classecl_1_1ostream.html#a78e0ca608df57e27e22d612fc995ae9c", null ],
-    [ "put", "classecl_1_1ostream.html#a2b8585879d2891f033dcec22ef6a51b8", null ]
+    [ "put", "classecl_1_1ostream.html#a2b8585879d2891f033dcec22ef6a51b8", null ],
+    [ "operator=", "classecl_1_1ostream.html#a78e0ca608df57e27e22d612fc995ae9c", null ]
 ];

@@ -1,7 +1,7 @@
 <map id="file_inode.hpp" name="file_inode.hpp">
 <area shape="rect" id="node4" href="$inode_8hpp.html" title="fs/inode.hpp" alt="" coords="255,80,358,107"/>
 <area shape="rect" id="node14" href="$fat_2export_2fat_2types_8hpp.html" title="fat/types.hpp" alt="" coords="382,80,490,107"/>
-<area shape="rect" id="node22" href="$path_8hpp.html" title="../../path.hpp" alt="" coords="723,155,826,181"/>
+<area shape="rect" id="node22" href="$path_8hpp.html" title="fat/path.hpp" alt="" coords="724,155,825,181"/>
 <area shape="rect" id="node5" href="$file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="157,155,299,181"/>
 <area shape="rect" id="node13" href="$dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="323,155,461,181"/>
 <area shape="rect" id="node7" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="267,229,354,256"/>

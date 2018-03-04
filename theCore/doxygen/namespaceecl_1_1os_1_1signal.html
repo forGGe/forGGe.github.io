@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::os::signal Namespace Reference</title>
+<title>theCore C++ embedded framework: ecl::os::signal Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -128,36 +128,6 @@ Functions</h2></td></tr>
 <tr class="separator:a4d165308499159c21b605a093dc5739d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a9549b90ebd525bceb65e3d8e70703ec9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ecl::os::signal::clear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Clears pending signal for current thread. </p>
-<p>Can't be called from ISR context. </p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph.png" border="0" usemap="#namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph" alt=""/></div>
-<map name="namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph" id="namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph">
-<area shape="rect" id="node2" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="409,5,518,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1this__thread.html#a0193668afd67afb897c2e65698ac9fff" title="Gets a thread handle of currently running thread. " alt="" coords="204,53,355,94"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="403,60,524,87"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="adb1211aca43b116427734b411fd8150c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -186,19 +156,19 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_1_1os_1_1signal_adb1211aca43b116427734b411fd8150c_cgraph.png" border="0" usemap="#namespaceecl_1_1os_1_1signal_adb1211aca43b116427734b411fd8150c_cgraph" alt=""/></div>
 <map name="namespaceecl_1_1os_1_1signal_adb1211aca43b116427734b411fd8150c_cgraph" id="namespaceecl_1_1os_1_1signal_adb1211aca43b116427734b411fd8150c_cgraph">
-<area shape="rect" id="node2" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="204,5,313,32"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="204,5,313,32"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4d165308499159c21b605a093dc5739d"></a>
+<a class="anchor" id="a9549b90ebd525bceb65e3d8e70703ec9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> ecl::os::signal::try_wait </td>
+          <td class="memname">void ecl::os::signal::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -206,21 +176,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Tries to wait a signal. </p>
-<p>Can't be called from ISR context. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a639849f6b368019778991b32434354fc">err::again</a></td><td>No signal avaliable. Retry again. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Signal consumed. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Clears pending signal for current thread. </p>
+<p>Can't be called from ISR context. </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph.png" border="0" usemap="#namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph" alt=""/></div>
-<map name="namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph" id="namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph">
-<area shape="rect" id="node2" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="225,5,335,32"/>
+<div class="center"><img src="namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph.png" border="0" usemap="#namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph" alt=""/></div>
+<map name="namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph" id="namespaceecl_1_1os_1_1signal_a9549b90ebd525bceb65e3d8e70703ec9_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="409,5,518,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1this__thread.html#a0193668afd67afb897c2e65698ac9fff" title="Gets a thread handle of currently running thread. " alt="" coords="204,53,355,94"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="403,60,524,87"/>
 </map>
 </div>
 </p>
@@ -248,7 +214,41 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_1_1os_1_1signal_a4fba7265ecd59eb4b421efd1b8716295_cgraph.png" border="0" usemap="#namespaceecl_1_1os_1_1signal_a4fba7265ecd59eb4b421efd1b8716295_cgraph" alt=""/></div>
 <map name="namespaceecl_1_1os_1_1signal_a4fba7265ecd59eb4b421efd1b8716295_cgraph" id="namespaceecl_1_1os_1_1signal_a4fba7265ecd59eb4b421efd1b8716295_cgraph">
-<area shape="rect" id="node2" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="200,5,309,32"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="200,5,309,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4d165308499159c21b605a093dc5739d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> ecl::os::signal::try_wait </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tries to wait a signal. </p>
+<p>Can't be called from ISR context. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a639849f6b368019778991b32434354fc" title="Address family not supported. ">err::again</a></td><td>No signal avaliable. Retry again. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Signal consumed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph.png" border="0" usemap="#namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph" alt=""/></div>
+<map name="namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph" id="namespaceecl_1_1os_1_1signal_a4d165308499159c21b605a093dc5739d_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="225,5,335,32"/>
 </map>
 </div>
 </p>

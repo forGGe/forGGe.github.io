@@ -1,0 +1,7 @@
+<map id="ecl::spi::irq_handler" name="ecl::spi::irq_handler">
+<area shape="rect" id="node2" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="203,5,341,32"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="231,56,313,83"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="219,107,325,133"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="217,157,327,184"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="209,208,335,235"/>
+</map>

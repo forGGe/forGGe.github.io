@@ -1,7 +1,6 @@
 var searchData=
 [
   ['adc_5fcfg_2ein_2ehpp',['adc_cfg.in.hpp',['../adc__cfg_8in_8hpp.html',1,'']]],
-  ['adc_5fexample_2ehpp',['adc_example.hpp',['../adc__example_8hpp.html',1,'']]],
   ['alloc_2ecpp',['alloc.cpp',['../alloc_8cpp.html',1,'']]],
   ['arch_2ecpp',['arch.cpp',['../arch_8cpp.html',1,'']]],
   ['arm_5feabi_2ecpp',['arm_eabi.cpp',['../arm__eabi_8cpp.html',1,'']]],

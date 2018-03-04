@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: I2S and SPI driver</title>
+<title>theCore C++ embedded framework: I2S and SPI driver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -209,183 +209,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gabf6c8e89bebd39531ff5a93d4eb079f6"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::disable_circular_mode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disables circular mode for the bus. </p>
-<p>This method allows to stop xfer() that was started with circular mode. It is recommended to call this method in event handler during processing of the HT or TC event. The xfer is always stopped after TC. If circular mode is disabled during processing of the TC (or between HT and TC), the xfer will be stopped immediately after current TC will be processed. If circular mode is disabled during processing of the HT (or between TC and HT), the xfer will be finished after next TC will be processed. This method also can be called when xfer() is not active. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga9a0ccc726a9de0935b9a64e0e9850225"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::do_xfer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes xfer, using buffers previously set. </p>
-<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph.png" border="0" usemap="#group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph" alt=""/></div>
-<map name="group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph" id="group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="243,5,389,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1gpio__hw.html#a69198301fc0bb7daa3faedc207e7a768" title="Obtains IRQ number of given port. " alt="" coords="235,56,397,83"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="263,107,369,133"/>
-<area shape="rect" id="node5" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="253,157,379,184"/>
-<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="241,208,391,235"/>
-<area shape="rect" id="node7" href="namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="261,259,371,285"/>
-<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="248,309,384,336"/>
-<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="445,259,604,285"/>
-<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="464,309,585,336"/>
-<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="465,360,584,387"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga5440e98fe0367518006fd7d2fdd6caa1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::enable_circular_mode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Enables circular mode for the bus. </p>
-<p>In circular mode when xfer is finished, the new xfer is started automatically without interruption. The same buffer is used. The process continues until circular mode is disabled. This method must not be called during xfer(). </p>
-
-</div>
-</div>
-<a class="anchor" id="gae79bf9014b82454bef5e38755386871a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<div class="memtemplate">
-template&lt;ecl::i2s::audio_frequency frequency, class Iface_cfg &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt; Iface_cfg::bus_type==spi_bus_type::i2s, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt; <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::i2s_set_audio_frequency </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets audio frequency for I2S mode. </p>
-<p>Is not used in SPI mode. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">frequency</td><td>Can be a type of <a class="el" href="namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6" title="Common audio sample frequencies for I2S. ">ecl::i2s::audio_frequency</a> </td></tr>
-    <tr><td class="paramname">Iface_cfg</td><td>Used for correct enable_if mechanism. Must not be passed by user. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gad1d48b7d0247f3d7adf711e4793239b0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<div class="memtemplate">
-template&lt;ecl::i2s::data_format format, class Iface_cfg &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::enable_if_t&lt; Iface_cfg::bus_type==spi_bus_type::i2s, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt; <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::i2s_set_data_format </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets data format for I2S mode. </p>
-<p>Is not used in SPI mode. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">format</td><td>Can be a type of <a class="el" href="namespaceecl_1_1i2s.html#ae875af45cdc7a823e40a7fb58d0e6638" title="Common sample sizes for I2S. ">ecl::i2s::data_format</a> </td></tr>
-    <tr><td class="paramname">Iface_cfg</td><td>Used for correct enable_if mechanism. Must not be passed by user. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="ga6821f8fcb75fbf697d95b22331051887"></a>
 <div class="memitem">
 <div class="memproto">
@@ -424,125 +247,6 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="gabfe9ed80c9f9545d7c399757d4cbdec1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::is_circular_mode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the circular mode state. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if circular mode is enabled, false otherwise </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga93d28234dd793ce05342705e2642909f"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::reset_buffers </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reset xfer buffers. </p>
-<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__stm32__spi__i2s.html#ga17160ae2034977b2cf08187ef27e895f" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
-<dd>
-<a class="el" href="group__stm32__spi__i2s.html#gaa7fd5555966adce96d1dad51ee5fa090" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga1e6392462a774ca4d0322edd2c3f115d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::reset_handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Resets previously set handler. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga1704ce695763313710a32e29476bc72a"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;spi_device dev&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::set_handler </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classecl_1_1spi__i2s__bus.html#a7e0e54890c363dda0537a91cbb158bb8">handler_fn</a> &amp;&#160;</td>
-          <td class="paramname"><em>handler</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets event handler. </p>
-<p>Handler will be used by the bus, until <a class="el" href="group__stm32__spi__i2s.html#ga1e6392462a774ca4d0322edd2c3f115d" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -678,6 +382,302 @@ template&lt;spi_device dev&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1704ce695763313710a32e29476bc72a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::set_handler </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classecl_1_1spi__i2s__bus.html#a7e0e54890c363dda0537a91cbb158bb8">handler_fn</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets event handler. </p>
+<p>Handler will be used by the bus, until <a class="el" href="group__stm32__spi__i2s.html#ga1e6392462a774ca4d0322edd2c3f115d" title="Resets previously set handler. ">reset_handler()</a> will be called. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>Handler itself. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga93d28234dd793ce05342705e2642909f"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::reset_buffers </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset xfer buffers. </p>
+<p>Buffers that were set by </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__stm32__spi__i2s.html#ga17160ae2034977b2cf08187ef27e895f" title="Sets tx buffer made-up from sequence of similar bytes. ">set_tx()</a> and </dd>
+<dd>
+<a class="el" href="group__stm32__spi__i2s.html#gaa7fd5555966adce96d1dad51ee5fa090" title="Sets rx buffer with given size. ">set_rx()</a> will be no longer used after this call. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1e6392462a774ca4d0322edd2c3f115d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::reset_handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets previously set handler. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9a0ccc726a9de0935b9a64e0e9850225"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::do_xfer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes xfer, using buffers previously set. </p>
+<p>When it will be done, handler will be invoked. </p><dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph.png" border="0" usemap="#group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph" alt=""/></div>
+<map name="group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph" id="group__stm32__spi__i2s_ga9a0ccc726a9de0935b9a64e0e9850225_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="243,5,389,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1gpio__hw.html#a69198301fc0bb7daa3faedc207e7a768" title="Obtains IRQ number of given port. " alt="" coords="235,56,397,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="263,107,369,133"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="253,157,379,184"/>
+<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="241,208,391,235"/>
+<area shape="rect" id="node7" href="namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="261,259,371,285"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1irq.html#a385156ae00322f943cabcba8647251f2" title="Subscribes to the given IRQ. " alt="" coords="248,309,384,336"/>
+<area shape="rect" id="node9" href="namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="445,259,604,285"/>
+<area shape="rect" id="node10" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="464,309,585,336"/>
+<area shape="rect" id="node11" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="465,360,584,387"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gae79bf9014b82454bef5e38755386871a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<div class="memtemplate">
+template&lt;ecl::i2s::audio_frequency frequency, class Iface_cfg &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt; Iface_cfg::bus_type==spi_bus_type::i2s, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt; <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::i2s_set_audio_frequency </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets audio frequency for I2S mode. </p>
+<p>Is not used in SPI mode. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">frequency</td><td>Can be a type of <a class="el" href="namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6" title="Common audio sample frequencies for I2S. ">ecl::i2s::audio_frequency</a> </td></tr>
+    <tr><td class="paramname">Iface_cfg</td><td>Used for correct enable_if mechanism. Must not be passed by user. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad1d48b7d0247f3d7adf711e4793239b0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<div class="memtemplate">
+template&lt;ecl::i2s::data_format format, class Iface_cfg &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::enable_if_t&lt; Iface_cfg::bus_type==spi_bus_type::i2s, <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> &gt; <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::i2s_set_data_format </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets data format for I2S mode. </p>
+<p>Is not used in SPI mode. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">format</td><td>Can be a type of <a class="el" href="namespaceecl_1_1i2s.html#ae875af45cdc7a823e40a7fb58d0e6638" title="Common sample sizes for I2S. ">ecl::i2s::data_format</a> </td></tr>
+    <tr><td class="paramname">Iface_cfg</td><td>Used for correct enable_if mechanism. Must not be passed by user. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5440e98fe0367518006fd7d2fdd6caa1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::enable_circular_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enables circular mode for the bus. </p>
+<p>In circular mode when xfer is finished, the new xfer is started automatically without interruption. The same buffer is used. The process continues until circular mode is disabled. This method must not be called during xfer(). </p>
+
+</div>
+</div>
+<a class="anchor" id="gabf6c8e89bebd39531ff5a93d4eb079f6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::disable_circular_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Disables circular mode for the bus. </p>
+<p>This method allows to stop xfer() that was started with circular mode. It is recommended to call this method in event handler during processing of the HT or TC event. The xfer is always stopped after TC. If circular mode is disabled during processing of the TC (or between HT and TC), the xfer will be stopped immediately after current TC will be processed. If circular mode is disabled during processing of the HT (or between TC and HT), the xfer will be finished after next TC will be processed. This method also can be called when xfer() is not active. </p>
+
+</div>
+</div>
+<a class="anchor" id="gabfe9ed80c9f9545d7c399757d4cbdec1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;spi_device dev&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classecl_1_1spi__i2s__bus.html">ecl::spi_i2s_bus</a>&lt; dev &gt;::is_circular_mode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the circular mode state. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if circular mode is enabled, false otherwise </dd></dl>
 
 </div>
 </div>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: External interrupt manager</title>
+<title>theCore C++ embedded framework: External interrupt manager</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -166,34 +166,6 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaa899949a7b474a0382f056f7c7d8adcd"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ecl::exti_manager::handler::handler </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager.html#abfb8eb54c0e65ed1a1881951ec553a5b">exti_manager::callback</a>&#160;</td>
-          <td class="paramname"><em>cb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>ctx</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructs handler with user data. </p>
-
-</div>
-</div>
 <a class="anchor" id="ga72d5ee2e164e688e9f93b25c3b5bd163"></a>
 <div class="memitem">
 <div class="memproto">
@@ -235,6 +207,50 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ga4e38ff24f728f801821e33505ad1fe3c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ecl::exti_manager::unsubscribe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unsubscribes handler from any event. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Initialized EXTI manager. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Handler, must be previously subscribed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph.png" border="0" usemap="#group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph" alt=""/></div>
+<map name="group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph" id="group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph">
+<area shape="rect" id="node2" href="classecl_1_1list__node.html#a54de41b8ec068ac177b9b06cac68e805" title="Unlinks this node from a list. " alt="" coords="213,5,369,32"/>
+<area shape="rect" id="node3" href="group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="200,56,383,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ga4b2cf44d969a2f90211d4e1a40e83e08"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,6 +280,107 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8c400678c55aa8935c96807704c1a563"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ecl::exti_manager::unmask </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unmasks (enables) pending EXTI request. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Previously subscribed handler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph.png" border="0" usemap="#group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph" alt=""/></div>
+<map name="group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph" id="group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph">
+<area shape="rect" id="node2" href="group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="200,5,383,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="238,56,345,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="228,107,355,133"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaa899949a7b474a0382f056f7c7d8adcd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ecl::exti_manager::handler::handler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager.html#abfb8eb54c0e65ed1a1881951ec553a5b">exti_manager::callback</a>&#160;</td>
+          <td class="paramname"><em>cb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ctx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs handler with user data. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga9b3ff1faa2b6ffd76fe3cc1135a40536"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ecl::exti_manager::handler::~handler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys handler and unsubscribe it from EXTI events. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph.png" border="0" usemap="#group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph" alt=""/></div>
+<map name="group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph" id="group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="217,5,339,32"/>
+<area shape="rect" id="node3" href="classecl_1_1list__node.html#a54de41b8ec068ac177b9b06cac68e805" title="Unlinks this node from a list. " alt="" coords="200,56,356,83"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="219,107,337,133"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
@@ -357,123 +474,6 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="group__stm32__exti_gaa187cb4e77c6fd6adebe56f7c29bd9ac_cgraph.png" border="0" usemap="#group__stm32__exti_gaa187cb4e77c6fd6adebe56f7c29bd9ac_cgraph" alt=""/></div>
 <map name="group__stm32__exti_gaa187cb4e77c6fd6adebe56f7c29bd9ac_cgraph" id="group__stm32__exti_gaa187cb4e77c6fd6adebe56f7c29bd9ac_cgraph">
 <area shape="rect" id="node2" href="group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="200,13,383,39"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga8c400678c55aa8935c96807704c1a563"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ecl::exti_manager::unmask </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unmasks (enables) pending EXTI request. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Previously subscribed handler. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph.png" border="0" usemap="#group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph" alt=""/></div>
-<map name="group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph" id="group__stm32__exti_ga8c400678c55aa8935c96807704c1a563_cgraph">
-<area shape="rect" id="node2" href="group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="200,5,383,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="238,56,345,83"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="228,107,355,133"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga4e38ff24f728f801821e33505ad1fe3c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ecl::exti_manager::unsubscribe </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1exti__manager_1_1handler.html">handler</a> &amp;&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Unsubscribes handler from any event. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Initialized EXTI manager. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>Handler, must be previously subscribed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph.png" border="0" usemap="#group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph" alt=""/></div>
-<map name="group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph" id="group__stm32__exti_ga4e38ff24f728f801821e33505ad1fe3c_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1list__node.html#a54de41b8ec068ac177b9b06cac68e805" title="Unlinks this node from a list. " alt="" coords="213,5,369,32"/>
-<area shape="rect" id="node3" href="group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="200,56,383,83"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga9b3ff1faa2b6ffd76fe3cc1135a40536"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ecl::exti_manager::handler::~handler </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Destroys handler and unsubscribe it from EXTI events. </p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph.png" border="0" usemap="#group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph" alt=""/></div>
-<map name="group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph" id="group__stm32__exti_ga9b3ff1faa2b6ffd76fe3cc1135a40536_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="217,5,339,32"/>
-<area shape="rect" id="node3" href="classecl_1_1list__node.html#a54de41b8ec068ac177b9b06cac68e805" title="Unlinks this node from a list. " alt="" coords="200,56,356,83"/>
-<area shape="rect" id="node4" href="namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="219,107,337,133"/>
 </map>
 </div>
 </p>

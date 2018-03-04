@@ -1,51 +1,51 @@
 <map id="assert.h" name="assert.h">
 <area shape="rect" id="node2" href="$host__hello_2main_8cpp.html" title="main.cpp" alt="" coords="5,229,88,256"/>
-<area shape="rect" id="node3" href="$assert_8cpp.html" title="assert.cpp" alt="" coords="786,80,875,107"/>
-<area shape="rect" id="node4" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="113,229,178,256"/>
-<area shape="rect" id="node5" href="$lib_2thread_2freertos_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="900,80,991,107"/>
-<area shape="rect" id="node6" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="1015,80,1137,107"/>
-<area shape="rect" id="node7" href="$signal_8cpp.html" title="signal.cpp" alt="" coords="1161,80,1249,107"/>
-<area shape="rect" id="node8" href="$freertos_2thread_8cpp.html" title="thread.cpp" alt="" coords="1273,80,1364,107"/>
-<area shape="rect" id="node9" href="$posix_2thread_8cpp.html" title="thread.cpp" alt="" coords="1388,80,1479,107"/>
-<area shape="rect" id="node10" href="$debug__stubs_8cpp.html" title="Provides debug stubs required by TivaWare library. " alt="" coords="1503,80,1633,107"/>
-<area shape="rect" id="node11" href="$irq_8cpp.html" title="Common IRQ implementation. " alt="" coords="588,155,655,181"/>
-<area shape="rect" id="node12" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="1658,80,1731,107"/>
-<area shape="rect" id="node18" href="$bus_2export_2dev_2serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="1755,80,1842,107"/>
-<area shape="rect" id="node19" href="$hm10_8hpp.html" title="HM&#45;10 BT module drivers. " alt="" coords="426,155,513,181"/>
-<area shape="rect" id="node22" href="$fc28_8hpp.html" title="FC&#45;28 Soil Humidity/Moisture Detection Sensor Module. " alt="" coords="1866,80,1945,107"/>
-<area shape="rect" id="node24" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="683,80,762,107"/>
-<area shape="rect" id="node30" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="283,80,387,107"/>
-<area shape="rect" id="node34" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="1969,80,2071,107"/>
-<area shape="rect" id="node39" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="493,80,608,107"/>
-<area shape="rect" id="node40" href="$particle__electron_2export_2aux_2i2c__bus_8hpp.html" title="Electron I2C driver. " alt="" coords="2096,80,2195,107"/>
-<area shape="rect" id="node41" href="$uart__bus_8hpp.html" title="Electron UART driver. " alt="" coords="2219,80,2325,107"/>
-<area shape="rect" id="node42" href="$skel_2export_2aux_2spi_8hpp.html" title="Contains platform driver skeleton for SPI bus. " alt="" coords="2349,80,2419,107"/>
-<area shape="rect" id="node43" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="2443,80,2541,107"/>
-<area shape="rect" id="node44" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="2565,80,2664,107"/>
-<area shape="rect" id="node45" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="2689,80,2802,107"/>
-<area shape="rect" id="node46" href="$tm4c_2export_2aux_2spi_8hpp.html" title="Contains platform driver skeleton for SPI bus. " alt="" coords="2827,80,2896,107"/>
-<area shape="rect" id="node47" href="$uart_8hpp.html" title="UART implementation for TI TM4C MCU. " alt="" coords="2921,80,2997,107"/>
-<area shape="rect" id="node48" href="$tm4c_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for TM4C platform. " alt="" coords="3021,80,3160,107"/>
-<area shape="rect" id="node49" href="$semphr_8h.html" title="FreeRTOS semaphore mock header. " alt="" coords="3184,80,3267,107"/>
-<area shape="rect" id="node50" href="$kernel__main_8c.html" title="FreeRTOS main module. " alt="" coords="3291,80,3405,107"/>
-<area shape="rect" id="node13" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="1632,229,1736,256"/>
-<area shape="rect" id="node14" href="$platform__bus_8hpp.html" title="platform_bus.hpp" alt="" coords="1507,155,1643,181"/>
-<area shape="rect" id="node15" href="$cs43l22__audio_2target_8hpp.html" title="target.hpp" alt="" coords="1345,229,1434,256"/>
-<area shape="rect" id="node16" href="$htu21d_2target_8hpp.html" title="target.hpp" alt="" coords="1667,155,1757,181"/>
-<area shape="rect" id="node17" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="1383,155,1483,181"/>
-<area shape="rect" id="node20" href="$hm10__unit_8cpp.html" title="hm10_unit.cpp" alt="" coords="417,229,535,256"/>
-<area shape="rect" id="node21" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="203,229,285,256"/>
-<area shape="rect" id="node23" href="$fc28__unit_8cpp.html" title="fc28_unit.cpp" alt="" coords="1832,155,1941,181"/>
-<area shape="rect" id="node25" href="$alloc_8cpp.html" title="alloc.cpp" alt="" coords="791,155,871,181"/>
-<area shape="rect" id="node26" href="$pool__base__unit_8cpp.html" title="pool_base_unit.cpp" alt="" coords="895,155,1041,181"/>
-<area shape="rect" id="node27" href="$pool__unit_8cpp.html" title="pool_unit.cpp" alt="" coords="1065,155,1175,181"/>
-<area shape="rect" id="node28" href="$fat_2export_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="691,229,754,256"/>
-<area shape="rect" id="node29" href="$fat_2export_2fat_2types_8hpp.html" title="types.hpp" alt="" coords="679,155,766,181"/>
-<area shape="rect" id="node31" href="$ostream__unit_8cpp.html" title="ostream_unit.cpp" alt="" coords="267,155,402,181"/>
-<area shape="rect" id="node32" href="$iostream_8hpp.html" title="iostream.hpp" alt="" coords="135,155,243,181"/>
-<area shape="rect" id="node33" href="$tm4c__led_2main_8cpp.html" title="main.cpp" alt="" coords="309,229,392,256"/>
-<area shape="rect" id="node35" href="$aux__unit_8cpp.html" title="aux_unit.cpp" alt="" coords="2127,155,2233,181"/>
-<area shape="rect" id="node36" href="$shared__unit_8cpp.html" title="shared_unit.cpp" alt="" coords="2257,155,2383,181"/>
-<area shape="rect" id="node37" href="$dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="1949,229,2088,256"/>
-<area shape="rect" id="node38" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="2017,155,2103,181"/>
+<area shape="rect" id="node3" href="$assert_8cpp.html" title="assert.cpp" alt="" coords="1235,80,1325,107"/>
+<area shape="rect" id="node4" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="123,229,189,256"/>
+<area shape="rect" id="node5" href="$lib_2thread_2freertos_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="1349,80,1440,107"/>
+<area shape="rect" id="node6" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="1464,80,1587,107"/>
+<area shape="rect" id="node7" href="$signal_8cpp.html" title="signal.cpp" alt="" coords="1611,80,1699,107"/>
+<area shape="rect" id="node8" href="$freertos_2thread_8cpp.html" title="thread.cpp" alt="" coords="1723,80,1813,107"/>
+<area shape="rect" id="node9" href="$posix_2thread_8cpp.html" title="thread.cpp" alt="" coords="1837,80,1928,107"/>
+<area shape="rect" id="node10" href="$debug__stubs_8cpp.html" title="Provides debug stubs required by TivaWare library. " alt="" coords="1952,80,2083,107"/>
+<area shape="rect" id="node11" href="$irq_8cpp.html" title="Common IRQ implementation. " alt="" coords="719,155,785,181"/>
+<area shape="rect" id="node12" href="$kernel__main_8c.html" title="FreeRTOS main module. " alt="" coords="2107,80,2221,107"/>
+<area shape="rect" id="node13" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="2246,80,2319,107"/>
+<area shape="rect" id="node16" href="$serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="503,80,590,107"/>
+<area shape="rect" id="node19" href="$hm10_8hpp.html" title="HM&#45;10 BT module drivers. " alt="" coords="607,155,694,181"/>
+<area shape="rect" id="node21" href="$fc28_8hpp.html" title="FC&#45;28 Soil Humidity/Moisture Detection Sensor Module. " alt="" coords="2343,80,2422,107"/>
+<area shape="rect" id="node23" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="1133,80,1211,107"/>
+<area shape="rect" id="node29" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="271,80,375,107"/>
+<area shape="rect" id="node33" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="2446,80,2549,107"/>
+<area shape="rect" id="node38" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="831,80,945,107"/>
+<area shape="rect" id="node42" href="$particle__electron_2export_2aux_2i2c__bus_8hpp.html" title="Electron I2C driver. " alt="" coords="2573,80,2672,107"/>
+<area shape="rect" id="node43" href="$uart__bus_8hpp.html" title="Electron UART driver. " alt="" coords="2696,80,2803,107"/>
+<area shape="rect" id="node44" href="$skel_2export_2aux_2spi_8hpp.html" title="Contains platform driver skeleton for SPI bus. " alt="" coords="2827,80,2896,107"/>
+<area shape="rect" id="node45" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="2920,80,3019,107"/>
+<area shape="rect" id="node46" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="3043,80,3141,107"/>
+<area shape="rect" id="node47" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="3166,80,3279,107"/>
+<area shape="rect" id="node48" href="$tm4c_2export_2aux_2spi_8hpp.html" title="Contains platform driver for TM4 SPI bus. " alt="" coords="3304,80,3373,107"/>
+<area shape="rect" id="node49" href="$uart_8hpp.html" title="UART implementation for TI TM4C MCU. " alt="" coords="3398,80,3474,107"/>
+<area shape="rect" id="node50" href="$tm4c_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for TM4C platform. " alt="" coords="969,80,1108,107"/>
+<area shape="rect" id="node14" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="2057,155,2161,181"/>
+<area shape="rect" id="node15" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="2186,155,2286,181"/>
+<area shape="rect" id="node17" href="$serial__unit_8cpp.html" title="serial_unit.cpp" alt="" coords="465,155,583,181"/>
+<area shape="rect" id="node18" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="381,229,464,256"/>
+<area shape="rect" id="node20" href="$hm10__unit_8cpp.html" title="hm10_unit.cpp" alt="" coords="595,229,714,256"/>
+<area shape="rect" id="node22" href="$fc28__unit_8cpp.html" title="fc28_unit.cpp" alt="" coords="2311,155,2420,181"/>
+<area shape="rect" id="node24" href="$alloc_8cpp.html" title="Allocator. " alt="" coords="1245,155,1325,181"/>
+<area shape="rect" id="node25" href="$pool__base__unit_8cpp.html" title="pool_base_unit.cpp" alt="" coords="1349,155,1496,181"/>
+<area shape="rect" id="node26" href="$pool__unit_8cpp.html" title="pool_unit.cpp" alt="" coords="1520,155,1629,181"/>
+<area shape="rect" id="node27" href="$fat_2export_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="1635,229,1698,256"/>
+<area shape="rect" id="node28" href="$fat_2export_2fat_2types_8hpp.html" title="types.hpp" alt="" coords="1705,155,1791,181"/>
+<area shape="rect" id="node30" href="$ostream__unit_8cpp.html" title="ostream_unit.cpp" alt="" coords="255,155,390,181"/>
+<area shape="rect" id="node31" href="$iostream_8hpp.html" title="iostream.hpp" alt="" coords="123,155,231,181"/>
+<area shape="rect" id="node32" href="$tm4c__led_2main_8cpp.html" title="main.cpp" alt="" coords="488,229,571,256"/>
+<area shape="rect" id="node34" href="$aux__unit_8cpp.html" title="aux_unit.cpp" alt="" coords="2445,155,2550,181"/>
+<area shape="rect" id="node35" href="$shared__unit_8cpp.html" title="shared_unit.cpp" alt="" coords="2575,155,2700,181"/>
+<area shape="rect" id="node36" href="$dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="2708,229,2847,256"/>
+<area shape="rect" id="node37" href="$export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="2775,155,2862,181"/>
+<area shape="rect" id="node39" href="$stubs_8cpp.html" title="Newlib stubs implementation. " alt="" coords="861,155,945,181"/>
+<area shape="rect" id="node40" href="$no__os_2semaphore_8cpp.html" title="Implementation of the semaphore for targets without OS support. " alt="" coords="969,155,1092,181"/>
+<area shape="rect" id="node41" href="$stm32_2platform_8cpp.html" title="STM32 platform main file. " alt="" coords="1117,155,1222,181"/>
 </map>

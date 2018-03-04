@@ -386,7 +386,7 @@ build dependencies will be stored.</p>
 <li><p class="first">Set variables</p>
 <p><code class="docutils literal"><span class="pre">`</span>
 <span class="pre">export</span> <span class="pre">THECORE_THIRDPARTY_DIR=~/.thecore_thirdparty</span>
-<span class="pre">#</span> <span class="pre">Note</span> <span class="pre">that</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">build</span> <span class="pre">applications</span> <span class="pre">concurrently,</span> <span class="pre">you</span> <span class="pre">need</span> <span class="pre">DTHECORE_BUILD_THIRDPARTY_DIR</span>
+<span class="pre">#</span> <span class="pre">Note</span> <span class="pre">that</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">build</span> <span class="pre">applications</span> <span class="pre">concurrently,</span> <span class="pre">you</span> <span class="pre">need</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR</span>
 <span class="pre">#</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">application.</span>
 <span class="pre">export</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR=~/.thecore_thirdparty_worktree</span>
 <span class="pre">`</span></code></p>
@@ -3175,12 +3175,12 @@ Proceed to the <a class="reference internal" href="#tm4c-multiplexing">TM4C Mult
 
 
 <span class="cm">/* UART-over-USB console output */</span>
-<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch0</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">console_channel</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch0</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">console_channel</span><span class="o">&gt;</span><span class="p">;</span>
 
 <span class="cm">/* Example UART */</span>
-<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">template_console_dev</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">template_console_dev</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">static</span> <span class="k">constexpr</span> <span class="n">uart_channel</span> <span class="n">console_channel</span> <span class="o">=</span> <span class="n">uart_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">platform_console</span> <span class="o">=</span> <span class="n">uart</span><span class="o">&lt;</span><span class="n">console_channel</span><span class="o">&gt;</span><span class="p">;</span>
 
 
 <span class="p">}</span> <span class="c1">// namespace ecl</span>
@@ -3273,7 +3273,8 @@ See <a class="reference external" href="https://github.com/forGGe/theCore/issues
 17
 18
 19
-20</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
     <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
 
@@ -3287,7 +3288,8 @@ See <a class="reference external" href="https://github.com/forGGe/theCore/issues
 
             <span class="nt">&quot;type&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;master&quot;</span> <span class="p">]</span> <span class="p">},</span>
             <span class="nt">&quot;cpol&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;cpha&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">}</span>
+            <span class="nt">&quot;cpha&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">},</span>
+            <span class="nt">&quot;clk_div&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">}</span>
         <span class="p">},</span>
 
         <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;cpol&quot;</span><span class="p">,</span> <span class="s2">&quot;cpha&quot;</span> <span class="p">]</span>
@@ -3413,34 +3415,34 @@ See <a class="reference external" href="https://github.com/forGGe/theCore/issues
 <span class="k">template</span><span class="o">&lt;&gt;</span>
 <span class="k">struct</span> <span class="n">spi_cfg</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span>
 <span class="p">{</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">clk_div</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="p">};</span>
 
 
-<span class="k">using</span> <span class="n">spi_1_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">SPI1_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch1</span><span class="o">&gt;</span><span class="p">;</span>
 <span class="cm">/* SPI3 instance */</span>
 
 <span class="k">template</span><span class="o">&lt;&gt;</span>
 <span class="k">struct</span> <span class="n">spi_cfg</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span>
 <span class="p">{</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">high</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">type</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_type</span><span class="o">::</span><span class="n">master</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpol</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpol</span><span class="o">::</span><span class="n">low</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">cpha</span>    <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">spi_cpha</span><span class="o">::</span><span class="n">high</span><span class="p">;</span>
+    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">clk_div</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 <span class="p">};</span>
 
 
-<span class="k">using</span> <span class="n">spi_3_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">test_spi</span> <span class="o">=</span> <span class="n">spi_3_driver</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">SPI3_driver</span> <span class="o">=</span> <span class="n">spi</span><span class="o">&lt;</span><span class="n">spi_channel</span><span class="o">::</span><span class="n">ch3</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">test_spi</span> <span class="o">=</span> <span class="n">SPI3_driver</span><span class="p">;</span>
 
 <span class="c1">//! @}</span>
 
 <span class="c1">//! @}</span>
 
 <span class="c1">//! @}</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
 </pre></div>
 </td></tr></table></div>
 <p><a class="reference external" href="../_static/generated/tm4c/spi_example.hpp">Full TM4C SPI example header</a></p>
@@ -4143,8 +4145,8 @@ theCore root.</p>
 <p>theCore HM-10 driver operates only in slave mode.
 For master mode, see <a class="reference external" href="https://github.com/forGGe/theCore/issues/354">“Implement HM-10 master mode” GitHub issue</a>.</p>
 </div>
-<div class="section" id="references">
-<h4>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="additional-references">
+<h4>Additional references<a class="headerlink" href="#additional-references" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference external" href="http://www.martyncurrey.com/hm-10-bluetooth-4ble-modules/">Martyn Currey’s “HM-10 Bluetooth 4 BLE Modules” guide</a></li>
 <li><a class="reference external" href="http://www.instructables.com/id/How-to-Use-Bluetooth-40-HM10/">Instructable’s “HOW TO USE BLUETOOTH 4.0 HM10”</a></li>
@@ -4167,9 +4169,47 @@ For master mode, see <a class="reference external" href="https://github.com/forG
 </div>
 <span id="document-devices/sdspi"></span><div class="section" id="sdspi-driver">
 <h3>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="https://pre00.deviantart.net/39c5/th/pre/f/2010/225/8/5/micro_sd_card_up_by_tash78.png"><img alt="SD card with SD SPI driver" src="https://pre00.deviantart.net/39c5/th/pre/f/2010/225/8/5/micro_sd_card_up_by_tash78.png" style="width: 450px; height: 450px;" /></a>
+<p>(<a class="reference external" href="https://tash78.deviantart.com/art/Micro-SD-Card-UP-175156797">Image by tash78 &#64; devianart</a>)</p>
+<p>theCore SDPSI driver allows to communicate with SD cards using platforms that
+support SPI.</p>
+<div class="section" id="specification">
+<h4>Specification<a class="headerlink" href="#specification" title="Permalink to this headline">¶</a></h4>
+<p>Simplified specification can be downloaded for free from <a class="reference external" href="https://www.sdcard.org/downloads/pls/">SD card association website</a>.</p>
+</div>
+<div class="section" id="source-code">
+<h4>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h4>
+<p>SDSPI driver implementation is located under <code class="docutils literal"><span class="pre">dev/sdspi/</span></code> directory, relative to
+theCore root.</p>
+</div>
+<div class="section" id="driver-documentation">
+<h4>Driver documentation<a class="headerlink" href="#driver-documentation" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="http://forgge.github.io/theCore/doxygen/group__sdspi.html">Click here to open SDSPI Doxygen docs</a>.</p>
+</div>
+<div class="section" id="sdspi-usage-example">
+<h4>SDSPI usage example<a class="headerlink" href="#sdspi-usage-example" title="Permalink to this headline">¶</a></h4>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
+</div>
+</div>
+<div class="section" id="known-limitations">
+<h4>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h4>
+<p>SDSPI driver does not support SPI dynamic clock changing after initialization.
+SDSPI driver, by definition, works only in SPI mode, not SDIO.</p>
+</div>
+<div class="section" id="verified-hardware">
+<h4>Verified hardware<a class="headerlink" href="#verified-hardware" title="Permalink to this headline">¶</a></h4>
+<p>SDSPI driver is tested with <a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">Catalex micro-SD card adapter/module</a> and
+<a class="reference external" href="http://bit.ly/2HU5yr7">high-capacity, class 10 micro SD card</a>.</p>
+</div>
+<div class="section" id="additional-references">
+<h4>Additional references<a class="headerlink" href="#additional-references" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference external" href="https://www.sdcard.org/">SD card association main page</a></li>
+<li><a class="reference external" href="https://www.sdcard.org/developers/overview/speed_class/">Speed classes of SD cards</a></li>
+<li><a class="reference external" href="http://elm-chan.org/docs/mmc/mmc_e.html">ELEM-chan article on using MMC/SDC in SPI mode</a></li>
+</ul>
 </div>
 </div>
 </div>

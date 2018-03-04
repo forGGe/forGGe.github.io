@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: sdspi.hpp File Reference</title>
+<title>theCore C++ embedded framework: sdspi.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -112,9 +112,13 @@ $(document).ready(function(){initNavTree('sdspi_8hpp.html','');});
 <div class="title">sdspi.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>SDSPI driver module.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
-<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
 <code>#include &lt;<a class="el" href="iostream_8hpp.html">ecl/iostream.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="endian_8hpp.html">ecl/endian.hpp</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="types_8h.html">ecl/types.h</a>&gt;</code><br />
@@ -123,20 +127,30 @@ Include dependency graph for sdspi.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="sdspi_8hpp__incl.png" border="0" usemap="#sdspi_8hpp" alt=""/></div>
 <map name="sdspi_8hpp" id="sdspi_8hpp">
-<area shape="rect" id="node5" href="iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="505,80,636,107"/>
-<area shape="rect" id="node21" href="endian_8hpp.html" title="ecl/endian.hpp" alt="" coords="1020,80,1137,107"/>
-<area shape="rect" id="node23" href="types_8h.html" title="Common types for theCore framework. " alt="" coords="889,80,983,107"/>
-<area shape="rect" id="node6" href="istream_8hpp.html" title="istream.hpp" alt="" coords="777,155,877,181"/>
-<area shape="rect" id="node11" href="ostream_8hpp.html" title="ostream.hpp" alt="" coords="420,155,524,181"/>
-<area shape="rect" id="node16" href="console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="608,155,752,181"/>
-<area shape="rect" id="node13" href="assert_8h.html" title="ecl/assert.h" alt="" coords="423,229,521,256"/>
-<area shape="rect" id="node18" href="err_8hpp.html" title="ecl/err.hpp" alt="" coords="644,229,735,256"/>
+<area shape="rect" id="node6" href="iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="487,80,617,107"/>
+<area shape="rect" id="node23" href="endian_8hpp.html" title="ecl/endian.hpp" alt="" coords="195,80,312,107"/>
+<area shape="rect" id="node24" href="types_8h.html" title="Common types for theCore framework. " alt="" coords="893,80,987,107"/>
+<area shape="rect" id="node7" href="istream_8hpp.html" title="istream.hpp" alt="" coords="781,155,881,181"/>
+<area shape="rect" id="node12" href="ostream_8hpp.html" title="ostream.hpp" alt="" coords="411,155,515,181"/>
+<area shape="rect" id="node18" href="console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="589,155,733,181"/>
+<area shape="rect" id="node14" href="assert_8h.html" title="ecl/assert.h" alt="" coords="217,229,314,256"/>
+<area shape="rect" id="node20" href="err_8hpp.html" title="ecl/err.hpp" alt="" coords="615,229,705,256"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1sd__spi.html">ecl::sd_spi&lt; spi_dev, GPIO_CS &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1sdspi__state.html">ecl::sdspi_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct to hold SDSPI driver state, resulting from SDSPI API calls.  <a href="structecl_1_1sdspi__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1sdspi__card__info.html">ecl::sdspi_card_info</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDSPI card information struct.  <a href="structecl_1_1sdspi__card__info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1sdspi.html">ecl::sdspi&lt; spi_dev, gpio_cs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDSPI driver class.  <a href="classecl_1_1sdspi.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1sdspi_1_1ctx__type_1_1block__type.html">ecl::sdspi&lt; spi_dev, gpio_cs &gt;::ctx_type::block_type</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Block POD-type, allocated as an subobject of a static object.  <a href="structecl_1_1sdspi_1_1ctx__type_1_1block__type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -144,7 +158,10 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespaceecl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html">ecl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>SDSPI driver module. </p>
+<p>Obtain SDSPI reference here: <a href="https://www.sdcard.org/downloads/pls/">https://www.sdcard.org/downloads/pls/</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

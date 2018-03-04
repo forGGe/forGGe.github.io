@@ -1,31 +1,31 @@
 <map id="TEST_GROUP" name="TEST_GROUP">
-<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="217,104,275,131"/>
-<area shape="rect" id="node12" href="$classecl_1_1native__thread.html#a4aebec64c7eec517f224fce54fbc6c4e" title="ecl::native_thread\l::set_routine" alt="" coords="177,155,315,197"/>
-<area shape="rect" id="node13" href="$thread__unit_8cpp.html#a599f2a1ad0fbe10cc5df2447b0e6f918" title="test_routine" alt="" coords="196,221,296,248"/>
-<area shape="rect" id="node18" href="$classecl_1_1native__thread.html#aa359e0230df622f0db3b7d1701a1c875" title="ecl::native_thread\l::start" alt="" coords="177,273,315,314"/>
-<area shape="rect" id="node21" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="832,312,1023,339"/>
-<area shape="rect" id="node23" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="161,389,331,416"/>
-<area shape="rect" id="node29" href="$classecl_1_1native__thread.html#a6ba87367e0de98f17c34e423a2ad8671" title="ecl::native_thread\l::join" alt="" coords="177,441,315,482"/>
-<area shape="rect" id="node30" href="$classecl_1_1native__thread.html#a4418d2d0ba17390fb623457f0e1869a5" title="ecl::native_thread\l::set_name" alt="" coords="177,506,315,547"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="413,5,515,32"/>
-<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="402,56,526,83"/>
-<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="421,107,507,133"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="386,157,542,184"/>
-<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="663,5,718,32"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="649,56,732,83"/>
-<area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="625,108,756,135"/>
-<area shape="rect" id="node11" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="642,159,739,185"/>
-<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Puts character to bypass console. Does nothing if console is disabled. " alt="" coords="862,108,993,135"/>
-<area shape="rect" id="node14" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="385,221,543,248"/>
-<area shape="rect" id="node15" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="605,214,776,255"/>
-<area shape="rect" id="node16" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="860,221,995,248"/>
-<area shape="rect" id="node17" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="1071,221,1251,248"/>
-<area shape="rect" id="node19" href="$task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="421,284,507,311"/>
-<area shape="rect" id="node20" href="$namespaceecl_1_1this__thread.html#aa86712ca78624d145b2b279f20357ec9" title="Yields current thread. " alt="" coords="609,284,772,311"/>
-<area shape="rect" id="node22" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="1109,312,1212,339"/>
-<area shape="rect" id="node24" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="379,411,549,453"/>
-<area shape="rect" id="node25" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="636,389,745,416"/>
-<area shape="rect" id="node26" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="623,440,758,467"/>
-<area shape="rect" id="node28" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="597,491,784,517"/>
-<area shape="rect" id="node27" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="844,465,1011,492"/>
+<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="227,107,286,133"/>
+<area shape="rect" id="node13" href="$classecl_1_1native__thread.html#a4aebec64c7eec517f224fce54fbc6c4e" title="ecl::native_thread\l::set_routine" alt="" coords="187,221,326,262"/>
+<area shape="rect" id="node14" href="$thread__unit_8cpp.html#a599f2a1ad0fbe10cc5df2447b0e6f918" title="test_routine" alt="" coords="207,287,307,313"/>
+<area shape="rect" id="node17" href="$classecl_1_1native__thread.html#aa359e0230df622f0db3b7d1701a1c875" title="ecl::native_thread\l::start" alt="" coords="187,338,326,379"/>
+<area shape="rect" id="node18" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="161,404,352,431"/>
+<area shape="rect" id="node26" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="172,455,341,481"/>
+<area shape="rect" id="node29" href="$classecl_1_1native__thread.html#a6ba87367e0de98f17c34e423a2ad8671" title="ecl::native_thread\l::join" alt="" coords="187,506,326,547"/>
+<area shape="rect" id="node30" href="$classecl_1_1native__thread.html#a4418d2d0ba17390fb623457f0e1869a5" title="ecl::native_thread\l::set_name" alt="" coords="187,571,326,613"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="434,5,537,32"/>
+<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="423,56,547,83"/>
+<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="442,107,529,133"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="407,157,563,184"/>
+<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="677,5,731,32"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="663,56,745,83"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="639,107,769,133"/>
+<area shape="rect" id="node12" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="655,157,753,184"/>
+<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="847,107,977,133"/>
+<area shape="rect" id="node11" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="1035,107,1173,133"/>
+<area shape="rect" id="node15" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="406,240,565,267"/>
+<area shape="rect" id="node16" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="619,209,789,250"/>
+<area shape="rect" id="node19" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="434,404,537,431"/>
+<area shape="rect" id="node20" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="839,420,985,447"/>
+<area shape="rect" id="node21" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="841,471,983,497"/>
+<area shape="rect" id="node22" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="839,300,985,327"/>
+<area shape="rect" id="node23" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="667,376,741,403"/>
+<area shape="rect" id="node24" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="837,363,987,389"/>
+<area shape="rect" id="node25" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="649,528,759,555"/>
+<area shape="rect" id="node27" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="400,538,571,579"/>
+<area shape="rect" id="node28" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="649,579,759,605"/>
 </map>

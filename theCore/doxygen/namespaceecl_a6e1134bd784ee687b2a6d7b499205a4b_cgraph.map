@@ -1,4 +1,11 @@
 <map id="ecl::spin_wait" name="ecl::spin_wait">
-<area shape="rect" id="node2" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="164,5,355,32"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="403,5,505,32"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#a2827830e1941c654a3d4083f7dfb546d" title="Handles IRQ and visible to the startup code. " alt="" coords="172,56,305,83"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="197,107,280,133"/>
+<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="165,157,312,184"/>
+<area shape="rect" id="node8" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="164,208,313,235"/>
+<area shape="rect" id="node9" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="168,259,309,285"/>
+<area shape="rect" id="node10" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="165,309,312,336"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a1bdc87f006f254d1b8dde1a2e3c0f720" title="Gets current IRQ number. " alt="" coords="361,5,541,32"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a7ce607cad5d0fbc195083ea63a8a2789" title="Effectively casts IRQ storage. " alt="" coords="372,56,531,83"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="396,107,507,133"/>
 </map>

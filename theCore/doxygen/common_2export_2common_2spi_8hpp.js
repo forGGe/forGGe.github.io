@@ -1,5 +1,15 @@
 var common_2export_2common_2spi_8hpp =
 [
+    [ "spi_device", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80", [
+      [ "bus1", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80afccf268d870cf9a101fd1d2eb30155c5", null ],
+      [ "bus2", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80a159002b230f6a7239a419fdf2c4fd0bf", null ],
+      [ "bus3", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80a824173600db39732496dfb92d711f61b", null ],
+      [ "bus4", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80a88773c3f3c28f21e57680cf2c109cce0", null ],
+      [ "bus5", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80af2938ddf493e173fed4aed15bffcf604", null ],
+      [ "bus6", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80aeaffe4cf10bf064439f1904ea0f28019", null ],
+      [ "bus7", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80af82db8022e9ac7b1022064b3bea5a231", null ],
+      [ "bus8", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80ac8b1f81874a0c98e52372064ac59e662", null ]
+    ] ],
     [ "audio_frequency", "common_2export_2common_2spi_8hpp.html#aec3e279a53c58170f48be761b6a72cd6", [
       [ "k192", "common_2export_2common_2spi_8hpp.html#aec3e279a53c58170f48be761b6a72cd6a249a01482dd308bf5a5e0d1a218f52c1", null ],
       [ "k96", "common_2export_2common_2spi_8hpp.html#aec3e279a53c58170f48be761b6a72cd6abac29a210b8d34299d69edc7ba4082e7", null ],
@@ -17,15 +27,5 @@ var common_2export_2common_2spi_8hpp =
       [ "b16", "common_2export_2common_2spi_8hpp.html#ae875af45cdc7a823e40a7fb58d0e6638a20e9e854760d152615078596780b9a61", null ],
       [ "b24", "common_2export_2common_2spi_8hpp.html#ae875af45cdc7a823e40a7fb58d0e6638ae5a2b2628c670cffac77291d539e2b49", null ],
       [ "b32", "common_2export_2common_2spi_8hpp.html#ae875af45cdc7a823e40a7fb58d0e6638a91867fbe648e441c67b97fe5efcbd15a", null ]
-    ] ],
-    [ "spi_device", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80", [
-      [ "bus1", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80afccf268d870cf9a101fd1d2eb30155c5", null ],
-      [ "bus2", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80a159002b230f6a7239a419fdf2c4fd0bf", null ],
-      [ "bus3", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80a824173600db39732496dfb92d711f61b", null ],
-      [ "bus4", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80a88773c3f3c28f21e57680cf2c109cce0", null ],
-      [ "bus5", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80af2938ddf493e173fed4aed15bffcf604", null ],
-      [ "bus6", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80aeaffe4cf10bf064439f1904ea0f28019", null ],
-      [ "bus7", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80af82db8022e9ac7b1022064b3bea5a231", null ],
-      [ "bus8", "common_2export_2common_2spi_8hpp.html#abf5a1def62f088572f7761a5cd282a80ac8b1f81874a0c98e52372064ac59e662", null ]
     ] ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::systmr Namespace Reference</title>
+<title>theCore C++ embedded framework: ecl::systmr Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -128,23 +128,6 @@ Functions</h2></td></tr>
 <tr class="separator:a199659d0e3e8c0cdf9dcbb07dc3669ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a9c4a0e82c323931d21fe20424446e33d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ecl::systmr::disable </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Disables timer, stop counting. </p>
-
-</div>
-</div>
 <a class="anchor" id="acf789e342dd12c73de9eb7e345668065"></a>
 <div class="memitem">
 <div class="memproto">
@@ -162,12 +145,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a199659d0e3e8c0cdf9dcbb07dc3669ef"></a>
+<a class="anchor" id="a9c4a0e82c323931d21fe20424446e33d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t ecl::systmr::events </td>
+          <td class="memname">void ecl::systmr::disable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -175,13 +158,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets amount of events occurred so far. </p>
-<p>Events counter may not reset after <a class="el" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. ">disable()</a> call. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">Amount</td><td>of events occured so far </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Disables timer, stop counting. </p>
 
 </div>
 </div>
@@ -202,6 +179,29 @@ Functions</h2></td></tr>
 <p><em>Each event generates interrupt</em>, but not necessarily timer interrupt is passed to the user. In other words, each event will wake-up processor. Useful in conjunction with WFI. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">System</td><td>timer events generation speed in Hz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a199659d0e3e8c0cdf9dcbb07dc3669ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t ecl::systmr::events </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets amount of events occurred so far. </p>
+<p>Events counter may not reset after <a class="el" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. ">disable()</a> call. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Amount</td><td>of events occured so far </td></tr>
   </table>
   </dd>
 </dl>

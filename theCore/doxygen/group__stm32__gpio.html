@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: GPIO control</title>
+<title>theCore C++ embedded framework: GPIO control</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -296,7 +296,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga8b58be7e1f5cd0616d59c0988d357c74"></a>
+<a class="anchor" id="gaed9aea0a1db68c91f3181070d135d6e0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -306,7 +306,7 @@ template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::get </td>
+          <td class="memname">void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::set </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -319,8 +319,7 @@ template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets level on a pin. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if level is high, false if level is low. </dd></dl>
+<p>Sets output pin level to high. </p>
 
 </div>
 </div>
@@ -351,33 +350,6 @@ template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="gaed9aea0a1db68c91f3181070d135d6e0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::set </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets output pin level to high. </p>
-
-</div>
-</div>
 <a class="anchor" id="ga08abf6f1437d39d65f7b4332073a1414"></a>
 <div class="memitem">
 <div class="memproto">
@@ -402,6 +374,34 @@ template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
 </div><div class="memdoc">
 
 <p>Toggles pin level. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8b58be7e1f5cd0616d59c0988d357c74"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;gpio_hw::port Port, gpio_hw::num Pin&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classecl_1_1gpio.html">ecl::gpio</a>&lt; Port, Pin &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets level on a pin. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if level is high, false if level is low. </dd></dl>
 
 </div>
 </div>

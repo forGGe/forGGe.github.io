@@ -9,7 +9,5 @@
 <area shape="rect" id="node9" href="$user__side_8cpp.html" title="User&#45;side code that should be compiled directly into resulting application. " alt="" coords="491,155,601,181"/>
 <area shape="rect" id="node10" href="$sys_8cpp.html" title="theCore system initialization module. " alt="" coords="625,155,696,181"/>
 <area shape="rect" id="node11" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="721,155,819,181"/>
-<area shape="rect" id="node12" href="$i2s__example_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="543,229,677,256"/>
-<area shape="rect" id="node13" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="701,229,839,256"/>
-<area shape="rect" id="node14" href="$stm32f407_2mcu__defs_8hpp.html" title="stm32f407 exported definitions and peripherals, required by tests " alt="" coords="864,229,977,256"/>
+<area shape="rect" id="node12" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="701,229,839,256"/>
 </map>

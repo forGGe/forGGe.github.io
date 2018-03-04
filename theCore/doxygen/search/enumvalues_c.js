@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['master',['master',['../group__skel__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()'],['../group__tm4c__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()'],['../group__skel__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()'],['../group__tm4c__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()']]],
+  ['master',['master',['../group__skel__spi.html#gga451a6159d91b8158700a148cf3adcd88aeb0a191797624dd3a48fa681d3061212',1,'ecl::skel::master()'],['../group__tm4c__spi.html#ggac932aa5fcec58630c3bc2799dbe57411aeb0a191797624dd3a48fa681d3061212',1,'ecl::master()']]],
   ['meta',['meta',['../namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aae9a23cbc455158951716b440c3d165e0',1,'ecl']]],
   ['mfile',['mfile',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a573490f6217b4e1b5b4434f36197390f',1,'ecl']]],
   ['mlink',['mlink',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a4ef70f202a26fb70670ea583ab190651',1,'ecl']]],

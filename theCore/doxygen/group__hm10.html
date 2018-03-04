@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: HM-10 module driver</title>
+<title>theCore C++ embedded framework: HM-10 module driver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -151,7 +151,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gafa97b179ca7faa53016857a054c07da1"></a>
+<a class="anchor" id="ga2107389553195d979e02a5798eb0bad7"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -161,27 +161,10 @@ template&lt;class Uart , class Serial &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::data_recv </td>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::init </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>buf</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t &amp;&#160;</td>
-          <td class="paramname"><em>sz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::chrono::milliseconds&#160;</td>
-          <td class="paramname"><em>ms</em> = <code>std::chrono::milliseconds::max()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -191,31 +174,13 @@ template&lt;class Uart , class Serial &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Receives data from the module with given timeout. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer to store incoming data. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">sz</td><td>Size of the buffer as input, bytes effectively written as output. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>Optional. Defines overall time to wait for incoming data. Defaults to infinite time. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Initializes BT module. </p>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Buffer was not filled completely before timeout hit. It is still possible that some data was transferred. Check </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sz</td><td>to understand how many bytes are there. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Whole buffer was populated before timeout reached. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586" title="Interrupted function. ">err::inval</a></td><td>Module responded with invalid data. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Module did not respond at all. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Module is ready to work. </td></tr>
   </table>
   </dd>
 </dl>
@@ -223,24 +188,242 @@ template&lt;class Uart , class Serial &gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph.png" border="0" usemap="#group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph" alt=""/></div>
-<map name="group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph" id="group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="757,63,855,90"/>
-<area shape="rect" id="node3" href="classecl_1_1hm10__sync.html#a5dbfc7604ef8c0d9da4c0df964f4566e" title="Defines internal timeout in milliseconds between retries to send or receive data. ..." alt="" coords="248,245,411,286"/>
-<area shape="rect" id="node13" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="278,538,381,564"/>
-<area shape="rect" id="node4" href="group__hm10.html#ga2107389553195d979e02a5798eb0bad7" title="Initializes BT module. " alt="" coords="482,151,634,178"/>
-<area shape="rect" id="node5" href="group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="705,176,907,203"/>
-<area shape="rect" id="node6" href="group__hm10.html#gae8ae3d6928f6f3ffde866c5ab38a6143" title="Sets pin code for connecting to the bluetooth device. " alt="" coords="469,252,647,279"/>
-<area shape="rect" id="node7" href="group__hm10.html#gafa27fbd8226f910e8f76b4794897528d" title="Gets pin code from the device. " alt="" coords="469,34,647,60"/>
-<area shape="rect" id="node8" href="group__hm10.html#gaaf1e93e4e8dcfbacc2ef34f6736f1c16" title="Sets immediate mode of operation. " alt="" coords="483,304,633,345"/>
-<area shape="rect" id="node9" href="group__hm10.html#ga58b824791cb759625b7a1f787c134859" title="Gets immediate mode state. " alt="" coords="482,85,634,126"/>
-<area shape="rect" id="node10" href="classecl_1_1hm10__sync.html#a0c90323f08b3ec04432b5556f0c59593" title="Manually Starts communication. " alt="" coords="477,370,639,396"/>
-<area shape="rect" id="node11" href="group__hm10.html#ga544f1482c9c09a0023cd31ac819edafd" title="Sends data to the module. " alt="" coords="459,420,657,447"/>
-<area shape="rect" id="node12" href="classecl_1_1hm10__sync.html#ac777f134ba9a28117e0b5a8a0f1d8dcc" title="Defines internal timeout in milliseconds during which module has to respond to commands. " alt="" coords="479,472,637,513"/>
-<area shape="rect" id="node14" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="463,538,653,564"/>
+<div class="center"><img src="group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph.png" border="0" usemap="#group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph" alt=""/></div>
+<map name="group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph" id="group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="257,5,355,32"/>
+<area shape="rect" id="node3" href="group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="205,56,407,83"/>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="gae8ae3d6928f6f3ffde866c5ab38a6143"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Uart , class Serial &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::set_pin </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets pin code for connecting to the bluetooth device. </p>
+<p>Sends AT+PASS command. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>PIN to set. Must be in a range of 000000-999999 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586" title="Interrupted function. ">err::inval</a></td><td>Module responded with invalid data. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Module did not respond at all. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>New pin code is set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gafa27fbd8226f910e8f76b4794897528d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Uart , class Serial &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::get_pin </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>pin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets pin code from the device. </p>
+<p>Sends AT+PASS? command. </p><dl class="section warning"><dt>Warning</dt><dd>In case of error, content of pin argument is undefined. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">pin</td><td>PIN set for current device. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586" title="Interrupted function. ">err::inval</a></td><td>Module responded with invalid data. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Module did not respond at all. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Pin retrieved successfully. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph.png" border="0" usemap="#group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph" alt=""/></div>
+<map name="group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph" id="group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="232,5,331,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaaf1e93e4e8dcfbacc2ef34f6736f1c16"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Uart , class Serial &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::set_immediate </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>state</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets immediate mode of operation. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Module in the master mode.</dd></dl>
+<p>Sends AT+IMME command. Immediate mode controls how module behaves after power reset. If immediate mode is set, then module will be listening to commands and will not start any connection attempt.. Otherwise, module will operate immediately, (assuming a previous connection has been applied) </p><dl class="section warning"><dt>Warning</dt><dd>Immediate mode setting is preserved between module power cycles. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>New state of immediate mode: <code>true</code> - enables immediate mode, <code>false</code> - disables it. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586" title="Interrupted function. ">err::inval</a></td><td>Module responded with invalid data. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Module did not respond at all. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Immediate mode state is updated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga58b824791cb759625b7a1f787c134859"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Uart , class Serial &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::get_immediate </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>state</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets immediate mode state. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Module in the master mode.</dd></dl>
+<p>Sends AT+IMME? command. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__hm10.html#gaaf1e93e4e8dcfbacc2ef34f6736f1c16" title="Sets immediate mode of operation. ">set_immediate()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">state</td><td>Current state of immediate mode: <code>true</code> - immediate mode is enabled. <code>false</code> - immediate mode is disabled. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586" title="Interrupted function. ">err::inval</a></td><td>Module responded with invalid data. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Module did not respond at all. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Immediate mode state retrieved succesfully. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph.png" border="0" usemap="#group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph" alt=""/></div>
+<map name="group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph" id="group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="205,13,304,39"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="gaebb3483c8b33c90e906a4e2771aa4ca0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Uart , class Serial &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::disconnect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send disconnect command. </p>
+<p>sends AT command. HM-10 will disconnect from any device. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586" title="Interrupted function. ">err::inval</a></td><td>Module responded with invalid data. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Module did not respond at all. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Module has been successfully reset. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -299,7 +482,7 @@ Data that is sent to unconnected module will be lost.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="gaebb3483c8b33c90e906a4e2771aa4ca0"></a>
+<a class="anchor" id="gafa97b179ca7faa53016857a054c07da1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -309,46 +492,27 @@ template&lt;class Uart , class Serial &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::disconnect </td>
+          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::data_recv </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Send disconnect command. </p>
-<p>sends AT command. HM-10 will disconnect from any device. </p><dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586">err::inval</a></td><td>Module responded with invalid data. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Module did not respond at all. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Module has been successfully reset. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga58b824791cb759625b7a1f787c134859"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Uart , class Serial &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::get_immediate </td>
-          <td>(</td>
-          <td class="paramtype">bool &amp;&#160;</td>
-          <td class="paramname"><em>state</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t &amp;&#160;</td>
+          <td class="paramname"><em>sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::chrono::milliseconds&#160;</td>
+          <td class="paramname"><em>ms</em> = <code>std::chrono::milliseconds::max()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -358,220 +522,62 @@ template&lt;class Uart , class Serial &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets immediate mode state. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Module in the master mode.</dd></dl>
-<p>Sends AT+IMME? command. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__hm10.html#gaaf1e93e4e8dcfbacc2ef34f6736f1c16" title="Sets immediate mode of operation. ">set_immediate()</a> </dd></dl>
+<p>Receives data from the module with given timeout. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">state</td><td>Current state of immediate mode: <code>true</code> - immediate mode is enabled. <code>false</code> - immediate mode is disabled. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586">err::inval</a></td><td>Module responded with invalid data. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Module did not respond at all. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Immediate mode state retrieved succesfully. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph.png" border="0" usemap="#group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph" alt=""/></div>
-<map name="group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph" id="group__hm10_ga58b824791cb759625b7a1f787c134859_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="205,13,304,39"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="gafa27fbd8226f910e8f76b4794897528d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Uart , class Serial &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::get_pin </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>pin</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets pin code from the device. </p>
-<p>Sends AT+PASS? command. </p><dl class="section warning"><dt>Warning</dt><dd>In case of error, content of pin argument is undefined. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pin</td><td>PIN set for current device. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586">err::inval</a></td><td>Module responded with invalid data. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Module did not respond at all. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Pin retrieved successfully. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph.png" border="0" usemap="#group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph" alt=""/></div>
-<map name="group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph" id="group__hm10_gafa27fbd8226f910e8f76b4794897528d_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="232,5,331,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ga2107389553195d979e02a5798eb0bad7"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Uart , class Serial &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes BT module. </p>
-<dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586">err::inval</a></td><td>Module responded with invalid data. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Module did not respond at all. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Module is ready to work. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph.png" border="0" usemap="#group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph" alt=""/></div>
-<map name="group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph" id="group__hm10_ga2107389553195d979e02a5798eb0bad7_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="257,5,355,32"/>
-<area shape="rect" id="node3" href="group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="205,56,407,83"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="gaaf1e93e4e8dcfbacc2ef34f6736f1c16"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Uart , class Serial &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::set_immediate </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>state</em> = <code>true</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets immediate mode of operation. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Module in the master mode.</dd></dl>
-<p>Sends AT+IMME command. Immediate mode controls how module behaves after power reset. If immediate mode is set, then module will be listening to commands and will not start any connection attempt.. Otherwise, module will operate immediately, (assuming a previous connection has been applied) </p><dl class="section warning"><dt>Warning</dt><dd>Immediate mode setting is preserved between module power cycles. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>New state of immediate mode: <code>true</code> - enables immediate mode, <code>false</code> - disables it. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586">err::inval</a></td><td>Module responded with invalid data. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Module did not respond at all. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Immediate mode state is updated. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gae8ae3d6928f6f3ffde866c5ab38a6143"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Uart , class Serial &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">err <a class="el" href="classecl_1_1hm10__sync.html">ecl::hm10_sync</a>&lt; Uart, Serial &gt;::set_pin </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>pin</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets pin code for connecting to the bluetooth device. </p>
-<p>Sends AT+PASS command. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pin</td><td>PIN to set. Must be in a range of 000000-999999 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer to store incoming data. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">sz</td><td>Size of the buffer as input, bytes effectively written as output. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ms</td><td>Optional. Defines overall time to wait for incoming data. Defaults to infinite time. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a15e757c159904fb372bd77be464a4586">err::inval</a></td><td>Module responded with invalid data. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe">err::timedout</a></td><td>Module did not respond at all. </td></tr>
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>New pin code is set. </td></tr>
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a6bd1da51c3edc54d566604a43bdc1dbe" title="Stream ioctl() timeout. ">err::timedout</a></td><td>Buffer was not filled completely before timeout hit. It is still possible that some data was transferred. Check </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sz</td><td>to understand how many bytes are there. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a444bcb3a3fcf8389296c49467f27e1d6">err::ok</a></td><td>Whole buffer was populated before timeout reached. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph.png" border="0" usemap="#group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph" alt=""/></div>
+<map name="group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph" id="group__hm10_gafa97b179ca7faa53016857a054c07da1_cgraph">
+<area shape="rect" id="node2" href="namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="757,223,855,250"/>
+<area shape="rect" id="node3" href="classecl_1_1hm10__sync.html#a5dbfc7604ef8c0d9da4c0df964f4566e" title="Defines internal timeout in milliseconds between retries to send or receive data. ..." alt="" coords="248,271,411,312"/>
+<area shape="rect" id="node13" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="278,674,381,701"/>
+<area shape="rect" id="node4" href="group__hm10.html#ga2107389553195d979e02a5798eb0bad7" title="Initializes BT module. " alt="" coords="482,446,634,473"/>
+<area shape="rect" id="node5" href="group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="705,471,907,498"/>
+<area shape="rect" id="node6" href="group__hm10.html#gae8ae3d6928f6f3ffde866c5ab38a6143" title="Sets pin code for connecting to the bluetooth device. " alt="" coords="469,110,647,137"/>
+<area shape="rect" id="node7" href="group__hm10.html#gafa27fbd8226f910e8f76b4794897528d" title="Gets pin code from the device. " alt="" coords="469,395,647,422"/>
+<area shape="rect" id="node8" href="group__hm10.html#gaaf1e93e4e8dcfbacc2ef34f6736f1c16" title="Sets immediate mode of operation. " alt="" coords="483,161,633,203"/>
+<area shape="rect" id="node9" href="group__hm10.html#ga58b824791cb759625b7a1f787c134859" title="Gets immediate mode state. " alt="" coords="482,44,634,85"/>
+<area shape="rect" id="node10" href="classecl_1_1hm10__sync.html#a0c90323f08b3ec04432b5556f0c59593" title="Manually Starts communication. " alt="" coords="477,227,639,254"/>
+<area shape="rect" id="node11" href="group__hm10.html#ga544f1482c9c09a0023cd31ac819edafd" title="Sends data to the module. " alt="" coords="459,278,657,305"/>
+<area shape="rect" id="node12" href="classecl_1_1hm10__sync.html#ac777f134ba9a28117e0b5a8a0f1d8dcc" title="Defines internal timeout in milliseconds during which module has to respond to commands. " alt="" coords="479,329,637,371"/>
+<area shape="rect" id="node14" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="733,654,879,681"/>
+<area shape="rect" id="node15" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="735,711,877,738"/>
+<area shape="rect" id="node16" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="733,775,879,802"/>
+<area shape="rect" id="node17" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="521,750,595,777"/>
+<area shape="rect" id="node18" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="731,838,881,865"/>
+<area shape="rect" id="node19" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="503,547,613,574"/>
+<area shape="rect" id="node20" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="711,573,901,599"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>

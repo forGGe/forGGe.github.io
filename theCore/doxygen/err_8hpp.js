@@ -82,7 +82,7 @@ var err_8hpp =
       [ "xdev", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810ac3bca1be0e684b3aa62a4e0c3732f53b", null ],
       [ "generic", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9", null ]
     ] ],
-    [ "err_to_str", "err_8hpp.html#af38a3e6192880841a2e1206268a3d355", null ],
     [ "is_error", "err_8hpp.html#a9cad3f0245d7c13ec8d2bdece0cebcd8", null ],
-    [ "is_ok", "err_8hpp.html#a6192e1fbb0daae97ed24c85e1497e772", null ]
+    [ "is_ok", "err_8hpp.html#a6192e1fbb0daae97ed24c85e1497e772", null ],
+    [ "err_to_str", "err_8hpp.html#af38a3e6192880841a2e1206268a3d355", null ]
 ];

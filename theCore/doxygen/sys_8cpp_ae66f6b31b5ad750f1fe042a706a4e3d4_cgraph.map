@@ -1,46 +1,35 @@
 <map id="main" name="main">
 <area shape="rect" id="node2" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="175,5,253,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5" title="Codec low&#45;level initialization routine. " alt="" coords="150,173,278,200"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="412,275,495,301"/>
-<area shape="rect" id="node7" href="$classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b" title="Codec power up sequence. " alt="" coords="129,275,299,301"/>
-<area shape="rect" id="node8" href="$classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c" title="Set master volume for specific channel. " alt="" coords="124,326,304,367"/>
-<area shape="rect" id="node9" href="$classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c" title="Set headphone volume for specific channel. " alt="" coords="111,457,317,498"/>
-<area shape="rect" id="node10" href="$classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d" title="Unmute headphone channel. " alt="" coords="125,107,303,149"/>
-<area shape="rect" id="node11" href="$classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6" title="Starts stream of the PCM buffer to the codec. " alt="" coords="120,391,308,433"/>
-<area shape="rect" id="node12" href="$cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="157,56,271,83"/>
-<area shape="rect" id="node14" href="$group__hm10.html#ga2107389553195d979e02a5798eb0bad7" title="Initializes BT module. " alt="" coords="610,903,762,929"/>
-<area shape="rect" id="node16" href="$group__hm10.html#gae8ae3d6928f6f3ffde866c5ab38a6143" title="Sets pin code for connecting to the bluetooth device. " alt="" coords="597,400,775,427"/>
-<area shape="rect" id="node17" href="$group__hm10.html#ga544f1482c9c09a0023cd31ac819edafd" title="Sends data to the module. " alt="" coords="587,501,785,528"/>
-<area shape="rect" id="node18" href="$group__hm10.html#gafa97b179ca7faa53016857a054c07da1" title="Receives data from the module with given timeout. " alt="" coords="117,624,311,651"/>
-<area shape="rect" id="node25" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="402,729,505,756"/>
-<area shape="rect" id="node26" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="591,953,781,980"/>
-<area shape="rect" id="node27" href="$classecl_1_1sensor_1_1htu21d.html#a7817ea19151a202c6097c15efe120fb1" title="Inits sensor and underlying I2C platform bus. " alt="" coords="141,827,287,869"/>
-<area shape="rect" id="node29" href="$classecl_1_1sensor_1_1htu21d.html#a9a9bd5c7de74de028b5fa716060e813e" title="Performs soft reset of the sensor. " alt="" coords="141,893,287,934"/>
-<area shape="rect" id="node30" href="$classecl_1_1sensor_1_1htu21d.html#ab3fc64d369fac64b4950cb5ec80b4323" title="Reads sample from sensor and converts to a physical value. " alt="" coords="141,958,287,999"/>
-<area shape="rect" id="node31" href="$structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="108,1024,320,1051"/>
-<area shape="rect" id="node32" href="$classecl_1_1sensor_1_1htu21d.html#a0e467fd97a00a8803dad8ab6dd4790a4" title="Reads sample from sensor and converts to a physical value. " alt="" coords="141,1075,287,1117"/>
-<area shape="rect" id="node33" href="$stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="137,1141,291,1168"/>
-<area shape="rect" id="node40" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="135,1192,293,1219"/>
-<area shape="rect" id="node44" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="151,1243,277,1269"/>
-<area shape="rect" id="node45" href="$group__stm32__gpio.html#ga08abf6f1437d39d65f7b4332073a1414" title="Toggles pin level. " alt="" coords="151,1293,277,1320"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="885,552,983,579"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="631,275,741,301"/>
-<area shape="rect" id="node13" href="$cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="371,56,536,83"/>
-<area shape="rect" id="node15" href="$group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="833,877,1035,904"/>
-<area shape="rect" id="node19" href="$classecl_1_1hm10__sync.html#a5dbfc7604ef8c0d9da4c0df964f4566e" title="Defines internal timeout in milliseconds between retries to send or receive data. ..." alt="" coords="372,613,535,654"/>
-<area shape="rect" id="node20" href="$group__hm10.html#gafa27fbd8226f910e8f76b4794897528d" title="Gets pin code from the device. " alt="" coords="597,552,775,579"/>
-<area shape="rect" id="node21" href="$group__hm10.html#gaaf1e93e4e8dcfbacc2ef34f6736f1c16" title="Sets immediate mode of operation. " alt="" coords="611,786,761,827"/>
-<area shape="rect" id="node22" href="$group__hm10.html#ga58b824791cb759625b7a1f787c134859" title="Gets immediate mode state. " alt="" coords="610,603,762,645"/>
-<area shape="rect" id="node23" href="$classecl_1_1hm10__sync.html#a0c90323f08b3ec04432b5556f0c59593" title="Manually Starts communication. " alt="" coords="605,669,767,696"/>
-<area shape="rect" id="node24" href="$classecl_1_1hm10__sync.html#ac777f134ba9a28117e0b5a8a0f1d8dcc" title="Defines internal timeout in milliseconds during which module has to respond to commands. " alt="" coords="607,721,765,762"/>
-<area shape="rect" id="node28" href="$classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="390,835,517,861"/>
-<area shape="rect" id="node34" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="369,1136,538,1163"/>
-<area shape="rect" id="node35" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="601,1123,771,1165"/>
-<area shape="rect" id="node36" href="$group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="879,1077,989,1104"/>
-<area shape="rect" id="node37" href="$semphr_8h.html#a2a0dca3ece8f764ed7a026f1ef29fa4d" title="xSemaphoreGive" alt="" coords="867,1128,1001,1155"/>
-<area shape="rect" id="node39" href="$semphr_8h.html#a755e1fbf96249a8126e4cd6492391a34" title="xSemaphoreGiveFromISR" alt="" coords="841,1179,1027,1205"/>
-<area shape="rect" id="node38" href="$classhelper__semphr.html#a7406f0e962905a44b090dfeac9ebc938" title="helper_semphr::signal" alt="" coords="1083,1153,1249,1180"/>
-<area shape="rect" id="node41" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="368,1190,539,1231"/>
-<area shape="rect" id="node42" href="$semphr_8h.html#ac7921b82a4135a668147671d5710fb13" title="xSemaphoreTake" alt="" coords="619,1208,753,1235"/>
-<area shape="rect" id="node43" href="$classhelper__semphr.html#ae0aa92a92d1a594cdf3f9be9476398b3" title="helper_semphr::try_wait" alt="" coords="844,1229,1024,1256"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="173,56,255,83"/>
+<area shape="rect" id="node6" href="$cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="157,107,271,133"/>
+<area shape="rect" id="node8" href="$group__hm10.html#ga2107389553195d979e02a5798eb0bad7" title="Initializes BT module. " alt="" coords="610,557,762,584"/>
+<area shape="rect" id="node10" href="$group__hm10.html#gae8ae3d6928f6f3ffde866c5ab38a6143" title="Sets pin code for connecting to the bluetooth device. " alt="" coords="597,56,775,83"/>
+<area shape="rect" id="node11" href="$group__hm10.html#ga544f1482c9c09a0023cd31ac819edafd" title="Sends data to the module. " alt="" coords="587,157,785,184"/>
+<area shape="rect" id="node12" href="$group__hm10.html#gafa97b179ca7faa53016857a054c07da1" title="Receives data from the module with given timeout. " alt="" coords="117,367,311,393"/>
+<area shape="rect" id="node19" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="402,709,505,736"/>
+<area shape="rect" id="node26" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="839,912,1029,939"/>
+<area shape="rect" id="node27" href="$structmeasurement.html#a86f531a7a063dfae3d57da6b0dc529c1" title="measurement::measurement" alt="" coords="108,877,320,904"/>
+<area shape="rect" id="node28" href="$stm32f4__exti_2main_8cpp.html#a93241936fb3e17ae3f201588801e8ad9" title="user_button_handler" alt="" coords="137,928,291,955"/>
+<area shape="rect" id="node32" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="135,979,293,1005"/>
+<area shape="rect" id="node34" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="151,1029,277,1056"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="885,208,983,235"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="398,56,509,83"/>
+<area shape="rect" id="node7" href="$cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="371,107,536,133"/>
+<area shape="rect" id="node9" href="$group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="833,552,1035,579"/>
+<area shape="rect" id="node13" href="$classecl_1_1hm10__sync.html#a5dbfc7604ef8c0d9da4c0df964f4566e" title="Defines internal timeout in milliseconds between retries to send or receive data. ..." alt="" coords="372,359,535,401"/>
+<area shape="rect" id="node14" href="$group__hm10.html#gafa27fbd8226f910e8f76b4794897528d" title="Gets pin code from the device. " alt="" coords="597,208,775,235"/>
+<area shape="rect" id="node15" href="$group__hm10.html#gaaf1e93e4e8dcfbacc2ef34f6736f1c16" title="Sets immediate mode of operation. " alt="" coords="611,441,761,482"/>
+<area shape="rect" id="node16" href="$group__hm10.html#ga58b824791cb759625b7a1f787c134859" title="Gets immediate mode state. " alt="" coords="610,375,762,417"/>
+<area shape="rect" id="node17" href="$classecl_1_1hm10__sync.html#a0c90323f08b3ec04432b5556f0c59593" title="Manually Starts communication. " alt="" coords="605,259,767,285"/>
+<area shape="rect" id="node18" href="$classecl_1_1hm10__sync.html#ac777f134ba9a28117e0b5a8a0f1d8dcc" title="Defines internal timeout in milliseconds during which module has to respond to commands. " alt="" coords="607,310,765,351"/>
+<area shape="rect" id="node20" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="861,811,1007,837"/>
+<area shape="rect" id="node21" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="863,615,1005,641"/>
+<area shape="rect" id="node22" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="861,691,1007,717"/>
+<area shape="rect" id="node23" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="649,709,723,736"/>
+<area shape="rect" id="node24" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="859,751,1009,777"/>
+<area shape="rect" id="node25" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="631,912,741,939"/>
+<area shape="rect" id="node29" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="369,928,538,955"/>
+<area shape="rect" id="node30" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="601,1014,771,1055"/>
+<area shape="rect" id="node31" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="879,1021,989,1048"/>
+<area shape="rect" id="node33" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="368,979,539,1021"/>
 </map>

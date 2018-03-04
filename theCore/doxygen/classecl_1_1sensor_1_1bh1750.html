@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::sensor::bh1750&lt; i2c_dev, address &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::sensor::bh1750&lt; i2c_dev, address &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -168,7 +168,7 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::<a class="el" href="classecl_1_1sensor_1_1bh1750.html">bh1750</a> </td>
+          <td class="memname"><a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::<a class="el" href="classecl_1_1sensor_1_1bh1750.html">bh1750</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -193,7 +193,7 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::~<a class="el" href="classecl_1_1sensor_1_1bh1750.html">bh1750</a> </td>
+          <td class="memname"><a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::~<a class="el" href="classecl_1_1sensor_1_1bh1750.html">bh1750</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -209,7 +209,7 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac9c47efa6e826fff08f804adaff03876"></a>
+<a class="anchor" id="a6d75561bac9b083d733b13590532f0ff"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -219,10 +219,9 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::get_illuminance </td>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::init </td>
           <td>(</td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -233,20 +232,80 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reads sample from sensor and converts to a physical value. </p>
-<p>This method blocks until measurement is not finished. Measurement time depends on resolution mode: at least 25 ms for low mode and 200 ms for high and high2 modes. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Illuminance in (1000 * (illuminance in lx)) will be written in this parameter. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Inits sensor and underlying I2C platform bus. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Status</td><td>of the operation. </td></tr>
+    <tr><td class="paramname">Status</td><td>of operation. </td></tr>
   </table>
   </dd>
 </dl>
-<p>low resolution provides 4lx per count and high2 0.5lx per count </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bbb1e4996e4363e3abc307dbf9a0877"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::set_resolution </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1">bh1750_cfg::resolution</a>&#160;</td>
+          <td class="paramname"><em>resolution</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets sensor resolution mode. </p>
+<p>Default mode is bh1750_cfg::high. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>Resolution mode. This parameter can be value of type <a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1" title="Represents resolution mode BH1750 sensor. ">bh1750_cfg::resolution</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53e0186d05a39523d9a495f48f310a5b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1">bh1750_cfg::resolution</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::get_resolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns current sensor resolution mode. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Current</td><td>resolution mode. The return value can be value of type <a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1" title="Represents resolution mode BH1750 sensor. ">bh1750_cfg::resolution</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -260,7 +319,7 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::get_illuminance_sample </td>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::get_illuminance_sample </td>
           <td>(</td>
           <td class="paramtype">uint16_t &amp;&#160;</td>
           <td class="paramname"><em>sample</em></td><td>)</td>
@@ -293,15 +352,21 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classecl_1_1sensor_1_1bh1750_ad7494ceca32f415ca4481035ac21ad24_cgraph.png" border="0" usemap="#classecl_1_1sensor_1_1bh1750_ad7494ceca32f415ca4481035ac21ad24_cgraph" alt=""/></div>
 <map name="classecl_1_1sensor_1_1bh1750_ad7494ceca32f415ca4481035ac21ad24_cgraph" id="classecl_1_1sensor_1_1bh1750_ad7494ceca32f415ca4481035ac21ad24_cgraph">
-<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="243,13,433,39"/>
-<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="481,13,584,39"/>
+<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="243,201,433,228"/>
+<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="481,151,584,177"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="792,201,939,228"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="795,5,936,32"/>
+<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="792,81,939,108"/>
+<area shape="rect" id="node7" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="651,100,724,127"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="791,144,940,171"/>
+<area shape="rect" id="node9" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="632,252,743,279"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a53e0186d05a39523d9a495f48f310a5b"></a>
+<a class="anchor" id="ac9c47efa6e826fff08f804adaff03876"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -311,9 +376,10 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1">bh1750_cfg::resolution</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::get_resolution </td>
+          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; i2c_dev, address &gt;::get_illuminance </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint32_t &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -324,90 +390,20 @@ template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Returns current sensor resolution mode. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">Current</td><td>resolution mode. The return value can be value of type <a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1" title="Represents resolution mode BH1750 sensor. ">bh1750_cfg::resolution</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6d75561bac9b083d733b13590532f0ff"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a> <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Inits sensor and underlying I2C platform bus. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">Status</td><td>of operation. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1sensor_1_1bh1750_a6d75561bac9b083d733b13590532f0ff_cgraph.png" border="0" usemap="#classecl_1_1sensor_1_1bh1750_a6d75561bac9b083d733b13590532f0ff_cgraph" alt=""/></div>
-<map name="classecl_1_1sensor_1_1bh1750_a6d75561bac9b083d733b13590532f0ff_cgraph" id="classecl_1_1sensor_1_1bh1750_a6d75561bac9b083d733b13590532f0ff_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1i2c__bus.html#a48614a456b52b3556eb021d6df57932a" title="Lazy initialization. " alt="" coords="201,13,328,39"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a1bbb1e4996e4363e3abc307dbf9a0877"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class i2c_dev , bh1750_cfg::i2c_address address&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="classecl_1_1sensor_1_1bh1750.html">ecl::sensor::bh1750</a>&lt; <a class="el" href="namespaceecl.html#abf817ac74941a2989b1c4153a0024318">i2c_dev</a>, address &gt;::set_resolution </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1">bh1750_cfg::resolution</a>&#160;</td>
-          <td class="paramname"><em>resolution</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets sensor resolution mode. </p>
-<p>Default mode is bh1750_cfg::high. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Reads sample from sensor and converts to a physical value. </p>
+<p>This method blocks until measurement is not finished. Measurement time depends on resolution mode: at least 25 ms for low mode and 200 ms for high and high2 modes. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">resolution</td><td>Resolution mode. This parameter can be value of type <a class="el" href="namespaceecl_1_1sensor_1_1bh1750__cfg.html#a332212fbcc4ec6667aec209db97bf8a1" title="Represents resolution mode BH1750 sensor. ">bh1750_cfg::resolution</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">value</td><td>Illuminance in (1000 * (illuminance in lx)) will be written in this parameter. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Status</td><td>of the operation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>low resolution provides 4lx per count and high2 0.5lx per count </p>
 
 </div>
 </div>

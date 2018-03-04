@@ -1,6 +1,3 @@
 <map id="semaphore.hpp" name="semaphore.hpp">
-<area shape="rect" id="node2" href="$FreeRTOS_8h.html" title="FreeRTOSS mock header. " alt="" coords="63,80,157,107"/>
-<area shape="rect" id="node4" href="$semphr_8h.html" title="FreeRTOS semaphore mock header. " alt="" coords="251,80,334,107"/>
-<area shape="rect" id="node10" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="409,80,499,107"/>
-<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="100,155,197,181"/>
+<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="231,80,322,107"/>
 </map>

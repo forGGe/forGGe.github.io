@@ -1,6 +1,11 @@
 var classecl_1_1cs43l22 =
 [
     [ "user_callback", "classecl_1_1cs43l22.html#ae72047c3e72a8035c798f5dd5c66189d", null ],
+    [ "channel", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528da", [
+      [ "left", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daa811882fecd5c7618d7099ebbd39ea254", null ],
+      [ "right", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daa7c4f29407893c334a6cb7a87bf045c0d", null ],
+      [ "all", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daaa181a603769c1f98ad927e7367c7aa51", null ]
+    ] ],
     [ "beep_frequency", "classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4f", [
       [ "hz260", "classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fa7ed3ece6d4cb402008cb3a95bbf6d0c7", null ],
       [ "hz521", "classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4faface3f9c0d28e77676b08e0af64b1f1a", null ],
@@ -18,21 +23,6 @@ var classecl_1_1cs43l22 =
       [ "hz1714", "classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fafc65b5f81a8e4f39f199625e88b4bf12", null ],
       [ "hz2000", "classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fae54f1546efd24f671757bf78d8e7bd3e", null ],
       [ "hz2181", "classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fa3b77320f10dfe602b99adfe067437845", null ]
-    ] ],
-    [ "beep_mode", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0ece", [
-      [ "single", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0eceadd5c07036f2975ff4bce568b6511d3bc", null ],
-      [ "multiple", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0eceace495ab8d79db0d37413d8e95b54e606", null ],
-      [ "continuous", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0ecead2884efee751eb4746b685827c7efcd9", null ]
-    ] ],
-    [ "beep_off_time", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3", [
-      [ "ms1230", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a03ff12d689fd7a5e79d78705c7f9335d", null ],
-      [ "ms2580", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3acfc3bef16f133363f31d54af93b52c9d", null ],
-      [ "ms3900", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a2fa3e09bb6063dba790445607c46f134", null ],
-      [ "ms5200", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3adc6da046b0727592b325c8bd440867e4", null ],
-      [ "ms6600", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3af35b4b1d8efae5307eec2692d8009d6c", null ],
-      [ "ms8050", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a4e7ae047c6416fda9eaba2544d994cca", null ],
-      [ "ms9350", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a6b91235c0de5164ab4082849ed0e232e", null ],
-      [ "ms10800", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a273b4de1f246cedd73a752129348e687", null ]
     ] ],
     [ "beep_on_time", "classecl_1_1cs43l22.html#a238a9484b09cb4e8325b350b6dfe7a45", [
       [ "ms86", "classecl_1_1cs43l22.html#a238a9484b09cb4e8325b350b6dfe7a45a8b4a33aa16241172a6e705ea0fa6e979", null ],
@@ -52,29 +42,39 @@ var classecl_1_1cs43l22 =
       [ "ms4800", "classecl_1_1cs43l22.html#a238a9484b09cb4e8325b350b6dfe7a45a168fd9d0bc9131c87f649270f7cf917a", null ],
       [ "ms5200", "classecl_1_1cs43l22.html#a238a9484b09cb4e8325b350b6dfe7a45adc6da046b0727592b325c8bd440867e4", null ]
     ] ],
-    [ "channel", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528da", [
-      [ "left", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daa811882fecd5c7618d7099ebbd39ea254", null ],
-      [ "right", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daa7c4f29407893c334a6cb7a87bf045c0d", null ],
-      [ "all", "classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daaa181a603769c1f98ad927e7367c7aa51", null ]
+    [ "beep_off_time", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3", [
+      [ "ms1230", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a03ff12d689fd7a5e79d78705c7f9335d", null ],
+      [ "ms2580", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3acfc3bef16f133363f31d54af93b52c9d", null ],
+      [ "ms3900", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a2fa3e09bb6063dba790445607c46f134", null ],
+      [ "ms5200", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3adc6da046b0727592b325c8bd440867e4", null ],
+      [ "ms6600", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3af35b4b1d8efae5307eec2692d8009d6c", null ],
+      [ "ms8050", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a4e7ae047c6416fda9eaba2544d994cca", null ],
+      [ "ms9350", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a6b91235c0de5164ab4082849ed0e232e", null ],
+      [ "ms10800", "classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3a273b4de1f246cedd73a752129348e687", null ]
     ] ],
-    [ "beep_disable", "classecl_1_1cs43l22.html#a1c86215cc716e2598a5d098efd9310c4", null ],
-    [ "beep_enable", "classecl_1_1cs43l22.html#a806f6bf8ff1a78014cd696de7d6f6da2", null ],
-    [ "headphone_mute", "classecl_1_1cs43l22.html#ac8289e5e0c9d06a56629eccf4fdc0c60", null ],
-    [ "headphone_unmute", "classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d", null ],
+    [ "beep_mode", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0ece", [
+      [ "single", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0eceadd5c07036f2975ff4bce568b6511d3bc", null ],
+      [ "multiple", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0eceace495ab8d79db0d37413d8e95b54e606", null ],
+      [ "continuous", "classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0ecead2884efee751eb4746b685827c7efcd9", null ]
+    ] ],
     [ "init", "classecl_1_1cs43l22.html#a719c5b82fe46db22270e991ced0fc2b5", null ],
+    [ "power_up", "classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b", null ],
+    [ "power_down", "classecl_1_1cs43l22.html#ae9d0340d2ba6d9704f38c46f7d09d9cd", null ],
+    [ "send_pcm_buffer", "classecl_1_1cs43l22.html#a574100de2c60b9dcf43cdf1b00094a2d", null ],
     [ "pcm_stream_start", "classecl_1_1cs43l22.html#a20d6d969cfe70b0be5276b0774504ae6", null ],
     [ "pcm_stream_stop", "classecl_1_1cs43l22.html#a27e7dc9d3d96aaa2a07c655b08617a22", null ],
-    [ "power_down", "classecl_1_1cs43l22.html#ae9d0340d2ba6d9704f38c46f7d09d9cd", null ],
-    [ "power_up", "classecl_1_1cs43l22.html#a999238765282b245e87b0706e54a002b", null ],
-    [ "send_pcm_buffer", "classecl_1_1cs43l22.html#a574100de2c60b9dcf43cdf1b00094a2d", null ],
-    [ "set_beep_frequency", "classecl_1_1cs43l22.html#a83135e8d25f123389dcaa8159c8a8cef", null ],
-    [ "set_beep_off_time", "classecl_1_1cs43l22.html#a2ead14132e62686a952bce488ef2cb53", null ],
-    [ "set_beep_on_time", "classecl_1_1cs43l22.html#a139f4f1512be0ed6d0c58fa698589057", null ],
-    [ "set_beep_volume", "classecl_1_1cs43l22.html#a9f0933d2c61519cac82e81aa6aa707cc", null ],
-    [ "set_headphone_volume", "classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c", null ],
     [ "set_master_volume", "classecl_1_1cs43l22.html#acdf984d7c37f768dd0dc5c7b93a9075c", null ],
+    [ "set_headphone_volume", "classecl_1_1cs43l22.html#a6f459242b39838f616fafc31fa2c9c3c", null ],
+    [ "headphone_mute", "classecl_1_1cs43l22.html#ac8289e5e0c9d06a56629eccf4fdc0c60", null ],
+    [ "headphone_unmute", "classecl_1_1cs43l22.html#a040c5d20add50e1a99a1f0c9ea6b749d", null ],
+    [ "set_beep_on_time", "classecl_1_1cs43l22.html#a139f4f1512be0ed6d0c58fa698589057", null ],
+    [ "set_beep_off_time", "classecl_1_1cs43l22.html#a2ead14132e62686a952bce488ef2cb53", null ],
+    [ "set_beep_frequency", "classecl_1_1cs43l22.html#a83135e8d25f123389dcaa8159c8a8cef", null ],
+    [ "set_beep_volume", "classecl_1_1cs43l22.html#a9f0933d2c61519cac82e81aa6aa707cc", null ],
+    [ "beep_enable", "classecl_1_1cs43l22.html#a806f6bf8ff1a78014cd696de7d6f6da2", null ],
+    [ "beep_disable", "classecl_1_1cs43l22.html#a1c86215cc716e2598a5d098efd9310c4", null ],
     [ "set_sampling_frequency", "classecl_1_1cs43l22.html#ac364e0a2548019a7abbd2c7e950193bd", null ],
-    [ "max_beep_volume", "classecl_1_1cs43l22.html#a51b1191c6ac00d3117e3ae1cf0b88484", null ],
+    [ "max_master_volume", "classecl_1_1cs43l22.html#a3735e2d2a511658b743eccd3392a0f6b", null ],
     [ "max_headphone_volume", "classecl_1_1cs43l22.html#a6945a4512f5dc46d098bfb2b1df3fafd", null ],
-    [ "max_master_volume", "classecl_1_1cs43l22.html#a3735e2d2a511658b743eccd3392a0f6b", null ]
+    [ "max_beep_volume", "classecl_1_1cs43l22.html#a51b1191c6ac00d3117e3ae1cf0b88484", null ]
 ];

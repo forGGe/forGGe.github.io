@@ -1,5 +1,11 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="108,5,251,32"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="128,56,231,83"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="299,56,489,83"/>
+<area shape="rect" id="node2" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="108,100,251,127"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="128,151,231,177"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="479,5,626,32"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="482,81,623,108"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="479,144,626,171"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="317,100,391,127"/>
+<area shape="rect" id="node8" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="478,201,627,228"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="299,303,409,329"/>
+<area shape="rect" id="node10" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="457,277,648,304"/>
 </map>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::this_thread Namespace Reference</title>
+<title>theCore C++ embedded framework: ecl::this_thread Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -125,12 +125,12 @@ Functions</h2></td></tr>
 <tr class="separator:a0193668afd67afb897c2e65698ac9fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a0193668afd67afb897c2e65698ac9fff"></a>
+<a class="anchor" id="aa86712ca78624d145b2b279f20357ec9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceecl.html#ad0512e057a69d3d7382c422eb35ac807">ecl::thread_handle</a> ecl::this_thread::get_handle </td>
+          <td class="memname">void ecl::this_thread::yield </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -138,16 +138,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets a thread handle of currently running thread. </p>
-<dl class="section return"><dt>Returns</dt><dd>Current thread handle </dd></dl>
+<p>Yields current thread. </p>
+<p>As for FreeRTOS whether current task will be rescheduled or not depends on FreeRTOS configuration. </p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph.png" border="0" usemap="#namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph" alt=""/></div>
-<map name="namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph" id="namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph">
-<area shape="rect" id="node2" href="group__stm32__irq.html#ga472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="210,5,319,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="204,56,325,83"/>
+<div class="center"><img src="namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph.png" border="0" usemap="#namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph" alt=""/></div>
+<map name="namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph" id="namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="216,201,407,228"/>
+<area shape="rect" id="node3" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="455,151,557,177"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="765,201,912,228"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="768,5,909,32"/>
+<area shape="rect" id="node6" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="765,81,912,108"/>
+<area shape="rect" id="node7" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="624,100,697,127"/>
+<area shape="rect" id="node8" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="764,144,913,171"/>
+<area shape="rect" id="node9" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="605,252,716,279"/>
 </map>
 </div>
 </p>
@@ -189,19 +195,25 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceecl_1_1this__thread_a4bcb8e258c5dc259f902333f2cd57390_cgraph.png" border="0" usemap="#namespaceecl_1_1this__thread_a4bcb8e258c5dc259f902333f2cd57390_cgraph" alt=""/></div>
 <map name="namespaceecl_1_1this__thread_a4bcb8e258c5dc259f902333f2cd57390_cgraph" id="namespaceecl_1_1this__thread_a4bcb8e258c5dc259f902333f2cd57390_cgraph">
-<area shape="rect" id="node2" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="244,5,347,32"/>
+<area shape="rect" id="node2" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="244,151,347,177"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="555,201,701,228"/>
+<area shape="rect" id="node4" href="namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="557,5,699,32"/>
+<area shape="rect" id="node5" href="namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="555,81,701,108"/>
+<area shape="rect" id="node6" href="namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="413,100,487,127"/>
+<area shape="rect" id="node7" href="namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="553,144,703,171"/>
+<area shape="rect" id="node8" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="395,252,505,279"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa86712ca78624d145b2b279f20357ec9"></a>
+<a class="anchor" id="a0193668afd67afb897c2e65698ac9fff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void ecl::this_thread::yield </td>
+          <td class="memname"><a class="el" href="namespaceecl.html#ad0512e057a69d3d7382c422eb35ac807">ecl::thread_handle</a> ecl::this_thread::get_handle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -209,17 +221,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Yields current thread. </p>
-<p>As for FreeRTOS whether current task will be rescheduled or not depends on FreeRTOS configuration. </p>
+<p>Gets a thread handle of currently running thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current thread handle </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph.png" border="0" usemap="#namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph" alt=""/></div>
-<map name="namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph" id="namespaceecl_1_1this__thread_aa86712ca78624d145b2b279f20357ec9_cgraph">
-<area shape="rect" id="node2" href="task_8h.html#a1e8a1d0a62cac8a7ab7d970392d0e897" title="taskYIELD" alt="" coords="268,5,355,32"/>
-<area shape="rect" id="node3" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="216,56,407,83"/>
-<area shape="rect" id="node4" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="ecl::wait_for" alt="" coords="455,56,557,83"/>
+<div class="center"><img src="namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph.png" border="0" usemap="#namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph" alt=""/></div>
+<map name="namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph" id="namespaceecl_1_1this__thread_a0193668afd67afb897c2e65698ac9fff_cgraph">
+<area shape="rect" id="node2" href="namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="210,5,319,32"/>
+<area shape="rect" id="node3" href="namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="204,56,325,83"/>
 </map>
 </div>
 </p>

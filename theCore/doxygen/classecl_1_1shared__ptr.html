@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Project: ecl::shared_ptr&lt; T &gt; Class Template Reference</title>
+<title>theCore C++ embedded framework: ecl::shared_ptr&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Project
+   <div id="projectname">theCore C++ embedded framework
    </div>
   </td>
  </tr>
@@ -197,7 +197,7 @@ Friends</h2></td></tr>
 class ecl::shared_ptr&lt; T &gt;</h3>
 
 <p>Classical shared pointer. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>Mention about manadatory allocator for creating shared pointer </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>Mention about manadatory allocator for creating shared pointer </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="addc1528411bead359ce3456ece0dff22"></a>
 <div class="memitem">
@@ -372,22 +372,67 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a37cedf36d48105cbc0ad2a138392ae49"></a>
+<a class="anchor" id="af10008cab258b8145afca9a01ebe5bab"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T * <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::get </td>
+          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp; <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::operator= </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returs a value itself. </p>
+<p>Shares ownership of the object with a pointer provided. </p>
+<p>This shared pointer will release ownership of the previously managed object if any. In case other pointer owns an object then new ownership will be applied to this pointer and it will be shared with other pointer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>Valid shared pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>This shared object. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph.png" border="0" usemap="#classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph" alt=""/></div>
+<map name="classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph" id="classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph">
+<area shape="rect" id="node2" href="classecl_1_1aux.html#acc79576266edebc2cc6852942a43c83b" title="Incremets reference counter and returns new value. " alt="" coords="245,5,345,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a91afc889df2664c2599953abc3f2f9d0"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp; <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Moves ownership from the pointer provided. </p>
+<p>This shared pointer will release ownership of the previously managed object if any. Other pointer will no longer own any object. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>Valid shared pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>This shared object. </dd></dl>
 
 </div>
 </div>
@@ -428,6 +473,82 @@ Here is the call graph for this function:</div>
 </map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="aef2a6de63be106b21e9a91a7895511d2"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&amp; <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Shares ownership with a shared pointer of the derived type. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>Is a subclass of T </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a66d3ac7c084a28eced61d643f4d767a8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::unique </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if this pointer holds the last remaining node. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph.png" border="0" usemap="#classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph" alt=""/></div>
+<map name="classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph" id="classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph">
+<area shape="rect" id="node2" href="classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="224,5,323,32"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a37cedf36d48105cbc0ad2a138392ae49"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T * <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::get </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returs a value itself. </p>
 
 </div>
 </div>
@@ -507,98 +628,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="af10008cab258b8145afca9a01ebe5bab"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp; <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shares ownership of the object with a pointer provided. </p>
-<p>This shared pointer will release ownership of the previously managed object if any. In case other pointer owns an object then new ownership will be applied to this pointer and it will be shared with other pointer. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>Valid shared pointer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>This shared object. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph.png" border="0" usemap="#classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph" alt=""/></div>
-<map name="classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph" id="classecl_1_1shared__ptr_af10008cab258b8145afca9a01ebe5bab_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1aux.html#acc79576266edebc2cc6852942a43c83b" title="Incremets reference counter and returns new value. " alt="" coords="245,5,345,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a91afc889df2664c2599953abc3f2f9d0"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp; <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; T &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Moves ownership from the pointer provided. </p>
-<p>This shared pointer will release ownership of the previously managed object if any. Other pointer will no longer own any object. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">other</td><td>Valid shared pointer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>This shared object. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aef2a6de63be106b21e9a91a7895511d2"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&amp; <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Shares ownership with a shared pointer of the derived type. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">U</td><td>Is a subclass of T </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="a4bb65341c40abd039c384972af256699"></a>
 <div class="memitem">
 <div class="memproto">
@@ -629,82 +658,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a66d3ac7c084a28eced61d643f4d767a8"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; T &gt;::unique </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns true if this pointer holds the last remaining node. </p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph.png" border="0" usemap="#classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph" alt=""/></div>
-<map name="classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph" id="classecl_1_1shared__ptr_a66d3ac7c084a28eced61d643f4d767a8_cgraph">
-<area shape="rect" id="node2" href="classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="224,5,323,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a5d25b5c35b6ab2c084f7d75f32ed3139"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
-<div class="memtemplate">
-template&lt;typename U , class Alloc , class... Args&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; allocate_shared </td>
-          <td>(</td>
-          <td class="paramtype">const Alloc &amp;&#160;</td>
-          <td class="paramname"><em>alloc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Args...&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocates a shared pointer. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">U</td><td>Is a T or is a subclass of T. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a class="anchor" id="ab2104fa6e839672da3c30400e8325e52"></a>
 <div class="memitem">
 <div class="memproto">
@@ -763,6 +717,52 @@ template&lt;typename U &gt; </div>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">U</td><td>Is a T or a subclass of T. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d25b5c35b6ab2c084f7d75f32ed3139"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+<div class="memtemplate">
+template&lt;typename U , class Alloc , class... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classecl_1_1shared__ptr.html">shared_ptr</a>&lt; U &gt; allocate_shared </td>
+          <td>(</td>
+          <td class="paramtype">const Alloc &amp;&#160;</td>
+          <td class="paramname"><em>alloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allocates a shared pointer. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">U</td><td>Is a T or is a subclass of T. </td></tr>
   </table>
   </dd>
 </dl>

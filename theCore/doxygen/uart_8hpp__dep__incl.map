@@ -1,6 +1,5 @@
 <map id="uart.hpp" name="uart.hpp">
-<area shape="rect" id="node2" href="$tm4c_2uart__example_8hpp.html" title="TM4C UART definitions template. " alt="" coords="5,80,145,107"/>
-<area shape="rect" id="node3" href="$tm4c_2templates_2uart__cfg_8in_8hpp.html" title="TM4C UART definitions template. " alt="" coords="169,80,288,107"/>
-<area shape="rect" id="node4" href="$tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for platform BAT test. " alt="" coords="312,80,420,107"/>
-<area shape="rect" id="node5" href="$uart__bat_2case_8cpp.html" title="case.cpp" alt="" coords="327,155,405,181"/>
+<area shape="rect" id="node2" href="$tm4c_2templates_2uart__cfg_8in_8hpp.html" title="TM4C UART definitions template. " alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$tivac__tm4_2suites_2platform__bat_2export_2test__uart_8hpp.html" title="Test UART for platform BAT test. " alt="" coords="148,80,256,107"/>
+<area shape="rect" id="node4" href="$uart__bat_2case_8cpp.html" title="case.cpp" alt="" coords="163,155,241,181"/>
 </map>

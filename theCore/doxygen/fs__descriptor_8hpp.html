@@ -107,18 +107,24 @@ $(document).ready(function(){initNavTree('fs__descriptor_8hpp.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">fs_descriptor.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="export_2fs_2types_8hpp.html">types.hpp</a>&quot;</code><br />
+
+<p>Filesystem descriptor.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="export_2ecl_2fs_2types_8hpp.html">types.hpp</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="err_8hpp.html">ecl/err.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for fs_descriptor.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="fs__descriptor_8hpp__incl.png" border="0" usemap="#fs__descriptor_8hpp" alt=""/></div>
 <map name="fs__descriptor_8hpp" id="fs__descriptor_8hpp">
-<area shape="rect" id="node2" href="export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="153,80,240,107"/>
+<area shape="rect" id="node2" href="export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="153,80,240,107"/>
+<area shape="rect" id="node9" href="err_8hpp.html" title="ecl/err.hpp" alt="" coords="265,80,355,107"/>
 <area shape="rect" id="node3" href="memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="133,155,260,181"/>
 <area shape="rect" id="node4" href="assert_8h.html" title="ecl/assert.h" alt="" coords="40,229,137,256"/>
 </map>
@@ -128,26 +134,38 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="fs__descriptor_8hpp__dep__incl.png" border="0" usemap="#fs__descriptor_8hppdep" alt=""/></div>
 <map name="fs__descriptor_8hppdep" id="fs__descriptor_8hppdep">
-<area shape="rect" id="node2" href="export_2fs_2fs_8hpp.html" title="fs.hpp" alt="" coords="41,80,103,107"/>
+<area shape="rect" id="node2" href="export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="6,80,69,107"/>
+<area shape="rect" id="node3" href="fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="19,155,125,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfs_1_1fs__descriptor.html">fs::fs_descriptor&lt; mount_point, Fs, Args &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1fs__descriptor.html">ecl::fs::fs_descriptor&lt; Mount, Fs &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps filesystem class into correct descriptor, required by main FS module.  <a href="classecl_1_1fs_1_1fs__descriptor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacefs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefs.html">fs</a></td></tr>
+<tr class="memitem:namespaceecl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html">ecl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceecl_1_1fs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1fs.html">ecl::fs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga2e5da09374373c21dbf22e4bb3f12d5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__fs__iface.html#ga2e5da09374373c21dbf22e4bb3f12d5c">ECL_FS_MOUNT_POINT</a>(struct_name,  mnt_point_path)</td></tr>
+<tr class="memdesc:ga2e5da09374373c21dbf22e4bb3f12d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates mount point structure with given name and given mount point path.  <a href="group__fs__iface.html#ga2e5da09374373c21dbf22e4bb3f12d5c">More...</a><br /></td></tr>
+<tr class="separator:ga2e5da09374373c21dbf22e4bb3f12d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Filesystem descriptor. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_c92aa75074393c4c3a20e23a24742d88.html">fs</a></li><li class="navelem"><a class="el" href="dir_8779e32fc8d167c3d656d2e947b642f7.html">export</a></li><li class="navelem"><a class="el" href="dir_56cb30124375ecb0e946f50003485a10.html">fs</a></li><li class="navelem"><a class="el" href="fs__descriptor_8hpp.html">fs_descriptor.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_c92aa75074393c4c3a20e23a24742d88.html">fs</a></li><li class="navelem"><a class="el" href="dir_8779e32fc8d167c3d656d2e947b642f7.html">export</a></li><li class="navelem"><a class="el" href="dir_4875ab198b1f8b551e2970deea21a2a5.html">ecl</a></li><li class="navelem"><a class="el" href="dir_762dc8be5ff41dba15d65d41ca2acd2a.html">fs</a></li><li class="navelem"><a class="el" href="fs__descriptor_8hpp.html">fs_descriptor.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

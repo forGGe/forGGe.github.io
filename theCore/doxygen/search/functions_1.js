@@ -14,7 +14,7 @@ var searchData=
   ['add_5fbefore',['add_before',['../classecl_1_1list__node.html#a4d2437e66861b1508af7ea99fad7f62f',1,'ecl::list_node']]],
   ['aligned_5falloc',['aligned_alloc',['../classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20',1,'ecl::pool_base']]],
   ['allocate',['allocate',['../structdummy__allocator.html#ab8c250a5c2ba78913ec22cc30cb48cee',1,'dummy_allocator::allocate()'],['../classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78',1,'ecl::pool_allocator::allocate()']]],
-  ['allocate_5fpath',['allocate_path',['../namespacefat.html#aa17d735f943b3be65a810a8fa11f9e01',1,'fat']]],
+  ['allocate_5fpath',['allocate_path',['../group__fs__iface.html#gaffa27c4e40a6879209babb99c4e171dd',1,'ecl::fs']]],
   ['allocate_5fshared',['allocate_shared',['../namespaceecl.html#a92d2cdb61c450632ad5676ed9f1a26d3',1,'ecl']]],
   ['apply_5fcfg',['apply_cfg',['../namespaceecl_1_1gpio__hw.html#ad3c8fb0105e8ddb0270f9b85eb4113b1',1,'ecl::gpio_hw']]],
   ['arch_5fdelay',['arch_delay',['../arch_2arm__cm_2export_2arch_2execution_8hpp.html#aaa92f65328ef8d3aa0be7bcba7dcb0ad',1,'execution.hpp']]],

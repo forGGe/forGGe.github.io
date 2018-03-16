@@ -14,7 +14,6 @@ var searchData=
   ['i2c_5fbus_2ehpp',['i2c_bus.hpp',['../particle__electron_2export_2aux_2i2c__bus_8hpp.html',1,'']]],
   ['irq_2ehpp',['irq.hpp',['../particle__electron_2export_2platform_2irq_8hpp.html',1,'']]],
   ['mutex_2ehpp',['mutex.hpp',['../posix_2export_2ecl_2thread_2mutex_8hpp.html',1,'']]],
-  ['path_2ecpp',['path.cpp',['../path_8cpp.html',1,'']]],
   ['path_2ehpp',['path.hpp',['../path_8hpp.html',1,'']]],
   ['pcd8544_2ehpp',['pcd8544.hpp',['../pcd8544_8hpp.html',1,'']]],
   ['pin_5fcfg_2ehpp',['pin_cfg.hpp',['../pin__cfg_8hpp.html',1,'']]],

@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['texas_20instruments_20tiva_20c_20tm4c123g_20platform',['Texas Instruments Tiva C TM4C123G platform',['../group__tm4c.html',1,'']]]
+  ['platform_20defintions_20and_20drivers',['Platform defintions and drivers',['../group__platform.html',1,'']]],
+  ['platform_20skeleton',['Platform skeleton',['../group__skel.html',1,'']]],
+  ['pin_20configuration_20helpers',['Pin configuration helpers',['../group__tm4c__pins.html',1,'']]]
 ];

@@ -51,17 +51,11 @@ var files =
     [ "stm32/templates/defines.in.hpp", "stm32_2templates_2defines_8in_8hpp.html", null ],
     [ "tm4c/templates/defines.in.hpp", "tm4c_2templates_2defines_8in_8hpp.html", "tm4c_2templates_2defines_8in_8hpp" ],
     [ "dir.cpp", "dir_8cpp.html", null ],
-    [ "dir.hpp", "dir_8hpp.html", [
-      [ "dir", "classfat_1_1dir.html", "classfat_1_1dir" ]
-    ] ],
+    [ "dir.hpp", "dir_8hpp.html", null ],
     [ "dir_descriptor.cpp", "dir__descriptor_8cpp.html", null ],
-    [ "dir_descriptor.hpp", "dir__descriptor_8hpp.html", [
-      [ "dir_descriptor", "classfs_1_1dir__descriptor.html", "classfs_1_1dir__descriptor" ]
-    ] ],
+    [ "dir_descriptor.hpp", "dir__descriptor_8hpp.html", null ],
     [ "dir_inode.cpp", "dir__inode_8cpp.html", null ],
-    [ "dir_inode.hpp", "dir__inode_8hpp.html", [
-      [ "dir_inode", "classfat_1_1dir__inode.html", "classfat_1_1dir__inode" ]
-    ] ],
+    [ "dir_inode.hpp", "dir__inode_8hpp.html", null ],
     [ "dma_cfg.in.hpp", "dma__cfg_8in_8hpp.html", null ],
     [ "endian.hpp", "endian_8hpp.html", "endian_8hpp" ],
     [ "err.cpp", "err_8cpp.html", null ],
@@ -84,27 +78,20 @@ var files =
     [ "fc28.hpp", "fc28_8hpp.html", "fc28_8hpp" ],
     [ "fc28_unit.cpp", "fc28__unit_8cpp.html", "fc28__unit_8cpp" ],
     [ "file.cpp", "file_8cpp.html", null ],
-    [ "file.hpp", "file_8hpp.html", [
-      [ "file", "classfat_1_1file.html", "classfat_1_1file" ]
-    ] ],
+    [ "file.hpp", "file_8hpp.html", null ],
     [ "file_descriptor.cpp", "file__descriptor_8cpp.html", null ],
     [ "file_descriptor.hpp", "file__descriptor_8hpp.html", "file__descriptor_8hpp" ],
     [ "file_inode.cpp", "file__inode_8cpp.html", null ],
-    [ "file_inode.hpp", "file__inode_8hpp.html", [
-      [ "file_inode", "classfat_1_1file__inode.html", "classfat_1_1file__inode" ]
-    ] ],
+    [ "file_inode.hpp", "file__inode_8hpp.html", null ],
     [ "Findcppcheck.cpp", "Findcppcheck_8cpp.html", "Findcppcheck_8cpp" ],
-    [ "fs.cpp", "fs_8cpp.html", null ],
-    [ "export/fs/fs.hpp", "export_2fs_2fs_8hpp.html", [
-      [ "vfs", "classfs_1_1vfs.html", "classfs_1_1vfs" ]
-    ] ],
-    [ "fat/export/fat/fs.hpp", "fat_2export_2fat_2fs_8hpp.html", [
-      [ "petit", "classfat_1_1petit.html", "classfat_1_1petit" ]
-    ] ],
-    [ "fs_descriptor.hpp", "fs__descriptor_8hpp.html", [
-      [ "fs_descriptor", "classfs_1_1fs__descriptor.html", "classfs_1_1fs__descriptor" ]
-    ] ],
+    [ "export/ecl/fs/fs.hpp", "export_2ecl_2fs_2fs_8hpp.html", null ],
+    [ "fat/export/ecl/fat/fs.hpp", "fat_2export_2ecl_2fat_2fs_8hpp.html", null ],
+    [ "fs_cfg.in.hpp", "fs__cfg_8in_8hpp.html", null ],
+    [ "fs_defines.in.h", "fs__defines_8in_8h.html", null ],
+    [ "fs_descriptor.hpp", "fs__descriptor_8hpp.html", "fs__descriptor_8hpp" ],
+    [ "fs_unit.cpp", "fs__unit_8cpp.html", "fs__unit_8cpp" ],
     [ "dev/export/dev/generated.hpp", "dev_2export_2dev_2generated_8hpp.html", null ],
+    [ "lib/export/lib/generated.hpp", "lib_2export_2lib_2generated_8hpp.html", null ],
     [ "platform/particle_electron/export/aux/generated.hpp", "platform_2particle__electron_2export_2aux_2generated_8hpp.html", null ],
     [ "platform/stm32/export/aux/generated.hpp", "platform_2stm32_2export_2aux_2generated_8hpp.html", "platform_2stm32_2export_2aux_2generated_8hpp" ],
     [ "platform/tm4c/export/aux/generated.hpp", "platform_2tm4c_2export_2aux_2generated_8hpp.html", null ],
@@ -124,7 +111,6 @@ var files =
     [ "i2c_cfg.in.hpp", "i2c__cfg_8in_8hpp.html", null ],
     [ "i2c_wire_cfgs.in.hpp", "i2c__wire__cfgs_8in_8hpp.html", null ],
     [ "i2c_wire_dispatcher.in.cpp", "i2c__wire__dispatcher_8in_8cpp.html", "i2c__wire__dispatcher_8in_8cpp" ],
-    [ "fat/inode.cpp", "fat_2inode_8cpp.html", null ],
     [ "inode.cpp", "inode_8cpp.html", null ],
     [ "inode.hpp", "inode_8hpp.html", "inode_8hpp" ],
     [ "iostream.hpp", "iostream_8hpp.html", "iostream_8hpp" ],
@@ -169,7 +155,6 @@ var files =
     ] ],
     [ "ostream.hpp", "ostream_8hpp.html", "ostream_8hpp" ],
     [ "ostream_unit.cpp", "ostream__unit_8cpp.html", "ostream__unit_8cpp" ],
-    [ "path.cpp", "path_8cpp.html", null ],
     [ "path.hpp", "path_8hpp.html", "path_8hpp" ],
     [ "pcd8544.hpp", "pcd8544_8hpp.html", [
       [ "point", "classecl_1_1point.html", "classecl_1_1point" ],
@@ -273,8 +258,8 @@ var files =
     ] ],
     [ "thread_unit.cpp", "thread__unit_8cpp.html", "thread__unit_8cpp" ],
     [ "types.h", "types_8h.html", "types_8h" ],
-    [ "export/fs/types.hpp", "export_2fs_2types_8hpp.html", "export_2fs_2types_8hpp" ],
-    [ "fat/export/fat/types.hpp", "fat_2export_2fat_2types_8hpp.html", "fat_2export_2fat_2types_8hpp" ],
+    [ "export/ecl/fs/types.hpp", "export_2ecl_2fs_2types_8hpp.html", "export_2ecl_2fs_2types_8hpp" ],
+    [ "fat/export/ecl/fat/types.hpp", "fat_2export_2ecl_2fat_2types_8hpp.html", "fat_2export_2ecl_2fat_2types_8hpp" ],
     [ "uart.hpp", "uart_8hpp.html", "uart_8hpp" ],
     [ "uart_bus.hpp", "uart__bus_8hpp.html", "uart__bus_8hpp" ],
     [ "stm32/templates/uart_cfg.in.hpp", "stm32_2templates_2uart__cfg_8in_8hpp.html", null ],

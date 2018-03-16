@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hm_2d10_20module_20driver',['HM-10 module driver',['../group__hm10.html',1,'']]]
+  ['gpio_20control',['GPIO control',['../group__stm32__gpio.html',1,'']]],
+  ['gpio_20control',['GPIO control',['../group__tm4c__gpio.html',1,'']]]
 ];

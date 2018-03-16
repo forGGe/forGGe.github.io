@@ -17,8 +17,8 @@ var hierarchy =
     [ "ecl::console_driver", "classecl_1_1console__driver.html", null ],
     [ "CoreDebug_Type", "structCoreDebug__Type.html", null ],
     [ "ecl::cs43l22< I2c, I2s, Rst_gpio >", "classecl_1_1cs43l22.html", null ],
-    [ "fs::dir_descriptor", "classfs_1_1dir__descriptor.html", [
-      [ "fat::dir", "classfat_1_1dir.html", null ]
+    [ "ecl::fs::dir_descriptor", "classecl_1_1fs_1_1dir__descriptor.html", [
+      [ "ecl::fat::dir", "classecl_1_1fat_1_1dir.html", null ]
     ] ],
     [ "ecl::dispatcher_timer", "structecl_1_1dispatcher__timer.html", null ],
     [ "ecl::dma_wrap_base< Impl >", "classecl_1_1dma__wrap__base.html", null ],
@@ -42,10 +42,10 @@ var hierarchy =
     ] ],
     [ "ecl::extractor< chs >", "structecl_1_1extractor.html", null ],
     [ "ecl::sensor::fc28< PowerPin >", "classecl_1_1sensor_1_1fc28.html", null ],
-    [ "fs::file_descriptor", "classfs_1_1file__descriptor.html", [
-      [ "fat::file", "classfat_1_1file.html", null ]
+    [ "ecl::fs::file_descriptor", "classecl_1_1fs_1_1file__descriptor.html", [
+      [ "ecl::fat::file", "classecl_1_1fat_1_1file.html", null ]
     ] ],
-    [ "fs::fs_descriptor< mount_point, Fs, Args >", "classfs_1_1fs__descriptor.html", null ],
+    [ "ecl::fs::fs_descriptor< Mount, Fs >", "classecl_1_1fs_1_1fs__descriptor.html", null ],
     [ "ecl::generic_bus< PBus >", "classecl_1_1generic__bus.html", null ],
     [ "ecl::gpio< Port, Pin >", "classecl_1_1gpio.html", null ],
     [ "ecl::gpio_list< Gs >", "structecl_1_1gpio__list.html", null ],
@@ -57,9 +57,9 @@ var hierarchy =
     [ "ecl::i2c_bus< dev >", "classecl_1_1i2c__bus.html", null ],
     [ "ecl::i2c_bus_cfg< dev >", "structecl_1_1i2c__bus__cfg.html", null ],
     [ "ecl::i2c_config< dev, mode, clock_speed, operation_mode, duty_cycle, own_address, ack, ack_addr >", "structecl_1_1i2c__config.html", null ],
-    [ "fs::inode", "classfs_1_1inode.html", [
-      [ "fat::dir_inode", "classfat_1_1dir__inode.html", null ],
-      [ "fat::file_inode", "classfat_1_1file__inode.html", null ]
+    [ "ecl::fs::inode", "classecl_1_1fs_1_1inode.html", [
+      [ "ecl::fat::dir_inode", "classecl_1_1fat_1_1dir__inode.html", null ],
+      [ "ecl::fat::file_inode", "classecl_1_1fat_1_1file__inode.html", null ]
     ] ],
     [ "ecl::iostream< IO_device >", "classecl_1_1iostream.html", null ],
     [ "ecl::iostream_initializer", "structecl_1_1iostream__initializer.html", null ],
@@ -82,11 +82,12 @@ var hierarchy =
     [ "ecl::mutex", "classecl_1_1mutex.html", null ],
     [ "ecl::native_thread", "classecl_1_1native__thread.html", null ],
     [ "ecl::ostream< IO_device >", "classecl_1_1ostream.html", null ],
-    [ "fat::path_handle", "classfat_1_1path__handle.html", [
-      [ "fat::path_erased< Alloc >", "classfat_1_1path__erased.html", null ]
+    [ "ecl::fs::path_handle", "classecl_1_1fs_1_1path__handle.html", [
+      [ "ecl::fs::path_erased< Alloc >", "classecl_1_1fs_1_1path__erased.html", null ]
     ] ],
+    [ "ecl::fs::path_iter", "classecl_1_1fs_1_1path__iter.html", null ],
     [ "ecl::pcd8544< Spi, Cs_gpio, Mode_gpio, Rst_gpio >", "classecl_1_1pcd8544.html", null ],
-    [ "fat::petit< Block >", "classfat_1_1petit.html", null ],
+    [ "ecl::fat::petit< Block >", "classecl_1_1fat_1_1petit.html", null ],
     [ "ecl::gpio_hw::pin_bin< Gn, Gns >", "structecl_1_1gpio__hw_1_1pin__bin.html", null ],
     [ "ecl::gpio_hw::pin_bin< Gn >", "structecl_1_1gpio__hw_1_1pin__bin_3_01Gn_01_4.html", null ],
     [ "pin_info", "structpin__info.html", null ],
@@ -103,15 +104,16 @@ var hierarchy =
     [ "ecl::mmio::ro_mut", "structecl_1_1mmio_1_1ro__mut.html", [
       [ "ecl::mmio::rw_mut", "structecl_1_1mmio_1_1rw__mut.html", null ]
     ] ],
-    [ "ecl::safe_storage< T >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< adc_evh >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< binary_semaphore >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< bus_handler >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< ctx >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< ecl::binary_semaphore >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< ecl::list >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< handler_fn >", "classecl_1_1safe__storage.html", null ],
-    [ "ecl::safe_storage< serial_chunks >", "classecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< T >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< adc_evh >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< binary_semaphore >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< bus_handler >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< ctx >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< ctx_type >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< ecl::binary_semaphore >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< ecl::list >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< handler_fn >", "structecl_1_1safe__storage.html", null ],
+    [ "ecl::safe_storage< serial_chunks >", "structecl_1_1safe__storage.html", null ],
     [ "SCB_Type", "structSCB__Type.html", null ],
     [ "ecl::sdspi< spi_dev, gpio_cs >", "classecl_1_1sdspi.html", null ],
     [ "ecl::sdspi_card_info", "structecl_1_1sdspi__card__info.html", null ],
@@ -140,7 +142,7 @@ var hierarchy =
     [ "ecl::uart_bus< dev >", "classecl_1_1uart__bus.html", null ],
     [ "ecl::usart_bus< dev >", "classecl_1_1usart__bus.html", null ],
     [ "ecl::usart_cfg< dev >", "structecl_1_1usart__cfg.html", null ],
-    [ "fs::vfs< Fs >", "classfs_1_1vfs.html", null ],
+    [ "ecl::fs::vfs< Fs >", "classecl_1_1fs_1_1vfs.html", null ],
     [ "ecl::weak_ptr< T >", "classecl_1_1weak__ptr.html", null ],
     [ "ecl::weak_ptr< inode >", "classecl_1_1weak__ptr.html", null ],
     [ "ecl::mmio::wo_mut", "structecl_1_1mmio_1_1wo__mut.html", null ]

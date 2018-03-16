@@ -1,9 +1,12 @@
 <map id="path.hpp" name="path.hpp">
-<area shape="rect" id="node2" href="$dir_8hpp.html" title="dir.hpp" alt="" coords="27,80,93,107"/>
-<area shape="rect" id="node5" href="$dir__inode_8hpp.html" title="dir_inode.hpp" alt="" coords="118,80,229,107"/>
-<area shape="rect" id="node7" href="$file__inode_8hpp.html" title="file_inode.hpp" alt="" coords="253,80,366,107"/>
-<area shape="rect" id="node3" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="139,155,205,181"/>
-<area shape="rect" id="node4" href="$dir__inode_8cpp.html" title="dir_inode.cpp" alt="" coords="5,155,115,181"/>
-<area shape="rect" id="node6" href="$fat_2export_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="229,155,291,181"/>
-<area shape="rect" id="node8" href="$file__inode_8cpp.html" title="file_inode.cpp" alt="" coords="316,155,428,181"/>
+<area shape="rect" id="node2" href="$fs__unit_8cpp.html" title="fs_unit.cpp" alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="123,80,186,107"/>
+<area shape="rect" id="node5" href="$dir_8hpp.html" title="FATFS dir descriptor interface. " alt="" coords="211,80,277,107"/>
+<area shape="rect" id="node8" href="$dir__inode_8hpp.html" title="Directory FATFS inode interface. " alt="" coords="302,80,413,107"/>
+<area shape="rect" id="node10" href="$file__inode_8hpp.html" title="File FATFS inode interface. " alt="" coords="437,80,550,107"/>
+<area shape="rect" id="node4" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="61,155,166,181"/>
+<area shape="rect" id="node6" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="325,155,390,181"/>
+<area shape="rect" id="node7" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="191,155,300,181"/>
+<area shape="rect" id="node9" href="$fat_2export_2ecl_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="414,155,477,181"/>
+<area shape="rect" id="node11" href="$file__inode_8cpp.html" title="File FATFS inode implementation. " alt="" coords="501,155,613,181"/>
 </map>

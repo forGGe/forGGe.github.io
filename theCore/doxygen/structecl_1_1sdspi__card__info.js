@@ -9,5 +9,6 @@ var structecl_1_1sdspi__card__info =
     [ "psn", "structecl_1_1sdspi__card__info.html#ab35b8c20967f94e3d4324aa1e9da2a3e", null ],
     [ "mdt_year", "structecl_1_1sdspi__card__info.html#a9521643a1083c8b68b886f3e1697283b", null ],
     [ "mdt_month", "structecl_1_1sdspi__card__info.html#ae83da026499e670cb699244347ad6127", null ],
+    [ "ocr_volt", "structecl_1_1sdspi__card__info.html#a5e444314d9ff81f3c23f38fc9c4d67ac", null ],
     [ "type_hc", "structecl_1_1sdspi__card__info.html#a2553a04ea3bf582132763ef30dee8247", null ]
 ];

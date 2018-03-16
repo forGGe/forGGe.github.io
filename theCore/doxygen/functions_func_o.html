@@ -109,7 +109,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_s.html#index_s"><span>s</span></a></li>
       <li><a href="functions_func_t.html#index_t"><span>t</span></a></li>
       <li><a href="functions_func_u.html#index_u"><span>u</span></a></li>
-      <li><a href="functions_func_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_func_w.html#index_w"><span>w</span></a></li>
       <li><a href="functions_func_x.html#index_x"><span>x</span></a></li>
       <li><a href="functions_func_0x7e.html#index_0x7e"><span>~</span></a></li>
@@ -152,17 +151,17 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 : <a class="el" href="structtmr__cb.html#a276d939286daefd7e1ca85230bda73f3">tmr_cb</a>
 </li>
 <li>open()
-: <a class="el" href="classecl_1_1pcd8544.html#a89186bd87320481f4448aad6b0197f57">ecl::pcd8544&lt; Spi, Cs_gpio, Mode_gpio, Rst_gpio &gt;</a>
-, <a class="el" href="classfat_1_1file__inode.html#a9fabeed817a8badefb4d843ed70a692d">fat::file_inode</a>
-, <a class="el" href="classfs_1_1inode.html#ad329e230d87854c1a6a2f11ffaef1abe">fs::inode</a>
+: <a class="el" href="classecl_1_1fat_1_1file__inode.html#a4964f52a1847f4938cdecfac24e71180">ecl::fat::file_inode</a>
+, <a class="el" href="classecl_1_1fs_1_1inode.html#ad329e230d87854c1a6a2f11ffaef1abe">ecl::fs::inode</a>
+, <a class="el" href="classecl_1_1pcd8544.html#a89186bd87320481f4448aad6b0197f57">ecl::pcd8544&lt; Spi, Cs_gpio, Mode_gpio, Rst_gpio &gt;</a>
 </li>
 <li>open_dir()
-: <a class="el" href="classfat_1_1dir__inode.html#a3f90db469c91bec7b0dff006c401f32b">fat::dir_inode</a>
-, <a class="el" href="classfs_1_1inode.html#ab065773b1820c3dd820fd9c063cec65e">fs::inode</a>
-, <a class="el" href="classfs_1_1vfs.html#a7f45f4e8aa009771d2e859bb2ee7670f">fs::vfs&lt; Fs &gt;</a>
+: <a class="el" href="classecl_1_1fat_1_1dir__inode.html#a40371e0efafcac0736f58a8dbdd01df9">ecl::fat::dir_inode</a>
+, <a class="el" href="classecl_1_1fs_1_1inode.html#ab065773b1820c3dd820fd9c063cec65e">ecl::fs::inode</a>
+, <a class="el" href="group__fs__iface.html#ga606cdd373e6ba2bb39e047f6ff10549e">ecl::fs::vfs&lt; Fs &gt;</a>
 </li>
 <li>open_file()
-: <a class="el" href="classfs_1_1vfs.html#a63ad4ce17d79222d6a56389d6836490d">fs::vfs&lt; Fs &gt;</a>
+: <a class="el" href="group__fs__iface.html#ga2bf8d256ab6dd560b76567f4ec87adac">ecl::fs::vfs&lt; Fs &gt;</a>
 </li>
 <li>operator bool()
 : <a class="el" href="classecl_1_1shared__ptr.html#a91af1c9e188ba6c02b629b57ca335ab5">ecl::shared_ptr&lt; T &gt;</a>
@@ -188,6 +187,10 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 <li>operator=()
 : <a class="el" href="classecl_1_1binary__semaphore.html#ad94155b62a6d6d66d8211d5a28d8a807">ecl::binary_semaphore</a>
 , <a class="el" href="classecl_1_1exti__manager_1_1handler.html#a46d4d7c5e6cbb9cc27b8088abfc80239">ecl::exti_manager::handler</a>
+, <a class="el" href="classecl_1_1fat_1_1dir.html#a1c33bdfaef29aa32b9045ee2c651ebcd">ecl::fat::dir</a>
+, <a class="el" href="classecl_1_1fat_1_1dir__inode.html#afb67e32e6f9380a8b5f5916834403f9e">ecl::fat::dir_inode</a>
+, <a class="el" href="classecl_1_1fat_1_1file.html#a96a4778792c2cb95aafa1b8899cd7aa6">ecl::fat::file</a>
+, <a class="el" href="classecl_1_1fs_1_1path__erased.html#a53c1fe93add9720450b8a66e5c2fab0c">ecl::fs::path_erased&lt; Alloc &gt;</a>
 , <a class="el" href="classecl_1_1istream.html#afe71f66104e03f12364dddcbdb62ad9b">ecl::istream&lt; IO_device &gt;</a>
 , <a class="el" href="classecl_1_1list__iter.html#a2413e52d97718ce54ada1ac2ece86ec2">ecl::list_iter&lt; T, Mptr &gt;</a>
 , <a class="el" href="classecl_1_1list__node.html#a86361f9f0f4413a7174615fc5dc41792">ecl::list_node</a>
@@ -201,18 +204,14 @@ $(document).ready(function(){initNavTree('functions_func_o.html','');});
 , <a class="el" href="classecl_1_1uart.html#a9009e22ebd137ef2296e1152f19022ef">ecl::uart&lt; ch &gt;</a>
 , <a class="el" href="classecl_1_1uart__bus.html#a2b6643348e56f29c2e821510b62ba0dc">ecl::uart_bus&lt; dev &gt;</a>
 , <a class="el" href="classecl_1_1usart__bus.html#a16775c84e30ad3f6866a23f7c4bc09aa">ecl::usart_bus&lt; dev &gt;</a>
-, <a class="el" href="classecl_1_1weak__ptr.html#a945b6050b1714570c06c90b0be24f66e">ecl::weak_ptr&lt; T &gt;</a>
-, <a class="el" href="classfat_1_1dir.html#a2bed42b7f20be93f90280147691333ca">fat::dir</a>
-, <a class="el" href="classfat_1_1dir__inode.html#ae02de9c0b68f87edd1e479833b441808">fat::dir_inode</a>
-, <a class="el" href="classfat_1_1file.html#af6c5115d0ee4b317dda0039f84377fea">fat::file</a>
-, <a class="el" href="classfat_1_1path__erased.html#aaa36be68e1393a7dbac4cf01f39c1639">fat::path_erased&lt; Alloc &gt;</a>
+, <a class="el" href="classecl_1_1weak__ptr.html#ab1b38dea232eb24bf8c466e9df4c6c2a">ecl::weak_ptr&lt; T &gt;</a>
 </li>
 <li>operator==()
 : <a class="el" href="classecl_1_1list__iter.html#adb723b25da3514f162e1a30b5f2a07a4">ecl::list_iter&lt; T, Mptr &gt;</a>
 </li>
 <li>operator&gt;&gt;()
-: <a class="el" href="classecl_1_1iostream.html#ab3fa1cefe53e63f9e11b95e2f7def352">ecl::iostream&lt; IO_device &gt;</a>
-, <a class="el" href="classecl_1_1istream.html#ad00a3e3a57007029da9b699733c5eba2">ecl::istream&lt; IO_device &gt;</a>
+: <a class="el" href="classecl_1_1iostream.html#af25017585d95c84d6c0fd192c1e99e4b">ecl::iostream&lt; IO_device &gt;</a>
+, <a class="el" href="classecl_1_1istream.html#aed0c97788e4fb34c988558d45d4e8849">ecl::istream&lt; IO_device &gt;</a>
 </li>
 <li>ostream()
 : <a class="el" href="classecl_1_1ostream.html#a3fd33fc409c410f81d6577f5c736495d">ecl::ostream&lt; IO_device &gt;</a>

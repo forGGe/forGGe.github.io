@@ -1,8 +1,6 @@
 var annotated_dup =
 [
     [ "ecl", "namespaceecl.html", "namespaceecl" ],
-    [ "fat", "namespacefat.html", "namespacefat" ],
-    [ "fs", "namespacefs.html", "namespacefs" ],
     [ "chunk_info", "structchunk__info.html", "structchunk__info" ],
     [ "CoreDebug_Type", "structCoreDebug__Type.html", "structCoreDebug__Type" ],
     [ "dummy_allocator", "structdummy__allocator.html", "structdummy__allocator" ],

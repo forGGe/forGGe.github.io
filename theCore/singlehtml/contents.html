@@ -90,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-arch">Supported architectures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-platform/index">Supported platforms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-devices/index">Device drivers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contents.html#document-utilities">Libraries and utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-utilities/index">Libraries and utilities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-os_layer">OS abstraction layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-community">Community and developer guidelines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-docs">Documentation development and contribution</a></li>
@@ -1154,6 +1154,11 @@ simple project that uses onboard LEDs.</p>
 </tr>
 </tbody>
 </table>
+<p>This example demonstrates using of <a class="reference internal" href="contents.html#thecore-hm-10"><span class="std std-ref">HM-10 Bluetooth BTLE module</span></a> using theCore.
+With Bluetooth application on Android device it is possible to establish
+communication link between the smartphone and any embedded device with
+HM-10 attached.</p>
+<p>It this particular example, STM32F4 Discovery board is used.</p>
 <div class="section" id="wiring">
 <h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
 <img alt="UART, HM-10 and stm32f4discovery board wiring" src="https://i.imgur.com/ZlNgnD5.jpg" />
@@ -4117,7 +4122,7 @@ For more details on theCore console, check the <a class="reference internal" hre
 </div>
 </div>
 <span id="document-devices/hm-10-bluetooth"></span><div class="section" id="hm-10-bluetooth-btle-module">
-<h3>HM-10 Bluetooth BTLE module<a class="headerlink" href="#hm-10-bluetooth-btle-module" title="Permalink to this headline">¶</a></h3>
+<span id="thecore-hm-10"></span><h3>HM-10 Bluetooth BTLE module<a class="headerlink" href="#hm-10-bluetooth-btle-module" title="Permalink to this headline">¶</a></h3>
 <img alt="HM-10 Bluetooth Module BTLE" src="https://cdn.itead.cc/media/catalog/product/h/m/hm_10_03.jpg" />
 <p>HM-10 is a BLE module for embedded system to get BLE wireless communication
 with BLE capable devices (e.g. iPhone and iPad).
@@ -4168,7 +4173,7 @@ For master mode, see <a class="reference external" href="https://github.com/forG
 </div>
 </div>
 <span id="document-devices/sdspi"></span><div class="section" id="sdspi-driver">
-<h3>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h3>
+<span id="thecore-sdspi"></span><h3>SDSPI driver<a class="headerlink" href="#sdspi-driver" title="Permalink to this headline">¶</a></h3>
 <a class="reference internal image-reference" href="https://pre00.deviantart.net/39c5/th/pre/f/2010/225/8/5/micro_sd_card_up_by_tash78.png"><img alt="SD card with SD SPI driver" src="https://pre00.deviantart.net/39c5/th/pre/f/2010/225/8/5/micro_sd_card_up_by_tash78.png" style="width: 450px; height: 450px;" /></a>
 <p>(<a class="reference external" href="https://tash78.deviantart.com/art/Micro-SD-Card-UP-175156797">Image by tash78 &#64; devianart</a>)</p>
 <p>theCore SDPSI driver allows to communicate with SD cards using platforms that
@@ -4201,7 +4206,8 @@ SDSPI driver, by definition, works only in SPI mode, not SDIO.</p>
 <div class="section" id="verified-hardware">
 <h4>Verified hardware<a class="headerlink" href="#verified-hardware" title="Permalink to this headline">¶</a></h4>
 <p>SDSPI driver is tested with <a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">Catalex micro-SD card adapter/module</a> and
-<a class="reference external" href="http://bit.ly/2HU5yr7">high-capacity, class 10 micro SD card</a>.</p>
+<a class="reference external" href="http://bit.ly/2HU5yr7">high-capacity, class 10 micro SD card</a>. For the sake of fair testing,
+<a class="reference internal" href="contents.html#thecore-fat-filesystem"><span class="std std-ref">FAT filesystem</span></a> were used on top of SDSPI driver.</p>
 </div>
 <div class="section" id="additional-references">
 <h4>Additional references<a class="headerlink" href="#additional-references" title="Permalink to this headline">¶</a></h4>
@@ -4214,9 +4220,11 @@ SDSPI driver, by definition, works only in SPI mode, not SDIO.</p>
 </div>
 </div>
 </div>
-<span id="document-utilities"></span><div class="section" id="libraries-and-utilities">
+<span id="document-utilities/index"></span><div class="section" id="libraries-and-utilities">
 <h2>Libraries and utilities<a class="headerlink" href="#libraries-and-utilities" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="json-based-configurator">
+<p>The list of libraries and utilities from theCore is provided below.</p>
+<div class="toctree-wrapper compound">
+<span id="document-utilities/json-configurator"></span><div class="section" id="json-based-configurator">
 <span id="thecore-configurator"></span><h3>JSON-based configurator<a class="headerlink" href="#json-based-configurator" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -4305,7 +4313,7 @@ of errors the schema can easily catch. Refer to the concrete module
 documentation or the source code to understand which values are validated.</p>
 </div>
 </div>
-<div class="section" id="console-streams">
+<span id="document-utilities/console"></span><div class="section" id="console-streams">
 <span id="thecore-console"></span><h3>Console streams<a class="headerlink" href="#console-streams" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -4319,25 +4327,262 @@ documentation or the source code to understand which values are validated.</p>
 <p class="last">This section is under construction.</p>
 </div>
 </div>
-<div class="section" id="assertions-and-error-handling">
+<span id="document-utilities/filesystem"></span><div class="section" id="filesystem-support">
+<h3>Filesystem support<a class="headerlink" href="#filesystem-support" title="Permalink to this headline">¶</a></h3>
+<img alt="Filesystem interface" src="http://www.xs-labs.com/uploads/image/filesystem/icon-circle.png" />
+<p>(image by <a class="reference external" href="http://www.xs-labs.com/en/projects/filesystem/overview/">xs-labs</a>)</p>
+<p>theCore provides filesystem classes, somewhat similar to, and inspired by
+the <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_file_system">Virtual File System pattern</a>. In that way, theCore virtual filesystem
+can work with any “real” filesystem.</p>
+<p>Right now, only <a class="reference internal" href="#thecore-fat-filesystem"><span class="std std-ref">FAT filesystem</span></a> is supported as underlying
+filesystem in theCore.</p>
+<div class="section" id="source-code">
+<h4>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h4>
+<p>The main filesystem utility located under <code class="docutils literal"><span class="pre">lib/fs/</span></code> directory, relative to
+theCore root.
+The FATFS code is placed in <code class="docutils literal"><span class="pre">lib/fs/fat/</span></code> directory, relative to
+theCore root.</p>
+</div>
+<div class="section" id="doxygen-documentation">
+<h4>Doxygen documentation<a class="headerlink" href="#doxygen-documentation" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="http://forgge.github.io/theCore/doxygen/group__fs__iface.html">Click here to open filesystem Doxygen documentation</a>.</p>
+</div>
+<div class="section" id="fat-filesystem">
+<span id="thecore-fat-filesystem"></span><h4>FAT filesystem<a class="headerlink" href="#fat-filesystem" title="Permalink to this headline">¶</a></h4>
+<p>The FATFS support is based on <a class="reference external" href="http://www.elm-chan.org/fsw/ff/00index_p.html">Petite FAT from ELM</a>. This FATFS implementation
+is device-agnostic, meaning it can work above any driver that
+can provide read/write/seek interface.</p>
+<div class="section" id="compatible-low-level-device-drivers">
+<h5>Compatible low-level device drivers<a class="headerlink" href="#compatible-low-level-device-drivers" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li><a class="reference internal" href="contents.html#thecore-sdspi"><span class="std std-ref">SDSPI driver</span></a>.</li>
+</ul>
+</div>
+<div class="section" id="fatfs-usage-example">
+<h5>FATFS usage example<a class="headerlink" href="#fatfs-usage-example" title="Permalink to this headline">¶</a></h5>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This section is under construction.</p>
+</div>
+</div>
+<div class="section" id="verified-hardware">
+<h5>Verified hardware<a class="headerlink" href="#verified-hardware" title="Permalink to this headline">¶</a></h5>
+<p>FATFS was tested along with <a class="reference internal" href="contents.html#thecore-sdspi"><span class="std std-ref">SDSPI driver</span></a> and
+<a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">Catalex micro-SD card adapter/module</a> on <a class="reference external" href="http://bit.ly/2HU5yr7">high-capacity, class 10 micro SD card</a>.</p>
+</div>
+<div class="section" id="known-limitations">
+<h5>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h5>
+<ul class="simple">
+<li>theCore FATFS module can only work with FAT32 filesystems. FAT16 and FAT12
+are pending.</li>
+<li>FATFS module must be configured similarly for every underlying device:
+i.e. there is no way to have 2 SD cards with 2 FAT, configured one as readonly,
+an one as read-write. Both of them must be the same type.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="filesystem-example-configuration">
+<h4>Filesystem example configuration<a class="headerlink" href="#filesystem-example-configuration" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s">&quot;lib&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s">&quot;fs&quot;</span><span class="o">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s">&quot;type&quot;</span><span class="o">:</span> <span class="s">&quot;fat&quot;</span><span class="p">,</span>
+                <span class="s">&quot;dev&quot;</span><span class="o">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s">&quot;id&quot;</span><span class="o">:</span> <span class="s">&quot;sdspi0&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;mountpoint&quot;</span><span class="o">:</span> <span class="s">&quot;main_fs&quot;</span>
+                    <span class="p">},</span>
+                    <span class="p">{</span>
+                        <span class="s">&quot;id&quot;</span><span class="o">:</span> <span class="s">&quot;other_sdspi_driver&quot;</span><span class="p">,</span>
+                        <span class="s">&quot;mountpoint&quot;</span><span class="o">:</span> <span class="s">&quot;backup_fs&quot;</span>
+                    <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="s">&quot;readonly&quot;</span><span class="o">:</span> <span class="nb">false</span><span class="p">,</span>
+                <span class="s">&quot;enable_seek&quot;</span><span class="o">:</span> <span class="nb">true</span><span class="p">,</span>
+                <span class="s">&quot;enable_lowercase&quot;</span><span class="o">:</span> <span class="nb">false</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="example-output">
+<h4>Example output<a class="headerlink" href="#example-output" title="Permalink to this headline">¶</a></h4>
+<p>Filesystem configuration header:</p>
+<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
+<span class="p">{</span>
+
+<span class="c1">// File system definitions</span>
+
+
+<span class="n">ECL_FS_MOUNT_POINT</span><span class="p">(</span><span class="n">fatfs_mount0</span><span class="p">,</span> <span class="s">&quot;main_fs&quot;</span><span class="p">);</span>
+<span class="k">using</span> <span class="n">fatfs0</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">fat</span><span class="o">::</span><span class="n">petit</span><span class="o">&lt;</span><span class="n">sdspi0</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">fatfs_descr0</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">fs</span><span class="o">::</span><span class="n">fs_descriptor</span><span class="o">&lt;</span><span class="n">fatfs_mount0</span><span class="p">,</span> <span class="n">fatfs0</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="n">ECL_FS_MOUNT_POINT</span><span class="p">(</span><span class="n">fatfs_mount1</span><span class="p">,</span> <span class="s">&quot;backup_fs&quot;</span><span class="p">);</span>
+<span class="k">using</span> <span class="n">fatfs1</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">fat</span><span class="o">::</span><span class="n">petit</span><span class="o">&lt;</span><span class="n">other_sdspi_driver</span><span class="o">&gt;</span><span class="p">;</span>
+<span class="k">using</span> <span class="n">fatfs_descr1</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">fs</span><span class="o">::</span><span class="n">fs_descriptor</span><span class="o">&lt;</span><span class="n">fatfs_mount1</span><span class="p">,</span> <span class="n">fatfs1</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="c1">// Virtual file system alias</span>
+
+<span class="k">using</span> <span class="n">filesystem</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">fs</span><span class="o">::</span><span class="n">vfs</span><span class="o">&lt;</span><span class="n">fatfs_descr0</span><span class="p">,</span> <span class="n">fatfs_descr1</span><span class="o">&gt;</span><span class="p">;</span>
+
+<span class="p">}</span> <span class="c1">// namespace ecl</span>
+</pre></div>
+</td></tr></table></div>
+<p><a class="reference external" href="../_static/generated/fs/fs_cfg_example.hpp">Full filesystem configuration header</a></p>
+<p>Filesystem definitions header:</p>
+<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="cp">#define THECORE_FATFS_USE_SEEK 1</span>
+<span class="cp">#define THECORE_FATFS_USE_LCC 0</span>
+<span class="cp">#define THECORE_FATFS_READONLY 0</span>
+</pre></div>
+</td></tr></table></div>
+<p><a class="reference external" href="../_static/generated/fs/fs_defines_example.h">Full filesystem definitions header</a></p>
+</div>
+<div class="section" id="filesystem-configuration-schema">
+<h4>Filesystem configuration schema<a class="headerlink" href="#filesystem-configuration-schema" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
+
+    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;oneOf&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;FAT filesystem&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;type&quot;</span><span class="p">:</span>                 <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;fat&quot;</span> <span class="p">]</span> <span class="p">},</span>
+                    <span class="nt">&quot;readonly&quot;</span><span class="p">:</span>             <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;boolean&quot;</span> <span class="p">},</span>
+                    <span class="nt">&quot;enable_seek&quot;</span><span class="p">:</span>          <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;boolean&quot;</span> <span class="p">},</span>
+                    <span class="nt">&quot;enable_lowercase&quot;</span><span class="p">:</span>     <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;boolean&quot;</span> <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+
+        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;dev&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+                    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="nt">&quot;id&quot;</span><span class="p">:</span>               <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
+                        <span class="nt">&quot;mountpoint&quot;</span><span class="p">:</span>       <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
+                    <span class="p">},</span>
+
+                    <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;mountpoint&quot;</span> <span class="p">]</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">},</span>
+
+        <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;dev&quot;</span> <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="additional-references">
+<h4>Additional references<a class="headerlink" href="#additional-references" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/File_Allocation_Table">FATFS WiKi article</a></li>
+<li><a class="reference external" href="https://github.com/forGGe/petite-fat">Petite FATFS mirror repo, used by theCore</a></li>
+</ul>
+</div>
+</div>
+<span id="document-utilities/assert"></span><div class="section" id="assertions-and-error-handling">
 <h3>Assertions and error handling<a class="headerlink" href="#assertions-and-error-handling" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
 </div>
 </div>
-<div class="section" id="filesystem">
-<h3>Filesystem<a class="headerlink" href="#filesystem" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
-</div>
-<div class="section" id="newlib-stubs">
+<span id="document-utilities/newlib"></span><div class="section" id="newlib-stubs">
 <h3>Newlib stubs<a class="headerlink" href="#newlib-stubs" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction.</p>
+</div>
 </div>
 </div>
 </div>

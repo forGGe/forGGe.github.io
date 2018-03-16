@@ -1,0 +1,8 @@
+<map id="ecl::fat::file_inode::file_inode" name="ecl::fat::file_inode::file_inode">
+<area shape="rect" id="node2" href="$group__fs__iface.html#gaffa27c4e40a6879209babb99c4e171dd" title="Allocates new path, concatenating with tail, if needed. " alt="" coords="192,42,349,69"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a92d2cdb61c450632ad5676ed9f1a26d3" title="ecl::allocate_shared" alt="" coords="397,42,549,69"/>
+<area shape="rect" id="node4" href="$classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78" title="Allocates memory for given object count. " alt="" coords="597,35,739,76"/>
+<area shape="rect" id="node5" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="787,35,957,76"/>
+<area shape="rect" id="node6" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="1005,5,1153,47"/>
+<area shape="rect" id="node7" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="1041,71,1118,98"/>
+</map>

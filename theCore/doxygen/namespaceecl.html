@@ -119,6 +119,10 @@ $(document).ready(function(){initNavTree('namespaceecl.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespaceecl_1_1fat"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1fat.html">fat</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceecl_1_1fs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1fs.html">fs</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceecl_1_1gpio__hw"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1gpio__hw.html">gpio_hw</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceecl_1_1i2s"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1i2s.html">i2s</a></td></tr>
@@ -273,8 +277,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1pool__base.html">pool_base</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for memory pool.  <a href="classecl_1_1pool__base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1safe__storage.html">safe_storage</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safe storage wrapper to avoid static initialization fiasco.  <a href="classecl_1_1safe__storage.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1safe__storage.html">safe_storage</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Safe storage wrapper to avoid static initialization fiasco.  <a href="structecl_1_1safe__storage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1sdspi.html">sdspi</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SDSPI driver class.  <a href="classecl_1_1sdspi.html#details">More...</a><br /></td></tr>
@@ -464,7 +468,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2019c8e18bec8dc776dce289ad397239">err::txtbsy</a> = -76, 
 <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c">err::wouldblock</a> = -77, 
 <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810ac3bca1be0e684b3aa62a4e0c3732f53b">err::xdev</a> = -78, 
-<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9">err::generic</a> = -79
+<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9">err::generic</a> = -79, 
+<br />
+&#160;&#160;<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b">err::eof</a> = -255
 <br />
  }<tr class="memdesc:ae35889935b17d1382e0afc3dc87e9810"><td class="mdescLeft">&#160;</td><td class="mdescRight">theCore system-wide errors  <a href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">More...</a><br /></td></tr>
 </td></tr>
@@ -890,6 +896,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a6cfb039a61d7b31b75eb741e097046ca"><td class="memTemplParams" colspan="2">template&lt;class FuncT , class... Tp&gt; </td></tr>
 <tr class="memitem:a6cfb039a61d7b31b75eb741e097046ca"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a6cfb039a61d7b31b75eb741e097046ca">for_each</a> (std::tuple&lt; Tp... &gt; &amp;tuple, FuncT func)</td></tr>
 <tr class="separator:a6cfb039a61d7b31b75eb741e097046ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a37b7217fc0cd8aa5c0d10f5fb5468c"><td class="memTemplParams" colspan="2">template&lt;template&lt; typename &gt; class Callable, class... Tp&gt; </td></tr>
+<tr class="memitem:a9a37b7217fc0cd8aa5c0d10f5fb5468c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a9a37b7217fc0cd8aa5c0d10f5fb5468c">for_each</a> ()</td></tr>
+<tr class="memdesc:a9a37b7217fc0cd8aa5c0d10f5fb5468c"><td class="mdescLeft">&#160;</td><td class="mdescRight">For-each for types only.  <a href="#a9a37b7217fc0cd8aa5c0d10f5fb5468c">More...</a><br /></td></tr>
+<tr class="separator:a9a37b7217fc0cd8aa5c0d10f5fb5468c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a065eab06558a7fa839503b744e9b4de3"><td class="memTemplParams" colspan="2">template&lt;typename T1 , typename T2 &gt; </td></tr>
 <tr class="memitem:a065eab06558a7fa839503b744e9b4de3"><td class="memTemplItemLeft" align="right" valign="top">constexpr size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a065eab06558a7fa839503b744e9b4de3">offset_of</a> (T1 T2::*member)</td></tr>
 <tr class="memdesc:a065eab06558a7fa839503b744e9b4de3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains offset of the given member within given type.  <a href="#a065eab06558a7fa839503b744e9b4de3">More...</a><br /></td></tr>
@@ -898,6 +908,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ab5e7d613a45d280c3b1800570ddeee50"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50">extract_value</a> (Enum val)</td></tr>
 <tr class="memdesc:ab5e7d613a45d280c3b1800570ddeee50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts value from enumerator element of given type.  <a href="#ab5e7d613a45d280c3b1800570ddeee50">More...</a><br /></td></tr>
 <tr class="separator:ab5e7d613a45d280c3b1800570ddeee50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5746c639688e45efc4bf682920a436"><td class="memTemplParams" colspan="2">template&lt;int N&gt; </td></tr>
+<tr class="memitem:a6b5746c639688e45efc4bf682920a436"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a6b5746c639688e45efc4bf682920a436">strlen_constexpr</a> (const char(&amp;str)[N])</td></tr>
+<tr class="memdesc:a6b5746c639688e45efc4bf682920a436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates string length in compile time, if possible.  <a href="#a6b5746c639688e45efc4bf682920a436">More...</a><br /></td></tr>
+<tr class="separator:a6b5746c639688e45efc4bf682920a436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a811bcdaba8486955801aceb18bf4302d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a811bcdaba8486955801aceb18bf4302d">strlen_constexpr</a> (const char *str)</td></tr>
+<tr class="memdesc:a811bcdaba8486955801aceb18bf4302d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates string length in compile time, if possible.  <a href="#a811bcdaba8486955801aceb18bf4302d">More...</a><br /></td></tr>
+<tr class="separator:a811bcdaba8486955801aceb18bf4302d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a930243365b108e8f91ad62e284bdc548"><td class="memItemLeft" align="right" valign="top">constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a930243365b108e8f91ad62e284bdc548">strchri_constexpr</a> (const char *str, char ch)</td></tr>
+<tr class="memdesc:a930243365b108e8f91ad62e284bdc548"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an index to the first occurrence of the character in the string.  <a href="#a930243365b108e8f91ad62e284bdc548">More...</a><br /></td></tr>
+<tr class="separator:a930243365b108e8f91ad62e284bdc548"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a077dee22d456fba9f8eaadac0447ed65"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65">version</a> ()</td></tr>
 <tr class="memdesc:a077dee22d456fba9f8eaadac0447ed65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns constant version string of theCore.  <a href="#a077dee22d456fba9f8eaadac0447ed65">More...</a><br /></td></tr>
 <tr class="separator:a077dee22d456fba9f8eaadac0447ed65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1430,6 +1450,9 @@ template&lt;typename S , size_t B, size_t L&gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9"></a>generic&#160;</td><td class="fielddoc">
 <p>Cross-device link. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b"></a>eof&#160;</td><td class="fielddoc">
+<p>Generic error. </p>
 </td></tr>
 </table>
 
@@ -2966,6 +2989,32 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a9a37b7217fc0cd8aa5c0d10f5fb5468c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;template&lt; typename &gt; class Callable, class... Tp&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void ecl::for_each </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For-each for types only. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Callable</td><td>Type with operator() overloaded </td></tr>
+    <tr><td class="paramname">Tp</td><td>Types for with Callable will be called </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a065eab06558a7fa839503b744e9b4de3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3024,6 +3073,74 @@ template&lt;typename Enum &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Integer representation of the enum value. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6b5746c639688e45efc4bf682920a436"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int N&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto ecl::strlen_constexpr </td>
+          <td>(</td>
+          <td class="paramtype">const char(&amp;)&#160;</td>
+          <td class="paramname"><em>str</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates string length in compile time, if possible. </p>
+
+</div>
+</div>
+<a class="anchor" id="a811bcdaba8486955801aceb18bf4302d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr auto ecl::strlen_constexpr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates string length in compile time, if possible. </p>
+<p>Overload for consuming pointers. </p>
+
+</div>
+</div>
+<a class="anchor" id="a930243365b108e8f91ad62e284bdc548"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int ecl::strchri_constexpr </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>ch</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an index to the first occurrence of the character in the string. </p>
+<p>Usable in compile-time </p><dl class="section return"><dt>Returns</dt><dd>Index of a character in string where given char is located, -1 otherwise. </dd></dl>
 
 </div>
 </div>
@@ -3250,7 +3367,7 @@ template&lt;class Predicate &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>Use RTC instead of relying on clock. See #213 also. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>Use RTC instead of relying on clock. See #213 also. </dd></dl>
 <p>Stops waiting if predicate returns true. Guarantees that predicate will be called at least once. </p><dl class="section note"><dt>Note</dt><dd>If WFE and systimer are present and used, MCU will go to sleep, waiting for events. External events or interrupts will wake up MCU, allowing predicate to be executed. This also means that at minimum, MCU will wake up on every timer interrupt. In such manner, granularity of predicate checks depends on events rate. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -3307,7 +3424,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Use RTC instead of relying on clock. See #213 also. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>Use RTC instead of relying on clock. See #213 also. </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -3359,7 +3476,7 @@ template&lt;class Rep , class Period &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>Use RTC instead of relying on clock. See #213 also. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>Use RTC instead of relying on clock. See #213 also. </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>

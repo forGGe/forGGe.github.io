@@ -3,9 +3,10 @@ var searchData=
   ['m_5fcnt',['m_cnt',['../classecl_1_1aux.html#a4f57ed4776ab023abf8d5012c4d5605e',1,'ecl::aux']]],
   ['m_5fdev',['m_dev',['../structecl_1_1i2c__config.html#a3c0526daa3929aefb1c30df866950e92',1,'ecl::i2c_config']]],
   ['m_5finit_5fobj',['m_init_obj',['../structecl_1_1i2c__config.html#aeabc0bc6b9a51b96f4c642c860b9cd58',1,'ecl::i2c_config']]],
-  ['m_5finode',['m_inode',['../classfs_1_1dir__descriptor.html#a6c40b702e6afc3c5d39aa46eaf9dfc68',1,'fs::dir_descriptor::m_inode()'],['../classfs_1_1file__descriptor.html#a66e89deddc143bc07042685828b4e2d8',1,'fs::file_descriptor::m_inode()']]],
+  ['m_5finode',['m_inode',['../classecl_1_1fs_1_1dir__descriptor.html#ac1760471a7b9524e6f0d0445a7db4f56',1,'ecl::fs::dir_descriptor::m_inode()'],['../classecl_1_1fs_1_1file__descriptor.html#ae7fcbc77dfd9d7fa634e486869d0a420',1,'ecl::fs::file_descriptor::m_inode()']]],
   ['m_5fmode',['m_mode',['../structecl_1_1i2c__config.html#aa35966fd46584c1c24c03fcfb340db75',1,'ecl::i2c_config']]],
   ['m_5fnode',['m_node',['../classecl_1_1exti__manager_1_1handler.html#af4a87373318bcb83a109191e936731c4',1,'ecl::exti_manager::handler']]],
+  ['m_5fstor',['m_stor',['../structecl_1_1safe__storage.html#ab574231a2808c10a84d85231162189a4',1,'ecl::safe_storage']]],
   ['m_5ftmr',['m_tmr',['../structecl_1_1dispatcher__timer.html#a9e2fbdd7505620a3eb1c43ede710a151',1,'ecl::dispatcher_timer']]],
   ['m_5fweak',['m_weak',['../classecl_1_1aux.html#a5122998350f3154e9a884036d07ff0c6',1,'ecl::aux']]],
   ['main_5fthread',['main_thread',['../user__side_8cpp.html#acd7f35c6d957ac12a150dc75f4373773',1,'user_side.cpp']]],
@@ -24,8 +25,8 @@ var searchData=
   ['mint',['mint',['../structecl_1_1sdspi_1_1ctx__type_1_1block__type.html#ae57bbc43a61c95f293176d811ebe39d7',1,'ecl::sdspi::ctx_type::block_type']]],
   ['mmfar',['MMFAR',['../structSCB__Type.html#ac49b24b3f222508464f111772f2c44dd',1,'SCB_Type']]],
   ['mmfr',['MMFR',['../structSCB__Type.html#aec2f8283d2737c6897188568a4214976',1,'SCB_Type']]],
-  ['mnt_5fpoint',['mnt_point',['../classfs_1_1fs__descriptor.html#a59630365b5561b5ca9365951d140eaa8',1,'fs::fs_descriptor']]],
   ['mock_5ftime',['mock_time',['../semaphore__unit_8cpp.html#adace15bac0690c5e5180672f848c96fd',1,'semaphore_unit.cpp']]],
   ['mode',['mode',['../structpin__info.html#ab05ac4b041bdb1441c6edf8fb6e0c74f',1,'pin_info']]],
-  ['my_5fptr',['my_ptr',['../classfs_1_1inode.html#a9856a868037409f68825dcdd9dcf1b0f',1,'fs::inode']]]
+  ['mount_5fpoint',['mount_point',['../classecl_1_1fs_1_1fs__descriptor.html#a1ea66b13770ace121fc61a2fb4c966ef',1,'ecl::fs::fs_descriptor']]],
+  ['my_5fptr',['my_ptr',['../classecl_1_1fs_1_1inode.html#aa74985e5681c94ad1ac98a56f2e2f167',1,'ecl::fs::inode']]]
 ];

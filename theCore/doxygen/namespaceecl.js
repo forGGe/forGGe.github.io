@@ -1,5 +1,7 @@
 var namespaceecl =
 [
+    [ "fat", "namespaceecl_1_1fat.html", "namespaceecl_1_1fat" ],
+    [ "fs", "namespaceecl_1_1fs.html", "namespaceecl_1_1fs" ],
     [ "gpio_hw", "namespaceecl_1_1gpio__hw.html", "namespaceecl_1_1gpio__hw" ],
     [ "mmio", "namespaceecl_1_1mmio.html", "namespaceecl_1_1mmio" ],
     [ "os", "namespaceecl_1_1os.html", null ],
@@ -52,7 +54,7 @@ var namespaceecl =
     [ "pool", "classecl_1_1pool.html", "classecl_1_1pool" ],
     [ "pool_allocator", "classecl_1_1pool__allocator.html", "classecl_1_1pool__allocator" ],
     [ "pool_base", "classecl_1_1pool__base.html", "classecl_1_1pool__base" ],
-    [ "safe_storage", "classecl_1_1safe__storage.html", "classecl_1_1safe__storage" ],
+    [ "safe_storage", "structecl_1_1safe__storage.html", "structecl_1_1safe__storage" ],
     [ "sdspi", "classecl_1_1sdspi.html", "classecl_1_1sdspi" ],
     [ "sdspi_card_info", "structecl_1_1sdspi__card__info.html", "structecl_1_1sdspi__card__info" ],
     [ "sdspi_state", "structecl_1_1sdspi__state.html", "structecl_1_1sdspi__state" ],

@@ -80,7 +80,8 @@ var err_8hpp =
       [ "txtbsy", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a2019c8e18bec8dc776dce289ad397239", null ],
       [ "wouldblock", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c", null ],
       [ "xdev", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810ac3bca1be0e684b3aa62a4e0c3732f53b", null ],
-      [ "generic", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9", null ]
+      [ "generic", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9", null ],
+      [ "eof", "err_8hpp.html#ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b", null ]
     ] ],
     [ "is_error", "err_8hpp.html#a9cad3f0245d7c13ec8d2bdece0cebcd8", null ],
     [ "is_ok", "err_8hpp.html#a6192e1fbb0daae97ed24c85e1497e772", null ],

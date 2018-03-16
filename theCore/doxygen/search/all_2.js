@@ -14,7 +14,7 @@ var searchData=
   ['beep_5fmode',['beep_mode',['../classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0ece',1,'ecl::cs43l22']]],
   ['beep_5foff_5ftime',['beep_off_time',['../classecl_1_1cs43l22.html#ac985431f8a4cf36ac592bb6e24ecfce3',1,'ecl::cs43l22']]],
   ['beep_5fon_5ftime',['beep_on_time',['../classecl_1_1cs43l22.html#a238a9484b09cb4e8325b350b6dfe7a45',1,'ecl::cs43l22']]],
-  ['beg',['beg',['../classecl_1_1sdspi.html#aa45dadde02945857498d3d01b2d9ae3fa63a08f52a29e0f7a1f987f4495164ab0',1,'ecl::sdspi::beg()'],['../namespacefs.html#a94e46a67f54d109fbb096840cf74fa2ca63a08f52a29e0f7a1f987f4495164ab0',1,'fs::beg()']]],
+  ['beg',['beg',['../classecl_1_1sdspi.html#aa45dadde02945857498d3d01b2d9ae3fa63a08f52a29e0f7a1f987f4495164ab0',1,'ecl::sdspi::beg()'],['../group__fs__iface.html#gga2a99540b09f4b11ed56b0d4f42cc3870a63a08f52a29e0f7a1f987f4495164ab0',1,'ecl::fs::beg()']]],
   ['begin',['begin',['../classecl_1_1list.html#aee5f4550e06e88da00bdf6f89bf8004f',1,'ecl::list']]],
   ['bfar',['BFAR',['../structSCB__Type.html#a31f79afe86c949c9862e7d5fce077c3a',1,'SCB_Type']]],
   ['bh1750',['bh1750',['../classecl_1_1sensor_1_1bh1750.html#a3c3b2b7d2f2ed00d18b62de53c44023c',1,'ecl::sensor::bh1750']]],

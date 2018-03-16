@@ -27,5 +27,5 @@ var searchData=
   ['connrefused',['connrefused',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810ad8c5f74af7f29866068ca57008ed8388',1,'ecl']]],
   ['connreset',['connreset',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a46b677b73a61d3c343db5c23ab4a2ab2',1,'ecl']]],
   ['continuous',['continuous',['../classecl_1_1cs43l22.html#a192c8cd59c2c96a877a77c3ffb2d0ecead2884efee751eb4746b685827c7efcd9',1,'ecl::cs43l22']]],
-  ['cur',['cur',['../classecl_1_1sdspi.html#aa45dadde02945857498d3d01b2d9ae3fab5fddf1ef601e74db01c1425561a38cb',1,'ecl::sdspi::cur()'],['../namespacefs.html#a94e46a67f54d109fbb096840cf74fa2cab5fddf1ef601e74db01c1425561a38cb',1,'fs::cur()']]]
+  ['cur',['cur',['../classecl_1_1sdspi.html#aa45dadde02945857498d3d01b2d9ae3fab5fddf1ef601e74db01c1425561a38cb',1,'ecl::sdspi::cur()'],['../group__fs__iface.html#gga2a99540b09f4b11ed56b0d4f42cc3870ab5fddf1ef601e74db01c1425561a38cb',1,'ecl::fs::cur()']]]
 ];

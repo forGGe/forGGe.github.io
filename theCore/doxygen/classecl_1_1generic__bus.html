@@ -282,7 +282,7 @@ template&lt;class PBus &gt; </div>
 </div><div class="memdoc">
 
 <p>Inits a bus. </p>
-<p>Lazy initialization. Inits an underlying platform bus. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>introduce init counter. </dd></dl>
+<p>Lazy initialization. Inits an underlying platform bus. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>introduce init counter. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
 
 <p><div class="dynheader">
@@ -326,7 +326,7 @@ template&lt;class PBus &gt; </div>
 
 <p>De-inits a bus. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Bus is initied. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>use init counter to measure how many users are inited this bus. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>use init counter to measure how many users are inited this bus. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
 
 </div>
@@ -840,7 +840,7 @@ template&lt;class PBus &gt; </div>
 
 <p>Cancels xfer. </p>
 <p>Capable of cancelling any previously started or scheduled xfer. Keeps buffer and callback configured. Callable from ISR context. </p><dl class="section pre"><dt>Precondition</dt><dd>Bus locked, xfer started or scheduled. If bus is unlocked, behaviour is undefined. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Decide how platform bus should behave if <a class="el" href="classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d" title="Cancels xfer. ">cancel_xfer()</a> called from ISR. Is platform bus should generate 'transfer complete' event? </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>Decide how platform bus should behave if <a class="el" href="classecl_1_1generic__bus.html#a35e2a746c65fa95a7f96028e5bccab9d" title="Cancels xfer. ">cancel_xfer()</a> called from ISR. Is platform bus should generate 'transfer complete' event? </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Xfer canceled, but buffers is not touched. Note that xfer can be ongoing or even completed during this call. </dd></dl>
 
 <p><div class="dynheader">

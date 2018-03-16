@@ -6,5 +6,5 @@ var searchData=
   ['test_5fuart',['test_uart',['../namespaceecl.html#ac2dfa704bbe8f4b901b4e9078bfe7fad',1,'ecl']]],
   ['thread_5fhandle',['thread_handle',['../namespaceecl.html#ad0512e057a69d3d7382c422eb35ac807',1,'ecl']]],
   ['trigger',['trigger',['../classecl_1_1exti__manager.html#a912291322ae311931dbb6d2f493ed1b4',1,'ecl::exti_manager']]],
-  ['type',['type',['../classfat_1_1dir__inode.html#a4acc068fe229f1ff33bc65f489303e88',1,'fat::dir_inode::type()'],['../classfat_1_1file__inode.html#a58f2ee1d285c3c2fc735b2461c5fc477',1,'fat::file_inode::type()']]]
+  ['type',['type',['../classecl_1_1fat_1_1dir__inode.html#ab84b41637d87fc94d3de6d03248efe1b',1,'ecl::fat::dir_inode::type()'],['../classecl_1_1fat_1_1file__inode.html#a987ba4096045fa6f378227662a3f365d',1,'ecl::fat::file_inode::type()']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file_5fptr',['file_ptr',['../namespacefs.html#a7c9f7c90a51249f5f1aa3b32b1095c7e',1,'fs']]]
+  ['file_5fptr',['file_ptr',['../group__fs__iface.html#ga27b49c2f6caab1c6df4c236f9a2dfd54',1,'ecl::fs']]]
 ];

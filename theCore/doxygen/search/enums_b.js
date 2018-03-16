@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['seekdir',['seekdir',['../classecl_1_1sdspi.html#aa45dadde02945857498d3d01b2d9ae3f',1,'ecl::sdspi::seekdir()'],['../namespacefs.html#a94e46a67f54d109fbb096840cf74fa2c',1,'fs::seekdir()']]],
+  ['seekdir',['seekdir',['../classecl_1_1sdspi.html#aa45dadde02945857498d3d01b2d9ae3f',1,'ecl::sdspi::seekdir()'],['../group__fs__iface.html#ga2a99540b09f4b11ed56b0d4f42cc3870',1,'ecl::fs::seekdir()']]],
   ['spi_5fbus_5ftype',['spi_bus_type',['../group__stm32__spi__i2s.html#ga2f4299ddec47c1881c4a9454690854aa',1,'ecl']]],
   ['spi_5fchannel',['spi_channel',['../group__skel__spi.html#ga8652deddf10d9303baf722ad65d35b29',1,'ecl::skel::spi_channel()'],['../group__tm4c__spi.html#gacd93c80210f791f6bbf4e9c25a739dee',1,'ecl::spi_channel()']]],
   ['spi_5fcpha',['spi_cpha',['../group__skel__spi.html#gada11ac9cc87a656612993234e0e70236',1,'ecl::skel::spi_cpha()'],['../group__tm4c__spi.html#gaa712a054d4c9d816c3638d9e83a11960',1,'ecl::spi_cpha()']]],

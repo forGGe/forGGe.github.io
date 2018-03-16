@@ -114,12 +114,18 @@ $(document).ready(function(){initNavTree('path_8hpp.html','');});
 <div class="title">path.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string.h&gt;</code><br />
+
+<p>Filesystem path utilities.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="memory_8hpp.html">ecl/memory.hpp</a>&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for path.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="path_8hpp__incl.png" border="0" usemap="#path_8hpp" alt=""/></div>
 <map name="path_8hpp" id="path_8hpp">
+<area shape="rect" id="node2" href="memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="127,80,253,107"/>
+<area shape="rect" id="node3" href="assert_8h.html" title="ecl/assert.h" alt="" coords="5,155,103,181"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -127,45 +133,59 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="path_8hpp__dep__incl.png" border="0" usemap="#path_8hppdep" alt=""/></div>
 <map name="path_8hppdep" id="path_8hppdep">
-<area shape="rect" id="node2" href="dir_8hpp.html" title="dir.hpp" alt="" coords="27,80,93,107"/>
-<area shape="rect" id="node5" href="dir__inode_8hpp.html" title="dir_inode.hpp" alt="" coords="118,80,229,107"/>
-<area shape="rect" id="node7" href="file__inode_8hpp.html" title="file_inode.hpp" alt="" coords="253,80,366,107"/>
-<area shape="rect" id="node3" href="dir_8cpp.html" title="dir.cpp" alt="" coords="139,155,205,181"/>
-<area shape="rect" id="node4" href="dir__inode_8cpp.html" title="dir_inode.cpp" alt="" coords="5,155,115,181"/>
-<area shape="rect" id="node6" href="fat_2export_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="229,155,291,181"/>
-<area shape="rect" id="node8" href="file__inode_8cpp.html" title="file_inode.cpp" alt="" coords="316,155,428,181"/>
+<area shape="rect" id="node2" href="fs__unit_8cpp.html" title="fs_unit.cpp" alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" href="export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="123,80,186,107"/>
+<area shape="rect" id="node5" href="dir_8hpp.html" title="FATFS dir descriptor interface. " alt="" coords="211,80,277,107"/>
+<area shape="rect" id="node8" href="dir__inode_8hpp.html" title="Directory FATFS inode interface. " alt="" coords="302,80,413,107"/>
+<area shape="rect" id="node10" href="file__inode_8hpp.html" title="File FATFS inode interface. " alt="" coords="437,80,550,107"/>
+<area shape="rect" id="node4" href="fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="61,155,166,181"/>
+<area shape="rect" id="node6" href="dir_8cpp.html" title="dir.cpp" alt="" coords="325,155,390,181"/>
+<area shape="rect" id="node7" href="dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="191,155,300,181"/>
+<area shape="rect" id="node9" href="fat_2export_2ecl_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="414,155,477,181"/>
+<area shape="rect" id="node11" href="file__inode_8cpp.html" title="File FATFS inode implementation. " alt="" coords="501,155,613,181"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfat_1_1path__handle.html">fat::path_handle</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1path__handle.html">ecl::fs::path_handle</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract path handle.  <a href="classecl_1_1fs_1_1path__handle.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfat_1_1path__erased.html">fat::path_erased&lt; Alloc &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1path__erased.html">ecl::fs::path_erased&lt; Alloc &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds path and manages its deallocation.  <a href="classecl_1_1fs_1_1path__erased.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1path__iter.html">ecl::fs::path_iter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path iterator.  <a href="classecl_1_1fs_1_1path__iter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacefat"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefat.html">fat</a></td></tr>
+<tr class="memitem:namespaceecl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html">ecl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceecl_1_1fs"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1fs.html">ecl::fs</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a2472588dbd27f2b55aa43793f2c2cd97"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefat.html#a2472588dbd27f2b55aa43793f2c2cd97">fat::path_ptr</a> = <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; path_handle &gt;</td></tr>
-<tr class="separator:a2472588dbd27f2b55aa43793f2c2cd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaece5323da3e9668dee3bfc9d41ba57b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__fs__iface.html#gaece5323da3e9668dee3bfc9d41ba57b6">ecl::fs::path_ptr</a> = <a class="el" href="classecl_1_1shared__ptr.html">ecl::shared_ptr</a>&lt; path_handle &gt;</td></tr>
+<tr class="memdesc:gaece5323da3e9668dee3bfc9d41ba57b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias to path smart pointer.  <a href="group__fs__iface.html#gaece5323da3e9668dee3bfc9d41ba57b6">More...</a><br /></td></tr>
+<tr class="separator:gaece5323da3e9668dee3bfc9d41ba57b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa17d735f943b3be65a810a8fa11f9e01"><td class="memTemplParams" colspan="2">template&lt;class Alloc &gt; </td></tr>
-<tr class="memitem:aa17d735f943b3be65a810a8fa11f9e01"><td class="memTemplItemLeft" align="right" valign="top">path_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefat.html#aa17d735f943b3be65a810a8fa11f9e01">fat::allocate_path</a> (const char *path, const char *tail, const Alloc &amp;<a class="el" href="shared__unit_8cpp.html#aefef57ad4ea73a0352c5d10eaad82203">alloc</a>)</td></tr>
-<tr class="separator:aa17d735f943b3be65a810a8fa11f9e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffa27c4e40a6879209babb99c4e171dd"><td class="memTemplParams" colspan="2">template&lt;class Alloc &gt; </td></tr>
+<tr class="memitem:gaffa27c4e40a6879209babb99c4e171dd"><td class="memTemplItemLeft" align="right" valign="top">path_ptr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__fs__iface.html#gaffa27c4e40a6879209babb99c4e171dd">ecl::fs::allocate_path</a> (const char *path, const char *tail, const Alloc &amp;<a class="el" href="shared__unit_8cpp.html#aefef57ad4ea73a0352c5d10eaad82203">alloc</a>)</td></tr>
+<tr class="memdesc:gaffa27c4e40a6879209babb99c4e171dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates new path, concatenating with tail, if needed.  <a href="group__fs__iface.html#gaffa27c4e40a6879209babb99c4e171dd">More...</a><br /></td></tr>
+<tr class="separator:gaffa27c4e40a6879209babb99c4e171dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Filesystem path utilities. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_c92aa75074393c4c3a20e23a24742d88.html">fs</a></li><li class="navelem"><a class="el" href="dir_c2a795e31aea630ffac99420fab82385.html">fat</a></li><li class="navelem"><a class="el" href="dir_9042c4e4649e892de03dde9acd95710c.html">export</a></li><li class="navelem"><a class="el" href="dir_2e8b6d8c77bfd361553ff8f267bfd8cf.html">fat</a></li><li class="navelem"><a class="el" href="path_8hpp.html">path.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_c92aa75074393c4c3a20e23a24742d88.html">fs</a></li><li class="navelem"><a class="el" href="dir_8779e32fc8d167c3d656d2e947b642f7.html">export</a></li><li class="navelem"><a class="el" href="dir_4875ab198b1f8b551e2970deea21a2a5.html">ecl</a></li><li class="navelem"><a class="el" href="dir_762dc8be5ff41dba15d65d41ca2acd2a.html">fs</a></li><li class="navelem"><a class="el" href="path_8hpp.html">path.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

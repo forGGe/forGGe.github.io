@@ -112,27 +112,31 @@ $(document).ready(function(){initNavTree('file__inode_8hpp.html','');});
 <div class="title">file_inode.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;sys/types.h&gt;</code><br />
+
+<p>File FATFS inode interface.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="inode_8hpp.html">ecl/fs/inode.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="path_8hpp.html">ecl/fs/path.hpp</a>&gt;</code><br />
 <code>#include &lt;cstdint&gt;</code><br />
-<code>#include &lt;<a class="el" href="inode_8hpp.html">fs/inode.hpp</a>&gt;</code><br />
-<code>#include &quot;<a class="el" href="fat_2export_2fat_2types_8hpp.html">fat/types.hpp</a>&quot;</code><br />
+<code>#include &lt;sys/types.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="fat_2export_2ecl_2fat_2types_8hpp.html">ecl/fat/types.hpp</a>&quot;</code><br />
 <code>#include &quot;src/pff.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="path_8hpp.html">fat/path.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for file_inode.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="file__inode_8hpp__incl.png" border="0" usemap="#file__inode_8hpp" alt=""/></div>
 <map name="file__inode_8hpp" id="file__inode_8hpp">
-<area shape="rect" id="node4" href="inode_8hpp.html" title="fs/inode.hpp" alt="" coords="255,80,358,107"/>
-<area shape="rect" id="node14" href="fat_2export_2fat_2types_8hpp.html" title="fat/types.hpp" alt="" coords="382,80,490,107"/>
-<area shape="rect" id="node22" href="path_8hpp.html" title="fat/path.hpp" alt="" coords="724,155,825,181"/>
-<area shape="rect" id="node5" href="file__descriptor_8hpp.html" title="file_descriptor.hpp" alt="" coords="157,155,299,181"/>
-<area shape="rect" id="node13" href="dir__descriptor_8hpp.html" title="dir_descriptor.hpp" alt="" coords="323,155,461,181"/>
-<area shape="rect" id="node7" href="export_2fs_2types_8hpp.html" title="types.hpp" alt="" coords="267,229,354,256"/>
-<area shape="rect" id="node8" href="memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="298,304,425,331"/>
-<area shape="rect" id="node9" href="assert_8h.html" title="ecl/assert.h" alt="" coords="575,379,673,405"/>
-<area shape="rect" id="node15" href="pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="508,155,609,181"/>
-<area shape="rect" id="node16" href="types_8h.html" title="Common types for theCore framework. " alt="" coords="661,229,755,256"/>
+<area shape="rect" id="node2" href="inode_8hpp.html" title="inode interface. " alt="" coords="200,80,325,107"/>
+<area shape="rect" id="node15" href="path_8hpp.html" title="Filesystem path utilities. " alt="" coords="511,229,630,256"/>
+<area shape="rect" id="node16" href="fat_2export_2ecl_2fat_2types_8hpp.html" title="FATFS convinient aliases. " alt="" coords="527,80,657,107"/>
+<area shape="rect" id="node3" href="file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="192,155,333,181"/>
+<area shape="rect" id="node14" href="dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="13,155,152,181"/>
+<area shape="rect" id="node7" href="err_8hpp.html" title="ecl/err.hpp" alt="" coords="135,229,225,256"/>
+<area shape="rect" id="node8" href="export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="23,229,110,256"/>
+<area shape="rect" id="node9" href="memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="98,304,225,331"/>
+<area shape="rect" id="node10" href="assert_8h.html" title="ecl/assert.h" alt="" coords="430,379,527,405"/>
+<area shape="rect" id="node17" href="pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="696,155,797,181"/>
+<area shape="rect" id="node18" href="types_8h.html" title="Common types for theCore framework. " alt="" coords="784,229,877,256"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -141,27 +145,32 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="center"><img src="file__inode_8hpp__dep__incl.png" border="0" usemap="#file__inode_8hppdep" alt=""/></div>
 <map name="file__inode_8hppdep" id="file__inode_8hppdep">
 <area shape="rect" id="node2" href="dir_8cpp.html" title="dir.cpp" alt="" coords="5,80,71,107"/>
-<area shape="rect" id="node3" href="file__inode_8cpp.html" title="file_inode.cpp" alt="" coords="95,80,207,107"/>
-<area shape="rect" id="node4" href="fat_2export_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="232,80,295,107"/>
+<area shape="rect" id="node3" href="file__inode_8cpp.html" title="File FATFS inode implementation. " alt="" coords="95,80,207,107"/>
+<area shape="rect" id="node4" href="fat_2export_2ecl_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="232,80,295,107"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfat_1_1file__inode.html">fat::file_inode</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fat_1_1file__inode.html">ecl::fat::file_inode</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FATFS file inode.  <a href="classecl_1_1fat_1_1file__inode.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacefat"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefat.html">fat</a></td></tr>
+<tr class="memitem:namespaceecl"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl.html">ecl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceecl_1_1fat"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceecl_1_1fat.html">ecl::fat</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>File FATFS inode interface. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_c92aa75074393c4c3a20e23a24742d88.html">fs</a></li><li class="navelem"><a class="el" href="dir_c2a795e31aea630ffac99420fab82385.html">fat</a></li><li class="navelem"><a class="el" href="dir_9042c4e4649e892de03dde9acd95710c.html">export</a></li><li class="navelem"><a class="el" href="dir_2e8b6d8c77bfd361553ff8f267bfd8cf.html">fat</a></li><li class="navelem"><a class="el" href="file__inode_8hpp.html">file_inode.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li><li class="navelem"><a class="el" href="dir_c92aa75074393c4c3a20e23a24742d88.html">fs</a></li><li class="navelem"><a class="el" href="dir_c2a795e31aea630ffac99420fab82385.html">fat</a></li><li class="navelem"><a class="el" href="dir_9042c4e4649e892de03dde9acd95710c.html">export</a></li><li class="navelem"><a class="el" href="dir_853198f432f4397adcc3a7cdfacacd56.html">ecl</a></li><li class="navelem"><a class="el" href="dir_e6c22e6fb37f77b7490738d36dccff77.html">fat</a></li><li class="navelem"><a class="el" href="file__inode_8hpp.html">file_inode.hpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

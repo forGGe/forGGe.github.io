@@ -10,7 +10,6 @@ var searchData=
   ['version',['version',['../namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65',1,'ecl']]],
   ['version_2ehpp',['version.hpp',['../version_8hpp.html',1,'']]],
   ['version_2ein_2ecpp',['version.in.cpp',['../version_8in_8cpp.html',1,'']]],
-  ['vfs',['vfs',['../classfs_1_1vfs.html#a197b778495906375659d03dc32bb5b88',1,'fs::vfs']]],
-  ['vfs',['vfs',['../classfs_1_1vfs.html',1,'fs']]],
+  ['vfs',['vfs',['../classecl_1_1fs_1_1vfs.html',1,'ecl::fs']]],
   ['vtor',['VTOR',['../structSCB__Type.html#a0faf96f964931cadfb71cfa54e051f6f',1,'SCB_Type']]]
 ];

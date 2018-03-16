@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classecl_1_1gpio.html" title="Encapsulates pin usage. " alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node1" href="$classecl_1_1fs_1_1dir__descriptor.html" title="Directory descriptor interface. " alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$classecl_1_1fat_1_1dir.html" title="FATFS directory descriptor. " alt="" coords="212,5,304,32"/>
 </map>

@@ -180,7 +180,7 @@ To be able to run OpenOCD without root, execute following steps.</p>
 <p>Add following lines to your <code class="docutils literal"><span class="pre">/etc/nixos/configuration.nix</span></code>:</p>
 <div class="highlight-nix"><div class="highlight"><pre><span></span><span class="p">{</span>
   users<span class="o">.</span>extraGroups<span class="o">.</span><span class="ss">plugdev =</span> <span class="p">{</span> <span class="p">};</span>
-  users<span class="o">.</span>extraUsers<span class="o">.</span>rasen<span class="o">.</span><span class="ss">extraGroups =</span> <span class="p">[</span> <span class="s2">&quot;plugdev&quot;</span> <span class="s2">&quot;dialout&quot;</span> <span class="p">];</span>
+  users<span class="o">.</span>extraUsers<span class="o">.</span><span class="l">&lt;username&gt;</span><span class="o">.</span><span class="ss">extraGroups =</span> <span class="p">[</span> <span class="s2">&quot;plugdev&quot;</span> <span class="s2">&quot;dialout&quot;</span> <span class="p">];</span>
 
   services<span class="o">.</span>udev<span class="o">.</span><span class="ss">packages =</span> <span class="p">[</span> pkgs<span class="o">.</span>openocd <span class="p">];</span>
 <span class="p">}</span>

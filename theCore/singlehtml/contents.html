@@ -419,7 +419,7 @@ To be able to run OpenOCD without root, execute following steps.</p>
 <p>Add following lines to your <code class="docutils literal"><span class="pre">/etc/nixos/configuration.nix</span></code>:</p>
 <div class="highlight-nix"><div class="highlight"><pre><span></span><span class="p">{</span>
   users<span class="o">.</span>extraGroups<span class="o">.</span><span class="ss">plugdev =</span> <span class="p">{</span> <span class="p">};</span>
-  users<span class="o">.</span>extraUsers<span class="o">.</span>rasen<span class="o">.</span><span class="ss">extraGroups =</span> <span class="p">[</span> <span class="s2">&quot;plugdev&quot;</span> <span class="s2">&quot;dialout&quot;</span> <span class="p">];</span>
+  users<span class="o">.</span>extraUsers<span class="o">.</span><span class="l">&lt;username&gt;</span><span class="o">.</span><span class="ss">extraGroups =</span> <span class="p">[</span> <span class="s2">&quot;plugdev&quot;</span> <span class="s2">&quot;dialout&quot;</span> <span class="p">];</span>
 
   services<span class="o">.</span>udev<span class="o">.</span><span class="ss">packages =</span> <span class="p">[</span> pkgs<span class="o">.</span>openocd <span class="p">];</span>
 <span class="p">}</span>
@@ -1444,7 +1444,7 @@ run OpenOCD without superuser permissions.</p>
 </div>
 </div>
 <span id="document-examples/ti-tm4c123g-launchpad-blink"></span><div class="section" id="ti-tm4c123g-launchpad-blinky">
-<h3>TI TM4C123G LaunchPad blinky<a class="headerlink" href="#ti-tm4c123g-launchpad-blinky" title="Permalink to this headline">¶</a></h3>
+<span id="thecore-tm4c-blinky"></span><h3>TI TM4C123G LaunchPad blinky<a class="headerlink" href="#ti-tm4c123g-launchpad-blinky" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -1687,36 +1687,71 @@ on the screen.</p>
                 <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART-over-USB console output&quot;</span>
             <span class="p">}</span>
         <span class="p">],</span>
-        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;spi&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span> <span class="s2">&quot;PF3&quot;</span> <span class="p">],</span>
-                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;out&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;pin_type&quot;</span><span class="p">:</span> <span class="s2">&quot;std&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;strength&quot;</span><span class="p">:</span> <span class="s2">&quot;2mA&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;LED pins&quot;</span>
-            <span class="p">},</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;cpol&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;cpha&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;master&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;clk_div&quot;</span><span class="p">:</span> <span class="mi">8</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
                 <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PA0&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span> <span class="p">],</span>
                 <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;hw&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;hws&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;PA0&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_RX&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_TX&quot;</span> <span class="p">},</span>
                 <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0 console pins&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PD0&quot;</span><span class="p">,</span> <span class="s2">&quot;PD3&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;hw&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hws&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;PD0&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3_CLK&quot;</span><span class="p">,</span> <span class="s2">&quot;PD3&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3_TX&quot;</span> <span class="p">},</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3 (SSI3) CLK and MOSI pins&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PD2&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;hw&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pin_type&quot;</span><span class="p">:</span> <span class="s2">&quot;push&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hws&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;PD2&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3_RX&quot;</span> <span class="p">},</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3 (SSI3) MISO pin, push (pull-up)&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PD1&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;out&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3 CS pin&quot;</span>
             <span class="p">}</span>
         <span class="p">],</span>
         <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_red&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Red LED&quot;</span>
-            <span class="p">},</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PD1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;sdspi_ss&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;SDSPI SPI3 slave select&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;sdspi&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_blue&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Blue LED&quot;</span>
-            <span class="p">},</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;fatfs_sdspi&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;cs_gpio&quot;</span><span class="p">:</span> <span class="s2">&quot;PD1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;spi&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;lib&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;fs&quot;</span><span class="p">:</span> <span class="p">[</span>
             <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_green&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Green LED&quot;</span>
+                <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;fat&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;dev&quot;</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                        <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;fatfs_sdspi&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;mountpoint&quot;</span><span class="p">:</span> <span class="s2">&quot;sdcard&quot;</span>
+                    <span class="p">}</span>
+                <span class="p">],</span>
+                <span class="s2">&quot;readonly&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+                <span class="s2">&quot;enable_seek&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+                <span class="s2">&quot;enable_lowercase&quot;</span><span class="p">:</span> <span class="n">false</span>
             <span class="p">}</span>
         <span class="p">]</span>
     <span class="p">}</span>
@@ -3181,6 +3216,7 @@ line to your source:</p>
 <h4>Available examples<a class="headerlink" href="#available-examples" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="contents.html#thecore-tm4c-fatfs-sdspi"><span class="std std-ref">TI TM4C123G SD-card demo using FATFS and SDSPI</span></a></li>
+<li><a class="reference internal" href="contents.html#thecore-tm4c-blinky"><span class="std std-ref">TI TM4C123G LaunchPad blinky</span></a></li>
 </ul>
 </div>
 <div class="section" id="periphery-overview">

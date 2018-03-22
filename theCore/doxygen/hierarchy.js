@@ -9,12 +9,12 @@ var hierarchy =
     [ "ecl::sensor::bh1750< i2c_dev, address >", "classecl_1_1sensor_1_1bh1750.html", null ],
     [ "ecl::binary_semaphore", "classecl_1_1binary__semaphore.html", null ],
     [ "ecl::sdspi< spi_dev, gpio_cs >::ctx_type::block_type", "structecl_1_1sdspi_1_1ctx__type_1_1block__type.html", null ],
-    [ "ecl::bus_pipe< GBus >", "classecl_1_1bus__pipe.html", null ],
     [ "ecl::channel_group< trig, chans >", "structecl_1_1channel__group.html", null ],
     [ "ecl::channel_group_exti_trigger< edge, chans >", "structecl_1_1channel__group__exti__trigger.html", null ],
     [ "ecl::channel_group_sw_trigger< chans >", "structecl_1_1channel__group__sw__trigger.html", null ],
     [ "chunk_info", "structchunk__info.html", null ],
     [ "ecl::console_driver", "classecl_1_1console__driver.html", null ],
+    [ "ecl::console_pipe< GBus >", "classecl_1_1console__pipe.html", null ],
     [ "CoreDebug_Type", "structCoreDebug__Type.html", null ],
     [ "ecl::cs43l22< I2c, I2s, Rst_gpio >", "classecl_1_1cs43l22.html", null ],
     [ "ecl::fs::dir_descriptor", "classecl_1_1fs_1_1dir__descriptor.html", [
@@ -124,10 +124,10 @@ var hierarchy =
     [ "ecl::shared_ptr< T >", "classecl_1_1shared__ptr.html", null ],
     [ "ecl::shared_ptr< inode >", "classecl_1_1shared__ptr.html", null ],
     [ "ecl::shared_ptr< path_handle >", "classecl_1_1shared__ptr.html", null ],
-    [ "ecl::skel::spi< ch >", "classecl_1_1skel_1_1spi.html", null ],
     [ "ecl::spi< ch >", "classecl_1_1spi.html", [
       [ "ecl::spi_irq_proxy< ch >", "structecl_1_1spi__irq__proxy.html", null ]
     ] ],
+    [ "ecl::skel::spi< ch >", "classecl_1_1skel_1_1spi.html", null ],
     [ "ecl::spi_cfg< ch >", "structecl_1_1spi__cfg.html", null ],
     [ "ecl::skel::spi_cfg< ch >", "structecl_1_1skel_1_1spi__cfg.html", null ],
     [ "ecl::spi_i2s_bus< dev >", "classecl_1_1spi__i2s__bus.html", null ],

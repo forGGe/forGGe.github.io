@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['last_5ferror',['last_error',['../classecl_1_1bus__pipe.html#adb0d14622e903b86fcab8f659568c868',1,'ecl::bus_pipe']]],
+  ['last_5ferror',['last_error',['../classecl_1_1console__pipe.html#a79967b6eeaf1a3e392a297c965d64ba1',1,'ecl::console_pipe']]],
   ['le',['LE',['../namespaceecl.html#a7c5df9aff3a16d401448de09b43bc91e',1,'ecl']]],
   ['linked',['linked',['../classecl_1_1list__node.html#a16f12e040e819e318e2bfc9df70efcca',1,'ecl::list_node']]],
   ['list',['list',['../classecl_1_1list.html#acea8af4e67f645eaf8fc66bb37960d80',1,'ecl::list']]],

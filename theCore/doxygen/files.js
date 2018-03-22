@@ -14,9 +14,6 @@ var files =
       [ "generic_bus", "classecl_1_1generic__bus.html", "classecl_1_1generic__bus" ]
     ] ],
     [ "platform/common/export/common/bus.hpp", "platform_2common_2export_2common_2bus_8hpp.html", "platform_2common_2export_2common_2bus_8hpp" ],
-    [ "bus_pipe.hpp", "bus__pipe_8hpp.html", [
-      [ "bus_pipe", "classecl_1_1bus__pipe.html", "classecl_1_1bus__pipe" ]
-    ] ],
     [ "bus_unit.cpp", "bus__unit_8cpp.html", "bus__unit_8cpp" ],
     [ "adc_bat/case.cpp", "adc__bat_2case_8cpp.html", "adc__bat_2case_8cpp" ],
     [ "bypass_console_bat/case.cpp", "bypass__console__bat_2case_8cpp.html", "bypass__console__bat_2case_8cpp" ],
@@ -41,6 +38,9 @@ var files =
       [ "console_driver", "classecl_1_1console__driver.html", "classecl_1_1console__driver" ]
     ] ],
     [ "console_integrity.cpp", "console__integrity_8cpp.html", "console__integrity_8cpp" ],
+    [ "console_pipe.hpp", "console__pipe_8hpp.html", [
+      [ "console_pipe", "classecl_1_1console__pipe.html", "classecl_1_1console__pipe" ]
+    ] ],
     [ "cs43l22.hpp", "cs43l22_8hpp.html", [
       [ "cs43l22", "classecl_1_1cs43l22.html", "classecl_1_1cs43l22" ]
     ] ],
@@ -136,6 +136,7 @@ var files =
     [ "host_hello/main.cpp", "host__hello_2main_8cpp.html", "host__hello_2main_8cpp" ],
     [ "htu21d/main.cpp", "htu21d_2main_8cpp.html", "htu21d_2main_8cpp" ],
     [ "stm32f4_exti/main.cpp", "stm32f4__exti_2main_8cpp.html", "stm32f4__exti_2main_8cpp" ],
+    [ "tm4c_fatfs/main.cpp", "tm4c__fatfs_2main_8cpp.html", "tm4c__fatfs_2main_8cpp" ],
     [ "tm4c_led/main.cpp", "tm4c__led_2main_8cpp.html", "tm4c__led_2main_8cpp" ],
     [ "memory.hpp", "memory_8hpp.html", "memory_8hpp" ],
     [ "mmio.hpp", "mmio_8hpp.html", "mmio_8hpp" ],

@@ -160,9 +160,6 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1binary__semaphore.html">binary_semaphore</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FreeRTOS-based semaphore.  <a href="classecl_1_1binary__semaphore.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1bus__pipe.html">bus_pipe</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bus pipe (blocking) adapter.  <a href="classecl_1_1bus__pipe.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structecl_1_1channel__group.html">channel_group</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channels grouped together along with an external trigger.  <a href="structecl_1_1channel__group.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +170,9 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channels grouped together, conversion triggered by software.  <a href="structecl_1_1channel__group__sw__trigger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1console__driver.html">console_driver</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1console__pipe.html">console_pipe</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Console pipe (blocking) adapter.  <a href="classecl_1_1console__pipe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1cs43l22.html">cs43l22</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CS43L22 codec driver implementation.  <a href="classecl_1_1cs43l22.html#details">More...</a><br /></td></tr>
@@ -468,9 +468,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2019c8e18bec8dc776dce289ad397239">err::txtbsy</a> = -76, 
 <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810afc326d82ed9da4ca8d6512ea681a734c">err::wouldblock</a> = -77, 
 <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810ac3bca1be0e684b3aa62a4e0c3732f53b">err::xdev</a> = -78, 
-<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9">err::generic</a> = -79, 
-<br />
-&#160;&#160;<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b">err::eof</a> = -255
+<a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9">err::generic</a> = -79
 <br />
  }<tr class="memdesc:ae35889935b17d1382e0afc3dc87e9810"><td class="mdescLeft">&#160;</td><td class="mdescRight">theCore system-wide errors  <a href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">More...</a><br /></td></tr>
 </td></tr>
@@ -1450,9 +1448,6 @@ template&lt;typename S , size_t B, size_t L&gt; </div>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ae35889935b17d1382e0afc3dc87e9810a3d517f8924ac7fd03699a29d97dc52d9"></a>generic&#160;</td><td class="fielddoc">
 <p>Cross-device link. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b"></a>eof&#160;</td><td class="fielddoc">
-<p>Generic error. </p>
 </td></tr>
 </table>
 

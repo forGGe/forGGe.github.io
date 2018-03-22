@@ -144,9 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeff4722c191813bba8177dc300660b12"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1dir__descriptor.html#aeff4722c191813bba8177dc300660b12">~dir_descriptor</a> ()</td></tr>
 <tr class="memdesc:aeff4722c191813bba8177dc300660b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes and destructs dir descriptor.  <a href="#aeff4722c191813bba8177dc300660b12">More...</a><br /></td></tr>
 <tr class="separator:aeff4722c191813bba8177dc300660b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f6bb7aaf02c51f74dda385202a6e73a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__fs__iface.html#gaf72468ef9a7c65a8f95c79292b4e5358">inode_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1dir__descriptor.html#a3f6bb7aaf02c51f74dda385202a6e73a">next</a> ()=0</td></tr>
-<tr class="memdesc:a3f6bb7aaf02c51f74dda385202a6e73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets next entity inode (directory or file) from current directory.  <a href="#a3f6bb7aaf02c51f74dda385202a6e73a">More...</a><br /></td></tr>
-<tr class="separator:a3f6bb7aaf02c51f74dda385202a6e73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b6aa58b3eb2f336d9d03162761f109"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="group__fs__iface.html#gaf72468ef9a7c65a8f95c79292b4e5358">inode_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1dir__descriptor.html#a84b6aa58b3eb2f336d9d03162761f109">read</a> ()=0</td></tr>
+<tr class="memdesc:a84b6aa58b3eb2f336d9d03162761f109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances to the next item in the directory and gets <b>current</b> entity.  <a href="#a84b6aa58b3eb2f336d9d03162761f109">More...</a><br /></td></tr>
+<tr class="separator:a84b6aa58b3eb2f336d9d03162761f109"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbf3ea5cbbfe8186c262d13f8de49b39"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">ecl::err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classecl_1_1fs_1_1dir__descriptor.html#acbf3ea5cbbfe8186c262d13f8de49b39">rewind</a> ()=0</td></tr>
 <tr class="memdesc:acbf3ea5cbbfe8186c262d13f8de49b39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rewindes to the start of the directory.  <a href="#acbf3ea5cbbfe8186c262d13f8de49b39">More...</a><br /></td></tr>
 <tr class="separator:acbf3ea5cbbfe8186c262d13f8de49b39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,7 +223,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a3f6bb7aaf02c51f74dda385202a6e73a"></a>
+<a class="anchor" id="a84b6aa58b3eb2f336d9d03162761f109"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -231,7 +231,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="group__fs__iface.html#gaf72468ef9a7c65a8f95c79292b4e5358">inode_ptr</a> ecl::fs::dir_descriptor::next </td>
+          <td class="memname">virtual <a class="el" href="group__fs__iface.html#gaf72468ef9a7c65a8f95c79292b4e5358">inode_ptr</a> ecl::fs::dir_descriptor::read </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -244,11 +244,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets next entity inode (directory or file) from current directory. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Opened descriptor. </dd></dl>
+<p>Advances to the next item in the directory and gets <b>current</b> entity. </p>
+<p>The entity could be a directory or a file from current directory, represented by this directory descriptor. </p><dl class="section pre"><dt>Precondition</dt><dd>Opened descriptor. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Next item in the directory, or nullptr if no more items. </dd></dl>
 
-<p>Implemented in <a class="el" href="classecl_1_1fat_1_1dir.html#af3557d19855b0a98478b6d394185aac2">ecl::fat::dir</a>.</p>
+<p>Implemented in <a class="el" href="classecl_1_1fat_1_1dir.html#a4596c26400dc771170fbb5d0bf6ef721">ecl::fat::dir</a>.</p>
 
 </div>
 </div>

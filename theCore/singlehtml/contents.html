@@ -97,6 +97,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-testing">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-credits">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contents.html#document-changelog">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contents.html#document-faq">Frequently Asked Questions</a></li>
 </ul>
 
             
@@ -325,7 +326,7 @@ the following shell command (as a user other than root):</p>
 </li>
 <li><p class="first">Run Nix shell to get all environment required:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Run from theCore directory</span>
-<span class="n">nix</span><span class="o">-</span><span class="n">shell</span> <span class="o">--</span><span class="n">pure</span>
+<span class="n">nix</span><span class="o">-</span><span class="n">shell</span> <span class="o">.</span>
 </pre></div>
 </div>
 </li>
@@ -407,6 +408,164 @@ build dependencies will be stored.</p>
 <span class="pre">#</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">application.</span>
 <span class="pre">cmake</span> <span class="pre">-DTHECORE_THIRDPARTY_DIR=~/.thecore_thirdparty</span> <span class="pre">-DTHECORE_BUILD_THIRDPARTY_DIR=~/.thecore_thirdparty_worktree</span> <span class="pre">/path/to/application</span>
 <span class="pre">`</span></code></p>
+</div>
+</div>
+<span id="document-guides/running-openocd-without-sudo"></span><div class="section" id="running-openocd-without-root-privileges">
+<span id="thecore-openocd-noroot"></span><h3>Running OpenOCD without root privileges<a class="headerlink" href="#running-openocd-without-root-privileges" title="Permalink to this headline">¶</a></h3>
+<p>Accessing USB devices on Linux requires root privileges by default.
+To be able to run OpenOCD without root, execute following steps.</p>
+<div class="section" id="nixos-linux">
+<h4>NixOS Linux<a class="headerlink" href="#nixos-linux" title="Permalink to this headline">¶</a></h4>
+<p>Add following lines to your <code class="docutils literal"><span class="pre">/etc/nixos/configuration.nix</span></code>:</p>
+<div class="highlight-nix"><div class="highlight"><pre><span></span><span class="p">{</span>
+  users<span class="o">.</span>extraGroups<span class="o">.</span><span class="ss">plugdev =</span> <span class="p">{</span> <span class="p">};</span>
+  users<span class="o">.</span>extraUsers<span class="o">.</span>rasen<span class="o">.</span><span class="ss">extraGroups =</span> <span class="p">[</span> <span class="s2">&quot;plugdev&quot;</span> <span class="s2">&quot;dialout&quot;</span> <span class="p">];</span>
+
+  services<span class="o">.</span>udev<span class="o">.</span><span class="ss">packages =</span> <span class="p">[</span> pkgs<span class="o">.</span>openocd <span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="other-linux-distros">
+<h4>Other Linux distros<a class="headerlink" href="#other-linux-distros" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Add user to <cite>plugdev</cite> group:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo useradd -G plugdev $(whoami)
+</pre></div>
+</div>
+</li>
+<li><p class="first">Create file <cite>/etc/udev/rules.d/99-openocd.rules</cite> (you will require root
+privileges to create this file) with following content:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Copy this file to /etc/udev/rules.d/</span>
+
+<span class="n">ACTION</span><span class="o">!=</span><span class="s2">&quot;add|change&quot;</span><span class="p">,</span> <span class="n">GOTO</span><span class="o">=</span><span class="s2">&quot;openocd_rules_end&quot;</span>
+<span class="n">SUBSYSTEM</span><span class="o">!=</span><span class="s2">&quot;usb|tty|hidraw&quot;</span><span class="p">,</span> <span class="n">GOTO</span><span class="o">=</span><span class="s2">&quot;openocd_rules_end&quot;</span>
+
+<span class="c1"># Please keep this list sorted by VID:PID</span>
+
+<span class="c1"># opendous and estick</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;03eb&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;204f&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Original FT232/FT245 VID:PID</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;6001&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Original FT2232 VID:PID</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;6010&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Original FT4232 VID:PID</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;6011&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Original FT232H VID:PID</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;6014&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># DISTORTEC JTAG-lock-pick Tiny 2</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;8220&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># TUMPA, TUMPA Lite</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;8a98&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;8a99&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># XDS100v2</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;a6d0&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Xverve Signalyzer Tool (DT-USB-ST), Signalyzer LITE (DT-USB-SLITE)</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;bca0&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;bca1&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># TI/Luminary Stellaris Evaluation Board FTDI (several)</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;bcd9&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># TI/Luminary Stellaris In-Circuit Debug Interface FTDI (ICDI) Board</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;bcda&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># egnite Turtelizer 2</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;bdc8&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Section5 ICEbear</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;c140&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;c141&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Amontec JTAGkey and JTAGkey-tiny</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0403&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;cff8&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># TI ICDI</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0451&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;c32a&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># STLink v1</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0483&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;3744&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># STLink v2</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0483&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;3748&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># STLink v2-1</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0483&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;374b&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Hilscher NXHX Boards</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0640&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0028&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Hitex STR9-comStick</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0640&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;002c&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Hitex STM32-PerformanceStick</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0640&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;002d&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Amontec JTAGkey-HiSpeed</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0fbb&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1000&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># IAR J-Link USB</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1366&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0101&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1366&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0102&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1366&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0103&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1366&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0104&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># J-Link-OB (onboard)</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1366&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0105&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Raisonance RLink</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;138e&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;9000&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Debug Board for Neo1973</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1457&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;5118&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Olimex ARM-USB-OCD</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;15ba&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0003&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Olimex ARM-USB-OCD-TINY</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;15ba&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0004&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Olimex ARM-JTAG-EW</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;15ba&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;001e&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Olimex ARM-USB-OCD-TINY-H</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;15ba&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;002a&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Olimex ARM-USB-OCD-H</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;15ba&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;002b&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># USBprog with OpenOCD firmware</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1781&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;0c63&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># TI/Luminary Stellaris In-Circuit Debug Interface (ICDI) Board</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;1cbe&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;00fd&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># Marvell Sheevaplug</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">idVendor</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;9e88&quot;</span><span class="p">,</span> <span class="n">ATTRS</span><span class="p">{</span><span class="n">idProduct</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;9e8f&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="c1"># CMSIS-DAP compatible adapters</span>
+<span class="n">ATTRS</span><span class="p">{</span><span class="n">product</span><span class="p">}</span><span class="o">==</span><span class="s2">&quot;*CMSIS-DAP*&quot;</span><span class="p">,</span> <span class="n">MODE</span><span class="o">=</span><span class="s2">&quot;664&quot;</span><span class="p">,</span> <span class="n">GROUP</span><span class="o">=</span><span class="s2">&quot;plugdev&quot;</span>
+
+<span class="n">LABEL</span><span class="o">=</span><span class="s2">&quot;openocd_rules_end&quot;</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p># Restart <code class="docutils literal"><span class="pre">udev</span></code>.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Ubuntu: <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">udevadm</span> <span class="pre">trigger</span></code></li>
+<li>ArchLinux: <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">udevadm</span> <span class="pre">control</span> <span class="pre">--reload</span> <span class="pre">&amp;&amp;</span> <span class="pre">sudo</span> <span class="pre">udevadm</span> <span class="pre">trigger</span></code></li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 </div>
@@ -566,14 +725,6 @@ theCore already has one suitable for this target.</p>
 <ol class="arabic">
 <li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
 </li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> in the separate terminal using script provided by theCore.
-Alternatively, you can use script from openocd installation.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">theCore</span>
-<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
-</pre></div>
-</div>
-</li>
 <li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
@@ -581,35 +732,25 @@ Alternatively, you can use script from openocd installation.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
-launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
-<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">htu21d_example</span>
+<li><p class="first">Determine stm32f4discovery board revision.</p>
+<p>If you don’t remember your board revision, check FAQ section
+<a class="reference internal" href="contents.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> and flash image using script from openocd installation.</p>
+<p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f4discovery.cfg -c &#39;init; reset halt; flash write_image erase htu21d_example.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
-Remote debugging using :3333
-0x00000000 in ?? ()
-
-(gdb) monitor reset halt
-target state: halted
-target halted due to debug-request, current mode: Thread
-xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
-
-(gdb) load
-Loading section .text, size 0x7678 lma 0x8000000
-Loading section .data, size 0x3c lma 0x8007678
-Start address 0x800477c, load size 30388
-Transfer rate: 18 KB/sec, 10129 bytes/write.
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f429disc1.cfg -c &#39;init; reset halt; flash write_image erase htu21d_example.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Start new firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
-<span class="n">Continuing</span><span class="o">.</span>
-</pre></div>
+<p>See <a class="reference internal" href="contents.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
+is important.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Optionally, complete the <a class="reference internal" href="contents.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide, to be able
+run OpenOCD without superuser permissions.</p>
 </div>
 </li>
 <li><p class="first">Watch console output.</p>
@@ -754,14 +895,6 @@ theCore already has one suitable for this target.</p>
 <ol class="arabic">
 <li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
 </li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> in the separate terminal using script provided by theCore.
-Alternatively, you can use script from openocd installation.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">theCore</span>
-<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
-</pre></div>
-</div>
-</li>
 <li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
@@ -769,37 +902,25 @@ Alternatively, you can use script from openocd installation.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
-launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
-<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">audio</span>
+<li><p class="first">Determine stm32f4discovery board revision.</p>
+<p>If you don’t remember your board revision, check FAQ section
+<a class="reference internal" href="contents.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> and flash image using script from openocd installation.</p>
+<p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f4discovery.cfg -c &#39;init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
-Remote debugging using :3333
-0x00000000 in ?? ()
-
-(gdb) monitor reset halt
-target state: halted
-target halted due to debug-request, current mode: Thread
-xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
-
-(gdb) load
-Loading section .text, size 0x4724 lma 0x8000000
-Loading section .init_array, size 0xc lma 0x8004724
-Loading section .rodata, size 0x228 lma 0x8004730
-Loading section .data, size 0x24 lma 0x8004958
-Start address 0x8000188, load size 18812
-Transfer rate: 14 KB/sec, 3762 bytes/write.
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f429disc1.cfg -c &#39;init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Start new firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
-<span class="n">Continuing</span><span class="o">.</span>
-</pre></div>
+<p>See <a class="reference internal" href="contents.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
+is important.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Optionally, complete the <a class="reference internal" href="contents.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide, to be able
+run OpenOCD without superuser permissions.</p>
 </div>
 </li>
 <li><p class="first">Attach headphones to the audio jack on Discovery board.</p>
@@ -1012,14 +1133,6 @@ theCore already has one suitable for this target.</p>
 <ol class="arabic">
 <li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
 </li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> in the separate terminal using script provided by theCore.
-Alternatively, you can use script from openocd installation.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">cd</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">theCore</span>
-<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">scripts</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
-</pre></div>
-</div>
-</li>
 <li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
@@ -1027,37 +1140,25 @@ Alternatively, you can use script from openocd installation.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
-launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
-<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">exti</span>
+<li><p class="first">Determine stm32f4discovery board revision.</p>
+<p>If you don’t remember your board revision, check FAQ section
+<a class="reference internal" href="contents.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> and flash image using script from openocd installation.</p>
+<p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f4discovery.cfg -c &#39;init; reset halt; flash write_image erase exti.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
-Remote debugging using :3333
-0x00000000 in ?? ()
-
-(gdb) monitor reset halt
-target state: halted
-target halted due to debug-request, current mode: Thread
-xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
-
-(gdb) load
-Loading section .text, size 0x4724 lma 0x8000000
-Loading section .init_array, size 0xc lma 0x8004724
-Loading section .rodata, size 0x228 lma 0x8004730
-Loading section .data, size 0x24 lma 0x8004958
-Start address 0x8000188, load size 18812
-Transfer rate: 14 KB/sec, 3762 bytes/write.
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f429disc1.cfg -c &#39;init; reset halt; flash write_image erase exti.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Start new firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
-<span class="n">Continuing</span><span class="o">.</span>
-</pre></div>
+<p>See <a class="reference internal" href="contents.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
+is important.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Optionally, complete the <a class="reference internal" href="contents.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide, to be able
+run OpenOCD without superuser permissions.</p>
 </div>
 </li>
 <li><p class="first">Press blue user button on the Discovery board and observe output in <code class="docutils literal"><span class="pre">minicom</span></code>.</p>
@@ -1235,13 +1336,8 @@ theCore already has one suitable for this target.</p>
 <h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
 <p>Firmware will be flashed via <code class="docutils literal"><span class="pre">openocd</span></code> and <code class="docutils literal"><span class="pre">gdb</span></code>.</p>
 <ol class="arabic">
-<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
-</li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> using script from openocd installation.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="n">board</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
-</pre></div>
-</div>
+<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART
+converter to the PC.</p>
 </li>
 <li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
@@ -1250,35 +1346,25 @@ theCore already has one suitable for this target.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
-launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
-<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">hm10_example</span>
+<li><p class="first">Determine stm32f4discovery board revision.</p>
+<p>If you don’t remember your board revision, check FAQ section
+<a class="reference internal" href="contents.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> and flash image using script from openocd installation.</p>
+<p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f4discovery.cfg -c &#39;init; reset halt; flash write_image erase hm10_example.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
-Remote debugging using :3333
-0x00000000 in ?? ()
-
-(gdb) monitor reset halt
-target state: halted
-target halted due to debug-request, current mode: Thread
-xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
-
-(gdb) load
-Loading section .text, size 0x7678 lma 0x8000000
-Loading section .data, size 0x3c lma 0x8007678
-Start address 0x800477c, load size 30388
-Transfer rate: 18 KB/sec, 10129 bytes/write.
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f429disc1.cfg -c &#39;init; reset halt; flash write_image erase hm10_example.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Start new firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
-<span class="n">Continuing</span><span class="o">.</span>
-</pre></div>
+<p>See <a class="reference internal" href="contents.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
+is important.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Optionally, complete the <a class="reference internal" href="contents.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide, to be able
+run OpenOCD without superuser permissions.</p>
 </div>
 </li>
 <li><p class="first">Check <code class="docutils literal"><span class="pre">minicom</span></code> terminal. You should be able to see:</p>
@@ -1418,6 +1504,7 @@ theCore already has one suitable for this target.</p>
 <span class="n">Starting</span> <span class="n">TM4C</span> <span class="n">led</span> <span class="n">demo</span><span class="o">...</span>
 </pre></div>
 </div>
+<p>On-board LED will blink with the different (RGB) colors.</p>
 </div>
 <div class="section" id="target-json-config-for-the-tm4c-led-example">
 <h4>Target JSON config for the TM4C LED example<a class="headerlink" href="#target-json-config-for-the-tm4c-led-example" title="Permalink to this headline">¶</a></h4>
@@ -1468,7 +1555,174 @@ theCore already has one suitable for this target.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>On-board LED will blink with the different (RGB) colors.</p>
+</div>
+</div>
+<span id="document-examples/ti-tm4c123g-sdcard-fatfs-sdspi"></span><div class="section" id="ti-tm4c123g-sd-card-demo-using-fatfs-and-sdspi">
+<span id="thecore-tm4c-fatfs-sdspi"></span><h3>TI TM4C123G SD-card demo using FATFS and SDSPI<a class="headerlink" href="#ti-tm4c123g-sd-card-demo-using-fatfs-and-sdspi" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/tm4c_fatfs</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">Tiva C Series TM4C123G LaunchPadEvaluation Board</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body"><a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">Catalex micro-SD card adapter/module</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">GNU arm-none-eabi v.5.2 or newer</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">UniFlash, minicom, OpenOCD</td>
+</tr>
+</tbody>
+</table>
+<p>The example shows how to use <a class="reference internal" href="contents.html#thecore-fat-filesystem"><span class="std std-ref">FAT filesystem</span></a> over
+<a class="reference internal" href="contents.html#thecore-sdspi"><span class="std std-ref">SDSPI driver</span></a> on <a class="reference internal" href="contents.html#thecore-tivac-tm4c123g"><span class="std std-ref">TM4C123G microcontroller</span></a>.</p>
+<p>Hardware in question is <a class="reference external" href="http://bit.ly/2HU5yr7">a regular SD card</a> connected to
+<a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">the Catalex micro-SD adapter</a> and <a class="reference external" href="http://www.ti.com/tool/EK-TM4C123GXL">TM4C123G LaunchPad™ Evaluation Kit</a>.</p>
+<div class="section" id="wiring">
+<h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<img alt="TI TM4C123G Launchpad with Micro SD card adapter attached" src="https://i.imgur.com/y27nRhg.png" />
+<p>Connect SPI3 (SSI3) and power to <a class="reference external" href="http://www.aessmart.com/product/673/a531-micro-sd-card-module-adaptercatalex">the Catalex micro-SD adapter</a>
+on the LaunchPad board using following pins:</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last"><strong>The Catalex module must be powered from +5V source</strong>. Pay attention to
+wiring. Otherwise, if connected to +3.3v, the card adapter may misbehave.</p>
+</div>
+<table border="1" class="docutils">
+<colgroup>
+<col width="48%" />
+<col width="53%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PD0</td>
+<td>module’s SPI CLK</td>
+</tr>
+<tr class="row-even"><td>PD1</td>
+<td>module’s SPI CS</td>
+</tr>
+<tr class="row-odd"><td>PD2</td>
+<td>module’s SPI MISO</td>
+</tr>
+<tr class="row-even"><td>PD3</td>
+<td>module’s SPI MOSI</td>
+</tr>
+<tr class="row-odd"><td>Vbus (+5V)</td>
+<td>module’s VCC</td>
+</tr>
+<tr class="row-even"><td>GND</td>
+<td>module’s GND</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="building">
+<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Complete <a class="reference internal" href="contents.html#thecore-examples-initial-setup"><span class="std std-ref">Initial setup</span></a> section.</p>
+</li>
+<li><p class="first">Execute build commands.
+The CMake Toolchain file is required to build this application.
+theCore already has one suitable for this target.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
+<span class="n">cd</span> <span class="n">build</span>
+<span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_TOOLCHAIN_FILE</span><span class="o">=../../</span><span class="n">toolchains</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">cm4</span><span class="o">-</span><span class="n">gnu</span><span class="o">.</span><span class="n">cmake</span> <span class="o">..</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="running">
+<h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Flash firmware either by using <a class="reference external" href="http://processors.wiki.ti.com/index.php/Category:CCS_UniFlash">UniFlash</a> or OpenOCD.
+The UniFlash interface is straightforward.</p>
+<p>For OpenOCD, execute:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/ek-lm4f120xl.cfg -c &#39;init; reset halt; flash write_image erase tm4c_fatfs.bin 0x0; reset run; exit&#39;
+</pre></div>
+</div>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with the board.
+(<code class="docutils literal"><span class="pre">/dev/ttyACM0</span></code> here used as an example):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">minicom</span> <span class="o">-</span><span class="n">D</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyACM0</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="expected-output">
+<h4>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">In <code class="docutils literal"><span class="pre">minicom</span></code> you should be able to see contents of the SD card root directory.
+For example, it can look like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Welcome to theCore
+the_core v0.3.287 5045e04-dirty
+Starting FATFS example...
+#. 0 type: dir  name : HOME
+#. 1 type: dir  name : VAR
+#. 2 type: file name : TEST_FILE.TXT
+#. 3 type: file name : ANOTHER_FILE.TXT
+Which file to open?
+</pre></div>
+</div>
+</li>
+<li><p class="first">Select a file to print into the console. File contents then will appear
+on the screen.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="target-json-config-for-the-tm4c-fatfs-example">
+<h4>Target JSON config for the TM4C FATFS example<a class="headerlink" href="#target-json-config-for-the-tm4c-fatfs-example" title="Permalink to this headline">¶</a></h4>
+<p>For your reference, the JSON configuration for this example is displayed below:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;tm4c&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;TM4C123GH6PM&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART-over-USB console output&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span> <span class="s2">&quot;PF3&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;out&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;pin_type&quot;</span><span class="p">:</span> <span class="s2">&quot;std&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;strength&quot;</span><span class="p">:</span> <span class="s2">&quot;2mA&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;LED pins&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PA0&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span> <span class="p">],</span>
+                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;hw&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;hws&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;PA0&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_RX&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_TX&quot;</span> <span class="p">},</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0 console pins&quot;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_red&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Red LED&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_blue&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Blue LED&quot;</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF3&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_green&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Green LED&quot;</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -2867,7 +3121,7 @@ a guidance when enabling console for your application.</p>
 </div>
 </div>
 <span id="document-platform/ti-tivac-tm4c123g"></span><div class="section" id="texas-instruments-tiva-c-tm4c123g">
-<h3>Texas Instruments Tiva C TM4C123G<a class="headerlink" href="#texas-instruments-tiva-c-tm4c123g" title="Permalink to this headline">¶</a></h3>
+<span id="thecore-tivac-tm4c123g"></span><h3>Texas Instruments Tiva C TM4C123G<a class="headerlink" href="#texas-instruments-tiva-c-tm4c123g" title="Permalink to this headline">¶</a></h3>
 <p>Tiva C TM4C123G is a Cortex-M4 based microcontroller from Texas Instruments.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -2923,6 +3177,12 @@ line to your source:</p>
 </div>
 <p>For more JSON configuration examples for TM4C platform, refer to the
 <a class="reference internal" href="contents.html#thecore-examples"><span class="std std-ref">Examples</span></a> page.</p>
+<div class="section" id="available-examples">
+<h4>Available examples<a class="headerlink" href="#available-examples" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><a class="reference internal" href="contents.html#thecore-tm4c-fatfs-sdspi"><span class="std std-ref">TI TM4C123G SD-card demo using FATFS and SDSPI</span></a></li>
+</ul>
+</div>
 <div class="section" id="periphery-overview">
 <h4>Periphery overview<a class="headerlink" href="#periphery-overview" title="Permalink to this headline">¶</a></h4>
 <p>TM4C MCU peripheries can be configured within the same JSON file.
@@ -5204,6 +5464,110 @@ This is how theCore builds and deploys its documentation.</p>
 <div class="section" id="v0-1-0-2016-04-12">
 <span id="v0-1-0-2016-04-12"></span><h3><a class="reference external" href="https://github.com/forGGe/theCore/tree/v0.1.0">v0.1.0</a> (2016-04-12)<a class="headerlink" href="#v0-1-0-2016-04-12" title="Permalink to this headline">¶</a></h3>
 <p>* <em>This Change Log was automatically generated by <a class="reference external" href="https://github.com/skywinder/Github-Changelog-Generator">github_changelog_generator</a></em></p>
+</div>
+</div>
+<span id="document-faq"></span><div class="section" id="frequently-asked-questions">
+<h2>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="how-to-fix-libusb-open-failed-with-libusb-error-access-when-running-openocd">
+<h3>How to fix <code class="docutils literal"><span class="pre">libusb_open()</span> <span class="pre">failed</span> <span class="pre">with</span> <span class="pre">LIBUSB_ERROR_ACCESS</span></code> when running OpenOCD?<a class="headerlink" href="#how-to-fix-libusb-open-failed-with-libusb-error-access-when-running-openocd" title="Permalink to this headline">¶</a></h3>
+<p>If you seeing a log like this:</p>
+<div class="highlight-text"><div class="highlight"><pre><span></span>Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+  http://openocd.org/doc/doxygen/bugs.html
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+<span class="hll">Error: libusb_open() failed with LIBUSB_ERROR_ACCESS
+</span>Error: open failed
+in procedure &#39;init&#39;
+in procedure &#39;ocd_bouncer&#39;
+</pre></div>
+</div>
+<p>Solution is to either re-run OpenOCD with <code class="docutils literal"><span class="pre">sudo</span></code>, as described in
+<a class="reference internal" href="#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section, or configure <code class="docutils literal"><span class="pre">udev</span></code> to let OpenOCD connect
+without requiring root privileges, using <a class="reference internal" href="contents.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide.</p>
+</div>
+<div class="section" id="i-get-plain-error-open-failed-when-running-openocd-with-my-stm32f4-discovery-board-what-should-i-do">
+<h3>I get plain <code class="docutils literal"><span class="pre">Error:</span> <span class="pre">open</span> <span class="pre">failed</span></code> when running OpenOCD with my STM32F4 Discovery board. What should I do?<a class="headerlink" href="#i-get-plain-error-open-failed-when-running-openocd-with-my-stm32f4-discovery-board-what-should-i-do" title="Permalink to this headline">¶</a></h3>
+<p>Most likely, you are running wrong OpenOCD script. Log in that case may look
+like this:</p>
+<div class="highlight-text"><div class="highlight"><pre><span></span>$ openocd -f board/stm32f4discovery.cfg
+Open On-Chip Debugger 0.9.0 (2018-01-24-01:05)
+Licensed under GNU GPL v2
+For bug reports, read
+http://openocd.org/doc/doxygen/bugs.html
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+<span class="hll">Error: open failed
+</span>in procedure &#39;init&#39;
+in procedure &#39;ocd_bouncer&#39;
+</pre></div>
+</div>
+<p>Solution is to run appropriate OpenOCD script:</p>
+<ol class="arabic">
+<li><p class="first">Determine the board revision using <a class="reference internal" href="#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a> section.</p>
+</li>
+<li><p class="first">Run correct script.</p>
+<p>For old STM32F407G boards, with STLINK/V2:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>openocd -f board/stm32f4discovery.cfg
+</pre></div>
+</div>
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>openocd -f board/stm32f429disc1.cfg
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="how-to-run-openocd-with-root-privileges-under-nix-shell">
+<span id="thecore-sudoopenocd-nix"></span><h3>How to run OpenOCD with root privileges under Nix shell?<a class="headerlink" href="#how-to-run-openocd-with-root-privileges-under-nix-shell" title="Permalink to this headline">¶</a></h3>
+<p>Nix modifies the <code class="docutils literal"><span class="pre">PATH</span></code> environment variable. But running <code class="docutils literal"><span class="pre">sudo</span></code>,
+drops <code class="docutils literal"><span class="pre">PATH</span></code> environment variable, so you need a full path to
+executable, installed by Nix.</p>
+<p>Thus, instead of running:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>sudo openocd [openocd_arguments]
+</pre></div>
+</div>
+<p>You should run:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>sudo $(which openocd) [openocd_arguments]
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-run-arbitrary-command-with-root-privileges-under-nix-shell">
+<h3>How to run arbitrary command with root privileges under Nix shell?<a class="headerlink" href="#how-to-run-arbitrary-command-with-root-privileges-under-nix-shell" title="Permalink to this headline">¶</a></h3>
+<p>Approach is similar, as in <a class="reference internal" href="#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section.
+Suppose you want to run command called <code class="docutils literal"><span class="pre">foo</span></code>, you need to execute:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>sudo $(which foo) [foo_arguments]
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-to-run-openocd-without-root-privileges">
+<h3>How to run OpenOCD without root privileges?<a class="headerlink" href="#how-to-run-openocd-without-root-privileges" title="Permalink to this headline">¶</a></h3>
+<p>Complete the <a class="reference internal" href="contents.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide.</p>
+</div>
+<div class="section" id="how-to-check-stm32f4-discovery-board-revision">
+<span id="thecore-stm32f4-discovery-rev"></span><h3>How to check STM32F4 Discovery board revision?<a class="headerlink" href="#how-to-check-stm32f4-discovery-board-revision" title="Permalink to this headline">¶</a></h3>
+<p>Run <code class="docutils literal"><span class="pre">lsusb</span></code> in your console.</p>
+<p>For old Discovery board with ST-LINK/V2, you should see:</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Bus 002 Device 125: ID 0483:3748 STMicroelectronics ST-LINK/V2
+</pre></div>
+</div>
+<p>For new Discovery board with ST-LINK/V2-A (labeled as STM32F407G-DISC1):</p>
+<div class="highlight-none"><div class="highlight"><pre><span></span>Bus 001 Device 002: ID 0483:374b STMicroelectronics ST-LINK/V2.1 (Nucleo-F103RB)
+</pre></div>
+</div>
 </div>
 </div>
 </div>

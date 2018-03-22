@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"functions_func_g.html":[4,3,1,6],
 "functions_func_h.html":[4,3,1,7],
 "functions_func_i.html":[4,3,1,8],
 "functions_func_j.html":[4,3,1,9],
@@ -44,8 +43,8 @@ var NAVTREEINDEX4 =
 "globals_defs.html":[5,1,4],
 "globals_e.html":[5,1,0,5],
 "globals_f.html":[5,1,0,6],
-"globals_func.html":[5,1,1,0],
 "globals_func.html":[5,1,1],
+"globals_func.html":[5,1,1,0],
 "globals_func_a.html":[5,1,1,1],
 "globals_func_b.html":[5,1,1,2],
 "globals_func_c.html":[5,1,1,3],
@@ -85,12 +84,12 @@ var NAVTREEINDEX4 =
 "globals_vars.html":[5,1,2],
 "globals_w.html":[5,1,0,22],
 "gpio_8hpp.html":[5,0,83],
-"gpio__bat_2case_8cpp.html":[5,0,18],
-"gpio__bat_2case_8cpp.html#a3354bc81e3855c7a0d079e96542078ef":[5,0,18,2],
-"gpio__bat_2case_8cpp.html#a33d5fd17049c79b330c5da7412e1c61c":[5,0,18,4],
-"gpio__bat_2case_8cpp.html#a3fe42efea9f16c14ab193cceb6e36c8b":[5,0,18,3],
-"gpio__bat_2case_8cpp.html#a4a15540ccda0386cc7a93bbb360872a5":[5,0,18,1],
-"gpio__bat_2case_8cpp.html#a9a6452df6f118d198ec4bb10b5beb639":[5,0,18,5],
+"gpio__bat_2case_8cpp.html":[5,0,17],
+"gpio__bat_2case_8cpp.html#a3354bc81e3855c7a0d079e96542078ef":[5,0,17,2],
+"gpio__bat_2case_8cpp.html#a33d5fd17049c79b330c5da7412e1c61c":[5,0,17,4],
+"gpio__bat_2case_8cpp.html#a3fe42efea9f16c14ab193cceb6e36c8b":[5,0,17,3],
+"gpio__bat_2case_8cpp.html#a4a15540ccda0386cc7a93bbb360872a5":[5,0,17,1],
+"gpio__bat_2case_8cpp.html#a9a6452df6f118d198ec4bb10b5beb639":[5,0,17,5],
 "group__connectivity.html":[2,1,1],
 "group__dev.html":[2,1],
 "group__fat.html":[2,2,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a3ee3610c5d928069e7658a07faacb839":[2,0,0,3,14,4],
 "group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a415434634f5e7e3bf8547f8e0fec8782":[2,0,0,3,14,18],
 "group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a5d494204b2294de0db8b5c0bfd7f0b98":[2,0,0,3,14,11],
-"group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a91ad7bbdb985c42e11ff5d2d12b8450c":[2,0,0,3,14,15]
+"group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a91ad7bbdb985c42e11ff5d2d12b8450c":[2,0,0,3,14,15],
+"group__stm32__adc.html#gga4377973d3e356a39b194850cda957de8a95fc4fdccfe6b3e64018c1deaf85dd8a":[2,0,0,3,14,0]
 };

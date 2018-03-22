@@ -2,7 +2,7 @@ var searchData=
 [
   ['_7ebh1750',['~bh1750',['../classecl_1_1sensor_1_1bh1750.html#a2c38831e5f6d324107acffb0248ebcf1',1,'ecl::sensor::bh1750']]],
   ['_7ebinary_5fsemaphore',['~binary_semaphore',['../classecl_1_1binary__semaphore.html#a011696544339696d06b55569718028cb',1,'ecl::binary_semaphore']]],
-  ['_7ebus_5fpipe',['~bus_pipe',['../classecl_1_1bus__pipe.html#a6b760cde652267860b3ddf827e0fa23e',1,'ecl::bus_pipe']]],
+  ['_7econsole_5fpipe',['~console_pipe',['../classecl_1_1console__pipe.html#a0ae2175b7423aa4c6e3ae9b96e84ab29',1,'ecl::console_pipe']]],
   ['_7edir',['~dir',['../classecl_1_1fat_1_1dir.html#a437f30e14c7d0e80f13dbe752bd8d041',1,'ecl::fat::dir']]],
   ['_7edir_5fdescriptor',['~dir_descriptor',['../classecl_1_1fs_1_1dir__descriptor.html#aeff4722c191813bba8177dc300660b12',1,'ecl::fs::dir_descriptor']]],
   ['_7edir_5finode',['~dir_inode',['../classecl_1_1fat_1_1dir__inode.html#a457a44c525dea499762ba916f866dd1e',1,'ecl::fat::dir_inode']]],

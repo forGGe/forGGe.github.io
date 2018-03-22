@@ -272,14 +272,13 @@ Here is the call graph for this function:</div>
 <p>Current read/write offset is advanced to an amount of bytes read. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Buffer to store data into. Must not be NULL. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>Size of a buffer on entry, bytes read from a file on exit. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">size</td><td>Size of a buffer on entry, bytes read from a file on exit. In case of returned values is less than provided one, it means the read pointer has reached end of the file during read operation. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Status of operation. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b" title="Generic error. ">err::eof</a></td><td>End-of-file is reached. </td></tr>
     <tr><td class="paramname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a1278df30d3176909a05d7b21107f1024" title="Not a socket. ">err::notsup</a></td><td>Operation is not supported on a given filesystem. </td></tr>
   </table>
   </dd>

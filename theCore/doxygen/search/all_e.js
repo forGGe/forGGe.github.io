@@ -9,7 +9,7 @@ var searchData=
   ['netdown',['netdown',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a35c7259f1deb10237bb38b78723e4dd3',1,'ecl']]],
   ['netreset',['netreset',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a22657d30b0b4df088a89e0c62d8a8804',1,'ecl']]],
   ['netunreach',['netunreach',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a04c491eda42572fa79869c4d72668182',1,'ecl']]],
-  ['next',['next',['../classecl_1_1list__node.html#ac3c589f9a1306df3d39441d5645870cf',1,'ecl::list_node::next()'],['../classecl_1_1fs_1_1dir__descriptor.html#a3f6bb7aaf02c51f74dda385202a6e73a',1,'ecl::fs::dir_descriptor::next()'],['../classecl_1_1fs_1_1path__iter.html#a41dd8d5d16aff3809ba00caa888044cb',1,'ecl::fs::path_iter::next()'],['../classecl_1_1fat_1_1dir.html#af3557d19855b0a98478b6d394185aac2',1,'ecl::fat::dir::next()']]],
+  ['next',['next',['../classecl_1_1list__node.html#ac3c589f9a1306df3d39441d5645870cf',1,'ecl::list_node::next()'],['../classecl_1_1fs_1_1path__iter.html#a41dd8d5d16aff3809ba00caa888044cb',1,'ecl::fs::path_iter::next()']]],
   ['nfile',['nfile',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a3bf6e2f5b20065cae4eb45b7dde1e2ab',1,'ecl']]],
   ['nifty_5fcounter',['nifty_counter',['../namespaceecl.html#ad407a4b616b718d5db192ef5ad7c75eb',1,'ecl']]],
   ['no_5ftrigger',['no_trigger',['../structecl_1_1channel__group__sw__trigger.html#aa8f3f01f5e3dcf96f84b032ab0ecc6ddaaaa0ab7c29f8d4ba2ad123dec6a1ea8f',1,'ecl::channel_group_sw_trigger']]],

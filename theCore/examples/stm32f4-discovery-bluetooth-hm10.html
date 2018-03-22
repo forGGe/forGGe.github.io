@@ -110,6 +110,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-launchpad-blink.html">TI TM4C123G LaunchPad blinky</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-sdcard-fatfs-sdspi.html">TI TM4C123G SD-card demo using FATFS and SDSPI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#initial-setup">Initial setup</a></li>
 </ul>
 </li>
@@ -124,6 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
 </ul>
 
             
@@ -274,13 +276,8 @@ theCore already has one suitable for this target.</p>
 <h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
 <p>Firmware will be flashed via <code class="docutils literal"><span class="pre">openocd</span></code> and <code class="docutils literal"><span class="pre">gdb</span></code>.</p>
 <ol class="arabic">
-<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
-</li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> using script from openocd installation.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">openocd</span> <span class="o">-</span><span class="n">f</span> <span class="n">board</span><span class="o">/</span><span class="n">stm32f4discovery</span><span class="o">.</span><span class="n">cfg</span>
-</pre></div>
-</div>
+<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART
+converter to the PC.</p>
 </li>
 <li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
@@ -289,35 +286,25 @@ theCore already has one suitable for this target.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Provided that your main terminal’s current directory is <code class="docutils literal"><span class="pre">build</span></code>,
-launch <code class="docutils literal"><span class="pre">gdb</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From the build directory</span>
-<span class="n">arm</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">eabi</span><span class="o">-</span><span class="n">gdb</span> <span class="n">hm10_example</span>
+<li><p class="first">Determine stm32f4discovery board revision.</p>
+<p>If you don’t remember your board revision, check FAQ section
+<a class="reference internal" href="../faq.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> and flash image using script from openocd installation.</p>
+<p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f4discovery.cfg -c &#39;init; reset halt; flash write_image erase hm10_example.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Under GDB shell, connect to <code class="docutils literal"><span class="pre">openocd</span></code> and flash firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>(gdb) target remote :3333
-Remote debugging using :3333
-0x00000000 in ?? ()
-
-(gdb) monitor reset halt
-target state: halted
-target halted due to debug-request, current mode: Thread
-xPSR: 0x01000000 pc: 0x08000188 msp: 0x20020000
-
-(gdb) load
-Loading section .text, size 0x7678 lma 0x8000000
-Loading section .data, size 0x3c lma 0x8007678
-Start address 0x800477c, load size 30388
-Transfer rate: 18 KB/sec, 10129 bytes/write.
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f429disc1.cfg -c &#39;init; reset halt; flash write_image erase hm10_example.bin 0x08000000; reset run; exit&#39;
 </pre></div>
 </div>
-</li>
-<li><p class="first">Start new firmware:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="k">continue</span>
-<span class="n">Continuing</span><span class="o">.</span>
-</pre></div>
+<p>See <a class="reference internal" href="../faq.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
+is important.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Optionally, complete the <a class="reference internal" href="../guides/running-openocd-without-sudo.html#thecore-openocd-noroot"><span class="std std-ref">Running OpenOCD without root privileges</span></a> guide, to be able
+run OpenOCD without superuser permissions.</p>
 </div>
 </li>
 <li><p class="first">Check <code class="docutils literal"><span class="pre">minicom</span></code> terminal. You should be able to see:</p>

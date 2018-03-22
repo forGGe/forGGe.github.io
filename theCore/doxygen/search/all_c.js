@@ -1,7 +1,7 @@
 var searchData=
 [
   ['generated_2ehpp',['generated.hpp',['../lib_2export_2lib_2generated_8hpp.html',1,'']]],
-  ['last_5ferror',['last_error',['../classecl_1_1bus__pipe.html#adb0d14622e903b86fcab8f659568c868',1,'ecl::bus_pipe']]],
+  ['last_5ferror',['last_error',['../classecl_1_1console__pipe.html#a79967b6eeaf1a3e392a297c965d64ba1',1,'ecl::console_pipe']]],
   ['last_5fpassed_5fdevice',['last_passed_device',['../structmock__mut.html#aab14b9a8d87bf9513a0eb564276eafcf',1,'mock_mut']]],
   ['le',['LE',['../namespaceecl.html#a7c5df9aff3a16d401448de09b43bc91e',1,'ecl']]],
   ['left',['left',['../classecl_1_1cs43l22.html#abfcaf1ee316513e4d50b7654b34528daa811882fecd5c7618d7099ebbd39ea254',1,'ecl::cs43l22']]],

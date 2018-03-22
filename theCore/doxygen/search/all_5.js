@@ -24,7 +24,6 @@ var searchData=
   ['endl',['endl',['../namespaceecl.html#abf70b61cc734c2dcdc322714607b344a',1,'ecl']]],
   ['environ',['environ',['../stubs_8cpp.html#aafdd786d44df7cc214184b34d61eec3e',1,'stubs.cpp']]],
   ['eoc',['eoc',['../namespaceecl.html#a6ec0377ffa8c54d9437870b727b81dd0ae2b21aece1b9f853bc86e1b7ae8b4812',1,'ecl']]],
-  ['eof',['eof',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2e51b1ab42e8a4a67f3445174be5191b',1,'ecl']]],
   ['err',['err',['../classecl_1_1dma__wrap__base.html#a5b07f1d9ec862f5b28760dfb17b1b1f1',1,'ecl::dma_wrap_base::err()'],['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810',1,'ecl::err()'],['../namespaceecl.html#a1712b117c1d0fb5dc2bb612656aacc84a56bd7107802ebe56c6918992f0608ec6',1,'ecl::err()']]],
   ['err_2ecpp',['err.cpp',['../err_8cpp.html',1,'']]],
   ['err_2ehpp',['err.hpp',['../err_8hpp.html',1,'']]],

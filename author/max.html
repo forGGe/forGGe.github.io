@@ -15,7 +15,7 @@
     <meta property="og:url" content="http://forgge.github.io"/>
     <meta property="og:description" content="forGGe's Nexus"/>
 
-    <title>forGGe's Nexus - Tags</title>
+    <title>forGGe's Nexus - Articles by Max</title>
 
         <link rel="stylesheet" href="http://forgge.github.io/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -222,7 +222,59 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-    <h1>Tags for forGGe's Nexus</h1><footer>
+<section id="content" class="body">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="jumbotron">  
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>forGGe's Nexus</h1>
+                        <p>Thoughts on Open Source, Linux, Embedded, System programming</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <h2>Recent Articles:</h2>
+        </div>
+    </div>
+</section>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h2>
+                    <a href="http://forgge.github.io/hello-world.html">Hello, World!</a>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2018-03-23T18:40:49+02:00"> Fri 23 March 2018</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="http://forgge.github.io/category/mics.html">mics</a>
+            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                </h2>
+                <div class="summary">
+                    <p>Finally, my first blog is running. Cheers to everyone who reading this!</p>
+<p>Nothing special about this article in particular. It exists only for testing
+purposes.</p>
+<p>While this blog is getting more useful stuff, you can either leave your
+comment below or check <a class="reference external" href="http://forgge.github.io/pages/about-me.html">About Me</a> page.</p>
+
+                </div>
+            </article>
+        <div class="btn-more text-right">
+            <a class="btn btn-default btn-xs twitchy-background" href="http://forgge.github.io/archives.html">
+                View all Articles ...
+            </a>
+        </div>
+    </div>
+</div>
+<footer>
     <hr>
     <div class="row">
         <div class="col-lg-9 text-center">
@@ -254,5 +306,22 @@
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics Universal Code -->
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>

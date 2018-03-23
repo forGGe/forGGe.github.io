@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Max" />
-        <meta name="description" content="Thoughts on Open Source, Linux, Embedded, System programming" />
+    <meta name="author" content="Max" />
+    <meta name="keywords" content="mics" />
 
 <!-- Open Graph tags -->
 <meta property="og:site_name" content="forGGe's Nexus"/>
@@ -15,7 +15,7 @@
     <meta property="og:url" content="http://forgge.github.io"/>
     <meta property="og:description" content="forGGe's Nexus"/>
 
-    <title>forGGe's Nexus - Tags</title>
+    <title>mics - forGGe's Nexus</title>
 
         <link rel="stylesheet" href="http://forgge.github.io/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -199,8 +199,8 @@
                         Categories
                     </a>
                 </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li >
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse in">
+                    <li class="active">
                         <a href="http://forgge.github.io/category/mics.html">
                             <i class="fa fa-folder-open padding-small"></i>
                             mics
@@ -222,7 +222,24 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-    <h1>Tags for forGGe's Nexus</h1><footer>
+<div class="row">
+    <div class="col-lg-9">
+        <header class="page-header">
+            <h1>Articles in mics</h1>
+        </header>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h4>
+                    <time datetime="2018-03-23T18:40:49+02:00"> Fri 23 March 2018</time>
+                    <a href="http://forgge.github.io/hello-world.html">Hello, World!</a>
+                </h4>
+            </article>
+    </div>
+</div>
+<footer>
     <hr>
     <div class="row">
         <div class="col-lg-9 text-center">
@@ -254,5 +271,24 @@
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics Universal Code -->
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>

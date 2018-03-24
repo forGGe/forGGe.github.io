@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>forGGe's Nexus - misc</title><link>https://forgge.github.io/</link><description>Thoughts on Open Source, Linux, Embedded and System programming</description><lastBuildDate>Sat, 24 Mar 2018 00:00:00 +0200</lastBuildDate><item><title>Hello, World!</title><link>https://forgge.github.io/hello-world.html</link><description>&lt;p&gt;Finally, my first blog is running. Cheers to everyone who reading this!&lt;/p&gt;
+&lt;p&gt;Nothing special about this article in particular. It exists only for testing
+purposes.&lt;/p&gt;
+&lt;p&gt;While this blog is getting more useful stuff, you can either leave your
+comment below or check &lt;a class="reference external" href="https://forgge.github.io/pages/about-me.html"&gt;About Me&lt;/a&gt; page.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max</dc:creator><pubDate>Sat, 24 Mar 2018 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:forgge.github.io,2018-03-24:/hello-world.html</guid></item></channel></rss>

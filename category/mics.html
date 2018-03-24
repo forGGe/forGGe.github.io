@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Max" />
-        <meta name="description" content="Thoughts on Open Source, Linux, Embedded, System programming" />
+    <meta name="author" content="Max" />
+    <meta name="keywords" content="mics" />
 
 <!-- Open Graph tags -->
 <meta property="og:site_name" content="forGGe's Nexus"/>
@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://forgge.github.io"/>
     <meta property="og:description" content="forGGe's Nexus"/>
 
-    <title>forGGe's Nexus</title>
+    <title>mics - forGGe's Nexus</title>
 
         <link rel="stylesheet" href="https://forgge.github.io/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -199,8 +199,8 @@
                         Categories
                     </a>
                 </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
-                    <li >
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse in">
+                    <li class="active">
                         <a href="https://forgge.github.io/category/mics.html">
                             <i class="fa fa-folder-open padding-small"></i>
                             mics
@@ -222,56 +222,21 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-<section id="content" class="body">
-    <div class="row">
-        <div class="col-lg-9">
-            <div class="jumbotron">  
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1>forGGe's Nexus</h1>
-                        <p>Thoughts on Open Source, Linux, Embedded, System programming</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="row">
+    <div class="col-lg-9">
+        <header class="page-header">
+            <h1>Articles in mics</h1>
+        </header>
     </div>
-    <div class="row">
-        <div class="col-lg-9">
-            <h2>Recent Articles:</h2>
-        </div>
-    </div>
-</section>
+</div>
 <div class="row">
     <div class="col-lg-9">
             <article>
-                <h2>
+                <h4>
+                    <time datetime="2018-03-23T18:40:49+02:00"> Fri 23 March 2018</time>
                     <a href="https://forgge.github.io/hello-world.html">Hello, World!</a>
-<div class="post-info">
-    <div class="publish-info-block">
-        <small>
-            <span class="published">
-                <i class="fa fa-calendar padding-small"></i><time datetime="2018-03-23T18:40:49+02:00"> Fri 23 March 2018</time>
-            </span>
-            <span class="category">
-                <i class="fa fa-folder-open padding-small"></i><a href="https://forgge.github.io/category/mics.html">mics</a>
-            </span>
-        </small>
-    </div>
-</div><!-- /.post-info -->                </h2>
-                <div class="summary">
-                    <p>Finally, my first blog is running. Cheers to everyone who reading this!</p>
-<p>Nothing special about this article in particular. It exists only for testing
-purposes.</p>
-<p>While this blog is getting more useful stuff, you can either leave your
-comment below or check <a class="reference external" href="https://forgge.github.io/pages/about-me.html">About Me</a> page.</p>
-
-                </div>
+                </h4>
             </article>
-        <div class="btn-more text-right">
-            <a class="btn btn-default btn-xs twitchy-background" href="https://forgge.github.io/archives.html">
-                View all Articles ...
-            </a>
-        </div>
     </div>
 </div>
 <footer>
@@ -317,8 +282,10 @@ comment below or check <a class="reference external" href="https://forgge.github
             }
         });
     }
+
     articles = $("article").fadeTo(0, 0.05);
     FadeInOnScroll(articles)
+
     $(window).scroll(function() {
         FadeInOnScroll(articles)
     });

@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="Max" />
-        <meta name="description" content="Thoughts on Open Source, Linux, Embedded and System programming" />
+    <meta name="author" content="Max" />
+    <meta name="keywords" content="notes" />
 
 <!-- Open Graph tags -->
 <meta property="og:site_name" content="forGGe's Nexus"/>
@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://forgge.github.io"/>
     <meta property="og:description" content="forGGe's Nexus"/>
 
-    <title>forGGe's Nexus</title>
+    <title>notes - forGGe's Nexus</title>
 
         <link rel="stylesheet" href="https://forgge.github.io/theme/css/bootstrap.united.min.css" type="text/css"/>
 
@@ -171,7 +171,7 @@
                         Categories
                     </a>
                 </li>
-                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse in">
                     <li >
                         <a href="https://forgge.github.io/category/misc.html">
                             <i class="fas fa-folder-open padding-small"></i>
@@ -179,7 +179,7 @@
                             <span class="badge pull-right categorybadge">1</span>
                         </a>
                     </li>
-                    <li >
+                    <li class="active">
                         <a href="https://forgge.github.io/category/notes.html">
                             <i class="fas fa-folder-open padding-small"></i>
                             notes
@@ -270,10 +270,23 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-<ul>
-    <li><a href="https://forgge.github.io/category/misc.html">misc</a></li>
-    <li><a href="https://forgge.github.io/category/notes.html">notes</a></li>
-</ul>
+<div class="row">
+    <div class="col-lg-9">
+        <header class="page-header">
+            <h1>Articles in notes</h1>
+        </header>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h4>
+                    <time datetime="2018-03-26T00:00:00+03:00"> Mon 26 March 2018</time>
+                    <a href="https://forgge.github.io/gcc-how-to-control-header-include-from-command-line.html">How to control header include from command line in GCC</a>
+                </h4>
+            </article>
+    </div>
+</div>
 <footer>
     <hr>
     <div class="row">
@@ -316,5 +329,24 @@
         ga('send', 'pageview');
     </script>
     <!-- End Google Analytics Universal Code -->
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>

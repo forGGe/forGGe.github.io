@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>forGGe's Nexus - notes</title><link>https://forgge.github.io/</link><description>Thoughts on Open Source, Linux, Embedded and System programming</description><lastBuildDate>Mon, 26 Mar 2018 00:00:00 +0300</lastBuildDate><item><title>How to control header include from command line in GCC</title><link>https://forgge.github.io/gcc-how-to-control-header-include-from-command-line.html</link><description>&lt;p&gt;In following sections, I will describe how to control which header must be
+included in your source files via command-line parameters of GCC.&lt;/p&gt;
+&lt;div class="section" id="the-case"&gt;
+&lt;h2&gt;The Case&lt;/h2&gt;
+&lt;p&gt;Imagine that you have a simple application, consisting of just two files:&lt;/p&gt;
+&lt;p&gt;One &lt;tt class="docutils literal"&gt;main.c&lt;/tt&gt; file:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;quot;foo.h&amp;quot;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;print_foo&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max</dc:creator><pubDate>Mon, 26 Mar 2018 00:00:00 +0300</pubDate><guid isPermaLink="false">tag:forgge.github.io,2018-03-26:/gcc-how-to-control-header-include-from-command-line.html</guid><category>c</category><category>c++</category><category>gcc</category></item></channel></rss>

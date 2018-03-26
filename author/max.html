@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="https://forgge.github.io/theme/css/bootstrap.united.min.css" type="text/css"/>
 
     <link href="https://forgge.github.io/theme/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="https://forgge.github.io/theme/css/pygments/native.css" rel="stylesheet" />
+    <link href="https://forgge.github.io/theme/css/pygments/monokai.css" rel="stylesheet" />
 
     <link href="https://forgge.github.io/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
 
@@ -179,6 +179,13 @@
                             <span class="badge pull-right categorybadge">1</span>
                         </a>
                     </li>
+                    <li >
+                        <a href="https://forgge.github.io/category/notes.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            notes
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
                 </ul></li>
 
 
@@ -266,7 +273,7 @@
 <section id="content" class="body">
     <div class="row">
         <div class="col-lg-9">
-            <div class="jumbotron">  
+            <div class="jumbotron">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>forGGe's Nexus</h1>
@@ -284,6 +291,45 @@
 </section>
 <div class="row">
     <div class="col-lg-9">
+            <article>
+                <h2>
+                    <a href="https://forgge.github.io/gcc-how-to-control-header-include-from-command-line.html">How to control header include from command line in GCC</a>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fas fa-calendar-alt padding-small"></i><time datetime="2018-03-26T00:00:00+03:00"> Mon 26 March 2018</time>
+            </span>
+            <span class="category">
+                <i class="fas fa-folder-open padding-small"></i><a href="https://forgge.github.io/category/notes.html">notes</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="https://forgge.github.io/tag/c.html">c</a> /                 <a href="https://forgge.github.io/tag/c.html">c++</a> /                 <a href="https://forgge.github.io/tag/gcc.html">gcc</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                </h2>
+                <div class="summary">
+                    <p>In following sections, I will describe how to control which header must be
+included in your source files via command-line parameters of GCC.</p>
+<div class="section" id="the-case">
+<h2>The Case</h2>
+<p>Imagine that you have a simple application, consisting of just two files:</p>
+<p>One <tt class="docutils literal">main.c</tt> file:</p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;foo.h&quot;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">print_foo</span><span class="p">();</span>
+    <span class="k">return</span> <span class="mi">0 …</span></pre></div></div>
+                </div>
+            </article>
+            <div class="btn-more text-left">
+                <a class="btn btn-default btn-xs" href="https://forgge.github.io/gcc-how-to-control-header-include-from-command-line.html">
+                    Read full article ...
+                </a>
+            </div>
+            <hr/>
             <article>
                 <h2>
                     <a href="https://forgge.github.io/hello-world.html">Hello, World!</a>
@@ -308,6 +354,11 @@ comment below or check <a class="reference external" href="https://forgge.github
 
                 </div>
             </article>
+            <div class="btn-more text-left">
+                <a class="btn btn-default btn-xs" href="https://forgge.github.io/hello-world.html">
+                    Read full article ...
+                </a>
+            </div>
         <div class="btn-more text-right">
             <a class="btn btn-default btn-xs twitchy-background" href="https://forgge.github.io/archives.html">
                 View all Articles ...

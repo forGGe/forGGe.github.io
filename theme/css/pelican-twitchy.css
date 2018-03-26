@@ -266,11 +266,11 @@ span.glyphicon-chevron-down, .collapsed span.glyphicon-chevron-up{
 }
 
 /*overwrite pygments color for better readability*/
-.highlight pre span.n,
+/* .highlight pre span.n,
 .highlight pre span.p,
 .highlight pre span.s {
     color: #3e3f3a;
-}
+} */
 
 /*center responsive images in content*/
 #content img.img-responsive{

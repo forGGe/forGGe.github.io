@@ -4908,13 +4908,59 @@ an one as read-write. Both of them must be the same type.</li>
 </div>
 <span id="document-community"></span><div class="section" id="community-and-developer-guidelines">
 <span id="thecore-developerdocs"></span><h2>Community and developer guidelines<a class="headerlink" href="#community-and-developer-guidelines" title="Permalink to this headline">¶</a></h2>
-<p>To make referencing easier, rules and guidelines (if present) are numbered inside section.</p>
 <div class="section" id="roadmap">
 <span id="thecore-roadmap"></span><h3>Roadmap<a class="headerlink" href="#roadmap" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
-</div>
+<p>theCore aims to provide a rich and consistent embedded environment for a range
+of different devices. Such complexity requires from users an advanced knowledge
+of build tools, toolchains and a board layout even in simple cases like a LED
+blinking.</p>
+<p>Thus the main milestones are directed to improve the initial user experience.
+Such goals are:</p>
+<ul>
+<li><p class="first">Provide all-in-one scripts for controlling a development flow, similar to
+what <code class="docutils literal"><span class="pre">mbed_cli</span></code> does.</p>
+<p>These scripts must be able to:</p>
+<ul class="simple">
+<li>Download required theCore revision.</li>
+<li>Initialize development environment, by optionally installing and running Nix.</li>
+<li>Detect and inform about missing dependencies.</li>
+<li>Bootstrap a new project based on theCore, optionally using one of
+supported boards as a base.</li>
+<li>Launch a project build.</li>
+<li>Detect connected devices and be able to flash a project binary.</li>
+<li>Provide a ncurses-like (at least) interface to configure the project settings,
+that otherwise will require a manual editing of a target JSON file.</li>
+</ul>
+</li>
+<li><p class="first">Make theCore IoT-ready.</p>
+<p>It is not a surprise that a modern embedded project must include a some
+kind of connectivity support. Most required technologies that missing in
+theCore are:</p>
+<ul class="simple">
+<li>lwIP integration.</li>
+<li>MQTT/COAP libraries.</li>
+<li>ESP8266 support (as external modem at least).</li>
+<li>Ethernet/WiFi drivers.</li>
+</ul>
+</li>
+<li><p class="first">Add more multi-target examples where possible.</p>
+<p>Much of theCore’s API is portable. Examples should demonstrate an usage of
+many development boards with the same application code.
+Existing examples should be also converted to support many boards.</p>
+</li>
+<li><p class="first">Complete support for at least one development board for each supported platform.</p>
+<p>Support for a dev board includes:</p>
+<ul class="simple">
+<li>Drivers for each device soldered on the board.</li>
+<li>Periphery drivers (SPI, UART, I2C, etc.) that are required by the devices,
+soldered on the board.</li>
+<li>A default JSON file that provides a base clock, periphery and external
+devices configuration. User can change that JSON file to suit his needs.</li>
+<li>Platform and device capabiilities - similar to what <code class="docutils literal"><span class="pre">Kconfig</span></code>
+in Linux does.</li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="branching-and-release-model">
 <span id="thecore-branching"></span><h3>Branching and release model<a class="headerlink" href="#branching-and-release-model" title="Permalink to this headline">¶</a></h3>

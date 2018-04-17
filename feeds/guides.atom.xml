@@ -68,8 +68,7 @@ as GCC toolchain or Minicom terminal.&lt;/p&gt;
 the ThingsBoard account. Proceed with steps below to achieve that.&lt;/p&gt;
 &lt;ol class="arabic"&gt;
 &lt;li&gt;&lt;p class="first"&gt;Open &lt;a class="reference external" href="http://demo.thingsboard.io"&gt;http://demo.thingsboard.io&lt;/a&gt; website and register your account by clicking
-on &amp;quot;CREATE AN ACCOUNT&amp;quot; button:&lt;/p&gt;
-&lt;img alt="ThingsBoard login page" src="https://forgge.github.io/images/thingsboard-login-page.png" style="width: 640px;" /&gt;
+on &amp;quot;CREATE AN ACCOUNT&amp;quot; button:.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Fill your contact name, email and password. Proceed withinstructions,
 sent to you via email. When finished, go to &lt;a class="reference external" href="http://demo.thingsboard.io"&gt;http://demo.thingsboard.io&lt;/a&gt;
@@ -79,20 +78,16 @@ again and login with your new account credentials:&lt;/p&gt;
 &lt;img alt="Selecting device in ThingsBoard" src="https://forgge.github.io/images/thingsboard-home-page-select-device.png" style="width: 640px;" /&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;In the Device page, click on the red &amp;quot;+&amp;quot; button at right-bottom of the
-screen:&lt;/p&gt;
-&lt;img alt="Creating device in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-create-device.png" style="width: 640px;" /&gt;
+screen.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Name your device as you like, using screenshot below as an example and
-click on &amp;quot;Add button&amp;quot;:&lt;/p&gt;
-&lt;img alt="Adding device info in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-fill-device-info.png" style="width: 640px;" /&gt;
+&lt;li&gt;&lt;p class="first"&gt;Name your device as you like. I went with &amp;quot;STM32 IoT Kit&amp;quot; name. Remember
+that name, we will you it in future. After name is entered, click
+on &amp;quot;Add button&amp;quot;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Your device should now appear in the Device page. Click on your device
-button. Sidebar will be opened with the device settings:&lt;/p&gt;
-&lt;img alt="Open device in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-open-device.png" style="width: 640px;" /&gt;
+button. Sidebar will be opened with the device settings.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;
-&lt;ol class="arabic" id="device-token"&gt;
-&lt;li&gt;&lt;p class="first"&gt;On the device settings sidebar, click &amp;quot;Copy access token&amp;quot; or copy-and-paste
+&lt;li id="device-token"&gt;&lt;p class="first"&gt;On the device settings sidebar, click &amp;quot;Copy access token&amp;quot; or copy-and-paste
 access token after clicking on &amp;quot;Manage credentials&amp;quot; button:&lt;/p&gt;
 &lt;img alt="Copy device credentials in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-copy-device-credentials.png" style="width: 640px;" /&gt;
 &lt;/li&gt;
@@ -115,32 +110,26 @@ see data you've sent few moments ago:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;After you validated that data indeed sent, you can start with creating
 dashboard. Click on &amp;quot;Dashboards&amp;quot; button on the left side of the screen.
-Dashboard page will be opened:&lt;/p&gt;
-&lt;img alt="Open dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-click-on-dashboard.png" style="width: 640px;" /&gt;
+Dashboard page will be opened.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;On the Dashboard page, click red &amp;quot;+&amp;quot; button at the right-bottom of the
-screen. Few more buttons will pop-up. Click on &amp;quot;Create new dashboard button&amp;quot;:&lt;/p&gt;
-&lt;img alt="Add new STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-new-dashboard.png" style="width: 640px;" /&gt;
+screen. Few more buttons will pop-up. Click on &amp;quot;Create new dashboard button&amp;quot;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Choose a name for dashboard as you like. I decided to go with &amp;quot;STM32 IoT Kit
 dashboard&amp;quot;. When finish, click &amp;quot;Add&amp;quot; button. Dashboard should appear in the
-Dashboards page:&lt;/p&gt;
-&lt;img alt="Create STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-new-dashboard-name.png" style="width: 640px;" /&gt;
+Dashboards page.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Click on newly created dashboard button. You will be directed to a dashboard
-widget page:&lt;/p&gt;
-&lt;img alt="Open STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-click-new-dashboard.png" style="width: 640px;" /&gt;
+widget page.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p class="first"&gt;Click on red &amp;quot;Edit&amp;quot; button at the right-bottom of the screen:&lt;/p&gt;
-&lt;img alt="Edit STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-edit-dashboard.png" style="width: 640px;" /&gt;
+&lt;li&gt;&lt;p class="first"&gt;Click on red &amp;quot;Edit&amp;quot; button at the right-bottom of the screen.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Click on &amp;quot;Entity alias&amp;quot; button at the top of the page. &amp;quot;Entity aliases&amp;quot;
 window will appear:&lt;/p&gt;
 &lt;img alt="STM32 alias in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-alias-button.png" style="width: 640px;" /&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;In the &amp;quot;Entity alias&amp;quot; window, click blue &amp;quot;Add alias&amp;quot; button. Popup with
-alias details will appear:&lt;/p&gt;
-&lt;img alt="STM32 alias in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-alias-submenu-button.png" style="width: 640px;" /&gt;
+alias details will appear.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Fill new alias details. &amp;quot;Alias name&amp;quot; is required, but can be arbitrary.
 Set &amp;quot;Filter type&amp;quot; to &amp;quot;Single entity&amp;quot;, &amp;quot;Type&amp;quot; must be set to &amp;quot;Device&amp;quot;.
@@ -155,8 +144,7 @@ the dashboard window:&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;Your dashboard will be in edit mode after you finish with aliases.
 Click on &amp;quot;Add new widget&amp;quot; label at the center or on red &amp;quot;+&amp;quot; button at
-the bottom-right. &amp;quot;Select widget&amp;quot; menu will appear:&lt;/p&gt;
-&lt;img alt="Add new widget in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-click-add-new-widget.png" style="width: 640px;" /&gt;
+the bottom-right. &amp;quot;Select widget&amp;quot; menu will appear.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;In the &amp;quot;Select widget&amp;quot; menu, select the &amp;quot;Charts&amp;quot; widget bundle from drop-down
 list and scroll down to &amp;quot;Timeseries - Flot&amp;quot; widget. Click directly on the
@@ -164,8 +152,7 @@ widget. The &amp;quot;Add widget&amp;quot; window will appear:&lt;/p&gt;
 &lt;img alt="Select new widget in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-widget-menu.png" style="width: 640px;" /&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;On the &amp;quot;Data&amp;quot; tab of the &amp;quot;Add widget&amp;quot; window, click on blue &amp;quot;Add&amp;quot; button,
-right below &amp;quot;PLEASE ADD DATASOURCE&amp;quot; text:&lt;/p&gt;
-&lt;img alt="Add new widget in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-widget-window.png" style="width: 640px;" /&gt;
+right below &amp;quot;PLEASE ADD DATASOURCE&amp;quot; text.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;In new data source, select &amp;quot;Entity&amp;quot; in &amp;quot;Type&amp;quot; field and your entity alias
 (created few steps ago) in the &amp;quot;Parameters&amp;quot; field. Lastly, select
@@ -175,8 +162,7 @@ Click &amp;quot;Add&amp;quot; button at the bottom of the window to add widget:&
 &lt;img alt="Widget settings in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-widget-setting.png" style="width: 640px;" /&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;In the dashboard page, click &amp;quot;Apply changes&amp;quot; at the bottom-right of the
-screen:&lt;/p&gt;
-&lt;img alt="Apply settings in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-apply-settings.png" style="width: 640px;" /&gt;
+screen.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p class="first"&gt;With all ThingsBoard settings configured, let's validate telemetry one more
 time. Open your shell, and send some test data, few samples in a row.
@@ -759,6 +745,7 @@ that I've exported. You can import that dashboard in your account, using
 &lt;li&gt;&lt;a class="reference external" href="https://os.mbed.com/docs/v5.8/tutorials/mbed-os-quick-start.html"&gt;Mbed OS quick start guide&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://os.mbed.com/teams/mqtt/"&gt;Mbed OS MQTT page&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://thingsboard.io/docs/getting-started-guides/helloworld/"&gt;ThingsBoard getting started guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://www.youtube.com/channel/UCDb9fsV-YR4JmnipAMGsVAQ/videos"&gt;ThingsBoard YouTube guides channel&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </content><category term="iot"></category><category term="c"></category><category term="c++"></category><category term="mbed"></category><category term="thingsboard"></category><category term="stm32"></category><category term="linux"></category></entry></feed>

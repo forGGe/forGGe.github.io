@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>forGGe's Nexus - guides</title><link>https://forgge.github.io/</link><description>Thoughts on Open Source, Linux, Embedded and System programming</description><lastBuildDate>Sat, 14 Apr 2018 00:00:00 +0300</lastBuildDate><item><title>Using thingsboard.io, STM32 B-L475E-IOT01A IoT kit and ARM Mbed to monitor temperature</title><link>https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html</link><description>&lt;img alt="ThingsBoard, STM32 B-L475E-IOT01A IoT kit and Mbed" src="https://forgge.github.io/images/thingsboard-stm32-mbed-banner.png" /&gt;
+&lt;p&gt;Sampling and visualizing temperature samples is the key usecase for any set
+of IoT tools. If your tools can't do it easily, you should probably trow
+away that tools.&lt;/p&gt;
+&lt;p&gt;In this article I will show you how to use free and open-source frameworks,
+ThingsBoard and Mbed, to collect, send and …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Max</dc:creator><pubDate>Sat, 14 Apr 2018 00:00:00 +0300</pubDate><guid isPermaLink="false">tag:forgge.github.io,2018-04-14:/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html</guid><category>iot</category><category>c</category><category>c++</category><category>mbed</category><category>thingsboard</category><category>stm32</category><category>linux</category></item></channel></rss>

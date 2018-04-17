@@ -55,6 +55,7 @@
     height: 100%;
     padding: 15px;
     margin-right: -40px;
+    font-size: 16px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -427,4 +428,36 @@ span.glyphicon-chevron-down, .collapsed span.glyphicon-chevron-up{
     .affix{
         display: inline;
     }
+}
+
+p {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+}
+
+/* To match pygments style */
+tt.docutils.literal {
+    font-size: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #f0f0f0;
+}
+
+.warning {
+    background-color: #fcf8e3;
+    border-color: #fbeed5;
+    color: #c09853;
+}
+
+.admonition {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.admonition-title {
+    font-weight: bold;
 }

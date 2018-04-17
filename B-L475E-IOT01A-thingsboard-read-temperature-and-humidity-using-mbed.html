@@ -1,0 +1,1173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Max" />
+        <meta name="keywords" content="iot,c,c++,mbed,thingsboard,stm32,linux" />
+        <meta name="description" content="Sampling and visualizing temperature samples is the key usecase for any set of IoT tools. If your tools can&#39;t do it easily, you should probably trow away that tools. In this article I will show you how to use free and open-source frameworks, ThingsBoard and Mbed, to collect, send and …" />
+
+<!-- Open Graph tags -->
+<meta property="og:site_name" content="forGGe's Nexus"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Using thingsboard.io, STM32 B-L475E-IOT01A IoT kit and ARM Mbed to monitor temperature"/>
+    <meta property="og:url" content="https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html"/>
+    <meta property="og:description" content="Sampling and visualizing temperature samples is the key usecase for any set of IoT tools. If your tools can&#39;t do it easily, you should probably trow away that tools. In this article I will show you how to use free and open-source frameworks, ThingsBoard and Mbed, to collect, send and …"/>
+    <meta property="article:published_time" content="2018-04-14" />
+    <meta property="article:section" content="guides" />
+        <meta property="article:tag" content="iot" />
+        <meta property="article:tag" content="c" />
+        <meta property="article:tag" content="c++" />
+        <meta property="article:tag" content="mbed" />
+        <meta property="article:tag" content="thingsboard" />
+        <meta property="article:tag" content="stm32" />
+        <meta property="article:tag" content="linux" />
+        <meta property="article:author" content="Max" />
+
+    <title>Using thingsboard.io, STM32 B-L475E-IOT01A IoT kit and ARM Mbed to monitor temperature - forGGe's Nexus</title>
+
+        <link rel="stylesheet" href="https://forgge.github.io/theme/css/bootstrap.united.min.css" type="text/css"/>
+
+    <link href="https://forgge.github.io/theme/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://forgge.github.io/theme/css/pygments/friendly.css" rel="stylesheet" />
+
+    <link href="https://forgge.github.io/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Social Likes Next buttons CSS: https://github.com/sapegin/social-likes-next/blob/master/Readme.md -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-likes-next/dist/social-likes_flat.css" />
+
+    <!-- Feeds -->
+        <link href="https://forgge.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="forGGe's Nexus ATOM Feed" />
+        <link href="https://forgge.github.io/feeds/all.rss.xml" type="application/rss+xml" rel="alternate"
+              title="forGGe's Nexus RSS Feed" />
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="https://forgge.github.io" title="forGGe's Nexus" class="collapsed">
+            <span class="glyphicon glyphicon-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="https://forgge.github.io/archives.html" title="Recent Articles" class="collapsed">
+            <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+    </li>
+
+                <!-- li class="nav-divider"></li>
+                <li id="share-small">
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-share-small" title="Share" class="collapsed">
+                        <i class="fab fa-share-alt padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share-small" class="collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html" title="Share via Facebook" target="popup">
+                            <i class="fab fa-facebook-square padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html" title="Share via Google+" target="popup">
+                            <i class="fab fa-google-plus padding-small"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" title="Share via Twitter" target="popup">
+                            <i class="fab fa-twitter-square padding-small"></i>
+                        </a>
+                    </li>
+                </ul></li -->
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fas fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="forgge@gmail.com" title="Email"><i class="fas fa-at fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/forGGe" title="GitHub"><i class="fab fa-github fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dword0xcaffdece/" title="LinkedIn"><i class="fab fa-linkedin fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/6859033/max-payne" title="Stack-Overflow"><i class="fab fa-stack-overflow fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://telegram.me/forGGe" title="Telegram"><i class="fab fa-telegram fa-lg padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fas fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+            <ul class="sidebar-nav sidebar-nav-small sidebar-feeds">
+                <li class="nav-divider"></li>
+                <li>
+                    <a class="collapsed" href="https://forgge.github.io/feeds/all.rss.xml"><i class="fas fa-rss-square fa-lg padding-small"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="collapsed" href="https://forgge.github.io/feeds/all.atom.xml"><i class="fas fa-rss-square fa-lg padding-small"></i>
+                    </a>
+                </li>
+                <li class="nav-divider"></li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="https://forgge.github.io/">
+<img src="https://forgge.github.io/images/logo.png" width="200" alt="Sitelogo"/>                     </a>
+                </li>
+                    <li>
+                        <a href="https://forgge.github.io/archives.html">
+                            <span class="glyphicon glyphicon-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                <!-- li class="nav-divider"></li>
+                <li id="share">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-share" title="Share" class="collapsed">
+                        <i class="fab fa-share-alt padding-small"></i>
+                        Share
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-share" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html" target="popup">
+                            <i class="fab fa-facebook-square padding-small"></i>
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/share?url=https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html" target="popup">
+                            <i class="fab fa-google-plus padding-small"></i>
+                            Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" target="popup">
+                            <i class="fab fa-twitter-square padding-small"></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul></li -->
+
+
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fas fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li class="active">
+                        <a href="https://forgge.github.io/category/guides.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            guides
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://forgge.github.io/category/misc.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            misc
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="https://forgge.github.io/category/notes.html">
+                            <i class="fas fa-folder-open padding-small"></i>
+                            notes
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                </ul></li>
+
+
+                <li class="nav-divider"></li>
+                <!-- <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fab fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li> -->
+                <!-- <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse "> -->
+                    <li>
+                        <a href="forgge@gmail.com" title="Email">
+                            <i class="fas fa-at fa-lg padding-small"></i>
+                            Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/forGGe" title="GitHub">
+                            <i class="fab fa-github fa-lg padding-small"></i>
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/dword0xcaffdece/" title="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg padding-small"></i>
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/6859033/max-payne" title="Stack-Overflow">
+                            <i class="fab fa-stack-overflow fa-lg padding-small"></i>
+                            Stack-Overflow
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://telegram.me/forGGe" title="Telegram">
+                            <i class="fab fa-telegram fa-lg padding-small"></i>
+                            Telegram
+                        </a>
+                    </li>
+                <!-- </ul></li> -->
+
+                <li class="nav-divider"></li>
+                <!-- <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fab fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li> -->
+                <!-- <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse "> -->
+                    <li>
+                        <a href="https://forgge.github.io/pages/about-me.html">
+                            <i class="fas fa-file-alt fa-lg padding-small"></i>
+                            About Me
+                        </a>
+                    </li>
+                <!-- </ul></li> -->
+            </ul>
+            <ul class="sidebar-nav sidebar-feeds">
+                <li class="nav-divider"></li>
+                <li>
+                    <a href="https://forgge.github.io/feeds/all.rss.xml"><i class="fas fa-rss-square fa-lg padding-small"></i>
+                        RSS feed
+                    </a>
+                </li>
+                <li>
+                    <a href="https://forgge.github.io/feeds/all.atom.xml"><i class="fas fa-rss-square fa-lg padding-small"></i>
+                        Atom feed
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+<section id="content">
+    <article>
+        <div class="row">
+            <div class="col-lg-9">
+                <header class="page-header">
+                    <h1>
+                        <a href="https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html"
+                           rel="bookmark"
+                           title="Permalink to Using thingsboard.io, STM32 B-L475E-IOT01A IoT kit and ARM Mbed to monitor temperature">
+                            Using thingsboard.io, STM32 B-L475E-IOT01A IoT kit and ARM Mbed to monitor temperature
+                        </a>
+                        <small>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fas fa-calendar-alt padding-small"></i><time datetime="2018-04-14T00:00:00+03:00"> Sat 14 April 2018</time>
+            </span>
+            <span class="category">
+                <i class="fas fa-folder-open padding-small"></i><a href="https://forgge.github.io/category/guides.html">guides</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="https://forgge.github.io/tag/iot.html">iot</a> /                 <a href="https://forgge.github.io/tag/c.html">c</a> /                 <a href="https://forgge.github.io/tag/c.html">c++</a> /                 <a href="https://forgge.github.io/tag/mbed.html">mbed</a> /                 <a href="https://forgge.github.io/tag/thingsboard.html">thingsboard</a> /                 <a href="https://forgge.github.io/tag/stm32.html">stm32</a> /                 <a href="https://forgge.github.io/tag/linux.html">linux</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                        </small>
+                        <div class="padding-small">
+                            <div class="social-likes">
+                                <div data-service="facebook" title="Share link on Facebook"></div>
+                                <div data-service="twitter" title="Share link on Twitter"></div>
+                                <div data-service="plusone" title="Share link on Google+"></div>
+                                <div data-service="vkontakte" title="Share link on Vkontakte"></div>
+                                <div data-service="telegram" title="Share link on Telegram"></div>
+                            </div>
+                        </div>
+                    </h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="entry-content">
+                    <img alt="ThingsBoard, STM32 B-L475E-IOT01A IoT kit and Mbed" src="https://forgge.github.io/images/thingsboard-stm32-mbed-banner.png" />
+<p>Sampling and visualizing temperature samples is the key usecase for any set
+of IoT tools. If your tools can't do it easily, you should probably trow
+away that tools.</p>
+<p>In this article I will show you how to use free and open-source frameworks,
+ThingsBoard and Mbed, to collect, send and visualize data from B-L475E-IOT01A
+board.</p>
+<div class="section" id="overview">
+<h2>Overview</h2>
+<p>The major components are:</p>
+<ul>
+<li><p class="first"><a class="reference external" href="http://www.st.com/en/evaluation-tools/b-l475e-iot01a.html">B-L475E-IOT01A board</a></p>
+<p>The STM32 Discovery kit is based on STM32L4 MCU. It is great choice to get
+all IoT-ready hardware inside single board.</p>
+<p>The IoT kit is augmented with lots of communication chips and sensors.
+For the purpose of this guide, I will use the Inventek ISM43362-M3G-L44
+WiFi module and ST HTS221 humidity and temperature sensor. Both WiFi and
+sensor chips are already placed in the IoT kit, no external connections
+are required.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://www.mbed.com/en/platform/">ARM Mbed IoT Device Platform</a></p>
+<p>I called it Mbed framework. It makes things a lot easier when you
+developing embedded applications.
+Mbed main website says enough about it: &quot;The Arm Mbed IoT Device
+Platform is a fully integrated device management solution. It provides
+the operating system, gateway, device management services, and partner
+ecosystem to speed adoption and deployment of IoT solutions.&quot;.</p>
+</li>
+<li><p class="first"><a class="reference external" href="https://thingsboard.io/">ThingsBoard IoT framework</a></p>
+<p>ThingsBoard is an open-source IoT platform with the out-of-the-box data
+visualization and nice looking UI. It can be either installed locally,
+deployed in a cloud provider or used directly via ThingsBoard demo servers.
+In any case it is completely free to use.</p>
+<p>For demonstrating purposes I will use ThingsBoard Demo instance.
+Obviously, I will use it to receive, store and visualize temperature and
+humidity samples.</p>
+</li>
+</ul>
+<p>In the course of this guide, I assume you are running Ubuntu Linux.
+If you are not, then consider the challenge of executing instructions
+within your favorite OS as your personal homework. Leave me a comment below
+this article in case you have troubles completing the guide elsewhere.</p>
+<p>Also, some commands require <tt class="docutils literal">sudo</tt>. Again, it is up to you to discover
+which should be started with superuser permissions and which should not.</p>
+</div>
+<div class="section" id="tl-dr">
+<h2>TL;DR</h2>
+<p>Final result can be found in the <a class="reference internal" href="#summary">summary</a> section below and the end
+of the page.</p>
+</div>
+<div class="section" id="installing-prerequisites">
+<h2>Installing prerequisites</h2>
+<p>Few packages can be installed directly from Ubuntu repositories, such
+as GCC toolchain or Minicom terminal.</p>
+<div class="highlight"><pre><span></span>$ apt-get install autoconf libusb-1.0-0-dev git gcc-arm-none-eabi \
+        python-pip cmake minicom mercurial mosquitto-clients
+</pre></div>
+</div>
+<div class="section" id="creating-thingsboard-device-and-dashboard">
+<h2>Creating ThingsBoard device and dashboard</h2>
+<p>Before any data will be sent to the IoT platform, you need to create and setup
+the ThingsBoard account. Proceed with steps below to achieve that.</p>
+<ol class="arabic">
+<li><p class="first">Open <a class="reference external" href="http://demo.thingsboard.io">http://demo.thingsboard.io</a> website and register your account by clicking
+on &quot;CREATE AN ACCOUNT&quot; button:</p>
+<img alt="ThingsBoard login page" src="https://forgge.github.io/images/thingsboard-login-page.png" style="width: 640px;" />
+</li>
+<li><p class="first">Fill your contact name, email and password. Proceed withinstructions,
+sent to you via email. When finished, go to <a class="reference external" href="http://demo.thingsboard.io">http://demo.thingsboard.io</a>
+again and login with your new account credentials:</p>
+</li>
+<li><p class="first">In the Home page click on &quot;Devices&quot; button. Device page should open:</p>
+<img alt="Selecting device in ThingsBoard" src="https://forgge.github.io/images/thingsboard-home-page-select-device.png" style="width: 640px;" />
+</li>
+<li><p class="first">In the Device page, click on the red &quot;+&quot; button at right-bottom of the
+screen:</p>
+<img alt="Creating device in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-create-device.png" style="width: 640px;" />
+</li>
+<li><p class="first">Name your device as you like, using screenshot below as an example and
+click on &quot;Add button&quot;:</p>
+<img alt="Adding device info in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-fill-device-info.png" style="width: 640px;" />
+</li>
+<li><p class="first">Your device should now appear in the Device page. Click on your device
+button. Sidebar will be opened with the device settings:</p>
+<img alt="Open device in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-open-device.png" style="width: 640px;" />
+</li>
+</ol>
+<ol class="arabic" id="device-token">
+<li><p class="first">On the device settings sidebar, click &quot;Copy access token&quot; or copy-and-paste
+access token after clicking on &quot;Manage credentials&quot; button:</p>
+<img alt="Copy device credentials in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-copy-device-credentials.png" style="width: 640px;" />
+</li>
+<li><p class="first">After device is created and access token is obtained, it is time to send some
+test data to validate that everything is installed correctly. Open your
+console and execute (<strong>change</strong> <tt class="docutils literal">&lt;YOUR_ACCESS_TOKEN_HERE&gt;</tt> <strong>with actual</strong>
+<strong>token received in the previous step`</strong>):</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This step is extremely important, do not proceed any further
+until you will be sure all works as needed and you can
+send your test data.</p>
+</div>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mosquitto_pub -h demo.thingsboard.io -t <span class="s2">&quot;v1/devices/me/telemetry&quot;</span> -u <span class="s2">&quot;&lt;YOUR_ACCESS_TOKEN_HERE&gt;&quot;</span> -m <span class="s1">&#39;{&quot;temperature&quot;:100, &quot;humidity&quot;:100.0, &quot;active&quot;: false}&#39;</span>
+</pre></div>
+</li>
+<li><p class="first">Now, open the &quot;Telemetry tab&quot; in the device settings. You should able to
+see data you've sent few moments ago:</p>
+<img alt="Check telemetry in ThingsBoard" src="https://forgge.github.io/images/thingsboard-device-page-check-telemetry.png" style="width: 640px;" />
+</li>
+<li><p class="first">After you validated that data indeed sent, you can start with creating
+dashboard. Click on &quot;Dashboards&quot; button on the left side of the screen.
+Dashboard page will be opened:</p>
+<img alt="Open dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-click-on-dashboard.png" style="width: 640px;" />
+</li>
+<li><p class="first">On the Dashboard page, click red &quot;+&quot; button at the right-bottom of the
+screen. Few more buttons will pop-up. Click on &quot;Create new dashboard button&quot;:</p>
+<img alt="Add new STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-new-dashboard.png" style="width: 640px;" />
+</li>
+<li><p class="first">Choose a name for dashboard as you like. I decided to go with &quot;STM32 IoT Kit
+dashboard&quot;. When finish, click &quot;Add&quot; button. Dashboard should appear in the
+Dashboards page:</p>
+<img alt="Create STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-new-dashboard-name.png" style="width: 640px;" />
+</li>
+<li><p class="first">Click on newly created dashboard button. You will be directed to a dashboard
+widget page:</p>
+<img alt="Open STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-click-new-dashboard.png" style="width: 640px;" />
+</li>
+<li><p class="first">Click on red &quot;Edit&quot; button at the right-bottom of the screen:</p>
+<img alt="Edit STM32 dashboard in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-edit-dashboard.png" style="width: 640px;" />
+</li>
+<li><p class="first">Click on &quot;Entity alias&quot; button at the top of the page. &quot;Entity aliases&quot;
+window will appear:</p>
+<img alt="STM32 alias in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-alias-button.png" style="width: 640px;" />
+</li>
+<li><p class="first">In the &quot;Entity alias&quot; window, click blue &quot;Add alias&quot; button. Popup with
+alias details will appear:</p>
+<img alt="STM32 alias in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-alias-submenu-button.png" style="width: 640px;" />
+</li>
+<li><p class="first">Fill new alias details. &quot;Alias name&quot; is required, but can be arbitrary.
+Set &quot;Filter type&quot; to &quot;Single entity&quot;, &quot;Type&quot; must be set to &quot;Device&quot;.
+In the drop-down right after &quot;Type&quot; field, select our IoT kit name.
+That name must match the name of the device we have created previously.
+Click &quot;Add&quot; button:</p>
+<img alt="STM32 alias details in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-alias-details.png" style="width: 640px;" />
+</li>
+<li><p class="first">In the &quot;Entity alias&quot; window, click &quot;Save&quot; button. You will be directed to
+the dashboard window:</p>
+<img alt="Save STM32 alias details in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-save-alias.png" style="width: 640px;" />
+</li>
+<li><p class="first">Your dashboard will be in edit mode after you finish with aliases.
+Click on &quot;Add new widget&quot; label at the center or on red &quot;+&quot; button at
+the bottom-right. &quot;Select widget&quot; menu will appear:</p>
+<img alt="Add new widget in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-click-add-new-widget.png" style="width: 640px;" />
+</li>
+<li><p class="first">In the &quot;Select widget&quot; menu, select the &quot;Charts&quot; widget bundle from drop-down
+list and scroll down to &quot;Timeseries - Flot&quot; widget. Click directly on the
+widget. The &quot;Add widget&quot; window will appear:</p>
+<img alt="Select new widget in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-widget-menu.png" style="width: 640px;" />
+</li>
+<li><p class="first">On the &quot;Data&quot; tab of the &quot;Add widget&quot; window, click on blue &quot;Add&quot; button,
+right below &quot;PLEASE ADD DATASOURCE&quot; text:</p>
+<img alt="Add new widget in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-add-widget-window.png" style="width: 640px;" />
+</li>
+<li><p class="first">In new data source, select &quot;Entity&quot; in &quot;Type&quot; field and your entity alias
+(created few steps ago) in the &quot;Parameters&quot; field. Lastly, select
+&quot;temperature&quot; and &quot;humidity&quot; data in the &quot;Timeseries&quot; right-most field.
+You widget setting now should look like on the screenshot below.
+Click &quot;Add&quot; button at the bottom of the window to add widget:</p>
+<img alt="Widget settings in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-widget-setting.png" style="width: 640px;" />
+</li>
+<li><p class="first">In the dashboard page, click &quot;Apply changes&quot; at the bottom-right of the
+screen:</p>
+<img alt="Apply settings in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-apply-settings.png" style="width: 640px;" />
+</li>
+<li><p class="first">With all ThingsBoard settings configured, let's validate telemetry one more
+time. Open your shell, and send some test data, few samples in a row.
+(<strong>change</strong> <tt class="docutils literal">&lt;YOUR_ACCESS_TOKEN_HERE&gt;</tt> <strong>with actual</strong> <a class="reference internal" href="#device-token">device token</a>
+<strong>received when device was first added to the ThingsBoard</strong>):</p>
+<div class="highlight"><pre><span></span><span class="gp">#</span> Send temperature <span class="m">100</span>
+<span class="gp">$</span> mosquitto_pub -h demo.thingsboard.io -t <span class="s2">&quot;v1/devices/me/telemetry&quot;</span> -u <span class="s2">&quot;&lt;YOUR_ACCESS_TOKEN_HERE&gt;&quot;</span> -m <span class="s1">&#39;{&quot;temperature&quot;:100, &quot;humidity&quot;:100.0, &quot;active&quot;: false}&#39;</span>
+
+<span class="gp">#</span> Send temperature <span class="m">50</span>
+<span class="gp">$</span> mosquitto_pub -h demo.thingsboard.io -t <span class="s2">&quot;v1/devices/me/telemetry&quot;</span> -u <span class="s2">&quot;&lt;YOUR_ACCESS_TOKEN_HERE&gt;&quot;</span> -m <span class="s1">&#39;{&quot;temperature&quot;:50, &quot;humidity&quot;:100.0, &quot;active&quot;: false}&#39;</span>
+
+<span class="gp">#</span> Send temperature <span class="m">10</span>
+<span class="gp">$</span> mosquitto_pub -h demo.thingsboard.io -t <span class="s2">&quot;v1/devices/me/telemetry&quot;</span> -u <span class="s2">&quot;&lt;YOUR_ACCESS_TOKEN_HERE&gt;&quot;</span> -m <span class="s1">&#39;{&quot;temperature&quot;:10, &quot;humidity&quot;:100.0, &quot;active&quot;: false}&#39;</span>
+</pre></div>
+</li>
+<li><p class="first">Open your web-browser again. Now, you should observe nice-looking graph,
+representing the test data:</p>
+<img alt="Check STM32 test temperature in ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-page-graph.png" style="width: 640px;" />
+</li>
+</ol>
+</div>
+<div class="section" id="install-st-link-software">
+<h2>Install ST-link software</h2>
+<p><a class="reference external" href="https://github.com/texane/stlink">ST-Link</a> is used for programming and debugging STM32 MCUs. By default,
+it is not present in Ubuntu, so it must be compiled and installed from source.
+Proceed as follows.</p>
+<ol class="arabic">
+<li><p class="first">Download:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> ~
+<span class="gp">$</span> git clone git://github.com/texane/stlink.git
+<span class="gp">$</span> <span class="nb">cd</span> stlink
+</pre></div>
+</li>
+<li><p class="first">Build:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> stlink
+<span class="gp">$</span> make
+
+<span class="gp">#</span> Some log output is skipped
+
+<span class="go">Scanning dependencies of target usb</span>
+<span class="go">[ 86%] Building C object tests/CMakeFiles/usb.dir/usb.c.o</span>
+<span class="go">[ 90%] Linking C executable usb</span>
+<span class="go">[ 90%] Built target usb</span>
+<span class="go">Scanning dependencies of target flash</span>
+<span class="go">[ 93%] Building C object tests/CMakeFiles/flash.dir/flash.c.o</span>
+<span class="go">[ 96%] Building C object tests/CMakeFiles/flash.dir/__/src/tools/flash_opts.c.o</span>
+<span class="go">[100%] Linking C executable flash</span>
+<span class="go">[100%] Built target flash</span>
+</pre></div>
+</li>
+<li><p class="first">Install:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mkdir /opt/stlink
+<span class="gp">$</span> <span class="nb">cd</span> /opt/stlink
+<span class="gp">$</span> cp ~/stlink/build/Release/st-flash /opt/stlink
+<span class="gp">$</span> cp ~/stlink/build/Release/src/gdbserver/st-util /opt/stlink
+</pre></div>
+</li>
+</ol>
+</div>
+<div class="section" id="setup-mbed-and-test-blinky-code">
+<h2>Setup Mbed and test blinky code</h2>
+<ol class="arabic">
+<li><p class="first">Install <tt class="docutils literal"><span class="pre">mbed-cli</span></tt>, the command line interface for Mbed:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> pip install mbed-cli
+</pre></div>
+</li>
+<li><p class="first">Configure Mbed to use previously installed toolchain:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mbed config -G GCC_ARM_PATH /usr/bin/
+
+<span class="go">[mbed] /usr/bin/ now set as global GCC_ARM_PATH</span>
+</pre></div>
+</li>
+<li><p class="first">Create Mbed-based project:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> ~
+<span class="gp">$</span> mbed new --program thingsboard-l475vg-iot01a
+
+<span class="go">[mbed] Creating new program &quot;thingsboard-l475vg-iot01a&quot; (git)</span>
+<span class="go">[mbed] Adding library &quot;mbed-os&quot; from &quot;https://github.com/ARMmbed/mbed-os&quot; at branch/tag &quot;latest&quot;</span>
+<span class="go">[mbed] Updating reference &quot;mbed-os&quot; -&gt; &quot;https://github.com/ARMmbed/mbed-os/#f9ee4e849f8cbd64f1ec5fdd4ad256585a208360&quot;</span>
+<span class="go">[mbed] Auto-installing missing Python modules...</span>
+</pre></div>
+</li>
+<li><p class="first">Enter new project directory and download rest of Mbed libraries:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">cd</span> thingsboard-l475vg-iot01a
+
+<span class="gp">#</span> MQTT library
+<span class="gp">$</span> mbed add http://os.mbed.com/teams/mqtt/code/MQTT/
+
+<span class="go">[mbed] Adding library &quot;MQTT&quot; from &quot;https://os.mbed.com/teams/mqtt/code/MQTT&quot; at latest revision in the current branch</span>
+<span class="go">[mbed] Adding library &quot;MQTT/FP&quot; from &quot;https://mbed.org/users/sam_grove/code/FP&quot; at rev #3c62ba1807ac</span>
+<span class="go">[mbed] Adding library &quot;MQTT/MQTTPacket&quot; from &quot;https://mbed.org/teams/mqtt/code/MQTTPacket&quot; at rev #aedcaf7984d5</span>
+<span class="go">[mbed] Updating reference &quot;MQTT&quot; -&gt; &quot;https://os.mbed.com/teams/mqtt/code/MQTT/#9cff7b6bbd01&quot;</span>
+
+<span class="gp">#</span> WiFi driver
+<span class="gp">$</span> mbed add https://github.com/ARMmbed/wifi-ism43362/#c342bde7061f99338b8082f2cd39fe70cd7c70dc
+
+<span class="go">[mbed] Adding library &quot;wifi-ism43362&quot; from &quot;https://github.com/ARMmbed/wifi-ism43362&quot; at rev #c342bde7061f</span>
+<span class="go">[mbed] Updating reference &quot;wifi-ism43362&quot; -&gt; &quot;https://github.com/ARMmbed/wifi-ism43362/#c342bde7061f99338b8082f2cd39fe70cd7c70dc&quot;</span>
+
+<span class="gp">#</span> HTS221 sensor driver
+<span class="gp">$</span> mbed add mbed add http://os.mbed.com/teams/ST/code/HTS221/
+
+<span class="go">[mbed] Adding library &quot;HTS221&quot; from &quot;https://os.mbed.com/teams/ST/code/HTS221&quot; at latest revision in the current branch</span>
+<span class="go">[mbed] Adding library &quot;HTS221/ST_INTERFACES&quot; from &quot;https://developer.mbed.org/teams/ST/code/ST_INTERFACES&quot; at rev #d3c9b33b992c</span>
+<span class="go">[mbed] Adding library &quot;HTS221/X_NUCLEO_COMMON&quot; from &quot;https://developer.mbed.org/teams/ST/code/X_NUCLEO_COMMON&quot; at rev #21096473f63e</span>
+<span class="go">[mbed] Updating reference &quot;HTS221&quot; -&gt; &quot;https://os.mbed.com/teams/ST/code/HTS221/#312ee2694a77&quot;</span>
+</pre></div>
+</li>
+<li><p class="first">Create empty <tt class="docutils literal">main.cpp</tt> file and project configuration file, called
+<tt class="docutils literal">mbed_app.json</tt>:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> touch main.cpp
+<span class="gp">$</span> touch mbed_app.json
+</pre></div>
+</li>
+<li><p class="first">Open <tt class="docutils literal">mbed_app.json</tt> file with your favorite editor and placed there
+following JSON code. This JSON file will tell Mbed how to configure
+all project parts, so they can work with our IoT kit.</p>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;macros&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;MBED_CONF_APP_MAIN_STACK_SIZE=6000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;MBED_CONF_APP_THREAD_STACK_SIZE=6000&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;DEVICE_STDIO_MESSAGES=1&quot;</span>
+    <span class="p">],</span>
+    <span class="nt">&quot;config&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;wifi-shield&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;Options are internal, WIFI_IDW0XX1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;internal&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-tx&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;TX pin for serial connection to external device&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;D1&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-rx&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;RX pin for serial connection to external device&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;D0&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-spi_miso&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI-MISO connection to external device&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PC_11&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-spi_mosi&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI-MOSI connection to external device&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PC_12&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-spi_sclk&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI-CLOCK connection to external device&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PC_10&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-spi_nss&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI chip select of external device&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PE_0&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-reset&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;WIFI module reset pin&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PE_8&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-dataready&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;WIFI module data ready pin&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PE_1&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;wifi-wakeup&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;help&quot;</span><span class="p">:</span> <span class="s2">&quot;WIFI module wakeup pin&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;PB_12&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;target_overrides&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;*&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;platform.stdio-baud-rate&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
+            <span class="nt">&quot;platform.stdio-convert-newlines&quot;</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;DISCO_L475VG_IOT1A&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;wifi-spi_miso&quot;</span><span class="p">:</span> <span class="s2">&quot;PC_11&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;wifi-spi_mosi&quot;</span><span class="p">:</span> <span class="s2">&quot;PC_12&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;wifi-spi_sclk&quot;</span><span class="p">:</span> <span class="s2">&quot;PC_10&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;wifi-spi_nss&quot;</span><span class="p">:</span> <span class="s2">&quot;PE_0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;wifi-reset&quot;</span><span class="p">:</span> <span class="s2">&quot;PE_8&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;wifi-dataready&quot;</span><span class="p">:</span> <span class="s2">&quot;PE_1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;wifi-wakeup&quot;</span><span class="p">:</span> <span class="s2">&quot;PB_12&quot;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</li>
+<li><p class="first">Open <tt class="docutils literal">main.cpp</tt> file with your favorite editor and add there
+simple blinky code. We will that code to verify that everything works
+as expected:</p>
+<div class="highlight"><pre><span></span><span class="c1">// main.cpp:</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;mbed.h&quot;</span><span class="cp"></span>
+
+<span class="n">DigitalOut</span> <span class="nf">led1</span><span class="p">(</span><span class="n">LED1</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">while</span> <span class="p">(</span><span class="nb">true</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Blink!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="n">led1</span> <span class="o">=</span> <span class="o">!</span><span class="n">led1</span><span class="p">;</span>
+        <span class="n">wait</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</li>
+<li><p class="first">Compile blinky code:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mbed compile -m DISCO_L475VG_IOT01A -t GCC_ARM
+
+<span class="go">Scan: .</span>
+<span class="go">Scan: env</span>
+<span class="go">Scan: mbed</span>
+<span class="go">Compile [  0.3%]: AnalogIn.cpp</span>
+<span class="go">Compile [  0.5%]: BusIn.cpp</span>
+<span class="go">Compile [  0.8%]: BusInOut.cpp</span>
+<span class="go">Compile [  1.0%]: main.cpp</span>
+
+<span class="gp">#</span> ...
+<span class="gp">#</span> More log output here
+<span class="gp">#</span> ...
+
+<span class="go">Compile [100.0%]: test_env.cpp</span>
+<span class="go">Link: thingsboard-l475vg-iot01a</span>
+<span class="go">Elf2Bin: thingsboard-l475vg-iot01a</span>
+<span class="go">+------------------+-------+-------+------+</span>
+<span class="go">| Module           | .text | .data | .bss |</span>
+<span class="go">+------------------+-------+-------+------+</span>
+<span class="go">| [fill]           |    67 |     0 |   14 |</span>
+<span class="go">| [lib]/c.a        | 24460 |  2204 |   56 |</span>
+<span class="go">| [lib]/gcc.a      |  3752 |     0 |    0 |</span>
+<span class="go">| [lib]/m.a        |    88 |     0 |    0 |</span>
+<span class="go">| [lib]/misc       |   296 |    16 |   28 |</span>
+<span class="go">| main.o           |    95 |     4 |   28 |</span>
+<span class="go">| mbed-os/drivers  |   182 |     4 |  100 |</span>
+<span class="go">| mbed-os/hal      |  1553 |     4 |   68 |</span>
+<span class="go">| mbed-os/platform |  2215 |   256 |  149 |</span>
+<span class="go">| mbed-os/rtos     | 10117 |   168 | 7977 |</span>
+<span class="go">| mbed-os/targets  | 10839 |     8 |  876 |</span>
+<span class="go">| Subtotals        | 53664 |  2664 | 9296 |</span>
+<span class="go">+------------------+-------+-------+------+</span>
+<span class="go">Total Static RAM memory (data + bss): 11960 bytes</span>
+<span class="go">Total Flash memory (text + data): 56328 bytes</span>
+
+<span class="go">Image: ./BUILD/DISCO_L475VG_IOT01A/GCC_ARM/thingsboard-l475vg-iot01a.bin</span>
+</pre></div>
+</li>
+<li><p class="first">Flash L475VG IoT board using <tt class="docutils literal"><span class="pre">st-utils</span></tt>:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> /opt/stlink/st-flash --reset write ./BUILD/DISCO_L475VG_IOT01A/GCC_ARM/thingsboard-l475vg-iot01a.bin  0x08000000
+</pre></div>
+</li>
+<li><p class="first">Take a look on your board. You should see the LED flashing:</p>
+<img alt="STM32 IoT Mbed blink LEDs" src="https://forgge.github.io/images/stm32-iot-kit-blink.gif" />
+</li>
+<li><p class="first">Open <tt class="docutils literal">minicom</tt> to make sure that console works as expected:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> minicom -D /dev/ttyACM0
+</pre></div>
+<p>In the <tt class="docutils literal">minicom</tt> window, you should able to see <tt class="docutils literal">Blink!</tt> message
+emerging every one second:</p>
+<div class="highlight"><pre><span></span>Blink!
+Blink!
+Blink!
+
+# ...
+</pre></div>
+</li>
+<li><p class="first">Optionally, exit <tt class="docutils literal">minicom</tt> by hitting CTRL-A Z</p>
+</li>
+</ol>
+</div>
+<div class="section" id="connecting-to-wifi">
+<h2>Connecting to WiFi</h2>
+<p>When all libraries are in place, it is time to start connecting to the network.</p>
+<ol class="arabic">
+<li><p class="first">Modify your <tt class="docutils literal">main.cpp</tt> as shown below and <strong>do not forget to change</strong>
+<tt class="docutils literal">&lt;YOUR_WIFI_NETWORK_HERE&gt;</tt> <strong>with your WiFi network name and</strong>
+<tt class="docutils literal">&lt;YOUR_WIFI_NETWORK_PASSWORD_HERE&gt;</tt> <strong>with your WiFi password</strong>:</p>
+<div class="highlight"><pre><span></span><span class="c1">// main.cpp</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;mbed.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ISM43362Interface.h&quot;</span><span class="cp"></span>
+
+<span class="c1">// Definitions ---------------------------------------------------------</span>
+
+<span class="c1">// Change it with your WiFi network name</span>
+<span class="cp">#define WIFI_NETWORK_NAME       &quot;&lt;YOUR_WIFI_NETWORK_HERE&gt;&quot;</span>
+<span class="c1">// Change it with your WiFi password name</span>
+<span class="cp">#define WIFI_NETWORK_PASSWORD   &quot;&lt;YOUR_WIFI_NETWORK_PASSWORD_HERE&gt;&quot;</span>
+<span class="cp">#define WIFI_SECURITY           NSAPI_SECURITY_WPA_WPA2</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">ISM43362Interface</span> <span class="n">wifi</span><span class="p">(</span><span class="n">MBED_CONF_APP_WIFI_SPI_MOSI</span><span class="p">,</span>
+            <span class="n">MBED_CONF_APP_WIFI_SPI_MISO</span><span class="p">,</span>
+            <span class="n">MBED_CONF_APP_WIFI_SPI_SCLK</span><span class="p">,</span>
+            <span class="n">MBED_CONF_APP_WIFI_SPI_NSS</span><span class="p">,</span>
+            <span class="n">MBED_CONF_APP_WIFI_RESET</span><span class="p">,</span>
+            <span class="n">MBED_CONF_APP_WIFI_DATAREADY</span><span class="p">,</span>
+            <span class="n">MBED_CONF_APP_WIFI_WAKEUP</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+
+    <span class="c1">// Scanning WiFi networks ------------------------------------------</span>
+
+    <span class="n">WiFiAccessPoint</span> <span class="o">*</span><span class="n">ap</span><span class="p">;</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="n">wifi</span><span class="p">.</span><span class="n">scan</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d networks available.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+
+    <span class="cm">/* Limit number of network arbitrary to 15 */</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">15</span> <span class="o">?</span> <span class="nl">count</span> <span class="p">:</span> <span class="mi">15</span><span class="p">;</span>
+
+    <span class="n">ap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">WiFiAccessPoint</span><span class="p">[</span><span class="n">count</span><span class="p">];</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">wifi</span><span class="p">.</span><span class="n">scan</span><span class="p">(</span><span class="n">ap</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Network: %s RSSI: %hhd</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">ap</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">get_ssid</span><span class="p">(),</span> <span class="n">ap</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">get_rssi</span><span class="p">());</span>
+    <span class="p">}</span>
+
+    <span class="k">delete</span><span class="p">[]</span> <span class="n">ap</span><span class="p">;</span>
+
+    <span class="c1">// Connecting to WiFi network --------------------------------------</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Connecting to %s...</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">WIFI_NETWORK_NAME</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">wifi</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">WIFI_NETWORK_NAME</span><span class="p">,</span> <span class="n">WIFI_NETWORK_PASSWORD</span><span class="p">,</span> <span class="n">WIFI_SECURITY</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">ret</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">Connection error</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Success</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;MAC: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">wifi</span><span class="p">.</span><span class="n">get_mac_address</span><span class="p">());</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;IP: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">wifi</span><span class="p">.</span><span class="n">get_ip_address</span><span class="p">());</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Netmask: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">wifi</span><span class="p">.</span><span class="n">get_netmask</span><span class="p">());</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Gateway: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">wifi</span><span class="p">.</span><span class="n">get_gateway</span><span class="p">());</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;RSSI: %d</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">wifi</span><span class="p">.</span><span class="n">get_rssi</span><span class="p">());</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</li>
+<li><p class="first">Compile and run application:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mbed compile -m DISCO_L475VG_IOT01A -t GCC_ARM
+<span class="gp">$</span> /opt/stlink/st-flash --reset write ./BUILD/DISCO_L475VG_IOT01A/GCC_ARM/thingsboard-l475vg-iot01a.bin  0x08000000
+</pre></div>
+</li>
+<li><p class="first">Check your <tt class="docutils literal">minicom</tt> console:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> minicom -D /dev/ttyACM0
+</pre></div>
+<p>You should able to see something like that:</p>
+<div class="highlight"><pre><span></span>4 networks available.
+Network: BLA RSSI: -96
+Network: cell RSSI: -79
+Network: ASUS RSSI: -43
+
+Connecting to ASUS...
+Success
+
+MAC: C1:7B:51:04:2A:8F
+IP: 192.168.43.160
+Netmask: 255.255.255.0
+Gateway: 192.168.43.1
+RSSI: -43
+</pre></div>
+</li>
+<li><p class="first">Optionally, exit <tt class="docutils literal">minicom</tt> by hitting CTRL-A Z</p>
+</li>
+</ol>
+</div>
+<div class="section" id="connecting-to-thingsboard-via-mqtt">
+<h2>Connecting to ThingsBoard via MQTT</h2>
+<p>Again, open <tt class="docutils literal">main.cpp</tt> file with editor you like and execute following
+instructions:</p>
+<ol class="arabic">
+<li><p class="first">Include MQTT library and required network-related headers to the top of
+the file:</p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;TCPSocket.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;MQTTmbed.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;MQTTClient.h&quot;</span><span class="cp"></span>
+</pre></div>
+</li>
+<li><p class="first">Add some MQTT-related definitions below the include section:</p>
+<div class="highlight"><pre><span></span><span class="cp">#define MQTT_HOST               &quot;demo.thingsboard.io&quot;</span>
+<span class="cp">#define MQTT_PORT               1883</span>
+<span class="cp">#define MQTT_TOPIC              &quot;v1/devices/me/telemetry&quot;</span>
+</pre></div>
+</li>
+<li><p class="first">Add network class below include section. It must be present to allow
+MQTT library use Mbed network interfaces:</p>
+<div class="highlight"><pre><span></span><span class="c1">// Network adapter for Paho MQTT library -------------------------------</span>
+
+<span class="k">class</span> <span class="nc">MQTTNetwork</span>
+<span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+    <span class="n">MQTTNetwork</span><span class="p">(</span><span class="n">NetworkInterface</span><span class="o">*</span> <span class="n">aNetwork</span><span class="p">)</span> <span class="o">:</span> <span class="n">network</span><span class="p">(</span><span class="n">aNetwork</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">socket</span> <span class="o">=</span> <span class="k">new</span> <span class="n">TCPSocket</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="o">~</span><span class="n">MQTTNetwork</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">delete</span> <span class="n">socket</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">read</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">socket</span><span class="o">-&gt;</span><span class="n">recv</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">write</span><span class="p">(</span><span class="kt">unsigned</span> <span class="kt">char</span><span class="o">*</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">len</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">socket</span><span class="o">-&gt;</span><span class="n">send</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">connect</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">hostname</span><span class="p">,</span> <span class="kt">int</span> <span class="n">port</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">socket</span><span class="o">-&gt;</span><span class="n">open</span><span class="p">(</span><span class="n">network</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">socket</span><span class="o">-&gt;</span><span class="n">connect</span><span class="p">(</span><span class="n">hostname</span><span class="p">,</span> <span class="n">port</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">disconnect</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">socket</span><span class="o">-&gt;</span><span class="n">close</span><span class="p">();</span>
+    <span class="p">}</span>
+
+<span class="k">private</span><span class="o">:</span>
+    <span class="n">NetworkInterface</span><span class="o">*</span> <span class="n">network</span><span class="p">;</span>
+    <span class="n">TCPSocket</span><span class="o">*</span> <span class="n">socket</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></div>
+</li>
+<li><p class="first">Add MQTT code at the end of <tt class="docutils literal">main()</tt> function, and <strong>do not forget to change</strong>
+<tt class="docutils literal">&lt;YOUR_ACCESS_TOKEN_HERE&gt;</tt> <strong>with your ThingsBoard</strong> <a class="reference internal" href="#device-token">device token</a>!</p>
+<div class="highlight"><pre><span></span><span class="c1">// Connect to ThingsBoard ----------------------------------------------</span>
+
+<span class="n">MQTTNetwork</span> <span class="nf">network</span><span class="p">(</span><span class="o">&amp;</span><span class="n">wifi</span><span class="p">);</span>
+<span class="n">MQTT</span><span class="o">::</span><span class="n">Client</span><span class="o">&lt;</span><span class="n">MQTTNetwork</span><span class="p">,</span> <span class="n">Countdown</span><span class="o">&gt;</span> <span class="n">client</span><span class="p">(</span><span class="n">network</span><span class="p">);</span>
+
+<span class="kt">char</span> <span class="n">assess_token</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;&lt;YOUR_ACCESS_TOKEN_HERE&gt;&quot;</span><span class="p">;</span>
+
+<span class="n">MQTTPacket_connectData</span> <span class="n">conn_data</span> <span class="o">=</span> <span class="n">MQTTPacket_connectData_initializer</span><span class="p">;</span>
+<span class="n">conn_data</span><span class="p">.</span><span class="n">username</span><span class="p">.</span><span class="n">cstring</span> <span class="o">=</span> <span class="n">assess_token</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">network</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">MQTT_HOST</span><span class="p">,</span> <span class="n">MQTT_PORT</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;failed to connect to &quot;</span> <span class="n">MQTT_HOST</span>  <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">connect</span><span class="p">(</span><span class="n">conn_data</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;failed to send MQTT connect message</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;successfully connect!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+
+<span class="n">client</span><span class="p">.</span><span class="n">disconnect</span><span class="p">();</span>
+<span class="n">wifi</span><span class="p">.</span><span class="n">disconnect</span><span class="p">();</span>
+
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">done</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</pre></div>
+</li>
+<li><p class="first">Compile and run application:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mbed compile -m DISCO_L475VG_IOT01A -t GCC_ARM
+<span class="gp">$</span> /opt/stlink/st-flash --reset write ./BUILD/DISCO_L475VG_IOT01A/GCC_ARM/thingsboard-l475vg-iot01a.bin  0x08000000
+</pre></div>
+</li>
+<li><p class="first">Check your <tt class="docutils literal">minicom</tt> console:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> minicom -D /dev/ttyACM0
+</pre></div>
+<p>You should able to see something like that:</p>
+<div class="highlight"><pre><span></span>4 networks available.
+Network: BLA RSSI: -96
+Network: cell RSSI: -79
+Network: ASUS RSSI: -43
+
+Connecting to ASUS...
+Success
+
+MAC: C1:7B:51:04:2A:8F
+IP: 192.168.43.160
+Netmask: 255.255.255.0
+Gateway: 192.168.43.1
+RSSI: -43
+
+successfully connect!
+
+done
+</pre></div>
+</li>
+<li><p class="first">Optionally, exit <tt class="docutils literal">minicom</tt> by hitting CTRL-A Z</p>
+</li>
+</ol>
+</div>
+<div class="section" id="sampling-hts221-sensor-and-sending-data-to-thingsboard">
+<h2>Sampling HTS221 sensor and sending data to ThingsBoard</h2>
+<p>Finally, add some code to work with HTS221:</p>
+<ol class="arabic">
+<li><p class="first">Include HTS221 sensor driver in the include section:</p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;HTS221Sensor.h&quot;</span><span class="cp"></span>
+</pre></div>
+</li>
+<li><p class="first">Add initialization and sampling code below
+<tt class="docutils literal"><span class="pre">printf(&quot;successfully</span> <span class="pre">connect!\n&quot;);</span></tt> line. Temperature and humidity will
+be sampled every 5 seconds (see <tt class="docutils literal">wait_ms()</tt> call):</p>
+<div class="highlight"><pre><span></span><span class="c1">// Initialize sensors --------------------------------------------------</span>
+
+<span class="kt">uint8_t</span> <span class="n">id</span><span class="p">;</span>
+<span class="n">DevI2C</span> <span class="nf">i2c_2</span><span class="p">(</span><span class="n">PB_11</span><span class="p">,</span> <span class="n">PB_10</span><span class="p">);</span>
+<span class="n">HTS221Sensor</span> <span class="nf">hum_temp</span><span class="p">(</span><span class="o">&amp;</span><span class="n">i2c_2</span><span class="p">);</span>
+
+<span class="n">hum_temp</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+<span class="n">hum_temp</span><span class="p">.</span><span class="n">enable</span><span class="p">();</span>
+<span class="n">hum_temp</span><span class="p">.</span><span class="n">read_id</span><span class="p">(</span><span class="o">&amp;</span><span class="n">id</span><span class="p">);</span>
+<span class="n">printf</span><span class="p">(</span><span class="s">&quot;HTS221  humidity &amp; temperature sensor = 0x%X</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">id</span><span class="p">);</span>
+
+<span class="c1">// Get data from sensors -----------------------------------------------</span>
+
+<span class="k">for</span> <span class="p">(;;)</span> <span class="p">{</span>
+    <span class="kt">float</span> <span class="n">temp</span><span class="p">,</span> <span class="n">humid</span><span class="p">;</span>
+
+    <span class="n">hum_temp</span><span class="p">.</span><span class="n">get_temperature</span><span class="p">(</span><span class="o">&amp;</span><span class="n">temp</span><span class="p">);</span>
+    <span class="n">hum_temp</span><span class="p">.</span><span class="n">get_humidity</span><span class="p">(</span><span class="o">&amp;</span><span class="n">humid</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;HTS221:  [temp] %.2f C, [hum]   %.2f%%</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">temp</span><span class="p">,</span> <span class="n">humid</span><span class="p">);</span>
+
+    <span class="kt">char</span> <span class="n">msg</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">snprintf</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">msg</span><span class="p">),</span>
+        <span class="s">&quot;{</span><span class="se">\&quot;</span><span class="s">temperature</span><span class="se">\&quot;</span><span class="s">:%f, </span><span class="se">\&quot;</span><span class="s">humidity</span><span class="se">\&quot;</span><span class="s">:%f, </span><span class="se">\&quot;</span><span class="s">active</span><span class="se">\&quot;</span><span class="s">: false}&quot;</span><span class="p">,</span>
+        <span class="n">temp</span><span class="p">,</span> <span class="n">humid</span><span class="p">);</span>
+
+    <span class="kt">void</span> <span class="o">*</span><span class="n">payload</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+    <span class="kt">size_t</span> <span class="n">payload_len</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;publish to: %s %d %s</span><span class="se">\r\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">MQTT_HOST</span><span class="p">,</span> <span class="n">MQTT_PORT</span><span class="p">,</span> <span class="n">MQTT_TOPIC</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">client</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">MQTT_TOPIC</span><span class="p">,</span> <span class="n">payload</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&quot;failed to publish MQTT message&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="n">wait_ms</span><span class="p">(</span><span class="mi">5000</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</li>
+<li><p class="first">Compile and run application:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> mbed compile -m DISCO_L475VG_IOT01A -t GCC_ARM
+<span class="gp">$</span> /opt/stlink/st-flash --reset write ./BUILD/DISCO_L475VG_IOT01A/GCC_ARM/thingsboard-l475vg-iot01a.bin  0x08000000
+</pre></div>
+</li>
+<li><p class="first">Check your <tt class="docutils literal">minicom</tt> console:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> minicom -D /dev/ttyACM0
+</pre></div>
+<p>You should able to see data samples:</p>
+<div class="highlight"><pre><span></span># Network connection logs are skipped for clarity
+
+successfully connect!
+
+HTS221  humidity &amp; temperature sensor = 0xBC
+HTS221:  [temp] 28.20 C, [hum]   36.20%
+publish to: demo.thingsboard.io 1883 v1/devices/me/telemetry
+HTS221:  [temp] 28.20 C, [hum]   36.10%
+publish to: demo.thingsboard.io 1883 v1/devices/me/telemetry
+HTS221:  [temp] 28.20 C, [hum]   36.20%
+publish to: demo.thingsboard.io 1883 v1/devices/me/telemetry
+HTS221:  [temp] 28.20 C, [hum]   36.20%
+publish to: demo.thingsboard.io 1883 v1/devices/me/telemetry
+HTS221:  [temp] 28.30 C, [hum]   36.20%
+publish to: demo.thingsboard.io 1883 v1/devices/me/telemetry
+</pre></div>
+</li>
+<li><p class="first">Open your dashboard in <a class="reference external" href="http://demo.thingsboard.io">http://demo.thingsboard.io</a>, and check that
+data indeed delivered, every five second:</p>
+<img alt="STM32 IoT Mbed sending temperature to the ThingsBoard" src="https://forgge.github.io/images/thingsboard-dashboard-data-animation.gif" style="width: 640px;" />
+</li>
+</ol>
+</div>
+<div class="section" id="summary">
+<h2>Summary</h2>
+<p>For everyone who reached here: I salute you! Now you have couple more awesome
+tools and tricks in your IoT toolbox.</p>
+<p>If something gone wrong, or you just want to have a code to compare with,
+I have uploaded whole <a class="reference external" href="https://gist.github.com/forGGe/24a1f7f0c8549004d41e9a6aa904d38c">ThingsBoard B-L475E-IOT01A code</a> to GitHub Gists.</p>
+<p>Among files in Gist, there is the <a class="reference external" href="https://gist.github.com/forGGe/24a1f7f0c8549004d41e9a6aa904d38c#file-stm32_iot_kit_dashboard-json">ThingsBoard dashboard for B-L475E-IOT01A</a>
+that I've exported. You can import that dashboard in your account, using
+<a class="reference external" href="https://thingsboard.io/docs/user-guide/ui/dashboards/#dashboard-import">dashboard importing feature</a>.</p>
+<p>Happy IoT'ing!</p>
+</div>
+<div class="section" id="additional-references">
+<h2>Additional references</h2>
+<ul class="simple">
+<li><a class="reference external" href="https://os.mbed.com/platforms/ST-Discovery-L475E-IOT01A/">Examples for STM32 B-L475E-IOTA board</a>.</li>
+<li><a class="reference external" href="https://os.mbed.com/docs/v5.8/tutorials/mbed-os-quick-start.html">Mbed OS quick start guide</a>.</li>
+<li><a class="reference external" href="https://os.mbed.com/teams/mqtt/">Mbed OS MQTT page</a>.</li>
+<li><a class="reference external" href="https://thingsboard.io/docs/getting-started-guides/helloworld/">ThingsBoard getting started guide</a></li>
+</ul>
+</div>
+
+                </div>
+                <footer class="text-right">
+                    <p>- Max</p>
+                </footer>
+    <section id="comments" class="comments ">
+        <hr/>
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+            </div>
+        </div>
+    </article>
+</section>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                    &copy; 2018 Max
+            </small></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <a href="http://topofblogs.com"><img src="http://stats.topofblogs.com/send/214916" alt="Top  blogs" border="0" /></a>
+            <a href="http://www.blogrollcenter.com"><img src="http://www.blogrollcenter.com/banner/programming/a1/forGGe.gif" alt="BlogrollCenter.Com" border="0" /></a>
+            <a href="https://www.ontoplist.com/blogs/forgge-s-nexus_5ab7e310b34e2/" target="_blank"><img src="https://www.ontoplist.com/images/ontoplist31.png?id=5ab7e310b34e2" alt="forGGes Nexus - Blog Directory OnToplist.com" border="0"></a>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="https://forgge.github.io/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://forgge.github.io/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="https://forgge.github.io/theme/js/pelican_twitchy.min.js"></script>
+    <!-- Social Likes Next buttons: https://github.com/sapegin/social-likes-next/blob/master/Readme.md -->
+    <script src="https://cdn.jsdelivr.net/npm/social-likes-next/dist/social-likes.min.js"></script>
+
+    <!-- Google Analytics Universal -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-106363109-1', '');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics Universal Code -->
+
+<!-- disqus -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'forgge'; // required: replace example with your forum shortname
+
+            var disqus_identifier = 'B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed';
+        var disqus_url = 'https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html';
+
+    var disqus_config = function () {
+        this.language = "en";
+    };
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<!-- /disqus -->
+</body>
+</html>

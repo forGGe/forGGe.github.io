@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://forgge.github.io/</loc>
-<lastmod>2018-03-26T16:08:58-00:00</lastmod>
+<lastmod>2018-04-17T22:32:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://forgge.github.io/archives.html</loc>
-<lastmod>2018-03-26T16:08:58-00:00</lastmod>
+<lastmod>2018-04-17T22:32:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://forgge.github.io/tags.html</loc>
-<lastmod>2018-03-26T16:08:58-00:00</lastmod>
+<lastmod>2018-04-17T22:32:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://forgge.github.io/categories.html</loc>
-<lastmod>2018-03-26T16:08:58-00:00</lastmod>
+<lastmod>2018-04-17T22:32:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://forgge.github.io/pages/about-me.html</loc>
 <lastmod>2018-03-26T13:43:42+03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://forgge.github.io/B-L475E-IOT01A-thingsboard-read-temperature-and-humidity-using-mbed.html</loc>
+<lastmod>2018-04-14T00:00:00+03:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -53,6 +60,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://forgge.github.io/category/guides.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://forgge.github.io/category/misc.html</loc>
 <lastmod>2018-03-24T00:00:00+02:02</lastmod>
 <changefreq>daily</changefreq>
@@ -67,6 +81,48 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://forgge.github.io/tag/iot.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://forgge.github.io/tag/c.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://forgge.github.io/tag/mbed.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://forgge.github.io/tag/thingsboard.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://forgge.github.io/tag/stm32.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://forgge.github.io/tag/linux.html</loc>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://forgge.github.io/tag/gcc.html</loc>
 <lastmod>2018-03-26T00:00:00+02:02</lastmod>
 <changefreq>daily</changefreq>
@@ -74,15 +130,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://forgge.github.io/tag/c.html</loc>
-<lastmod>2018-03-26T00:00:00+02:02</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
 <loc>https://forgge.github.io/author/max.html</loc>
-<lastmod>2018-03-26T00:00:00+02:02</lastmod>
+<lastmod>2018-04-14T00:00:00+02:02</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

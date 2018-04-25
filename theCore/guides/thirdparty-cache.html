@@ -189,30 +189,28 @@ build dependencies will be stored.</p>
 <div class="section" id="using-environment-variables">
 <h2>Using environment variables<a class="headerlink" href="#using-environment-variables" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">Set variables</p>
-<p><code class="docutils literal"><span class="pre">`</span>
-<span class="pre">export</span> <span class="pre">THECORE_THIRDPARTY_DIR=~/.thecore_thirdparty</span>
-<span class="pre">#</span> <span class="pre">Note</span> <span class="pre">that</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">build</span> <span class="pre">applications</span> <span class="pre">concurrently,</span> <span class="pre">you</span> <span class="pre">need</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR</span>
-<span class="pre">#</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">application.</span>
-<span class="pre">export</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR=~/.thecore_thirdparty_worktree</span>
-<span class="pre">`</span></code></p>
+<li><p class="first">Set variables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">THECORE_THIRDPARTY_DIR</span><span class="o">=~/.</span><span class="n">thecore_thirdparty</span>
+<span class="c1"># Note that if you build applications concurrently, you need THECORE_BUILD_THIRDPARTY_DIR</span>
+<span class="c1"># to be unique for every application.</span>
+<span class="n">export</span> <span class="n">THECORE_BUILD_THIRDPARTY_DIR</span><span class="o">=~/.</span><span class="n">thecore_thirdparty_worktree</span>
+</pre></div>
+</div>
 </li>
-</ol>
-<ol class="arabic">
-<li><p class="first">Run CMake as usual</p>
-<p><code class="docutils literal"><span class="pre">`</span>
-<span class="pre">cmake</span> <span class="pre">/path/to/application</span>
-<span class="pre">`</span></code></p>
+<li><p class="first">Run CMake as usual:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">application</span>
+</pre></div>
+</div>
 </li>
 </ol>
 </div>
 <div class="section" id="using-cmake-command-line">
 <h2>Using CMake command line<a class="headerlink" href="#using-cmake-command-line" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal"><span class="pre">`</span>
-<span class="pre">#</span> <span class="pre">Note</span> <span class="pre">that</span> <span class="pre">if</span> <span class="pre">you</span> <span class="pre">build</span> <span class="pre">applications</span> <span class="pre">concurrently,</span> <span class="pre">you</span> <span class="pre">need</span> <span class="pre">THECORE_BUILD_THIRDPARTY_DIR</span>
-<span class="pre">#</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">every</span> <span class="pre">application.</span>
-<span class="pre">cmake</span> <span class="pre">-DTHECORE_THIRDPARTY_DIR=~/.thecore_thirdparty</span> <span class="pre">-DTHECORE_BUILD_THIRDPARTY_DIR=~/.thecore_thirdparty_worktree</span> <span class="pre">/path/to/application</span>
-<span class="pre">`</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Note that if you build applications concurrently, you need THECORE_BUILD_THIRDPARTY_DIR</span>
+<span class="c1"># to be unique for every application.</span>
+<span class="n">cmake</span> <span class="o">-</span><span class="n">DTHECORE_THIRDPARTY_DIR</span><span class="o">=~/.</span><span class="n">thecore_thirdparty</span> <span class="o">-</span><span class="n">DTHECORE_BUILD_THIRDPARTY_DIR</span><span class="o">=~/.</span><span class="n">thecore_thirdparty_worktree</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">application</span>
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -8,6 +8,5 @@ var searchData=
   ['console_5fpipe_2ehpp',['console_pipe.hpp',['../console__pipe_8hpp.html',1,'']]],
   ['cs43l22_2ehpp',['cs43l22.hpp',['../cs43l22_8hpp.html',1,'']]],
   ['irq_2ehpp',['irq.hpp',['../common_2export_2common_2irq_8hpp.html',1,'']]],
-  ['main_2ecpp',['main.cpp',['../cs43l22__audio_2main_8cpp.html',1,'']]],
   ['spi_2ehpp',['spi.hpp',['../common_2export_2common_2spi_8hpp.html',1,'']]]
 ];

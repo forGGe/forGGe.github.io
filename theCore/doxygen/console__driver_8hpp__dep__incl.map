@@ -1,19 +1,18 @@
 <map id="console_driver.hpp" name="console_driver.hpp">
-<area shape="rect" id="node2" href="$iostream_8hpp.html" title="iostream.hpp" alt="" coords="691,80,799,107"/>
-<area shape="rect" id="node3" href="$cs43l22__audio_2main_8cpp.html" title="CS43l22 codec usage example. " alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node4" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="112,155,195,181"/>
-<area shape="rect" id="node5" href="$host__hello_2main_8cpp.html" title="main.cpp" alt="" coords="219,155,301,181"/>
-<area shape="rect" id="node6" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="325,155,408,181"/>
-<area shape="rect" id="node7" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="432,155,515,181"/>
-<area shape="rect" id="node8" href="$tm4c__fatfs_2main_8cpp.html" title="main.cpp" alt="" coords="539,155,621,181"/>
-<area shape="rect" id="node9" href="$tm4c__led_2main_8cpp.html" title="main.cpp" alt="" coords="645,155,728,181"/>
-<area shape="rect" id="node10" href="$streams_8cpp.html" title="Main iostream module. " alt="" coords="753,155,855,181"/>
-<area shape="rect" id="node11" href="$console__integrity_8cpp.html" title="console_integrity.cpp" alt="" coords="879,155,1038,181"/>
-<area shape="rect" id="node12" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="1062,155,1127,181"/>
-<area shape="rect" id="node13" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="1152,155,1261,181"/>
-<area shape="rect" id="node14" href="$streams__bat_2case_8cpp.html" title="case.cpp" alt="" coords="1286,155,1365,181"/>
-<area shape="rect" id="node15" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1389,155,1473,181"/>
-<area shape="rect" id="node18" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="1497,155,1559,181"/>
-<area shape="rect" id="node16" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="1325,229,1451,256"/>
-<area shape="rect" id="node17" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="1475,229,1581,256"/>
+<area shape="rect" id="node2" href="$iostream_8hpp.html" title="iostream.hpp" alt="" coords="643,80,751,107"/>
+<area shape="rect" id="node3" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="$host__hello_2main_8cpp.html" title="main.cpp" alt="" coords="112,155,195,181"/>
+<area shape="rect" id="node5" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="219,155,301,181"/>
+<area shape="rect" id="node6" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="325,155,408,181"/>
+<area shape="rect" id="node7" href="$tm4c__fatfs_2main_8cpp.html" title="main.cpp" alt="" coords="432,155,515,181"/>
+<area shape="rect" id="node8" href="$tm4c__led_2main_8cpp.html" title="main.cpp" alt="" coords="539,155,621,181"/>
+<area shape="rect" id="node9" href="$streams_8cpp.html" title="Main iostream module. " alt="" coords="646,155,749,181"/>
+<area shape="rect" id="node10" href="$console__integrity_8cpp.html" title="console_integrity.cpp" alt="" coords="773,155,931,181"/>
+<area shape="rect" id="node11" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="955,155,1021,181"/>
+<area shape="rect" id="node12" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="1045,155,1155,181"/>
+<area shape="rect" id="node13" href="$streams__bat_2case_8cpp.html" title="case.cpp" alt="" coords="1179,155,1258,181"/>
+<area shape="rect" id="node14" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1282,155,1366,181"/>
+<area shape="rect" id="node17" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="1390,155,1453,181"/>
+<area shape="rect" id="node15" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="1218,229,1345,256"/>
+<area shape="rect" id="node16" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="1369,229,1474,256"/>
 </map>

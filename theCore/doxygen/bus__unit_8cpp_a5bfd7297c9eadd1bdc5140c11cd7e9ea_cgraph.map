@@ -6,7 +6,7 @@
 <area shape="rect" id="node22" href="$classecl_1_1generic__bus.html#a0076b1fb7cd7e434a91cdca47542a4b1" title="De&#45;inits a bus. " alt="" coords="165,360,337,387"/>
 <area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="422,5,525,32"/>
 <area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="411,56,535,83"/>
-<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="430,107,517,133"/>
+<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="board_init" alt="" coords="430,107,517,133"/>
 <area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="395,157,551,184"/>
 <area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="645,19,699,45"/>
 <area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="631,69,713,96"/>

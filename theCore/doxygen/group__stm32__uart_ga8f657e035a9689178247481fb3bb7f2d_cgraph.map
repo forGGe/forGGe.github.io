@@ -1,6 +1,4 @@
 <map id="ecl::usart_bus::disable_listen_mode" name="ecl::usart_bus::disable_listen_mode">
-<area shape="rect" id="node2" href="$cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed" title="Handles events from codec. " alt="" coords="226,5,341,32"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="230,56,337,83"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="220,107,347,133"/>
-<area shape="rect" id="node3" href="$cs43l22__audio_2main_8cpp.html#ab0529a1d4a9be236d468d16a260dfdc5" title="Creates stereo channel in the outgoing buffer from the mono channel. " alt="" coords="395,5,560,32"/>
+<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="230,5,337,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="220,56,347,83"/>
 </map>

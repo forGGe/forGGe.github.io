@@ -131,7 +131,6 @@ var files =
       [ "list_iter", "classecl_1_1list__iter.html", "classecl_1_1list__iter" ]
     ] ],
     [ "list_unit.cpp", "list__unit_8cpp.html", "list__unit_8cpp" ],
-    [ "cs43l22_audio/main.cpp", "cs43l22__audio_2main_8cpp.html", "cs43l22__audio_2main_8cpp" ],
     [ "hm10/main.cpp", "hm10_2main_8cpp.html", "hm10_2main_8cpp" ],
     [ "host_hello/main.cpp", "host__hello_2main_8cpp.html", "host__hello_2main_8cpp" ],
     [ "htu21d/main.cpp", "htu21d_2main_8cpp.html", "htu21d_2main_8cpp" ],

@@ -9,7 +9,6 @@ var searchData=
   ['cerr_5fobj_5fbuf',['cerr_obj_buf',['../namespaceecl.html#ad38e568695f5a435dab7f8854f0f9b8f',1,'ecl']]],
   ['cfsr',['CFSR',['../structSCB__Type.html#a2f94bf549b16fdeb172352e22309e3c4',1,'SCB_Type']]],
   ['channel',['channel',['../structecl_1_1dma__wrap.html#a7d4c52235eaff0b888a751350649dcec',1,'ecl::dma_wrap']]],
-  ['channels_5fout',['channels_out',['../cs43l22__audio_2main_8cpp.html#a062f4ed1b8e4f10048a2e9ae8ccd73a3',1,'main.cpp']]],
   ['cin',['cin',['../namespaceecl.html#a28140eddee9d8cdf386a886adfc990c9',1,'ecl']]],
   ['cin_5fobj_5fbuf',['cin_obj_buf',['../namespaceecl.html#ace400e486eb9bd5802e0ec6fc8477262',1,'ecl']]],
   ['comp0',['COMP0',['../structDWT__Type.html#a61c2965af5bc0643f9af65620b0e67c9',1,'DWT_Type']]],

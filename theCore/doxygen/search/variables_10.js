@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['samples',['samples',['../cs43l22__audio_2main_8cpp.html#ae5b6f14edaa87ae2c86d9e5950ac4708',1,'main.cpp']]],
-  ['samples_5fin',['samples_in',['../cs43l22__audio_2main_8cpp.html#ab0f46506024e60d7031a3b145f74fb91',1,'main.cpp']]],
-  ['samples_5fleft',['samples_left',['../cs43l22__audio_2main_8cpp.html#a9dae5000996b8ae459a100c19dc8e423',1,'main.cpp']]],
-  ['samples_5fout',['samples_out',['../cs43l22__audio_2main_8cpp.html#ac24c889a31b3f3e8d5257774e432574b',1,'main.cpp']]],
-  ['samples_5fout_5fhalf',['samples_out_half',['../cs43l22__audio_2main_8cpp.html#a2339d55b36643b42b770defd48022f69',1,'main.cpp']]],
   ['scr',['SCR',['../structSCB__Type.html#abfad14e7b4534d73d329819625d77a16',1,'SCB_Type']]],
   ['sem',['sem',['../structtest__arg.html#ab49e1b08f5d810cc85d4e0270d9d33c6',1,'test_arg']]],
   ['send_5fresp',['send_resp',['../structecl_1_1sdspi__state.html#a6dfa34fad17f07429a02f2eb39d1ed5f',1,'ecl::sdspi_state']]],

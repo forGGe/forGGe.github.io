@@ -53,7 +53,6 @@ var searchData=
   ['errno',['errno',['../stubs_8cpp.html#ad65a8842cc674e3ddf69355898c0ecbf',1,'stubs.cpp']]],
   ['event',['event',['../classecl_1_1platform__console.html#a975a1274557c1deb42817510f8b1d81d',1,'ecl::platform_console::event()'],['../classecl_1_1uart__bus.html#a6f540eb5012d739912c0972b0da94cd4',1,'ecl::uart_bus::event()'],['../classecl_1_1skel_1_1spi.html#a6af7941cfc5a608d5e8e749573053daf',1,'ecl::skel::spi::event()'],['../classecl_1_1i2c__bus.html#a15af719733435df1fe6c66dedf1f04ad',1,'ecl::i2c_bus::event()'],['../classecl_1_1spi__i2s__bus.html#a4a5fb67811371f52a35087e62d805e9f',1,'ecl::spi_i2s_bus::event()'],['../classecl_1_1usart__bus.html#a95692ed91771870c7b6580929f75f7ca',1,'ecl::usart_bus::event()'],['../classecl_1_1spi.html#ac41d91f520dd0edfc2546037b6df56e2',1,'ecl::spi::event()']]],
   ['event_5fcnt',['event_cnt',['../structtmr__cb.html#abf047f047281a8ed4b9ee914b6b39d11',1,'tmr_cb']]],
-  ['event_5fhandler',['event_handler',['../cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed',1,'main.cpp']]],
   ['events',['events',['../namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef',1,'ecl::systmr']]],
   ['exactly_5fblock',['exactly_block',['../structexactly__block.html',1,'']]],
   ['exccnt',['EXCCNT',['../structDWT__Type.html#a9fe20c16c5167ca61486caf6832686d1',1,'DWT_Type']]],

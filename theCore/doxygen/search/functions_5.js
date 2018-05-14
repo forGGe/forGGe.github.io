@@ -35,7 +35,6 @@ var searchData=
   ['err_5funsup_5fcard',['err_unsup_card',['../structecl_1_1sdspi__state.html#a507a88016a25f37503a0903970b9c0ea',1,'ecl::sdspi_state']]],
   ['err_5fvoltage_5frange',['err_voltage_range',['../structecl_1_1sdspi__state.html#a245e0115290bd93ed6e0a69ba0e1e0d5',1,'ecl::sdspi_state']]],
   ['err_5fwrite',['err_write',['../structecl_1_1sdspi__state.html#a9db6ca2eed917fa5286ada3219b201a9',1,'ecl::sdspi_state']]],
-  ['event_5fhandler',['event_handler',['../cs43l22__audio_2main_8cpp.html#acbfc79781ebb98f116ae26ec0befe2ed',1,'main.cpp']]],
   ['events',['events',['../namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef',1,'ecl::systmr']]],
   ['expired',['expired',['../classecl_1_1weak__ptr.html#a0db449f53375be606605f87eff2a5cee',1,'ecl::weak_ptr']]],
   ['exti_5fmanager',['exti_manager',['../classecl_1_1exti__manager.html#a28b5fe0f254dc20ff3ddbfa8180376e1',1,'ecl::exti_manager::exti_manager()=delete'],['../classecl_1_1exti__manager.html#a28b5fe0f254dc20ff3ddbfa8180376e1',1,'ecl::exti_manager::exti_manager()=delete']]],

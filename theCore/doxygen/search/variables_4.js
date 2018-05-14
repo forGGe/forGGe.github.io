@@ -1,7 +1,6 @@
 var searchData=
 [
   ['data',['data',['../structexactly__block.html#a0dc9d8d443759efc648a8974326de3d1',1,'exactly_block::data()'],['../structmore__than__block.html#a380a8483a97b778a188676036cd6d7d7',1,'more_than_block::data()'],['../structless__than__block.html#a9361bafc7b07568a9e04852991ee0820',1,'less_than_block::data()'],['../pool__unit_8cpp.html#adf95c0636bce291f80668fa7b40a29b0',1,'data():&#160;pool_unit.cpp']]],
-  ['data_5fptr',['data_ptr',['../cs43l22__audio_2main_8cpp.html#a0603a0f318b96cd5738da9a540cdeedf',1,'main.cpp']]],
   ['dcrdr',['DCRDR',['../structCoreDebug__Type.html#aab3cc92ef07bc1f04b3a3aa6db2c2d55',1,'CoreDebug_Type']]],
   ['dcrsr',['DCRSR',['../structCoreDebug__Type.html#af907cf64577eaf927dac6787df6dd98b',1,'CoreDebug_Type']]],
   ['deleted',['deleted',['../structchunk__info.html#a342565735f37e39c1f63a8b034cf9aa2',1,'chunk_info']]],

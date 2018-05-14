@@ -3,7 +3,7 @@
 <area shape="rect" id="node13" href="$hm10__unit_8cpp.html#a95e29676443863e22fe622783167fd12" title="do_valid_init" alt="" coords="161,183,267,209"/>
 <area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="341,5,444,32"/>
 <area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="331,56,455,83"/>
-<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="Audio file in a form of C array 16 bit per sample, mono, 8 kHz. " alt="" coords="349,107,436,133"/>
+<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="board_init" alt="" coords="349,107,436,133"/>
 <area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="315,157,471,184"/>
 <area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="592,5,647,32"/>
 <area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="578,56,661,83"/>

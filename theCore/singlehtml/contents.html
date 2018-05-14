@@ -869,34 +869,46 @@ run OpenOCD without superuser permissions.</p>
 </li>
 </ol>
 </div>
-<div class="section" id="building">
-<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="preparing">
+<h4>Preparing<a class="headerlink" href="#preparing" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
-<li><p class="first">Complete <a class="reference internal" href="contents.html#thecore-examples-initial-setup"><span class="std std-ref">Initial setup</span></a> section.</p>
+<li><p class="first">Install and initialize theCore (if not done previously):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
+<span class="c1"># Or if python3-pip is default: pip install tcore</span>
+<span class="n">tcore</span> <span class="n">bootstrap</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first">Execute build commands.
-The CMake Toolchain file is required to build this application.
-theCore already has one suitable for this target.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">examples</span><span class="o">/</span><span class="n">cs43l22_audio</span>
-<span class="n">mkdir</span> <span class="n">build</span>
-<span class="n">cd</span> <span class="n">build</span>
-<span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_TOOLCHAIN_FILE</span><span class="o">=../../../</span><span class="n">toolchains</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">cm4</span><span class="o">-</span><span class="n">gnu</span><span class="o">.</span><span class="n">cmake</span> <span class="o">..</span>
-<span class="n">make</span>
+<li><p class="first">Download the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_cs43l22_audio</span>
+<span class="n">cd</span> <span class="n">example_cs43l22_audio</span>
 </pre></div>
 </div>
 </li>
 </ol>
 </div>
+<div class="section" id="building">
+<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<p>Run <code class="docutils literal"><span class="pre">compile</span></code> command using theCore CLI:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="running">
 <h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
-<p>Firmware will be flashed via <code class="docutils literal"><span class="pre">openocd</span></code> and <code class="docutils literal"><span class="pre">gdb</span></code>.</p>
+<p>Firmware will be flashed via <code class="docutils literal"><span class="pre">openocd</span></code> debugger and <code class="docutils literal"><span class="pre">flash</span></code> command.</p>
 <ol class="arabic">
 <li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
 </li>
 <li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">minicom</span> <span class="o">-</span><span class="n">D</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyUSB0</span>
+<span class="n">tcore</span> <span class="n">runenv</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
+</pre></div>
+</div>
+<p>Or the same, but with superuser permissions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">tcore</span> <span class="n">runenv</span> <span class="o">--</span><span class="n">sudo</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
 </pre></div>
 </div>
 </li>
@@ -904,13 +916,13 @@ theCore already has one suitable for this target.</p>
 <p>If you don’t remember your board revision, check FAQ section
 <a class="reference internal" href="contents.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
 </li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">openocd</span></code> and flash image using script from openocd installation.</p>
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">flash</span></code> command in separate terminal, as shown below.</p>
 <p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f4discovery.cfg -c &#39;init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit&#39;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span>
 </pre></div>
 </div>
 <p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>sudo $(which openocd) -f board/stm32f429disc1.cfg -c &#39;init; reset halt; flash write_image erase audio.bin 0x08000000; reset run; exit&#39;
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debuger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
 <p>See <a class="reference internal" href="contents.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
@@ -922,6 +934,8 @@ run OpenOCD without superuser permissions.</p>
 </div>
 </li>
 <li><p class="first">Attach headphones to the audio jack on Discovery board.</p>
+</li>
+<li><p class="first">Wear your headphones and enjoy.</p>
 </li>
 </ol>
 </div>
@@ -936,119 +950,6 @@ run OpenOCD without superuser permissions.</p>
 </div>
 <div class="section" id="target-json-config-for-the-audio-example">
 <h4>Target JSON config for the audio example<a class="headerlink" href="#target-json-config-for-the-audio-example" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;bypass_console&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
-        <span class="p">},</span>
-        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Bypass and console UART&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;i2c&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;IRQ&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
-                <span class="s2">&quot;duty_cycle&quot;</span><span class="p">:</span> <span class="s2">&quot;2/1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;ack&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-                <span class="s2">&quot;own_addr&quot;</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>
-                <span class="s2">&quot;ack_addr_bit&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 I2C&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2c1&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;dma&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="s2">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-                <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="s2">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;i2s&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2S3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;dma_tx&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;dma_rx&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;standard&quot;</span><span class="p">:</span> <span class="s2">&quot;phillips&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;data_bits&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-                <span class="s2">&quot;master_clk&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-                <span class="s2">&quot;audio_freq&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
-                <span class="s2">&quot;CPOL&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;PD8&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;PD9&quot;</span>
-                <span class="p">],</span>
-                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART, PD8 - TX, PD9 - RX&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;PC7&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;PC10&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;PC12&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;PA4&quot;</span>
-                <span class="p">],</span>
-                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;SPI3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="s2">&quot;50MHz&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 I2S&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;PB6&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;PB9&quot;</span>
-                <span class="p">],</span>
-                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;otype&quot;</span><span class="p">:</span> <span class="s2">&quot;OD&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="s2">&quot;50MHz&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;no&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 I2C&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="s2">&quot;PD4&quot;</span>
-                <span class="p">],</span>
-                <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;OUT&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;pull&quot;</span><span class="p">:</span> <span class="s2">&quot;down&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;otype&quot;</span><span class="p">:</span> <span class="s2">&quot;PP&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;speed&quot;</span><span class="p">:</span> <span class="s2">&quot;50MHz&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;CS43L22 RST&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PD4&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;rst_gpio&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
 </div>
 </div>
 <span id="document-examples/stm32f4-discovery-exti"></span><div class="section" id="stm32f4-discovery-and-external-interrupts-from-user-button">

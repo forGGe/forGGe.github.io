@@ -19,8 +19,8 @@ var searchData=
   ['hm10',['hm10',['../hm10_2main_8cpp.html#ac9675ce0da418127823fcea985fcd6db',1,'hm10():&#160;main.cpp'],['../group__hm10.html',1,'(Global Namespace)']]],
   ['hm10_2ehpp',['hm10.hpp',['../hm10_8hpp.html',1,'']]],
   ['hm10_5fcheck_5fcommand',['hm10_check_command',['../hm10__unit_8cpp.html#a0a8294ca9f0e3716b9c7fb54e8d6da55',1,'hm10_unit.cpp']]],
-  ['hm10_5fsync',['hm10_sync',['../hm10__unit_8cpp.html#a587b392d53c5eba78375f8aea8ebd52d',1,'hm10_unit.cpp']]],
   ['hm10_5fsync',['hm10_sync',['../classecl_1_1hm10__sync.html',1,'ecl']]],
+  ['hm10_5fsync',['hm10_sync',['../hm10__unit_8cpp.html#a587b392d53c5eba78375f8aea8ebd52d',1,'hm10_unit.cpp']]],
   ['hm10_5funit_2ecpp',['hm10_unit.cpp',['../hm10__unit_8cpp.html',1,'']]],
   ['hostunreach',['hostunreach',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810aad43a1d7b0a21de09e441fc2194a6765',1,'ecl']]],
   ['hse_5fvalue',['HSE_VALUE',['../stm32_2family_2templates_2defines_8in_8hpp.html#aeafcff4f57440c60e64812dddd13e7cb',1,'defines.in.hpp']]],
@@ -47,9 +47,8 @@ var searchData=
   ['hz705',['hz705',['../classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fa06cb5a6046670d9927424c48286587b6',1,'ecl::cs43l22']]],
   ['hz774',['hz774',['../classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4faf213c355b28f76f353d9faac6c3ba87e',1,'ecl::cs43l22']]],
   ['hz888',['hz888',['../classecl_1_1cs43l22.html#a573a82eadaef3fabe5f2c7c14c992f4fae9dcf6c475858f31520457541974e756',1,'ecl::cs43l22']]],
-  ['main_2ecpp',['main.cpp',['../host__hello_2main_8cpp.html',1,'']]],
-  ['main_2ecpp',['main.cpp',['../hm10_2main_8cpp.html',1,'']]],
   ['main_2ecpp',['main.cpp',['../htu21d_2main_8cpp.html',1,'']]],
+  ['main_2ecpp',['main.cpp',['../hm10_2main_8cpp.html',1,'']]],
   ['suite_5finit_2ecpp',['suite_init.cpp',['../host_2suites_2unity__demo_2suite__init_8cpp.html',1,'']]],
   ['suite_5finit_2ecpp',['suite_init.cpp',['../host_2suites_2platform__bat_2suite__init_8cpp.html',1,'']]]
 ];

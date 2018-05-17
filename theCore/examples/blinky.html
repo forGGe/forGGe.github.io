@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>STM32F4 discovery blinky project &mdash; theCore  documentation</title>
+  <title>Simple LED blink example &mdash; theCore  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="theCore  documentation" href="../index.html"/>
         <link rel="up" title="Examples" href="index.html"/>
-        <link rel="next" title="STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module" href="stm32f4-discovery-bluetooth-hm10.html"/>
-        <link rel="prev" title="STM32F4 discovery and external interrupts from user button" href="stm32f4-discovery-exti.html"/>
+        <link rel="next" title="Simple host hello world example" href="hello-world.html"/>
+        <link rel="prev" title="Examples" href="index.html"/>
  
 
 <!-- Google Tag Manager -->
@@ -96,13 +96,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="hello-world-host.html">Simple host hello world example</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Simple LED blink example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#supported-targets-boards">Supported targets (boards)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wiring">Wiring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preparing">Preparing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expected-output">Expected output</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="hello-world.html">Simple host hello world example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-htu21d-sensor.html">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-cs43l22.html">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-exti.html">STM32F4 discovery and external interrupts from user button</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">STM32F4 discovery blinky project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-bluetooth-hm10.html">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-launchpad-blink.html">TI TM4C123G LaunchPad blinky</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-sdcard-fatfs-sdspi.html">TI TM4C123G SD-card demo using FATFS and SDSPI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#initial-setup">Initial setup</a></li>
 </ul>
@@ -151,11 +158,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
           <li><a href="index.html">Examples</a> &raquo;</li>
       
-    <li>STM32F4 discovery blinky project</li>
+    <li>Simple LED blink example</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/examples/stm32f4-discovery-blink.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/examples/blinky.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -170,11 +177,115 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <div class="section" id="stm32f4-discovery-blinky-project">
-<h1>STM32F4 discovery blinky project<a class="headerlink" href="#stm32f4-discovery-blinky-project" title="Permalink to this headline">¶</a></h1>
-<p>The example runs on Discovery kit with STM32F407VG MCU and demonstrates
-simple project that uses onboard LEDs.</p>
-<p>Refer to <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the dedicated repository</a> to check how to build and run the example.</p>
+  <div class="section" id="simple-led-blink-example">
+<span id="thecore-blinky"></span><h1>Simple LED blink example<a class="headerlink" href="#simple-led-blink-example" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_blinky">https://github.com/theCore-embedded/example_blinky</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">none</td>
+</tr>
+</tbody>
+</table>
+<p>This example flashes available LEDs on supported boards, one by one.</p>
+<div class="section" id="supported-targets-boards">
+<h2>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Target name</th>
+<th class="head">Configuration file</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>stm32f4_disc</td>
+<td>stm32f4_discovery.json</td>
+<td>STM32F4 discovery board</td>
+</tr>
+<tr class="row-odd"><td>tiva_tm4c_launchpad</td>
+<td>tiva_tm4c_launchpad.json</td>
+<td>TM4C123G LaunchPad Evaluation Kit</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wiring">
+<h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
+<p>No special wiring is required. Just connect the board to the powered USB port.</p>
+</div>
+<div class="section" id="preparing">
+<h2>Preparing<a class="headerlink" href="#preparing" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Install theCore (this may take a while):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
+<span class="n">tcore</span> <span class="n">bootstrap</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Download this example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_blinky</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Step into the project directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_blinky</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">For STM32 Discovery board:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For Tiva TM4C LaunchPad:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">tiva_tm4c_launchpad</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Connect your board.</p>
+</li>
+<li><p class="first">Run:</p>
+<ul>
+<li><p class="first">For TivaC launchpad:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="expected-output">
+<h2>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h2>
+<p>On-board LEDs will blink with the different (RGB) colors.</p>
+</div>
 </div>
 
 
@@ -185,10 +296,10 @@ simple project that uses onboard LEDs.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="stm32f4-discovery-bluetooth-hm10.html" class="btn btn-neutral float-right" title="STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="hello-world.html" class="btn btn-neutral float-right" title="Simple host hello world example" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="stm32f4-discovery-exti.html" class="btn btn-neutral" title="STM32F4 discovery and external interrupts from user button" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

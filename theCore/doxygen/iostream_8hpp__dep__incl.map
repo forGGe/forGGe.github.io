@@ -1,17 +1,15 @@
 <map id="iostream.hpp" name="iostream.hpp">
 <area shape="rect" id="node2" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node3" href="$host__hello_2main_8cpp.html" title="main.cpp" alt="" coords="112,80,195,107"/>
-<area shape="rect" id="node4" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="219,80,301,107"/>
-<area shape="rect" id="node5" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="325,80,408,107"/>
-<area shape="rect" id="node6" href="$tm4c__fatfs_2main_8cpp.html" title="main.cpp" alt="" coords="432,80,515,107"/>
-<area shape="rect" id="node7" href="$tm4c__led_2main_8cpp.html" title="main.cpp" alt="" coords="539,80,621,107"/>
-<area shape="rect" id="node8" href="$streams_8cpp.html" title="Main iostream module. " alt="" coords="646,80,749,107"/>
-<area shape="rect" id="node9" href="$console__integrity_8cpp.html" title="console_integrity.cpp" alt="" coords="773,80,931,107"/>
-<area shape="rect" id="node10" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="955,80,1021,107"/>
-<area shape="rect" id="node11" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="1045,80,1155,107"/>
-<area shape="rect" id="node12" href="$streams__bat_2case_8cpp.html" title="case.cpp" alt="" coords="1179,80,1258,107"/>
-<area shape="rect" id="node13" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1282,80,1366,107"/>
-<area shape="rect" id="node16" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="1390,80,1453,107"/>
-<area shape="rect" id="node14" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="1218,155,1345,181"/>
-<area shape="rect" id="node15" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="1369,155,1474,181"/>
+<area shape="rect" id="node3" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="112,80,195,107"/>
+<area shape="rect" id="node4" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="219,80,301,107"/>
+<area shape="rect" id="node5" href="$tm4c__fatfs_2main_8cpp.html" title="main.cpp" alt="" coords="325,80,408,107"/>
+<area shape="rect" id="node6" href="$streams_8cpp.html" title="Main iostream module. " alt="" coords="433,80,535,107"/>
+<area shape="rect" id="node7" href="$console__integrity_8cpp.html" title="console_integrity.cpp" alt="" coords="559,80,718,107"/>
+<area shape="rect" id="node8" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="742,80,807,107"/>
+<area shape="rect" id="node9" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="832,80,941,107"/>
+<area shape="rect" id="node10" href="$streams__bat_2case_8cpp.html" title="case.cpp" alt="" coords="966,80,1045,107"/>
+<area shape="rect" id="node11" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1069,80,1153,107"/>
+<area shape="rect" id="node14" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="1177,80,1239,107"/>
+<area shape="rect" id="node12" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="1005,155,1131,181"/>
+<area shape="rect" id="node13" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="1155,155,1261,181"/>
 </map>

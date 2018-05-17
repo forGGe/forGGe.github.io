@@ -95,6 +95,7 @@ var files =
     [ "platform/particle_electron/export/aux/generated.hpp", "platform_2particle__electron_2export_2aux_2generated_8hpp.html", null ],
     [ "platform/stm32/export/aux/generated.hpp", "platform_2stm32_2export_2aux_2generated_8hpp.html", "platform_2stm32_2export_2aux_2generated_8hpp" ],
     [ "platform/tm4c/export/aux/generated.hpp", "platform_2tm4c_2export_2aux_2generated_8hpp.html", null ],
+    [ "generated.in.hpp", "generated_8in_8hpp.html", "generated_8in_8hpp" ],
     [ "gpio.hpp", "gpio_8hpp.html", [
       [ "empty_gpio", "structecl_1_1empty__gpio.html", "structecl_1_1empty__gpio" ]
     ] ],
@@ -132,11 +133,9 @@ var files =
     ] ],
     [ "list_unit.cpp", "list__unit_8cpp.html", "list__unit_8cpp" ],
     [ "hm10/main.cpp", "hm10_2main_8cpp.html", "hm10_2main_8cpp" ],
-    [ "host_hello/main.cpp", "host__hello_2main_8cpp.html", "host__hello_2main_8cpp" ],
     [ "htu21d/main.cpp", "htu21d_2main_8cpp.html", "htu21d_2main_8cpp" ],
     [ "stm32f4_exti/main.cpp", "stm32f4__exti_2main_8cpp.html", "stm32f4__exti_2main_8cpp" ],
     [ "tm4c_fatfs/main.cpp", "tm4c__fatfs_2main_8cpp.html", "tm4c__fatfs_2main_8cpp" ],
-    [ "tm4c_led/main.cpp", "tm4c__led_2main_8cpp.html", "tm4c__led_2main_8cpp" ],
     [ "memory.hpp", "memory_8hpp.html", "memory_8hpp" ],
     [ "mmio.hpp", "mmio_8hpp.html", "mmio_8hpp" ],
     [ "mmio_unit.cpp", "mmio__unit_8cpp.html", "mmio__unit_8cpp" ],

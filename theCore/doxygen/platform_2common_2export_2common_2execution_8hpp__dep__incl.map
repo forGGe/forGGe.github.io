@@ -1,22 +1,21 @@
 <map id="execution.hpp" name="execution.hpp">
-<area shape="rect" id="node2" href="$tm4c__led_2main_8cpp.html" title="main.cpp" alt="" coords="5,80,88,107"/>
-<area shape="rect" id="node3" href="$stubs_8cpp.html" title="Newlib stubs implementation. " alt="" coords="113,80,197,107"/>
-<area shape="rect" id="node4" href="$no__os_2semaphore_8cpp.html" title="Implementation of the semaphore for targets without OS support. " alt="" coords="221,80,344,107"/>
-<area shape="rect" id="node5" href="$irq_8cpp.html" title="Common IRQ implementation. " alt="" coords="368,80,435,107"/>
-<area shape="rect" id="node6" href="$stm32_2platform_8cpp.html" title="STM32 platform main file. " alt="" coords="459,80,565,107"/>
-<area shape="rect" id="node7" href="$sys_8cpp.html" title="theCore system initialization module. " alt="" coords="589,80,659,107"/>
-<area shape="rect" id="node8" href="$adc__bat_2case_8cpp.html" title="case.cpp" alt="" coords="683,80,762,107"/>
-<area shape="rect" id="node9" href="$bypass__console__bat_2case_8cpp.html" title="case.cpp" alt="" coords="786,80,865,107"/>
-<area shape="rect" id="node10" href="$delay__bat_2case_8cpp.html" title="Delay test case. " alt="" coords="889,80,967,107"/>
-<area shape="rect" id="node11" href="$gpio__bat_2case_8cpp.html" title="case.cpp" alt="" coords="991,80,1070,107"/>
-<area shape="rect" id="node12" href="$hm10_8hpp.html" title="HM&#45;10 BT module drivers. " alt="" coords="1094,80,1181,107"/>
-<area shape="rect" id="node15" href="$htu21d_8hpp.html" title="Driver for HTU21D digital humidity sensor with temperature output See, https://cdn&#45;shop.adafruit.com/datasheets/1899_HTU21D.pdf. " alt="" coords="1205,80,1299,107"/>
-<area shape="rect" id="node16" href="$thread_2no__os_2export_2ecl_2thread_2utils_8hpp.html" title="Utilities for projects without OS support. " alt="" coords="1381,80,1459,107"/>
-<area shape="rect" id="node13" href="$hm10__unit_8cpp.html" title="hm10_unit.cpp" alt="" coords="954,155,1073,181"/>
-<area shape="rect" id="node14" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="1096,155,1179,181"/>
-<area shape="rect" id="node17" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="1203,155,1285,181"/>
-<area shape="rect" id="node18" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="1309,155,1392,181"/>
-<area shape="rect" id="node19" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="1416,155,1539,181"/>
-<area shape="rect" id="node20" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="1563,155,1640,181"/>
-<area shape="rect" id="node21" href="$pcd8544_8hpp.html" title="pcd8544.hpp" alt="" coords="1665,155,1770,181"/>
+<area shape="rect" id="node2" href="$stubs_8cpp.html" title="Newlib stubs implementation. " alt="" coords="5,80,89,107"/>
+<area shape="rect" id="node3" href="$no__os_2semaphore_8cpp.html" title="Implementation of the semaphore for targets without OS support. " alt="" coords="114,80,237,107"/>
+<area shape="rect" id="node4" href="$irq_8cpp.html" title="Common IRQ implementation. " alt="" coords="261,80,327,107"/>
+<area shape="rect" id="node5" href="$stm32_2platform_8cpp.html" title="STM32 platform main file. " alt="" coords="352,80,457,107"/>
+<area shape="rect" id="node6" href="$sys_8cpp.html" title="theCore system initialization module. " alt="" coords="481,80,552,107"/>
+<area shape="rect" id="node7" href="$adc__bat_2case_8cpp.html" title="case.cpp" alt="" coords="576,80,655,107"/>
+<area shape="rect" id="node8" href="$bypass__console__bat_2case_8cpp.html" title="case.cpp" alt="" coords="679,80,757,107"/>
+<area shape="rect" id="node9" href="$delay__bat_2case_8cpp.html" title="Delay test case. " alt="" coords="781,80,860,107"/>
+<area shape="rect" id="node10" href="$gpio__bat_2case_8cpp.html" title="case.cpp" alt="" coords="884,80,963,107"/>
+<area shape="rect" id="node11" href="$hm10_8hpp.html" title="HM&#45;10 BT module drivers. " alt="" coords="987,80,1073,107"/>
+<area shape="rect" id="node14" href="$htu21d_8hpp.html" title="Driver for HTU21D digital humidity sensor with temperature output See, https://cdn&#45;shop.adafruit.com/datasheets/1899_HTU21D.pdf. " alt="" coords="1097,80,1192,107"/>
+<area shape="rect" id="node15" href="$thread_2no__os_2export_2ecl_2thread_2utils_8hpp.html" title="Utilities for projects without OS support. " alt="" coords="1273,80,1352,107"/>
+<area shape="rect" id="node12" href="$hm10__unit_8cpp.html" title="hm10_unit.cpp" alt="" coords="847,155,965,181"/>
+<area shape="rect" id="node13" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="989,155,1071,181"/>
+<area shape="rect" id="node16" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="1095,155,1178,181"/>
+<area shape="rect" id="node17" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="1202,155,1285,181"/>
+<area shape="rect" id="node18" href="$freertos_2semaphore_8cpp.html" title="semaphore.cpp" alt="" coords="1309,155,1431,181"/>
+<area shape="rect" id="node19" href="$utils_8cpp.html" title="utils.cpp" alt="" coords="1455,155,1533,181"/>
+<area shape="rect" id="node20" href="$pcd8544_8hpp.html" title="pcd8544.hpp" alt="" coords="1557,155,1663,181"/>
 </map>

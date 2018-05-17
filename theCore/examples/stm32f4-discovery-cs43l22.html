@@ -96,21 +96,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="hello-world-host.html">Simple host hello world example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blinky.html">Simple LED blink example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hello-world.html">Simple host hello world example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-htu21d-sensor.html">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">STM32F4 discovery audio example with CS43L22 audio DAC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#supported-targets-boards">Supported targets (boards)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wiring">Wiring</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preparing">Preparing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#expected-output">Expected output</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#target-json-config-for-the-audio-example">Target JSON config for the audio example</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-exti.html">STM32F4 discovery and external interrupts from user button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-blink.html">STM32F4 discovery blinky project</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-bluetooth-hm10.html">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-launchpad-blink.html">TI TM4C123G LaunchPad blinky</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-sdcard-fatfs-sdspi.html">TI TM4C123G SD-card demo using FATFS and SDSPI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#initial-setup">Initial setup</a></li>
 </ul>
@@ -184,18 +183,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/cs43l22_audio</span></code></td>
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_cs43l22_audio">https://github.com/theCore-embedded/example_cs43l22_audio</a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">STM32F4 Discovery board</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART3, headphones</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">GNU arm-none-eabi v.5.2 or newer</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">openocd, minicom</td>
+<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART3, headphones</td>
 </tr>
 </tbody>
 </table>
+<div class="section" id="supported-targets-boards">
+<h2>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Target name</th>
+<th class="head">Configuration file</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>stm32f4_disc</td>
+<td>stm32f4_discovery.json</td>
+<td>STM32F4 discovery board</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="wiring">
 <h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
 <img alt="CS43L22 stm32f4discovery wiring" src="https://i.imgur.com/fhWxQ4Z.jpg" />
@@ -274,7 +289,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </pre></div>
 </div>
 <p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debuger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
 <p>See <a class="reference internal" href="../faq.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
@@ -299,9 +314,6 @@ run OpenOCD without superuser permissions.</p>
 </pre></div>
 </div>
 <p>In headphones you should hear cool 8-bit sound.</p>
-</div>
-<div class="section" id="target-json-config-for-the-audio-example">
-<h2>Target JSON config for the audio example<a class="headerlink" href="#target-json-config-for-the-audio-example" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

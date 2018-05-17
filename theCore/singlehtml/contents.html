@@ -571,67 +571,297 @@ privileges to create this file) with following content:</p>
 <span id="document-examples/index"></span><div class="section" id="examples">
 <span id="thecore-examples"></span><h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
-<span id="document-examples/hello-world-host"></span><div class="section" id="simple-host-hello-world-example">
-<span id="thecore-host-hello"></span><h3>Simple host hello world example<a class="headerlink" href="#simple-host-hello-world-example" title="Permalink to this headline">¶</a></h3>
+<span id="document-examples/blinky"></span><div class="section" id="simple-led-blink-example">
+<span id="thecore-blinky"></span><h3>Simple LED blink example<a class="headerlink" href="#simple-led-blink-example" title="Permalink to this headline">¶</a></h3>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/host_hello</span></code></td>
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_blinky">https://github.com/theCore-embedded/example_blinky</a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">host</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">none</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">gcc/g++ v5.2 or newer</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">none</td>
+<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">none</td>
 </tr>
 </tbody>
 </table>
-<p>This example shows theCore running on the host target.
-By <cite>host</cite> target is understood an environment capable to both compile and
-run theCore applications.</p>
-<p>Application demonstrates a console stream usage and a simple assertion.</p>
-<div class="section" id="building">
-<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<p>This example flashes available LEDs on supported boards, one by one.</p>
+<div class="section" id="supported-targets-boards">
+<h4>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Target name</th>
+<th class="head">Configuration file</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>stm32f4_disc</td>
+<td>stm32f4_discovery.json</td>
+<td>STM32F4 discovery board</td>
+</tr>
+<tr class="row-odd"><td>tiva_tm4c_launchpad</td>
+<td>tiva_tm4c_launchpad.json</td>
+<td>TM4C123G LaunchPad Evaluation Kit</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wiring">
+<h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<p>No special wiring is required. Just connect the board to the powered USB port.</p>
+</div>
+<div class="section" id="preparing">
+<h4>Preparing<a class="headerlink" href="#preparing" title="Permalink to this headline">¶</a></h4>
 <ol class="arabic">
-<li><p class="first">Complete <a class="reference internal" href="contents.html#thecore-examples-initial-setup"><span class="std std-ref">Initial setup</span></a> section.</p>
+<li><p class="first">Install theCore (this may take a while):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
+<span class="n">tcore</span> <span class="n">bootstrap</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first">Execute build commands:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">examples</span><span class="o">/</span><span class="n">host_hello</span>
-<span class="n">mkdir</span> <span class="n">build</span>
-<span class="n">cd</span> <span class="n">build</span>
-<span class="n">cmake</span> <span class="o">..</span>
-<span class="n">make</span>
+<li><p class="first">Download this example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_blinky</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Step into the project directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_blinky</span>
 </pre></div>
 </div>
 </li>
 </ol>
 </div>
-<div class="section" id="running">
-<h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
-<p>Execute resulting application:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">hello</span>
+<div class="section" id="building">
+<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">For STM32 Discovery board:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
 </pre></div>
 </div>
+</li>
+<li><p class="first">For Tiva TM4C LaunchPad:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">tiva_tm4c_launchpad</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="running">
+<h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Connect your board.</p>
+</li>
+<li><p class="first">Run:</p>
+<ul>
+<li><p class="first">For TivaC launchpad:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
 </div>
 <div class="section" id="expected-output">
 <h4>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default"><div class="highlight"><pre><span></span>Hello, Host World!
-This is an assert demonstration. Application will abort.
-hello: main.cpp:7: int main(): Assertion `1 == 0&#39; failed.
-Aborted (core dumped)
+<p>On-board LEDs will blink with the different (RGB) colors.</p>
+</div>
+</div>
+<span id="document-examples/hello-world"></span><div class="section" id="simple-host-hello-world-example">
+<span id="thecore-hello-world"></span><h3>Simple host hello world example<a class="headerlink" href="#simple-host-hello-world-example" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_hello_world">https://github.com/theCore-embedded/example_hello_world</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter for STM32F4Discovery board</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="supported-targets-boards">
+<h4>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Target name</th>
+<th class="head">Configuration file</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>host</td>
+<td>host.json</td>
+<td>Host target build</td>
+</tr>
+<tr class="row-odd"><td>stm32f4_disc</td>
+<td>stm32f4_discovery.json</td>
+<td>STM32F4 discovery board</td>
+</tr>
+<tr class="row-even"><td>tiva_tm4c_launchpad</td>
+<td>tiva_tm4c_launchpad.json</td>
+<td>TM4C123G LaunchPad Evaluation Kit</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wiring">
+<h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">If you have Tiva TM4C Launchpad - simply connect it to the USB.</p>
+</li>
+<li><p class="first">If you have STM32F4 Discovery board:</p>
+<ol class="arabic">
+<li><p class="first">Attach any preferable UART-to-USB
+converter module (<a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a>) according to following pinout:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PD8 (USART3 TX)</td>
+<td>module’s RX</td>
+</tr>
+<tr class="row-even"><td>PD9 (USART3 RX)</td>
+<td>module’s TX</td>
+</tr>
+<tr class="row-odd"><td>GND</td>
+<td>module’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Connect your STM32 Discovery board to the PC.</p>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="section" id="preparing">
+<h4>Preparing<a class="headerlink" href="#preparing" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">Install and initialize theCore (if not done previously):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
+<span class="n">tcore</span> <span class="n">bootstrap</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="target-json-for-hello-world-example">
-<h4>Target JSON for Hello World example<a class="headerlink" href="#target-json-for-hello-world-example" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;platform&quot;</span><span class="p">:</span>  <span class="p">{</span> <span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span> <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="n">true</span> <span class="p">}</span>
-<span class="p">}</span>
+</li>
+<li><p class="first">Download the example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_hello_world</span>
 </pre></div>
 </div>
+</li>
+<li><p class="first">Step into the project directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_hello_world</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="building">
+<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">For STM32 Discovery board:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For Tiva TM4C LaunchPad:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">tiva_tm4c_launchpad</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For host:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">host</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="running">
+<h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first">If you wish to run the example on the embedded device, launch <cite>minicom</cite>
+with device associated with USB &lt;-&gt; UART converter.
+(<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">tcore</span> <span class="n">runenv</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
+</pre></div>
+</div>
+<p>Or the same, but with superuser permissions:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">tcore</span> <span class="n">runenv</span> <span class="o">--</span><span class="n">sudo</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Run:</p>
+<ul>
+<li><p class="first">On TivaC launchpad:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="o">--</span><span class="n">sudo</span> <span class="n">flash</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">For host target, execute:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">build</span><span class="o">/</span><span class="n">host</span><span class="o">/</span><span class="n">hello_world</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="expected-output">
+<h4>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>Observe console output (either in current shell if running on host, or using</dt>
+<dd><p class="first">minicom if running on the embedded device):</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span>Welcome to theCore
+the_core v0.3.0.307 9ff344b-dirty
+Hello World!
+
+Starting delay demonstration...
+
+[--] Waiting for 2 seconds
+[--] Done waiting 2 seconds
+
+[----] Waiting for 4 seconds
+[----] Done waiting 4 seconds
+
+[--------] Waiting for 8 seconds
+[--------] Done waiting 8 seconds
+</pre></div>
+</div>
+</dd>
+</dl>
 </div>
 </div>
 <span id="document-examples/stm32f4-discovery-htu21d-sensor"></span><div class="section" id="stm32f4-discovery-and-htu21d-temperature-and-humidity-sensor">
@@ -832,18 +1062,34 @@ run OpenOCD without superuser permissions.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/cs43l22_audio</span></code></td>
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_cs43l22_audio">https://github.com/theCore-embedded/example_cs43l22_audio</a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">STM32F4 Discovery board</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART3, headphones</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">GNU arm-none-eabi v.5.2 or newer</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">openocd, minicom</td>
+<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART3, headphones</td>
 </tr>
 </tbody>
 </table>
+<div class="section" id="supported-targets-boards">
+<h4>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Target name</th>
+<th class="head">Configuration file</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>stm32f4_disc</td>
+<td>stm32f4_discovery.json</td>
+<td>STM32F4 discovery board</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="wiring">
 <h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
 <img alt="CS43L22 stm32f4discovery wiring" src="https://i.imgur.com/fhWxQ4Z.jpg" />
@@ -922,7 +1168,7 @@ run OpenOCD without superuser permissions.</p>
 </pre></div>
 </div>
 <p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debuger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
 <p>See <a class="reference internal" href="contents.html#thecore-sudoopenocd-nix"><span class="std std-ref">How to run OpenOCD with root privileges under Nix shell?</span></a> section to get insight why <code class="docutils literal"><span class="pre">which</span> <span class="pre">openocd</span></code>
@@ -947,9 +1193,6 @@ run OpenOCD without superuser permissions.</p>
 </pre></div>
 </div>
 <p>In headphones you should hear cool 8-bit sound.</p>
-</div>
-<div class="section" id="target-json-config-for-the-audio-example">
-<h4>Target JSON config for the audio example<a class="headerlink" href="#target-json-config-for-the-audio-example" title="Permalink to this headline">¶</a></h4>
 </div>
 </div>
 <span id="document-examples/stm32f4-discovery-exti"></span><div class="section" id="stm32f4-discovery-and-external-interrupts-from-user-button">
@@ -1129,12 +1372,6 @@ Hello, Embedded World!
 </pre></div>
 </div>
 </div>
-</div>
-<span id="document-examples/stm32f4-discovery-blink"></span><div class="section" id="stm32f4-discovery-blinky-project">
-<h3>STM32F4 discovery blinky project<a class="headerlink" href="#stm32f4-discovery-blinky-project" title="Permalink to this headline">¶</a></h3>
-<p>The example runs on Discovery kit with STM32F407VG MCU and demonstrates
-simple project that uses onboard LEDs.</p>
-<p>Refer to <a class="reference external" href="https://github.com/forGGe/theCore-blinky">the dedicated repository</a> to check how to build and run the example.</p>
 </div>
 <span id="document-examples/stm32f4-discovery-bluetooth-hm10"></span><div class="section" id="stm32f4-discovery-and-hm-10-bluetooth-le-4-0-wireless-module">
 <span id="thecore-stm32f4-hm-10-example"></span><h3>STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module<a class="headerlink" href="#stm32f4-discovery-and-hm-10-bluetooth-le-4-0-wireless-module" title="Permalink to this headline">¶</a></h3>
@@ -1334,120 +1571,6 @@ run OpenOCD without superuser permissions.</p>
                 <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;AF&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART: PD8 - TX, PD9 - RX&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-<span id="document-examples/ti-tm4c123g-launchpad-blink"></span><div class="section" id="ti-tm4c123g-launchpad-blinky">
-<span id="thecore-tm4c-blinky"></span><h3>TI TM4C123G LaunchPad blinky<a class="headerlink" href="#ti-tm4c123g-launchpad-blinky" title="Permalink to this headline">¶</a></h3>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><code class="docutils literal"><span class="pre">examples/tm4c_led</span></code></td>
-</tr>
-<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">Tiva C Series TM4C123G LaunchPadEvaluation Board</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">none</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Toolchain:</th><td class="field-body">GNU arm-none-eabi v.5.2 or newer</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Additional SW:</th><td class="field-body">UniFlash, minicom</td>
-</tr>
-</tbody>
-</table>
-<div class="section" id="wiring">
-<h4>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h4>
-<img alt="TI TM4C123G USB connection" src="https://i.imgur.com/Msv5xoR.jpg" />
-<p>No special wiring is required. Just connect the board to the powered USB port.</p>
-</div>
-<div class="section" id="building">
-<h4>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h4>
-<ol class="arabic">
-<li><p class="first">Complete <a class="reference internal" href="contents.html#thecore-examples-initial-setup"><span class="std std-ref">Initial setup</span></a> section.</p>
-</li>
-<li><p class="first">Execute build commands.
-The CMake Toolchain file is required to build this application.
-theCore already has one suitable for this target.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">build</span>
-<span class="n">cd</span> <span class="n">build</span>
-<span class="n">cmake</span> <span class="o">-</span><span class="n">DCMAKE_TOOLCHAIN_FILE</span><span class="o">=../../</span><span class="n">toolchains</span><span class="o">/</span><span class="n">arm</span><span class="o">-</span><span class="n">cm4</span><span class="o">-</span><span class="n">gnu</span><span class="o">.</span><span class="n">cmake</span> <span class="o">..</span>
-<span class="n">make</span>
-</pre></div>
-</div>
-</li>
-</ol>
-</div>
-<div class="section" id="running">
-<h4>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h4>
-<ol class="arabic">
-<li><p class="first">Flash firmware via <a class="reference external" href="http://processors.wiki.ti.com/index.php/Category:CCS_UniFlash">UniFlash</a>. The UniFlash interface is straightforward.</p>
-</li>
-<li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with the board.
-(<code class="docutils literal"><span class="pre">/dev/ttyACM0</span></code> here used as an example):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
-<span class="n">minicom</span> <span class="o">-</span><span class="n">D</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">ttyACM0</span>
-</pre></div>
-</div>
-</li>
-</ol>
-</div>
-<div class="section" id="expected-output">
-<h4>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h4>
-<p>In <code class="docutils literal"><span class="pre">minicom</span></code> you should be able to see:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Welcome</span> <span class="n">to</span> <span class="n">theCore</span>
-<span class="n">Starting</span> <span class="n">TM4C</span> <span class="n">led</span> <span class="n">demo</span><span class="o">...</span>
-</pre></div>
-</div>
-<p>On-board LED will blink with the different (RGB) colors.</p>
-</div>
-<div class="section" id="target-json-config-for-the-tm4c-led-example">
-<h4>Target JSON config for the TM4C LED example<a class="headerlink" href="#target-json-config-for-the-tm4c-led-example" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;tm4c&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;TM4C123GH6PM&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART-over-USB console output&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;pinmux&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span> <span class="s2">&quot;PF3&quot;</span> <span class="p">],</span>
-                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;out&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;pin_type&quot;</span><span class="p">:</span> <span class="s2">&quot;std&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;strength&quot;</span><span class="p">:</span> <span class="s2">&quot;2mA&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;LED pins&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;ids&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;PA0&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span> <span class="p">],</span>
-                <span class="s2">&quot;dir&quot;</span><span class="p">:</span> <span class="s2">&quot;hw&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;hws&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="s2">&quot;PA0&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_RX&quot;</span><span class="p">,</span> <span class="s2">&quot;PA1&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0_TX&quot;</span> <span class="p">},</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;UART0 console pins&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="s2">&quot;gpio_alias&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF1&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_red&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Red LED&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF2&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_blue&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Blue LED&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PF3&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;led_green&quot;</span><span class="p">,</span>
-                <span class="s2">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Green LED&quot;</span>
             <span class="p">}</span>
         <span class="p">]</span>
     <span class="p">}</span>
@@ -3115,7 +3238,8 @@ line to your source:</p>
 <h4>Available examples<a class="headerlink" href="#available-examples" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><a class="reference internal" href="contents.html#thecore-tm4c-fatfs-sdspi"><span class="std std-ref">TI TM4C123G SD-card demo using FATFS and SDSPI</span></a></li>
-<li><a class="reference internal" href="contents.html#thecore-tm4c-blinky"><span class="std std-ref">TI TM4C123G LaunchPad blinky</span></a></li>
+<li><a class="reference internal" href="contents.html#thecore-blinky"><span class="std std-ref">Simple LED blink example</span></a></li>
+<li><a class="reference internal" href="contents.html#thecore-hello-world"><span class="std std-ref">Simple host hello world example</span></a></li>
 </ul>
 </div>
 <div class="section" id="periphery-overview">
@@ -4286,7 +4410,7 @@ For more details on theCore console, check the <a class="reference internal" hre
 <div class="section" id="related-references">
 <h4>Related references<a class="headerlink" href="#related-references" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><a class="reference internal" href="contents.html#thecore-host-hello"><span class="std std-ref">Simple host hello world example</span></a></li>
+<li><a class="reference internal" href="contents.html#thecore-hello-world"><span class="std std-ref">Simple host hello world example</span></a></li>
 </ul>
 </div>
 </div>

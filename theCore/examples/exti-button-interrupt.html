@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Simple Hello World example &mdash; theCore  documentation</title>
+  <title>External interrupts from user button &mdash; theCore  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="theCore  documentation" href="../index.html"/>
         <link rel="up" title="Examples" href="index.html"/>
-        <link rel="next" title="External interrupts from user button" href="exti-button-interrupt.html"/>
-        <link rel="prev" title="Simple LED blink example" href="blinky.html"/>
+        <link rel="next" title="STM32F4 discovery and HTU21D temperature and humidity sensor" href="stm32f4-discovery-htu21d-sensor.html"/>
+        <link rel="prev" title="Simple Hello World example" href="hello-world.html"/>
  
 
 <!-- Google Tag Manager -->
@@ -97,7 +97,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="blinky.html">Simple LED blink example</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Simple Hello World example</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hello-world.html">Simple Hello World example</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">External interrupts from user button</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#supported-targets-boards">Supported targets (boards)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wiring">Wiring</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preparing">Preparing</a></li>
@@ -106,7 +107,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l3"><a class="reference internal" href="#expected-output">Expected output</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="exti-button-interrupt.html">External interrupts from user button</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-htu21d-sensor.html">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-cs43l22.html">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-bluetooth-hm10.html">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</a></li>
@@ -158,11 +158,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
           <li><a href="index.html">Examples</a> &raquo;</li>
       
-    <li>Simple Hello World example</li>
+    <li>External interrupts from user button</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="../_sources/examples/hello-world.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/examples/exti-button-interrupt.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,18 +177,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <div class="section" id="simple-hello-world-example">
-<span id="thecore-hello-world"></span><h1>Simple Hello World example<a class="headerlink" href="#simple-hello-world-example" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="external-interrupts-from-user-button">
+<h1>External interrupts from user button<a class="headerlink" href="#external-interrupts-from-user-button" title="Permalink to this headline">¶</a></h1>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_hello_world">https://github.com/theCore-embedded/example_hello_world</a></td>
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_button_interrupt">https://github.com/theCore-embedded/example_button_interrupt</a></td>
 </tr>
-<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter for STM32F4Discovery board</td>
+<tr class="field-even field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter</td>
 </tr>
 </tbody>
 </table>
+<p>EXTI - the external interrupt.</p>
+<blockquote>
+<div><p>An external interrupt is a computer system interrupt that happens as a result
+of outside interference, whether that’s from the user, from peripherals,
+from other hardware devices or through a network. These are different
+than internal interrupts that happen automatically as the machine
+reads through program instructions.</p>
+<p class="attribution">&mdash;<a class="reference external" href="https://www.techopedia.com/definition/7115/external-interrupt">Techopedia</a></p>
+</div></blockquote>
+<p>In this application, one particular type of external interrupt is used:
+GPIO line interrupt. When voltage level changes on the line (e.g. when button is
+pressed), interrupt is generated.</p>
 <div class="section" id="supported-targets-boards">
 <h2>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h2>
 <table border="1" class="docutils">
@@ -204,15 +216,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>host</td>
-<td>host.json</td>
-<td>Host target build</td>
-</tr>
-<tr class="row-odd"><td>stm32f4_disc</td>
+<tr class="row-even"><td>stm32f4_disc</td>
 <td>stm32f4_discovery.json</td>
 <td>STM32F4 discovery board</td>
 </tr>
-<tr class="row-even"><td>tiva_tm4c_launchpad</td>
+<tr class="row-odd"><td>tiva_tm4c_launchpad</td>
 <td>tiva_tm4c_launchpad.json</td>
 <td>TM4C123G LaunchPad Evaluation Kit</td>
 </tr>
@@ -245,6 +253,7 @@ converter module (<a class="reference external" href="http://www.geekfactory.mx/
 </tr>
 </tbody>
 </table>
+<img alt="UART wiring for stm32f4discovery EXTI example" src="https://i.imgur.com/dRVRHV2.jpg" />
 </li>
 <li><p class="first">Connect your STM32 Discovery board to the PC.</p>
 </li>
@@ -262,12 +271,12 @@ converter module (<a class="reference external" href="http://www.geekfactory.mx/
 </div>
 </li>
 <li><p class="first">Download the example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_hello_world</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_button_interrupt</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Step into the project directory:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_hello_world</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_button_interrupt</span>
 </pre></div>
 </div>
 </li>
@@ -286,18 +295,12 @@ converter module (<a class="reference external" href="http://www.geekfactory.mx/
 </pre></div>
 </div>
 </li>
-<li><p class="first">For host:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">host</span>
-</pre></div>
-</div>
-</li>
 </ul>
 </div>
 <div class="section" id="running">
 <h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">If you wish to run the example on the embedded device, launch <cite>minicom</cite>
-with device associated with USB &lt;-&gt; UART converter.
+<li><p class="first">Launch <code class="docutils literal"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
 (<code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
 <span class="n">tcore</span> <span class="n">runenv</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
@@ -326,38 +329,23 @@ with device associated with USB &lt;-&gt; UART converter.
 </pre></div>
 </div>
 </li>
-<li><p class="first">For host target, execute:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">build</span><span class="o">/</span><span class="n">host</span><span class="o">/</span><span class="n">hello_world</span>
-</pre></div>
-</div>
-</li>
 </ul>
 </li>
 </ol>
 </div>
 <div class="section" id="expected-output">
 <h2>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>Observe console output (either in current shell if running on host, or using</dt>
-<dd><p class="first">minicom if running on the embedded device):</p>
-<div class="last highlight-default"><div class="highlight"><pre><span></span>Welcome to theCore
-the_core v0.3.0.307 9ff344b-dirty
-Hello World!
-
-Starting delay demonstration...
-
-[--] Waiting for 2 seconds
-[--] Done waiting 2 seconds
-
-[----] Waiting for 4 seconds
-[----] Done waiting 4 seconds
-
-[--------] Waiting for 8 seconds
-[--------] Done waiting 8 seconds
+<p>Observe console output using <code class="docutils literal"><span class="pre">minicom</span></code> if running on the embedded device):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Welcome</span> <span class="n">to</span> <span class="n">theCore</span>
+<span class="n">the_core</span> <span class="n">v0</span><span class="o">.</span><span class="mf">3.0</span><span class="o">.</span><span class="mi">307</span> <span class="mi">9</span><span class="n">ff344b</span><span class="o">-</span><span class="n">dirty</span>
+<span class="n">Starting</span> <span class="n">EXTI</span> <span class="p">(</span><span class="n">button</span> <span class="n">interrupt</span><span class="p">)</span> <span class="n">demo</span>
 </pre></div>
 </div>
-</dd>
-</dl>
+<p>Every time you press a button (SW1 on TivaC board, USR_BTN on STM32F4 Discovery),
+following output will be displayed:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>Button pressed!
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -369,10 +357,10 @@ Starting delay demonstration...
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="exti-button-interrupt.html" class="btn btn-neutral float-right" title="External interrupts from user button" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="stm32f4-discovery-htu21d-sensor.html" class="btn btn-neutral float-right" title="STM32F4 discovery and HTU21D temperature and humidity sensor" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="blinky.html" class="btn btn-neutral" title="Simple LED blink example" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="hello-world.html" class="btn btn-neutral" title="Simple Hello World example" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

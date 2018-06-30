@@ -1,5 +1,4 @@
 <map id="do_valid_init" name="do_valid_init">
-<area shape="rect" id="node2" href="$group__hm10.html#ga2107389553195d979e02a5798eb0bad7" title="Initializes BT module. " alt="" coords="159,31,311,57"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="410,5,509,32"/>
-<area shape="rect" id="node4" href="$group__hm10.html#gaebb3483c8b33c90e906a4e2771aa4ca0" title="Send disconnect command. " alt="" coords="359,56,560,83"/>
+<area shape="rect" id="node2" href="$group__hm10.html#ga2107389553195d979e02a5798eb0bad7" title="Initializes BT module. " alt="" coords="148,5,287,32"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="335,5,425,32"/>
 </map>

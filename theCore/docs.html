@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -54,6 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -90,10 +93,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arch.html">Supported architectures</a></li>
@@ -112,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
             
@@ -125,8 +132,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">theCore</a>
+        
       </nav>
 
 
@@ -135,23 +144,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="contents.html">Docs</a> &raquo;</li>
-      
-    <li>Documentation development and contribution</li>
+    
+      <li><a href="contents.html">Docs</a> &raquo;</li>
+        
+      <li>Documentation development and contribution</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/docs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -172,7 +198,7 @@ built using <a class="reference external" href="http://www.sphinx-doc.org/en/sta
 <li><a class="reference external" href="https://sphinxcontrib-fulltoc.readthedocs.io">FullToc</a> - full ToC in the sidebar.</li>
 </ul>
 </div></blockquote>
-<p>All the documentation sources placed under <code class="docutils literal"><span class="pre">doc</span></code> top-level directory.</p>
+<p>All the documentation sources placed under <code class="docutils literal notranslate"><span class="pre">doc</span></code> top-level directory.</p>
 <p>To contribute to the documentation, you probably would like to first build
 and validate docs locally. For that, build dependencies must be installed either
 manually or by using Nix. Check the <a class="reference internal" href="guides/getting-started.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> for more info about
@@ -184,14 +210,14 @@ procedure.</p>
 <p>theCore contains Doxygen and it is possible to generate Doxygen pages
 locally using CMake target:</p>
 <ol class="arabic">
-<li><p class="first">Launch command in the <code class="docutils literal"><span class="pre">doc_build</span></code> directory
+<li><p class="first">Launch command in the <code class="docutils literal notranslate"><span class="pre">doc_build</span></code> directory
 <a class="reference internal" href="#thecore-building-sphinx"><span class="std std-ref">created on previous step</span></a>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">core_doxygen</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">core_doxygen</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Open index page of generated Doxygen by any preferable browser:
-<code class="docutils literal"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
+<code class="docutils literal notranslate"><span class="pre">doc_build/doc/doxygen/html/index.html</span></code></p>
 </li>
 </ol>
 </div>
@@ -204,7 +230,7 @@ before Sphinx. Proceed as follows:</p>
 <li><p class="first">Finish <a class="reference internal" href="guides/getting-started.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> to get Sphinx and additional extensions.</p>
 </li>
 <li><p class="first">Launch documentation build:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># From theCore directory</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># From theCore directory</span>
 <span class="n">mkdir</span> <span class="n">doc_build</span>
 <span class="n">cd</span> <span class="n">doc_build</span>
 <span class="n">cmake</span> <span class="o">../</span><span class="n">doc</span>
@@ -214,8 +240,8 @@ before Sphinx. Proceed as follows:</p>
 </li>
 <li><p class="first">Open generated docs by any preferable browser:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">doc_build/sphinx/theCore/index.html</span></code> - main page of multi-page version.</li>
-<li><code class="docutils literal"><span class="pre">doc_build/sphinx/theCore/singlehtml/index.html</span></code> - main page of single-paged version.</li>
+<li><code class="docutils literal notranslate"><span class="pre">doc_build/sphinx/theCore/index.html</span></code> - main page of multi-page version.</li>
+<li><code class="docutils literal notranslate"><span class="pre">doc_build/sphinx/theCore/singlehtml/index.html</span></code> - main page of single-paged version.</li>
 </ul>
 </li>
 </ol>
@@ -234,7 +260,7 @@ holds auto-generated static HTML files which are automatically displayed if plac
 master branch of that repo. Jekyll is disabled.</p>
 <p>See also <a class="reference external" href="https://help.github.com/articles/user-organization-and-project-pages/">the GitHub pages docs</a> for more information.</p>
 <p>Contributing to the documentation consist of creating a PR against <a class="reference external" href="https://github.com/forGGe/theCore">theCore repository</a>.</p>
-<p>After the PR is merged, the new documentation is deployed using <code class="docutils literal"><span class="pre">scripts/doc_deploy.sh</span></code>
+<p>After the PR is merged, the new documentation is deployed using <code class="docutils literal notranslate"><span class="pre">scripts/doc_deploy.sh</span></code>
 script.</p>
 </div>
 </div>
@@ -242,15 +268,18 @@ script.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="testing.html" class="btn btn-neutral float-right" title="Testing and CI" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="testing.html" class="btn btn-neutral float-right" title="Testing and CI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="community.html" class="btn btn-neutral" title="Community and developer guidelines" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="community.html" class="btn btn-neutral" title="Community and developer guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -282,9 +311,11 @@ script.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

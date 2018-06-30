@@ -1,11 +1,34 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "theCore C++ embedded framework", "index.html", [
     [ "theCore embedded framework - A Brief Description.", "index.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
@@ -28,8 +51,8 @@ var NAVTREE =
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
@@ -44,17 +67,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Findcppcheck_8cpp.html",
-"classecl_1_1exti__manager_1_1handler.html#a4b9e2a861084015199945feb5a0e540e",
-"classecl_1_1native__thread.html#a285bfb3316158413ecb1989de49ef615",
-"common_2export_2common_2adc_8hpp.html#a6ec0377ffa8c54d9437870b727b81dd0ae2b21aece1b9f853bc86e1b7ae8b4812",
-"functions_func_x.html",
-"group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a38338ee70469f120768f5625e920e123",
-"group__tm4c__uart.html#ga1c1e76d366fa172339a9ea3bb2975896",
-"mmio__unit_8cpp.html#a380a7fbfbbeee51ee22a6be82a23fdfc",
-"semaphore__test_2case_8cpp.html#ac94a130bdf155f0d652181f7feac86f6",
-"stm32f4xx__dma__wrap_8hpp.html#aa64cb1862e59e9d83260706f9255063ea5fd06f56c424e2730eae665dc6b55498",
-"structecl_1_1sdspi__state.html#a449bbb758e8ef0714eec1438753910c8",
-"uart__bat_2case_8cpp.html#aaff8322b035890e1444b112103b72734"
+"classecl_1_1fat_1_1dir.html",
+"classecl_1_1ostream.html#a2b8585879d2891f033dcec22ef6a51b8",
+"common_2export_2common_2spi_8hpp.html#aec3e279a53c58170f48be761b6a72cd6a670d4ff392072f4c1f307a15c828b12d",
+"globals_e.html",
+"group__stm32__adc.html#ga9c8976d83a2abe10200e66cc31cd0565",
+"group__tm4c__spi.html#ga26d7da33cd43de134accf94523f97134",
+"l1xx_2export_2stm32__device_8h.html",
+"pool__unit_8cpp.html#a4e4a86371393eb58a8d325941ff84c89",
+"stm32f4xx__dma__wrap_8hpp.html#a8cf36eef78c8dbb519911d064d259f94a37069393323765b529fd980a6545b6bb",
+"structecl_1_1sdspi__card__info.html#a01e260f54731c866c055ef39fcd5ec40",
+"types_8h.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

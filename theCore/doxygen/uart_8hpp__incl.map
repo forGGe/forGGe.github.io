@@ -1,7 +1,7 @@
 <map id="uart.hpp" name="uart.hpp">
-<area shape="rect" id="node3" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="364,80,499,107"/>
-<area shape="rect" id="node6" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="211,80,339,107"/>
-<area shape="rect" id="node8" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="523,80,620,107"/>
-<area shape="rect" id="node11" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="645,80,746,107"/>
-<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="273,155,363,181"/>
+<area shape="rect" id="node3" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="333,80,456,107"/>
+<area shape="rect" id="node6" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="195,80,309,107"/>
+<area shape="rect" id="node8" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="480,80,571,107"/>
+<area shape="rect" id="node11" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="595,80,687,107"/>
+<area shape="rect" id="node4" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="248,155,331,181"/>
 </map>

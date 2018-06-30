@@ -1,7 +1,7 @@
 <map id="adc_cfg.in.hpp" name="adc_cfg.in.hpp">
-<area shape="rect" id="node3" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="458,80,559,107"/>
-<area shape="rect" id="node6" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="370,155,471,181"/>
-<area shape="rect" id="node9" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="475,229,566,256"/>
-<area shape="rect" id="node10" href="$common_2export_2common_2adc_8hpp.html" title="Common definitions for ADC module. " alt="" coords="547,155,681,181"/>
-<area shape="rect" id="node11" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="706,155,834,181"/>
+<area shape="rect" id="node3" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="420,80,513,107"/>
+<area shape="rect" id="node6" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="337,155,429,181"/>
+<area shape="rect" id="node9" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="433,229,516,256"/>
+<area shape="rect" id="node10" href="$common_2export_2common_2adc_8hpp.html" title="Common definitions for ADC module. " alt="" coords="504,155,627,181"/>
+<area shape="rect" id="node11" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="651,155,765,181"/>
 </map>

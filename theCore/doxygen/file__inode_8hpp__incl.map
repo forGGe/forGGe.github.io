@@ -1,13 +1,13 @@
 <map id="file_inode.hpp" name="file_inode.hpp">
-<area shape="rect" id="node2" href="$inode_8hpp.html" title="inode interface. " alt="" coords="200,80,325,107"/>
-<area shape="rect" id="node15" href="$path_8hpp.html" title="Filesystem path utilities. " alt="" coords="511,229,630,256"/>
-<area shape="rect" id="node16" href="$fat_2export_2ecl_2fat_2types_8hpp.html" title="FATFS convinient aliases. " alt="" coords="527,80,657,107"/>
-<area shape="rect" id="node3" href="$file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="192,155,333,181"/>
-<area shape="rect" id="node14" href="$dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="13,155,152,181"/>
-<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="135,229,225,256"/>
-<area shape="rect" id="node8" href="$export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="23,229,110,256"/>
-<area shape="rect" id="node9" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="98,304,225,331"/>
-<area shape="rect" id="node10" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="430,379,527,405"/>
-<area shape="rect" id="node17" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="696,155,797,181"/>
-<area shape="rect" id="node18" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="784,229,877,256"/>
+<area shape="rect" id="node2" href="$inode_8hpp.html" title="inode interface. " alt="" coords="189,80,304,107"/>
+<area shape="rect" id="node15" href="$path_8hpp.html" title="Filesystem path utilities. " alt="" coords="484,229,592,256"/>
+<area shape="rect" id="node16" href="$fat_2export_2ecl_2fat_2types_8hpp.html" title="FATFS convinient aliases. " alt="" coords="503,80,622,107"/>
+<area shape="rect" id="node3" href="$file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="183,155,310,181"/>
+<area shape="rect" id="node14" href="$dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="18,155,142,181"/>
+<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="126,229,209,256"/>
+<area shape="rect" id="node8" href="$export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="23,229,102,256"/>
+<area shape="rect" id="node9" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="94,304,209,331"/>
+<area shape="rect" id="node10" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="406,379,497,405"/>
+<area shape="rect" id="node17" href="$pool_8hpp.html" title="Memory pool and corresponding allocator facilities. " alt="" coords="659,155,751,181"/>
+<area shape="rect" id="node18" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="743,229,830,256"/>
 </map>

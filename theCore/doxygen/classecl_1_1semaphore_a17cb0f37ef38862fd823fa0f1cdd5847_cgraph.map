@@ -1,4 +1,0 @@
-<map id="ecl::semaphore::signal" name="ecl::semaphore::signal">
-<area shape="rect" id="node2" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="223,5,393,47"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="441,13,551,39"/>
-</map>

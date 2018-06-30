@@ -1,5 +1,4 @@
 <map id="ecl::exti_manager::handler::~handler" name="ecl::exti_manager::handler::~handler">
-<area shape="rect" id="node2" href="$group__stm32__exti.html#ga4e38ff24f728f801821e33505ad1fe3c" title="Unsubscribes handler from any event. " alt="" coords="200,23,347,65"/>
-<area shape="rect" id="node3" href="$classecl_1_1list__node.html#a54de41b8ec068ac177b9b06cac68e805" title="Unlinks this node from a list. " alt="" coords="408,5,564,32"/>
-<area shape="rect" id="node4" href="$group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="395,56,577,83"/>
+<area shape="rect" id="node2" href="$group__stm32__exti.html#ga4e38ff24f728f801821e33505ad1fe3c" title="Unsubscribes handler from any event. " alt="" coords="187,5,320,47"/>
+<area shape="rect" id="node3" href="$group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="368,13,533,39"/>
 </map>

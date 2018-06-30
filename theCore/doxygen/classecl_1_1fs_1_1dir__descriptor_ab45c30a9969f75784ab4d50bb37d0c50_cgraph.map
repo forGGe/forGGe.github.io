@@ -1,9 +1,4 @@
 <map id="ecl::fs::dir_descriptor::dir_descriptor" name="ecl::fs::dir_descriptor::dir_descriptor">
-<area shape="rect" id="node2" href="$classecl_1_1weak__ptr.html#a0db449f53375be606605f87eff2a5cee" title="ecl::weak_ptr::expired" alt="" coords="404,31,571,57"/>
-<area shape="rect" id="node7" href="$classecl_1_1weak__ptr.html#a8d04026d3384b7688f222ea848cc96fd" title="ecl::weak_ptr::lock" alt="" coords="212,81,356,108"/>
-<area shape="rect" id="node3" href="$classecl_1_1aux.html#afea361750f5715dcc81ffdddcc0f5b8e" title="Returns reference counter. " alt="" coords="841,5,940,32"/>
-<area shape="rect" id="node4" href="$classecl_1_1weak__ptr.html#a20dc199f7017b66fcbb1e7ce730424f1" title="ecl::weak_ptr::reset" alt="" coords="619,56,769,83"/>
-<area shape="rect" id="node5" href="$classecl_1_1aux.html#a84ca3f7a9b8f407c6bd744b74b5467de" title="Decrements weak reference counter and returns new value. " alt="" coords="817,56,964,83"/>
-<area shape="rect" id="node6" href="$classecl_1_1aux.html#afff36f010a2c9069f67aa65c116194fd" title="Destroys aux and deallocates memory if both shared and weak counter is zero. " alt="" coords="825,107,956,133"/>
-<area shape="rect" id="node8" href="$classecl_1_1aux.html#acc79576266edebc2cc6852942a43c83b" title="Incremets reference counter and returns new value. " alt="" coords="437,81,537,108"/>
+<area shape="rect" id="node2" href="$classecl_1_1weak__ptr.html#a9d3e9ea00007331602c8715a93a9fe8e" title="ecl::weak_ptr::expired" alt="" coords="197,5,347,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1weak__ptr.html#a0fe8fe55a147383c8a99cf2bee33039f" title="ecl::weak_ptr::lock" alt="" coords="207,56,337,83"/>
 </map>

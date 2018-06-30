@@ -1,5 +1,5 @@
 <map id="i2c.hpp" name="i2c.hpp">
-<area shape="rect" id="node2" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="112,80,211,107"/>
-<area shape="rect" id="node3" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="5,155,160,181"/>
-<area shape="rect" id="node4" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="184,155,296,181"/>
+<area shape="rect" id="node2" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="101,80,193,107"/>
+<area shape="rect" id="node3" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="5,155,145,181"/>
+<area shape="rect" id="node4" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="169,155,272,181"/>
 </map>

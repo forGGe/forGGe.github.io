@@ -1,4 +1,4 @@
 <map id="kernel_main" name="kernel_main">
-<area shape="rect" id="node2" href="$kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="156,5,319,32"/>
-<area shape="rect" id="node3" href="$kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="367,5,461,32"/>
+<area shape="rect" id="node2" href="$kernel__main_8c.html#ac4b6fb4f3c40d5378a895a442928fb3f" title="freertos_main_runner" alt="" coords="145,5,289,32"/>
+<area shape="rect" id="node3" href="$kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58" title="Early&#45;main routine performs final initialization steps. " alt="" coords="337,5,423,32"/>
 </map>

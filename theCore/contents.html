@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -53,6 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -89,10 +92,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arch.html">Supported architectures</a></li>
@@ -105,7 +112,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
             
@@ -118,8 +125,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">theCore</a>
+        
       </nav>
 
 
@@ -128,23 +137,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
-      
-    <li>theCore: C++ Embedded Framework</li>
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>theCore: C++ Embedded Framework</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/contents.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -183,22 +209,24 @@ single-page version, click <a class="reference external" href="http://forgge.git
 </li>
 <li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="guides/getting-started.html">Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides/hello-world.html">Creating your first Hello World application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides/multiplatform.html">Multi-platform application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guides/without-nix.html">Getting required development packages without Nix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="guides/thirdparty-cache.html">Cache common thirdparties</a></li>
 <li class="toctree-l2"><a class="reference internal" href="guides/running-openocd-without-sudo.html">Running OpenOCD without root privileges</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scripts/index.html">theCore scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scripts/tcore.html"><code class="docutils literal notranslate"><span class="pre">tcore</span></code> script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scripts/configurator.html">Configurator graphical interface</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="examples/blinky.html">Simple LED blink example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/hello-world.html">Simple Hello World example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/exti-button-interrupt.html">External interrupts from user button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples/stm32f4-discovery-htu21d-sensor.html">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/htu21d-temperature-humidity-sensor.html">HTU21D temperature and humidity sensor example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="examples/stm32f4-discovery-cs43l22.html">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples/stm32f4-discovery-bluetooth-hm10.html">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples/ti-tm4c123g-sdcard-fatfs-sdspi.html">TI TM4C123G SD-card demo using FATFS and SDSPI</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples/index.html#initial-setup">Initial setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/bluetooth-hm10.html">HM-10 Bluetooth LE (4.0) wireless module example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/bluetooth-hm10.html#supported-targets-boards">Supported targets (boards)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples/fatfs-over-sdspi.html">SD-card demo using FATFS and SDSPI</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="project_structure.html">Project structure</a><ul>
@@ -231,7 +259,6 @@ single-page version, click <a class="reference external" href="http://forgge.git
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="utilities/index.html">Libraries and utilities</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="utilities/json-configurator.html">JSON-based configurator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="utilities/console.html">Console streams</a></li>
 <li class="toctree-l2"><a class="reference internal" href="utilities/console.html#bypass-console">Bypass console</a></li>
 <li class="toctree-l2"><a class="reference internal" href="utilities/filesystem.html">Filesystem support</a></li>
@@ -277,9 +304,9 @@ single-page version, click <a class="reference external" href="http://forgge.git
 <li class="toctree-l2"><a class="reference internal" href="changelog.html#v0-1-0-2016-04-12">v0.1.0 (2016-04-12)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-fix-libusb-open-failed-with-libusb-error-access-when-running-openocd">How to fix <code class="docutils literal"><span class="pre">libusb_open()</span> <span class="pre">failed</span> <span class="pre">with</span> <span class="pre">LIBUSB_ERROR_ACCESS</span></code> when running OpenOCD?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="faq.html#i-get-plain-error-open-failed-when-running-openocd-with-my-stm32f4-discovery-board-what-should-i-do">I get plain <code class="docutils literal"><span class="pre">Error:</span> <span class="pre">open</span> <span class="pre">failed</span></code> when running OpenOCD with my STM32F4 Discovery board. What should I do?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-fix-libusb-open-failed-with-libusb-error-access-when-running-openocd">How to fix <code class="docutils literal notranslate"><span class="pre">libusb_open()</span> <span class="pre">failed</span> <span class="pre">with</span> <span class="pre">LIBUSB_ERROR_ACCESS</span></code> when running OpenOCD?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html#i-get-plain-error-open-failed-when-running-openocd-with-my-stm32f4-discovery-board-what-should-i-do">I get plain <code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">open</span> <span class="pre">failed</span></code> when running OpenOCD with my STM32F4 Discovery board. What should I do?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-run-openocd-with-root-privileges-under-nix-shell">How to run OpenOCD with root privileges under Nix shell?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-run-arbitrary-command-with-root-privileges-under-nix-shell">How to run arbitrary command with root privileges under Nix shell?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html#how-to-run-openocd-without-root-privileges">How to run OpenOCD without root privileges?</a></li>
@@ -293,12 +320,15 @@ single-page version, click <a class="reference external" href="http://forgge.git
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="index.html" class="btn btn-neutral float-right" title="theCore: C++ Embedded Framework" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="index.html" class="btn btn-neutral float-right" title="theCore: C++ Embedded Framework" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -331,9 +361,11 @@ single-page version, click <a class="reference external" href="http://forgge.git
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

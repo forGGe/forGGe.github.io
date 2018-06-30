@@ -1,6 +1,6 @@
 <map id="Console" name="Console">
-<area shape="rect" id="node2" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="372,5,552,61"/>
-<area shape="rect" id="node4" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="419,85,505,112"/>
-<area shape="rect" id="node5" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="371,136,553,163"/>
-<area shape="rect" id="node3" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,78,179,119"/>
+<area shape="rect" id="node2" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="348,5,519,61"/>
+<area shape="rect" id="node4" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="394,85,473,112"/>
+<area shape="rect" id="node5" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="351,136,516,163"/>
+<area shape="rect" id="node3" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,78,164,119"/>
 </map>

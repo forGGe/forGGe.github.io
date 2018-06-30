@@ -1,0 +1,9 @@
+<map id="spi_i2s_bus.hpp" name="spi_i2s_bus.hpp">
+<area shape="rect" id="node3" href="$common_2export_2common_2spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,80,277,107"/>
+<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="301,80,424,107"/>
+<area shape="rect" id="node7" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="448,80,563,107"/>
+<area shape="rect" id="node11" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,80,792,107"/>
+<area shape="rect" id="node14" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="875,80,1021,107"/>
+<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="239,155,321,181"/>
+<area shape="rect" id="node16" href="$version_8hpp.html" title="General the Core version library. " alt="" coords="1043,155,1154,181"/>
+</map>

@@ -1,17 +1,13 @@
 <map id="istream.hpp" name="istream.hpp">
-<area shape="rect" id="node2" href="$istream__unit_8cpp.html" title="istream_unit.cpp" alt="" coords="429,80,560,107"/>
-<area shape="rect" id="node3" href="$iostream_8hpp.html" title="iostream.hpp" alt="" coords="585,80,693,107"/>
-<area shape="rect" id="node4" href="$hm10_2main_8cpp.html" title="HM&#45;10 usage example. " alt="" coords="5,155,88,181"/>
-<area shape="rect" id="node5" href="$htu21d_2main_8cpp.html" title="HTU21D temperature and humidity sensor usage example. " alt="" coords="112,155,195,181"/>
-<area shape="rect" id="node6" href="$stm32f4__exti_2main_8cpp.html" title="main.cpp" alt="" coords="219,155,301,181"/>
-<area shape="rect" id="node7" href="$tm4c__fatfs_2main_8cpp.html" title="main.cpp" alt="" coords="325,155,408,181"/>
-<area shape="rect" id="node8" href="$streams_8cpp.html" title="Main iostream module. " alt="" coords="433,155,535,181"/>
-<area shape="rect" id="node9" href="$console__integrity_8cpp.html" title="console_integrity.cpp" alt="" coords="559,155,718,181"/>
-<area shape="rect" id="node10" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="742,155,807,181"/>
-<area shape="rect" id="node11" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="832,155,941,181"/>
-<area shape="rect" id="node12" href="$streams__bat_2case_8cpp.html" title="case.cpp" alt="" coords="966,155,1045,181"/>
-<area shape="rect" id="node13" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1069,155,1153,181"/>
-<area shape="rect" id="node16" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="1177,155,1239,181"/>
-<area shape="rect" id="node14" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="1005,229,1131,256"/>
-<area shape="rect" id="node15" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="1155,229,1261,256"/>
+<area shape="rect" id="node2" href="$istream__unit_8cpp.html" title="istream_unit.cpp" alt="" coords="236,80,355,107"/>
+<area shape="rect" id="node3" href="$iostream_8hpp.html" title="iostream.hpp" alt="" coords="379,80,476,107"/>
+<area shape="rect" id="node4" href="$streams_8cpp.html" title="Main iostream module. " alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node5" href="$console__integrity_8cpp.html" title="console_integrity.cpp" alt="" coords="125,155,269,181"/>
+<area shape="rect" id="node6" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="293,155,353,181"/>
+<area shape="rect" id="node7" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="378,155,477,181"/>
+<area shape="rect" id="node8" href="$streams__bat_2case_8cpp.html" title="case.cpp" alt="" coords="501,155,575,181"/>
+<area shape="rect" id="node9" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="600,155,679,181"/>
+<area shape="rect" id="node12" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="703,155,762,181"/>
+<area shape="rect" id="node10" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="542,229,659,256"/>
+<area shape="rect" id="node11" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="684,229,781,256"/>
 </map>

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -54,6 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -90,18 +93,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Guides</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="getting-started.html">Getting started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hello-world.html">Creating your first Hello World application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="multiplatform.html">Multi-platform application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without-nix.html">Getting required development packages without Nix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty-cache.html">Cache common thirdparties</a></li>
 <li class="toctree-l2"><a class="reference internal" href="running-openocd-without-sudo.html">Running OpenOCD without root privileges</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
@@ -114,7 +118,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -127,8 +131,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -137,23 +143,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
-    <li>Guides</li>
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
+      <li>Guides</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/guides/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -173,14 +196,11 @@ programming skills with theCore.</p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="getting-started.html#downloading-thecore">Downloading theCore</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting-started.html#deploying-development-environment">Deploying development environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting-started.html#details-of-the-development-environment">Details of the development environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting-started.html#moving-forward">Moving forward</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting-started.html#more-info-about-nix">More info about Nix</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="hello-world.html">Creating your first Hello World application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="multiplatform.html">Multi-platform application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="without-nix.html">Getting required development packages without Nix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="thirdparty-cache.html">Cache common thirdparties</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty-cache.html#using-environment-variables">Using environment variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty-cache.html#using-cmake-command-line">Using CMake command line</a></li>
@@ -198,15 +218,18 @@ programming skills with theCore.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="getting-started.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="getting-started.html" class="btn btn-neutral float-right" title="Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral" title="theCore: C++ Embedded Framework" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../index.html" class="btn btn-neutral" title="theCore: C++ Embedded Framework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -238,9 +261,11 @@ programming skills with theCore.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

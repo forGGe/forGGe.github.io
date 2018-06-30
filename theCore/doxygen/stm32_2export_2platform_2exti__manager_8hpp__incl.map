@@ -1,7 +1,7 @@
 <map id="exti_manager.hpp" name="exti_manager.hpp">
-<area shape="rect" id="node2" href="$list_8hpp.html" title="The intrusive list interface. " alt="" coords="190,80,283,107"/>
-<area shape="rect" id="node8" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="491,80,619,107"/>
-<area shape="rect" id="node13" href="$stm32_2export_2platform_2gpio__device_8hpp.html" title="GPIO device interface for STM32 platform. " alt="" coords="730,80,858,107"/>
-<area shape="rect" id="node3" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="22,155,123,181"/>
-<area shape="rect" id="node10" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="510,155,601,181"/>
+<area shape="rect" id="node2" href="$list_8hpp.html" title="The intrusive list interface. " alt="" coords="177,80,263,107"/>
+<area shape="rect" id="node8" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="455,80,569,107"/>
+<area shape="rect" id="node13" href="$stm32_2export_2platform_2gpio__device_8hpp.html" title="GPIO device interface for STM32 platform. " alt="" coords="677,80,793,107"/>
+<area shape="rect" id="node3" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="22,155,114,181"/>
+<area shape="rect" id="node10" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="471,155,553,181"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="External interrupt manager" name="External interrupt manager">
-<area shape="rect" id="node1" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="520,5,656,47"/>
-<area shape="rect" id="node3" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,13,169,39"/>
+<area shape="rect" id="node1" href="$group__tm4c__exti.html" title="External interrupt\l manager" alt="" coords="475,5,596,47"/>
+<area shape="rect" id="node3" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,13,152,39"/>
 </map>

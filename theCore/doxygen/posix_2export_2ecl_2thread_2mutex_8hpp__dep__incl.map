@@ -1,10 +1,12 @@
 <map id="mutex.hpp" name="mutex.hpp">
-<area shape="rect" id="node2" href="$dev_2bus_2tests_2mocks_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="5,80,96,107"/>
-<area shape="rect" id="node3" href="$lib_2thread_2freertos_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="120,80,211,107"/>
-<area shape="rect" id="node4" href="$lib_2thread_2no__os_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="235,80,325,107"/>
-<area shape="rect" id="node5" href="$lib_2thread_2posix_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="349,80,440,107"/>
-<area shape="rect" id="node6" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="465,80,538,107"/>
-<area shape="rect" id="node7" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="323,155,427,181"/>
-<area shape="rect" id="node8" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="451,155,551,181"/>
-<area shape="rect" id="node9" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="575,155,702,181"/>
+<area shape="rect" id="node2" href="$dev_2bus_2tests_2mocks_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$lib_2thread_2freertos_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="112,80,195,107"/>
+<area shape="rect" id="node4" href="$lib_2thread_2no__os_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="219,80,301,107"/>
+<area shape="rect" id="node5" href="$lib_2thread_2posix_2mutex_8cpp.html" title="mutex.cpp" alt="" coords="325,80,408,107"/>
+<area shape="rect" id="node6" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="433,80,501,107"/>
+<area shape="rect" id="node7" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="216,155,312,181"/>
+<area shape="rect" id="node8" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="337,155,429,181"/>
+<area shape="rect" id="node9" href="$cs43l22__cfg_8in_8hpp.html" title="CS43L22 configuration code template. " alt="" coords="359,229,489,256"/>
+<area shape="rect" id="node10" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="504,155,621,181"/>
+<area shape="rect" id="node11" href="$htu21d__cfg_8in_8hpp.html" title="HTU21D configuration code template. " alt="" coords="645,155,771,181"/>
 </map>

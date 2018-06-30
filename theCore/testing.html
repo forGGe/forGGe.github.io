@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -54,6 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -90,10 +93,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arch.html">Supported architectures</a></li>
@@ -119,7 +126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
             
@@ -132,8 +139,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">theCore</a>
+        
       </nav>
 
 
@@ -142,23 +151,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="contents.html">Docs</a> &raquo;</li>
-      
-    <li>Testing and CI</li>
+    
+      <li><a href="contents.html">Docs</a> &raquo;</li>
+        
+      <li>Testing and CI</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/testing.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -183,29 +209,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>theCore testing facilities provides way to create on-device and system tests
 in modular and reusable manner.
 theCore uses <a class="reference external" href="http://www.throwtheswitch.org/unity/">the Unity test framework</a> to create test cases.</p>
-<p>On-device tests are located in the <code class="docutils literal"><span class="pre">tests</span></code> top-level directory.</p>
+<p>On-device tests are located in the <code class="docutils literal notranslate"><span class="pre">tests</span></code> top-level directory.</p>
 <div class="section" id="basic-entities">
 <h3>Basic entities<a class="headerlink" href="#basic-entities" title="Permalink to this headline">¶</a></h3>
 <p>A test case is a code that performs validation of the particular theCore
 component or module.</p>
-<p>Each test, or test case, resides in separate directory under <code class="docutils literal"><span class="pre">tests/cases</span></code> dir.
+<p>Each test, or test case, resides in separate directory under <code class="docutils literal notranslate"><span class="pre">tests/cases</span></code> dir.
 To be recognizable by theCore testing facilities the test case
-must contain a definition file with <code class="docutils literal"><span class="pre">case_defs.cmake</span></code> name.</p>
-<p>Test case definition file must (at least) define <code class="docutils literal"><span class="pre">CASE_SOURCES</span></code> CMake variable.
-<code class="docutils literal"><span class="pre">CASE_SOURCES</span></code> must contain list of test case source files.</p>
+must contain a definition file with <code class="docutils literal notranslate"><span class="pre">case_defs.cmake</span></code> name.</p>
+<p>Test case definition file must (at least) define <code class="docutils literal notranslate"><span class="pre">CASE_SOURCES</span></code> CMake variable.
+<code class="docutils literal notranslate"><span class="pre">CASE_SOURCES</span></code> must contain list of test case source files.</p>
 <p>See [the unity_demo test case](cases/unity_demo) as an example.</p>
-<p>You may check <code class="docutils literal"><span class="pre">tests/cases/unity_demo</span></code> as an example.</p>
+<p>You may check <code class="docutils literal notranslate"><span class="pre">tests/cases/unity_demo</span></code> as an example.</p>
 </div>
 <div class="section" id="targets-and-mcus">
 <h3>Targets and MCUs<a class="headerlink" href="#targets-and-mcus" title="Permalink to this headline">¶</a></h3>
 <p>A target is a board where tests should be executed.</p>
 <p>Multiple boards can be built around single MCU type.
-MCU types are placed in the <code class="docutils literal"><span class="pre">tests/mcus</span></code> directory.
-Each MCU must contain <code class="docutils literal"><span class="pre">mcu_defs.cmake</span></code> and <code class="docutils literal"><span class="pre">mcu_defs.hpp</span></code> files.
+MCU types are placed in the <code class="docutils literal notranslate"><span class="pre">tests/mcus</span></code> directory.
+Each MCU must contain <code class="docutils literal notranslate"><span class="pre">mcu_defs.cmake</span></code> and <code class="docutils literal notranslate"><span class="pre">mcu_defs.hpp</span></code> files.
 Those definition files can contain arbitrary data specific to the concrete microcontroller.</p>
-<p>The TM4C MCU definition file (<code class="docutils literal"><span class="pre">tests/mcus/tm4c123gh6pm/mcu_defs.cmake</span></code>)
+<p>The TM4C MCU definition file (<code class="docutils literal notranslate"><span class="pre">tests/mcus/tm4c123gh6pm/mcu_defs.cmake</span></code>)
 provided here as an example:</p>
-<div class="highlight-cmake"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-cmake notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -218,42 +244,42 @@ provided here as an example:</p>
 <span class="nb">set</span><span class="p">(</span><span class="s">CONFIG_PLATFORM_DEVICE</span> <span class="s">TM4C123GH6PM</span><span class="p">)</span>
 </pre></div>
 </td></tr></table></div>
-<p>As shown, CMake file sets the platform associated with that MCU (<code class="docutils literal"><span class="pre">CONFIG_PLATFORM</span></code>)
-and the MCU model (<code class="docutils literal"><span class="pre">CONFIG_PLATFORM_DEVICE</span></code>).</p>
-<p>Targets are residing in <code class="docutils literal"><span class="pre">tests/targets</span></code> directory and can reuse
-MCU definitions in its own definition files: <code class="docutils literal"><span class="pre">target_defs.cmake</span></code>
-and <code class="docutils literal"><span class="pre">target_defs.hpp</span></code>.</p>
+<p>As shown, CMake file sets the platform associated with that MCU (<code class="docutils literal notranslate"><span class="pre">CONFIG_PLATFORM</span></code>)
+and the MCU model (<code class="docutils literal notranslate"><span class="pre">CONFIG_PLATFORM_DEVICE</span></code>).</p>
+<p>Targets are residing in <code class="docutils literal notranslate"><span class="pre">tests/targets</span></code> directory and can reuse
+MCU definitions in its own definition files: <code class="docutils literal notranslate"><span class="pre">target_defs.cmake</span></code>
+and <code class="docutils literal notranslate"><span class="pre">target_defs.hpp</span></code>.</p>
 <p>Targets must also declare set of test suites that they can handle
 (more on this in the <a class="reference internal" href="#suites">Suites</a> section).</p>
 <p>Good example of the test target is a  STM32 discovery target.
-It can be found in <code class="docutils literal"><span class="pre">targets/stm32f4discovery_simple</span></code> directory.</p>
+It can be found in <code class="docutils literal notranslate"><span class="pre">targets/stm32f4discovery_simple</span></code> directory.</p>
 </div>
 <div class="section" id="suites">
 <h3>Suites<a class="headerlink" href="#suites" title="Permalink to this headline">¶</a></h3>
 <p>Every target can run <cite>limited</cite> set of possible tests.
 Limitations might be caused by lack of ROM, RAM or absence of the required hardware.
 Sets of tests that can be executed on the target called <strong>suite</strong>.</p>
-<p>Suites are specific to the target, thus placed under <code class="docutils literal"><span class="pre">&lt;target_name&gt;/suites</span></code> directory.
+<p>Suites are specific to the target, thus placed under <code class="docutils literal notranslate"><span class="pre">&lt;target_name&gt;/suites</span></code> directory.
 Suites are compiled into executables, thus every suite must contain ordinary
-<code class="docutils literal"><span class="pre">CMakeLists.txt</span></code> usable with theCore.</p>
+<code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> usable with theCore.</p>
 <p>Suite does not need to contain any source files except the init code
-(usually placed in <code class="docutils literal"><span class="pre">suite_init.cpp</span></code>) that runs when board starts.
-Suite launchers are autogenerated by <code class="docutils literal"><span class="pre">scripts/gen_suite.py</span></code> script.</p>
+(usually placed in <code class="docutils literal notranslate"><span class="pre">suite_init.cpp</span></code>) that runs when board starts.
+Suite launchers are autogenerated by <code class="docutils literal notranslate"><span class="pre">scripts/gen_suite.py</span></code> script.</p>
 <p>See Unity demo suite on stm32f4 discovery target placed under
-<code class="docutils literal"><span class="pre">targets/stm32f4discovery_simple/suites/unity_demo</span></code> as an example.</p>
+<code class="docutils literal notranslate"><span class="pre">targets/stm32f4discovery_simple/suites/unity_demo</span></code> as an example.</p>
 </div>
 <div class="section" id="building-thecore-suites">
 <h3>Building theCore suites<a class="headerlink" href="#building-thecore-suites" title="Permalink to this headline">¶</a></h3>
 <p>Existing test suites can be compiled by the following procedure
 (do not forget to complete <a class="reference internal" href="guides/getting-started.html#thecore-gettingstarted"><span class="std std-ref">Getting started</span></a> guide to obtain Nix environment):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">tests_build</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="n">tests_build</span>
 <span class="n">cd</span> <span class="n">tests_build</span>
 <span class="n">cmake</span> <span class="o">../</span><span class="n">tests</span>
 <span class="n">make</span>
 </pre></div>
 </div>
 <p>Paths to suite binaries are recorded in <cite>suite_list.txt</cite> file in the build directory:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ cat suite_list.txt
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cat suite_list.txt
 platform_bat,tivac_tm4,/tmp/theCore/tests/build/tivac_tm4/platform_bat.gnu//build/platform_bat,/tmp/build3/tivac_tm4/platform_bat.gnu//build/platform_bat.bin
 platform_bat,stm32f4discovery_simple,/tmp/theCore/tests/build/stm32f4discovery_simple/platform_bat.gnu//build/platform_bat,/tmp/build3/stm32f4discovery_simple/platform_bat.gnu//build/platform_bat.bin
 platform_bat,stm32f4discovery_simple,/tmp/theCore/tests/build/stm32f4discovery_simple/platform_bat.clang//build/platform_bat,/tmp/build3/stm32f4discovery_simple/platform_bat.clang//build/platform_bat.bin
@@ -266,14 +292,14 @@ unity_demo,tivac_tm4,/tmp/theCore/tests/build/tivac_tm4/unity_demo.gnu//build/un
 <h3>Launching suites<a class="headerlink" href="#launching-suites" title="Permalink to this headline">¶</a></h3>
 <p>Suite binaries obtained in the <a class="reference internal" href="#building-thecore-suites">Building theCore suites</a> can be flashed
 into the MCU using either manual approach (using appropriate programmer)
-or using <code class="docutils literal"><span class="pre">scripts/flasher.py</span></code> script.</p>
+or using <code class="docutils literal notranslate"><span class="pre">scripts/flasher.py</span></code> script.</p>
 <p>The flasher script tries to flash suite binaries to connected boards
-using <code class="docutils literal"><span class="pre">suite_list.txt</span></code> and the description of connected devices
+using <code class="docutils literal notranslate"><span class="pre">suite_list.txt</span></code> and the description of connected devices
 in a form of JSON.</p>
 <p>Such JSON must be filled manually with respect to board connected.
-Example of the description file (<code class="docutils literal"><span class="pre">/scripts/connected_devices_example.json</span></code>)
+Example of the description file (<code class="docutils literal notranslate"><span class="pre">/scripts/connected_devices_example.json</span></code>)
 demonstrated below:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -329,15 +355,18 @@ as good examples.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="credits.html" class="btn btn-neutral float-right" title="Credits and acknowledgements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="credits.html" class="btn btn-neutral float-right" title="Credits and acknowledgements" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="docs.html" class="btn btn-neutral" title="Documentation development and contribution" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="docs.html" class="btn btn-neutral" title="Documentation development and contribution" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -369,9 +398,11 @@ as good examples.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

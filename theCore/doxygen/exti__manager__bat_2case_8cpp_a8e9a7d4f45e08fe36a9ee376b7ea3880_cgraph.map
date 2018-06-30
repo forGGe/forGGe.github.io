@@ -1,8 +1,5 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$group__stm32__exti.html#gad4f8451d7e0d6fb7c8c1c57b0a688813" title="Sets user&#45;defined context. " alt="" coords="108,5,255,47"/>
-<area shape="rect" id="node3" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="110,71,253,98"/>
-<area shape="rect" id="node4" href="$group__stm32__exti.html#ga8c400678c55aa8935c96807704c1a563" title="Unmasks (enables) pending EXTI request. " alt="" coords="108,123,255,164"/>
-<area shape="rect" id="node5" href="$group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="303,79,485,106"/>
-<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="341,130,447,157"/>
-<area shape="rect" id="node7" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="331,181,457,207"/>
+<area shape="rect" id="node2" href="$group__stm32__exti.html#gad4f8451d7e0d6fb7c8c1c57b0a688813" title="Sets user&#45;defined context. " alt="" coords="109,5,243,47"/>
+<area shape="rect" id="node3" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="111,71,241,98"/>
+<area shape="rect" id="node4" href="$group__stm32__exti.html#ga8c400678c55aa8935c96807704c1a563" title="Unmasks (enables) pending EXTI request. " alt="" coords="109,123,243,164"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="stm32_device.hpp" name="stm32_device.hpp">
-<area shape="rect" id="node2" href="$l1xx_2export_2stm32__device_8h.html" title="STM32 C header collection. " alt="" coords="1398,95,1523,121"/>
-<area shape="rect" id="node16" href="$stm32l1xx__dma__wrap_8hpp.html" title="STM32L1XX DMA wrappers implementation. " alt="" coords="418,95,613,121"/>
-<area shape="rect" id="node22" href="$stm32l1xx__exti__wrap_8hpp.html" title="EXTI wrapper implementation. " alt="" coords="1704,95,1895,121"/>
-<area shape="rect" id="node20" href="$stm32__dma__wrap__interface_8hpp.html" title="DMA wrapper interface for STM32 platform. " alt="" coords="121,184,352,211"/>
-<area shape="rect" id="node23" href="$stm32__exti__wrap__interface_8hpp.html" title="Interface to EXTI STM32 wrappers. " alt="" coords="2209,184,2435,211"/>
+<area shape="rect" id="node2" href="$l1xx_2export_2stm32__device_8h.html" title="STM32 C header collection. " alt="" coords="1289,102,1404,129"/>
+<area shape="rect" id="node16" href="$stm32l1xx__dma__wrap_8hpp.html" title="STM32L1XX DMA wrappers implementation. " alt="" coords="384,102,557,129"/>
+<area shape="rect" id="node22" href="$stm32l1xx__exti__wrap_8hpp.html" title="EXTI wrapper implementation. " alt="" coords="1571,102,1741,129"/>
+<area shape="rect" id="node20" href="$stm32__dma__wrap__interface_8hpp.html" title="DMA wrapper interface for STM32 platform. " alt="" coords="113,199,319,225"/>
+<area shape="rect" id="node23" href="$stm32__exti__wrap__interface_8hpp.html" title="Interface to EXTI STM32 wrappers. " alt="" coords="2032,199,2235,225"/>
 </map>

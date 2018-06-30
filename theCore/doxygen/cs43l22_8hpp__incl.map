@@ -1,7 +1,7 @@
 <map id="cs43l22.hpp" name="cs43l22.hpp">
-<area shape="rect" id="node2" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="820,229,911,256"/>
-<area shape="rect" id="node3" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="564,80,665,107"/>
-<area shape="rect" id="node13" href="$common_2export_2common_2spi_8hpp.html" title="common/spi.hpp" alt="" coords="1059,80,1189,107"/>
-<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="42,155,139,181"/>
-<area shape="rect" id="node9" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="798,155,933,181"/>
+<area shape="rect" id="node2" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="761,229,844,256"/>
+<area shape="rect" id="node3" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="521,80,615,107"/>
+<area shape="rect" id="node13" href="$common_2export_2common_2spi_8hpp.html" title="common/spi.hpp" alt="" coords="990,80,1109,107"/>
+<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="40,155,131,181"/>
+<area shape="rect" id="node9" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="741,155,864,181"/>
 </map>

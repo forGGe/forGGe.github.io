@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,62 +94,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Supported platforms</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">STM32</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#available-examples">Available examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#periphery-overview">Periphery overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#timer-allocation">Timer allocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#timer-allocation">Timer allocation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#available-options">Available options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#known-limitations">Known limitations</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#u-s-art">U(S)ART</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#json-schema">JSON schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-configuration">Example configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-output-for-stm32f4-family">Example output for STM32F4 family</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Available options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Known limitations</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#usage">Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#adc-and-channels">ADC and channels</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#adc-schema">ADC schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#channels-schema">Channels schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-configuration-irq-mode">Example configuration (IRQ mode)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">Example output for STM32F4 family</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id3">Usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#available-adc-options">Available ADC options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Known limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#available-adc-channel-options">Available ADC channel options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Known limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Usage</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#i2c">I2C</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id4">JSON schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id5">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id6">Example configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#example-output">Example output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Available options</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id7">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#i2s">I2S</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id8">JSON schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id9">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#stm32-i2s-example">Example configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11">Usage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#related-references">Related references</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i2s-and-spi">I2S and SPI</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#available-options-for-i2s">Available options for I2S</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#available-options-for-spi">Available options for SPI</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Known limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Usage</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#spi">SPI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dma-overview">DMA overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dma-in-stm32f4-mcu-family">DMA in STM32F4 MCU family</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#schema">Schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id13">Example configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id14">Example output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pin-multiplexing">Pin multiplexing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Available options</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#dma-in-stm32l1-mcu-family">DMA in STM32L1 MCU family</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dma-usage">DMA Usage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#pin-multiplexing">Pin multiplexing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#exti">EXTI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#miscellaneous-configuration">Miscellaneous configuration</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#console">Console</a></li>
@@ -168,7 +165,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -181,8 +178,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -191,25 +190,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Supported platforms</a> &raquo;</li>
-      
-    <li>STM32</li>
+        
+      <li>STM32</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/platform/stm32.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -227,51 +243,16 @@ ARM Cortex-M processor. theCore supports two families of STM32: STM32F4 and STM3
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">The platform is configured by theCore configurator.
-To make sure you are familiar with it, check the <a class="reference internal" href="../utilities/json-configurator.html#thecore-configurator"><span class="std std-ref">JSON-based configurator</span></a>
+To make sure you are familiar with it, check the <a class="reference internal" href="../scripts/configurator.html#thecore-configurator"><span class="std std-ref">Configurator graphical interface</span></a>
 section before going any further.</p>
 </div>
-<p>Minimal configuration JSON file for the STM32 MCU must contain the platform
-object with following fields:</p>
-<blockquote>
-<div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">name</span></code> - platform name (simply <code class="docutils literal"><span class="pre">stm32</span></code>)</li>
-<li><code class="docutils literal"><span class="pre">device</span></code> - desired device ID. Depends on MCU.</li>
-<li><code class="docutils literal"><span class="pre">clock</span></code> - the clock configuration:<ul>
-<li><code class="docutils literal"><span class="pre">source</span></code> - the clock source. Depends on board capabilities and MCU.</li>
-<li><code class="docutils literal"><span class="pre">speed</span></code> - the clock speed in Hz.</li>
-</ul>
-</li>
-</ul>
-</div></blockquote>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last">Currently, only <code class="docutils literal"><span class="pre">HSE</span></code> clock source is supported.</p>
+<p class="last">Currently, only <code class="docutils literal notranslate"><span class="pre">STM32F407VG</span></code> device is supported for STM32 platform.</p>
 </div>
-<p>For example, STM32F4 Discovery board the basic configuration can look like that:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-     <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
-             <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
-             <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
-         <span class="p">}</span>
-     <span class="p">}</span>
- <span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
 <p>To import all generated definitions into the application code, simply add following
 line to your source:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;aux/generated.hpp&gt;</span><span class="cp"></span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;aux/generated.hpp&gt;</span><span class="cp"></span>
 </pre></div>
 </div>
 <p>For more JSON configuration examples for STM32 platform, refer to
@@ -286,129 +267,68 @@ Pick appropriate, based on your concrete MCU model.
 Below are links to RMs for each supported family.</p>
 <ul class="last simple">
 <li><a class="reference external" href="https://goo.gl/Xn1DRB">STM32F4 RM</a></li>
-<li><a class="reference external" href="https://goo.gl/sML2mi">STM32L1 RM</a></li>
+</ul>
+</div>
+<div class="section" id="available-examples">
+<h2>Available examples<a class="headerlink" href="#available-examples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="../examples/blinky.html#thecore-blinky"><span class="std std-ref">Simple LED blink example</span></a></li>
+<li><a class="reference internal" href="../examples/hello-world.html#thecore-hello-world"><span class="std std-ref">Simple Hello World example</span></a></li>
+<li><a class="reference internal" href="../examples/stm32f4-discovery-cs43l22.html#thecore-stm32f4-cs43l22"><span class="std std-ref">STM32F4 discovery audio example with CS43L22 audio DAC</span></a></li>
+<li><a class="reference internal" href="../examples/bluetooth-hm10.html#thecore-hm-10-example"><span class="std std-ref">HM-10 Bluetooth LE (4.0) wireless module example</span></a></li>
+<li><a class="reference internal" href="../examples/htu21d-temperature-humidity-sensor.html#thecore-htu21d-example"><span class="std std-ref">HTU21D temperature and humidity sensor example</span></a></li>
 </ul>
 </div>
 <div class="section" id="periphery-overview">
 <h2>Periphery overview<a class="headerlink" href="#periphery-overview" title="Permalink to this headline">¶</a></h2>
-<p>STM32 MCU peripheries, can be configured within the same JSON file.
-Layout of the platform configuration object is described by JSON schema,
-placed under <code class="docutils literal"><span class="pre">platform/stm32/schemas/stm32.schema.json</span></code>:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;oneOf&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F4 schema&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;STM32F407VG&quot;</span> <span class="p">]</span> <span class="p">},</span>
-                <span class="nt">&quot;dma&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:../family/f4xx/schemas/dma.schema.json&quot;</span> <span class="p">}</span>
-            <span class="p">}</span>
-        <span class="p">},</span>
-        <span class="p">{</span>
-            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32L1 schema&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-            <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-                <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;STM32L152RE&quot;</span> <span class="p">]</span> <span class="p">}</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-
-    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span>           <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^stm32$&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;clock&quot;</span><span class="p">:</span>          <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:clock.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;uart&quot;</span><span class="p">:</span>           <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:uart.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;adc&quot;</span><span class="p">:</span>            <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:adc.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;adc_channels&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:adc_channels.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;i2c&quot;</span><span class="p">:</span>            <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:i2c.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;i2s&quot;</span><span class="p">:</span>            <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:i2s.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;pinmux&quot;</span><span class="p">:</span>         <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:pinmux.schema.json&quot;</span> <span class="p">},</span>
-        <span class="nt">&quot;gpio_alias&quot;</span><span class="p">:</span>     <span class="p">{</span> <span class="nt">&quot;$ref&quot;</span><span class="p">:</span> <span class="s2">&quot;file:gpio_alias.schema.json&quot;</span> <span class="p">}</span>
-    <span class="p">},</span>
-
-    <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;clock&quot;</span><span class="p">,</span> <span class="s2">&quot;device&quot;</span> <span class="p">]</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-<p>Each periphery configuration placed under a property with a relevant name.
-The example below illustrates UART periphery being added to JSON config:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="p">{</span>
-     <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;clock&quot;</span><span class="p">:</span> <span class="p">{</span>
-             <span class="nt">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;HSE&quot;</span><span class="p">,</span>
-             <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">8000000</span>
-         <span class="p">},</span>
-<span class="hll">         <span class="nt">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
-</span><span class="hll">             <span class="p">{</span>
-</span><span class="hll">                 <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
-</span><span class="hll">                 <span class="nt">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
-</span><span class="hll">                 <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;test_uart&quot;</span>
-</span><span class="hll">             <span class="p">}</span>
-</span><span class="hll">         <span class="p">]</span>
-</span>     <span class="p">}</span>
- <span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
+<p>STM32 MCU peripheries, can be configured trough theCore configurator.</p>
 <p>Note that to use any of periphery, corresponding pins must be configured too.
 <strong>Do not forget to include pin multiplexing configuration for each desired periphery.</strong>
-Proceed to the <a class="reference internal" href="#stm32-multiplexing">STM32 Multiplexing</a> for more details.</p>
+Proceed to the <a class="reference internal" href="#stm32-multiplexing">STM32 Multiplexing</a> section for more details.</p>
 </div>
 <div class="section" id="timer-allocation">
 <h2>Timer allocation<a class="headerlink" href="#timer-allocation" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/export/aux/execution.hpp</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>The system timer is a periphery that can provide fixed frequency ticks for
+whole application. The system timer can be configured from the
+“Systimer” submenu.</p>
+<div class="section" id="available-options">
+<h3>Available options<a class="headerlink" href="#available-options" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">frequency:</th><td class="field-body"><p class="first">Timer frequency in Hz.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">source:</th><td class="field-body"><p class="first">Timer source. Only <code class="docutils literal notranslate"><span class="pre">systick</span></code> is available for now.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">owner:</th><td class="field-body"><p class="first">Timer owner. If <code class="docutils literal notranslate"><span class="pre">user</span></code> is selected, then theCore will configure the timer,
+but will not use it inside its internal machinery. In such case, the user can
+decide when to stop or start the system timer.</p>
+<p class="last">If <cite>thecore</cite> is selected, then the systimer will be both configured and
+managed by internal modules of theCore. For example, timer can be started
+or stopped in delay routines inside theCore. Trying to start or stop the timer
+directly by user will lead to undefined behaviour.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="known-limitations">
+<h3>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Only SysTick can be used as a timer source.</li>
+<li>No dynamic change in frequency is allowed. This is by design.</li>
+</ul>
 </div>
 </div>
 <div class="section" id="u-s-art">
@@ -417,204 +337,50 @@ Proceed to the <a class="reference internal" href="#stm32-multiplexing">STM32 Mu
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Driver source:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/export/aux/usart_bus.hpp</span></code></td>
+<tr class="field-odd field"><th class="field-name">Driver source:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/export/aux/usart_bus.hpp</span></code></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/templates/uart_cfg.in.hpp</span></code></td>
+<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/templates/uart_cfg.in.hpp</span></code></td>
 </tr>
 </tbody>
 </table>
+<p>The UART configuration resides in the “U(S)ART” submenu.</p>
 <p>The instance of the driver, generated during the configuration step, can
 be used directly by its API or indirectly, as underlying device for theCore
 console.</p>
 <p>Check <a class="reference internal" href="#stm32-console"><span class="std std-ref">the console configuration section</span></a> to get
 information about selecting particular UART as a console output.</p>
-<p>STM32 theCore UART supports only IRQ mode, where interrupt is generated after
-each byte transmission. DMA mode is not yet implemented.</p>
-<div class="section" id="json-schema">
-<h3>JSON schema<a class="headerlink" href="#json-schema" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-
-    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^US?ART\\d$&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;baud&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;alias&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-        <span class="p">},</span>
-
-        <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span> <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
+<div class="section" id="id1">
+<h3>Available options<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">channel:</th><td class="field-body">Placed under “Enabled UART channel” selector. UART periphery to use.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">baud:</th><td class="field-body">Baud rate of UART.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">alias:</th><td class="field-body">Driver C++ alias that will be created. Alias can be used in the user code
+to access given UART.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">comment:</th><td class="field-body">C++ comment string that will be placed next to the driver alias in
+auto-generated code.</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="section" id="properties">
-<h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Known limitations<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">id</span></code> - UART periphery ID, named after identifier found in <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>.
-Examples are: <code class="docutils literal"><span class="pre">UART1</span></code> or <code class="docutils literal"><span class="pre">USART4</span></code>. Depends on MCU family.</li>
-<li><code class="docutils literal"><span class="pre">baud</span></code> - desired baud rate of the selected UART.</li>
-<li><code class="docutils literal"><span class="pre">alias</span></code> - user-defined typename, which can be used as a reference to an
-concrete UART driver instance, both in configuration JSON and C++.
-Must be valid C++ identifier. See <a class="reference internal" href="#stm32-uart-example"><span class="std std-ref">the UART example</span></a>
-below for more details.</li>
-<li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes driver purpose. Must be valid
-string, suitable for C/C++ comments.</li>
+<li>Only 1150200 and 9600 bauds are supported.</li>
+<li>Following configuration is hard-coded and cannot be changed (yet):<ul>
+<li>Stop bits: 1</li>
+<li>Data length: 8 bits</li>
+<li>Parity: none</li>
 </ul>
-</div>
-<div class="section" id="example-configuration">
-<span id="stm32-uart-example"></span><h3>Example configuration<a class="headerlink" href="#example-configuration" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;uart&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;USART3&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">115200</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Console UART&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;console_uart&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;UART1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;baud&quot;</span><span class="p">:</span> <span class="mi">9600</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Just another driver&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;my_uart&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="example-output-for-stm32f4-family">
-<h3>Example output for STM32F4 family<a class="headerlink" href="#example-output-for-stm32f4-family" title="Permalink to this headline">¶</a></h3>
-<p>User-defined aliases are highlighted.</p>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
-
-<span class="c1">// UART configuration ---------------------------------------------------------</span>
-
-
-<span class="cm">/* Console UART */</span>
-
-<span class="k">template</span><span class="o">&lt;&gt;</span>
-<span class="k">struct</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev3</span><span class="o">&gt;</span>
-<span class="p">{</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">baudrate</span>  <span class="o">=</span> <span class="mi">115200</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">word_len</span>  <span class="o">=</span> <span class="n">USART_WordLength_8b</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">stop_bit</span>  <span class="o">=</span> <span class="n">USART_StopBits_1</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">parity</span>    <span class="o">=</span> <span class="n">USART_Parity_No</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">mode</span>      <span class="o">=</span> <span class="n">USART_Mode_Rx</span> <span class="o">|</span> <span class="n">USART_Mode_Tx</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">hw_flow</span>   <span class="o">=</span> <span class="n">USART_HardwareFlowControl_None</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="k">using</span> <span class="n">USART3_cfg</span> <span class="o">=</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">USART3_driver</span> <span class="o">=</span> <span class="n">usart_bus</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="hll"><span class="k">using</span> <span class="n">console_uart</span> <span class="o">=</span> <span class="n">USART3_driver</span><span class="p">;</span>
-</span>
-<span class="cm">/* Just another driver */</span>
-
-<span class="k">template</span><span class="o">&lt;&gt;</span>
-<span class="k">struct</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span>
-<span class="p">{</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">baudrate</span>  <span class="o">=</span> <span class="mi">9600</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">word_len</span>  <span class="o">=</span> <span class="n">USART_WordLength_8b</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">stop_bit</span>  <span class="o">=</span> <span class="n">USART_StopBits_1</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">parity</span>    <span class="o">=</span> <span class="n">USART_Parity_No</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">mode</span>      <span class="o">=</span> <span class="n">USART_Mode_Rx</span> <span class="o">|</span> <span class="n">USART_Mode_Tx</span><span class="p">;</span>
-    <span class="k">static</span> <span class="k">auto</span> <span class="k">constexpr</span> <span class="n">hw_flow</span>   <span class="o">=</span> <span class="n">USART_HardwareFlowControl_None</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="k">using</span> <span class="n">UART1_cfg</span> <span class="o">=</span> <span class="n">usart_cfg</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">UART1_driver</span> <span class="o">=</span> <span class="n">usart_bus</span><span class="o">&lt;</span><span class="n">usart_device</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="hll"><span class="k">using</span> <span class="n">my_uart</span> <span class="o">=</span> <span class="n">UART1_driver</span><span class="p">;</span>
-</span>
-<span class="c1">// Console configuration -------------------------------------------------------</span>
-
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
-</pre></div>
-</td></tr></table></div>
-<p><a class="reference external" href="../_static/generated/stm32/uart_example.hpp">Full STM32 UART example header</a></p>
+</li>
+<li>STM32 theCore UART supports only IRQ mode, where interrupt is generated after
+each byte transmission. DMA mode is not yet implemented.</li>
+</ul>
 </div>
 <div class="section" id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
@@ -626,276 +392,103 @@ string, suitable for C/C++ comments.</li>
 </div>
 <div class="section" id="adc-and-channels">
 <h2>ADC and channels<a class="headerlink" href="#adc-and-channels" title="Permalink to this headline">¶</a></h2>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">ADC was tested only with STM32F4 family.</p>
-</div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/export/aux/adc.hpp</span></code>
-<code class="docutils literal"><span class="pre">platform/stm32/family/f4xx/export/stm32f4xx_adc_wrap.hpp</span></code></td>
+<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/export/aux/adc.hpp</span></code>
+<code class="docutils literal notranslate"><span class="pre">platform/stm32/family/f4xx/export/stm32f4xx_adc_wrap.hpp</span></code></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/templates/adc_cfg.in.hpp</span></code></td>
+<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/templates/adc_cfg.in.hpp</span></code></td>
 </tr>
 </tbody>
 </table>
 <p>ADC configuration split onto two entities. First is configuration of the ADC
 itself, second is the configuration for particular channels. In such way,
 it is possible to have different set of ADC channels used with the same ADC.</p>
-<div class="section" id="adc-schema">
-<h3>ADC schema<a class="headerlink" href="#adc-schema" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-
-    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^ADC\\d$&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;mode&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;IRQ&quot;</span><span class="p">,</span> <span class="s2">&quot;DMA&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;dma_id&quot;</span><span class="p">:</span>  <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;alias&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-        <span class="p">},</span>
-
-        <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span> <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="id1">
-<h3>Properties<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">id</span></code> - ADC periphery ID, named after identifier found in <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>.
-Examples are: <code class="docutils literal"><span class="pre">ADC1</span></code> or <code class="docutils literal"><span class="pre">ADC2</span></code>.
-Depends on MCU family. See <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a> to get valid ID.</li>
-<li><code class="docutils literal"><span class="pre">mode</span></code> - desired mode of operation. Can be either <code class="docutils literal"><span class="pre">DMA</span></code> or <code class="docutils literal"><span class="pre">IRQ</span></code>.
-Mode affects how conversions are managed. In DMA mode, conversions are
-handled by DMA and interrupt is generated when conversion is finished
-or when half of channels are converted.
-In IRQ mode, each channel conversion produces interrupt.</li>
-<li><code class="docutils literal"><span class="pre">alias</span></code> - user-defined typename, which can be used as a reference to an
-concrete UART driver instance, both in configuration JSON and C++.
-Must be valid C++ identifier. See <a class="reference internal" href="#stm32-uart-example"><span class="std std-ref">the configuration example</span></a>
-below for more details.</li>
-<li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes driver purpose. Must be valid
-string, suitable for C/C++ comments.</li>
-</ul>
-</div>
-<div class="section" id="channels-schema">
-<h3>Channels schema<a class="headerlink" href="#channels-schema" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-
-    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="s2">&quot;SW&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;nums&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span> <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">}</span> <span class="p">},</span>
-            <span class="nt">&quot;alias&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">trigger</span></code> - trigger to start conversion on selected channels:<ul>
-<li><code class="docutils literal"><span class="pre">SW</span></code> - software trigger. Only trigger supported at this moment.</li>
-</ul>
-</li>
-<li><code class="docutils literal"><span class="pre">nums</span></code> - array with channel numbers. Refer to <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a> to get
-possible channels and their mapping.</li>
-<li><code class="docutils literal"><span class="pre">alias</span></code> - user-defined typename, which can be used as a reference to an
-channel set in C++. Must be valid C++ identifier.</li>
-<li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes driver purpose. Must be valid
-string, suitable for C/C++ comments.</li>
-</ul>
-</div>
-<div class="section" id="example-configuration-irq-mode">
-<h3>Example configuration (IRQ mode)<a class="headerlink" href="#example-configuration-irq-mode" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;adc&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;ADC1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;DMA&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;dma_id&quot;</span><span class="p">:</span> <span class="s2">&quot;adc_dma&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;example_adc&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Example ADC device&quot;</span>
-            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;adc_channels&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;trigger&quot;</span><span class="p">:</span> <span class="s2">&quot;SW&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;nums&quot;</span><span class="p">:</span> <span class="p">[</span>
-                    <span class="mi">1</span><span class="p">,</span>
-                    <span class="mi">16</span>
-                <span class="p">],</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;test_channels&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;PA1 pin and the temperature channel&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="id2">
-<h3>Example output for STM32F4 family<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
-
-<span class="c1">//! \addtogroup platform Platform defintions and drivers</span>
-<span class="c1">//! @{</span>
-
-<span class="c1">//! \addtogroup stm32 STM32 multi-platform</span>
-<span class="c1">//! @{</span>
-
-<span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
-<span class="c1">//! @{</span>
-
-
-<span class="c1">// ADC configuration -----------------------------------------------------------</span>
-
-<span class="cm">/* Example ADC device */</span>
-
-
-<span class="k">template</span><span class="o">&lt;&gt;</span>
-<span class="k">struct</span> <span class="n">adc_cfg</span><span class="o">&lt;</span><span class="n">adc_dev</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span>
-<span class="p">{</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">adc_mgmt_mode</span> <span class="n">mgtm_mode</span> <span class="o">=</span> <span class="n">adc_mgmt_mode</span><span class="o">::</span><span class="n">dma</span><span class="p">;</span>
-
-    <span class="k">using</span> <span class="n">dma</span> <span class="o">=</span> <span class="n">adc_dma</span><span class="p">;</span>
-<span class="p">};</span>
-
-<span class="k">using</span> <span class="n">ADC1_driver</span> <span class="o">=</span> <span class="n">adc</span><span class="o">&lt;</span><span class="n">adc_dev</span><span class="o">::</span><span class="n">dev1</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">example_adc</span> <span class="o">=</span> <span class="n">ADC1_driver</span><span class="p">;</span>
-
-<span class="c1">// ADC channels configuration --------------------------------------------------</span>
-
-<span class="cm">/* PA1 pin and the temperature channel */</span>
-
-
-<span class="k">using</span> <span class="n">test_channels</span> <span class="o">=</span> <span class="n">channel_group_sw_trigger</span><span class="o">&lt;</span><span class="n">adc_channel</span><span class="o">::</span><span class="n">ch1</span><span class="p">,</span> <span class="n">adc_channel</span><span class="o">::</span><span class="n">ch16</span><span class="o">&gt;</span><span class="p">;</span>
-
-
-<span class="c1">//! @}</span>
-
-<span class="c1">//! @}</span>
-
-<span class="c1">//! @}</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
-</pre></div>
-</td></tr></table></div>
-<p><a class="reference external" href="../_static/generated/stm32/adc_example.hpp">Full STM32 ADC example header</a></p>
+<p>ADC options are available from “ADC” menu. ADC channel options can be found in
+“ADC channels” menu.</p>
+<div class="section" id="available-adc-options">
+<h3>Available ADC options<a class="headerlink" href="#available-adc-options" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">module:</th><td class="field-body"><p class="first">ADC module to use.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">mode:</th><td class="field-body"><p class="first">ADC mode of operation. Can be set to <code class="docutils literal notranslate"><span class="pre">IRQ</span></code> or <code class="docutils literal notranslate"><span class="pre">DMA</span></code>. In IRQ mode, each
+ADC conversion will result in IRQ event generated. In DMA mode, all conversions
+are held by DMA and only last event is generated.</p>
+<p>IRQ is easier to use. DMA is faster, but requires deeper configuration.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">DMA module:</th><td class="field-body"><p class="first">The DMA module used for getting ADC data. Available only if mode is set to DMA.
+See section 10.3.3 Channel selection of <a class="reference internal" href="#stm32-rm">STM32 RM</a> to get insights of DMA
+module mapping.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">DMA stream:</th><td class="field-body"><p class="first">The DMA stream used for getting ADC data. Available only if mode is set to DMA.
+See section 10.3.3 Channel selection of <a class="reference internal" href="#stm32-rm">STM32 RM</a> to get insights of DMA
+stream mapping.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">DMA channel:</th><td class="field-body"><p class="first">The DMA stream used for getting ADC data. Available only if mode is set to DMA.
+See section 10.3.3 Channel selection of <a class="reference internal" href="#stm32-rm">STM32 RM</a> to get insights of DMA
+channel mapping.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">alias:</th><td class="field-body"><p class="first">Driver C++ alias that will be created. Alias can be used in the user code
+to access given ADC.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">comment:</th><td class="field-body"><p class="first last">C++ comment string that will be placed next to the driver alias in
+auto-generated code.</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id3">
-<h3>Usage<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>Known limitations<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Continuous mode is not implemented. See <a class="reference external" href="https://github.com/forGGe/theCore/issues/200">#200</a>.</li>
+</ul>
+</div>
+<div class="section" id="available-adc-channel-options">
+<h3>Available ADC channel options<a class="headerlink" href="#available-adc-channel-options" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">channel group name:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">The ADC channel group is a named array of channels. theCore configurator
+allows to add or delete a group of channels. To configure a new group, first
+create an empty group.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">channels:</th><td class="field-body"><p class="first">Selection of channels, included in the group. All 16 available channels
+can be grouped in user-defined way. See <a class="reference internal" href="#stm32-rm">STM32 RM</a> for a mapping between
+channels and pins.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">trigger:</th><td class="field-body"><p class="first">Trigger for ADC conversion:</p>
+<ul class="last simple">
+<li><code class="docutils literal notranslate"><span class="pre">software</span></code> - ADC conversion started only when software request it.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h3>Known limitations<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Only software trigger is implemented. For other triggers, see <a class="reference external" href="https://github.com/forGGe/theCore/issues/199">#199</a>.</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Usage<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction</p>
@@ -908,196 +501,41 @@ string, suitable for C/C++ comments.</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Driver source:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/export/aux/i2c_bus.hpp</span></code></td>
+<tr class="field-odd field"><th class="field-name">Driver source:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/export/aux/i2c_bus.hpp</span></code></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/templates/i2c_cfg.in.hpp</span></code></td>
+<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/templates/i2c_cfg.in.hpp</span></code></td>
 </tr>
 </tbody>
 </table>
-<div class="section" id="id4">
-<h3>JSON schema<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-
-    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span>           <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^I2C\\d$&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;mode&quot;</span><span class="p">:</span>         <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;IRQ&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;speed&quot;</span><span class="p">:</span>        <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;duty_cycle&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;2/1&quot;</span><span class="p">,</span> <span class="s2">&quot;16/9&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;ack&quot;</span><span class="p">:</span>          <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;boolean&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;ack_addr_bit&quot;</span><span class="p">:</span> <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">10</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;own_addr&quot;</span><span class="p">:</span>     <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;alias&quot;</span><span class="p">:</span>        <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-        <span class="p">},</span>
-
-        <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span> <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="id5">
-<h3>Properties<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">id</span></code> - I2C periphery ID, named after identifier found in <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>.
-Examples are: <code class="docutils literal"><span class="pre">I2C1</span></code> or <code class="docutils literal"><span class="pre">I2C2</span></code>.
-Depends on MCU family. See <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a> to get valid ID.</li>
-<li><code class="docutils literal"><span class="pre">mode</span></code> - data transfer mode. Only <code class="docutils literal"><span class="pre">IRQ</span></code> is supported. In IRQ mode, each
-byte transfer results in interrupt generation. The software driver responds
-to such interrupt with requesting next byte transmission.</li>
-<li><code class="docutils literal"><span class="pre">speed</span></code> - specifies the clock frequency in Hz. Refer to the <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>
-to check clock speed limitations.</li>
-<li><code class="docutils literal"><span class="pre">duty_cycle</span></code> - duty cycle of selected I2C bus
-(ratio of T<sub>low</sub> /T<sub>high</sub> ). Can be either <code class="docutils literal"><span class="pre">2/1</span></code> or <code class="docutils literal"><span class="pre">16/9</span></code>.</li>
-<li><code class="docutils literal"><span class="pre">ack</span></code> - enables or disables the acknowledgement.</li>
-<li><code class="docutils literal"><span class="pre">ack_addr_bit</span></code> - specifies if 7-bit or 10-bit address is acknowledged.</li>
-<li><code class="docutils literal"><span class="pre">own_addr</span></code> - specifies the first device own address.</li>
-<li><code class="docutils literal"><span class="pre">alias</span></code> - user-defined typename, which can be used as a reference to I2C
-driver instance in C++. Must be valid C++ identifier.</li>
-<li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes a driver purpose. Must be valid
-string, suitable for C/C++ comments.</li>
-</ul>
-</div>
 <div class="section" id="id6">
-<h3>Example configuration<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;i2c&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2C1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;mode&quot;</span><span class="p">:</span> <span class="s2">&quot;IRQ&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;speed&quot;</span><span class="p">:</span> <span class="mi">1000</span><span class="p">,</span>
-                <span class="nt">&quot;duty_cycle&quot;</span><span class="p">:</span> <span class="s2">&quot;2/1&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;ack&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;ack_addr_bit&quot;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>
-                <span class="nt">&quot;own_addr&quot;</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;Just another I2C bus&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2c1&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="example-output">
-<h3>Example output<a class="headerlink" href="#example-output" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
-
-<span class="c1">//! \addtogroup platform Platform defintions and drivers</span>
-<span class="c1">//! @{</span>
-
-<span class="c1">//! \addtogroup stm32 STM32 multi-platform</span>
-<span class="c1">//! @{</span>
-
-<span class="c1">//! \defgroup stm32_templates Auto-generated code, Python COG and CMake templates</span>
-<span class="c1">//! @{</span>
-
-<span class="c1">// I2C configuration -----------------------------------------------------------</span>
-
-<span class="cm">/* Just another I2C bus */</span>
-
-<span class="k">using</span> <span class="n">I2C1_driver_cfg</span> <span class="o">=</span> <span class="n">i2c_config</span><span class="o">&lt;</span>
-    <span class="n">i2c_device</span><span class="o">::</span><span class="n">bus1</span><span class="p">,</span>
-    <span class="n">i2c_mode</span><span class="o">::</span><span class="n">IRQ</span><span class="p">,</span>
-    <span class="mi">1000</span><span class="p">,</span>
-    <span class="n">I2C_Mode_I2C</span><span class="p">,</span>
-    <span class="n">I2C_DutyCycle_2</span><span class="p">,</span>
-    <span class="mi">51</span><span class="p">,</span>
-    <span class="n">I2C_Ack_Enable</span><span class="p">,</span>
-    <span class="n">I2C_AcknowledgedAddress_7bit</span>
-<span class="o">&gt;</span><span class="p">;</span>
-
-<span class="k">using</span> <span class="n">I2C1_driver</span> <span class="o">=</span> <span class="n">i2c_bus</span><span class="o">&lt;</span><span class="n">I2C1_driver_cfg</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">i2c1</span> <span class="o">=</span> <span class="n">I2C1_driver</span><span class="p">;</span>
-
-<span class="c1">//! @}</span>
-
-<span class="c1">//! @}</span>
-
-<span class="c1">//! @}</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
-</pre></div>
-</td></tr></table></div>
-<p><a class="reference external" href="../_static/generated/stm32/i2c_example.hpp">Full STM32 I2C example header</a></p>
+<h3>Available options<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">channel:</th><td class="field-body">Placed under “Enabled I2C channel” selector. I2C periphery to use.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">mode:</th><td class="field-body">Mode of operation. IRQ is only mode that is supported.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">speed:</th><td class="field-body">I2C clock speed, in Hz.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">duty cycle:</th><td class="field-body">I2C duty cycle.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">ack:</th><td class="field-body">Enables or disables the I2C acknowledgement.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">ack address bits:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Specifies if 7-bit or 10-bit address is acknowledged.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">own address:</th><td class="field-body">Specifies the first device own address. This parameter can be a 7-bit or 10-bit address.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">alias:</th><td class="field-body">Driver C++ alias that will be created. Alias can be used in the user code
+to access given I2C.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">comment:</th><td class="field-body">C++ comment string that will be placed next to the driver alias in
+auto-generated code.</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="id7">
 <h3>Usage<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
@@ -1107,424 +545,178 @@ string, suitable for C/C++ comments.</li>
 </div>
 </div>
 </div>
-<div class="section" id="i2s">
-<h2>I2S<a class="headerlink" href="#i2s" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id8">
-<h3>JSON schema<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-
-    <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-
-        <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-            <span class="nt">&quot;id&quot;</span><span class="p">:</span>          <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^I2S\\d$&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;dma_tx&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;dma_rx&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-            <span class="nt">&quot;standard&quot;</span><span class="p">:</span>    <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;phillips&quot;</span><span class="p">,</span> <span class="s2">&quot;MSB&quot;</span><span class="p">,</span> <span class="s2">&quot;LSB&quot;</span><span class="p">,</span> <span class="s2">&quot;PCMShort&quot;</span><span class="p">,</span> <span class="s2">&quot;PCMLong&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;data_bits&quot;</span><span class="p">:</span>   <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">24</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="s2">&quot;16ext&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;audio_freq&quot;</span><span class="p">:</span>  <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">96</span><span class="p">,</span> <span class="mi">192</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;CPOL&quot;</span><span class="p">:</span>        <span class="p">{</span> <span class="nt">&quot;enum&quot;</span> <span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span> <span class="s2">&quot;low&quot;</span> <span class="p">]</span> <span class="p">},</span>
-            <span class="nt">&quot;alias&quot;</span><span class="p">:</span>       <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-        <span class="p">},</span>
-
-        <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;id&quot;</span> <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="id9">
-<h3>Properties<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><code class="docutils literal"><span class="pre">id</span></code> - I2S periphery ID, named after identifier found in <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>.
-Examples are: <code class="docutils literal"><span class="pre">I2S</span></code> or <code class="docutils literal"><span class="pre">I2S</span></code>.
-Depends on MCU family. See <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a> to get valid ID.</li>
-<li><code class="docutils literal"><span class="pre">dma_tx</span></code> - DMA id to use for TX transactions. See <a class="reference internal" href="#stm32-i2s-example"><span class="std std-ref">the configuration example</span></a>
-and the <a class="reference internal" href="#stm32-dma"><span class="std std-ref">DMA</span></a> section for more details.</li>
-<li><code class="docutils literal"><span class="pre">dma_rx</span></code> - DMA id to use for RX transactions. See <a class="reference internal" href="#stm32-i2s-example"><span class="std std-ref">the configuration example</span></a>
-and the <a class="reference internal" href="#stm32-dma"><span class="std std-ref">DMA</span></a> section for more details.</li>
-<li><code class="docutils literal"><span class="pre">standart</span></code> - specifies the standard used for the I2S communication. Allowed values are:
-<code class="docutils literal"><span class="pre">phillips</span></code>, <code class="docutils literal"><span class="pre">MSB</span></code>, <code class="docutils literal"><span class="pre">LSB</span></code>, <code class="docutils literal"><span class="pre">PCMShort</span></code>, <code class="docutils literal"><span class="pre">PCMLong</span></code>. Refer to <a class="reference internal" href="#stm32-rm"><span class="std std-ref">Reference Manual</span></a>
-to get explanation about each.</li>
-<li><code class="docutils literal"><span class="pre">data_bits</span></code> - specifies the data format for the I2S communication.</li>
-<li><code class="docutils literal"><span class="pre">master_clk</span></code> - specifies whether the I2S MCLK output is enabled or not.</li>
-<li><code class="docutils literal"><span class="pre">audio_freq</span></code> - specifies the frequency selected for the I2S communication.</li>
-<li><code class="docutils literal"><span class="pre">CPOL</span></code> - specifies the idle state of the I2S clock.</li>
-<li><code class="docutils literal"><span class="pre">alias</span></code> - user-defined typename, which can be used as a reference to I2S
-driver instance in C++. Must be valid C++ identifier.</li>
-<li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes a driver purpose. Must be valid
-string, suitable for C/C++ comments.</li>
-</ul>
-</div>
-<div class="section" id="stm32-i2s-example">
-<span id="id10"></span><h3>Example configuration<a class="headerlink" href="#stm32-i2s-example" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;dma&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-                <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="hll">                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span>
-</span>            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-<span class="hll">                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span>
-</span>            <span class="p">}</span>
-        <span class="p">],</span>
-        <span class="nt">&quot;i2s&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;I2S3&quot;</span><span class="p">,</span>
-<span class="hll">                <span class="nt">&quot;dma_tx&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span><span class="p">,</span>
-</span><span class="hll">                <span class="nt">&quot;dma_rx&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span><span class="p">,</span>
-</span>                <span class="nt">&quot;standard&quot;</span><span class="p">:</span> <span class="s2">&quot;phillips&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;data_bits&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span>
-                <span class="nt">&quot;master_clk&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-                <span class="nt">&quot;audio_freq&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
-                <span class="nt">&quot;CPOL&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;the_i2s3_alias&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-<p>DMA aliases and their usage in I2S config are highlighted.</p>
-<p>Example output (<strong>DMA configuration header is omitted for clarity</strong>):</p>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
-
-
-<span class="c1">// SPI configuration -----------------------------------------------------------</span>
-
-<span class="c1">// TODO</span>
-
-<span class="c1">// I2S configuration -----------------------------------------------------------</span>
-
-
-<span class="k">template</span><span class="o">&lt;&gt;</span>
-<span class="k">struct</span> <span class="n">spi_i2s_cfg</span><span class="o">&lt;</span><span class="n">spi_device</span><span class="o">::</span><span class="n">bus3</span><span class="o">&gt;</span>
-<span class="p">{</span>
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="k">auto</span> <span class="n">bus_type</span> <span class="o">=</span> <span class="n">spi_bus_type</span><span class="o">::</span><span class="n">i2s</span><span class="p">;</span>
-
-    <span class="k">using</span> <span class="n">dma_tx</span> <span class="o">=</span> <span class="n">i2s3_tx_dma</span><span class="p">;</span>
-    <span class="k">using</span> <span class="n">dma_rx</span> <span class="o">=</span> <span class="n">i2s3_rx_dma</span><span class="p">;</span>
-
-    <span class="k">static</span> <span class="k">constexpr</span> <span class="n">I2S_InitTypeDef</span> <span class="n">init_obj</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="n">I2S_Mode_MasterTx</span><span class="p">,</span>
-        <span class="n">I2S_Standard_Phillips</span><span class="p">,</span>
-        <span class="n">I2S_DataFormat_16b</span><span class="p">,</span>
-        <span class="n">I2S_MCLKOutput_Enable</span><span class="p">,</span>
-        <span class="n">I2S_AudioFreq_8k</span><span class="p">,</span>
-        <span class="n">I2S_CPOL_High</span><span class="p">,</span>
-    <span class="p">};</span>
-<span class="p">};</span>
-
-
-<span class="k">using</span> <span class="n">I2S3_driver</span> <span class="o">=</span> <span class="n">spi_i2s_bus</span><span class="o">&lt;</span><span class="n">spi_device</span><span class="o">::</span><span class="n">bus3</span><span class="o">&gt;</span><span class="p">;</span>
-<span class="k">using</span> <span class="n">the_i2s3_alias</span> <span class="o">=</span> <span class="n">I2S3_driver</span><span class="p">;</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
-</pre></div>
-</td></tr></table></div>
-<p><a class="reference external" href="../_static/generated/stm32/i2s_example.hpp">Full STM32 I2S example header</a></p>
-</div>
-<div class="section" id="id11">
-<h3>Usage<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction</p>
-</div>
-</div>
-<div class="section" id="related-references">
-<h3>Related references<a class="headerlink" href="#related-references" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><a class="reference internal" href="../examples/stm32f4-discovery-cs43l22.html#thecore-stm32f4-cs43l22"><span class="std std-ref">STM32F4 discovery audio example with CS43L22 audio DAC</span></a></li>
-<li><a class="reference internal" href="#stm32-dma"><span class="std std-ref">DMA documentation</span></a></li>
-<li><a class="reference internal" href="../devices/cs43l22-audio.html#thecore-cs43l22"><span class="std std-ref">Cirrus Logic CS43L22 audio DAC</span></a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="spi">
-<h2>SPI<a class="headerlink" href="#spi" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction</p>
-</div>
-</div>
-<div class="section" id="dma-overview">
-<span id="stm32-dma"></span><h2>DMA overview<a class="headerlink" href="#dma-overview" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="i2s-and-spi">
+<h2>I2S and SPI<a class="headerlink" href="#i2s-and-spi" title="Permalink to this headline">¶</a></h2>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/family/export/stm32_dma_wrap_interface.hpp</span></code>
-<code class="docutils literal"><span class="pre">platform/stm32/family/f4xx/export/stm32_dma_wrap.hpp</span></code></td>
+<tr class="field-odd field"><th class="field-name">Driver source:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/export/aux/spi_i2s_bus.hpp</span></code></td>
 </tr>
-<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal"><span class="pre">platform/stm32/family/f4xx/templates/dma_cfg.in.hpp</span></code></td>
+<tr class="field-even field"><th class="field-name">Template file:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/templates/spi_i2s_cfg.in.hpp</span></code></td>
 </tr>
 </tbody>
 </table>
-<p>Direct memory access (DMA) is used in order to provide high-speed data transfer between
-peripherals and memory and between memory and memory. Data can be quickly moved by
-DMA without any CPU action. This keeps CPU resources free for other operations.</p>
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">DMA configuration via JSON is supported only for STM32F4 family.</p>
-</div>
-<p>In most cases, DMA is used internally by the platform-level drivers.
-Platform drivers, like I2C or I2S can be linked with particular DMA by using
-its alias.</p>
-<p>Each driver with DMA support will include corresponding DMA example.</p>
-<p>Configuration parameters (stream, channel, etc.) heavily depends on MCU model.
-Refer to the <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a> for allowed DMA configuration for selected periphery.</p>
-</div>
-<div class="section" id="dma-in-stm32f4-mcu-family">
-<h2>DMA in STM32F4 MCU family<a class="headerlink" href="#dma-in-stm32f4-mcu-family" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="schema">
-<h3>Schema<a class="headerlink" href="#schema" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="nt">&quot;$schema&quot;</span><span class="p">:</span> <span class="s2">&quot;http://json-schema.org/schema#&quot;</span><span class="p">,</span>
-  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span>
-
-  <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
-
-    <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;num&quot;</span><span class="p">:</span>          <span class="p">{</span> <span class="nt">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span> <span class="p">]</span> <span class="p">},</span>
-      <span class="nt">&quot;stream&quot;</span><span class="p">:</span>       <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span> <span class="nt">&quot;minimum&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nt">&quot;maximum&quot;</span><span class="p">:</span> <span class="mi">7</span> <span class="p">},</span>
-      <span class="nt">&quot;channel&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">,</span> <span class="nt">&quot;minimum&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nt">&quot;maximum&quot;</span><span class="p">:</span> <span class="mi">7</span> <span class="p">},</span>
-      <span class="nt">&quot;alias&quot;</span><span class="p">:</span>        <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">},</span>
-      <span class="nt">&quot;comment&quot;</span><span class="p">:</span>      <span class="p">{</span> <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span> <span class="p">}</span>
-    <span class="p">},</span>
-
-    <span class="nt">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&quot;num&quot;</span><span class="p">,</span> <span class="s2">&quot;stream&quot;</span><span class="p">,</span> <span class="s2">&quot;channel&quot;</span> <span class="p">]</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="id12">
-<h3>Properties<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>In STM32F4 the I2S is multiplexed with SPI. Pay attention to not use
+the same periphery for both SPI and I2S. The configuration is located
+under “SPI and I2S” menu.</p>
+<div class="section" id="available-options-for-i2s">
+<h3>Available options for I2S<a class="headerlink" href="#available-options-for-i2s" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">channel:</th><td class="field-body"><p class="first">I2S periphery to use.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">standard:</th><td class="field-body"><p class="first">Specifies the standard used for the I2S communication. Refer to
+<a class="reference internal" href="#stm32-rm"><span class="std std-ref">Reference Manual</span></a> to get explanation about each. Values are:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">num</span></code> - DMA number. There are 2 DMAs on STM32F4. There are two DMA controllers in STM32F4.
-Refer to the section <em>10. DMA controller (DMA)</em> of the <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>
-to get more information.</li>
-<li><code class="docutils literal"><span class="pre">stream</span></code> - DMA stream number. There are 8 streams for each DMA controller,
-numbered from 0 to 7. See section <em>10.3.5 DMA streams</em> in the <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a>
-for more details.</li>
-<li><code class="docutils literal"><span class="pre">channel</span></code> - DMA channel number. There are up to 8 channels (requests) per
-each DMA stream, numbered from 0 to 7.
-See section <em>10.3.3 Channel selection</em> in the <a class="reference internal" href="#stm32-rm"><span class="std std-ref">RM</span></a> for more details.</li>
-<li><code class="docutils literal"><span class="pre">alias</span></code> - user-defined typename, which can be used as a reference to an
-concrete DMA driver instance in configuration JSON.
-Must be valid C++ identifier. Refer to individual periphery documentation
-for examples.</li>
-<li><code class="docutils literal"><span class="pre">comment</span></code> - user-defined string, describes DMA purpose. Must be valid
-string, suitable for C/C++ comments.</li>
+<li><code class="docutils literal notranslate"><span class="pre">phillips</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">MSB</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">LSB</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">PCMShort</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">PCMLong</span></code></li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">master clock:</th><td class="field-body"><p class="first">Specifies whether the I2S MCLK output is enabled or not.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">data bits:</th><td class="field-body"><p class="first">Specifies the data format for the I2S communication.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">audio frequency:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body"><p class="first">Specifies the frequency selected for the I2S communication, in kHz.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">clock polarity:</th><td class="field-body"><p class="first">Specifies the idle state of the I2S clock.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">DMA module:</th><td class="field-body"><p class="first">The DMA module used for transferring I2S data.
+See section 10.3.3 Channel selection of <a class="reference internal" href="#stm32-rm">STM32 RM</a> to get insights of DMA
+module mapping.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">DMA stream:</th><td class="field-body"><p class="first">The DMA stream used for transferring I2S data.
+See section 10.3.3 Channel selection of <a class="reference internal" href="#stm32-rm">STM32 RM</a> to get insights of DMA
+stream mapping.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">DMA channel:</th><td class="field-body"><p class="first">The DMA stream used for transferring I2S data.
+See section 10.3.3 Channel selection of <a class="reference internal" href="#stm32-rm">STM32 RM</a> to get insights of DMA
+channel mapping.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">alias:</th><td class="field-body"><p class="first">Driver C++ alias that will be created. Alias can be used in the user code
+to access given I2S.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">comment:</th><td class="field-body"><p class="first last">C++ comment string that will be placed next to the driver alias in
+auto-generated code.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="available-options-for-spi">
+<h3>Available options for SPI<a class="headerlink" href="#available-options-for-spi" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">channel:</th><td class="field-body">The SPI channel to enable.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type:</th><td class="field-body">SPI type. Only <code class="docutils literal notranslate"><span class="pre">master</span></code> is supported.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">CPOL:</th><td class="field-body">SPI clock polarity.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">CPHA:</th><td class="field-body">SPI clock phase.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h3>Known limitations<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>theCore SPI driver for STM32 can work only in master mode.</li>
+<li>theCore generator is not yet supports SPI, see <a class="reference external" href="https://github.com/forGGe/theCore/issues/284">#284</a>.</li>
 </ul>
 </div>
-<div class="section" id="id13">
-<h3>Example configuration<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;stm32&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;device&quot;</span><span class="p">:</span> <span class="s2">&quot;STM32F407VG&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;dma&quot;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-                <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_tx_dma&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;I2S3 TX DMA&quot;</span>
-            <span class="p">},</span>
-            <span class="p">{</span>
-                <span class="nt">&quot;num&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-                <span class="nt">&quot;stream&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;channel&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-                <span class="nt">&quot;alias&quot;</span><span class="p">:</span> <span class="s2">&quot;i2s3_rx_dma&quot;</span><span class="p">,</span>
-                <span class="nt">&quot;comment&quot;</span><span class="p">:</span> <span class="s2">&quot;I2S3 RX DMA&quot;</span>
-            <span class="p">}</span>
-        <span class="p">]</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-</div>
-<div class="section" id="id14">
-<h3>Example output<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">ecl</span>
-<span class="p">{</span>
-
-
-<span class="cm">/* I2S3 TX DMA */</span>
-<span class="k">using</span> <span class="n">i2s3_tx_dma</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">dma_wrap</span><span class="o">&lt;</span><span class="n">ecl</span><span class="o">::</span><span class="n">dma_stream</span><span class="o">::</span><span class="n">dma1_5</span><span class="p">,</span> <span class="n">ecl</span><span class="o">::</span><span class="n">dma_channel</span><span class="o">::</span><span class="n">ch0</span><span class="o">&gt;</span><span class="p">;</span>
-
-<span class="cm">/* I2S3 RX DMA */</span>
-<span class="k">using</span> <span class="n">i2s3_rx_dma</span> <span class="o">=</span> <span class="n">ecl</span><span class="o">::</span><span class="n">dma_wrap</span><span class="o">&lt;</span><span class="n">ecl</span><span class="o">::</span><span class="n">dma_stream</span><span class="o">::</span><span class="n">dma1_0</span><span class="p">,</span> <span class="n">ecl</span><span class="o">::</span><span class="n">dma_channel</span><span class="o">::</span><span class="n">ch0</span><span class="o">&gt;</span><span class="p">;</span>
-
-<span class="p">}</span> <span class="c1">// namespace ecl</span>
-</pre></div>
-</td></tr></table></div>
-<p><a class="reference external" href="../_static/generated/stm32/f4xx/dma_example.hpp">Full STM32F4 DMA example header</a></p>
-</div>
-</div>
-<div class="section" id="dma-in-stm32l1-mcu-family">
-<h2>DMA in STM32L1 MCU family<a class="headerlink" href="#dma-in-stm32l1-mcu-family" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction</p>
-</div>
-</div></blockquote>
-</div>
-<div class="section" id="dma-usage">
-<h2>DMA Usage<a class="headerlink" href="#dma-usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h3>Usage<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This section is under construction</p>
+</div>
 </div>
 </div>
 <div class="section" id="pin-multiplexing">
 <span id="stm32-multiplexing"></span><h2>Pin multiplexing<a class="headerlink" href="#pin-multiplexing" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Driver sources:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">platform/stm32/export/platform/gpio_device.hpp</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>Pins can be configured from the “I/O pin configuration” submenu.</p>
+<div class="section" id="id10">
+<h3>Available options<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">channel:</th><td class="field-body"><p class="first">Channel is an actual pin that should be configured.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">mode:</th><td class="field-body"><p class="first">Pin modes:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">output</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">input</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">af</span></code> - AF stands for Alternate Function. Selecting AF allows to use the pin
+for desired periphery. List of supported peripheries is different for each
+pin. See below.</li>
+<li><code class="docutils literal notranslate"><span class="pre">analog</span></code> - in analog mode, pin can be used as input for ADC.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">push/pull:</th><td class="field-body"><p class="first">Possible push/pull options are:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">no</span></code> - no push/pull resistor.</li>
+<li><code class="docutils literal notranslate"><span class="pre">push</span> <span class="pre">down</span></code> - push to VCC resistor.</li>
+<li><code class="docutils literal notranslate"><span class="pre">pull</span> <span class="pre">up</span></code> - pull to GND resistor.</li>
+<li><code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">drain</span></code> - open drain configuration.</li>
+<li><code class="docutils literal notranslate"><span class="pre">analog</span></code> - analog input.</li>
+<li><code class="docutils literal notranslate"><span class="pre">wake</span> <span class="pre">high</span></code> and <code class="docutils literal notranslate"><span class="pre">wake</span> <span class="pre">low</span></code> - pin configuration for wakeup MCU functionality.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">type:</th><td class="field-body"><ul class="first simple">
+<li><code class="docutils literal notranslate"><span class="pre">push-pull</span></code> - push/pull configuration enabled.</li>
+<li><code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">drain</span></code> - open drain configuration.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">speed:</th><td class="field-body"><p class="first">Pin clock in MHz.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">GPIO alias:</th><td class="field-body"><p class="first">Driver C++ alias that will be created for accessing pin trough GPIO interface.
+Such alias can be used in the user code for controlling pin states.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">comment:</th><td class="field-body"><p class="first">C++ comment string that will be placed next to the driver alias in
+auto-generated code.</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">alternate function:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body"><p class="first last">The alternate function, used for this pin. Available if the pin mode is set to
+<code class="docutils literal notranslate"><span class="pre">af</span></code>.</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="section" id="exti">
@@ -1551,15 +743,18 @@ a guidance when enabling console for your application.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="ti-tivac-tm4c123g.html" class="btn btn-neutral float-right" title="Texas Instruments Tiva C TM4C123G" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="ti-tivac-tm4c123g.html" class="btn btn-neutral float-right" title="Texas Instruments Tiva C TM4C123G" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Supported platforms" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Supported platforms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1591,9 +786,11 @@ a guidance when enabling console for your application.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

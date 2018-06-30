@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['measurement',['measurement',['../structmeasurement.html',1,'']]],
   ['mgmt_5fconfigurator',['mgmt_configurator',['../classecl_1_1mgmt__configurator.html',1,'ecl']]],
   ['mgmt_5fconfigurator_3c_20dev_2c_20adc_5fmgmt_5fmode_3a_3adma_20_3e',['mgmt_configurator&lt; dev, adc_mgmt_mode::dma &gt;',['../classecl_1_1mgmt__configurator_3_01dev_00_01adc__mgmt__mode_1_1dma_01_4.html',1,'ecl']]],
   ['mgmt_5fconfigurator_3c_20dev_2c_20adc_5fmgmt_5fmode_3a_3airq_20_3e',['mgmt_configurator&lt; dev, adc_mgmt_mode::irq &gt;',['../classecl_1_1mgmt__configurator_3_01dev_00_01adc__mgmt__mode_1_1irq_01_4.html',1,'ecl']]],

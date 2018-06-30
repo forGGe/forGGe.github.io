@@ -1,11 +1,11 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="108,43,251,69"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="124,93,235,120"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="299,68,489,95"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="537,93,640,120"/>
-<area shape="rect" id="node6" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="811,5,957,32"/>
-<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="813,68,955,95"/>
-<area shape="rect" id="node8" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="811,144,957,171"/>
-<area shape="rect" id="node9" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="688,93,761,120"/>
-<area shape="rect" id="node10" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="809,195,959,221"/>
+<area shape="rect" id="node2" href="$unity__helpers_8hpp.html#aae98e1af2fa51cfef11ca1791ddcdbce" title="Prints string using Unity&#39;s facilities and put end of line at the end. " alt="" coords="109,56,240,83"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="124,107,225,133"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="288,81,460,108"/>
+<area shape="rect" id="node5" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="508,107,600,133"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="649,5,783,32"/>
+<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="651,56,781,83"/>
+<area shape="rect" id="node8" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="649,107,783,133"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="683,157,749,184"/>
+<area shape="rect" id="node10" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="648,208,784,235"/>
 </map>

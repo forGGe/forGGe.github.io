@@ -1,5 +1,0 @@
-<map id="ecl::mutex::~mutex" name="ecl::mutex::~mutex">
-<area shape="rect" id="node2" href="$classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55" title="ecl::mutex::lock" alt="" coords="217,5,344,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1mutex.html#a5a984445165aed9ba9b7ee58de579950" title="ecl::mutex::unlock" alt="" coords="209,56,352,83"/>
-<area shape="rect" id="node4" href="$classecl_1_1mutex.html#a4e80875410c4ebc3ec4fdcf04f615c25" title="ecl::mutex::try_lock" alt="" coords="205,107,356,133"/>
-</map>

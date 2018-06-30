@@ -1,9 +1,9 @@
 <map id="inode.cpp" name="inode.cpp">
-<area shape="rect" id="node2" href="$inode_8hpp.html" title="inode interface. " alt="" coords="146,80,271,107"/>
-<area shape="rect" id="node14" href="$dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="39,155,178,181"/>
-<area shape="rect" id="node3" href="$file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="210,155,351,181"/>
-<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="49,229,139,256"/>
-<area shape="rect" id="node8" href="$export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="164,229,251,256"/>
-<area shape="rect" id="node9" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="124,304,251,331"/>
-<area shape="rect" id="node10" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="40,379,137,405"/>
+<area shape="rect" id="node2" href="$inode_8hpp.html" title="inode interface. " alt="" coords="142,80,257,107"/>
+<area shape="rect" id="node14" href="$dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="43,155,167,181"/>
+<area shape="rect" id="node3" href="$file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="199,155,325,181"/>
+<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="47,229,130,256"/>
+<area shape="rect" id="node8" href="$export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="155,229,233,256"/>
+<area shape="rect" id="node9" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="119,304,234,331"/>
+<area shape="rect" id="node10" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="38,379,129,405"/>
 </map>

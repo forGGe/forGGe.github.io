@@ -9,7 +9,7 @@ var classecl_1_1weak__ptr =
     [ "operator=", "classecl_1_1weak__ptr.html#ab1b38dea232eb24bf8c466e9df4c6c2a", null ],
     [ "operator=", "classecl_1_1weak__ptr.html#a9c16e567dfd1dc8bc627daa08f6fdbeb", null ],
     [ "swap", "classecl_1_1weak__ptr.html#ab63be6a56fcfe9a20bfd54ea1ae0295d", null ],
-    [ "lock", "classecl_1_1weak__ptr.html#a8d04026d3384b7688f222ea848cc96fd", null ],
-    [ "expired", "classecl_1_1weak__ptr.html#a0db449f53375be606605f87eff2a5cee", null ],
-    [ "reset", "classecl_1_1weak__ptr.html#a20dc199f7017b66fcbb1e7ce730424f1", null ]
+    [ "lock", "classecl_1_1weak__ptr.html#a0fe8fe55a147383c8a99cf2bee33039f", null ],
+    [ "expired", "classecl_1_1weak__ptr.html#a9d3e9ea00007331602c8715a93a9fe8e", null ],
+    [ "reset", "classecl_1_1weak__ptr.html#a61c77266993e323e8a1166ca9ff8f08b", null ]
 ];

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -54,6 +56,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -90,10 +93,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arch.html">Supported architectures</a></li>
@@ -119,7 +126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
             
@@ -132,8 +139,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="contents.html">theCore</a>
+        
       </nav>
 
 
@@ -142,23 +151,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="contents.html">Docs</a> &raquo;</li>
-      
-    <li>Community and developer guidelines</li>
+    
+      <li><a href="contents.html">Docs</a> &raquo;</li>
+        
+      <li>Community and developer guidelines</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/community.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -181,7 +207,7 @@ blinking.</p>
 Such goals are:</p>
 <ul>
 <li><p class="first">Provide all-in-one scripts for controlling a development flow, similar to
-what <code class="docutils literal"><span class="pre">mbed_cli</span></code> does.</p>
+what <code class="docutils literal notranslate"><span class="pre">mbed_cli</span></code> does.</p>
 <p>These scripts must be able to:</p>
 <ul class="simple">
 <li>Download required theCore revision.</li>
@@ -219,7 +245,7 @@ Existing examples should be also converted to support many boards.</p>
 soldered on the board.</li>
 <li>A default JSON file that provides a base clock, periphery and external
 devices configuration. User can change that JSON file to suit his needs.</li>
-<li>Platform and device capabiilities - similar to what <code class="docutils literal"><span class="pre">Kconfig</span></code>
+<li>Platform and device capabiilities - similar to what <code class="docutils literal notranslate"><span class="pre">Kconfig</span></code>
 in Linux does.</li>
 </ul>
 </li>
@@ -227,11 +253,11 @@ in Linux does.</li>
 </div>
 <div class="section" id="branching-and-release-model">
 <span id="thecore-branching"></span><h2>Branching and release model<a class="headerlink" href="#branching-and-release-model" title="Permalink to this headline">¶</a></h2>
-<p>There are two main branches - <code class="docutils literal"><span class="pre">develop</span></code> and <code class="docutils literal"><span class="pre">master</span></code>.
+<p>There are two main branches - <code class="docutils literal notranslate"><span class="pre">develop</span></code> and <code class="docutils literal notranslate"><span class="pre">master</span></code>.
 Both branches are protected against force-pushing unless it is really-really
 required (almost never happen).</p>
-<p>As names state, all the development (normally) happens in <code class="docutils literal"><span class="pre">develop</span></code> branch,
-while <code class="docutils literal"><span class="pre">master</span></code> contains stable versions. <code class="docutils literal"><span class="pre">master</span></code> branch is tagged according
+<p>As names state, all the development (normally) happens in <code class="docutils literal notranslate"><span class="pre">develop</span></code> branch,
+while <code class="docutils literal notranslate"><span class="pre">master</span></code> contains stable versions. <code class="docutils literal notranslate"><span class="pre">master</span></code> branch is tagged according
 to <a class="reference external" href="http://semver.org/">the semantic versioning approach</a>.</p>
 <p>Full explanation of branching model, accepted in theCore you can find in <a class="reference external" href="http://nvie.com/posts/a-successful-git-branching-model/">nvie git article</a>.</p>
 </div>
@@ -239,7 +265,7 @@ to <a class="reference external" href="http://semver.org/">the semantic versioni
 <h2>Code style<a class="headerlink" href="#code-style" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The source formatting script called <code class="docutils literal"><span class="pre">srcformat.sh</span></code> in <code class="docutils literal"><span class="pre">scripts</span></code> directory,
+<p class="last">The source formatting script called <code class="docutils literal notranslate"><span class="pre">srcformat.sh</span></code> in <code class="docutils literal notranslate"><span class="pre">scripts</span></code> directory,
 though it is still under development.</p>
 </div>
 <div class="section" id="whitespaces-and-indentation">
@@ -249,11 +275,11 @@ though it is still under development.</p>
 </li>
 <li><p class="first">Set indent to 4 spaces per indent.</p>
 </li>
-<li><p class="first">Indent <code class="docutils literal"><span class="pre">public</span></code>, <code class="docutils literal"><span class="pre">private</span></code>, <code class="docutils literal"><span class="pre">protected</span></code> with the same indent as
-a <code class="docutils literal"><span class="pre">class</span></code> block.</p>
+<li><p class="first">Indent <code class="docutils literal notranslate"><span class="pre">public</span></code>, <code class="docutils literal notranslate"><span class="pre">private</span></code>, <code class="docutils literal notranslate"><span class="pre">protected</span></code> with the same indent as
+a <code class="docutils literal notranslate"><span class="pre">class</span></code> block.</p>
 </li>
-<li><p class="first">Indent <code class="docutils literal"><span class="pre">class</span></code> block with the same indent as a namespace:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// OK</span>
+<li><p class="first">Indent <code class="docutils literal notranslate"><span class="pre">class</span></code> block with the same indent as a namespace:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// OK</span>
 <span class="k">namespace</span> <span class="n">foo</span>
 <span class="p">{</span>
 
@@ -271,8 +297,8 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </pre></div>
 </div>
 </li>
-<li><p class="first">Indent switch blocks so that the <code class="docutils literal"><span class="pre">case</span> <span class="pre">X:</span></code> statements are indented in the switch block:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// OK</span>
+<li><p class="first">Indent switch blocks so that the <code class="docutils literal notranslate"><span class="pre">case</span> <span class="pre">X:</span></code> statements are indented in the switch block:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// OK</span>
 <span class="k">switch</span> <span class="p">(</span><span class="n">foo</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">case</span> <span class="mi">1</span><span class="o">:</span>
         <span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
@@ -290,9 +316,9 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </li>
 <li><p class="first">Do not indent preprocessor block.</p>
 </li>
-<li><p class="first">Insert spaces around operators, except <code class="docutils literal"><span class="pre">++</span></code>, <code class="docutils literal"><span class="pre">--</span></code>, <code class="docutils literal"><span class="pre">!</span></code>, <code class="docutils literal"><span class="pre">.</span></code>, <code class="docutils literal"><span class="pre">-&gt;</span></code>, <code class="docutils literal"><span class="pre">*</span></code> and <code class="docutils literal"><span class="pre">&amp;</span></code>.</p>
+<li><p class="first">Insert spaces around operators, except <code class="docutils literal notranslate"><span class="pre">++</span></code>, <code class="docutils literal notranslate"><span class="pre">--</span></code>, <code class="docutils literal notranslate"><span class="pre">!</span></code>, <code class="docutils literal notranslate"><span class="pre">.</span></code>, <code class="docutils literal notranslate"><span class="pre">-&gt;</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code> and <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>.</p>
 </li>
-<li><p class="first">Insert space padding between <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code> and the following bracket.</p>
+<li><p class="first">Insert space padding between <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">while</span></code> and the following bracket.</p>
 </li>
 <li><p class="first"><strong>Do not leave trailing whitespaces.</strong></p>
 </li>
@@ -304,7 +330,7 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Indent_style#Variant:_1TBS_.28OTBS.29">One True Bracket Style</a>.</p>
 </li>
 <li><p class="first">Place brackets in namespaces, classes, extern-“C” and functions on the next line, e.g:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// Wrong</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Wrong</span>
 <span class="k">namespace</span> <span class="n">foo</span> <span class="p">{</span>
 
 <span class="p">}</span>
@@ -317,10 +343,10 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 </pre></div>
 </div>
 </li>
-<li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal"><span class="pre">if</span></code>, <code class="docutils literal"><span class="pre">for</span></code>, <code class="docutils literal"><span class="pre">while</span></code>…).</p>
+<li><p class="first">Add brackets to unbracketed one line conditional statements (e.g. <code class="docutils literal notranslate"><span class="pre">if</span></code>, <code class="docutils literal notranslate"><span class="pre">for</span></code>, <code class="docutils literal notranslate"><span class="pre">while</span></code>…).</p>
 </li>
 <li><p class="first">Do not put whitespace between angle brackets in template definitions:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// Good</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Good</span>
 <span class="n">foo</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="n">bar</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">obj</span><span class="p">;</span>
 
 <span class="c1">// Bad</span>
@@ -342,10 +368,10 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <ol class="arabic">
 <li><p class="first">Use <a class="reference external" href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a> for identifiers.</p>
 </li>
-<li><p class="first">Use <code class="docutils literal"><span class="pre">m_</span></code> prefix when naming private and protected class members.</p>
+<li><p class="first">Use <code class="docutils literal notranslate"><span class="pre">m_</span></code> prefix when naming private and protected class members.</p>
 </li>
 <li><p class="first">Use CamelCase style for template parameters only:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">CrazyAllocator</span><span class="o">&gt;</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">CrazyAllocator</span><span class="o">&gt;</span>
 <span class="k">class</span> <span class="nc">my_strange_container</span><span class="p">;</span>
 </pre></div>
 </div>
@@ -357,9 +383,9 @@ a <code class="docutils literal"><span class="pre">class</span></code> block.</p
 <ol class="arabic">
 <li><p class="first"><strong>Do not leave commented out code.</strong></p>
 </li>
-<li><p class="first">Prefer not keeping <code class="docutils literal"><span class="pre">TODO</span></code> in code without corresponding issue.
-Place issue number next to the <code class="docutils literal"><span class="pre">TODO</span></code> with a short explanation why it is there:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">// TODO #123: replace foo() with something that exposes smaller IRQ latency.</span>
+<li><p class="first">Prefer not keeping <code class="docutils literal notranslate"><span class="pre">TODO</span></code> in code without corresponding issue.
+Place issue number next to the <code class="docutils literal notranslate"><span class="pre">TODO</span></code> with a short explanation why it is there:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// TODO #123: replace foo() with something that exposes smaller IRQ latency.</span>
 <span class="n">foo</span><span class="p">();</span>
 </pre></div>
 </div>
@@ -367,17 +393,17 @@ Place issue number next to the <code class="docutils literal"><span class="pre">
 <li><p class="first">Use doxygen for commenting the function prototypes and class methods.</p>
 </li>
 <li><p class="first">Use C++ comment lines for doxygen commenting:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">//! This function does something.</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//! This function does something.</span>
 <span class="c1">//! \details Also it calls 911.</span>
 <span class="kt">void</span> <span class="nf">foo</span><span class="p">();</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Do not use <code class="docutils literal"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first sentence (until the first dot).
+<li><p class="first">Do not use <code class="docutils literal notranslate"><span class="pre">\brief</span></code> doxygen directive. Brief tag is set automatically for first sentence (until the first dot).
 See also <a class="reference external" href="https://www.stack.nl/~dimitri/doxygen/manual/config.html#cfg_javadoc_autobrief">autobrief docs</a>.</p>
 </li>
 <li><p class="first">Do not add redundant Doxygen comments, like:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">//! Set the size.</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//! Set the size.</span>
 <span class="c1">//! \param size The size.</span>
 <span class="kt">void</span> <span class="nf">set_size</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">size</span><span class="p">);</span>
 </pre></div>
@@ -391,19 +417,19 @@ See also <a class="reference external" href="https://www.stack.nl/~dimitri/doxyg
 <ol class="arabic">
 <li><p class="first">Try to follow common <a class="reference external" href="https://chris.beams.io/posts/git-commit/">git guidelines</a>.</p>
 </li>
-<li><p class="first"><strong>Do not keep commits named just</strong> <code class="docutils literal"><span class="pre">FIX</span></code> <strong>,</strong> <code class="docutils literal"><span class="pre">Review</span></code> <strong>,</strong> <code class="docutils literal"><span class="pre">tmp</span></code> <strong>, etc.</strong></p>
+<li><p class="first"><strong>Do not keep commits named just</strong> <code class="docutils literal notranslate"><span class="pre">FIX</span></code> <strong>,</strong> <code class="docutils literal notranslate"><span class="pre">Review</span></code> <strong>,</strong> <code class="docutils literal notranslate"><span class="pre">tmp</span></code> <strong>, etc.</strong></p>
 </li>
-<li><p class="first">Prefer placing issue number at the start of the summary line, prefixed with <code class="docutils literal"><span class="pre">&gt;#</span></code>:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>&gt;#911 Implement calling police officer
+<li><p class="first">Prefer placing issue number at the start of the summary line, prefixed with <code class="docutils literal notranslate"><span class="pre">&gt;#</span></code>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&gt;#911 Implement calling police officer
 </pre></div>
 </div>
 <p>This will be recognized by GitHub as issue reference.
-Note that simply putting <code class="docutils literal"><span class="pre">#</span></code> at the beginning will not do the trick.
-Since a line with the <code class="docutils literal"><span class="pre">#</span></code> at the start is interpreted as the commentary.</p>
+Note that simply putting <code class="docutils literal notranslate"><span class="pre">#</span></code> at the beginning will not do the trick.
+Since a line with the <code class="docutils literal notranslate"><span class="pre">#</span></code> at the start is interpreted as the commentary.</p>
 </li>
 <li><p class="first"><strong>Do not</strong> include issue number in the pull request name.</p>
 </li>
-<li><p class="first">Use <code class="docutils literal"><span class="pre">[WIP]</span></code> (Work In Progress) prefix for PRs that are still in progress or review
+<li><p class="first">Use <code class="docutils literal notranslate"><span class="pre">[WIP]</span></code> (Work In Progress) prefix for PRs that are still in progress or review
 and should not be merged right away.</p>
 </li>
 </ol>
@@ -413,15 +439,18 @@ and should not be merged right away.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="docs.html" class="btn btn-neutral float-right" title="Documentation development and contribution" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="docs.html" class="btn btn-neutral float-right" title="Documentation development and contribution" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="os_layer.html" class="btn btn-neutral" title="OS abstraction layer" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="os_layer.html" class="btn btn-neutral" title="OS abstraction layer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -453,9 +482,11 @@ and should not be merged right away.</p>
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

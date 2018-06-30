@@ -1,7 +1,7 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="117,5,269,32"/>
-<area shape="rect" id="node4" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="108,57,279,98"/>
-<area shape="rect" id="node6" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="108,122,279,163"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="332,5,431,32"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="327,64,436,91"/>
+<area shape="rect" id="node2" href="$classecl_1_1serial.html#a72133dc877cdae49e91d16809a2656aa" title="Sends buffer to a serial stream. " alt="" coords="117,5,255,32"/>
+<area shape="rect" id="node4" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="109,57,263,98"/>
+<area shape="rect" id="node6" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="109,122,263,163"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="315,5,406,32"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="311,64,411,91"/>
 </map>

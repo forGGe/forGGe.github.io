@@ -1,4 +1,4 @@
 <map id="GPIO control" name="GPIO control">
-<area shape="rect" id="node1" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,5,179,47"/>
-<area shape="rect" id="node3" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="435,13,537,39"/>
+<area shape="rect" id="node1" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,5,164,47"/>
+<area shape="rect" id="node3" href="$group__stm32__gpio.html" title="GPIO control" alt="" coords="409,13,508,39"/>
 </map>

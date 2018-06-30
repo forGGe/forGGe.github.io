@@ -1,23 +1,15 @@
 <map id="TEST_GROUP" name="TEST_GROUP">
-<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="233,107,292,133"/>
-<area shape="rect" id="node13" href="$namespaceecl.html#a92d2cdb61c450632ad5676ed9f1a26d3" title="ecl::allocate_shared" alt="" coords="187,191,339,217"/>
-<area shape="rect" id="node18" href="$structdummy__type.html#ac0e7b3d25fef30040275d25a9b94d705" title="dummy_type::dummy_type" alt="" coords="161,241,364,268"/>
-<area shape="rect" id="node19" href="$structdummy__allocator.html#a17654403805a0281f986d184475c2572" title="dummy_allocator::assert\l_all_deleted" alt="" coords="171,293,355,334"/>
-<area shape="rect" id="node22" href="$structdummy__allocator.html#a8c64acd3e6bb3000fd54472b08bbe9b3" title="dummy_allocator::clear" alt="" coords="175,359,351,385"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="439,5,541,32"/>
-<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="428,56,552,83"/>
-<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="board_init" alt="" coords="447,107,533,133"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="412,157,568,184"/>
-<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="674,5,729,32"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="660,56,743,83"/>
-<area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="636,107,767,133"/>
-<area shape="rect" id="node12" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="653,157,750,184"/>
-<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="843,107,974,133"/>
-<area shape="rect" id="node11" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="1031,107,1169,133"/>
-<area shape="rect" id="node14" href="$classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78" title="Allocates memory for given object count. " alt="" coords="419,209,561,250"/>
-<area shape="rect" id="node15" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="616,209,787,250"/>
-<area shape="rect" id="node16" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="835,183,983,225"/>
-<area shape="rect" id="node17" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="870,249,947,276"/>
-<area shape="rect" id="node20" href="$namespaceecl.html#a6cfb039a61d7b31b75eb741e097046ca" title="ecl::for_each" alt="" coords="437,300,543,327"/>
-<area shape="rect" id="node21" href="$namespaceecl.html#ac79e8a5d7659ad54a94a9f929e6e710e" title="ecl::for_each_impl" alt="" coords="631,300,772,327"/>
+<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="206,107,261,133"/>
+<area shape="rect" id="node13" href="$namespaceecl.html#a077e32968327ede1fb0429a03f5b1233" title="ecl::allocate_shared" alt="" coords="164,187,303,213"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a7c2980e1d80593425108c87e032c3dab" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="375,5,469,32"/>
+<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="367,56,477,83"/>
+<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="board_init" alt="" coords="383,107,461,133"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="351,157,493,184"/>
+<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="577,17,627,44"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="564,68,640,95"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="541,144,663,171"/>
+<area shape="rect" id="node12" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="557,195,647,221"/>
+<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="711,144,832,171"/>
+<area shape="rect" id="node11" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="880,144,1005,171"/>
+<area shape="rect" id="node14" href="$classecl_1_1pool__allocator.html#a2d837d44838edc3c1118c7cb9d1c6a78" title="Allocates memory for given object count. " alt="" coords="359,209,485,250"/>
 </map>

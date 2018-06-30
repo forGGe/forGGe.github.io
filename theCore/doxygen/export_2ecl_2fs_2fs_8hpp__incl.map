@@ -1,16 +1,16 @@
 <map id="fs.hpp" name="fs.hpp">
-<area shape="rect" id="node2" href="$fs__descriptor_8hpp.html" title="Filesystem descriptor. " alt="" coords="431,155,603,181"/>
-<area shape="rect" id="node10" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="482,229,573,256"/>
-<area shape="rect" id="node11" href="$inode_8hpp.html" title="inode interface. " alt="" coords="274,80,399,107"/>
-<area shape="rect" id="node16" href="$path_8hpp.html" title="Filesystem path utilities. " alt="" coords="5,229,124,256"/>
-<area shape="rect" id="node20" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="1347,80,1449,107"/>
-<area shape="rect" id="node21" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="991,80,1122,107"/>
-<area shape="rect" id="node3" href="$export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="320,229,407,256"/>
-<area shape="rect" id="node4" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="340,304,467,331"/>
-<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="408,379,505,405"/>
-<area shape="rect" id="node12" href="$file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="102,155,243,181"/>
-<area shape="rect" id="node15" href="$dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="267,155,406,181"/>
-<area shape="rect" id="node22" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="897,155,997,181"/>
-<area shape="rect" id="node25" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="1117,155,1221,181"/>
-<area shape="rect" id="node28" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="678,155,822,181"/>
+<area shape="rect" id="node2" href="$fs__descriptor_8hpp.html" title="Filesystem descriptor. " alt="" coords="317,155,475,181"/>
+<area shape="rect" id="node10" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="363,229,445,256"/>
+<area shape="rect" id="node11" href="$inode_8hpp.html" title="inode interface. " alt="" coords="360,80,475,107"/>
+<area shape="rect" id="node16" href="$path_8hpp.html" title="Filesystem path utilities. " alt="" coords="1454,229,1562,256"/>
+<area shape="rect" id="node20" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="73,80,165,107"/>
+<area shape="rect" id="node21" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="965,80,1083,107"/>
+<area shape="rect" id="node3" href="$export_2ecl_2fs_2types_8hpp.html" title="Filesystem type utilities. " alt="" coords="259,229,338,256"/>
+<area shape="rect" id="node4" href="$memory_8hpp.html" title="Memory managment helpers: shared pointer. " alt="" coords="287,304,401,331"/>
+<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="1371,379,1461,405"/>
+<area shape="rect" id="node12" href="$file__descriptor_8hpp.html" title="File descriptor interface. " alt="" coords="550,155,677,181"/>
+<area shape="rect" id="node15" href="$dir__descriptor_8hpp.html" title="Dir descriptor interface. " alt="" coords="169,155,293,181"/>
+<area shape="rect" id="node22" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="979,155,1069,181"/>
+<area shape="rect" id="node25" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="1289,155,1383,181"/>
+<area shape="rect" id="node28" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="739,155,869,181"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="ecl::this_thread::get_handle" name="ecl::this_thread::get_handle">
-<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="210,5,319,32"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="204,56,325,83"/>
+<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="196,5,296,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae194773889378b1c1eeb7bc63f8c37e3" title="Disables interrupts globally. " alt="" coords="191,56,301,83"/>
 </map>

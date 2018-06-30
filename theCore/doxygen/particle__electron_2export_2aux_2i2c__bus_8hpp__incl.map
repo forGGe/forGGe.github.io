@@ -1,6 +1,6 @@
 <map id="i2c_bus.hpp" name="i2c_bus.hpp">
-<area shape="rect" id="node2" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="78,80,213,107"/>
-<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,155,96,181"/>
-<area shape="rect" id="node5" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="288,80,389,107"/>
-<area shape="rect" id="node8" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="414,80,511,107"/>
+<area shape="rect" id="node2" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="73,80,196,107"/>
+<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node5" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="271,80,363,107"/>
+<area shape="rect" id="node8" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="388,80,479,107"/>
 </map>

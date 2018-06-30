@@ -1,3 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$structecl_1_1mmio_1_1ro__mut.html#a38dedd6987633c289e47a87f39768af1" title="Reads value from a memory&#45;mapped register. " alt="" coords="108,5,287,32"/>
+<area shape="rect" id="node2" href="$structecl_1_1mmio_1_1ro__mut.html#a38dedd6987633c289e47a87f39768af1" title="Reads value from a memory&#45;mapped register. " alt="" coords="109,5,269,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="317,5,419,32"/>
 </map>

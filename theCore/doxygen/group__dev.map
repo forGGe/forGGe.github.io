@@ -1,4 +1,6 @@
 <map id="External device drivers" name="External device drivers">
-<area shape="rect" id="node2" href="$group__connectivity.html" title="Connectivity and IoT\l drivers" alt="" coords="225,5,381,47"/>
-<area shape="rect" id="node3" href="$group__sdspi.html" title="SDSPI driver module" alt="" coords="226,71,381,98"/>
+<area shape="rect" id="node1" href="$group__cs43l22.html" title="CS43L22 driver module" alt="" coords="208,5,365,32"/>
+<area shape="rect" id="node3" href="$group__connectivity.html" title="Connectivity and IoT\l drivers" alt="" coords="215,57,358,98"/>
+<area shape="rect" id="node4" href="$group__sdspi.html" title="SDSPI driver module" alt="" coords="215,123,359,149"/>
+<area shape="rect" id="node5" href="$group__sensors.html" title="Sensors modules" alt="" coords="225,173,348,200"/>
 </map>

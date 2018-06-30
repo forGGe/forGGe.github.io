@@ -1,4 +1,3 @@
 <map id="test_routine" name="test_routine">
-<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="153,13,312,39"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="360,5,531,47"/>
+<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="144,5,287,32"/>
 </map>

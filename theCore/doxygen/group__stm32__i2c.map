@@ -1,6 +1,6 @@
 <map id="I2C driver" name="I2C driver">
-<area shape="rect" id="node1" href="$group__tm4c__console.html" title="Console" alt="" coords="426,5,501,32"/>
-<area shape="rect" id="node2" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="373,56,553,112"/>
-<area shape="rect" id="node4" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="372,136,555,163"/>
-<area shape="rect" id="node5" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,71,169,97"/>
+<area shape="rect" id="node1" href="$group__tm4c__console.html" title="Console" alt="" coords="396,5,465,32"/>
+<area shape="rect" id="node2" href="$group__stm32__templates.html" title="Auto&#45;generated code,\l Python COG and CMake\l templates" alt="" coords="345,56,516,112"/>
+<area shape="rect" id="node4" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="348,136,513,163"/>
+<area shape="rect" id="node5" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,71,152,97"/>
 </map>

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,17 +94,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../platform/index.html">Supported platforms</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Device drivers</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="bh1750-light-sensor.html">BH1750 Digital Light sensor</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Cirrus Logic CS43L22 audio DAC</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cirrus Logic CS43L22 audio DAC</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specification">Specification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cs43l22-usage-example">CS43L22 usage example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verified-hardware">Verified hardware</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#driver-documentation">Driver documentation</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="fc28-moisture-sensor.html">FC-28 moisture sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hm-10-bluetooth.html">HM-10 Bluetooth BTLE module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="htu21d-humidity-temperature-sensor.html">HTU21D humidity and temperature sensor</a></li>
@@ -116,7 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -129,8 +143,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -139,25 +155,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Device drivers</a> &raquo;</li>
-      
-    <li>Cirrus Logic CS43L22 audio DAC</li>
+        
+      <li>Cirrus Logic CS43L22 audio DAC</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/devices/cs43l22-audio.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -170,24 +203,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="section" id="cirrus-logic-cs43l22-audio-dac">
 <span id="thecore-cs43l22"></span><h1>Cirrus Logic CS43L22 audio DAC<a class="headerlink" href="#cirrus-logic-cs43l22-audio-dac" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
+<a class="reference internal image-reference" href="https://componentsearchengine.com/Images/3/CS43L22-CNZ.jpg"><img alt="CS43L22 audio DAC" src="https://componentsearchengine.com/Images/3/CS43L22-CNZ.jpg" style="width: 700px;" /></a>
+<p>The CS43L22 is a highly integrated, low power stereo DAC with headphone and
+Class D speaker amplifiers.</p>
+<div class="section" id="specification">
+<h2>Specification<a class="headerlink" href="#specification" title="Permalink to this headline">¶</a></h2>
+<p>Proceed to <a class="reference external" href="https://www.mouser.com/ds/2/76/CS43L22_F2-1142121.pdf">Mouser website</a> to get the CS43L22 spec.</p>
+</div>
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>CS43L22 driver implementation is located under <code class="docutils literal notranslate"><span class="pre">dev/cs43l22/</span></code> directory, relative to
+theCore root.</p>
+</div>
+<div class="section" id="cs43l22-usage-example">
+<h2>CS43L22 usage example<a class="headerlink" href="#cs43l22-usage-example" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference internal" href="../examples/stm32f4-discovery-cs43l22.html#thecore-stm32f4-cs43l22"><span class="std std-ref">STM32F4 discovery audio example with CS43L22 audio DAC</span></a>.</p>
+</div>
+<div class="section" id="verified-hardware">
+<h2>Verified hardware<a class="headerlink" href="#verified-hardware" title="Permalink to this headline">¶</a></h2>
+<p>CS43L22 driver is tested with <a class="reference external" href="https://www.st.com/en/evaluation-tools/stm32f4discovery.html">STM32F4 Discovery</a>  board. See <a class="reference internal" href="../platform/stm32.html#thecore-stm32"><span class="std std-ref">STM32</span></a>
+page for more information about theCore platform that provide support for it.</p>
+</div>
+<div class="section" id="driver-documentation">
+<h2>Driver documentation<a class="headerlink" href="#driver-documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forgge.github.io/theCore/doxygen/group__cs43l22.html">Click here to open CS43L22 Doxygen docs</a>.</p>
 </div>
 </div>
 
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="fc28-moisture-sensor.html" class="btn btn-neutral float-right" title="FC-28 moisture sensor" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="fc28-moisture-sensor.html" class="btn btn-neutral float-right" title="FC-28 moisture sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="bh1750-light-sensor.html" class="btn btn-neutral" title="BH1750 Digital Light sensor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="bh1750-light-sensor.html" class="btn btn-neutral" title="BH1750 Digital Light sensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -219,9 +276,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

@@ -1,4 +1,4 @@
 <map id="ecl::spi::do_xfer" name="ecl::spi::do_xfer">
-<area shape="rect" id="node2" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="179,5,317,32"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="185,56,311,83"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="168,5,293,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="173,56,288,83"/>
 </map>

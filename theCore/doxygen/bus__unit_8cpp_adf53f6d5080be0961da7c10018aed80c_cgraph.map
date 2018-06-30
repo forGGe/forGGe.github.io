@@ -1,10 +1,7 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#a4c7eed2b45da51f420d08649f156f253" title="Performs xfer in blocking mode using buffers set previously with optional timeout. " alt="" coords="108,101,269,127"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257" title="Tries to wait on semaphore without lock. " alt="" coords="318,5,489,47"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="362,71,445,98"/>
-<area shape="rect" id="node7" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="318,123,489,164"/>
-<area shape="rect" id="node8" href="$namespaceecl_1_1os_1_1signal.html#a4d165308499159c21b605a093dc5739d" title="Tries to wait a signal. " alt="" coords="317,189,489,215"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="543,46,642,73"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="537,97,648,123"/>
-<area shape="rect" id="node9" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="538,189,647,215"/>
+<area shape="rect" id="node2" href="$classecl_1_1generic__bus.html#a4c7eed2b45da51f420d08649f156f253" title="Performs xfer in blocking mode using buffers set previously with optional timeout. " alt="" coords="109,31,256,57"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="343,5,421,32"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1os_1_1signal.html#a4d165308499159c21b605a093dc5739d" title="Tries to wait a signal. " alt="" coords="304,56,460,83"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="513,5,603,32"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="508,56,608,83"/>
 </map>

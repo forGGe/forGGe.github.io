@@ -1,6 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="303,5,485,32"/>
-<area shape="rect" id="node3" href="$group__stm32__exti.html#ga8c400678c55aa8935c96807704c1a563" title="Unmasks (enables) pending EXTI request. " alt="" coords="108,55,255,97"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="341,60,447,87"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="331,111,457,137"/>
+<area shape="rect" id="node2" href="$group__stm32__exti.html#ga4b2cf44d969a2f90211d4e1a40e83e08" title="Masks (disables) pending EXTI request. " alt="" coords="109,5,275,32"/>
+<area shape="rect" id="node3" href="$group__stm32__exti.html#ga8c400678c55aa8935c96807704c1a563" title="Unmasks (enables) pending EXTI request. " alt="" coords="125,57,259,98"/>
 </map>

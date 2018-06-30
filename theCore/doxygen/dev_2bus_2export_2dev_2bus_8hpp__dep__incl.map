@@ -1,5 +1,7 @@
 <map id="bus.hpp" name="bus.hpp">
-<area shape="rect" id="node2" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="5,80,109,107"/>
-<area shape="rect" id="node3" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="134,80,234,107"/>
-<area shape="rect" id="node4" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="258,80,385,107"/>
+<area shape="rect" id="node2" href="$bus__unit_8cpp.html" title="bus_unit.cpp" alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$cs43l22_8hpp.html" title="Contains implementation for CS43L22 driver. " alt="" coords="126,80,218,107"/>
+<area shape="rect" id="node4" href="$cs43l22__cfg_8in_8hpp.html" title="CS43L22 configuration code template. " alt="" coords="148,155,279,181"/>
+<area shape="rect" id="node5" href="$sdspi__cfg_8in_8hpp.html" title="SDSPI configuration code template. " alt="" coords="293,80,411,107"/>
+<area shape="rect" id="node6" href="$htu21d__cfg_8in_8hpp.html" title="HTU21D configuration code template. " alt="" coords="435,80,560,107"/>
 </map>

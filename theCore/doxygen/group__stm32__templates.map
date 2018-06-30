@@ -1,6 +1,6 @@
 <map id="Auto&#45;generated code, Python COG and CMake templates" name="Auto&#45;generated code, Python COG and CMake templates">
-<area shape="rect" id="node1" href="$group__tm4c__console.html" title="Console" alt="" coords="521,5,595,32"/>
-<area shape="rect" id="node3" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="515,56,601,83"/>
-<area shape="rect" id="node4" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="467,107,649,133"/>
-<area shape="rect" id="node5" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,56,169,83"/>
+<area shape="rect" id="node1" href="$group__tm4c__console.html" title="Console" alt="" coords="485,5,555,32"/>
+<area shape="rect" id="node3" href="$group__stm32__i2c.html" title="I2C driver" alt="" coords="481,56,559,83"/>
+<area shape="rect" id="node4" href="$group__tm4c__pins.html" title="Pin configuration helpers" alt="" coords="437,107,603,133"/>
+<area shape="rect" id="node5" href="$group__stm32.html" title="STM32 multi&#45;platform" alt="" coords="5,56,152,83"/>
 </map>

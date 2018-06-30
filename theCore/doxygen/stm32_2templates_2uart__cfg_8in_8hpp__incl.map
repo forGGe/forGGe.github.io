@@ -1,7 +1,7 @@
 <map id="uart_cfg.in.hpp" name="uart_cfg.in.hpp">
-<area shape="rect" id="node3" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="357,80,499,107"/>
-<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="53,155,187,181"/>
-<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,229,96,256"/>
-<area shape="rect" id="node7" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="466,155,563,181"/>
-<area shape="rect" id="node10" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="263,155,391,181"/>
+<area shape="rect" id="node3" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="329,80,458,107"/>
+<area shape="rect" id="node4" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="44,155,167,181"/>
+<area shape="rect" id="node5" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="5,229,88,256"/>
+<area shape="rect" id="node7" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="431,155,521,181"/>
+<area shape="rect" id="node10" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="241,155,356,181"/>
 </map>

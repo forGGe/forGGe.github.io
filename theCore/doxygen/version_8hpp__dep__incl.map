@@ -1,10 +1,10 @@
 <map id="version.hpp" name="version.hpp">
-<area shape="rect" id="node2" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="308,80,408,107"/>
-<area shape="rect" id="node3" href="$assert_8cpp.html" title="assert.cpp" alt="" coords="5,155,95,181"/>
-<area shape="rect" id="node4" href="$host_2console_8cpp.html" title="Console class implementation for the host platform. " alt="" coords="119,155,218,181"/>
-<area shape="rect" id="node5" href="$user__side_8cpp.html" title="User&#45;side code that should be compiled directly into resulting application. " alt="" coords="243,155,353,181"/>
-<area shape="rect" id="node6" href="$irq_8in_8cpp.html" title="TM4C IRQ handlers template. " alt="" coords="378,155,461,181"/>
-<area shape="rect" id="node7" href="$sys_8cpp.html" title="theCore system initialization module. " alt="" coords="485,155,556,181"/>
-<area shape="rect" id="node8" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="581,155,679,181"/>
-<area shape="rect" id="node9" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="561,229,699,256"/>
+<area shape="rect" id="node2" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="290,80,382,107"/>
+<area shape="rect" id="node3" href="$assert_8cpp.html" title="assert.cpp" alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node4" href="$host_2console_8cpp.html" title="Console class implementation for the host platform. " alt="" coords="113,155,205,181"/>
+<area shape="rect" id="node5" href="$user__side_8cpp.html" title="User&#45;side code that should be compiled directly into resulting application. " alt="" coords="229,155,331,181"/>
+<area shape="rect" id="node6" href="$irq_8in_8cpp.html" title="TM4C IRQ handlers template. " alt="" coords="356,155,431,181"/>
+<area shape="rect" id="node7" href="$sys_8cpp.html" title="theCore system initialization module. " alt="" coords="455,155,523,181"/>
+<area shape="rect" id="node8" href="$spi__i2s__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="547,155,663,181"/>
+<area shape="rect" id="node9" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="542,229,669,256"/>
 </map>

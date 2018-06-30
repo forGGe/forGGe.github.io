@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['case_2ecpp',['case.cpp',['../uart__bat_2case_8cpp.html',1,'']]],
-  ['case_2ecpp',['case.cpp',['../unity__demo_2case_8cpp.html',1,'']]],
+  ['case_2ecpp',['case.cpp',['../uart__bat_2case_8cpp.html',1,'(Global Namespace)'],['../unity__demo_2case_8cpp.html',1,'(Global Namespace)']]],
   ['uart_2ehpp',['uart.hpp',['../uart_8hpp.html',1,'']]],
   ['uart_5fbus_2ehpp',['uart_bus.hpp',['../uart__bus_8hpp.html',1,'']]],
   ['unity_5fhelpers_2ehpp',['unity_helpers.hpp',['../unity__helpers_8hpp.html',1,'']]],

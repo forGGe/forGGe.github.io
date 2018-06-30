@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,10 +94,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
@@ -124,7 +131,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -137,8 +144,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -147,25 +156,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Device drivers</a> &raquo;</li>
-      
-    <li>HM-10 Bluetooth BTLE module</li>
+        
+      <li>HM-10 Bluetooth BTLE module</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/devices/hm-10-bluetooth.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -178,7 +204,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="section" id="hm-10-bluetooth-btle-module">
 <span id="thecore-hm-10"></span><h1>HM-10 Bluetooth BTLE module<a class="headerlink" href="#hm-10-bluetooth-btle-module" title="Permalink to this headline">¶</a></h1>
-<img alt="HM-10 Bluetooth Module BTLE" src="https://cdn.itead.cc/media/catalog/product/h/m/hm_10_03.jpg" />
+<a class="reference internal image-reference" href="https://cdn.itead.cc/media/catalog/product/h/m/hm_10_03.jpg"><img alt="HM-10 Bluetooth Module BTLE" src="https://cdn.itead.cc/media/catalog/product/h/m/hm_10_03.jpg" style="width: 700px;" /></a>
 <p>HM-10 is a BLE module for embedded system to get BLE wireless communication
 with BLE capable devices (e.g. iPhone and iPad).
 It is fully configurable by a rich and well documented AT command-set and
@@ -189,7 +215,7 @@ allows transparent data communication via serial UART (default baudrate 9600bps)
 </div>
 <div class="section" id="source-code">
 <h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
-<p>HM-10 driver implementation is located under <code class="docutils literal"><span class="pre">dev/hm10/</span></code> directory, relative to
+<p>HM-10 driver implementation is located under <code class="docutils literal notranslate"><span class="pre">dev/hm10/</span></code> directory, relative to
 theCore root.</p>
 </div>
 <div class="section" id="driver-documentation">
@@ -198,7 +224,7 @@ theCore root.</p>
 </div>
 <div class="section" id="hm-10-usage-example">
 <h2>HM-10 usage example<a class="headerlink" href="#hm-10-usage-example" title="Permalink to this headline">¶</a></h2>
-<p>Refer to <a class="reference internal" href="../examples/stm32f4-discovery-bluetooth-hm10.html#thecore-stm32f4-hm-10-example"><span class="std std-ref">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</span></a> page for usage example.</p>
+<p>Refer to <a class="reference internal" href="../examples/bluetooth-hm10.html#thecore-hm-10-example"><span class="std std-ref">HM-10 Bluetooth LE (4.0) wireless module example</span></a> page for usage example.</p>
 </div>
 <div class="section" id="known-limitations">
 <h2>Known limitations<a class="headerlink" href="#known-limitations" title="Permalink to this headline">¶</a></h2>
@@ -217,15 +243,18 @@ For master mode, see <a class="reference external" href="https://github.com/forG
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="htu21d-humidity-temperature-sensor.html" class="btn btn-neutral float-right" title="HTU21D humidity and temperature sensor" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="htu21d-humidity-temperature-sensor.html" class="btn btn-neutral float-right" title="HTU21D humidity and temperature sensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="fc28-moisture-sensor.html" class="btn btn-neutral" title="FC-28 moisture sensor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="fc28-moisture-sensor.html" class="btn btn-neutral" title="FC-28 moisture sensor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -257,9 +286,11 @@ For master mode, see <a class="reference external" href="https://github.com/forG
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

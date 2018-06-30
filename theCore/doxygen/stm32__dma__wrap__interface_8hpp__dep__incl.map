@@ -1,22 +1,22 @@
 <map id="stm32_dma_wrap_interface.hpp" name="stm32_dma_wrap_interface.hpp">
-<area shape="rect" id="node2" href="$stm32f4xx__dma__wrap_8hpp.html" title="STM32F4XX DMA wrappers implementation. " alt="" coords="393,80,587,107"/>
-<area shape="rect" id="node4" href="$stm32l1xx__dma__wrap_8hpp.html" title="STM32L1XX DMA wrappers implementation. " alt="" coords="611,80,806,107"/>
-<area shape="rect" id="node3" href="$f4xx_2export_2stm32__device_8hpp.html" title="STM32F4 collection of C++ headers. " alt="" coords="419,155,561,181"/>
-<area shape="rect" id="node5" href="$l1xx_2export_2stm32__device_8hpp.html" title="STM32 C++ header collection. " alt="" coords="705,155,846,181"/>
-<area shape="rect" id="node6" href="$stm32_2console_8cpp.html" title="Platform console implementation. " alt="" coords="110,229,209,256"/>
-<area shape="rect" id="node7" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="233,229,307,256"/>
-<area shape="rect" id="node9" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="331,229,430,256"/>
-<area shape="rect" id="node12" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="454,229,553,256"/>
-<area shape="rect" id="node14" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="577,229,691,256"/>
-<area shape="rect" id="node16" href="$cm__device_8hpp.html" title="Proxy header, required by architecture module due to CMSIS&#45;compliancy. " alt="" coords="715,229,835,256"/>
-<area shape="rect" id="node17" href="$platform_2stm32_2export_2platform_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="859,229,974,256"/>
-<area shape="rect" id="node18" href="$stm32_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for STM32 platform. " alt="" coords="993,304,1131,331"/>
-<area shape="rect" id="node19" href="$stm32_2export_2platform_2gpio__device_8hpp.html" title="GPIO device interface for STM32 platform. " alt="" coords="1049,229,1177,256"/>
-<area shape="rect" id="node20" href="$stm32_2export_2platform_2irq_8hpp.html" title="STM32 IRQ interface. " alt="" coords="1201,229,1267,256"/>
-<area shape="rect" id="node21" href="$dma__cfg_8in_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="1291,229,1414,256"/>
-<area shape="rect" id="node8" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="5,304,121,331"/>
-<area shape="rect" id="node10" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="146,304,301,331"/>
-<area shape="rect" id="node11" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="325,304,437,331"/>
-<area shape="rect" id="node13" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="461,304,599,331"/>
-<area shape="rect" id="node15" href="$stm32_2templates_2uart__cfg_8in_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="624,304,743,331"/>
+<area shape="rect" id="node2" href="$stm32f4xx__dma__wrap_8hpp.html" title="STM32F4XX DMA wrappers implementation. " alt="" coords="399,80,574,107"/>
+<area shape="rect" id="node4" href="$stm32l1xx__dma__wrap_8hpp.html" title="STM32L1XX DMA wrappers implementation. " alt="" coords="599,80,772,107"/>
+<area shape="rect" id="node3" href="$f4xx_2export_2stm32__device_8hpp.html" title="STM32F4 collection of C++ headers. " alt="" coords="423,155,551,181"/>
+<area shape="rect" id="node5" href="$l1xx_2export_2stm32__device_8hpp.html" title="STM32 C++ header collection. " alt="" coords="683,155,811,181"/>
+<area shape="rect" id="node6" href="$stm32_2console_8cpp.html" title="Platform console implementation. " alt="" coords="98,229,190,256"/>
+<area shape="rect" id="node7" href="$stm32_2export_2aux_2adc_8hpp.html" title="STM32 ADC driver. " alt="" coords="214,229,282,256"/>
+<area shape="rect" id="node9" href="$stm32_2export_2aux_2i2c__bus_8hpp.html" title="i2c_bus.hpp" alt="" coords="306,229,398,256"/>
+<area shape="rect" id="node12" href="$spi__i2s__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="422,229,538,256"/>
+<area shape="rect" id="node14" href="$usart__bus_8hpp.html" title="STM32 USART driver. " alt="" coords="563,229,667,256"/>
+<area shape="rect" id="node16" href="$cm__device_8hpp.html" title="Proxy header, required by architecture module due to CMSIS&#45;compliancy. " alt="" coords="691,229,802,256"/>
+<area shape="rect" id="node17" href="$platform_2stm32_2export_2platform_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="826,229,929,256"/>
+<area shape="rect" id="node18" href="$stm32_2export_2platform_2exti__manager_8hpp.html" title="External interrupt manager for STM32 platform. " alt="" coords="953,304,1077,331"/>
+<area shape="rect" id="node19" href="$stm32_2export_2platform_2gpio__device_8hpp.html" title="GPIO device interface for STM32 platform. " alt="" coords="1005,229,1121,256"/>
+<area shape="rect" id="node20" href="$stm32_2export_2platform_2irq_8hpp.html" title="STM32 IRQ interface. " alt="" coords="1145,229,1207,256"/>
+<area shape="rect" id="node21" href="$dma__cfg_8in_8hpp.html" title="Header provides template of DMA driver configuration. " alt="" coords="1231,229,1342,256"/>
+<area shape="rect" id="node8" href="$adc__cfg_8in_8hpp.html" title="Header provides template of ADC driver configuration. " alt="" coords="5,304,112,331"/>
+<area shape="rect" id="node10" href="$i2c__wire__cfgs_8in_8hpp.html" title="Particle Serial I2C driver configuration template. " alt="" coords="137,304,277,331"/>
+<area shape="rect" id="node11" href="$i2c__cfg_8in_8hpp.html" title="Header provides template of I2C driver configuration. " alt="" coords="301,304,403,331"/>
+<area shape="rect" id="node13" href="$spi__i2s__cfg_8in_8hpp.html" title="Header provides template of SPI and I2S drivers configuration. " alt="" coords="427,304,554,331"/>
+<area shape="rect" id="node15" href="$stm32_2templates_2uart__cfg_8in_8hpp.html" title="Header provides template of u(s)art driver configuration. " alt="" coords="578,304,686,331"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="bus_unit.cpp" name="bus_unit.cpp">
-<area shape="rect" id="node2" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="447,87,548,114"/>
-<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="141,244,232,271"/>
-<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="589,169,686,196"/>
-<area shape="rect" id="node9" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="430,169,565,196"/>
+<area shape="rect" id="node2" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="406,87,499,114"/>
+<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="127,244,210,271"/>
+<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="538,169,629,196"/>
+<area shape="rect" id="node9" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="391,169,514,196"/>
 </map>

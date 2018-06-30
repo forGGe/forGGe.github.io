@@ -68,7 +68,6 @@ var hierarchy =
     [ "ecl::list< T, Mptr >", "classecl_1_1list.html", null ],
     [ "ecl::list_iter< T, Mptr >", "classecl_1_1list__iter.html", null ],
     [ "ecl::list_node", "classecl_1_1list__node.html", null ],
-    [ "measurement", "structmeasurement.html", null ],
     [ "ecl::mgmt_configurator< dev, mode >", "classecl_1_1mgmt__configurator.html", null ],
     [ "ecl::mgmt_configurator< dev, adc_mgmt_mode::dma >", "classecl_1_1mgmt__configurator_3_01dev_00_01adc__mgmt__mode_1_1dma_01_4.html", null ],
     [ "ecl::mgmt_configurator< dev, adc_mgmt_mode::irq >", "classecl_1_1mgmt__configurator_3_01dev_00_01adc__mgmt__mode_1_1irq_01_4.html", null ],
@@ -128,8 +127,8 @@ var hierarchy =
       [ "ecl::spi_irq_proxy< ch >", "structecl_1_1spi__irq__proxy.html", null ]
     ] ],
     [ "ecl::skel::spi< ch >", "classecl_1_1skel_1_1spi.html", null ],
-    [ "ecl::spi_cfg< ch >", "structecl_1_1spi__cfg.html", null ],
     [ "ecl::skel::spi_cfg< ch >", "structecl_1_1skel_1_1spi__cfg.html", null ],
+    [ "ecl::spi_cfg< ch >", "structecl_1_1spi__cfg.html", null ],
     [ "ecl::spi_i2s_bus< dev >", "classecl_1_1spi__i2s__bus.html", null ],
     [ "ecl::spi_i2s_cfg< dev >", "structecl_1_1spi__i2s__cfg.html", null ],
     [ "ecl::spinlock", "classecl_1_1spinlock.html", null ],

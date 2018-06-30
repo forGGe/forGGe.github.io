@@ -1,12 +1,12 @@
 <map id="path.hpp" name="path.hpp">
-<area shape="rect" id="node2" href="$fs__unit_8cpp.html" title="fs_unit.cpp" alt="" coords="5,80,99,107"/>
-<area shape="rect" id="node3" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="123,80,186,107"/>
-<area shape="rect" id="node5" href="$dir_8hpp.html" title="FATFS dir descriptor interface. " alt="" coords="211,80,277,107"/>
-<area shape="rect" id="node8" href="$dir__inode_8hpp.html" title="Directory FATFS inode interface. " alt="" coords="302,80,413,107"/>
-<area shape="rect" id="node10" href="$file__inode_8hpp.html" title="File FATFS inode interface. " alt="" coords="437,80,550,107"/>
-<area shape="rect" id="node4" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="61,155,166,181"/>
-<area shape="rect" id="node6" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="325,155,390,181"/>
-<area shape="rect" id="node7" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="191,155,300,181"/>
-<area shape="rect" id="node9" href="$fat_2export_2ecl_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="414,155,477,181"/>
-<area shape="rect" id="node11" href="$file__inode_8cpp.html" title="File FATFS inode implementation. " alt="" coords="501,155,613,181"/>
+<area shape="rect" id="node2" href="$fs__unit_8cpp.html" title="fs_unit.cpp" alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$export_2ecl_2fs_2fs_8hpp.html" title="VFS interface. " alt="" coords="117,80,175,107"/>
+<area shape="rect" id="node5" href="$dir_8hpp.html" title="FATFS dir descriptor interface. " alt="" coords="200,80,260,107"/>
+<area shape="rect" id="node8" href="$dir__inode_8hpp.html" title="Directory FATFS inode interface. " alt="" coords="285,80,383,107"/>
+<area shape="rect" id="node10" href="$file__inode_8hpp.html" title="File FATFS inode interface. " alt="" coords="408,80,511,107"/>
+<area shape="rect" id="node4" href="$fs__cfg_8in_8hpp.html" title="Filesystem configuration code template. " alt="" coords="59,155,156,181"/>
+<area shape="rect" id="node6" href="$dir_8cpp.html" title="dir.cpp" alt="" coords="304,155,364,181"/>
+<area shape="rect" id="node7" href="$dir__inode_8cpp.html" title="Directory FATFS inode implementation. " alt="" coords="181,155,279,181"/>
+<area shape="rect" id="node9" href="$fat_2export_2ecl_2fat_2fs_8hpp.html" title="fs.hpp" alt="" coords="389,155,447,181"/>
+<area shape="rect" id="node11" href="$file__inode_8cpp.html" title="File FATFS inode implementation. " alt="" coords="472,155,575,181"/>
 </map>

@@ -1,13 +1,11 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="119,17,288,43"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="108,71,299,98"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="347,5,517,47"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="566,13,675,39"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="381,169,483,195"/>
-<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="725,122,872,149"/>
-<area shape="rect" id="node8" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="728,175,869,202"/>
-<area shape="rect" id="node9" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="725,233,872,259"/>
-<area shape="rect" id="node10" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="584,219,657,246"/>
-<area shape="rect" id="node11" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="724,295,873,322"/>
-<area shape="rect" id="node12" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="565,67,676,94"/>
+<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="119,157,272,184"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="109,208,281,235"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="329,157,421,184"/>
+<area shape="rect" id="node5" href="$namespaceecl_1_1systmr.html#a199659d0e3e8c0cdf9dcbb07dc3669ef" title="Gets amount of events occurred so far. " alt="" coords="470,5,605,32"/>
+<area shape="rect" id="node6" href="$namespaceecl_1_1systmr.html#a8b862ea830a321cb391cec0170a7161b" title="Gets speed in which timer generate events. " alt="" coords="472,56,603,83"/>
+<area shape="rect" id="node7" href="$namespaceecl_1_1systmr.html#acf789e342dd12c73de9eb7e345668065" title="Enables timer, start counting. " alt="" coords="471,107,604,133"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#a16a20a7eaf786bc5dca3e88b4d07d305" title="Waits for events. " alt="" coords="504,157,571,184"/>
+<area shape="rect" id="node9" href="$namespaceecl_1_1systmr.html#a9c4a0e82c323931d21fe20424446e33d" title="Disables timer, stop counting. " alt="" coords="469,208,605,235"/>
+<area shape="rect" id="node10" href="$namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="487,259,588,285"/>
 </map>

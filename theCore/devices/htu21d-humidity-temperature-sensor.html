@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,10 +94,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
@@ -104,7 +111,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l2"><a class="reference internal" href="cs43l22-audio.html">Cirrus Logic CS43L22 audio DAC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="fc28-moisture-sensor.html">FC-28 moisture sensor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hm-10-bluetooth.html">HM-10 Bluetooth BTLE module</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">HTU21D humidity and temperature sensor</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">HTU21D humidity and temperature sensor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#datasheet">Datasheet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-code">Source code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#driver-documentation">Driver documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#htu21d-usage-example">HTU21D usage example</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="pc8544-nokia-5110-display.html">PC8544 Nokia 5110 display</a></li>
 <li class="toctree-l2"><a class="reference internal" href="sdspi.html">SDSPI driver</a></li>
 </ul>
@@ -116,7 +129,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -129,8 +142,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -139,25 +154,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Device drivers</a> &raquo;</li>
-      
-    <li>HTU21D humidity and temperature sensor</li>
+        
+      <li>HTU21D humidity and temperature sensor</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/devices/htu21d-humidity-temperature-sensor.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -169,25 +201,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager (noscript) -->
 
   <div class="section" id="htu21d-humidity-and-temperature-sensor">
-<h1>HTU21D humidity and temperature sensor<a class="headerlink" href="#htu21d-humidity-and-temperature-sensor" title="Permalink to this headline">¶</a></h1>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This section is under construction.</p>
+<span id="thecore-htu21d"></span><h1>HTU21D humidity and temperature sensor<a class="headerlink" href="#htu21d-humidity-and-temperature-sensor" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="https://s3-ap-southeast-1.amazonaws.com/a2.datacaciques.com/16/09/13/73w9keijt2gvm68c/20dbf19893bf73b1.jpg"><img alt="HTU21D humidity and temperature sensor module" src="https://s3-ap-southeast-1.amazonaws.com/a2.datacaciques.com/16/09/13/73w9keijt2gvm68c/20dbf19893bf73b1.jpg" style="width: 700px;" /></a>
+<p>The HTU21D is a low-cost and highly accurate digital humidity and temperature sensor.
+It can be shipped within different boards, like shown in the picture above.</p>
+<div class="section" id="datasheet">
+<h2>Datasheet<a class="headerlink" href="#datasheet" title="Permalink to this headline">¶</a></h2>
+<p>Datasheet v524 can be found at <a class="reference external" href="https://cdn.sparkfun.com/assets/b/1/b/8/5/Si7021-A20.pdf">Sparkfun CDN</a></p>
+</div>
+<div class="section" id="source-code">
+<h2>Source code<a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h2>
+<p>HTU21D driver implementation is located under <code class="docutils literal notranslate"><span class="pre">dev/sensor/htu21d</span></code> directory,
+relative to theCore root.</p>
+</div>
+<div class="section" id="driver-documentation">
+<h2>Driver documentation<a class="headerlink" href="#driver-documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://forgge.github.io/theCore/doxygen/group__htu21d.html">Click here to open HTU21D Doxygen docs</a>.</p>
+</div>
+<div class="section" id="htu21d-usage-example">
+<h2>HTU21D usage example<a class="headerlink" href="#htu21d-usage-example" title="Permalink to this headline">¶</a></h2>
+<p>Refer to <a class="reference internal" href="../examples/htu21d-temperature-humidity-sensor.html#thecore-htu21d-example"><span class="std std-ref">HTU21D temperature and humidity sensor example</span></a> page for usage example.</p>
 </div>
 </div>
 
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="pc8544-nokia-5110-display.html" class="btn btn-neutral float-right" title="PC8544 Nokia 5110 display" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="pc8544-nokia-5110-display.html" class="btn btn-neutral float-right" title="PC8544 Nokia 5110 display" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="hm-10-bluetooth.html" class="btn btn-neutral" title="HM-10 Bluetooth BTLE module" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="hm-10-bluetooth.html" class="btn btn-neutral" title="HM-10 Bluetooth BTLE module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -219,9 +270,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

@@ -1,6 +1,6 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="108,35,279,76"/>
-<area shape="rect" id="node5" href="$pool__unit_8cpp.html#a9cbe427aa4c1b43d82ffe945418c41bc" title="check_if_empty_pool\l_is_empty" alt="" coords="113,100,273,141"/>
-<area shape="rect" id="node3" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="327,5,475,47"/>
-<area shape="rect" id="node4" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="362,71,439,98"/>
+<area shape="rect" id="node2" href="$classecl_1_1pool__base.html#a534fe7d766088918f4a789cde3c43e20" title="Allocates memory suitable for type T, with respect to its aligment. " alt="" coords="109,35,264,76"/>
+<area shape="rect" id="node5" href="$pool__unit_8cpp.html#a9cbe427aa4c1b43d82ffe945418c41bc" title="check_if_empty_pool\l_is_empty" alt="" coords="114,100,259,141"/>
+<area shape="rect" id="node3" href="$classecl_1_1pool__base.html#a554879869af02e0ca0519377b5a0b7bf" title="Allocates chunk with respect to given alingment. " alt="" coords="312,5,447,47"/>
+<area shape="rect" id="node4" href="$namespaceecl.html#abf70b61cc734c2dcdc322714607b344a" title="ecl::endl" alt="" coords="344,71,415,98"/>
 </map>

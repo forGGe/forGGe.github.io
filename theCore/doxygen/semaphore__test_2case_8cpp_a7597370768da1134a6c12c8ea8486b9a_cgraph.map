@@ -1,6 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="108,5,291,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="115,56,284,83"/>
-<area shape="rect" id="node4" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="339,49,509,90"/>
-<area shape="rect" id="node5" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="557,56,667,83"/>
+<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="109,5,273,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="115,56,268,83"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="ecl::cs43l22::power_down" name="ecl::cs43l22::power_down">
+<area shape="rect" id="node2" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="224,5,303,32"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="351,5,441,32"/>
+</map>

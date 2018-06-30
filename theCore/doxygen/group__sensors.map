@@ -1,0 +1,4 @@
+<map id="Sensors modules" name="Sensors modules">
+<area shape="rect" id="node1" href="$group__htu21d.html" title="HTU21D humidity and\l temperature sensor" alt="" coords="379,5,528,47"/>
+<area shape="rect" id="node2" href="$group__dev.html" title="External device drivers" alt="" coords="5,13,160,39"/>
+</map>

@@ -1,10 +1,10 @@
 <map id="spi_i2s_cfg.in.hpp" name="spi_i2s_cfg.in.hpp">
-<area shape="rect" id="node3" href="$spi__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="486,80,613,107"/>
-<area shape="rect" id="node5" href="$common_2export_2common_2spi_8hpp.html" title="common/spi.hpp" alt="" coords="171,155,301,181"/>
-<area shape="rect" id="node6" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="326,155,461,181"/>
-<area shape="rect" id="node9" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="485,155,613,181"/>
-<area shape="rect" id="node13" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="758,155,855,181"/>
-<area shape="rect" id="node16" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="946,155,1107,181"/>
-<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="260,229,351,256"/>
-<area shape="rect" id="node18" href="$version_8hpp.html" title="General the Core version library. " alt="" coords="1131,229,1253,256"/>
+<area shape="rect" id="node3" href="$spi__i2s__bus_8hpp.html" title="Contains platform driver implementation for SPI and I2S buses. " alt="" coords="435,80,576,107"/>
+<area shape="rect" id="node5" href="$common_2export_2common_2spi_8hpp.html" title="common/spi.hpp" alt="" coords="158,155,277,181"/>
+<area shape="rect" id="node6" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="301,155,424,181"/>
+<area shape="rect" id="node9" href="$common_2export_2common_2irq_8hpp.html" title="IRQ common module. " alt="" coords="448,155,563,181"/>
+<area shape="rect" id="node13" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="701,155,792,181"/>
+<area shape="rect" id="node16" href="$common_2export_2common_2console_8hpp.html" title="Common bypas console implementation. " alt="" coords="875,155,1021,181"/>
+<area shape="rect" id="node7" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="239,229,321,256"/>
+<area shape="rect" id="node18" href="$version_8hpp.html" title="General the Core version library. " alt="" coords="1043,229,1154,256"/>
 </map>

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -35,7 +37,7 @@
         <link rel="search" title="Search" href="../search.html"/>
     <link rel="top" title="theCore  documentation" href="../index.html"/>
         <link rel="up" title="Guides" href="index.html"/>
-        <link rel="next" title="Creating your first Hello World application" href="hello-world.html"/>
+        <link rel="next" title="Cache common thirdparties" href="thirdparty-cache.html"/>
         <link rel="prev" title="Guides" href="index.html"/>
  
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,28 +94,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Guides</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Getting started</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#downloading-thecore">Downloading theCore</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#deploying-development-environment">Deploying development environment</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#using-docker">Using Docker</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#using-nix">Using Nix</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#details-of-the-development-environment">Details of the development environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#moving-forward">Moving forward</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#more-info-about-nix">More info about Nix</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="hello-world.html">Creating your first Hello World application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="multiplatform.html">Multi-platform application</a></li>
-<li class="toctree-l2"><a class="reference internal" href="without-nix.html">Getting required development packages without Nix</a></li>
 <li class="toctree-l2"><a class="reference internal" href="thirdparty-cache.html">Cache common thirdparties</a></li>
 <li class="toctree-l2"><a class="reference internal" href="running-openocd-without-sudo.html">Running OpenOCD without root privileges</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
@@ -125,7 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -138,8 +138,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -148,25 +150,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Guides</a> &raquo;</li>
-      
-    <li>Getting started</li>
+        
+      <li>Getting started</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/guides/getting-started.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -181,77 +200,63 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span id="thecore-gettingstarted"></span><h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="downloading-thecore">
 <h2>Downloading theCore<a class="headerlink" href="#downloading-thecore" title="Permalink to this headline">¶</a></h2>
-<p>First thing first you need to clone and update all modules of theCore.</p>
+<p>First thing first you need to download theCore and setup development environment.
+To do that, use dedicated <cite>tcore</cite> script, written in Python 3:</p>
 <ol class="arabic">
-<li><p class="first">Clone repository:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">forGGe</span><span class="o">/</span><span class="n">theCore</span><span class="o">.</span><span class="n">git</span>
+<li><p class="first">Install Python 3 and dependencies, by using <a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-ubuntu-16-04">DigitalOcean guide</a>.</p>
+</li>
+<li><p class="first">Install <code class="docutils literal notranslate"><span class="pre">tcore</span></code> script:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first">Update all submodules:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="o">--</span><span class="n">init</span> <span class="o">--</span><span class="n">recursive</span>
+<li><p class="first">Install <code class="docutils literal notranslate"><span class="pre">curl</span></code>. For example, in Ubuntu, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">curl</span>
 </pre></div>
 </div>
 </li>
-</ol>
+<li><p class="first">Download theCore and development environment. Choose one option from below:</p>
+<ul>
+<li><p class="first">With script asking root permissions (see
+<a class="reference internal" href="#details-of-the-development-environment">Details of the development environment</a> section to understand why):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">bootstrap</span>
+</pre></div>
 </div>
-<div class="section" id="deploying-development-environment">
-<h2>Deploying development environment<a class="headerlink" href="#deploying-development-environment" title="Permalink to this headline">¶</a></h2>
-<p>Now it is time to get the development environment - toolchains,
-build dependencies and some additional host utilities. Everything that
-you need during development of the embedded application.</p>
-<p>You can obtain the environment using few ways:</p>
-<ul class="simple">
-<li>By <a class="reference internal" href="#using-nix">using Nix</a>.</li>
-<li>By <a class="reference internal" href="#using-docker">using Docker</a>.</li>
-<li>Install everything manually. See <a class="reference internal" href="without-nix.html#thecore-nonixinstall"><span class="std std-ref">Getting required development packages without Nix</span></a> section for more
-details on that.</li>
-</ul>
-<p>You can either do it manually and spend decent time on that or ask
-package manager called <a class="reference external" href="https://nixos.org/nix/">Nix</a> to setup all the development packages for you.</p>
-<p>If you prefer to manually install dependencies, refer to <a class="reference internal" href="without-nix.html#thecore-nonixinstall"><span class="std std-ref">Getting required development packages without Nix</span></a>
-section for more details.</p>
-<div class="section" id="using-docker">
-<h3>Using Docker<a class="headerlink" href="#using-docker" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic">
-<li><p class="first">Install docker.
-Installation depends on your Linux distributions, but here are some insights:</p>
-<ul class="simple">
-<li><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04">Docker installation on Ubuntu 16.04</a></li>
-<li><a class="reference external" href="https://wiki.archlinux.org/index.php/Docker">Docker installation on ArchLinux</a></li>
+</li>
+<li><p class="first">With script <strong>not asking</strong> any root permissions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo mkdir /nix
+sudo chown $(whoami) /nix
+tcore bootstrap
+</pre></div>
+</div>
+</li>
 </ul>
 </li>
-<li><p class="first">After Docker is installed and Docker daemon is running, you can launch
-theCore environment image. Execute:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span># Pulls Docker image from dockerhub
-# https://hub.docker.com/r/thecoreembedded/thecore/
-docker pull thecoreembedded/thecore
-
-# Run shell in the docker with all environment deployed
-docker run -v $(pwd):/root/thecore -w /root/thecore -it thecoreembedded/thecore
-</pre></div>
-</div>
-</li>
 </ol>
 </div>
-<div class="section" id="using-nix">
-<h3>Using Nix<a class="headerlink" href="#using-nix" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic">
-<li><p class="first">Install Nix.
-On Linux and Mac OS X, the easiest way to install Nix is to run
-the following shell command (as a user other than root):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">nixos</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">nix</span><span class="o">/</span><span class="n">install</span> <span class="o">|</span> <span class="n">sh</span>
-</pre></div>
-</div>
-</li>
-<li><p class="first">Run Nix shell to get all environment required:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Run from theCore directory</span>
-<span class="n">nix</span><span class="o">-</span><span class="n">shell</span> <span class="o">.</span>
-</pre></div>
-</div>
-</li>
-</ol>
-</div>
+<div class="section" id="details-of-the-development-environment">
+<h2>Details of the development environment<a class="headerlink" href="#details-of-the-development-environment" title="Permalink to this headline">¶</a></h2>
+<p>All additional packages, like toolchains, build dependencies and some
+additional host utilities are manager trough <a class="reference external" href="https://nixos.org/nix/">Nix</a>. Nix helps
+to deploy everything that you need during development of the embedded application.</p>
+<p>The installiation process of Nix is curated by the <code class="docutils literal notranslate"><span class="pre">tcore</span></code> script.
+More information about it you can find in the <a class="reference internal" href="../scripts/tcore.html#thecore-tcore"><span class="std std-ref">tcore script</span></a> section.</p>
+<p>Nix is installed under <cite>/nix</cite> directory. If it does not exist, Nix installation
+script will ask for permissions. That’s why running bare <cite>tcore bootstrap</cite>
+may result in a sudo password request.</p>
+<p>Some examples of packages, contaned in <code class="docutils literal notranslate"><span class="pre">/nix</span></code> directory are:</p>
+<ul class="simple">
+<li>Git</li>
+<li>CMake</li>
+<li>toolchains: GCC, Clang</li>
+<li>OpenOCD</li>
+<li>GDB</li>
+</ul>
+<p>Check the <code class="docutils literal notranslate"><span class="pre">default.nix</span></code> file in the root of theCore project for full list
+of packages requested from Nix.</p>
+<p>After Nix is deployed, theCore itself is downloaded into <code class="docutils literal notranslate"><span class="pre">~/.theCore</span></code> directory.
+<code class="docutils literal notranslate"><span class="pre">tcore</span></code> script uses Git under Nix environment to retrieve theCore from a remote,
+so no need to install Git into the host machine.</p>
 </div>
 <div class="section" id="moving-forward">
 <h2>Moving forward<a class="headerlink" href="#moving-forward" title="Permalink to this headline">¶</a></h2>
@@ -269,15 +274,18 @@ or read the <a class="reference external" href="https://nixos.org/nix/manual/">o
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="hello-world.html" class="btn btn-neutral float-right" title="Creating your first Hello World application" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="thirdparty-cache.html" class="btn btn-neutral float-right" title="Cache common thirdparties" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Guides" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Guides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -309,9 +317,11 @@ or read the <a class="reference external" href="https://nixos.org/nix/manual/">o
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

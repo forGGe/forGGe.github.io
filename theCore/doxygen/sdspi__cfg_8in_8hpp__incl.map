@@ -1,13 +1,13 @@
 <map id="sdspi_cfg.in.hpp" name="sdspi_cfg.in.hpp">
-<area shape="rect" id="node2" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="525,155,626,181"/>
-<area shape="rect" id="node13" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1347,80,1459,107"/>
-<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="137,304,227,331"/>
-<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="915,304,1012,331"/>
-<area shape="rect" id="node9" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="5,229,140,256"/>
-<area shape="rect" id="node18" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="1062,155,1193,181"/>
-<area shape="rect" id="node31" href="$endian_8hpp.html" title="ecl/endian.hpp" alt="" coords="1665,155,1782,181"/>
-<area shape="rect" id="node32" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="1406,155,1499,181"/>
-<area shape="rect" id="node19" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="1293,229,1393,256"/>
-<area shape="rect" id="node24" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="1165,229,1269,256"/>
-<area shape="rect" id="node27" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="850,229,994,256"/>
+<area shape="rect" id="node2" href="$dev_2bus_2export_2dev_2bus_8hpp.html" title="Generic bus interface module. " alt="" coords="481,155,575,181"/>
+<area shape="rect" id="node13" href="$sdspi_8hpp.html" title="SDSPI driver module. " alt="" coords="1285,80,1387,107"/>
+<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="128,304,211,331"/>
+<area shape="rect" id="node6" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="905,304,996,331"/>
+<area shape="rect" id="node9" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="5,229,128,256"/>
+<area shape="rect" id="node18" href="$iostream_8hpp.html" title="ecl/iostream.hpp" alt="" coords="1023,155,1142,181"/>
+<area shape="rect" id="node32" href="$endian_8hpp.html" title="ecl/endian.hpp" alt="" coords="1587,155,1693,181"/>
+<area shape="rect" id="node33" href="$types_8h.html" title="Common types for theCore framework. " alt="" coords="1339,155,1426,181"/>
+<area shape="rect" id="node19" href="$istream_8hpp.html" title="istream.hpp" alt="" coords="1235,229,1325,256"/>
+<area shape="rect" id="node24" href="$ostream_8hpp.html" title="ostream.hpp" alt="" coords="1089,229,1183,256"/>
+<area shape="rect" id="node27" href="$console__driver_8hpp.html" title="console_driver.hpp" alt="" coords="789,229,920,256"/>
 </map>

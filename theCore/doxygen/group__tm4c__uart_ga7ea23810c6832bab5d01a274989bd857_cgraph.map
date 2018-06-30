@@ -1,5 +1,5 @@
 <map id="ecl::uart::irq_bus_handler" name="ecl::uart::irq_bus_handler">
-<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="192,5,303,32"/>
-<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="184,56,311,83"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="194,107,301,133"/>
+<area shape="rect" id="node2" href="$namespaceecl_1_1irq.html#ae2bb04acb9d49c62cc85414c3b1c35a9" title="Masks or disables the given IRQ. " alt="" coords="179,5,280,32"/>
+<area shape="rect" id="node3" href="$namespaceecl_1_1irq.html#a0a11d889a6b03252aed26202ff65a4be" title="Unmasks or enables the given IRQ. " alt="" coords="172,56,287,83"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#ad9c53481b0e8421c2bde2e19c9b2301c" title="Clears pending interrupt of the given IRQ. " alt="" coords="181,107,278,133"/>
 </map>

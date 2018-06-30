@@ -1,4 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classecl_1_1exti__manager.html" title="External interrupt manager class. " alt="" coords="5,5,144,32"/>
-<area shape="rect" id="node2" href="$structecl_1_1exti__irq__proxy.html" title="EXTI interrupt proxy. " alt="" coords="192,5,335,32"/>
+<area shape="rect" id="node1" href="$classecl_1_1exti__manager.html" title="External interrupt manager class. " alt="" coords="5,5,131,32"/>
+<area shape="rect" id="node2" href="$structecl_1_1exti__irq__proxy.html" title="EXTI interrupt proxy. " alt="" coords="179,5,307,32"/>
 </map>

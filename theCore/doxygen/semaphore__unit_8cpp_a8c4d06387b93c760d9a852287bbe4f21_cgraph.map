@@ -1,9 +1,4 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="339,13,508,39"/>
-<area shape="rect" id="node5" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="108,45,291,71"/>
-<area shape="rect" id="node6" href="$semaphore__unit_8cpp.html#a2d2ea1056cab7d6fddf095d27a5abc7a" title="TEST" alt="" coords="172,95,227,122"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="556,5,727,47"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="775,13,884,39"/>
-<area shape="rect" id="node7" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="344,95,503,122"/>
-<area shape="rect" id="node8" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="556,88,727,129"/>
+<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="115,5,268,32"/>
+<area shape="rect" id="node3" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="109,56,273,83"/>
 </map>

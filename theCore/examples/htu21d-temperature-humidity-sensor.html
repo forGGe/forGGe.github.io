@@ -1,0 +1,447 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>HTU21D temperature and humidity sensor example &mdash; theCore  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="theCore  documentation" href="../index.html"/>
+        <link rel="up" title="Examples" href="index.html"/>
+        <link rel="next" title="STM32F4 discovery audio example with CS43L22 audio DAC" href="stm32f4-discovery-cs43l22.html"/>
+        <link rel="prev" title="External interrupts from user button" href="exti-button-interrupt.html"/>
+ 
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5WCW8RS');</script>
+<!-- End Google Tag Manager -->
+
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../contents.html" class="icon icon-home"> theCore
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="blinky.html">Simple LED blink example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hello-world.html">Simple Hello World example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="exti-button-interrupt.html">External interrupts from user button</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">HTU21D temperature and humidity sensor example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#supported-targets-boards">Supported targets (boards)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wiring">Wiring</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#stm32f4-discovery-board">STM32F4 Discovery board</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#preparing">Preparing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#expected-output">Expected output</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-cs43l22.html">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bluetooth-hm10.html">HM-10 Bluetooth LE (4.0) wireless module example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bluetooth-hm10.html#supported-targets-boards">Supported targets (boards)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fatfs-over-sdspi.html">SD-card demo using FATFS and SDSPI</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../platform/index.html">Supported platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devices/index.html">Device drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utilities/index.html">Libraries and utilities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../os_layer.html">OS abstraction layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community.html">Community and developer guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../docs.html">Documentation development and contribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Examples</a> &raquo;</li>
+        
+      <li>HTU21D temperature and humidity sensor example</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/examples/htu21d-temperature-humidity-sensor.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WCW8RS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <div class="section" id="htu21d-temperature-and-humidity-sensor-example">
+<span id="thecore-htu21d-example"></span><h1>HTU21D temperature and humidity sensor example<a class="headerlink" href="#htu21d-temperature-and-humidity-sensor-example" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Location:</th><td class="field-body"><a class="reference external" href="https://github.com/theCore-embedded/example_sensor_htu21d">https://github.com/theCore-embedded/example_sensor_htu21d</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Target:</th><td class="field-body">STM32F4 Discovery board</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">External HW:</th><td class="field-body">UART-to-USB converter attached to the USART2, HTU21D sensor</td>
+</tr>
+</tbody>
+</table>
+<p>HTU21D example shows how to read humidity and temperature samples using theCore.
+For more information about what this sensor does see the <a class="reference internal" href="../devices/htu21d-humidity-temperature-sensor.html#thecore-htu21d"><span class="std std-ref">HTU21D humidity and temperature sensor</span></a> page.</p>
+<div class="section" id="supported-targets-boards">
+<h2>Supported targets (boards)<a class="headerlink" href="#supported-targets-boards" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="32%" />
+<col width="43%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Target name</th>
+<th class="head">Configuration file</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>stm32f4_disc</td>
+<td>stm32f4_discovery.json</td>
+<td>STM32F4 discovery board</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="wiring">
+<h2>Wiring<a class="headerlink" href="#wiring" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="stm32f4-discovery-board">
+<h3>STM32F4 Discovery board<a class="headerlink" href="#stm32f4-discovery-board" title="Permalink to this headline">¶</a></h3>
+<img alt="UART and HTU21D example wiring for stm32f4discovery board" src="https://i.imgur.com/vX2uOb5.jpg" />
+<ol class="arabic">
+<li><p class="first">Connect <a class="reference external" href="https://cdn-shop.adafruit.com/datasheets/1899_HTU21D.pdf">HTU21D</a> to I2C1 on the Discovery board using following pins:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PB6 (I2C1 SCL)</td>
+<td>sensor’s SCL</td>
+</tr>
+<tr class="row-even"><td>PB9 (I2C1 SDA)</td>
+<td>sensor’s SDA</td>
+</tr>
+<tr class="row-odd"><td>+3.3V</td>
+<td>sensor’s VDD</td>
+</tr>
+<tr class="row-even"><td>GND</td>
+<td>sensor’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first">Attach any preferable UART-to-USB converter <a class="reference external" href="http://www.geekfactory.mx/wp-content/uploads/2013/06/converdidor_usb_ttl_rs232_pl_2303hx_01.jpg">such as this</a> module according to following pinout:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>PD8 (USART3 TX)</td>
+<td>module’s RX</td>
+</tr>
+<tr class="row-even"><td>PD9 (USART3 RX)</td>
+<td>module’s TX</td>
+</tr>
+<tr class="row-odd"><td>GND</td>
+<td>module’s GND</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="preparing">
+<h2>Preparing<a class="headerlink" href="#preparing" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Install and initialize theCore (if not done previously):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
+<span class="c1"># Or if python3-pip is default: pip install tcore</span>
+<span class="n">tcore</span> <span class="n">bootstrap</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Download the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_sensor_htu21d</span>
+<span class="n">cd</span> <span class="n">example_sensor_htu21d</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="building">
+<h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
+<p>Run <code class="docutils literal notranslate"><span class="pre">compile</span></code> command using theCore CLI:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running">
+<h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
+<p>Firmware will be flashed via <code class="docutils literal notranslate"><span class="pre">openocd</span></code> debugger and <code class="docutils literal notranslate"><span class="pre">flash</span></code> command.</p>
+<ol class="arabic">
+<li><p class="first">Connect stm32f4 Discovery board to USB cable and connect USB &lt;-&gt; UART converter to the PC.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal notranslate"><span class="pre">minicom</span></code> with device associated with USB &lt;-&gt; UART converter.
+(<code class="docutils literal notranslate"><span class="pre">/dev/ttyUSB0</span></code> here used as an example):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">tcore</span> <span class="n">runenv</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
+</pre></div>
+</div>
+<p>Or the same, but with superuser permissions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># From new terminal</span>
+<span class="n">tcore</span> <span class="n">runenv</span> <span class="o">--</span><span class="n">sudo</span> <span class="s2">&quot;minicom -D /dev/ttyUSB0&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Determine stm32f4discovery board revision.</p>
+<p>If you don’t remember your board revision, check FAQ section
+<a class="reference internal" href="../faq.html#thecore-stm32f4-discovery-rev"><span class="std std-ref">How to check STM32F4 Discovery board revision?</span></a>.</p>
+</li>
+<li><p class="first">Launch <code class="docutils literal notranslate"><span class="pre">flash</span></code> command in separate terminal, as shown below.</p>
+<p>For old STM32F407G-DISC boards, with STLINK/V2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span>
+</pre></div>
+</div>
+<p>For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="expected-output">
+<h2>Expected output<a class="headerlink" href="#expected-output" title="Permalink to this headline">¶</a></h2>
+<p>Observe console output in the minicom:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Welcome</span> <span class="n">to</span> <span class="n">theCore</span>
+<span class="n">the_core</span> <span class="n">v0</span><span class="o">.</span><span class="mf">3.0</span><span class="o">.</span><span class="mi">321</span> <span class="mi">90</span><span class="n">f4894</span><span class="o">-</span><span class="n">dirty</span>
+<span class="n">Starting</span> <span class="n">HTU21D</span> <span class="n">sensor</span><span class="o">...</span>
+<span class="n">Reset</span> <span class="n">done</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">25.362</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">45.162</span><span class="o">%</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">25.362</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">45.170</span><span class="o">%</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">25.362</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">45.155</span><span class="o">%</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">25.362</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">45.147</span><span class="o">%</span>
+<span class="n">Temperature</span><span class="p">:</span> <span class="mf">25.351</span> <span class="n">Celsius</span>   <span class="n">Humidity</span><span class="p">:</span> <span class="mf">45.155</span><span class="o">%</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="stm32f4-discovery-cs43l22.html" class="btn btn-neutral float-right" title="STM32F4 discovery audio example with CS43L22 audio DAC" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="exti-button-interrupt.html" class="btn btn-neutral" title="External interrupts from user button" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Max Olender, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

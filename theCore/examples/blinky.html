@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,10 +94,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Examples</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Simple LED blink example</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#supported-targets-boards">Supported targets (boards)</a></li>
@@ -107,11 +114,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
 <li class="toctree-l2"><a class="reference internal" href="hello-world.html">Simple Hello World example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="exti-button-interrupt.html">External interrupts from user button</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-htu21d-sensor.html">STM32F4 discovery and HTU21D temperature and humidity sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="htu21d-temperature-humidity-sensor.html">HTU21D temperature and humidity sensor example</a></li>
 <li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-cs43l22.html">STM32F4 discovery audio example with CS43L22 audio DAC</a></li>
-<li class="toctree-l2"><a class="reference internal" href="stm32f4-discovery-bluetooth-hm10.html">STM32F4 discovery and HM-10 Bluetooth LE (4.0) wireless module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ti-tm4c123g-sdcard-fatfs-sdspi.html">TI TM4C123G SD-card demo using FATFS and SDSPI</a></li>
-<li class="toctree-l2"><a class="reference internal" href="index.html#initial-setup">Initial setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bluetooth-hm10.html">HM-10 Bluetooth LE (4.0) wireless module example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bluetooth-hm10.html#supported-targets-boards">Supported targets (boards)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fatfs-over-sdspi.html">SD-card demo using FATFS and SDSPI</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
@@ -125,7 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -138,8 +145,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -148,25 +157,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Examples</a> &raquo;</li>
-      
-    <li>Simple LED blink example</li>
+        
+      <li>Simple LED blink example</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/examples/blinky.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -224,18 +250,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2>Preparing<a class="headerlink" href="#preparing" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first">Install theCore (this may take a while):</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">tcore</span>
 <span class="n">tcore</span> <span class="n">bootstrap</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Download this example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_blinky</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">init</span> <span class="o">--</span><span class="n">remote</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">theCore</span><span class="o">-</span><span class="n">embedded</span><span class="o">/</span><span class="n">example_blinky</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Step into the project directory:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_blinky</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">example_blinky</span>
 </pre></div>
 </div>
 </li>
@@ -245,12 +271,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h2>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li><p class="first">For STM32 Discovery board:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">stm32f4_disc</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">For Tiva TM4C LaunchPad:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">tiva_tm4c_launchpad</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="nb">compile</span> <span class="o">--</span><span class="n">target</span> <span class="n">tiva_tm4c_launchpad</span>
 </pre></div>
 </div>
 </li>
@@ -264,17 +290,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li><p class="first">Run:</p>
 <ul>
 <li><p class="first">For TivaC launchpad:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">For old STM32F407G-DISC boards, with STLINK/V2:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">For new STM32F407G-DISC1 boards, with STLINK/V2.1:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tcore</span> <span class="n">flash</span> <span class="o">--</span><span class="n">sudo</span> <span class="o">--</span><span class="n">debugger</span><span class="o">-</span><span class="n">config</span> <span class="n">stlink</span><span class="o">-</span><span class="n">v2</span><span class="o">.</span><span class="mi">1</span>
 </pre></div>
 </div>
 </li>
@@ -291,15 +317,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="hello-world.html" class="btn btn-neutral float-right" title="Simple Hello World example" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="hello-world.html" class="btn btn-neutral float-right" title="Simple Hello World example" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Examples" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -331,9 +360,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

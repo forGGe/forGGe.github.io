@@ -1,4 +1,0 @@
-<map id="ecl::platform_console::cancel_xfer" name="ecl::platform_console::cancel_xfer">
-<area shape="rect" id="node2" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="216,13,347,39"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="395,13,533,39"/>
-</map>

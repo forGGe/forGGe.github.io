@@ -1,4 +1,0 @@
-<map id="ecl::generic_bus::lock" name="ecl::generic_bus::lock">
-<area shape="rect" id="node2" href="$classecl_1_1mutex.html#af5e824674a77242516c988e05b78fb55" title="ecl::mutex::lock" alt="" coords="238,5,365,32"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="216,57,387,98"/>
-</map>

@@ -1,8 +1,8 @@
 <map id="hm10.hpp" name="hm10.hpp">
-<area shape="rect" id="node2" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="594,229,685,256"/>
-<area shape="rect" id="node3" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="312,155,410,181"/>
-<area shape="rect" id="node6" href="$serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="536,80,650,107"/>
-<area shape="rect" id="node14" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="132,80,307,107"/>
-<area shape="rect" id="node7" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="1053,155,1154,181"/>
-<area shape="rect" id="node10" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="894,155,1028,181"/>
+<area shape="rect" id="node2" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="559,229,642,256"/>
+<area shape="rect" id="node3" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="286,155,376,181"/>
+<area shape="rect" id="node6" href="$serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="502,80,605,107"/>
+<area shape="rect" id="node14" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="122,80,279,107"/>
+<area shape="rect" id="node7" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="982,155,1074,181"/>
+<area shape="rect" id="node10" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="835,155,958,181"/>
 </map>

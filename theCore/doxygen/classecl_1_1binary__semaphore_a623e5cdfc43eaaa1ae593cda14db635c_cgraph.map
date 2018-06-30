@@ -1,9 +1,0 @@
-<map id="ecl::binary_semaphore::binary_semaphore" name="ecl::binary_semaphore::binary_semaphore">
-<area shape="rect" id="node2" href="$classecl_1_1semaphore.html#a17cb0f37ef38862fd823fa0f1cdd5847" title="Signals a semaphore. " alt="" coords="237,19,407,46"/>
-<area shape="rect" id="node5" href="$classecl_1_1semaphore.html#aafbc8dbba727c78d62c883b5cd8e8dc5" title="Waits a semaphore Cannot be called from ISR. " alt="" coords="243,74,401,101"/>
-<area shape="rect" id="node7" href="$classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91" title="Tries to wait on semaphore without lock. " alt="" coords="231,125,413,151"/>
-<area shape="rect" id="node8" href="$classecl_1_1semaphore.html#aec8d8a55f96b0ecc3ff8fe9015721771" title="ecl::semaphore::operator=" alt="" coords="224,175,420,202"/>
-<area shape="rect" id="node3" href="$classecl_1_1binary__semaphore.html#ab6af72a433656867b1cae23da60fcae5" title="Signals a semaphore. " alt="" coords="468,5,639,47"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a472287bfc93e3eb21d237bb9c5ecd2d7" title="Checks if a processor is in handler mode of execution at this time. " alt="" coords="687,13,796,39"/>
-<area shape="rect" id="node6" href="$classecl_1_1binary__semaphore.html#aeb5aaed10b2e1c125fae567a0b358287" title="Waits a semaphore. " alt="" coords="468,71,639,112"/>
-</map>

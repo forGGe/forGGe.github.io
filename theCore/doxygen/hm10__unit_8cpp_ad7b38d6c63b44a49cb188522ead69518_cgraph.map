@@ -1,5 +1,5 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node2" href="$group__hm10.html#gafa27fbd8226f910e8f76b4794897528d" title="Gets pin code from the device. " alt="" coords="108,5,287,32"/>
-<area shape="rect" id="node4" href="$hm10__unit_8cpp.html#a0a8294ca9f0e3716b9c7fb54e8d6da55" title="hm10_check_command" alt="" coords="109,56,285,83"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="335,5,433,32"/>
+<area shape="rect" id="node2" href="$group__hm10.html#gafa27fbd8226f910e8f76b4794897528d" title="Gets pin code from the device. " alt="" coords="109,5,273,32"/>
+<area shape="rect" id="node4" href="$hm10__unit_8cpp.html#a0a8294ca9f0e3716b9c7fb54e8d6da55" title="hm10_check_command" alt="" coords="111,56,271,83"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="321,5,412,32"/>
 </map>

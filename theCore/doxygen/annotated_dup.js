@@ -10,7 +10,6 @@ var annotated_dup =
     [ "exactly_block", "structexactly__block.html", "structexactly__block" ],
     [ "gpio_tests", "structgpio__tests.html", "structgpio__tests" ],
     [ "less_than_block", "structless__than__block.html", "structless__than__block" ],
-    [ "measurement", "structmeasurement.html", "structmeasurement" ],
     [ "mock_aux", "structmock__aux.html", "structmock__aux" ],
     [ "mock_mut", "structmock__mut.html", "structmock__mut" ],
     [ "mock_power_pin", "structmock__power__pin.html", "structmock__power__pin" ],

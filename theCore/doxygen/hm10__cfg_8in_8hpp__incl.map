@@ -1,0 +1,9 @@
+<map id="hm10_cfg.in.hpp" name="hm10_cfg.in.hpp">
+<area shape="rect" id="node2" href="$serial_8hpp.html" title="Serial interface for platform drivers with listen mode support. " alt="" coords="461,155,563,181"/>
+<area shape="rect" id="node14" href="$hm10_8hpp.html" title="HM&#45;10 BT module drivers. " alt="" coords="796,80,900,107"/>
+<area shape="rect" id="node3" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="540,304,623,331"/>
+<area shape="rect" id="node4" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="719,229,809,256"/>
+<area shape="rect" id="node7" href="$utils_2export_2ecl_2utils_8hpp.html" title="General the Core utilities library. " alt="" coords="22,229,114,256"/>
+<area shape="rect" id="node10" href="$platform_2common_2export_2common_2bus_8hpp.html" title="Platform bus common interface. " alt="" coords="420,229,543,256"/>
+<area shape="rect" id="node15" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="769,155,927,181"/>
+</map>

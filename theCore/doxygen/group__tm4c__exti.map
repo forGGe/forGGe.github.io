@@ -1,4 +1,4 @@
 <map id="External interrupt manager" name="External interrupt manager">
-<area shape="rect" id="node3" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="529,5,665,47"/>
-<area shape="rect" id="node2" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,5,179,47"/>
+<area shape="rect" id="node3" href="$group__stm32__exti.html" title="External interrupt\l manager" alt="" coords="487,5,608,47"/>
+<area shape="rect" id="node2" href="$group__tm4c.html" title="Texas Instruments Tiva\l C TM4C123G platform" alt="" coords="5,5,164,47"/>
 </map>

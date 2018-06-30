@@ -1,18 +1,17 @@
 <map id="TEST_GROUP" name="TEST_GROUP">
-<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="197,107,256,133"/>
-<area shape="rect" id="node13" href="$classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514" title="Initialize serial driver and underlying platform bus. " alt="" coords="169,208,284,235"/>
-<area shape="rect" id="node17" href="$classecl_1_1serial.html#a03cdd6820ea32fed60d9b6893cda3593" title="Deinitialize serial driver and underlying platform bus. " alt="" coords="161,259,292,285"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#aa662cfb3b8e439975905bd0004393d20" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="367,5,469,32"/>
-<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="356,56,480,83"/>
-<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="board_init" alt="" coords="375,107,461,133"/>
-<area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="340,157,496,184"/>
-<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="582,5,637,32"/>
-<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="568,56,651,83"/>
-<area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="544,107,675,133"/>
-<area shape="rect" id="node12" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="561,157,658,184"/>
-<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="723,107,853,133"/>
-<area shape="rect" id="node11" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="901,107,1040,133"/>
-<area shape="rect" id="node14" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="560,208,659,235"/>
-<area shape="rect" id="node15" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="377,259,459,285"/>
-<area shape="rect" id="node16" href="$namespaceecl.html#af38a3e6192880841a2e1206268a3d355" title="ecl::err_to_str" alt="" coords="554,259,665,285"/>
+<area shape="rect" id="node2" href="$user__side_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="195,107,250,133"/>
+<area shape="rect" id="node13" href="$classecl_1_1serial.html#a2e82e2201aed51420730b39750d8f514" title="Initialize serial driver and underlying platform bus. " alt="" coords="171,208,274,235"/>
+<area shape="rect" id="node16" href="$classecl_1_1serial.html#a03cdd6820ea32fed60d9b6893cda3593" title="Deinitialize serial driver and underlying platform bus. " alt="" coords="164,259,281,285"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#a7c2980e1d80593425108c87e032c3dab" title="Soft&#45;IRQ dispatcher timer. " alt="" coords="353,5,448,32"/>
+<area shape="rect" id="node4" href="$user__side_8cpp.html#a4112f5f5ff8a285a5127999f33273833" title="Thread main routine, proxy to the main itself. " alt="" coords="345,56,456,83"/>
+<area shape="rect" id="node7" href="$user__side_8cpp.html#ad7d81512b0ce3a7214547801a3e41264" title="board_init" alt="" coords="361,107,440,133"/>
+<area shape="rect" id="node8" href="$namespaceecl.html#ac115a5d23a10590be5a05efa9a1eb7a0" title="Puts a greeting to a theCore console. " alt="" coords="329,157,472,184"/>
+<area shape="rect" id="node5" href="$user__side_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="555,19,606,45"/>
+<area shape="rect" id="node6" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="543,69,619,96"/>
+<area shape="rect" id="node9" href="$namespaceecl.html#a60ced95d5969a16195a141f4bcc28067" title="Bypasses console drivers and puts string directly to the UART. " alt="" coords="520,132,641,159"/>
+<area shape="rect" id="node12" href="$namespaceecl.html#a077dee22d456fba9f8eaadac0447ed65" title="Returns constant version string of theCore. " alt="" coords="536,183,625,209"/>
+<area shape="rect" id="node10" href="$group__tm4c__console.html#ga77ac19eee68fd988d5567a7bf0e1193c" title="Bypasses console drivers and puts data directly to the UART. " alt="" coords="689,132,811,159"/>
+<area shape="rect" id="node11" href="$namespaceecl.html#ab5e7d613a45d280c3b1800570ddeee50" title="Extracts value from enumerator element of given type. " alt="" coords="859,132,984,159"/>
+<area shape="rect" id="node14" href="$namespaceecl.html#a9cad3f0245d7c13ec8d2bdece0cebcd8" title="ecl::is_error" alt="" coords="535,245,626,272"/>
+<area shape="rect" id="node15" href="$namespaceecl.html#a6192e1fbb0daae97ed24c85e1497e772" title="ecl::is_ok" alt="" coords="361,259,440,285"/>
 </map>

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,10 +94,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
@@ -117,7 +124,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -130,8 +137,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -140,25 +149,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Supported platforms</a> &raquo;</li>
-      
-    <li>Host</li>
+        
+      <li>Host</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/platform/host.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -173,22 +199,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h1>Host<a class="headerlink" href="#host" title="Permalink to this headline">¶</a></h1>
 <p>Host platform is not a full-featured platform, like <a class="reference internal" href="stm32.html#thecore-stm32"><span class="std std-ref">STM32</span></a>,
 but rather a place for evaluation and running unit tests.</p>
-<p>Example configuration:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span> <span class="p">{</span>
-     <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="p">{</span>
-         <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;host&quot;</span><span class="p">,</span>
-         <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="kc">true</span>
-     <span class="p">}</span>
- <span class="p">}</span>
-</pre></div>
-</td></tr></table></div>
-<p><code class="docutils literal"><span class="pre">console</span></code> property controls whether console is enabled in the platform, or not.
-For more details on theCore console, check the <a class="reference internal" href="../utilities/console.html#thecore-console"><span class="std std-ref">Console streams</span></a> section.</p>
+<p><code class="docutils literal notranslate"><span class="pre">console</span></code> option in the “Host” menu controls whether console is enabled
+in the platform, or not.</p>
+<p>For more details on theCore console, check the <a class="reference internal" href="../utilities/console.html#thecore-console"><span class="std std-ref">Console streams</span></a> section.</p>
 <div class="section" id="related-references">
 <h2>Related references<a class="headerlink" href="#related-references" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -200,15 +213,18 @@ For more details on theCore console, check the <a class="reference internal" hre
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../devices/index.html" class="btn btn-neutral float-right" title="Device drivers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../devices/index.html" class="btn btn-neutral float-right" title="Device drivers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="kinetis-ke02z.html" class="btn btn-neutral" title="Kinetis KE02Z" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="kinetis-ke02z.html" class="btn btn-neutral" title="Kinetis KE02Z" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -240,9 +256,11 @@ For more details on theCore console, check the <a class="reference internal" hre
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

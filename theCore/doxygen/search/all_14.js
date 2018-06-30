@@ -9,13 +9,11 @@ var searchData=
   ['gpio_5fdevice_2ehpp',['gpio_device.hpp',['../tm4c_2export_2platform_2gpio__device_8hpp.html',1,'']]],
   ['thecore_20embedded_20framework_20_2d_20a_20brief_20description_2e',['theCore embedded framework - A Brief Description.',['../index.html',1,'']]],
   ['irq_2ehpp',['irq.hpp',['../tm4c_2export_2platform_2irq_8hpp.html',1,'']]],
-  ['main_2ecpp',['main.cpp',['../tm4c__fatfs_2main_8cpp.html',1,'']]],
   ['pin_5fmux_2ein_2ecpp',['pin_mux.in.cpp',['../tm4c_2templates_2pin__mux_8in_8cpp.html',1,'']]],
   ['platform_2ecpp',['platform.cpp',['../tm4c_2platform_8cpp.html',1,'']]],
   ['spi_2ehpp',['spi.hpp',['../tm4c_2export_2aux_2spi_8hpp.html',1,'']]],
   ['spi_5fcfg_2ein_2ehpp',['spi_cfg.in.hpp',['../tm4c_2templates_2spi__cfg_8in_8hpp.html',1,'']]],
-  ['suite_5finit_2ecpp',['suite_init.cpp',['../tivac__tm4_2suites_2platform__bat_2suite__init_8cpp.html',1,'']]],
-  ['suite_5finit_2ecpp',['suite_init.cpp',['../tivac__tm4_2suites_2unity__demo_2suite__init_8cpp.html',1,'']]],
+  ['suite_5finit_2ecpp',['suite_init.cpp',['../tivac__tm4_2suites_2platform__bat_2suite__init_8cpp.html',1,'(Global Namespace)'],['../tivac__tm4_2suites_2unity__demo_2suite__init_8cpp.html',1,'(Global Namespace)']]],
   ['t1_5fcc1',['t1_cc1',['../group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6acbdc28f093eb83367fcdbc62c4166c80',1,'ecl']]],
   ['t1_5fcc2',['t1_cc2',['../group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6ab2280d1bf237387083c62a51815e5ffe',1,'ecl']]],
   ['t1_5fcc3',['t1_cc3',['../group__stm32__adc.html#ggaa5de186d720f541f9b66085049e2c7f6a776674b761145a7f1fb94a36890b412d',1,'ecl']]],
@@ -88,7 +86,7 @@ var searchData=
   ['trigger_5fxfer',['trigger_xfer',['../classecl_1_1generic__bus.html#a14978f17e02f910fc67a2f870e3901cb',1,'ecl::generic_bus']]],
   ['try_5flock',['try_lock',['../classecl_1_1mutex.html#a4e80875410c4ebc3ec4fdcf04f615c25',1,'ecl::mutex::try_lock()'],['../classecl_1_1mutex.html#a4e80875410c4ebc3ec4fdcf04f615c25',1,'ecl::mutex::try_lock()'],['../classecl_1_1mutex.html#a4e80875410c4ebc3ec4fdcf04f615c25',1,'ecl::mutex::try_lock()']]],
   ['try_5fwait',['try_wait',['../classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257',1,'ecl::binary_semaphore::try_wait()'],['../classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91',1,'ecl::semaphore::try_wait(std::chrono::milliseconds ms=std::chrono::milliseconds(0))'],['../classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91',1,'ecl::semaphore::try_wait(std::chrono::milliseconds ms=std::chrono::milliseconds(0))'],['../classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257',1,'ecl::binary_semaphore::try_wait()'],['../classecl_1_1semaphore.html#a35b3e1e1a952e5e0ea8fec6f17a59f91',1,'ecl::semaphore::try_wait()'],['../classecl_1_1binary__semaphore.html#a7c438223fc11c5d97e69618d4c73c257',1,'ecl::binary_semaphore::try_wait()'],['../namespaceecl_1_1os_1_1signal.html#a4d165308499159c21b605a093dc5739d',1,'ecl::os::signal::try_wait()']]],
-  ['try_5fxfer',['try_xfer',['../classecl_1_1sensor_1_1htu21d.html#a7d2c595550b5ce8ad9627bf5ef0a4fe6',1,'ecl::sensor::htu21d']]],
+  ['try_5fxfer',['try_xfer',['../group__htu21d.html#ga7d2c595550b5ce8ad9627bf5ef0a4fe6',1,'ecl::sensor::htu21d']]],
   ['tx',['tx',['../namespaceecl.html#ac81ff427233ee3d1e30483dd0f35d32aa7da685001e153f41a83eb6255069dc3d',1,'ecl']]],
   ['tx_5fcomplete',['tx_complete',['../uart__bat_2case_8cpp.html#a61da32e3c324b68a1787933b5b063032',1,'case.cpp']]],
   ['txtbsy',['txtbsy',['../namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810a2019c8e18bec8dc776dce289ad397239',1,'ecl']]],
@@ -96,6 +94,5 @@ var searchData=
   ['type_5fhc',['type_hc',['../structecl_1_1sdspi__card__info.html#a2553a04ea3bf582132763ef30dee8247',1,'ecl::sdspi_card_info']]],
   ['types_2eh',['types.h',['../types_8h.html',1,'']]],
   ['uart_5fcfg_2ein_2ehpp',['uart_cfg.in.hpp',['../tm4c_2templates_2uart__cfg_8in_8hpp.html',1,'']]],
-  ['utils_2ehpp',['utils.hpp',['../thread_2freertos_2export_2ecl_2thread_2utils_8hpp.html',1,'']]],
-  ['utils_2ehpp',['utils.hpp',['../thread_2no__os_2export_2ecl_2thread_2utils_8hpp.html',1,'']]]
+  ['utils_2ehpp',['utils.hpp',['../thread_2freertos_2export_2ecl_2thread_2utils_8hpp.html',1,'(Global Namespace)'],['../thread_2no__os_2export_2ecl_2thread_2utils_8hpp.html',1,'(Global Namespace)']]]
 ];

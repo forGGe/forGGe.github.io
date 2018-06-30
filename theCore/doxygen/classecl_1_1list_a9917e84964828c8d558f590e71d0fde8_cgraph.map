@@ -1,6 +1,0 @@
-<map id="ecl::list::push_back" name="ecl::list::push_back">
-<area shape="rect" id="node2" href="$classecl_1_1list__node.html#afad3357bb2a5f54fb8456543349fec06" title="Adds a node after this node. " alt="" coords="200,5,340,47"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#a8993259d3beffdf93f023da4244be71f" title="ecl::operator==" alt="" coords="207,71,333,98"/>
-<area shape="rect" id="node5" href="$namespaceecl.html#aca3d00935a94a5cb59d7a2a4a3680af6" title="ecl::operator!=" alt="" coords="210,122,330,149"/>
-<area shape="rect" id="node4" href="$classecl_1_1shared__ptr.html#a37cedf36d48105cbc0ad2a138392ae49" title="Returs a value itself. " alt="" coords="388,97,535,123"/>
-</map>

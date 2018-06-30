@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -55,6 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -91,10 +94,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
             
             
-                <p class="caption"><span class="caption-text">Contents:</span></p>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../index.html">theCore: C++ Embedded Framework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/index.html">Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts/index.html">theCore scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../project_structure.html">Project structure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../arch.html">Supported architectures</a></li>
@@ -131,7 +138,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="toctree-l1"><a class="reference internal" href="../testing.html">Testing and CI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits and acknowledgements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog.html">Change Log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
 </ul>
 
             
@@ -144,8 +151,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../contents.html">theCore</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../contents.html">theCore</a>
+        
       </nav>
 
 
@@ -154,25 +163,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../contents.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../contents.html">Docs</a> &raquo;</li>
+        
           <li><a href="index.html">Supported platforms</a> &raquo;</li>
-      
-    <li>Particle Electron</li>
+        
+      <li>Particle Electron</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="../_sources/platform/particle-electron.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -191,7 +217,7 @@ connected products.</p>
 peripherals.</p>
 <p>Particle electron platform can be configured via JSON. Configuration file
 must conform to a schema below:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -271,10 +297,10 @@ must conform to a schema below:</p>
 other devices. The Electron has four hardware (USART) serial channels and
 two USB serial channels.</p>
 <p>theCore allows to enable particular Serial by its number on default baud rate.
-Desired serial number must put into array with <code class="docutils literal"><span class="pre">serial</span></code> name.</p>
+Desired serial number must put into array with <code class="docutils literal notranslate"><span class="pre">serial</span></code> name.</p>
 <div class="section" id="example-configuration">
 <h3>Example configuration<a class="headerlink" href="#example-configuration" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -290,7 +316,7 @@ Desired serial number must put into array with <code class="docutils literal"><s
 </div>
 <div class="section" id="example-output">
 <h3>Example output<a class="headerlink" href="#example-output" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -315,9 +341,9 @@ Desired serial number must put into array with <code class="docutils literal"><s
 </div>
 <div class="section" id="console">
 <h3>Console<a class="headerlink" href="#console" title="Permalink to this headline">¶</a></h3>
-<p>To enable console in theCore, set <code class="docutils literal"><span class="pre">use_console</span></code> flag and enable <code class="docutils literal"><span class="pre">Serial0</span></code>
+<p>To enable console in theCore, set <code class="docutils literal notranslate"><span class="pre">use_console</span></code> flag and enable <code class="docutils literal notranslate"><span class="pre">Serial0</span></code>
 via JSON:</p>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -348,13 +374,13 @@ library.</p>
 <p class="first admonition-title">Note</p>
 <p>theCore allows to configure only one Wire/I2C instance with a pinout:</p>
 <ul class="last simple">
-<li><code class="docutils literal"><span class="pre">SCL</span></code> =&gt; <code class="docutils literal"><span class="pre">D1</span></code></li>
-<li><code class="docutils literal"><span class="pre">SDA</span></code> =&gt; <code class="docutils literal"><span class="pre">D0</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">SCL</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">D1</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">SDA</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">D0</span></code></li>
 </ul>
 </div>
 <div class="section" id="id1">
 <h3>Example configuration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-json"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="highlight-json notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -376,7 +402,7 @@ library.</p>
 </div>
 <div class="section" id="id2">
 <h3>Example output<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-cpp"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -414,8 +440,8 @@ library.</p>
 <div class="section" id="properties">
 <h3>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">speed</span></code> - <a class="reference external" href="https://docs.particle.io/reference/firmware/electron/#setspeed-">I2C clock speed</a>. Required field.</li>
-<li><code class="docutils literal"><span class="pre">stretch_clk</span></code> - <a class="reference external" href="https://docs.particle.io/reference/firmware/electron/#stretchclock-">I2C clock stretching</a>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">speed</span></code> - <a class="reference external" href="https://docs.particle.io/reference/firmware/electron/#setspeed-">I2C clock speed</a>. Required field.</li>
+<li><code class="docutils literal notranslate"><span class="pre">stretch_clk</span></code> - <a class="reference external" href="https://docs.particle.io/reference/firmware/electron/#stretchclock-">I2C clock stretching</a>.</li>
 </ul>
 </div>
 </div>
@@ -429,7 +455,7 @@ Find more details of Timers in the <a class="reference external" href="https://d
 <p>To flash resulting binary to the board, follow next sequence:</p>
 <ul class="simple">
 <li>Put device into the <a class="reference external" href="https://docs.particle.io/guide/getting-started/modes/electron/#dfu-mode-device-firmware-upgrade-">DFU mode</a></li>
-<li>Launch <code class="docutils literal"><span class="pre">scripts/electron_dfu.sh</span></code> script with a path to a binary as an argument.</li>
+<li>Launch <code class="docutils literal notranslate"><span class="pre">scripts/electron_dfu.sh</span></code> script with a path to a binary as an argument.</li>
 </ul>
 </div>
 </div>
@@ -437,15 +463,18 @@ Find more details of Timers in the <a class="reference external" href="https://d
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kinetis-ke02z.html" class="btn btn-neutral float-right" title="Kinetis KE02Z" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kinetis-ke02z.html" class="btn btn-neutral float-right" title="Kinetis KE02Z" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="ti-tivac-tm4c123g.html" class="btn btn-neutral" title="Texas Instruments Tiva C TM4C123G" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="ti-tivac-tm4c123g.html" class="btn btn-neutral" title="Texas Instruments Tiva C TM4C123G" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -477,9 +506,11 @@ Find more details of Timers in the <a class="reference external" href="https://d
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
             VERSION:'',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../_static/jquery.js"></script>

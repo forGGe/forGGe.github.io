@@ -1,5 +1,5 @@
 <map id="ecl::irq::init_storage" name="ecl::irq::init_storage">
-<area shape="rect" id="node2" href="$namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="204,5,355,32"/>
-<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="220,56,339,83"/>
-<area shape="rect" id="node3" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="403,5,485,32"/>
+<area shape="rect" id="node2" href="$namespaceecl.html#a193e9430dfe9bc0821c3dcd85cea7c09" title="Unhandled interrupt must cause the abort. " alt="" coords="189,5,324,32"/>
+<area shape="rect" id="node4" href="$namespaceecl_1_1irq.html#a4edd1e292bbabf45728a6bb7ca5814c0" title="Enables interrupts globally. " alt="" coords="203,56,310,83"/>
+<area shape="rect" id="node3" href="$namespaceecl.html#acdb507c09a1eb9c514ebdfd4981509a3" title="Aborts execution of currently running code. Never return. " alt="" coords="372,5,448,32"/>
 </map>

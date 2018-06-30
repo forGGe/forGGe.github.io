@@ -1,5 +1,5 @@
 <map id="htu21d.hpp" name="htu21d.hpp">
-<area shape="rect" id="node2" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="50,80,141,107"/>
-<area shape="rect" id="node3" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="165,80,340,107"/>
-<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="204,155,301,181"/>
+<area shape="rect" id="node2" href="$err_8hpp.html" title="ecl/err.hpp" alt="" coords="44,80,127,107"/>
+<area shape="rect" id="node3" href="$platform_2common_2export_2common_2execution_8hpp.html" title="Module aggregates routines that are control execution flow of the MCU. " alt="" coords="151,80,308,107"/>
+<area shape="rect" id="node5" href="$assert_8h.html" title="ecl/assert.h" alt="" coords="184,155,275,181"/>
 </map>

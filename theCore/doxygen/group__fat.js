@@ -14,10 +14,10 @@ var group__fat =
       [ "dir_inode", "classecl_1_1fat_1_1dir__inode.html#ab3c4bbbbe5217da717541cd045bcee3b", null ],
       [ "~dir_inode", "classecl_1_1fat_1_1dir__inode.html#a457a44c525dea499762ba916f866dd1e", null ],
       [ "dir_inode", "classecl_1_1fat_1_1dir__inode.html#abf2af5abbd35edf7cd811f593ddb93e1", null ],
-      [ "get_type", "classecl_1_1fat_1_1dir__inode.html#a3ec2573533f5ffda2b1ab10168d82cc3", null ],
+      [ "get_type", "classecl_1_1fat_1_1dir__inode.html#a8d25206e438f124dfd5b7dc31da55b57", null ],
       [ "open_dir", "classecl_1_1fat_1_1dir__inode.html#a40371e0efafcac0736f58a8dbdd01df9", null ],
-      [ "size", "classecl_1_1fat_1_1dir__inode.html#a22456bce05339463889601b2f67ca310", null ],
-      [ "get_name", "classecl_1_1fat_1_1dir__inode.html#a4c340159c0275102c6900ef3cb1ecc46", null ],
+      [ "size", "classecl_1_1fat_1_1dir__inode.html#a312c020dcef08bba2af7f4bd88a2f25b", null ],
+      [ "get_name", "classecl_1_1fat_1_1dir__inode.html#a62db8a603d283105189a7805cdeb1516", null ],
       [ "operator=", "classecl_1_1fat_1_1dir__inode.html#afb67e32e6f9380a8b5f5916834403f9e", null ]
     ] ],
     [ "file", "classecl_1_1fat_1_1file.html", [
@@ -35,10 +35,10 @@ var group__fat =
       [ "type", "classecl_1_1fat_1_1file__inode.html#a987ba4096045fa6f378227662a3f365d", null ],
       [ "file_inode", "classecl_1_1fat_1_1file__inode.html#aa83684849451505e857a3121111e92eb", null ],
       [ "~file_inode", "classecl_1_1fat_1_1file__inode.html#acf207961770c0bff422eb3f367c65de6", null ],
-      [ "get_type", "classecl_1_1fat_1_1file__inode.html#a6719bb411d42837e3bbaa43de1834195", null ],
+      [ "get_type", "classecl_1_1fat_1_1file__inode.html#a60c0c8be44348dcb459cf87cc110d63f", null ],
       [ "open", "classecl_1_1fat_1_1file__inode.html#a4964f52a1847f4938cdecfac24e71180", null ],
-      [ "size", "classecl_1_1fat_1_1file__inode.html#aa1c8a8499bc18a434728b91c47bc25b5", null ],
-      [ "get_name", "classecl_1_1fat_1_1file__inode.html#a2994e4833c2e011e153fc70fd9df09da", null ]
+      [ "size", "classecl_1_1fat_1_1file__inode.html#a5ff8598d50b5dad1968653fd4f6bf774", null ],
+      [ "get_name", "classecl_1_1fat_1_1file__inode.html#af4c7682b059777db7a4d1029f6316360", null ]
     ] ],
     [ "petit", "classecl_1_1fat_1_1petit.html", [
       [ "mount", "group__fat.html#ga7331208f8798413e74a1cae29a62ee6d", null ]

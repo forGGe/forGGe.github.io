@@ -127,9 +127,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9a9bd5c7de74de028b5fa716060e813e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__htu21d.html#ga9a9bd5c7de74de028b5fa716060e813e">ecl::sensor::htu21d&lt; i2c_dev &gt;::soft_reset</a> ()</td></tr>
 <tr class="memdesc:ga9a9bd5c7de74de028b5fa716060e813e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs soft reset of the sensor.  <a href="#ga9a9bd5c7de74de028b5fa716060e813e">More...</a><br /></td></tr>
 <tr class="separator:ga9a9bd5c7de74de028b5fa716060e813e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7d2c595550b5ce8ad9627bf5ef0a4fe6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__htu21d.html#ga7d2c595550b5ce8ad9627bf5ef0a4fe6">ecl::sensor::htu21d&lt; i2c_dev &gt;::try_xfer</a> (uint8_t cmd, uint8_t *<a class="el" href="pool__unit_8cpp.html#adf95c0636bce291f80668fa7b40a29b0">data</a>, size_t data_size)</td></tr>
-<tr class="memdesc:ga7d2c595550b5ce8ad9627bf5ef0a4fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try set buffer for rx/tx and do_xfer several times if error occurred.  <a href="#ga7d2c595550b5ce8ad9627bf5ef0a4fe6">More...</a><br /></td></tr>
-<tr class="separator:ga7d2c595550b5ce8ad9627bf5ef0a4fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1592030f7ec90b2f3168ffee0d1daa2c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__htu21d.html#ga1592030f7ec90b2f3168ffee0d1daa2c">ecl::sensor::htu21d&lt; i2c_dev &gt;::try_xfer</a> (uint8_t *cmd, uint8_t *<a class="el" href="pool__unit_8cpp.html#adf95c0636bce291f80668fa7b40a29b0">data</a>, size_t data_size)</td></tr>
+<tr class="memdesc:ga1592030f7ec90b2f3168ffee0d1daa2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try set buffer for rx/tx and do_xfer several times if error occurred.  <a href="#ga1592030f7ec90b2f3168ffee0d1daa2c">More...</a><br /></td></tr>
+<tr class="separator:ga1592030f7ec90b2f3168ffee0d1daa2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2ba13ce989866964723e788c425574f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__htu21d.html#gaa2ba13ce989866964723e788c425574f">ecl::sensor::htu21d&lt; i2c_dev &gt;::get_sample_temperature</a> (uint16_t &amp;sample)</td></tr>
 <tr class="memdesc:gaa2ba13ce989866964723e788c425574f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads raw temperature sample from sensor.  <a href="#gaa2ba13ce989866964723e788c425574f">More...</a><br /></td></tr>
 <tr class="separator:gaa2ba13ce989866964723e788c425574f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,8 +266,8 @@ template&lt;class i2c_dev &gt; </div>
 
 </div>
 </div>
-<a id="ga7d2c595550b5ce8ad9627bf5ef0a4fe6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7d2c595550b5ce8ad9627bf5ef0a4fe6">&#9670;&nbsp;</a></span>try_xfer()</h2>
+<a id="ga1592030f7ec90b2f3168ffee0d1daa2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1592030f7ec90b2f3168ffee0d1daa2c">&#9670;&nbsp;</a></span>try_xfer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -280,7 +280,7 @@ template&lt;class i2c_dev &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="namespaceecl.html#ae35889935b17d1382e0afc3dc87e9810">err</a> <a class="el" href="classecl_1_1sensor_1_1htu21d.html">ecl::sensor::htu21d</a>&lt; i2c_dev &gt;::try_xfer </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>cmd</em>, </td>
         </tr>
         <tr>
@@ -318,8 +318,8 @@ template&lt;class i2c_dev &gt; </div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group__htu21d_ga7d2c595550b5ce8ad9627bf5ef0a4fe6_cgraph.png" border="0" usemap="#group__htu21d_ga7d2c595550b5ce8ad9627bf5ef0a4fe6_cgraph" alt=""/></div>
-<map name="group__htu21d_ga7d2c595550b5ce8ad9627bf5ef0a4fe6_cgraph" id="group__htu21d_ga7d2c595550b5ce8ad9627bf5ef0a4fe6_cgraph">
+<div class="center"><img src="group__htu21d_ga1592030f7ec90b2f3168ffee0d1daa2c_cgraph.png" border="0" usemap="#group__htu21d_ga1592030f7ec90b2f3168ffee0d1daa2c_cgraph" alt=""/></div>
+<map name="group__htu21d_ga1592030f7ec90b2f3168ffee0d1daa2c_cgraph" id="group__htu21d_ga1592030f7ec90b2f3168ffee0d1daa2c_cgraph">
 <area shape="rect" id="node2" href="namespaceecl.html#a6e1134bd784ee687b2a6d7b499205a4b" title="Performs a dummy busy wait for specified amount of milliseconds. " alt="" coords="187,107,288,133"/>
 <area shape="rect" id="node3" href="namespaceecl_1_1this__thread.html#a4bcb8e258c5dc259f902333f2cd57390" title="Put task at sleep for given amount of milliseconds. " alt="" coords="336,81,508,108"/>
 <area shape="rect" id="node4" href="namespaceecl.html#a4277e787d66577447b0885c0f09cea71" title="Waits conditionally not less than given amount of milliseconds. " alt="" coords="556,107,648,133"/>

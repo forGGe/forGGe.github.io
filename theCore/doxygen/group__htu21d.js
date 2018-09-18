@@ -15,7 +15,7 @@ var group__htu21d =
       [ "disable_heater", "group__htu21d.html#gaa79299770a813f92f7fb5d60bed51d08", null ],
       [ "set_resolution_mode", "group__htu21d.html#gace2ac3fe4ee3e859f789350cbf34b906", null ],
       [ "get_resolution_mode", "group__htu21d.html#gac6a630d77af4a922bebbd7e20834d773", null ],
-      [ "try_xfer", "group__htu21d.html#ga7d2c595550b5ce8ad9627bf5ef0a4fe6", null ]
+      [ "try_xfer", "group__htu21d.html#ga1592030f7ec90b2f3168ffee0d1daa2c", null ]
     ] ],
     [ "htu21d_resolution", "group__htu21d.html#ga4ea6aab4d03dd8b9d950a93c403e2994", [
       [ "rm12_t14", "group__htu21d.html#gga4ea6aab4d03dd8b9d950a93c403e2994a8eecfb539ab5a341358b4ab1214bc8d4", null ],
@@ -25,7 +25,7 @@ var group__htu21d =
     ] ],
     [ "init", "group__htu21d.html#ga7817ea19151a202c6097c15efe120fb1", null ],
     [ "soft_reset", "group__htu21d.html#ga9a9bd5c7de74de028b5fa716060e813e", null ],
-    [ "try_xfer", "group__htu21d.html#ga7d2c595550b5ce8ad9627bf5ef0a4fe6", null ],
+    [ "try_xfer", "group__htu21d.html#ga1592030f7ec90b2f3168ffee0d1daa2c", null ],
     [ "get_sample_temperature", "group__htu21d.html#gaa2ba13ce989866964723e788c425574f", null ],
     [ "get_sample_humidity", "group__htu21d.html#ga144cbc89e53551936ae61cb0bdaeec55", null ],
     [ "get_temperature", "group__htu21d.html#gab3fc64d369fac64b4950cb5ec80b4323", null ],

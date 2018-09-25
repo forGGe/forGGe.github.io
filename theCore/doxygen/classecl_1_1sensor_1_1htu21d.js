@@ -14,5 +14,5 @@ var classecl_1_1sensor_1_1htu21d =
     [ "disable_heater", "group__htu21d.html#gaa79299770a813f92f7fb5d60bed51d08", null ],
     [ "set_resolution_mode", "group__htu21d.html#gace2ac3fe4ee3e859f789350cbf34b906", null ],
     [ "get_resolution_mode", "group__htu21d.html#gac6a630d77af4a922bebbd7e20834d773", null ],
-    [ "try_xfer", "group__htu21d.html#ga7d2c595550b5ce8ad9627bf5ef0a4fe6", null ]
+    [ "try_xfer", "group__htu21d.html#ga1592030f7ec90b2f3168ffee0d1daa2c", null ]
 ];

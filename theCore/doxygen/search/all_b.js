@@ -11,7 +11,7 @@ var searchData=
   ['k8',['k8',['../namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6a0304e80268763562dd0b89268dbd0d33',1,'ecl::i2s']]],
   ['k88',['k88',['../namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6a670d4ff392072f4c1f307a15c828b12d',1,'ecl::i2s']]],
   ['k96',['k96',['../namespaceecl_1_1i2s.html#aec3e279a53c58170f48be761b6a72cd6abac29a210b8d34299d69edc7ba4082e7',1,'ecl::i2s']]],
-  ['kernel_5fmain',['kernel_main',['../sys_8cpp.html#ada8402e0c504af8cafef5cc76c076003',1,'kernel_main():&#160;kernel_main.c'],['../kernel__main_8c.html#ada8402e0c504af8cafef5cc76c076003',1,'kernel_main():&#160;kernel_main.c'],['../kernel__stubs_8c.html#ada8402e0c504af8cafef5cc76c076003',1,'kernel_main():&#160;kernel_stubs.c']]],
+  ['kernel_5fmain',['kernel_main',['../kernel__main_8c.html#ada8402e0c504af8cafef5cc76c076003',1,'kernel_main():&#160;kernel_main.c'],['../kernel__stubs_8c.html#ada8402e0c504af8cafef5cc76c076003',1,'kernel_main():&#160;kernel_stubs.c'],['../sys_8cpp.html#ada8402e0c504af8cafef5cc76c076003',1,'kernel_main():&#160;kernel_main.c']]],
   ['kernel_5fmain_2ec',['kernel_main.c',['../kernel__main_8c.html',1,'']]],
   ['kernel_5fstubs_2ec',['kernel_stubs.c',['../kernel__stubs_8c.html',1,'']]]
 ];

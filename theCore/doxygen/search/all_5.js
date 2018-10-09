@@ -4,7 +4,7 @@ var searchData=
   ['case_2ecpp',['case.cpp',['../exti__manager__bat_2case_8cpp.html',1,'']]],
   ['external_20device_20drivers',['External device drivers',['../group__dev.html',1,'']]],
   ['e',['e',['../group__stm32__gpio.html#ggad60cff4932a4d112ce19db3a380774a0ae1671797c52e15f763380b45e841ec32',1,'ecl::e()'],['../namespaceecl_1_1gpio__hw.html#a2e8c8755f86c5fb6e311b9a046af4759ae1671797c52e15f763380b45e841ec32',1,'ecl::gpio_hw::e()']]],
-  ['early_5fmain',['early_main',['../sys_8cpp.html#a8270157a7d61615f2f8aeef853fd7fbd',1,'early_main():&#160;sys.cpp'],['../kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58',1,'early_main():&#160;sys.cpp'],['../kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58',1,'early_main():&#160;sys.cpp']]],
+  ['early_5fmain',['early_main',['../kernel__main_8c.html#acdd8f54d6dec73e88226c844caacab58',1,'early_main():&#160;sys.cpp'],['../kernel__stubs_8c.html#acdd8f54d6dec73e88226c844caacab58',1,'early_main():&#160;sys.cpp'],['../sys_8cpp.html#a8270157a7d61615f2f8aeef853fd7fbd',1,'early_main():&#160;sys.cpp']]],
   ['ecl',['ecl',['../namespaceecl.html',1,'']]],
   ['ecl_5fassert',['ecl_assert',['../assert_8h.html#a602233f42e839e946a41f4c6cb2fee2a',1,'assert.h']]],
   ['ecl_5fassert_5ffailed',['ecl_assert_failed',['../assert_8cpp.html#ac64300dcf84e389c9e962635d12de9b7',1,'ecl_assert_failed(const char *assertion, const char *message, const char *file, const char *func, unsigned int line):&#160;assert.cpp'],['../assert_8h.html#ac64300dcf84e389c9e962635d12de9b7',1,'ecl_assert_failed(const char *assertion, const char *message, const char *file, const char *func, unsigned int line):&#160;assert.cpp']]],
